@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 4.1)
+cmake_minimum_required(VERSION 3.31.6)
 
 file(GLOB_RECURSE RENDERER_SOURCES
         ${CMAKE_CURRENT_SOURCE_DIR}/src/*.cpp
