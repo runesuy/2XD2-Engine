@@ -1,0 +1,25 @@
+cmake_minimum_required(VERSION 4.1)
+
+file(GLOB_RECURSE RENDERER_SOURCES
+        ${CMAKE_CURRENT_SOURCE_DIR}/src/*.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/include/*.h
+)
+
+add_library(2XD2_Engine_Renderer ${RENDERER_SOURCES})
+
+target_include_directories(2XD2_Engine_Renderer PUBLIC
+        ${CMAKE_CURRENT_SOURCE_DIR}/include
+)
+
+find_package(SFML 2.6 COMPONENTS system window graphics REQUIRED)
+
+target_include_directories(2XD2_Engine_Renderer
+        PRIVATE
+        ${CMAKE_CURRENT_SOURCE_DIR}/lib
+)
+
+target_link_libraries(2XD2_Engine_Renderer
+        PRIVATE
+        sfml-graphics sfml-window sfml-system
+
+)
