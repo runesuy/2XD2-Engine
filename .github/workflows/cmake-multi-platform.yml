@@ -48,7 +48,19 @@ jobs:
     - uses: actions/checkout@v4
 
     - name: Install SFML
+      if: runner.os == 'Linux' # Only run this step if the runner is Linux
       run: sudo apt-get install libsfml-dev
+
+    - name: Install SFML on Windows (using vcpkg)
+      if: runner.os == 'Windows' # Only run this step if the runner is Windows
+      # Note: Installing libraries on Windows often involves a package manager like vcpkg
+      # or downloading pre-built binaries and setting up environment variables.
+      # This example uses vcpkg, which is often pre-installed on GitHub Windows runners.
+      run: |
+        vcpkg install sfml --triplet x64-windows
+        # Optionally, set environment variables if needed by CMake
+        # echo "SFML_DIR=$env:VCPKG_ROOT\installed\x64-windows\share\sfml" | Out-File -FilePath $env:GITHUB_ENV -Append
+      shell: pwsh # Use PowerShell for Windows commands
 
     - name: Set reusable strings
       # Turn repeated input strings (such as the build output directory) into step outputs. These step outputs can be used throughout the workflow file.
