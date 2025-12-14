@@ -14,22 +14,32 @@ namespace e2XD::core {
     }
 
     void Node::create() {
-        onCreate();
         for (const auto & node : nodes) {
             node->create();
         }
+        onCreate();
     }
 
     void Node::render() {
-        onRender();
         for (const auto & node : nodes) {
             node->render();
         }
+        onRender();
     }
 
     void Node::update() {
         removeDestroyedSubNodes();
+        for (const auto & node : nodes) {
+            node->update();
+        }
         onUpdate();
+    }
+
+    void Node::draw() {
+        for (const auto & node : nodes) {
+            node->draw();
+        }
+        onDraw();
     }
 
     void Node::removeDestroyedSubNodes() {

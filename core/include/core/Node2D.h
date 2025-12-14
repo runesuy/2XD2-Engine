@@ -11,7 +11,7 @@ namespace e2XD::core {
     class Node2D : public Node {
         Vec2 position;
     public:
-        Node2D();
+        Node2D()=default;
 
         explicit Node2D(Vec2 position);
 

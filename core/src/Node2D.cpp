@@ -6,7 +6,6 @@
 
 namespace e2XD::core {
     Node2D::Node2D(const Vec2 position) : position(position) {}
-    Node2D::Node2D() : position(){}
 
     const Vec2 &Node2D::getPosition() const {
         return position;

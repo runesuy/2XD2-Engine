@@ -29,6 +29,8 @@ namespace e2XD::core {
 
         virtual void onDestroy(){};
 
+        virtual void onDraw(){};
+
     public:
         friend class CORE_Node;
 
@@ -44,17 +46,20 @@ namespace e2XD::core {
 
         void destroy();
 
+        void draw();
+
         template <IsNode EntityType>
-        void createSubNode();
+        Node* createSubNode();
 
         void addSubNode(std::unique_ptr<Node> node);
     };
 
     template<IsNode EntityType>
-    void Node::createSubNode() {
+    Node* Node::createSubNode() {
         auto node = std::make_unique<EntityType>();
-        node->create();
-        nodes.push_back(std::move(node));
+        auto ptr = node.get();
+        addSubNode(std::move(node));
+        return ptr;
     }
 
     inline void Node::addSubNode(std::unique_ptr<Node> node) {

@@ -9,19 +9,22 @@ namespace e2XD::core {
     class MockNode : public Node {
     public:
         MOCK_METHOD(void, onCreate, (), (override));
+        MOCK_METHOD(void, onDestroy, (), (override));
+        MOCK_METHOD(void, onUpdate, (), (override));
+        MOCK_METHOD(void, onDraw, (), (override));
     };
 
 
     class CORE_Node : public ::testing::Test {
     protected:
         Node node;
-        auto getNodesSize() const {return node.nodes.size();}
+        [[nodiscard]] auto getNodesSize() const {return node.nodes.size();}
 
-        const auto& getNodes() const {return node.nodes;}
+        [[nodiscard]] const auto& getNodes() const {return node.nodes;}
 
         void setMarkedForDeletion(bool mark) {node.markedForDeletion = mark;}
 
-        void setMarkedForDeletion(Node& n, bool mark) {n.markedForDeletion = mark;}
+        static void setMarkedForDeletion(Node& n, bool mark) {n.markedForDeletion = mark;}
 
         void removeDestroyedSubNodes() {node.removeDestroyedSubNodes();}
     };
@@ -33,6 +36,8 @@ namespace e2XD::core {
 
     TEST_F(CORE_Node, addSubNode) {
         auto mockNode = std::make_unique<testing::NiceMock<MockNode>>();
+        auto* rawPtr = mockNode.get();
+        EXPECT_CALL(*rawPtr,onCreate()).Times(1);
         node.addSubNode(std::move(mockNode));
         ASSERT_EQ(getNodesSize(), 1);
     }
@@ -53,5 +58,36 @@ namespace e2XD::core {
         ASSERT_EQ(getNodesSize(), 1);
     }
 
+    TEST_F(CORE_Node, destroyCallsOnDestroy) {
+        auto mockNode = std::make_unique<testing::NiceMock<MockNode>>();
+        auto* rawPtr = mockNode.get();
+        node.addSubNode(std::move(mockNode));
+        EXPECT_CALL(*rawPtr, onDestroy()).Times(1);
+        node.destroy();
+    }
+
+    TEST_F(CORE_Node, createCallsOnCreate) {
+        auto mockNode = std::make_unique<testing::NiceMock<MockNode>>();
+        auto * rawPtr = mockNode.get();
+        node.addSubNode(std::move(mockNode));
+        EXPECT_CALL(*rawPtr, onCreate()).Times(1);
+        node.create();
+    }
+
+    TEST_F(CORE_Node, updateCallsOnUpdate) {
+        auto mockNode = std::make_unique<testing::NiceMock<MockNode>>();
+        auto* rawPtr = mockNode.get();
+        node.addSubNode(std::move(mockNode));
+        EXPECT_CALL(*rawPtr, onUpdate()).Times(1);
+        node.update();
+    }
+
+    TEST_F(CORE_Node, drawCallsOnDraw) {
+        auto mockNode = std::make_unique<testing::NiceMock<MockNode>>();
+        auto* rawPtr = mockNode.get();
+        node.addSubNode(std::move(mockNode));
+        EXPECT_CALL(*rawPtr, onDraw()).Times(1);
+        node.draw();
+    }
 
 }
