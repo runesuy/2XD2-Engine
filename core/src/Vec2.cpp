@@ -6,6 +6,7 @@
 #include <cmath>
 
 namespace e2XD::core {
+    Vec2::Vec2() : x(0.0), y(0.0) {}
     Vec2::Vec2(const double x, const double y) : x(x), y(y) {}
 
     double Vec2::length() const {
@@ -50,5 +51,9 @@ namespace e2XD::core {
         x /= scalar;
         y /= scalar;
         return *this;
+    }
+
+    double Vec2::dot(const Vec2 &vector) const {
+        return x * vector.x + y * vector.y;
     }
 } // e2XD
