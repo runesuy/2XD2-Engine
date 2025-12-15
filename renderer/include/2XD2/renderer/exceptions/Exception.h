@@ -2,8 +2,8 @@
 // Created by runes on 15/12/2025.
 //
 
-#ifndef INC_2XD2_ENGINE_EXCEPTION_H
-#define INC_2XD2_ENGINE_EXCEPTION_H
+#ifndef INC_2XD2_ENGINE_R_EXCEPTION_H
+#define INC_2XD2_ENGINE_R_EXCEPTION_H
 
 #include <iostream>
 #include <ostream>
@@ -27,4 +27,4 @@ public:
     }
 };
 
-#endif //INC_2XD2_ENGINE_EXCEPTION_H
+#endif //INC_2XD2_ENGINE_R_EXCEPTION_H

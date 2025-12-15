@@ -26,6 +26,7 @@ namespace e2XD::framework
         std::unordered_map<MouseButton, bool> mouseReleasedMap;
 
         std::tuple<bool, unsigned int, unsigned int> windowResized = {false, 0, 0};
+        bool windowClosed = false;
 
         core::Vec2 mousePosition;
 
@@ -56,6 +57,9 @@ namespace e2XD::framework
          * @return (<isResized>, <newWindowWidth>, <newWindowHeight>)
          */
         std::tuple<bool, float, float> isWindowResized() const override;
+
+        void initialize(sf::RenderWindow* window);
+        [[nodiscard]] bool isWindowClosed() const override;
     };
 } // core
 

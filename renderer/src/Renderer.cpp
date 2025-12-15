@@ -4,7 +4,7 @@
 
 #include "2XD2/renderer/Renderer.h"
 
-#include "2XD2/renderer/exceptions/RendererNotInitializedException.h"
+#include "2XD2/renderer/exceptions/NotInitializedException.h"
 
 namespace e2XD::renderer {
     void Renderer::initialize(sf::RenderWindow *window) {
@@ -13,7 +13,7 @@ namespace e2XD::renderer {
 
     void Renderer::draw(sf::Shape &shape, const sf::Vector2f &cameraPos, float cameraZoom) const {
         if (!window) {
-            throw RendererNotInitializedException("Renderer::draw(Shape)");
+            throw NotInitializedException("Renderer::draw(Shape)");
         }
 
         shape.setPosition((shape.getPosition() - cameraPos) * cameraZoom);
@@ -24,7 +24,7 @@ namespace e2XD::renderer {
 
     void Renderer::draw(sf::Sprite &sprite, const sf::Vector2f &cameraPos, float cameraZoom) const {
         if (!window) {
-            throw RendererNotInitializedException("Renderer::draw(Shape)");
+            throw NotInitializedException("Renderer::draw(Shape)");
         }
 
         sprite.setPosition((sprite.getPosition() - cameraPos) * cameraZoom);
@@ -35,7 +35,7 @@ namespace e2XD::renderer {
 
     void Renderer::draw(sf::Text &text, const sf::Vector2f &cameraPos, float cameraZoom) const {
         if (!window) {
-            throw RendererNotInitializedException("Renderer::draw(Shape)");
+            throw NotInitializedException("Renderer::draw(Shape)");
         }
 
         text.setPosition((text.getPosition() - cameraPos) * cameraZoom);

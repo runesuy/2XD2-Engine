@@ -7,9 +7,10 @@
 
 
 namespace e2XD::framework {
-
     void Game::run() {
         running = true;
+
+        SFMLInputHandler::getInstance()->initialize(&window);
 
         while (running && window.isOpen()) {
             // Poll events
@@ -20,6 +21,8 @@ namespace e2XD::framework {
                 sf::FloatRect visibleArea(0, 0, std::get<1>(resized), std::get<2>(resized));
                 window.setView(sf::View(visibleArea));
             }
+
+            if (SFMLInputHandler::getInstance()->isWindowClosed()) window.close();
 
             if (activeScene) {
                 activeScene->update();

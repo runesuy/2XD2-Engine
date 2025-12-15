@@ -7,6 +7,7 @@
 #include <SFML/Window/Event.hpp>
 
 #include "2XD2/framework/SFMLToInputMap.h"
+#include "2XD2/framework/exceptions/NotInitializedException.h"
 
 namespace e2XD::framework
 {
@@ -28,6 +29,9 @@ namespace e2XD::framework
         keyboardPressedMap.clear();
         keyboardReleasedMap.clear();
         windowResized = {false,0,0};
+        windowClosed = false;
+
+        if (!window) throw e2DX::framework::NotInitializedException("SFMLInputHandler", "void SFMLInputHandler::pollEvents()");
 
         const auto posM = sf::Mouse::getPosition();
         mousePosition = core::Vec2(posM.x, posM.y);
@@ -56,6 +60,10 @@ namespace e2XD::framework
             mouseReleasedMap[input::mouseButtonMap[event.mouseButton.button]] = true;
         case sf::Event::Resized:
             windowResized = {true, event.size.width,event.size.height};
+            break;
+        case sf::Event::Closed:
+            windowClosed = true;
+            break;
         default: break;
         }
     }
@@ -92,6 +100,16 @@ namespace e2XD::framework
     {
         if (mouseReleasedMap.contains(buttonCode)) return mouseReleasedMap.at(buttonCode);
         return false;
+    }
+
+    void SFMLInputHandler::initialize(sf::RenderWindow* window)
+    {
+        this->window = window;
+    }
+
+    bool SFMLInputHandler::isWindowClosed() const
+    {
+        return windowClosed;
     }
 
 

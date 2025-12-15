@@ -19,6 +19,7 @@ namespace e2XD::framework {
         inline static bool running = false;
 
     public:
+        Game()=default;
         void run();
     };
 

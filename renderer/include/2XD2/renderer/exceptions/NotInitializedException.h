@@ -7,9 +7,9 @@
 
 #include "Exception.h"
 
-class RendererNotInitializedException : public Exception {
+class NotInitializedException : public Exception {
 public:
-    RendererNotInitializedException(const char* where)
+    NotInitializedException(const char* where)
         : Exception("Renderer has not been initialized.", where) {}
 };
 

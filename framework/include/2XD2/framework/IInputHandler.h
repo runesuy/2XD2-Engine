@@ -30,6 +30,8 @@ namespace e2XD::framework {
             [[nodiscard]] virtual core::Vec2 getMousePosition() const = 0;
 
             [[nodiscard]] virtual std::tuple<bool, float, float> isWindowResized() const = 0;
+
+            [[nodiscard]] virtual bool isWindowClosed() const = 0;
         };
     } // framework
 // e2XD
