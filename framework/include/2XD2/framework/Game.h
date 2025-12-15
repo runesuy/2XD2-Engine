@@ -19,7 +19,7 @@ namespace e2XD::framework {
         inline static bool running = false;
 
     public:
-        void run() const;
+        void run();
     };
 
 }
