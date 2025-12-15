@@ -9,6 +9,11 @@
 #include "Node.h"
 
 namespace e2XD::core {
+
+    class Scene;
+    template <typename T>
+    concept IsScene = std::is_base_of_v<Scene, T>;
+
     class Scene: public Node {
         const Camera* activeCamera = nullptr;
     public:

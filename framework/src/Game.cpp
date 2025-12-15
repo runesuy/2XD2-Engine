@@ -4,12 +4,14 @@
 
 #include "2XD2/framework/Game.h"
 #include "2XD2/framework/SFMLInputHandler.h"
+#include "2XD2/renderer/Renderer.h"
 
 
 namespace e2XD::framework {
     void Game::run() {
         running = true;
 
+        renderer::Renderer::getInstance()->initialize(&window);
         SFMLInputHandler::getInstance()->initialize(&window);
 
         while (running && window.isOpen()) {
@@ -26,8 +28,22 @@ namespace e2XD::framework {
 
             if (activeScene) {
                 activeScene->update();
+                renderer::Renderer::getInstance()->clearWindow();
                 activeScene->draw();
             }
+            window.display();
         }
     }
+
+    void Game::setWindowTitle(const std::string& title)
+    {
+        window.setTitle(title);
+    }
+
+    void Game::setActiveScene(std::unique_ptr<core::Scene>&& scene)
+    {
+        activeScene = std::move(scene);
+        activeScene->create();
+    }
+
 }

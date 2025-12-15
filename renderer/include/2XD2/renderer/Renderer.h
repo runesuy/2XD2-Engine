@@ -13,14 +13,32 @@ namespace e2XD::renderer {
 
     class Renderer {
         sf::RenderWindow* window = nullptr;
+
+        inline static Renderer* _instance = nullptr;
+
+        Renderer()=default;
+
+        sf::Color backgroundColor = sf::Color::Black;
     public:
+        Renderer(const Renderer&) = delete;
+        Renderer(Renderer&&) = delete;
+        virtual ~Renderer()=default;
+        Renderer& operator=(const Renderer&) = delete;
+        Renderer& operator=(Renderer&&) = delete;
+
         void initialize(sf::RenderWindow* window);
+
+        static Renderer* getInstance();
+
+        void clearWindow() const;
 
         void draw(sf::Sprite& sprite, const sf::Vector2f& cameraPos, float cameraZoom) const;
 
         void draw(sf::Text& text, const sf::Vector2f& cameraPos, float cameraZoom) const;
 
         void draw(sf::Shape& shape, const sf::Vector2f& cameraPos, float cameraZoom) const;
+
+        void setBackgroundColor(const sf::Color& color);
 
     };
 }
