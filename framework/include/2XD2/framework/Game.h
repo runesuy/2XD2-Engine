@@ -8,7 +8,7 @@
 
 #include "2XD2/renderer/Renderer.h"
 #include "2XD2/core/Scene.h"
-#include "sfml/Graphics.hpp"
+#include <SFML/Graphics.hpp>
 
 namespace e2XD::framework {
     class Game {
