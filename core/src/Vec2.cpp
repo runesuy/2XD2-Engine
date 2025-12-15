@@ -2,7 +2,7 @@
 // Created by runes on 14/12/2025.
 //
 
-#include "core/Vec2.h"
+#include "2XD2/core/Vec2.h"
 #include <cmath>
 
 namespace e2XD::core {
@@ -55,5 +55,13 @@ namespace e2XD::core {
 
     double Vec2::dot(const Vec2 &vector) const {
         return x * vector.x + y * vector.y;
+    }
+
+    Vec2 Vec2::operator/(const Vec2 &vector) const {
+        return {x / vector.x, y / vector.y};
+    }
+
+    Vec2 Vec2::operator*(const Vec2 &vector) const {
+        return {x * vector.x, y * vector.y};
     }
 } // e2XD

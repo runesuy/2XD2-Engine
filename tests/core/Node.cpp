@@ -2,7 +2,7 @@
 // Created by runes on 14/12/2025.
 //
 
-#include "core/Node.h"
+#include "2XD2/core/Node.h"
 #include <gtest/gtest.h>
 #include <gmock/gmock.h>
 namespace e2XD::core {

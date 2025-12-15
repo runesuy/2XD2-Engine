@@ -2,7 +2,7 @@
 // Created by runes on 14/12/2025.
 //
 
-#include "core/Vec2.h"
+#include "2XD2/core/Vec2.h"
 
 #include <gtest/gtest.h>
 

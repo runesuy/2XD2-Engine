@@ -19,7 +19,6 @@ target_include_directories(2XD2_Engine_Renderer
 )
 
 target_link_libraries(2XD2_Engine_Renderer
-        PRIVATE
+        PUBLIC
         sfml-graphics sfml-window sfml-system
-
 )

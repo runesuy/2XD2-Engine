@@ -2,7 +2,7 @@
 // Created by runes on 14/12/2025.
 //
 
-#include "../include/core/Node.h"
+#include "2XD2/core/Node.h"
 
 namespace e2XD::core {
     void Node::destroy() {

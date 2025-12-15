@@ -33,6 +33,7 @@ namespace e2XD::core {
 
     public:
         friend class CORE_Node;
+        friend class Node2D;
 
         Node()=default;
 

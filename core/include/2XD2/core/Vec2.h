@@ -41,6 +41,10 @@ namespace e2XD::core {
         Vec2 operator/(double scalar) const;
         // TEST: Core_Vec2.ScalarDivision
 
+        Vec2 operator/(const Vec2 &vector) const;
+
+        Vec2 operator*(const Vec2 &vector) const;
+
         bool operator==(const Vec2 &) const = default;
 
         Vec2 &operator+=(const Vec2 &vector);

@@ -1,0 +1,31 @@
+//
+// Created by runes on 14/12/2025.
+//
+
+#include "2XD2/core/Transform2D.h"
+
+namespace e2XD::core {
+    const Vec2 &Transform2D::getPosition() const {
+        return position;
+    }
+
+    void Transform2D::setPosition(const Vec2 &position) {
+        this->position = position;
+    }
+
+    double Transform2D::getRotation() const {
+        return rotation;
+    }
+
+    void Transform2D::setRotation(double rotation) {
+        this->rotation = rotation;
+    }
+
+    const Vec2 &Transform2D::getScale() const {
+        return scale;
+    }
+
+    void Transform2D::setScale(const Vec2 &scale) {
+        this->scale = scale;
+    }
+} // core
