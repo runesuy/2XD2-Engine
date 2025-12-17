@@ -3,6 +3,8 @@
 //
 
 #include "2XD2/framework/Game.h"
+
+#include "2XD2/core/Time.h"
 #include "2XD2/framework/SFMLInputHandler.h"
 #include "2XD2/renderer/Renderer.h"
 
@@ -17,6 +19,7 @@ namespace e2XD::framework {
         inputHandler->initialize(&window);
 
         while (running && window.isOpen()) {
+            core::Time::tick();
             // Poll events
             SFMLInputHandler::getInstance()->pollEvents();
             if (const auto& resized = SFMLInputHandler::getInstance()->isWindowResized(); std::get<0>(resized))
