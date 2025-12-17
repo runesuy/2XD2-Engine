@@ -48,16 +48,17 @@ namespace e2XD::framework
         switch (event.type)
         {
         case sf::Event::KeyPressed:
-            keyboardPressedMap[input::keyboardMap[event.key.code]] = true;
+            addKeyFromSFMLKeyCode(event.key.code, keyboardPressedMap);
             break;
         case sf::Event::KeyReleased:
-            keyboardReleasedMap[input::keyboardMap[event.key.code]] = true;
+            addKeyFromSFMLKeyCode(event.key.code, keyboardReleasedMap);
             break;
         case sf::Event::MouseButtonPressed:
-            mousePressedMap[input::mouseButtonMap[event.mouseButton.button]] = true;
+            addMouseButtonFromSFMLButtonCode(event.mouseButton.button, mousePressedMap);
             break;
         case sf::Event::MouseButtonReleased:
-            mouseReleasedMap[input::mouseButtonMap[event.mouseButton.button]] = true;
+            addMouseButtonFromSFMLButtonCode(event.mouseButton.button, mouseReleasedMap);
+            break;
         case sf::Event::Resized:
             windowResized = {true, event.size.width,event.size.height};
             break;
@@ -110,6 +111,22 @@ namespace e2XD::framework
     bool SFMLInputHandler::isWindowClosed() const
     {
         return windowClosed;
+    }
+
+    void SFMLInputHandler::addKeyFromSFMLKeyCode(const sf::Keyboard::Key sfmlKeyCode, keyboardMapType& keyboardMap)
+    {
+        if (input::keyboardMap.contains(sfmlKeyCode))
+        {
+            keyboardMap[input::keyboardMap.at(sfmlKeyCode)] = true;
+        }
+    }
+
+    void SFMLInputHandler::addMouseButtonFromSFMLButtonCode(const sf::Mouse::Button sfmlButtonCode, mouseButtonMapType& mouseButtonMap)
+    {
+        if (input::mouseButtonMap.contains(sfmlButtonCode))
+        {
+            mouseButtonMap[input::mouseButtonMap.at(sfmlButtonCode)] = true;
+        }
     }
 
 

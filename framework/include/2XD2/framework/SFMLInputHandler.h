@@ -5,6 +5,8 @@
 #ifndef INC_2XD2_ENGINE_INPUTMANAGER_H
 #define INC_2XD2_ENGINE_INPUTMANAGER_H
 #include <unordered_map>
+#include <SFML/Window/Keyboard.hpp>
+#include <SFML/Window/Mouse.hpp>
 
 #include "IInputHandler.h"
 #include "2XD2/core/Vec2.h"
@@ -19,11 +21,12 @@ namespace e2XD::framework
         inline static SFMLInputHandler* _instance = nullptr;
 
         sf::RenderWindow* window = nullptr;
-
-        std::unordered_map<Key, bool> keyboardPressedMap;
-        std::unordered_map<Key, bool> keyboardReleasedMap;
-        std::unordered_map<MouseButton, bool> mousePressedMap;
-        std::unordered_map<MouseButton, bool> mouseReleasedMap;
+        using keyboardMapType =  std::unordered_map<Key, bool>;
+        using mouseButtonMapType = std::unordered_map<MouseButton, bool>;
+        keyboardMapType keyboardPressedMap;
+        keyboardMapType keyboardReleasedMap;
+        mouseButtonMapType mousePressedMap;
+        mouseButtonMapType mouseReleasedMap;
 
         std::tuple<bool, unsigned int, unsigned int> windowResized = {false, 0, 0};
         bool windowClosed = false;
@@ -33,6 +36,10 @@ namespace e2XD::framework
         SFMLInputHandler() = default;
 
         void handleEvent(const sf::Event& event);
+
+        static void addKeyFromSFMLKeyCode(sf::Keyboard::Key sfmlKeyCode, keyboardMapType& keyboardMap);
+
+        static void addMouseButtonFromSFMLButtonCode(sf::Mouse::Button sfmlButtonCode, mouseButtonMapType& mouseButtonMap);
 
     public:
         SFMLInputHandler(const SFMLInputHandler&) = delete;
