@@ -8,10 +8,14 @@
 
     namespace e2XD::core {
         class Camera : public Node2D {
-            double zoom=1;
+            float zoom=1;
         public:
             Camera()=default;
             ~Camera() override=default;
+
+            [[nodiscard]] float getZoom() const;
+
+            void setZoom(float newZoom);
         };
     } // core
 // e2XD

@@ -50,13 +50,13 @@ namespace e2XD::core {
         void draw();
 
         template <IsNode EntityType>
-        Node* createSubNode();
+        EntityType* createSubNode();
 
         void addSubNode(std::unique_ptr<Node> node);
     };
 
     template<IsNode EntityType>
-    Node* Node::createSubNode() {
+    EntityType* Node::createSubNode() {
         auto node = std::make_unique<EntityType>();
         auto ptr = node.get();
         addSubNode(std::move(node));

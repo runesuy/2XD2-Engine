@@ -13,6 +13,8 @@ namespace e2XD::renderer {
 
     class Renderer {
         sf::RenderWindow* window = nullptr;
+        sf::Vector2f cameraPos;
+        float cameraZoom = 1.0f;
 
         inline static Renderer* _instance = nullptr;
 
@@ -32,13 +34,15 @@ namespace e2XD::renderer {
 
         void clearWindow() const;
 
-        void draw(sf::Sprite& sprite, const sf::Vector2f& cameraPos, float cameraZoom) const;
+        void draw(const sf::Drawable& drawable, const sf::Vector2f &position, const sf::Vector2f& cameraPos, float cameraZoom) const;
 
-        void draw(sf::Text& text, const sf::Vector2f& cameraPos, float cameraZoom) const;
-
-        void draw(sf::Shape& shape, const sf::Vector2f& cameraPos, float cameraZoom) const;
+        void draw(const sf::Drawable& drawable, const sf::Vector2f &position) const;
 
         void setBackgroundColor(const sf::Color& color);
+
+        void setCameraPos(const sf::Vector2f& newCameraPos);
+
+        void setCameraZoom(float newCameraZoom);
 
     };
 }

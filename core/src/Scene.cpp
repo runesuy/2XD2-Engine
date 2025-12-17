@@ -4,5 +4,16 @@
 
 #include "2XD2/core/Scene.h"
 
-namespace e2XD {
+namespace e2XD::core {
+    const Camera* Scene::getActiveCamera() const
+    {
+        return activeCamera;
+    }
+
+    void Scene::setActiveCamera(const Camera* camera)
+    {
+        activeCamera = camera;
+    }
+
+
 } // e2XD

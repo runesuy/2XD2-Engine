@@ -7,8 +7,8 @@
 
 namespace e2XD::core {
     struct Vec2 {
-        double x;
-        double y;
+        float x;
+        float y;
 
         /**
          * Defaults to (0,0)

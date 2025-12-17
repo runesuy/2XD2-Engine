@@ -13,53 +13,29 @@ namespace e2XD::renderer
         this->window = window;
     }
 
-    void Renderer::draw(sf::Shape& shape, const sf::Vector2f& cameraPos, float cameraZoom) const
+    void Renderer::draw(const sf::Drawable& drawable, const sf::Vector2f &position, const sf::Vector2f& cameraPos, float cameraZoom) const
     {
         if (!window)
         {
             throw NotInitializedException("Renderer::draw(Shape)");
         }
 
-        auto newPos = (shape.getPosition() - cameraPos) * cameraZoom + sf::Vector2f{
+        auto newPos = (position - cameraPos) * cameraZoom + sf::Vector2f{
             static_cast<float>(window->getSize().x) / 2, static_cast<float>(window->getSize().y) / 2
         };
-        shape.setPosition(newPos);
-        shape.setScale(cameraZoom, cameraZoom);
+
+        sf::Transform transform;
+        // Chain the transformations
+        transform.translate(newPos) // 3. Move to world position
+                 .rotate(1)    // 2. Rotate around the origin
+                 .scale(cameraZoom, cameraZoom);       // 1. Scale the local coordinates
+
+        sf::RenderStates states;
+        states.transform = transform;
         // Render the shape here using your rendering context*
-        window->draw(shape);
+        window->draw(drawable, transform);
     }
 
-    void Renderer::draw(sf::Sprite& sprite, const sf::Vector2f& cameraPos, float cameraZoom) const
-    {
-        if (!window)
-        {
-            throw NotInitializedException("Renderer::draw(Shape)");
-        }
-
-        auto newPos = (sprite.getPosition() - cameraPos) * cameraZoom + sf::Vector2f{
-            static_cast<float>(window->getSize().x) / 2, static_cast<float>(window->getSize().y) / 2
-        };
-        sprite.setPosition(newPos);
-        sprite.setScale(cameraZoom, cameraZoom);
-        // Render the shape here using your rendering context*
-        window->draw(sprite);
-    }
-
-    void Renderer::draw(sf::Text& text, const sf::Vector2f& cameraPos, float cameraZoom) const
-    {
-        if (!window)
-        {
-            throw NotInitializedException("Renderer::draw(Shape)");
-        }
-
-        auto newPos = (text.getPosition() - cameraPos) * cameraZoom + sf::Vector2f{
-            static_cast<float>(window->getSize().x) / 2, static_cast<float>(window->getSize().y) / 2
-        };
-        text.setPosition(newPos);
-        text.setScale(cameraZoom, cameraZoom);
-        // Render the shape here using your rendering context*
-        window->draw(text);
-    }
 
     void Renderer::setBackgroundColor(const sf::Color& color)
     {
@@ -80,4 +56,22 @@ namespace e2XD::renderer
     {
         window->clear(backgroundColor);
     }
+
+    void Renderer::setCameraPos(const sf::Vector2f& newCameraPos)
+    {
+        cameraPos = newCameraPos;
+    }
+
+    void Renderer::setCameraZoom(float newCameraZoom)
+    {
+        cameraZoom = newCameraZoom;
+    }
+
+
+    void Renderer::draw(const sf::Drawable& drawable, const sf::Vector2f& position) const
+    {
+        draw(drawable, position, cameraPos, cameraZoom);
+    }
+
+
 } // e2XD
