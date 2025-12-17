@@ -7,12 +7,12 @@
 
 #include "Exception.h"
 
-namespace e2DX::framework
+namespace e2XD::framework
 {
     class NotInitializedException : public Exception {
     public:
-        NotInitializedException(const char* whatIsNotInitialized, const char* where)
-            : Exception((std::string(whatIsNotInitialized) + " has not been initialized.").c_str(), where) {}
+        NotInitializedException(const std::string& whatIsNotInitialized, const std::string& where)
+            : Exception(whatIsNotInitialized + " has not been initialized.", where) {}
     };
 }
 

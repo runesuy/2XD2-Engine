@@ -11,19 +11,19 @@
 #include "exception"
 
 class Exception : public std::exception {
-    const char* msg;
-    const char* where;
+    const std::string msg;
+    const std::string where;
 public:
-    explicit Exception(const char* message, const char* where) : msg(message), where(where) {
+    explicit Exception(std::string message, std::string where) : msg(std::move(message)), where(std::move(where)) {
         std::cerr << "Exception occurred in " << where << std::endl;
     }
 
     [[nodiscard]] const char* what() const noexcept override {
-        return msg;
+        return msg.c_str();
     }
 
     [[nodiscard]] const char* whereOccurred() const noexcept {
-        return where;
+        return where.c_str();
     }
 };
 

@@ -31,7 +31,7 @@ namespace e2XD::framework
         windowResized = {false,0,0};
         windowClosed = false;
 
-        if (!window) throw e2DX::framework::NotInitializedException("SFMLInputHandler", "void SFMLInputHandler::pollEvents()");
+        if (!window) throw NotInitializedException("SFMLInputHandler", "void SFMLInputHandler::pollEvents()");
 
         const auto posM = sf::Mouse::getPosition();
         mousePosition = core::Vec2(posM.x, posM.y);

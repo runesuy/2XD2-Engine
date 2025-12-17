@@ -15,7 +15,7 @@ find_package(SFML 2.6 COMPONENTS system window graphics REQUIRED)
 
 target_include_directories(2XD2_Engine_Renderer
         PRIVATE
-        ${CMAKE_CURRENT_SOURCE_DIR}/lib
+        ../framework/lib
 )
 
 target_link_libraries(2XD2_Engine_Renderer

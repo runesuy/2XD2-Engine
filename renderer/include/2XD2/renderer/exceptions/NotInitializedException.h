@@ -9,8 +9,8 @@
 
 class NotInitializedException : public Exception {
 public:
-    NotInitializedException(const char* where)
-        : Exception("Renderer has not been initialized.", where) {}
+    explicit NotInitializedException(std::string where)
+        : Exception("Renderer has not been initialized.", std::move(where)) {}
 };
 
 #endif //INC_2XD2_ENGINE_RENDERERNOTINITIALIZEDEXCEPTION_H
