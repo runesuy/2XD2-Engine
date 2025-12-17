@@ -24,7 +24,7 @@ namespace e2XD::framework
     {
         const auto& position = getGlobalPosition();
         _sprite.setOrigin(_sprite.getGlobalBounds().width / 2, _sprite.getGlobalBounds().height / 2);
-        renderer::Renderer::getInstance()->draw(_sprite,{position.x, position.y}, {0,0},1);
+        renderer::Renderer::getInstance()->draw(_sprite,{position.x, position.y});
     }
 } // framework
 // e2XD

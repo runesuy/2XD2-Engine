@@ -29,7 +29,7 @@ namespace e2XD::renderer
         sf::Transform transform;
         // Chain the transformations
         transform.translate(newPos) // 3. Move to world position
-                 .rotate(1)    // 2. Rotate around the origin
+                 .rotate(0)    // 2. Rotate around the origin
                  .scale(cameraZoom, cameraZoom);       // 1. Scale the local coordinates
 
         sf::RenderStates states;
