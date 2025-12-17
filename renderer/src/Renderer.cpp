@@ -20,7 +20,9 @@ namespace e2XD::renderer
             throw NotInitializedException("Renderer::draw(Shape)");
         }
 
-        auto newPos = (position - cameraPos) * cameraZoom + sf::Vector2f{
+        sf::Vector2f transformedPos = {position.x, -position.y};
+        sf::Vector2f transformedCameraPos = {cameraPos.x, -cameraPos.y};
+        auto newPos = (transformedPos -transformedCameraPos) * cameraZoom + sf::Vector2f{
             static_cast<float>(window->getSize().x) / 2, static_cast<float>(window->getSize().y) / 2
         };
 
