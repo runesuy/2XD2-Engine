@@ -10,9 +10,11 @@
 namespace e2XD::framework {
     void Game::run() {
         running = true;
+        window.setKeyRepeatEnabled(false);
 
         renderer::Renderer::getInstance()->initialize(&window);
-        SFMLInputHandler::getInstance()->initialize(&window);
+        const auto inputHandler = SFMLInputHandler::getInstance();
+        inputHandler->initialize(&window);
 
         while (running && window.isOpen()) {
             // Poll events
@@ -42,6 +44,7 @@ namespace e2XD::framework {
                 activeScene->draw();
             }
             window.display();
+            inputHandler->newFrame();
         }
     }
 

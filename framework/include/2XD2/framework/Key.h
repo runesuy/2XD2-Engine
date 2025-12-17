@@ -6,6 +6,7 @@
 #define INC_2XD2_ENGINE_INPUTEVENT_H
 
 enum class Key {
+    NONE,
     A,
     B,
     C,

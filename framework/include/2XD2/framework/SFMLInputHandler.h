@@ -21,12 +21,12 @@ namespace e2XD::framework
         inline static SFMLInputHandler* _instance = nullptr;
 
         sf::RenderWindow* window = nullptr;
-        using keyboardMapType =  std::unordered_map<Key, bool>;
+        using keyboardMapType = std::unordered_map<Key, bool>;
         using mouseButtonMapType = std::unordered_map<MouseButton, bool>;
-        keyboardMapType keyboardPressedMap;
-        keyboardMapType keyboardReleasedMap;
-        mouseButtonMapType mousePressedMap;
-        mouseButtonMapType mouseReleasedMap;
+        keyboardMapType last_frame_keyboardState;
+        keyboardMapType this_frame_keyboardState;
+        mouseButtonMapType this_frame_mouseButtonState;
+        mouseButtonMapType last_frame_mouseButtonState;
 
         std::tuple<bool, unsigned int, unsigned int> windowResized = {false, 0, 0};
         bool windowClosed = false;
@@ -37,9 +37,13 @@ namespace e2XD::framework
 
         void handleEvent(const sf::Event& event);
 
-        static void addKeyFromSFMLKeyCode(sf::Keyboard::Key sfmlKeyCode, keyboardMapType& keyboardMap);
+        void handleKeyPress(sf::Keyboard::Key sfmlKeyCode);
 
-        static void addMouseButtonFromSFMLButtonCode(sf::Mouse::Button sfmlButtonCode, mouseButtonMapType& mouseButtonMap);
+        void handleKeyRelease(sf::Keyboard::Key sfmlKeyCode);
+
+        void handleMouseButtonPress(sf::Mouse::Button sfmlButtonCode);
+
+        void handleMouseButtonRelease(sf::Mouse::Button sfmlButtonCode);
 
     public:
         SFMLInputHandler(const SFMLInputHandler&) = delete;
@@ -52,12 +56,16 @@ namespace e2XD::framework
 
         void pollEvents() override;
 
-        bool isKeyReleased(Key keyCode) const override;
-        bool isMouseButtonPressed(MouseButton buttonCode) const override;
-        core::Vec2 getMousePosition() const override;
-        bool isKeyPressed(Key keyCode) const override;
+        [[nodiscard]]bool isKeyReleased(Key keyCode) const override;
+        [[nodiscard]]bool isMouseButtonPressed(MouseButton buttonCode) const override;
+        [[nodiscard]]core::Vec2 getMousePosition() const override;
+        [[nodiscard]]bool isKeyPressed(Key keyCode) const override;
         [[nodiscard]] bool isMouseButtonReleased(MouseButton buttonCode) const override;
 
+        [[nodiscard]] bool isKeyJustPressed(Key keyCode) const override;
+        [[nodiscard]] bool isKeyJustReleased(Key keyCode) const override;
+        [[nodiscard]] bool isMouseButtonJustPressed(MouseButton buttonCode) const override;
+        [[nodiscard]] bool isMouseButtonJustReleased(MouseButton buttonCode) const override;
 
         /**
          *
@@ -67,6 +75,7 @@ namespace e2XD::framework
 
         void initialize(sf::RenderWindow* window);
         [[nodiscard]] bool isWindowClosed() const override;
+        void newFrame() override;
     };
 } // core
 
