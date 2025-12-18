@@ -20,7 +20,7 @@ namespace e2XD::framework
         _sprite.setTexture(texture);
     }
 
-    void Sprite2D::onDraw()
+    void Sprite2D::_internal_onDraw()
     {
         const auto& position = getGlobalPosition();
         _sprite.setOrigin(_sprite.getGlobalBounds().width / 2, _sprite.getGlobalBounds().height / 2);

@@ -14,19 +14,24 @@
 
 namespace e2XD::framework
 {
-    class Exception : public std::exception {
+    class Exception : public std::exception
+    {
         const std::string msg;
         const std::string where;
+
     public:
-        explicit Exception(std::string  message, std::string where) : msg(std::move(message)), where(std::move(where)) {
+        explicit Exception(std::string message, std::string where) : msg(std::move(message)), where(std::move(where))
+        {
             std::cerr << "Exception occurred in " << where << std::endl;
         }
 
-        [[nodiscard]] const char* what() const noexcept override {
+        [[nodiscard]] const char* what() const noexcept override
+        {
             return msg.c_str();
         }
 
-        [[nodiscard]] const char* whereOccurred() const noexcept {
+        [[nodiscard]] const char* whereOccurred() const noexcept
+        {
             return where.c_str();
         }
     };

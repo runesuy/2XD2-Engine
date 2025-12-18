@@ -5,7 +5,8 @@
 #ifndef INC_2XD2_ENGINE_MOUSEBUTTON_H
 #define INC_2XD2_ENGINE_MOUSEBUTTON_H
 
-enum class MouseButton {
+enum class MouseButton
+{
     NONE,
     LEFT,
     RIGHT,

@@ -15,6 +15,7 @@ namespace e2XD::framework
     class Sprite2D : public core::Node2D
     {
         sf::Sprite _sprite;
+
     public:
         Sprite2D() = default;
         ~Sprite2D() override = default;
@@ -34,7 +35,7 @@ namespace e2XD::framework
         virtual void setTexture(const sf::Texture& texture);
 
     protected:
-        void onDraw() final;
+        void _internal_onDraw() override;
     };
 } // framework
 // e2XD

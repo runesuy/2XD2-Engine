@@ -56,10 +56,10 @@ namespace e2XD::framework
 
         void pollEvents() override;
 
-        [[nodiscard]]bool isKeyReleased(Key keyCode) const override;
-        [[nodiscard]]bool isMouseButtonPressed(MouseButton buttonCode) const override;
-        [[nodiscard]]core::Vec2 getMousePosition() const override;
-        [[nodiscard]]bool isKeyPressed(Key keyCode) const override;
+        [[nodiscard]] bool isKeyReleased(Key keyCode) const override;
+        [[nodiscard]] bool isMouseButtonPressed(MouseButton buttonCode) const override;
+        [[nodiscard]] core::Vec2 getMousePosition() const override;
+        [[nodiscard]] bool isKeyPressed(Key keyCode) const override;
         [[nodiscard]] bool isMouseButtonReleased(MouseButton buttonCode) const override;
 
         [[nodiscard]] bool isKeyJustPressed(Key keyCode) const override;

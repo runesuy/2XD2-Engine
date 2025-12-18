@@ -10,9 +10,11 @@ namespace e2XD::framework
 {
     class FileLoadingFailedException : public Exception
     {
-        public:
-        FileLoadingFailedException(const std::string& filePath, const std::string& where):
-        Exception(("Failed to load file: " + std::string(filePath)).c_str(), where) {}
+    public:
+        FileLoadingFailedException(const std::string& filePath, const std::string& where) :
+            Exception(("Failed to load file: " + std::string(filePath)).c_str(), where)
+        {
+        }
     };
 }
 

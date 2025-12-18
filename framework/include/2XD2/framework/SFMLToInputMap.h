@@ -44,8 +44,5 @@ namespace e2XD::framework::input
         {sf::Mouse::Left, MouseButton::LEFT},
         {sf::Mouse::Right, MouseButton::RIGHT}
     };
-
-
-
 }
 #endif //INC_2XD2_ENGINE_SFMLTOINPUTMAP_H

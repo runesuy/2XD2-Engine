@@ -5,7 +5,8 @@
 #ifndef INC_2XD2_ENGINE_INPUTEVENT_H
 #define INC_2XD2_ENGINE_INPUTEVENT_H
 
-enum class Key {
+enum class Key
+{
     NONE,
     A,
     B,

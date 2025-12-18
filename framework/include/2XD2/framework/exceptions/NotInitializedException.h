@@ -9,10 +9,13 @@
 
 namespace e2XD::framework
 {
-    class NotInitializedException : public Exception {
+    class NotInitializedException : public Exception
+    {
     public:
         NotInitializedException(const std::string& whatIsNotInitialized, const std::string& where)
-            : Exception(whatIsNotInitialized + " has not been initialized.", where) {}
+            : Exception(whatIsNotInitialized + " has not been initialized.", where)
+        {
+        }
     };
 }
 
