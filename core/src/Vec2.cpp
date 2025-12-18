@@ -6,14 +6,13 @@
 #include <cmath>
 
 namespace e2XD::core {
-    Vec2::Vec2() : x(0.0), y(0.0) {}
-    Vec2::Vec2(const double x, const double y) : x(x), y(y) {}
+    Vec2::Vec2(const float x, const float y) : x(x), y(y) {}
 
-    double Vec2::length() const {
+    float Vec2::length() const {
         return std::sqrt(x * x + y * y);
     }
 
-    Vec2 Vec2::operator*(double scalar) const {
+    Vec2 Vec2::operator*(float scalar) const {
         return {x*scalar, y*scalar};
     }
 
@@ -25,11 +24,11 @@ namespace e2XD::core {
         return {x - vector.x, y - vector.y};
     }
 
-    Vec2 Vec2::operator/(double scalar) const {
+    Vec2 Vec2::operator/(const float scalar) const {
         return {x / scalar, y / scalar};
     }
 
-    Vec2 &Vec2::operator*=(double scalar) {
+    Vec2 &Vec2::operator*=(const float scalar) {
         x *= scalar;
         y *= scalar;
         return *this;
@@ -47,13 +46,13 @@ namespace e2XD::core {
         return *this;
     }
 
-    Vec2 &Vec2::operator/=(double scalar) {
+    Vec2 &Vec2::operator/=(const float scalar) {
         x /= scalar;
         y /= scalar;
         return *this;
     }
 
-    double Vec2::dot(const Vec2 &vector) const {
+    float Vec2::dot(const Vec2 &vector) const {
         return x * vector.x + y * vector.y;
     }
 
@@ -67,7 +66,9 @@ namespace e2XD::core {
 
     void Vec2::normalize()
     {
-        *this/=length();
+        float l = length();
+        if (l== 0) return;
+        *this/=l;
     }
 
 } // e2XD

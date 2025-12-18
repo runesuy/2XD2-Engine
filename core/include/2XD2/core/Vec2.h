@@ -13,7 +13,7 @@ namespace e2XD::core {
         /**
          * Defaults to (0,0)
          */
-        Vec2();
+        Vec2()=default;
         // TEST: Core_Vec2.Constructor_Default
 
         /**
@@ -21,7 +21,7 @@ namespace e2XD::core {
          * @param x
          * @param y
          */
-        Vec2(double x, double y);
+        Vec2(float x, float y);
         // TEST: Core_Vec2.Constructor_Parameterized
 
 
@@ -35,10 +35,10 @@ namespace e2XD::core {
         Vec2 operator-(const Vec2 &vector) const;
         // TEST: Core_Vec2.Subtraction
 
-        Vec2 operator*(double scalar) const;
+        Vec2 operator*(float scalar) const;
         // TEST: Core_Vec2.ScalarMultiplication
 
-        Vec2 operator/(double scalar) const;
+        Vec2 operator/(float scalar) const;
         // TEST: Core_Vec2.ScalarDivision
 
         Vec2 operator/(const Vec2 &vector) const;
@@ -53,16 +53,16 @@ namespace e2XD::core {
         Vec2 &operator-=(const Vec2 &vector);
         // TEST: Core_Vec2.CompoundAssignment
 
-        Vec2 &operator*=(double scalar);
+        Vec2 &operator*=(float scalar);
         // TEST: Core_Vec2.CompoundAssignment
 
-        Vec2 &operator/=(double scalar);
+        Vec2 &operator/=(float scalar);
         // TEST: Core_Vec2.CompoundAssignment
 
-        [[nodiscard]] double dot(const Vec2 &vector) const;
+        [[nodiscard]] float dot(const Vec2 &vector) const;
         // TEST: Core_Vec2.DotProduct
 
-        [[nodiscard]] double length() const;
+        [[nodiscard]] float length() const;
         // TEST: Core_Vec2.Length
 
         void normalize();
