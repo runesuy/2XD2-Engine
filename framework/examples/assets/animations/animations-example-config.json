@@ -5,11 +5,7 @@
       "name": "animation-1",
       "frame-duration": 0.1,
       "repeat": false,
-      "frames": [
-        "texture_0",
-        "texture_1",
-        "texture_2,"
-      ]
+      "frames": ["texture_0", "texture_1", "texture_2,"]
     }
   ]
 }

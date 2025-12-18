@@ -3,47 +3,15 @@
     {
       "filename": "filename1",
       "textures": [
-        {
-          "texture-name": "texture1",
-          "texture-select": {
-            "x": 0,
-            "y": 0,
-            "height": 10,
-            "width": 10
-          }
-        },
-        {
-          "texture-name": "texture2",
-          "texture-select": {
-            "x": 0,
-            "y": 0,
-            "height": 10,
-            "width": 10
-          }
-        }
+        {"texture-name": "texture1", "texture-select": {"x": 0, "y": 0, "height": 10, "width": 10}},
+        {"texture-name": "texture2", "texture-select": {"x": 0, "y": 0, "height": 10, "width": 10}}
       ]
     },
     {
       "filename": "filename2",
       "textures": [
-        {
-          "texture-name": "texture3",
-          "texture-select": {
-            "x": 0,
-            "y": 0,
-            "height": 10,
-            "width": 10
-          }
-        },
-        {
-          "texture-name": "texture4",
-          "texture-select": {
-            "x": 0,
-            "y": 0,
-            "height": 10,
-            "width": 10
-          }
-        }
+        {"texture-name": "texture3", "texture-select": {"x": 0, "y": 0, "height": 10, "width": 10}},
+        {"texture-name": "texture4", "texture-select": {"x": 0, "y": 0, "height": 10, "width": 10}}
       ]
     }
   ]
