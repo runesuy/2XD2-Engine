@@ -18,6 +18,8 @@ namespace e2XD::framework
 
     void AnimatedSprite2D::playAnimation(const std::string& name)
     {
+        if (name ==_currentAnimationName) return;
+        _currentAnimationName = name;
         if (!animations)
         {
             throw std::runtime_error("Animations not set for AnimatedSprite2D.");
@@ -26,6 +28,8 @@ namespace e2XD::framework
         try
         {
             _currentAnimation = animations->at(name);
+            _currentFrameIndex = 0;
+            _frameTimer = 0.0f;
         }
         catch (const std::out_of_range& e)
         {

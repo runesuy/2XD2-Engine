@@ -16,6 +16,7 @@ namespace e2XD::framework
     class AnimatedSprite2D : public Sprite2D
     {
         Animation _currentAnimation;
+        std::string _currentAnimationName;
         const AnimationMap* animations=nullptr;
         unsigned int _currentFrameIndex=0;
         float _frameTimer=0.0f;
