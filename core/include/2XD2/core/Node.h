@@ -23,9 +23,15 @@ namespace e2XD::core {
     protected:
         virtual void onUpdate(){};
 
+        virtual void _internal_onUpdate(){};
+
         virtual void onCreate(){};
 
+        virtual void _internal_onCreate(){};
+
         virtual void onDestroy(){};
+
+        virtual void _internal_onDestroy(){};
 
         virtual void onDraw(){};
 
