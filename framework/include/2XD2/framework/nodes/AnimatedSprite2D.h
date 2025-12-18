@@ -8,6 +8,7 @@
 
 #include "Sprite2D.h"
 #include "2XD2/framework/Animation.h"
+#include "2XD2/framework/AnimationMap.h"
 
 
 namespace e2XD::framework
@@ -15,7 +16,7 @@ namespace e2XD::framework
     class AnimatedSprite2D : public Sprite2D
     {
         Animation _currentAnimation;
-        const std::unordered_map<std::string, Animation>* animations=nullptr;
+        const AnimationMap* animations=nullptr;
         unsigned int _currentFrameIndex=0;
         float _frameTimer=0.0f;
 
@@ -23,7 +24,7 @@ namespace e2XD::framework
 
     public:
         AnimatedSprite2D() = default;
-        explicit AnimatedSprite2D(const std::unordered_map<std::string, Animation>* animations);
+        explicit AnimatedSprite2D(const AnimationMap* animations);
         ~AnimatedSprite2D() override = default;
 
         void playAnimation(const std::string& name);
@@ -33,7 +34,7 @@ namespace e2XD::framework
          * Map needs to be kept alive as long as the AnimatedSprite2D uses it.
          * @param newAnimations
          */
-        void setAnimations(const std::unordered_map<std::string, Animation>& newAnimations);
+        void setAnimations(const AnimationMap& newAnimations);
 
 
     protected:

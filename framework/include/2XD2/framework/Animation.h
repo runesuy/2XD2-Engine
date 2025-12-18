@@ -14,11 +14,12 @@ namespace e2XD::framework
     {
         float _frameDuration = 0.1f; // Duration of each frame in seconds
         bool _isLooping = false;
-        std::vector<sf::Texture*> frames;
+        std::vector<const sf::Texture*> frames;
 
     public:
         Animation() = default;
-        Animation(const std::initializer_list<sf::Texture*> &frameList, float frameDuration, bool isLooping = false);
+        Animation(const std::initializer_list<const sf::Texture*> &frameList, float frameDuration, bool isLooping = false);
+        Animation(const std::vector<const sf::Texture*> &frameList, float frameDuration, bool isLooping = false);
 
         /**
          * Add a frame to the animation.
@@ -38,7 +39,7 @@ namespace e2XD::framework
          */
         void setLooping(bool looping);
 
-        [[nodiscard]] const std::vector<sf::Texture*>& getFrames() const;
+        [[nodiscard]] const std::vector<const sf::Texture*>& getFrames() const;
 
         [[nodiscard]] float getFrameDuration() const;
 

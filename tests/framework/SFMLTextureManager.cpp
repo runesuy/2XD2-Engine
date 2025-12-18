@@ -3,7 +3,7 @@
 //
 
 #include <gtest/gtest.h>
-#include "2XD2/framework/SFMLTextureParser.h"
+#include "../../framework/include/2XD2/framework/resource_manager/SFMLTextureManager.h"
 
 
 namespace e2XD::framework
@@ -13,14 +13,14 @@ namespace e2XD::framework
     public:
         static const std::map<std::string, sf::Texture>& getLoadedTextures()
         {
-            return SFMLTextureParser::getInstance()->loadedTextures;
+            return SFMLTextureManager::getInstance()->loadedTextures;
         }
     };
 
     TEST_F(FRAMEWORK_SFMLTextureParser_TEST, getInstanceTest)
     {
-        SFMLTextureParser* instance1 = SFMLTextureParser::getInstance();
-        SFMLTextureParser* instance2 = SFMLTextureParser::getInstance();
+        SFMLTextureManager* instance1 = SFMLTextureManager::getInstance();
+        SFMLTextureManager* instance2 = SFMLTextureManager::getInstance();
         ASSERT_EQ(instance1, instance2);
         ASSERT_TRUE(instance1);
         ASSERT_TRUE(instance2);
@@ -28,7 +28,7 @@ namespace e2XD::framework
 
     TEST_F(FRAMEWORK_SFMLTextureParser_TEST, loadJsonTextureConfigTest)
     {
-        SFMLTextureParser* parser = SFMLTextureParser::getInstance();
+        SFMLTextureManager* parser = SFMLTextureManager::getInstance();
         ASSERT_NO_THROW(parser->loadJsonTextureConfig("resources/input/test_textures.json"));
 
         const auto& textures = getLoadedTextures();
@@ -43,7 +43,7 @@ namespace e2XD::framework
 
     TEST_F(FRAMEWORK_SFMLTextureParser_TEST, getTextureTest)
     {
-        SFMLTextureParser* parser = SFMLTextureParser::getInstance();
+        SFMLTextureManager* parser = SFMLTextureManager::getInstance();
         parser->loadJsonTextureConfig("resources/input/test_textures.json");
 
         ASSERT_NO_THROW({

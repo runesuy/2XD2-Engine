@@ -22,12 +22,17 @@ namespace e2XD::framework
         _isLooping = looping;
     }
 
-    Animation::Animation(const std::initializer_list<sf::Texture*> &frameList, float frameDuration, bool isLooping) :
+    Animation::Animation(const std::initializer_list<const sf::Texture*> &frameList, float frameDuration, bool isLooping) :
         frames(frameList), _frameDuration(frameDuration), _isLooping(isLooping)
     {
     }
 
-    const std::vector<sf::Texture*>& Animation::getFrames() const
+    Animation::Animation(const std::vector<const sf::Texture*> &frameList, float frameDuration, bool isLooping) :
+        frames(frameList), _frameDuration(frameDuration), _isLooping(isLooping)
+    {
+    }
+
+    const std::vector<const sf::Texture*>& Animation::getFrames() const
     {
         return frames;
     }

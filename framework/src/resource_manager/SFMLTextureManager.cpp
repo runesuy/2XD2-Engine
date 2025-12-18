@@ -2,7 +2,7 @@
 // Created by rune-suy on 12/15/25.
 //
 
-#include "2XD2/framework/SFMLTextureParser.h"
+#include "../include/2XD2/framework/resource_manager/SFMLTextureManager.h"
 #include "json.hpp"
 #include "fstream"
 
@@ -12,7 +12,7 @@
 
 namespace e2XD::framework
 {
-    void SFMLTextureParser::loadJsonTextureConfig(const std::string& jsonFilePath)
+    void SFMLTextureManager::loadJsonTextureConfig(const std::string& jsonFilePath)
     {
         nlohmann::json json;
 
@@ -45,15 +45,15 @@ namespace e2XD::framework
         }
     }
 
-    const sf::Texture& SFMLTextureParser::getTexture(const std::string& name) const
+    const sf::Texture& SFMLTextureManager::getTexture(const std::string& name) const
     {
         if (loadedTextures.contains(name))  return loadedTextures.at(name);
         throw std::invalid_argument("SFMLTextureParser::getTexture: Texture does not exist");
     }
 
-    SFMLTextureParser* SFMLTextureParser::getInstance()
+    SFMLTextureManager* SFMLTextureManager::getInstance()
     {
-        if (!_instance) _instance = new SFMLTextureParser();
+        if (!_instance) _instance = new SFMLTextureManager();
         return _instance;
     }
 
