@@ -23,13 +23,13 @@ namespace e2XD::core {
     protected:
         virtual void onUpdate(){};
 
-        virtual void onRender(){};
-
         virtual void onCreate(){};
 
         virtual void onDestroy(){};
 
         virtual void onDraw(){};
+
+        virtual void _internal_onDraw(){};
 
     public:
         friend class CORE_Node;
@@ -40,8 +40,6 @@ namespace e2XD::core {
         virtual ~Node() = default;
 
         void update();
-
-        void render();
 
         void create();
 
