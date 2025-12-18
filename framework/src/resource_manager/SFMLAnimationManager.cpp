@@ -57,5 +57,22 @@ namespace e2XD::framework
         }
     }
 
+
+    bool SFMLAnimationManager::isJsonAnimationLoaded(const std::string& jsonFilePath) const
+    {
+        return loadedFiles.contains(jsonFilePath);
+    }
+
+    bool SFMLAnimationManager::loadJsonAnimationConfigIfNotLoaded(const std::string& jsonFilePath)
+    {
+        if (!isJsonAnimationLoaded(jsonFilePath))
+        {
+            loadJsonAnimationConfig(jsonFilePath);
+            return true;
+        }
+        return false;
+    }
+
+
 } // framework
 // e2XD

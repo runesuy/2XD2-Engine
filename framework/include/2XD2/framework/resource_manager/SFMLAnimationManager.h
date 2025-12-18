@@ -4,6 +4,7 @@
 
 #ifndef FLATLAND_ANIMATIONMANAGER_H
 #define FLATLAND_ANIMATIONMANAGER_H
+#include <set>
 #include <string>
 #include <unordered_map>
 
@@ -17,6 +18,8 @@ namespace e2XD::framework
     class SFMLAnimationManager final
     {
         std::unordered_map<std::string, AnimationMap> loadedAnimationMaps;
+
+        std::set<std::string> loadedFiles;
 
         inline static SFMLAnimationManager* _instance = nullptr;
 
@@ -60,6 +63,11 @@ namespace e2XD::framework
          * @param jsonFilePath
          */
         void loadJsonAnimationConfig(const std::string& jsonFilePath);
+
+
+        bool isJsonAnimationLoaded(const std::string& jsonFilePath) const;
+
+        bool loadJsonAnimationConfigIfNotLoaded(const std::string& jsonFilePath);
     };
 }
 

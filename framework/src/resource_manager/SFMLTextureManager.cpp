@@ -43,6 +43,8 @@ namespace e2XD::framework
                 loadedTextures[textureName].loadFromImage(image, intRect);
             }
         }
+
+        loadedFiles.insert(jsonFilePath);
     }
 
     const sf::Texture& SFMLTextureManager::getTexture(const std::string& name) const
@@ -56,6 +58,23 @@ namespace e2XD::framework
         if (!_instance) _instance = new SFMLTextureManager();
         return _instance;
     }
+
+    bool SFMLTextureManager::isJsonTextureLoaded(const std::string& jsonFilePath) const
+    {
+        return loadedFiles.contains(jsonFilePath);
+    }
+
+    bool SFMLTextureManager::loadJsonTextureConfigIfNotLoaded(const std::string& jsonFilePath)
+    {
+        if (!isJsonTextureLoaded(jsonFilePath))
+        {
+            loadJsonTextureConfig(jsonFilePath);
+            return true;
+        }
+        return false;
+    }
+
+
 
 }
 

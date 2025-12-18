@@ -11,7 +11,7 @@ namespace e2XD::framework
     class FRAMEWORK_SFMLTextureParser_TEST : public ::testing::Test
     {
     public:
-        static const std::map<std::string, sf::Texture>& getLoadedTextures()
+        static const std::unordered_map<std::string, sf::Texture>& getLoadedTextures()
         {
             return SFMLTextureManager::getInstance()->loadedTextures;
         }
