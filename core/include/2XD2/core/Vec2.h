@@ -7,8 +7,8 @@
 
 namespace e2XD::core {
     struct Vec2 {
-        float x;
-        float y;
+        float x=0;
+        float y=0;
 
         /**
          * Defaults to (0,0)
@@ -59,11 +59,13 @@ namespace e2XD::core {
         Vec2 &operator/=(double scalar);
         // TEST: Core_Vec2.CompoundAssignment
 
-        double dot(const Vec2 &vector) const;
+        [[nodiscard]] double dot(const Vec2 &vector) const;
         // TEST: Core_Vec2.DotProduct
 
         [[nodiscard]] double length() const;
         // TEST: Core_Vec2.Length
+
+        void normalize();
     };
 }
 

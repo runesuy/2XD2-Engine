@@ -64,4 +64,10 @@ namespace e2XD::core {
     Vec2 Vec2::operator*(const Vec2 &vector) const {
         return {x * vector.x, y * vector.y};
     }
+
+    void Vec2::normalize()
+    {
+        *this/=length();
+    }
+
 } // e2XD
