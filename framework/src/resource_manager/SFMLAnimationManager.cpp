@@ -41,7 +41,7 @@ namespace e2XD::framework
             // read json data
             const std::string& name = animation.at("name");
             const bool& repeat = animation.at("repeat");
-            const float& frame_duration = animation.at("frame_duration");
+            const float& frame_duration = animation.at("frame-duration");
             const auto& framesList = animation.at("frames");
             std::vector<const sf::Texture*> frameTextures;
             auto* textureManager = SFMLTextureManager::getInstance();
