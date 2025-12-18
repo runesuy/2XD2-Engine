@@ -28,7 +28,7 @@ namespace e2XD::framework
         explicit AnimatedSprite2D(const AnimationMap* animations);
         ~AnimatedSprite2D() override = default;
 
-        void playAnimation(const std::string& name);
+        void playAnimation(const std::string& name, bool continueAtCurrentFrame=false);
 
         /**
          * Unordered map of all animations available for this sprite.

@@ -16,7 +16,7 @@ namespace e2XD::framework
         _frameTimer = 0.0f;
     }
 
-    void AnimatedSprite2D::playAnimation(const std::string& name)
+    void AnimatedSprite2D::playAnimation(const std::string& name, const bool continueAtCurrentFrame)
     {
         if (name ==_currentAnimationName) return;
         _currentAnimationName = name;
@@ -28,8 +28,16 @@ namespace e2XD::framework
         try
         {
             _currentAnimation = animations->at(name);
-            _currentFrameIndex = 0;
-            _frameTimer = 0.0f;
+            if (continueAtCurrentFrame)
+            {
+                _currentFrameIndex = std::min(_currentFrameIndex, static_cast<unsigned int>(_currentAnimation.getFrames().size()-1));
+                _frameTimer = std::min(_frameTimer, _currentAnimation.getFrameDuration());
+            }
+            else
+            {
+                _currentFrameIndex = 0;
+                _frameTimer = 0.0f;
+            }
         }
         catch (const std::out_of_range& e)
         {
