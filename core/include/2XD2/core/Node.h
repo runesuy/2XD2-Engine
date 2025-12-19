@@ -10,12 +10,15 @@
 #include "Node.h"
 #include<type_traits>
 
+#include "Renderable.h"
+
+
 namespace e2XD::core {
     class Node;
     template <typename T>
     concept IsNode = std::is_base_of_v<Node, T>;
 
-    class Node {
+    class Node : public Renderable{
         bool markedForDeletion = false;
         std::list<std::unique_ptr<Node>> nodes;
 
@@ -33,9 +36,7 @@ namespace e2XD::core {
 
         virtual void _internal_onDestroy(){};
 
-        virtual void onDraw(){};
-
-        virtual void _internal_onDraw(){};
+        void _internal_onDraw() override;
 
     public:
         friend class CORE_Node;
@@ -43,15 +44,13 @@ namespace e2XD::core {
 
         Node()=default;
 
-        virtual ~Node() = default;
+        ~Node() override = default;
 
         void update();
 
         void create();
 
         void destroy();
-
-        void draw();
 
         template <IsNode EntityType>
         EntityType* createSubNode();

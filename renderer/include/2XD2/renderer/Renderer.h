@@ -4,27 +4,30 @@
 
 #ifndef INC_2XD2_ENGINE_RENDERER_H
 #define INC_2XD2_ENGINE_RENDERER_H
+#include <unordered_map>
 #include <SFML/Graphics/RenderWindow.hpp>
 #include <SFML/Graphics/Shape.hpp>
-#include <SFML/Graphics/Sprite.hpp>
-#include <SFML/Graphics/Text.hpp>
+#include "RenderCommand.h"
+#include "2XD2/core/Camera.h"
+#include "2XD2/core/RenderLayer.h"
 
-namespace e2XD::renderer {
-
-    class Renderer {
+namespace e2XD::renderer
+{
+    class Renderer
+    {
         sf::RenderWindow* window = nullptr;
-        sf::Vector2f cameraPos;
-        float cameraZoom = 1.0f;
+        core::Camera* _camera = nullptr;
 
         inline static Renderer* _instance = nullptr;
 
-        Renderer()=default;
+        Renderer() = default;
 
-        sf::Color backgroundColor = sf::Color::Black;
+        std::unordered_map<RenderLayer, std::vector<RenderCommand>> renderQueue;
+
     public:
         Renderer(const Renderer&) = delete;
         Renderer(Renderer&&) = delete;
-        virtual ~Renderer()=default;
+        virtual ~Renderer() = default;
         Renderer& operator=(const Renderer&) = delete;
         Renderer& operator=(Renderer&&) = delete;
 
@@ -34,16 +37,9 @@ namespace e2XD::renderer {
 
         void clearWindow() const;
 
-        void draw(const sf::Drawable& drawable, const sf::Vector2f &position, const sf::Vector2f& cameraPos, float cameraZoom) const;
+        void submit(const RenderCommand& renderCommand);
 
-        void draw(const sf::Drawable& drawable, const sf::Vector2f &position) const;
-
-        void setBackgroundColor(const sf::Color& color);
-
-        void setCameraPos(const sf::Vector2f& newCameraPos);
-
-        void setCameraZoom(float newCameraZoom);
-
+        void flush(const core::Camera* worldCamera);
     };
 }
 

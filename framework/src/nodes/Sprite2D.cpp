@@ -22,9 +22,15 @@ namespace e2XD::framework
 
     void Sprite2D::_internal_onDraw()
     {
+        auto* renderer = renderer::Renderer::getInstance();
         const auto& position = getGlobalPosition();
         _sprite.setOrigin(_sprite.getGlobalBounds().width / 2, _sprite.getGlobalBounds().height / 2);
-        renderer::Renderer::getInstance()->draw(_sprite,{position.x, position.y});
+        renderer->submit({
+            renderLayer,
+            &_sprite,
+            {position.x, position.y},
+            0
+        });
     }
 } // framework
 // e2XD

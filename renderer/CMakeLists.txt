@@ -13,12 +13,8 @@ target_include_directories(2XD2_Engine_Renderer PUBLIC
 
 find_package(SFML 2.6 COMPONENTS system window graphics REQUIRED)
 
-target_include_directories(2XD2_Engine_Renderer
-        PRIVATE
-        ../framework/lib
-)
-
 target_link_libraries(2XD2_Engine_Renderer
         PUBLIC
         sfml-graphics sfml-window sfml-system
+        2XD2_Engine_Core
 )

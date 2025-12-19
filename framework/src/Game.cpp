@@ -36,16 +36,9 @@ namespace e2XD::framework {
                 renderer->clearWindow();
                 const auto& activeCamera = activeScene->getActiveCamera();
                 core::Vec2 cameraPos = {0,0};
-                float cameraZoom = 1.0f;
-                if (activeCamera)
-                {
-                    cameraPos = activeScene->getActiveCamera()->getGlobalPosition();
-                    cameraZoom = activeCamera->getZoom();
-                }
-                renderer->setCameraPos({cameraPos.x, cameraPos.y});
-                renderer->setCameraZoom(cameraZoom);
                 activeScene->draw();
             }
+            renderer::Renderer::getInstance()->flush(activeScene ? activeScene->getActiveCamera() : nullptr);
             window.display();
             inputHandler->newFrame();
         }

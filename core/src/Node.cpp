@@ -27,12 +27,10 @@ namespace e2XD::core {
         onUpdate();
     }
 
-    void Node::draw() {
+    void Node::_internal_onDraw() {
         for (const auto & node : nodes) {
             node->draw();
         }
-        _internal_onDraw();
-        onDraw();
     }
 
     void Node::removeDestroyedSubNodes() {

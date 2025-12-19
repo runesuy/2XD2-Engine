@@ -5,6 +5,7 @@
 #include "2XD2/renderer/Renderer.h"
 
 #include "2XD2/renderer/exceptions/NotInitializedException.h"
+#include "2XD2/renderer/RenderCommand.h"
 
 namespace e2XD::renderer
 {
@@ -12,38 +13,6 @@ namespace e2XD::renderer
     {
         this->window = window;
     }
-
-    void Renderer::draw(const sf::Drawable& drawable, const sf::Vector2f &position, const sf::Vector2f& cameraPos, float cameraZoom) const
-    {
-        if (!window)
-        {
-            throw NotInitializedException("Renderer::draw(Shape)");
-        }
-
-        sf::Vector2f transformedPos = {position.x, -position.y};
-        sf::Vector2f transformedCameraPos = {cameraPos.x, -cameraPos.y};
-        auto newPos = (transformedPos -transformedCameraPos) * cameraZoom + sf::Vector2f{
-            static_cast<float>(window->getSize().x) / 2, static_cast<float>(window->getSize().y) / 2
-        };
-
-        sf::Transform transform;
-        // Chain the transformations
-        transform.translate(newPos) // 3. Move to world position
-                 .rotate(0)    // 2. Rotate around the origin
-                 .scale(cameraZoom, cameraZoom);       // 1. Scale the local coordinates
-
-        sf::RenderStates states;
-        states.transform = transform;
-        // Render the shape here using your rendering context*
-        window->draw(drawable, transform);
-    }
-
-
-    void Renderer::setBackgroundColor(const sf::Color& color)
-    {
-        backgroundColor = color;
-    }
-
 
     Renderer* Renderer::getInstance()
     {
@@ -56,24 +25,57 @@ namespace e2XD::renderer
 
     void Renderer::clearWindow() const
     {
-        window->clear(backgroundColor);
+        window->clear();
     }
 
-    void Renderer::setCameraPos(const sf::Vector2f& newCameraPos)
+
+    void Renderer::submit(const RenderCommand& renderCommand)
     {
-        cameraPos = newCameraPos;
+        renderQueue[renderCommand.renderLayer].push_back(renderCommand);
     }
 
-    void Renderer::setCameraZoom(float newCameraZoom)
+    void Renderer::flush(const core::Camera* worldCamera)
     {
-        cameraZoom = newCameraZoom;
+        for (const auto& [layer, commands] : renderQueue)
+        {
+            for (const auto& command : commands)
+            {
+                //Setup view
+                if (layer == RenderLayer::WORLD && worldCamera)
+                {
+                    const auto& camScale = worldCamera->getGlobalScale();
+                    const auto& camPos = worldCamera->getGlobalPosition();
+                    auto view = sf::View{
+                        {camPos.x, camPos.y}, sf::Vector2f{window->getSize()}};
+                    view.zoom(worldCamera->getZoom());
+                    window->setView(view);
+
+                }
+                else
+                {
+                    window->setView(window->getDefaultView());
+                }
+
+                // sort by zIndex
+
+                std::ranges::sort(renderQueue[layer],
+                                  [](const RenderCommand& a, const RenderCommand& b) {
+                                      if (a.zIndex != b.zIndex) return a.zIndex < b.zIndex;
+                                      return a.position.y < b.position.y;
+                                  });
+
+                // draw commands
+                for (const auto& render_command : renderQueue[layer])
+                {
+                    sf::Transform transform;
+                    transform.translate(render_command.position);
+                    window->draw(*render_command.drawable, transform);
+                }
+            }
+        }
+        renderQueue.clear();
     }
 
-
-    void Renderer::draw(const sf::Drawable& drawable, const sf::Vector2f& position) const
-    {
-        draw(drawable, position, cameraPos, cameraZoom);
-    }
 
 
 } // e2XD
