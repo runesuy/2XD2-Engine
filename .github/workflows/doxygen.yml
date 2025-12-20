@@ -1,0 +1,50 @@
+name: doxygen
+on:
+  push:
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
+
+jobs:
+  build_doxygen:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      id-token: write
+      pages : write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Doxygen Action
+        uses: mattnotmitt/doxygen-action@1.9.8
+        with:
+          doxyfile-path: ./Doxyfile # default is ./Doxyfile
+          working-directory: . # default is .
+          enable-latex: false # optional (default is false)
+          # Extra alpine packages for the build environment
+
+      - name: Commit and push ONLY the documentation folder
+        if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/master' }}
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: gh-pages
+          publish_dir: ./doxygen
+          commit_message: "Auto-generated Doxygen documentation update"
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with: # Upload entire repository
+          path: 'doxygen/html/'
+          name: documentation
+
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+        with:
+          artifact_name: documentation

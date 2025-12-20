@@ -7,7 +7,7 @@
 #include <SFML/Window/Event.hpp>
 
 #include "2XD2/framework/SFMLToInputMap.h"
-#include "2XD2/framework/exceptions/NotInitializedException.h"
+#include "../../core/include/2XD2/core/exceptions/NotInitializedException.h"
 
 namespace e2XD::framework
 {

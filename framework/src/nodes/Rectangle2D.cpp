@@ -1,0 +1,37 @@
+//
+// Created by rune-suy on 12/20/25.
+//
+
+#include "../../include/2XD2/framework/nodes/Rectangle2D.h"
+
+#include "2XD2/renderer/Renderer.h"
+
+
+namespace e2XD::framework
+{
+    void Rectangle2D::_internal_onDraw()
+    {
+        auto renderer = renderer::Renderer::getInstance();
+        const auto& position = getGlobalPosition();
+        rectangleShape.setOrigin(rectangleShape.getSize().x / 2, rectangleShape.getSize().y / 2);
+        renderer->submit({
+             renderLayer,
+             &rectangleShape,
+             {position.x, position.y},
+             zIndex
+         });
+        Node2D::_internal_onDraw();
+    }
+
+    void Rectangle2D::setFillColor(const sf::Color& color)
+    {
+        rectangleShape.setFillColor(color);
+    }
+
+    void Rectangle2D::setSize(const core::Vec2& size)
+    {
+        rectangleShape.setSize({size.x, size.y});
+    }
+
+} // framework
+// e2XD

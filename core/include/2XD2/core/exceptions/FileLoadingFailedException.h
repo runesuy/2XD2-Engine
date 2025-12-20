@@ -4,7 +4,7 @@
 
 #ifndef FLATLAND_FILELOADINGEXCEPTION_H
 #define FLATLAND_FILELOADINGEXCEPTION_H
-#include "2XD2/framework/exceptions/Exception.h"
+#include "Exception.h"
 
 namespace e2XD::framework
 {

@@ -8,7 +8,7 @@
 #include <stdexcept>
 
 #include "json.hpp"
-#include "2XD2/framework/exceptions/FileLoadingFailedException.h"
+#include "../../../core/include/2XD2/core/exceptions/FileLoadingFailedException.h"
 #include "2XD2/framework/resource_manager/SFMLTextureManager.h"
 
 

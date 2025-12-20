@@ -29,7 +29,7 @@ namespace e2XD::framework
             renderLayer,
             &_sprite,
             {position.x, position.y},
-            0
+            zIndex
         });
     }
 } // framework

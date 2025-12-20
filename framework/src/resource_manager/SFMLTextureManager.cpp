@@ -8,7 +8,7 @@
 
 #include <stdexcept>
 
-#include "2XD2/framework/exceptions/FileLoadingFailedException.h"
+#include "../../../core/include/2XD2/core/exceptions/FileLoadingFailedException.h"
 
 namespace e2XD::framework
 {
