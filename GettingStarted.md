@@ -46,6 +46,6 @@ When calling run(), the framework will create a window and start the main loop.
 
 ## Learning More
 To learn more about 2XD2-Engine and its features, refer to the following resources:
-- [API Documentation](https://github.com/runesuy/2XD2-Engine/pages): Detailed documentation of the engine's classes and functions.
+- [API Documentation](https://runesuy.github.io/2XD2-Engine/): Detailed documentation of the engine's classes and functions.
 
 More guides coming soon!
