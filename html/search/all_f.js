@@ -5,7 +5,7 @@ var searchData=
   ['iinputhandler_2eh_2',['IInputHandler.h',['../IInputHandler_8h.html',1,'']]],
   ['iinputmanager_2ecpp_3',['IInputManager.cpp',['../IInputManager_8cpp.html',1,'']]],
   ['initialize_4',['initialize',['../classe2XD_1_1framework_1_1SFMLInputHandler.html#af07ddd6378461b00641eecd78a1a56a2',1,'e2XD::framework::SFMLInputHandler']]],
-  ['installation_5',['installation',['../md_GettingStarted.html#autotoc_md9',1,'Installation'],['../index.html#autotoc_md4',1,'Manual Installation']]],
+  ['installation_5',['installation',['../md_GettingStarted.html#autotoc_md10',1,'Installation'],['../index.html#autotoc_md4',1,'Manual Installation']]],
   ['isjsonanimationloaded_6',['isJsonAnimationLoaded',['../classe2XD_1_1framework_1_1SFMLAnimationManager.html#a1129e6c82d22b0b98a40d78eda2cff3c',1,'e2XD::framework::SFMLAnimationManager']]],
   ['isjsontextureloaded_7',['isJsonTextureLoaded',['../classe2XD_1_1framework_1_1SFMLTextureManager.html#ab3f4b7a43ff786d4662f550487e09e98',1,'e2XD::framework::SFMLTextureManager']]],
   ['iskeyjustpressed_8',['iskeyjustpressed',['../classe2XD_1_1framework_1_1SFMLInputHandler.html#a248ab28d0cb1f8ad3a6842f914baeafe',1,'e2XD::framework::SFMLInputHandler::isKeyJustPressed()'],['../classe2XD_1_1framework_1_1IInputHandler.html#a4a37d9b15f473d0643f7daf8845cac49',1,'e2XD::framework::IInputHandler::isKeyJustPressed(Key keyCode) const =0']]],

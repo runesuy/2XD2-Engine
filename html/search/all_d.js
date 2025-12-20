@@ -26,5 +26,6 @@ var searchData=
   ['getting_20started_23',['Getting Started',['../index.html#autotoc_md3',1,'']]],
   ['getting_20started_20with_202xd2_20engine_24',['Getting Started with 2XD2-Engine',['../md_GettingStarted.html',1,'']]],
   ['gettingstarted_2emd_25',['GettingStarted.md',['../GettingStarted_8md.html',1,'']]],
-  ['getzoom_26',['getZoom',['../classe2XD_1_1core_1_1Camera.html#a5e172f64e9a7ce680268eece9bd113a0',1,'e2XD::core::Camera']]]
+  ['getzoom_26',['getZoom',['../classe2XD_1_1core_1_1Camera.html#a5e172f64e9a7ce680268eece9bd113a0',1,'e2XD::core::Camera']]],
+  ['gg_20svjzxwwbdw_20discord_20a_27',['Join the &lt;a href=&quot;https://discord.gg/sVJzxWWbdW&quot; &gt;Discord&lt;/a&gt;',['../index.html#autotoc_md7',1,'']]]
 ];

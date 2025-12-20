@@ -34,11 +34,12 @@ var searchData=
   ['sfmltexturemanager_2eh_31',['SFMLTextureManager.h',['../SFMLTextureManager_8h.html',1,'']]],
   ['sfmltoinputmap_2eh_32',['SFMLToInputMap.h',['../SFMLToInputMap_8h.html',1,'']]],
   ['shift_33',['SHIFT',['../Key_8h.html#ab3c7af4820830f9166ede9e5623c4e73a46afff2b309b8b16a46d812172a9235c',1,'Key.h']]],
-  ['simple_20application_34',['Creating a Simple Application',['../md_GettingStarted.html#autotoc_md11',1,'']]],
+  ['simple_20application_34',['Creating a Simple Application',['../md_GettingStarted.html#autotoc_md12',1,'']]],
   ['space_35',['SPACE',['../Key_8h.html#ab3c7af4820830f9166ede9e5623c4e73a6506ae39fdca9845e3a6de3865183e57',1,'Key.h']]],
   ['sprite2d_36',['sprite2d',['../classe2XD_1_1framework_1_1Sprite2D.html',1,'e2XD::framework::Sprite2D'],['../classe2XD_1_1framework_1_1Sprite2D.html#a8d8a8d31bbfe3b273dccbb6dac4f01f6',1,'e2XD::framework::Sprite2D::Sprite2D()']]],
   ['sprite2d_2ecpp_37',['Sprite2D.cpp',['../Sprite2D_8cpp.html',1,'']]],
   ['sprite2d_2eh_38',['Sprite2D.h',['../Sprite2D_8h.html',1,'']]],
   ['started_39',['Getting Started',['../index.html#autotoc_md3',1,'']]],
-  ['started_20with_202xd2_20engine_40',['Getting Started with 2XD2-Engine',['../md_GettingStarted.html',1,'']]]
+  ['started_20with_202xd2_20engine_40',['Getting Started with 2XD2-Engine',['../md_GettingStarted.html',1,'']]],
+  ['svjzxwwbdw_20discord_20a_41',['Join the &lt;a href=&quot;https://discord.gg/sVJzxWWbdW&quot; &gt;Discord&lt;/a&gt;',['../index.html#autotoc_md7',1,'']]]
 ];

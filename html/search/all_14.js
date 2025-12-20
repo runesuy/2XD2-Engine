@@ -1,7 +1,7 @@
 var searchData=
 [
   ['n_0',['N',['../Key_8h.html#ab3c7af4820830f9166ede9e5623c4e73a8d9c307cb7f3c4a32822a51922d1ceaa',1,'Key.h']]],
-  ['new_20branch_1',['2. Create a New Branch',['../md_CONTRIBUTING.html#autotoc_md16',1,'']]],
+  ['new_20branch_1',['2. Create a New Branch',['../md_CONTRIBUTING.html#autotoc_md17',1,'']]],
   ['newframe_2',['newframe',['../classe2XD_1_1framework_1_1SFMLInputHandler.html#a541ba00e08661fe5d5d7d5d5eefdca1e',1,'e2XD::framework::SFMLInputHandler::newFrame()'],['../classe2XD_1_1framework_1_1IInputHandler.html#a1f0b193446211db81dde88ca7fcea0e2',1,'e2XD::framework::IInputHandler::newFrame()']]],
   ['node_3',['node',['../classe2XD_1_1core_1_1Node.html',1,'e2XD::core::Node'],['../classe2XD_1_1core_1_1Node.html#a9d5e20f7395b9e9ca13548675efa4b2a',1,'e2XD::core::Node::Node()']]],
   ['node_2ecpp_4',['Node.cpp',['../Node_8cpp.html',1,'']]],

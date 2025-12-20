@@ -10,8 +10,8 @@ var searchData=
   ['renderer_2ecpp_7',['Renderer.cpp',['../Renderer_8cpp.html',1,'']]],
   ['renderlayer_8',['RenderLayer',['../RenderLayer_8h.html#ad16d91520dd8dbd7a2178564fce5a168',1,'RenderLayer.h']]],
   ['renderlayer_2eh_9',['RenderLayer.h',['../RenderLayer_8h.html',1,'']]],
-  ['repository_10',['1. Fork the Repository',['../md_CONTRIBUTING.html#autotoc_md15',1,'']]],
-  ['request_11',['6. Create a Pull Request',['../md_CONTRIBUTING.html#autotoc_md20',1,'']]],
+  ['repository_10',['1. Fork the Repository',['../md_CONTRIBUTING.html#autotoc_md16',1,'']]],
+  ['request_11',['6. Create a Pull Request',['../md_CONTRIBUTING.html#autotoc_md21',1,'']]],
   ['right_12',['RIGHT',['../MouseButton_8h.html#ac1ec3647c005eacad401b06e7e18f711a21507b40c80068eda19865706fdc2403',1,'MouseButton.h']]],
   ['run_13',['run',['../classe2XD_1_1framework_1_1Game.html#a3b33447365a8d953488d5b2c90b4d4ee',1,'e2XD::framework::Game']]]
 ];
