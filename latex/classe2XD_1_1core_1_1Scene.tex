@@ -1,0 +1,116 @@
+\doxysection{e2\+XD\+::core\+::Scene Class Reference}
+\hypertarget{classe2XD_1_1core_1_1Scene}{}\label{classe2XD_1_1core_1_1Scene}\index{e2XD::core::Scene@{e2XD::core::Scene}}
+
+
+{\ttfamily \#include $<$Scene.\+h$>$}
+
+
+
+Inheritance diagram for e2\+XD\+::core\+::Scene\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=176pt]{classe2XD_1_1core_1_1Scene__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for e2\+XD\+::core\+::Scene\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=176pt]{classe2XD_1_1core_1_1Scene__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classe2XD_1_1core_1_1Scene_aa9903dec1407ed9ca49a38f9352ac0aa}{Scene}} ()=default
+\item 
+\mbox{\hyperlink{classe2XD_1_1core_1_1Scene_a17b9d9e9728016df679c3cdf417a20ee}{\texorpdfstring{$\sim$}{\string~}\+Scene}} () override=default
+\item 
+void \mbox{\hyperlink{classe2XD_1_1core_1_1Scene_a4e0399ebecb5425b004d91c2b1d829e0}{set\+Active\+Camera}} (const \mbox{\hyperlink{classe2XD_1_1core_1_1Camera}{Camera}} \texorpdfstring{$\ast$}{*}camera)
+\item 
+const \mbox{\hyperlink{classe2XD_1_1core_1_1Camera}{Camera}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classe2XD_1_1core_1_1Scene_a3abb3aabed9251ea11d8ac505d8d2600}{get\+Active\+Camera}} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classe2XD_1_1core_1_1Node}{e2\+XD\+::core\+::\+Node}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classe2XD_1_1core_1_1Node_a9d5e20f7395b9e9ca13548675efa4b2a}{Node}} ()=default
+\item 
+\mbox{\hyperlink{classe2XD_1_1core_1_1Node_ac47d455a55eaa8fbc55df6c98388a272}{\texorpdfstring{$\sim$}{\string~}\+Node}} () override=default
+\item 
+void \mbox{\hyperlink{classe2XD_1_1core_1_1Node_a127ce10dcd5acdad121377eda7b5aac5}{update}} ()
+\item 
+void \mbox{\hyperlink{classe2XD_1_1core_1_1Node_aefd2056fdc6a70fd1ba637446e7888c0}{create}} ()
+\item 
+void \mbox{\hyperlink{classe2XD_1_1core_1_1Node_a1bebf88dbbd295bebfa58ac54c593218}{destroy}} ()
+\item 
+{\footnotesize template$<$Is\+Node Entity\+Type$>$ }\\Entity\+Type \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classe2XD_1_1core_1_1Node_ac4d099f3bdcbf9f7641896076feb680e}{create\+Sub\+Node}} ()
+\item 
+void \mbox{\hyperlink{classe2XD_1_1core_1_1Node_a1ab6b7ee044c4d21820d49eb9834d046}{add\+Sub\+Node}} (std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classe2XD_1_1core_1_1Node}{Node}} $>$ node)
+\item 
+{\footnotesize template$<$Is\+Node Entity\+Type$>$ }\\const Entity\+Type \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classe2XD_1_1core_1_1Node_a31c3a901f74532c72be485c7d2a7010e}{get\+Sub\+Node}} () const
+\item 
+{\footnotesize template$<$Is\+Node Entity\+Type$>$ }\\std\+::list$<$ const Entity\+Type \texorpdfstring{$\ast$}{*} $>$ \mbox{\hyperlink{classe2XD_1_1core_1_1Node_a9581c93b9693a2e51c4f065c72c6168d}{get\+Sub\+Nodes}} () const
+\item 
+{\footnotesize template$<$Is\+Node Entity\+Type$>$ }\\Entity\+Type \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classe2XD_1_1core_1_1Node_aeaf978df42d4b2108865105fddc74a11}{get\+Sub\+Node}} ()
+\item 
+{\footnotesize template$<$Is\+Node Entity\+Type$>$ }\\std\+::list$<$ Entity\+Type \texorpdfstring{$\ast$}{*} $>$ \mbox{\hyperlink{classe2XD_1_1core_1_1Node_acc4b20027400de1b1ceb19256ab3d494}{get\+Sub\+Nodes}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{classe2XD_1_1core_1_1Node}{e2\+XD\+::core\+::\+Node}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{classe2XD_1_1core_1_1Node_a7328355a0304262433852116e148bd29}{on\+Update}} ()
+\item 
+virtual void \mbox{\hyperlink{classe2XD_1_1core_1_1Node_affae57a6faaf808b3316061c109b4bc9}{\+\_\+internal\+\_\+on\+Update}} ()
+\item 
+virtual void \mbox{\hyperlink{classe2XD_1_1core_1_1Node_a5822e36f6ffecd2ea41fa8883df586e6}{on\+Create}} ()
+\item 
+virtual void \mbox{\hyperlink{classe2XD_1_1core_1_1Node_ab313d7c0b5d367ce215d7db4a1fdb838}{\+\_\+internal\+\_\+on\+Create}} ()
+\item 
+virtual void \mbox{\hyperlink{classe2XD_1_1core_1_1Node_a8c73b02dd342afea22da714f0c77014e}{on\+Destroy}} ()
+\item 
+virtual void \mbox{\hyperlink{classe2XD_1_1core_1_1Node_a63ccab150802400899db853666aa23f6}{\+\_\+internal\+\_\+on\+Destroy}} ()
+\item 
+void \mbox{\hyperlink{classe2XD_1_1core_1_1Node_a1adb5fc119573c1e7d4c3c39c5807cc1}{\+\_\+internal\+\_\+on\+Draw}} () override
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classe2XD_1_1core_1_1Scene_aa9903dec1407ed9ca49a38f9352ac0aa}\label{classe2XD_1_1core_1_1Scene_aa9903dec1407ed9ca49a38f9352ac0aa} 
+\index{e2XD::core::Scene@{e2XD::core::Scene}!Scene@{Scene}}
+\index{Scene@{Scene}!e2XD::core::Scene@{e2XD::core::Scene}}
+\doxysubsubsection{\texorpdfstring{Scene()}{Scene()}}
+{\footnotesize\ttfamily e2\+XD\+::core\+::\+Scene\+::\+Scene (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\Hypertarget{classe2XD_1_1core_1_1Scene_a17b9d9e9728016df679c3cdf417a20ee}\label{classe2XD_1_1core_1_1Scene_a17b9d9e9728016df679c3cdf417a20ee} 
+\index{e2XD::core::Scene@{e2XD::core::Scene}!````~Scene@{\texorpdfstring{$\sim$}{\string~}Scene}}
+\index{````~Scene@{\texorpdfstring{$\sim$}{\string~}Scene}!e2XD::core::Scene@{e2XD::core::Scene}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Scene()}{\string~Scene()}}
+{\footnotesize\ttfamily e2\+XD\+::core\+::\+Scene\+::\texorpdfstring{$\sim$}{\string~}\+Scene (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classe2XD_1_1core_1_1Scene_a3abb3aabed9251ea11d8ac505d8d2600}\label{classe2XD_1_1core_1_1Scene_a3abb3aabed9251ea11d8ac505d8d2600} 
+\index{e2XD::core::Scene@{e2XD::core::Scene}!getActiveCamera@{getActiveCamera}}
+\index{getActiveCamera@{getActiveCamera}!e2XD::core::Scene@{e2XD::core::Scene}}
+\doxysubsubsection{\texorpdfstring{getActiveCamera()}{getActiveCamera()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classe2XD_1_1core_1_1Camera}{Camera}} \texorpdfstring{$\ast$}{*} e2\+XD\+::core\+::\+Scene\+::get\+Active\+Camera (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\Hypertarget{classe2XD_1_1core_1_1Scene_a4e0399ebecb5425b004d91c2b1d829e0}\label{classe2XD_1_1core_1_1Scene_a4e0399ebecb5425b004d91c2b1d829e0} 
+\index{e2XD::core::Scene@{e2XD::core::Scene}!setActiveCamera@{setActiveCamera}}
+\index{setActiveCamera@{setActiveCamera}!e2XD::core::Scene@{e2XD::core::Scene}}
+\doxysubsubsection{\texorpdfstring{setActiveCamera()}{setActiveCamera()}}
+{\footnotesize\ttfamily void e2\+XD\+::core\+::\+Scene\+::set\+Active\+Camera (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classe2XD_1_1core_1_1Camera}{Camera}} \texorpdfstring{$\ast$}{*}}]{camera }\end{DoxyParamCaption})}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+core/include/2\+XD2/core/\mbox{\hyperlink{Scene_8h}{Scene.\+h}}\item 
+core/src/\mbox{\hyperlink{Scene_8cpp}{Scene.\+cpp}}\end{DoxyCompactItemize}

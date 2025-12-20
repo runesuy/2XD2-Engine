@@ -1,0 +1,52 @@
+\doxysection{SFMLTexture\+Manager.\+h}
+\hypertarget{SFMLTextureManager_8h_source}{}\label{SFMLTextureManager_8h_source}\index{framework/include/2XD2/framework/resource\_manager/SFMLTextureManager.h@{framework/include/2XD2/framework/resource\_manager/SFMLTextureManager.h}}
+\mbox{\hyperlink{SFMLTextureManager_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{//}}
+\DoxyCodeLine{00002\ \textcolor{comment}{//\ Created\ by\ rune-\/suy\ on\ 12/15/25.}}
+\DoxyCodeLine{00003\ \textcolor{comment}{//}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#ifndef\ FLATLAND\_ITEXTUREPARSER\_H}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#define\ FLATLAND\_ITEXTUREPARSER\_H}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <set>}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <unordered\_map>}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <SFML/Graphics/Texture.hpp>}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespacee2XD_1_1framework}{e2XD::framework}}}
+\DoxyCodeLine{00014\ \{}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{classe2XD_1_1framework_1_1SFMLTextureManager}{SFMLTextureManager}}\ final}
+\DoxyCodeLine{00019\ \ \ \ \ \{}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ std::unordered\_map<std::string,\ sf::Texture>\ loadedTextures;}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ std::set<std::string>\ loadedFiles;}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keyword}{static}\ \mbox{\hyperlink{classe2XD_1_1framework_1_1SFMLTextureManager}{SFMLTextureManager}}*\ \_instance\ =\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classe2XD_1_1framework_1_1SFMLTextureManager}{SFMLTextureManager}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \textcolor{keyword}{friend}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classe2XD_1_1framework_1_1SFMLTextureManager_a4f8a7afb90a1d9ccf9758e8dde64269c}{FRAMEWORK\_SFMLTextureParser\_TEST}};}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classe2XD_1_1framework_1_1SFMLTextureManager_a301f7ff8d9e52037a45e47e202ef0c7f}{SFMLTextureManager}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classe2XD_1_1framework_1_1SFMLTextureManager}{SFMLTextureManager}}\&)\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classe2XD_1_1framework_1_1SFMLTextureManager}{SFMLTextureManager}}\&\ \mbox{\hyperlink{classe2XD_1_1framework_1_1SFMLTextureManager_a232385ce7f998f7b70c21d5761f2d8c7}{operator=}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classe2XD_1_1framework_1_1SFMLTextureManager}{SFMLTextureManager}}\&)\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classe2XD_1_1framework_1_1SFMLTextureManager}{SFMLTextureManager}}\&\ \mbox{\hyperlink{classe2XD_1_1framework_1_1SFMLTextureManager_afeca80913e97844d27e4db9e05230985}{operator=}}(\mbox{\hyperlink{classe2XD_1_1framework_1_1SFMLTextureManager}{SFMLTextureManager}}\&\&)\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classe2XD_1_1framework_1_1SFMLTextureManager_aae58ce2843833fff748ab40d5ed3613c}{SFMLTextureManager}}(\mbox{\hyperlink{classe2XD_1_1framework_1_1SFMLTextureManager}{SFMLTextureManager}}\&\&)\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classe2XD_1_1framework_1_1SFMLTextureManager_a9ab53715e08362f0e6d46e7adcc74fb8}{\string~SFMLTextureManager}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{classe2XD_1_1framework_1_1SFMLTextureManager}{SFMLTextureManager}}*\ \mbox{\hyperlink{classe2XD_1_1framework_1_1SFMLTextureManager_afe7edf6a9e4102fbd8a4d694619aff6f}{getInstance}}();}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ [[nodiscard]]\ \textcolor{keyword}{const}\ sf::Texture\&\ \mbox{\hyperlink{classe2XD_1_1framework_1_1SFMLTextureManager_acce19e423ebed4df2bba6ee0dc63e2db}{getTexture}}(\textcolor{keyword}{const}\ std::string\&\ name)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classe2XD_1_1framework_1_1SFMLTextureManager_a2c7a45a86fd3267accbcd67d292bbfe7}{loadJsonTextureConfig}}(\textcolor{keyword}{const}\ std::string\&\ jsonFilePath);}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classe2XD_1_1framework_1_1SFMLTextureManager_ab3f4b7a43ff786d4662f550487e09e98}{isJsonTextureLoaded}}(\textcolor{keyword}{const}\ std::string\&\ jsonFilePath)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classe2XD_1_1framework_1_1SFMLTextureManager_ab21c47a30533e6396d53be30f06777cf}{loadJsonTextureConfigIfNotLoaded}}(\textcolor{keyword}{const}\ std::string\&\ jsonFilePath);}
+\DoxyCodeLine{00045\ \ \ \ \ \};}
+\DoxyCodeLine{00046\ \}}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00049\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//FLATLAND\_ITEXTUREPARSER\_H}}
+
+\end{DoxyCode}

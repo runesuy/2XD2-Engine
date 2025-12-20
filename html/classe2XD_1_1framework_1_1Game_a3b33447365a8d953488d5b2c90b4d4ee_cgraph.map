@@ -1,0 +1,9 @@
+<map id="e2XD::framework::Game::run" name="e2XD::framework::Game::run">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,78,191,104"/>
+<area shape="rect" id="Node000002" href="$classe2XD_1_1framework_1_1SFMLInputHandler.html#a6c7a189ad67a80f1fe40e2f375de46a2" title=" " alt="" coords="239,5,430,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="146,75,243,48,244,53,148,80"/>
+<area shape="rect" id="Node000003" href="$classe2XD_1_1framework_1_1SFMLInputHandler.html#a039051905b9440897d8f82c8a47ed272" title=" " alt="" coords="239,71,430,111"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="191,88,223,88,223,94,191,94"/>
+<area shape="rect" id="Node000004" href="$classe2XD_1_1core_1_1Time.html#a6bd9d191a97e74e65e057b992fcc8dd4" title=" " alt="" coords="261,136,408,161"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="155,102,264,129,263,134,153,107"/>
+</map>

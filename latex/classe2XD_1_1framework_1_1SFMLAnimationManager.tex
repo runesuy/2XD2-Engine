@@ -1,0 +1,151 @@
+\doxysection{e2\+XD\+::framework\+::SFMLAnimation\+Manager Class Reference}
+\hypertarget{classe2XD_1_1framework_1_1SFMLAnimationManager}{}\label{classe2XD_1_1framework_1_1SFMLAnimationManager}\index{e2XD::framework::SFMLAnimationManager@{e2XD::framework::SFMLAnimationManager}}
+
+
+{\ttfamily \#include $<$SFMLAnimation\+Manager.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classe2XD_1_1framework_1_1SFMLAnimationManager_a4ff2bf5ffc3c069444dc08b33c78c152}{SFMLAnimation\+Manager}} (const \mbox{\hyperlink{classe2XD_1_1framework_1_1SFMLAnimationManager}{SFMLAnimation\+Manager}} \&)=delete
+\item 
+\mbox{\hyperlink{classe2XD_1_1framework_1_1SFMLAnimationManager}{SFMLAnimation\+Manager}} \& \mbox{\hyperlink{classe2XD_1_1framework_1_1SFMLAnimationManager_aeab64b53fac33c57c0d51500b2556aec}{operator=}} (const \mbox{\hyperlink{classe2XD_1_1framework_1_1SFMLAnimationManager}{SFMLAnimation\+Manager}} \&)=delete
+\item 
+\mbox{\hyperlink{classe2XD_1_1framework_1_1SFMLAnimationManager}{SFMLAnimation\+Manager}} \& \mbox{\hyperlink{classe2XD_1_1framework_1_1SFMLAnimationManager_ac91aecb83a9a5b905d1ccf3c27c9a3a8}{operator=}} (\mbox{\hyperlink{classe2XD_1_1framework_1_1SFMLAnimationManager}{SFMLAnimation\+Manager}} \&\&)=delete
+\item 
+\mbox{\hyperlink{classe2XD_1_1framework_1_1SFMLAnimationManager_a17d178c7ec594ea5af7ef8d25849e0fb}{SFMLAnimation\+Manager}} (\mbox{\hyperlink{classe2XD_1_1framework_1_1SFMLAnimationManager}{SFMLAnimation\+Manager}} \&\&)=delete
+\item 
+\mbox{\hyperlink{classe2XD_1_1framework_1_1SFMLAnimationManager_aec048e8a0a2d2cc517f41a7d265dc36f}{\texorpdfstring{$\sim$}{\string~}\+SFMLAnimation\+Manager}} ()=default
+\item 
+const \mbox{\hyperlink{AnimationMap_8h_a2a59f1490d3e20cda1971a331ebcc0c9}{Animation\+Map}} \& \mbox{\hyperlink{classe2XD_1_1framework_1_1SFMLAnimationManager_ab19246a854f2677a8e8d6f1d443b3fd9}{get\+Animation\+Map}} (const std\+::string \&name) const
+\item 
+void \mbox{\hyperlink{classe2XD_1_1framework_1_1SFMLAnimationManager_ac8e63489b899b664561b6f703e5c2e5d}{load\+Json\+Animation\+Config}} (const std\+::string \&json\+File\+Path)
+\item 
+bool \mbox{\hyperlink{classe2XD_1_1framework_1_1SFMLAnimationManager_a1129e6c82d22b0b98a40d78eda2cff3c}{is\+Json\+Animation\+Loaded}} (const std\+::string \&json\+File\+Path) const
+\item 
+bool \mbox{\hyperlink{classe2XD_1_1framework_1_1SFMLAnimationManager_a129c334011cf888de78c5fc0d9b3bfaf}{load\+Json\+Animation\+Config\+If\+Not\+Loaded}} (const std\+::string \&json\+File\+Path)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classe2XD_1_1framework_1_1SFMLAnimationManager}{SFMLAnimation\+Manager}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classe2XD_1_1framework_1_1SFMLAnimationManager_a9618a0420b79a8634689ece8da92e6da}{get\+Instance}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Singleton 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classe2XD_1_1framework_1_1SFMLAnimationManager_a4ff2bf5ffc3c069444dc08b33c78c152}\label{classe2XD_1_1framework_1_1SFMLAnimationManager_a4ff2bf5ffc3c069444dc08b33c78c152} 
+\index{e2XD::framework::SFMLAnimationManager@{e2XD::framework::SFMLAnimationManager}!SFMLAnimationManager@{SFMLAnimationManager}}
+\index{SFMLAnimationManager@{SFMLAnimationManager}!e2XD::framework::SFMLAnimationManager@{e2XD::framework::SFMLAnimationManager}}
+\doxysubsubsection{\texorpdfstring{SFMLAnimationManager()}{SFMLAnimationManager()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily e2\+XD\+::framework\+::\+SFMLAnimation\+Manager\+::\+SFMLAnimation\+Manager (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classe2XD_1_1framework_1_1SFMLAnimationManager}{SFMLAnimation\+Manager}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\Hypertarget{classe2XD_1_1framework_1_1SFMLAnimationManager_a17d178c7ec594ea5af7ef8d25849e0fb}\label{classe2XD_1_1framework_1_1SFMLAnimationManager_a17d178c7ec594ea5af7ef8d25849e0fb} 
+\index{e2XD::framework::SFMLAnimationManager@{e2XD::framework::SFMLAnimationManager}!SFMLAnimationManager@{SFMLAnimationManager}}
+\index{SFMLAnimationManager@{SFMLAnimationManager}!e2XD::framework::SFMLAnimationManager@{e2XD::framework::SFMLAnimationManager}}
+\doxysubsubsection{\texorpdfstring{SFMLAnimationManager()}{SFMLAnimationManager()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily e2\+XD\+::framework\+::\+SFMLAnimation\+Manager\+::\+SFMLAnimation\+Manager (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classe2XD_1_1framework_1_1SFMLAnimationManager}{SFMLAnimation\+Manager}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\Hypertarget{classe2XD_1_1framework_1_1SFMLAnimationManager_aec048e8a0a2d2cc517f41a7d265dc36f}\label{classe2XD_1_1framework_1_1SFMLAnimationManager_aec048e8a0a2d2cc517f41a7d265dc36f} 
+\index{e2XD::framework::SFMLAnimationManager@{e2XD::framework::SFMLAnimationManager}!````~SFMLAnimationManager@{\texorpdfstring{$\sim$}{\string~}SFMLAnimationManager}}
+\index{````~SFMLAnimationManager@{\texorpdfstring{$\sim$}{\string~}SFMLAnimationManager}!e2XD::framework::SFMLAnimationManager@{e2XD::framework::SFMLAnimationManager}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}SFMLAnimationManager()}{\string~SFMLAnimationManager()}}
+{\footnotesize\ttfamily e2\+XD\+::framework\+::\+SFMLAnimation\+Manager\+::\texorpdfstring{$\sim$}{\string~}\+SFMLAnimation\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classe2XD_1_1framework_1_1SFMLAnimationManager_ab19246a854f2677a8e8d6f1d443b3fd9}\label{classe2XD_1_1framework_1_1SFMLAnimationManager_ab19246a854f2677a8e8d6f1d443b3fd9} 
+\index{e2XD::framework::SFMLAnimationManager@{e2XD::framework::SFMLAnimationManager}!getAnimationMap@{getAnimationMap}}
+\index{getAnimationMap@{getAnimationMap}!e2XD::framework::SFMLAnimationManager@{e2XD::framework::SFMLAnimationManager}}
+\doxysubsubsection{\texorpdfstring{getAnimationMap()}{getAnimationMap()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{AnimationMap_8h_a2a59f1490d3e20cda1971a331ebcc0c9}{Animation\+Map}} \& e2\+XD\+::framework\+::\+SFMLAnimation\+Manager\+::get\+Animation\+Map (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name }\end{DoxyParamCaption}) const}
+
+\Hypertarget{classe2XD_1_1framework_1_1SFMLAnimationManager_a9618a0420b79a8634689ece8da92e6da}\label{classe2XD_1_1framework_1_1SFMLAnimationManager_a9618a0420b79a8634689ece8da92e6da} 
+\index{e2XD::framework::SFMLAnimationManager@{e2XD::framework::SFMLAnimationManager}!getInstance@{getInstance}}
+\index{getInstance@{getInstance}!e2XD::framework::SFMLAnimationManager@{e2XD::framework::SFMLAnimationManager}}
+\doxysubsubsection{\texorpdfstring{getInstance()}{getInstance()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classe2XD_1_1framework_1_1SFMLAnimationManager}{SFMLAnimation\+Manager}} \texorpdfstring{$\ast$}{*} e2\+XD\+::framework\+::\+SFMLAnimation\+Manager\+::get\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classe2XD_1_1framework_1_1SFMLAnimationManager_a1129e6c82d22b0b98a40d78eda2cff3c}\label{classe2XD_1_1framework_1_1SFMLAnimationManager_a1129e6c82d22b0b98a40d78eda2cff3c} 
+\index{e2XD::framework::SFMLAnimationManager@{e2XD::framework::SFMLAnimationManager}!isJsonAnimationLoaded@{isJsonAnimationLoaded}}
+\index{isJsonAnimationLoaded@{isJsonAnimationLoaded}!e2XD::framework::SFMLAnimationManager@{e2XD::framework::SFMLAnimationManager}}
+\doxysubsubsection{\texorpdfstring{isJsonAnimationLoaded()}{isJsonAnimationLoaded()}}
+{\footnotesize\ttfamily bool e2\+XD\+::framework\+::\+SFMLAnimation\+Manager\+::is\+Json\+Animation\+Loaded (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{json\+File\+Path }\end{DoxyParamCaption}) const}
+
+\Hypertarget{classe2XD_1_1framework_1_1SFMLAnimationManager_ac8e63489b899b664561b6f703e5c2e5d}\label{classe2XD_1_1framework_1_1SFMLAnimationManager_ac8e63489b899b664561b6f703e5c2e5d} 
+\index{e2XD::framework::SFMLAnimationManager@{e2XD::framework::SFMLAnimationManager}!loadJsonAnimationConfig@{loadJsonAnimationConfig}}
+\index{loadJsonAnimationConfig@{loadJsonAnimationConfig}!e2XD::framework::SFMLAnimationManager@{e2XD::framework::SFMLAnimationManager}}
+\doxysubsubsection{\texorpdfstring{loadJsonAnimationConfig()}{loadJsonAnimationConfig()}}
+{\footnotesize\ttfamily void e2\+XD\+::framework\+::\+SFMLAnimation\+Manager\+::load\+Json\+Animation\+Config (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{json\+File\+Path }\end{DoxyParamCaption})}
+
+Load animations in the manager using a json config file. Json format\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{\ \ \ \textcolor{stringliteral}{"{}animation-\/map-\/name"{}}:\ \textcolor{stringliteral}{"{}example-\/animations"{}},}
+\DoxyCodeLine{\ \ \ \textcolor{stringliteral}{"{}animations"{}}:\ [}
+\DoxyCodeLine{\ \ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \textcolor{stringliteral}{"{}name"{}}:\ \textcolor{stringliteral}{"{}animation-\/1"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \textcolor{stringliteral}{"{}frame-\/duration"{}}:\ 0.1,}
+\DoxyCodeLine{\ \ \ \ \ \ \textcolor{stringliteral}{"{}repeat"{}}:\ \textcolor{keyword}{false},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}frames"{}}:\ [}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}texture\_0"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}texture\_1"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}texture\_2,"{}}}
+\DoxyCodeLine{\ \ \ \ \ \ \ ]}
+\DoxyCodeLine{\ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ ]}
+\DoxyCodeLine{\}}
+\DoxyCodeLine{}
+\DoxyCodeLine{The\ mentioned\ textures\ need\ to\ be\ textures\ present\ in\ SFMLTextureManager}
+
+\end{DoxyCode}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em json\+File\+Path} & \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classe2XD_1_1framework_1_1SFMLAnimationManager_ac8e63489b899b664561b6f703e5c2e5d_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classe2XD_1_1framework_1_1SFMLAnimationManager_a129c334011cf888de78c5fc0d9b3bfaf}\label{classe2XD_1_1framework_1_1SFMLAnimationManager_a129c334011cf888de78c5fc0d9b3bfaf} 
+\index{e2XD::framework::SFMLAnimationManager@{e2XD::framework::SFMLAnimationManager}!loadJsonAnimationConfigIfNotLoaded@{loadJsonAnimationConfigIfNotLoaded}}
+\index{loadJsonAnimationConfigIfNotLoaded@{loadJsonAnimationConfigIfNotLoaded}!e2XD::framework::SFMLAnimationManager@{e2XD::framework::SFMLAnimationManager}}
+\doxysubsubsection{\texorpdfstring{loadJsonAnimationConfigIfNotLoaded()}{loadJsonAnimationConfigIfNotLoaded()}}
+{\footnotesize\ttfamily bool e2\+XD\+::framework\+::\+SFMLAnimation\+Manager\+::load\+Json\+Animation\+Config\+If\+Not\+Loaded (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{json\+File\+Path }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classe2XD_1_1framework_1_1SFMLAnimationManager_a129c334011cf888de78c5fc0d9b3bfaf_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classe2XD_1_1framework_1_1SFMLAnimationManager_aeab64b53fac33c57c0d51500b2556aec}\label{classe2XD_1_1framework_1_1SFMLAnimationManager_aeab64b53fac33c57c0d51500b2556aec} 
+\index{e2XD::framework::SFMLAnimationManager@{e2XD::framework::SFMLAnimationManager}!operator=@{operator=}}
+\index{operator=@{operator=}!e2XD::framework::SFMLAnimationManager@{e2XD::framework::SFMLAnimationManager}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classe2XD_1_1framework_1_1SFMLAnimationManager}{SFMLAnimation\+Manager}} \& e2\+XD\+::framework\+::\+SFMLAnimation\+Manager\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classe2XD_1_1framework_1_1SFMLAnimationManager}{SFMLAnimation\+Manager}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\Hypertarget{classe2XD_1_1framework_1_1SFMLAnimationManager_ac91aecb83a9a5b905d1ccf3c27c9a3a8}\label{classe2XD_1_1framework_1_1SFMLAnimationManager_ac91aecb83a9a5b905d1ccf3c27c9a3a8} 
+\index{e2XD::framework::SFMLAnimationManager@{e2XD::framework::SFMLAnimationManager}!operator=@{operator=}}
+\index{operator=@{operator=}!e2XD::framework::SFMLAnimationManager@{e2XD::framework::SFMLAnimationManager}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classe2XD_1_1framework_1_1SFMLAnimationManager}{SFMLAnimation\+Manager}} \& e2\+XD\+::framework\+::\+SFMLAnimation\+Manager\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classe2XD_1_1framework_1_1SFMLAnimationManager}{SFMLAnimation\+Manager}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+framework/include/2\+XD2/framework/resource\+\_\+manager/\mbox{\hyperlink{SFMLAnimationManager_8h}{SFMLAnimation\+Manager.\+h}}\item 
+framework/src/resource\+\_\+manager/\mbox{\hyperlink{SFMLAnimationManager_8cpp}{SFMLAnimation\+Manager.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,48 @@
+<map id="core/include/2XD2/core/Vec2.h" name="core/include/2XD2/core/Vec2.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="732,5,888,46"/>
+<area shape="rect" id="Node000002" href="$Node2D_8h.html" title=" " alt="" coords="435,183,591,223"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="717,34,675,41,633,53,592,71,556,96,540,116,529,139,517,183,512,182,524,137,535,113,552,92,589,66,631,48,674,35,716,28"/>
+<area shape="rect" id="Node000016" href="$Transform2D_8h.html" title=" " alt="" coords="567,94,723,135"/>
+<area shape="poly" id="edge15_Node000001_Node000016" title=" " alt="" coords="761,56,683,96,681,91,758,51"/>
+<area shape="rect" id="Node000018" href="$Vec2_8cpp.html" title=" " alt="" coords="747,102,873,127"/>
+<area shape="poly" id="edge18_Node000001_Node000018" title=" " alt="" coords="813,62,813,101,808,101,808,62"/>
+<area shape="rect" id="Node000019" href="$IInputHandler_8h.html" title=" " alt="" coords="948,94,1126,135"/>
+<area shape="poly" id="edge19_Node000001_Node000019" title=" " alt="" coords="876,49,986,91,984,96,875,54"/>
+<area shape="rect" id="Node000020" href="$SFMLInputHandler_8h.html" title=" " alt="" coords="862,183,1073,223"/>
+<area shape="poly" id="edge24_Node000001_Node000020" title=" " alt="" coords="847,54,887,92,926,139,956,181,952,184,922,142,883,96,844,58"/>
+<area shape="rect" id="Node000003" href="$Camera_8h.html" title=" " alt="" coords="59,271,215,312"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="420,228,216,275,215,270,419,223"/>
+<area shape="rect" id="Node000009" href="$Node2D_8cpp.html" title=" " alt="" coords="239,279,382,305"/>
+<area shape="poly" id="edge8_Node000002_Node000009" title=" " alt="" coords="454,232,340,281,337,276,452,227"/>
+<area shape="rect" id="Node000010" href="$Rectangle2D_8h.html" title=" " alt="" coords="406,271,620,312"/>
+<area shape="poly" id="edge9_Node000002_Node000010" title=" " alt="" coords="516,239,516,271,510,271,510,239"/>
+<area shape="rect" id="Node000012" href="$Sprite2D_8h.html" title=" " alt="" coords="644,271,833,312"/>
+<area shape="poly" id="edge11_Node000002_Node000012" title=" " alt="" coords="579,227,688,268,686,273,577,232"/>
+<area shape="rect" id="Node000004" href="$Scene_8h.html" title=" " alt="" coords="5,360,162,401"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="119,327,98,361,93,358,115,324"/>
+<area shape="rect" id="Node000008" href="$Camera_8cpp.html" title=" " alt="" coords="186,368,328,393"/>
+<area shape="poly" id="edge7_Node000003_Node000008" title=" " alt="" coords="178,319,242,365,239,369,175,323"/>
+<area shape="rect" id="Node000005" href="$Scene_8cpp.html" title=" " alt="" coords="17,456,150,482"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="86,416,86,456,81,456,81,416"/>
+<area shape="rect" id="Node000006" href="$Game_8h.html" title=" " alt="" coords="275,449,439,489"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="161,403,296,446,294,451,160,408"/>
+<area shape="rect" id="Node000007" href="$Game_8cpp.html" title=" " alt="" coords="579,537,746,563"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="449,491,616,534,614,539,447,496"/>
+<area shape="rect" id="Node000011" href="$Rectangle2D_8cpp.html" title=" " alt="" coords="352,360,495,401"/>
+<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="483,325,446,361,442,358,480,321"/>
+<area shape="rect" id="Node000013" href="$AnimatedSprite2D_8h.html" title=" " alt="" coords="519,360,763,401"/>
+<area shape="poly" id="edge12_Node000012_Node000013" title=" " alt="" coords="707,324,665,362,661,358,703,320"/>
+<area shape="rect" id="Node000015" href="$Sprite2D_8cpp.html" title=" " alt="" coords="787,360,930,401"/>
+<area shape="poly" id="edge14_Node000012_Node000015" title=" " alt="" coords="779,319,833,357,829,362,776,323"/>
+<area shape="rect" id="Node000014" href="$AnimatedSprite2D_8cpp.html" title=" " alt="" coords="564,449,718,489"/>
+<area shape="poly" id="edge13_Node000013_Node000014" title=" " alt="" coords="644,416,644,448,638,448,638,416"/>
+<area shape="poly" id="edge16_Node000016_Node000002" title=" " alt="" coords="603,146,544,184,541,180,601,141"/>
+<area shape="rect" id="Node000017" href="$Transform2D_8cpp.html" title=" " alt="" coords="615,190,787,216"/>
+<area shape="poly" id="edge17_Node000016_Node000017" title=" " alt="" coords="668,147,695,188,691,191,664,149"/>
+<area shape="poly" id="edge20_Node000019_Node000020" title=" " alt="" coords="1014,149,985,184,981,181,1010,145"/>
+<area shape="rect" id="Node000022" href="$IInputManager_8cpp.html" title=" " alt="" coords="1097,190,1313,216"/>
+<area shape="poly" id="edge23_Node000019_Node000022" title=" " alt="" coords="1089,140,1183,187,1180,192,1087,144"/>
+<area shape="poly" id="edge21_Node000020_Node000007" title=" " alt="" coords="975,239,976,275,974,318,964,362,944,402,921,430,895,454,834,494,771,521,716,539,714,534,769,516,831,489,891,450,918,426,940,399,959,360,968,317,971,275,969,239"/>
+<area shape="rect" id="Node000021" href="$SFMLInputHandler_8cpp.html" title=" " alt="" coords="1005,279,1247,305"/>
+<area shape="poly" id="edge22_Node000020_Node000021" title=" " alt="" coords="1018,229,1105,276,1103,281,1016,233"/>
+</map>

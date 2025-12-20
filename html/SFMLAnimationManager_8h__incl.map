@@ -1,0 +1,18 @@
+<map id="framework/include/2XD2/framework/resource_manager/SFMLAnimationManager.h" name="framework/include/2XD2/framework/resource_manager/SFMLAnimationManager.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="29,5,226,61"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,117,45,142"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="100,64,51,108,47,104,96,60"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="69,117,122,142"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="121,62,107,103,102,101,116,61"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="107,198,218,223"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="136,61,160,182,154,183,130,62"/>
+<area shape="rect" id="Node000005" href="$AnimationMap_8h.html" title=" " alt="" coords="198,109,378,150"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="175,59,242,98,240,103,173,64"/>
+<area shape="poly" id="edge5_Node000005_Node000004" title=" " alt="" coords="258,152,196,191,193,187,255,148"/>
+<area shape="rect" id="Node000006" href="$Animation_8h.html" title=" " alt="" coords="243,198,332,223"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="290,150,290,182,285,182,285,150"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="186,271,243,297"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="277,225,239,262,236,259,274,222"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="268,271,452,297"/>
+<area shape="poly" id="edge8_Node000006_Node000008" title=" " alt="" coords="301,222,339,258,335,262,298,225"/>
+</map>

@@ -1,0 +1,194 @@
+\doxysection{e2\+XD\+::framework\+::IInput\+Handler Class Reference}
+\hypertarget{classe2XD_1_1framework_1_1IInputHandler}{}\label{classe2XD_1_1framework_1_1IInputHandler}\index{e2XD::framework::IInputHandler@{e2XD::framework::IInputHandler}}
+
+
+{\ttfamily \#include $<$IInput\+Handler.\+h$>$}
+
+
+
+Inheritance diagram for e2\+XD\+::framework\+::IInput\+Handler\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=233pt]{classe2XD_1_1framework_1_1IInputHandler__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classe2XD_1_1framework_1_1IInputHandler_a21c005eb00f642b22a4c7770f0b65bc4}{\texorpdfstring{$\sim$}{\string~}\+IInput\+Handler}} ()=default
+\item 
+virtual void \mbox{\hyperlink{classe2XD_1_1framework_1_1IInputHandler_a0b933d16514069fb8a844c2c616aeb98}{poll\+Events}} ()=0
+\item 
+virtual bool \mbox{\hyperlink{classe2XD_1_1framework_1_1IInputHandler_a2c5eddba87ce7235e0956cef682e876e}{is\+Key\+Pressed}} (\mbox{\hyperlink{Key_8h_ab3c7af4820830f9166ede9e5623c4e73}{Key}} key\+Code) const =0
+\item 
+virtual bool \mbox{\hyperlink{classe2XD_1_1framework_1_1IInputHandler_a4a37d9b15f473d0643f7daf8845cac49}{is\+Key\+Just\+Pressed}} (\mbox{\hyperlink{Key_8h_ab3c7af4820830f9166ede9e5623c4e73}{Key}} key\+Code) const =0
+\item 
+virtual bool \mbox{\hyperlink{classe2XD_1_1framework_1_1IInputHandler_a69af105e6b2f04acfcd8835bd29bbe45}{is\+Key\+Released}} (\mbox{\hyperlink{Key_8h_ab3c7af4820830f9166ede9e5623c4e73}{Key}} key\+Code) const =0
+\item 
+virtual bool \mbox{\hyperlink{classe2XD_1_1framework_1_1IInputHandler_aed0fbf3bd44d9f68c6565bdb4d29eff7}{is\+Key\+Just\+Released}} (\mbox{\hyperlink{Key_8h_ab3c7af4820830f9166ede9e5623c4e73}{Key}} key\+Code) const =0
+\item 
+virtual bool \mbox{\hyperlink{classe2XD_1_1framework_1_1IInputHandler_af7dd7a7d8c7d6f2a89adbe74135502e3}{is\+Mouse\+Button\+Pressed}} (\mbox{\hyperlink{MouseButton_8h_ac1ec3647c005eacad401b06e7e18f711}{Mouse\+Button}} button\+Code) const =0
+\item 
+virtual bool \mbox{\hyperlink{classe2XD_1_1framework_1_1IInputHandler_af008252e4ae044e6fc9302a853830f45}{is\+Mouse\+Button\+Just\+Pressed}} (\mbox{\hyperlink{MouseButton_8h_ac1ec3647c005eacad401b06e7e18f711}{Mouse\+Button}} button\+Code) const =0
+\item 
+virtual bool \mbox{\hyperlink{classe2XD_1_1framework_1_1IInputHandler_abc5f7f687d778e3bc54311633f4c215d}{is\+Mouse\+Button\+Released}} (\mbox{\hyperlink{MouseButton_8h_ac1ec3647c005eacad401b06e7e18f711}{Mouse\+Button}} button\+Code) const =0
+\item 
+virtual bool \mbox{\hyperlink{classe2XD_1_1framework_1_1IInputHandler_aadca06621b08a4cdeca60010267e1dc6}{is\+Mouse\+Button\+Just\+Released}} (\mbox{\hyperlink{MouseButton_8h_ac1ec3647c005eacad401b06e7e18f711}{Mouse\+Button}} button\+Code) const =0
+\item 
+virtual \mbox{\hyperlink{structe2XD_1_1core_1_1Vec2}{core\+::\+Vec2}} \mbox{\hyperlink{classe2XD_1_1framework_1_1IInputHandler_ada2c5e07dd2d7a892f45f1896b97d4cc}{get\+Mouse\+Position}} () const =0
+\item 
+virtual std\+::tuple$<$ bool, float, float $>$ \mbox{\hyperlink{classe2XD_1_1framework_1_1IInputHandler_a96789b29e1c7f7dcb111b0e014ca32b9}{is\+Window\+Resized}} () const =0
+\item 
+virtual bool \mbox{\hyperlink{classe2XD_1_1framework_1_1IInputHandler_aedf969b27bf30198943b6b6cfedc4d9d}{is\+Window\+Closed}} () const =0
+\item 
+virtual void \mbox{\hyperlink{classe2XD_1_1framework_1_1IInputHandler_a1f0b193446211db81dde88ca7fcea0e2}{new\+Frame}} ()=0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classe2XD_1_1framework_1_1IInputHandler_a21c005eb00f642b22a4c7770f0b65bc4}\label{classe2XD_1_1framework_1_1IInputHandler_a21c005eb00f642b22a4c7770f0b65bc4} 
+\index{e2XD::framework::IInputHandler@{e2XD::framework::IInputHandler}!````~IInputHandler@{\texorpdfstring{$\sim$}{\string~}IInputHandler}}
+\index{````~IInputHandler@{\texorpdfstring{$\sim$}{\string~}IInputHandler}!e2XD::framework::IInputHandler@{e2XD::framework::IInputHandler}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}IInputHandler()}{\string~IInputHandler()}}
+{\footnotesize\ttfamily virtual e2\+XD\+::framework\+::\+IInput\+Handler\+::\texorpdfstring{$\sim$}{\string~}\+IInput\+Handler (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classe2XD_1_1framework_1_1IInputHandler_ada2c5e07dd2d7a892f45f1896b97d4cc}\label{classe2XD_1_1framework_1_1IInputHandler_ada2c5e07dd2d7a892f45f1896b97d4cc} 
+\index{e2XD::framework::IInputHandler@{e2XD::framework::IInputHandler}!getMousePosition@{getMousePosition}}
+\index{getMousePosition@{getMousePosition}!e2XD::framework::IInputHandler@{e2XD::framework::IInputHandler}}
+\doxysubsubsection{\texorpdfstring{getMousePosition()}{getMousePosition()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{structe2XD_1_1core_1_1Vec2}{core\+::\+Vec2}} e2\+XD\+::framework\+::\+IInput\+Handler\+::get\+Mouse\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classe2XD_1_1framework_1_1SFMLInputHandler_a44efcfd58f23dbc156c594e9c35eb76a}{e2\+XD\+::framework\+::\+SFMLInput\+Handler}}.
+
+\Hypertarget{classe2XD_1_1framework_1_1IInputHandler_a4a37d9b15f473d0643f7daf8845cac49}\label{classe2XD_1_1framework_1_1IInputHandler_a4a37d9b15f473d0643f7daf8845cac49} 
+\index{e2XD::framework::IInputHandler@{e2XD::framework::IInputHandler}!isKeyJustPressed@{isKeyJustPressed}}
+\index{isKeyJustPressed@{isKeyJustPressed}!e2XD::framework::IInputHandler@{e2XD::framework::IInputHandler}}
+\doxysubsubsection{\texorpdfstring{isKeyJustPressed()}{isKeyJustPressed()}}
+{\footnotesize\ttfamily virtual bool e2\+XD\+::framework\+::\+IInput\+Handler\+::is\+Key\+Just\+Pressed (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{Key_8h_ab3c7af4820830f9166ede9e5623c4e73}{Key}}}]{key\+Code }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classe2XD_1_1framework_1_1SFMLInputHandler_a248ab28d0cb1f8ad3a6842f914baeafe}{e2\+XD\+::framework\+::\+SFMLInput\+Handler}}.
+
+\Hypertarget{classe2XD_1_1framework_1_1IInputHandler_aed0fbf3bd44d9f68c6565bdb4d29eff7}\label{classe2XD_1_1framework_1_1IInputHandler_aed0fbf3bd44d9f68c6565bdb4d29eff7} 
+\index{e2XD::framework::IInputHandler@{e2XD::framework::IInputHandler}!isKeyJustReleased@{isKeyJustReleased}}
+\index{isKeyJustReleased@{isKeyJustReleased}!e2XD::framework::IInputHandler@{e2XD::framework::IInputHandler}}
+\doxysubsubsection{\texorpdfstring{isKeyJustReleased()}{isKeyJustReleased()}}
+{\footnotesize\ttfamily virtual bool e2\+XD\+::framework\+::\+IInput\+Handler\+::is\+Key\+Just\+Released (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{Key_8h_ab3c7af4820830f9166ede9e5623c4e73}{Key}}}]{key\+Code }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classe2XD_1_1framework_1_1SFMLInputHandler_a48ec9329689613efa1bd61a2278fd7f6}{e2\+XD\+::framework\+::\+SFMLInput\+Handler}}.
+
+\Hypertarget{classe2XD_1_1framework_1_1IInputHandler_a2c5eddba87ce7235e0956cef682e876e}\label{classe2XD_1_1framework_1_1IInputHandler_a2c5eddba87ce7235e0956cef682e876e} 
+\index{e2XD::framework::IInputHandler@{e2XD::framework::IInputHandler}!isKeyPressed@{isKeyPressed}}
+\index{isKeyPressed@{isKeyPressed}!e2XD::framework::IInputHandler@{e2XD::framework::IInputHandler}}
+\doxysubsubsection{\texorpdfstring{isKeyPressed()}{isKeyPressed()}}
+{\footnotesize\ttfamily virtual bool e2\+XD\+::framework\+::\+IInput\+Handler\+::is\+Key\+Pressed (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{Key_8h_ab3c7af4820830f9166ede9e5623c4e73}{Key}}}]{key\+Code }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classe2XD_1_1framework_1_1SFMLInputHandler_a5e7434b09a6258d9b1d5a4580d5295d4}{e2\+XD\+::framework\+::\+SFMLInput\+Handler}}.
+
+\Hypertarget{classe2XD_1_1framework_1_1IInputHandler_a69af105e6b2f04acfcd8835bd29bbe45}\label{classe2XD_1_1framework_1_1IInputHandler_a69af105e6b2f04acfcd8835bd29bbe45} 
+\index{e2XD::framework::IInputHandler@{e2XD::framework::IInputHandler}!isKeyReleased@{isKeyReleased}}
+\index{isKeyReleased@{isKeyReleased}!e2XD::framework::IInputHandler@{e2XD::framework::IInputHandler}}
+\doxysubsubsection{\texorpdfstring{isKeyReleased()}{isKeyReleased()}}
+{\footnotesize\ttfamily virtual bool e2\+XD\+::framework\+::\+IInput\+Handler\+::is\+Key\+Released (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{Key_8h_ab3c7af4820830f9166ede9e5623c4e73}{Key}}}]{key\+Code }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classe2XD_1_1framework_1_1SFMLInputHandler_abefcc6867e09bcd860e9e484bd73cfcb}{e2\+XD\+::framework\+::\+SFMLInput\+Handler}}.
+
+\Hypertarget{classe2XD_1_1framework_1_1IInputHandler_af008252e4ae044e6fc9302a853830f45}\label{classe2XD_1_1framework_1_1IInputHandler_af008252e4ae044e6fc9302a853830f45} 
+\index{e2XD::framework::IInputHandler@{e2XD::framework::IInputHandler}!isMouseButtonJustPressed@{isMouseButtonJustPressed}}
+\index{isMouseButtonJustPressed@{isMouseButtonJustPressed}!e2XD::framework::IInputHandler@{e2XD::framework::IInputHandler}}
+\doxysubsubsection{\texorpdfstring{isMouseButtonJustPressed()}{isMouseButtonJustPressed()}}
+{\footnotesize\ttfamily virtual bool e2\+XD\+::framework\+::\+IInput\+Handler\+::is\+Mouse\+Button\+Just\+Pressed (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{MouseButton_8h_ac1ec3647c005eacad401b06e7e18f711}{Mouse\+Button}}}]{button\+Code }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classe2XD_1_1framework_1_1SFMLInputHandler_a859f61410a64e0bd6f2e4756588c1329}{e2\+XD\+::framework\+::\+SFMLInput\+Handler}}.
+
+\Hypertarget{classe2XD_1_1framework_1_1IInputHandler_aadca06621b08a4cdeca60010267e1dc6}\label{classe2XD_1_1framework_1_1IInputHandler_aadca06621b08a4cdeca60010267e1dc6} 
+\index{e2XD::framework::IInputHandler@{e2XD::framework::IInputHandler}!isMouseButtonJustReleased@{isMouseButtonJustReleased}}
+\index{isMouseButtonJustReleased@{isMouseButtonJustReleased}!e2XD::framework::IInputHandler@{e2XD::framework::IInputHandler}}
+\doxysubsubsection{\texorpdfstring{isMouseButtonJustReleased()}{isMouseButtonJustReleased()}}
+{\footnotesize\ttfamily virtual bool e2\+XD\+::framework\+::\+IInput\+Handler\+::is\+Mouse\+Button\+Just\+Released (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{MouseButton_8h_ac1ec3647c005eacad401b06e7e18f711}{Mouse\+Button}}}]{button\+Code }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classe2XD_1_1framework_1_1SFMLInputHandler_a1018db0fdca2b4c297f03dbbfdd53460}{e2\+XD\+::framework\+::\+SFMLInput\+Handler}}.
+
+\Hypertarget{classe2XD_1_1framework_1_1IInputHandler_af7dd7a7d8c7d6f2a89adbe74135502e3}\label{classe2XD_1_1framework_1_1IInputHandler_af7dd7a7d8c7d6f2a89adbe74135502e3} 
+\index{e2XD::framework::IInputHandler@{e2XD::framework::IInputHandler}!isMouseButtonPressed@{isMouseButtonPressed}}
+\index{isMouseButtonPressed@{isMouseButtonPressed}!e2XD::framework::IInputHandler@{e2XD::framework::IInputHandler}}
+\doxysubsubsection{\texorpdfstring{isMouseButtonPressed()}{isMouseButtonPressed()}}
+{\footnotesize\ttfamily virtual bool e2\+XD\+::framework\+::\+IInput\+Handler\+::is\+Mouse\+Button\+Pressed (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{MouseButton_8h_ac1ec3647c005eacad401b06e7e18f711}{Mouse\+Button}}}]{button\+Code }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classe2XD_1_1framework_1_1SFMLInputHandler_ae8cd6de858a05a9039daaddd3c5f4bc3}{e2\+XD\+::framework\+::\+SFMLInput\+Handler}}.
+
+\Hypertarget{classe2XD_1_1framework_1_1IInputHandler_abc5f7f687d778e3bc54311633f4c215d}\label{classe2XD_1_1framework_1_1IInputHandler_abc5f7f687d778e3bc54311633f4c215d} 
+\index{e2XD::framework::IInputHandler@{e2XD::framework::IInputHandler}!isMouseButtonReleased@{isMouseButtonReleased}}
+\index{isMouseButtonReleased@{isMouseButtonReleased}!e2XD::framework::IInputHandler@{e2XD::framework::IInputHandler}}
+\doxysubsubsection{\texorpdfstring{isMouseButtonReleased()}{isMouseButtonReleased()}}
+{\footnotesize\ttfamily virtual bool e2\+XD\+::framework\+::\+IInput\+Handler\+::is\+Mouse\+Button\+Released (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{MouseButton_8h_ac1ec3647c005eacad401b06e7e18f711}{Mouse\+Button}}}]{button\+Code }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classe2XD_1_1framework_1_1SFMLInputHandler_a2a7f74ce332ecb47fa2cd4d3061d5794}{e2\+XD\+::framework\+::\+SFMLInput\+Handler}}.
+
+\Hypertarget{classe2XD_1_1framework_1_1IInputHandler_aedf969b27bf30198943b6b6cfedc4d9d}\label{classe2XD_1_1framework_1_1IInputHandler_aedf969b27bf30198943b6b6cfedc4d9d} 
+\index{e2XD::framework::IInputHandler@{e2XD::framework::IInputHandler}!isWindowClosed@{isWindowClosed}}
+\index{isWindowClosed@{isWindowClosed}!e2XD::framework::IInputHandler@{e2XD::framework::IInputHandler}}
+\doxysubsubsection{\texorpdfstring{isWindowClosed()}{isWindowClosed()}}
+{\footnotesize\ttfamily virtual bool e2\+XD\+::framework\+::\+IInput\+Handler\+::is\+Window\+Closed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classe2XD_1_1framework_1_1SFMLInputHandler_af02714fe428da14e3ee7246b2e301eae}{e2\+XD\+::framework\+::\+SFMLInput\+Handler}}.
+
+\Hypertarget{classe2XD_1_1framework_1_1IInputHandler_a96789b29e1c7f7dcb111b0e014ca32b9}\label{classe2XD_1_1framework_1_1IInputHandler_a96789b29e1c7f7dcb111b0e014ca32b9} 
+\index{e2XD::framework::IInputHandler@{e2XD::framework::IInputHandler}!isWindowResized@{isWindowResized}}
+\index{isWindowResized@{isWindowResized}!e2XD::framework::IInputHandler@{e2XD::framework::IInputHandler}}
+\doxysubsubsection{\texorpdfstring{isWindowResized()}{isWindowResized()}}
+{\footnotesize\ttfamily virtual std\+::tuple$<$ bool, float, float $>$ e2\+XD\+::framework\+::\+IInput\+Handler\+::is\+Window\+Resized (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classe2XD_1_1framework_1_1SFMLInputHandler_a2fc31c624d6778613adcf293178b8f23}{e2\+XD\+::framework\+::\+SFMLInput\+Handler}}.
+
+\Hypertarget{classe2XD_1_1framework_1_1IInputHandler_a1f0b193446211db81dde88ca7fcea0e2}\label{classe2XD_1_1framework_1_1IInputHandler_a1f0b193446211db81dde88ca7fcea0e2} 
+\index{e2XD::framework::IInputHandler@{e2XD::framework::IInputHandler}!newFrame@{newFrame}}
+\index{newFrame@{newFrame}!e2XD::framework::IInputHandler@{e2XD::framework::IInputHandler}}
+\doxysubsubsection{\texorpdfstring{newFrame()}{newFrame()}}
+{\footnotesize\ttfamily virtual void e2\+XD\+::framework\+::\+IInput\+Handler\+::new\+Frame (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classe2XD_1_1framework_1_1SFMLInputHandler_a541ba00e08661fe5d5d7d5d5eefdca1e}{e2\+XD\+::framework\+::\+SFMLInput\+Handler}}.
+
+\Hypertarget{classe2XD_1_1framework_1_1IInputHandler_a0b933d16514069fb8a844c2c616aeb98}\label{classe2XD_1_1framework_1_1IInputHandler_a0b933d16514069fb8a844c2c616aeb98} 
+\index{e2XD::framework::IInputHandler@{e2XD::framework::IInputHandler}!pollEvents@{pollEvents}}
+\index{pollEvents@{pollEvents}!e2XD::framework::IInputHandler@{e2XD::framework::IInputHandler}}
+\doxysubsubsection{\texorpdfstring{pollEvents()}{pollEvents()}}
+{\footnotesize\ttfamily virtual void e2\+XD\+::framework\+::\+IInput\+Handler\+::poll\+Events (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classe2XD_1_1framework_1_1SFMLInputHandler_a039051905b9440897d8f82c8a47ed272}{e2\+XD\+::framework\+::\+SFMLInput\+Handler}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+framework/include/2\+XD2/framework/\mbox{\hyperlink{IInputHandler_8h}{IInput\+Handler.\+h}}\end{DoxyCompactItemize}
