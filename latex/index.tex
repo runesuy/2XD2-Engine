@@ -1,0 +1,65 @@
+\chapter{2XD2-\/\+Engine}
+\hypertarget{index}{}\label{index}\index{2XD2-\/Engine@{2XD2-\/Engine}}
+\label{index_md_README}%
+\Hypertarget{index_md_README}%
+\DoxyHorRuler{0}
+\hypertarget{index_autotoc_md1}{}\doxysection{\texorpdfstring{Overview}{Overview}}\label{index_autotoc_md1}
+2XD2-\/\+Engine is a 2D game engine built with C++ and SFML. The main objectsives of this project are to provide an easy-\/to-\/use framework for developing 2D games and to offer a modular architecture that allows developers to extend and customize the engine according to their needs.
+
+{\bfseries{This project is still in its early stages of development, all contributions are welcome!}}\hypertarget{index_autotoc_md2}{}\doxysection{\texorpdfstring{Features}{Features}}\label{index_autotoc_md2}
+
+\begin{DoxyItemize}
+\item {\bfseries{Node-\/based architecture}}\+: The engine is built around a node system, allowing for easy management of game objects and their relationships.
+\item {\bfseries{Scene management}}\+: Easily create and switch between different scenes in your game.
+\item {\bfseries{Event handling}}\+: Built-\/in event system for handling user input and other events using SFML.
+\item {\bfseries{Rendering}}\+: Simple rendering system using SFML for drawing sprites, shapes, and text.
+\item {\bfseries{Resource management}}\+: Load and manage game assets such as textures, fonts, and sounds, animations. (WIP)
+\end{DoxyItemize}
+
+I plan to add more features in the future, such as physics integration, audio support, and further optimizations and modularity improvements.\hypertarget{index_autotoc_md3}{}\doxysection{\texorpdfstring{Getting Started}{Getting Started}}\label{index_autotoc_md3}
+\hypertarget{index_autotoc_md4}{}\doxysubsection{\texorpdfstring{Manual Installation}{Manual Installation}}\label{index_autotoc_md4}
+
+\begin{DoxyEnumerate}
+\item Download and install SFML from \href{https://www.sfml-dev.org/download.php}{\texttt{ the official website}}.
+\item Manually install 2XD2-\/\+Engine\+:
+\begin{DoxyEnumerate}
+\item By cloning the repository\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{git\ clone\ https://github.com/runesuy/2XD2-\/Engine.git}
+
+\end{DoxyCode}
+
+\item Or downloading one of the release packages from the \href{https://github.com/runesuy/2XD2-Engine/releases}{\texttt{ releases page}}.
+\end{DoxyEnumerate}
+\item Include the 2XD2-\/\+Engine headers and link against the SFML libraries in your C++ project.
+\end{DoxyEnumerate}\hypertarget{index_autotoc_md5}{}\doxysubsection{\texorpdfstring{Using CMake}{Using CMake}}\label{index_autotoc_md5}
+You can also use CMake to manage your project and include 2XD2-\/\+Engine as a subdirectory.
+\begin{DoxyEnumerate}
+\item Clone the repository\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{git\ clone\ \ https://github.com/runesuy/2XD2-\/Engine.git}
+
+\end{DoxyCode}
+
+\item In your CMake\+Lists.\+txt, add the following lines\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{add\_subdirectory(path/to/2XD2-\/Engine)}
+\DoxyCodeLine{target\_link\_libraries(your\_project\_name\ PRIVATE\ 2XD2-\/Engine)}
+
+\end{DoxyCode}
+
+\end{DoxyEnumerate}
+
+For more information on setting up SFML, refer to the \href{https://www.sfml-dev.org/tutorials/3.0/}{\texttt{ SFML tutorials}}. For more detailed instructions on using 2XD2-\/\+Engine, refer to the \doxysectlink{md_GettingStarted}{getting started guide}{0}.\hypertarget{index_autotoc_md6}{}\doxysection{\texorpdfstring{Contributing}{Contributing}}\label{index_autotoc_md6}
+Contributions are welcome! If you would like to contribute to 2XD2-\/\+Engine, please follow these steps\+:
+\begin{DoxyEnumerate}
+\item Fork the repository.
+\item Create a new branch for your feature or bug fix.
+\item Make your changes and commit them with clear messages.
+\item Push your changes to your forked repository.
+\item Create a pull request to the main repository.
+\end{DoxyEnumerate}
+
+Please ensure that your code adheres to the existing coding style and includes appropriate tests.
+
+For more details, refer to the \doxysectlink{md_CONTRIBUTING}{contributing guidelines}{0}. 

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Doxygen: Main Page</title>
+<title>Doxygen: 2XD2-Engine</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -68,10 +68,61 @@ $(function() {
 </div>
 </div>
 
-<div class="header">
-  <div class="headertitle"><div class="title">Doxygen Documentation</div></div>
+<div><div class="header">
+  <div class="headertitle"><div class="title">2XD2-Engine </div></div>
 </div><!--header-->
 <div class="contents">
+<div class="textblock"><p><a class="anchor" id="md_README"></a></p><hr  />
+<h1><a class="anchor" id="autotoc_md1"></a>
+Overview</h1>
+<p>2XD2-Engine is a 2D game engine built with C++ and SFML. The main objectsives of this project are to provide an easy-to-use framework for developing 2D games and to offer a modular architecture that allows developers to extend and customize the engine according to their needs.</p>
+<p><b>This project is still in its early stages of development, all contributions are welcome!</b></p>
+<h1><a class="anchor" id="autotoc_md2"></a>
+Features</h1>
+<ul>
+<li><b>Node-based architecture</b>: The engine is built around a node system, allowing for easy management of game objects and their relationships.</li>
+<li><b>Scene management</b>: Easily create and switch between different scenes in your game.</li>
+<li><b>Event handling</b>: Built-in event system for handling user input and other events using SFML.</li>
+<li><b>Rendering</b>: Simple rendering system using SFML for drawing sprites, shapes, and text.</li>
+<li><b>Resource management</b>: Load and manage game assets such as textures, fonts, and sounds, animations. (WIP)</li>
+</ul>
+<p>I plan to add more features in the future, such as physics integration, audio support, and further optimizations and modularity improvements.</p>
+<h1><a class="anchor" id="autotoc_md3"></a>
+Getting Started</h1>
+<h2><a class="anchor" id="autotoc_md4"></a>
+Manual Installation</h2>
+<ol type="1">
+<li>Download and install SFML from <a href="https://www.sfml-dev.org/download.php">the official website</a>.</li>
+<li>Manually install 2XD2-Engine:<ol type="a">
+<li>By cloning the repository: <div class="fragment"><div class="line">git clone https://github.com/runesuy/2XD2-Engine.git</div>
+</div><!-- fragment --></li>
+<li>Or downloading one of the release packages from the <a href="https://github.com/runesuy/2XD2-Engine/releases">releases page</a>.</li>
+</ol>
+</li>
+<li>Include the 2XD2-Engine headers and link against the SFML libraries in your C++ project.</li>
+</ol>
+<h2><a class="anchor" id="autotoc_md5"></a>
+Using CMake</h2>
+<p>You can also use CMake to manage your project and include 2XD2-Engine as a subdirectory.</p><ol type="1">
+<li>Clone the repository: <div class="fragment"><div class="line">git clone  https://github.com/runesuy/2XD2-Engine.git</div>
+</div><!-- fragment --></li>
+<li>In your CMakeLists.txt, add the following lines: <div class="fragment"><div class="line">add_subdirectory(path/to/2XD2-Engine)</div>
+<div class="line">target_link_libraries(your_project_name PRIVATE 2XD2-Engine)</div>
+</div><!-- fragment --></li>
+</ol>
+<p>For more information on setting up SFML, refer to the <a href="https://www.sfml-dev.org/tutorials/3.0/">SFML tutorials</a>. For more detailed instructions on using 2XD2-Engine, refer to the <a class="el" href="md_GettingStarted.html">getting started guide</a>.</p>
+<h1><a class="anchor" id="autotoc_md6"></a>
+Contributing</h1>
+<p>Contributions are welcome! If you would like to contribute to 2XD2-Engine, please follow these steps:</p><ol type="1">
+<li>Fork the repository.</li>
+<li>Create a new branch for your feature or bug fix.</li>
+<li>Make your changes and commit them with clear messages.</li>
+<li>Push your changes to your forked repository.</li>
+<li>Create a pull request to the main repository.</li>
+</ol>
+<p>Please ensure that your code adheres to the existing coding style and includes appropriate tests.</p>
+<p>For more details, refer to the <a class="el" href="md_CONTRIBUTING.html">contributing guidelines</a>. </p>
+</div></div><!-- PageDoc -->
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

@@ -1,0 +1,60 @@
+\chapter{Getting Started with 2XD2-\/\+Engine}
+\hypertarget{md_GettingStarted}{}\label{md_GettingStarted}\index{Getting Started with 2XD2-\/Engine@{Getting Started with 2XD2-\/Engine}}
+\label{md_GettingStarted_autotoc_md7}%
+\Hypertarget{md_GettingStarted_autotoc_md7}%
+ \hypertarget{md_GettingStarted_autotoc_md8}{}\doxysection{\texorpdfstring{Prerequisites}{Prerequisites}}\label{md_GettingStarted_autotoc_md8}
+Before you begin, ensure you have the following installed on your system\+:
+\begin{DoxyItemize}
+\item A C++ compiler that supports C++11 or later.
+\item CMake (version 3.\+10 or later).
+\item SFML library (version 2.\+5 or later). You can download it from the \href{https://www.sfml-dev.org/download.php}{\texttt{ official SFML website}}.
+\item Git (optional, for cloning the repository).
+\item A code editor or IDE of your choice (e.\+g., Visual Studio, CLion, VSCode).
+\item Basic knowledge of C++ and CMake.
+\end{DoxyItemize}\hypertarget{md_GettingStarted_autotoc_md9}{}\doxysection{\texorpdfstring{Installation}{Installation}}\label{md_GettingStarted_autotoc_md9}
+\hypertarget{md_GettingStarted_autotoc_md10}{}\doxysubsection{\texorpdfstring{Using Cmake}{Using Cmake}}\label{md_GettingStarted_autotoc_md10}
+
+\begin{DoxyEnumerate}
+\item Download or clone the 2XD2-\/\+Engine repository\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{git\ clone\ https://github.com/runesuy/2XD2-\/Engine.git}
+
+\end{DoxyCode}
+
+\item In your CMake\+Lists.\+txt, add the following lines to include 2XD2-\/\+Engine as a subdirectory\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{add\_subdirectory(path/to/2XD2-\/Engine)}
+\DoxyCodeLine{target\_link\_libraries(your\_project\_name\ PRIVATE\ 2XD2-\/Engine)}
+
+\end{DoxyCode}
+
+\item The library will automatically link against the SFML libraries. Ensure that SFML is correctly installed and accessible in your development environment.
+\end{DoxyEnumerate}\hypertarget{md_GettingStarted_autotoc_md11}{}\doxysection{\texorpdfstring{Creating a Simple Application}{Creating a Simple Application}}\label{md_GettingStarted_autotoc_md11}
+The easiest way to get started with 2XD2-\/\+Engine is to create a simple application using the 2XD2-\/\+Engine framework. Below is a basic example of how to set up a windowed application.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{Game_8h}{2XD2/framework/Game.h}}"{}}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keyword}{using\ namespace\ }\mbox{\hyperlink{namespacee2XD_1_1framework}{e2XD::framework}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keywordtype}{int}\ main()\ \{}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{classe2XD_1_1framework_1_1Game}{Game}}\ game;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ game.\mbox{\hyperlink{classe2XD_1_1framework_1_1Game_a64dc1af70c840c70af950fcd0d5384af}{setWindowTitle}}(\textcolor{stringliteral}{"{}My\ First\ 2XD2-\/Engine\ Game"{}});}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ game.\mbox{\hyperlink{classe2XD_1_1framework_1_1Game_a3b33447365a8d953488d5b2c90b4d4ee}{run}}();}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ 0;}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+When calling run(), the framework will create a window and start the main loop.\hypertarget{md_GettingStarted_autotoc_md12}{}\doxysection{\texorpdfstring{Learning More}{Learning More}}\label{md_GettingStarted_autotoc_md12}
+To learn more about 2XD2-\/\+Engine and its features, refer to the following resources\+:
+\begin{DoxyItemize}
+\item \href{https://runesuy.github.io/2XD2-Engine/}{\texttt{ API Documentation}}\+: Detailed documentation of the engine\textquotesingle{}s classes and functions.
+\end{DoxyItemize}
+
+More guides coming soon! 
