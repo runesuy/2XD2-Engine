@@ -43,7 +43,6 @@ namespace e2XD::renderer
                 //Setup view
                 if (layer == RenderLayer::WORLD && worldCamera)
                 {
-                    const auto& camScale = worldCamera->getGlobalScale();
                     const auto& camPos = worldCamera->getGlobalPosition();
                     auto view = sf::View{
                         {camPos.x, camPos.y}, sf::Vector2f{window->getSize()}};

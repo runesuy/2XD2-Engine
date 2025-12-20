@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.31.6)
+cmake_minimum_required(VERSION 3.28.3)
 
 file(GLOB_RECURSE FRAMEWORK_SOURCES
         ${CMAKE_CURRENT_SOURCE_DIR}/src/*.cpp

@@ -1,7 +1,7 @@
 {
   "files": [
     {
-      "filename": "resources/input/test_texture1.png",
+      "filename": "framework/resources/input/test_texture1.png",
       "textures": [
         {
           "texture-name": "texture1",
@@ -24,7 +24,7 @@
       ]
     },
     {
-      "filename": "resources/input/test_texture2.jpeg",
+      "filename": "framework/resources/input/test_texture2.jpeg",
       "textures": [
         {
           "texture-name": "texture3",

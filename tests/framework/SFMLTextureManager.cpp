@@ -29,7 +29,7 @@ namespace e2XD::framework
     TEST_F(FRAMEWORK_SFMLTextureParser_TEST, loadJsonTextureConfigTest)
     {
         SFMLTextureManager* parser = SFMLTextureManager::getInstance();
-        ASSERT_NO_THROW(parser->loadJsonTextureConfig("resources/input/test_textures.json"));
+        ASSERT_NO_THROW(parser->loadJsonTextureConfig("framework/resources/input/test_textures.json"));
 
         const auto& textures = getLoadedTextures();
         ASSERT_EQ(textures.size(), 4); // Assuming the JSON file defines 2 textures
@@ -44,7 +44,7 @@ namespace e2XD::framework
     TEST_F(FRAMEWORK_SFMLTextureParser_TEST, getTextureTest)
     {
         SFMLTextureManager* parser = SFMLTextureManager::getInstance();
-        parser->loadJsonTextureConfig("resources/input/test_textures.json");
+        parser->loadJsonTextureConfig("framework/resources/input/test_textures.json");
 
         ASSERT_NO_THROW({
             const sf::Texture& texture1 = parser->getTexture("texture1");
