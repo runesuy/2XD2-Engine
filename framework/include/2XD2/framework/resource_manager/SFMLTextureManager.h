@@ -15,7 +15,7 @@
 namespace e2XD::framework
 {
     /**
-     * Singleton
+     * Texture manager implementation using SFML Textures.
      */
     class SFMLTextureManager final : public ITextureManager
     {

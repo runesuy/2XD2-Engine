@@ -13,7 +13,7 @@
 namespace e2XD::framework
 {
     /**
-     * Singleton
+     * Animation manager implementation using SFML Textures.
      */
     class SFMLAnimationManager final
     {

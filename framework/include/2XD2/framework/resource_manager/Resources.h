@@ -8,6 +8,9 @@
 
 namespace e2XD::framework
 {
+    /**
+     * Resources class providing access to various resource managers like Textures and Animations.
+     */
     class Resources
     {
     public:
