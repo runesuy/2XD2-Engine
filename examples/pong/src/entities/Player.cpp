@@ -5,7 +5,7 @@
 #include "Player.h"
 
 #include "2XD2/core/Time.h"
-#include "../../../../framework/include/2XD2/framework/input/SFMLInputHandler.h"
+#include "2XD2/framework/input/SFMLInputHandler.h"
 #include "2XD2/framework/input/Input.h"
 
 using namespace e2XD::framework;
