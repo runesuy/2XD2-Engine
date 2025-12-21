@@ -10,6 +10,9 @@
 
 namespace e2XD::framework
 {
+    /**
+     * Animation class representing a sequence of frames (textures) with timing and looping information.
+     */
     class Animation
     {
         float _frameDuration = 0.1f; // Duration of each frame in seconds
@@ -39,10 +42,22 @@ namespace e2XD::framework
          */
         void setLooping(bool looping);
 
+        /**
+         *
+         * @return a const reference to the vector of frame textures.
+         */
         [[nodiscard]] const std::vector<const sf::Texture*>& getFrames() const;
 
+        /**
+         *
+         * @return the frame duration in seconds.
+         */
         [[nodiscard]] float getFrameDuration() const;
 
+        /**
+         *
+         * @return true if the animation is set to loop, false otherwise.
+         */
         [[nodiscard]] bool isLooping() const;
     };
 } // framework
