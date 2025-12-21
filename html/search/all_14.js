@@ -10,7 +10,7 @@ var searchData=
   ['node2d_2ecpp_7',['Node2D.cpp',['../Node2D_8cpp.html',1,'']]],
   ['node2d_2eh_8',['Node2D.h',['../Node2D_8h.html',1,'']]],
   ['none_9',['none',['../Key_8h.html#ab3c7af4820830f9166ede9e5623c4e73ab50339a10e1de285ac99d4c3990b8693',1,'NONE:&#160;Key.h'],['../MouseButton_8h.html#ac1ec3647c005eacad401b06e7e18f711ab50339a10e1de285ac99d4c3990b8693',1,'NONE:&#160;MouseButton.h']]],
-  ['normalize_10',['normalize',['../structe2XD_1_1core_1_1Vec2.html#afddfa890055be2781d1940cf8737e32c',1,'e2XD::core::Vec2']]],
+  ['normalize_10',['normalize',['../structe2XD_1_1core_1_1Vec2f.html#a506e7dd917228e0da3372fc5903eb4e3',1,'e2XD::core::Vec2f']]],
   ['notinitializedexception_11',['notinitializedexception',['../classe2XD_1_1framework_1_1NotInitializedException.html#a52146cca4e152db9154d7bb1e09f7933',1,'e2XD::framework::NotInitializedException::NotInitializedException()'],['../classe2XD_1_1framework_1_1NotInitializedException.html',1,'e2XD::framework::NotInitializedException']]],
   ['notinitializedexception_2eh_12',['NotInitializedException.h',['../NotInitializedException_8h.html',1,'']]]
 ];

@@ -10,18 +10,18 @@
 <area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="464,123,390,162,387,158,461,118"/>
 <area shape="rect" id="Node000011" href="$Transform2D_8h.html" title=" " alt="" coords="432,168,538,193"/>
 <area shape="poly" id="edge11_Node000004_Node000011" title=" " alt="" coords="488,120,488,152,482,152,482,120"/>
-<area shape="rect" id="Node000012" href="$Vec2_8h.html" title=" " alt="" coords="544,241,605,267"/>
+<area shape="rect" id="Node000012" href="$Vec2f_8h.html" title=" " alt="" coords="542,241,607,267"/>
 <area shape="poly" id="edge13_Node000004_Node000012" title=" " alt="" coords="505,118,530,139,553,166,566,196,573,225,568,227,561,198,548,169,526,143,501,122"/>
 <area shape="poly" id="edge7_Node000005_Node000005" title=" " alt="" coords="382,164,401,167,408,172,411,181,407,190,398,195,396,191,403,187,406,180,404,175,399,172,382,170"/>
-<area shape="rect" id="Node000006" title=" " alt="" coords="160,241,199,267"/>
-<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="325,196,214,241,212,237,323,191"/>
-<area shape="rect" id="Node000007" title=" " alt="" coords="223,241,291,267"/>
-<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="338,196,287,234,283,230,335,192"/>
-<area shape="rect" id="Node000008" title=" " alt="" coords="315,241,396,267"/>
-<area shape="poly" id="edge8_Node000005_Node000008" title=" " alt="" coords="356,193,357,226,352,226,351,194"/>
-<area shape="rect" id="Node000009" href="$Renderable_8h.html" title=" " alt="" coords="421,241,517,267"/>
-<area shape="poly" id="edge9_Node000005_Node000009" title=" " alt="" coords="374,192,438,231,435,235,371,196"/>
-<area shape="rect" id="Node000010" href="$RenderLayer_8h.html" title=" " alt="" coords="417,315,521,341"/>
-<area shape="poly" id="edge10_Node000009_Node000010" title=" " alt="" coords="472,267,472,299,466,299,466,267"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="159,241,198,267"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="324,196,213,242,211,237,322,191"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="222,241,289,267"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="338,196,286,234,282,230,335,192"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="314,241,395,267"/>
+<area shape="poly" id="edge8_Node000005_Node000008" title=" " alt="" coords="356,194,356,225,351,226,351,194"/>
+<area shape="rect" id="Node000009" href="$Renderable_8h.html" title=" " alt="" coords="420,241,516,267"/>
+<area shape="poly" id="edge9_Node000005_Node000009" title=" " alt="" coords="374,192,437,230,434,235,371,196"/>
+<area shape="rect" id="Node000010" href="$RenderLayer_8h.html" title=" " alt="" coords="416,315,520,341"/>
+<area shape="poly" id="edge10_Node000009_Node000010" title=" " alt="" coords="470,267,470,299,465,299,465,267"/>
 <area shape="poly" id="edge12_Node000011_Node000012" title=" " alt="" coords="502,192,549,229,546,234,498,196"/>
 </map>

@@ -116,8 +116,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:abc5f7f687d778e3bc54311633f4c215d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aadca06621b08a4cdeca60010267e1dc6" id="r_aadca06621b08a4cdeca60010267e1dc6"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classe2XD_1_1framework_1_1IInputHandler.html#aadca06621b08a4cdeca60010267e1dc6">isMouseButtonJustReleased</a> (<a class="el" href="MouseButton_8h.html#ac1ec3647c005eacad401b06e7e18f711">MouseButton</a> buttonCode) const =0</td></tr>
 <tr class="separator:aadca06621b08a4cdeca60010267e1dc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ada2c5e07dd2d7a892f45f1896b97d4cc" id="r_ada2c5e07dd2d7a892f45f1896b97d4cc"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="structe2XD_1_1core_1_1Vec2.html">core::Vec2</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classe2XD_1_1framework_1_1IInputHandler.html#ada2c5e07dd2d7a892f45f1896b97d4cc">getMousePosition</a> () const =0</td></tr>
-<tr class="separator:ada2c5e07dd2d7a892f45f1896b97d4cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa33819474da8330997cf24af41749fd5" id="r_aa33819474da8330997cf24af41749fd5"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="structe2XD_1_1core_1_1Vec2f.html">core::Vec2f</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classe2XD_1_1framework_1_1IInputHandler.html#aa33819474da8330997cf24af41749fd5">getMousePosition</a> () const =0</td></tr>
+<tr class="separator:aa33819474da8330997cf24af41749fd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a96789b29e1c7f7dcb111b0e014ca32b9" id="r_a96789b29e1c7f7dcb111b0e014ca32b9"><td class="memItemLeft" align="right" valign="top">virtual std::tuple&lt; bool, float, float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classe2XD_1_1framework_1_1IInputHandler.html#a96789b29e1c7f7dcb111b0e014ca32b9">isWindowResized</a> () const =0</td></tr>
 <tr class="separator:a96789b29e1c7f7dcb111b0e014ca32b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aedf969b27bf30198943b6b6cfedc4d9d" id="r_aedf969b27bf30198943b6b6cfedc4d9d"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classe2XD_1_1framework_1_1IInputHandler.html#aedf969b27bf30198943b6b6cfedc4d9d">isWindowClosed</a> () const =0</td></tr>
@@ -125,7 +125,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a1f0b193446211db81dde88ca7fcea0e2" id="r_a1f0b193446211db81dde88ca7fcea0e2"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classe2XD_1_1framework_1_1IInputHandler.html#a1f0b193446211db81dde88ca7fcea0e2">newFrame</a> ()=0</td></tr>
 <tr class="separator:a1f0b193446211db81dde88ca7fcea0e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>InputHandler interface to manage input from keyboard, mouse, and other devices Can be provided to the framework <a class="el" href="classe2XD_1_1framework_1_1Game.html">Game</a> through <a class="el" href="classe2XD_1_1framework_1_1IGameConfig.html">IGameConfig</a>. When provided to the framework <a class="el" href="classe2XD_1_1framework_1_1Game.html">Game</a>, it will be used by the static <a class="el" href="classe2XD_1_1framework_1_1Input.html">Input</a> class to provide input states throughout the engine. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a21c005eb00f642b22a4c7770f0b65bc4" name="a21c005eb00f642b22a4c7770f0b65bc4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a21c005eb00f642b22a4c7770f0b65bc4">&#9670;&#160;</a></span>~IInputHandler()</h2>
 
@@ -152,8 +154,8 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="ada2c5e07dd2d7a892f45f1896b97d4cc" name="ada2c5e07dd2d7a892f45f1896b97d4cc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ada2c5e07dd2d7a892f45f1896b97d4cc">&#9670;&#160;</a></span>getMousePosition()</h2>
+<a id="aa33819474da8330997cf24af41749fd5" name="aa33819474da8330997cf24af41749fd5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa33819474da8330997cf24af41749fd5">&#9670;&#160;</a></span>getMousePosition()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -162,7 +164,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="structe2XD_1_1core_1_1Vec2.html">core::Vec2</a> e2XD::framework::IInputHandler::getMousePosition </td>
+          <td class="memname">virtual <a class="el" href="structe2XD_1_1core_1_1Vec2f.html">core::Vec2f</a> e2XD::framework::IInputHandler::getMousePosition </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -176,7 +178,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>The current mouse position in window coordinates </dd></dl>
 
-<p>Implemented in <a class="el" href="classe2XD_1_1framework_1_1internal_1_1SFMLInputHandler.html#adc67be0f363d9b0ad386eac01769e8ff">e2XD::framework::internal::SFMLInputHandler</a>.</p>
+<p>Implemented in <a class="el" href="classe2XD_1_1framework_1_1internal_1_1SFMLInputHandler.html#ad9e3b236a10cf5e1b2c61f20d92ea81f">e2XD::framework::internal::SFMLInputHandler</a>.</p>
 
 </div>
 </div>

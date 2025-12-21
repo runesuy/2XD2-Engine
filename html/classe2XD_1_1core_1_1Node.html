@@ -186,7 +186,9 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:affc18553cc6ca22ac446628d7b7d6913 inherit pro_attribs_classe2XD_1_1core_1_1Renderable" id="r_affc18553cc6ca22ac446628d7b7d6913"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classe2XD_1_1core_1_1Renderable.html#affc18553cc6ca22ac446628d7b7d6913">zIndex</a> =0</td></tr>
 <tr class="separator:affc18553cc6ca22ac446628d7b7d6913 inherit pro_attribs_classe2XD_1_1core_1_1Renderable"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A node in the scene graph. Is renderable by the Renderer. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a9d5e20f7395b9e9ca13548675efa4b2a" name="a9d5e20f7395b9e9ca13548675efa4b2a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9d5e20f7395b9e9ca13548675efa4b2a">&#9670;&#160;</a></span>Node()</h2>
 
@@ -209,6 +211,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Creat a new empty node. </p>
 
 </div>
 </div>
@@ -260,6 +263,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Placeholder for internal creation logic. This method is called when the node is created. </p>
 
 </div>
 </div>
@@ -285,6 +289,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Placeholder for internal destruction logic. This method is called when the node is destroyed. </p>
 
 </div>
 </div>
@@ -310,6 +315,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>onDraw is a placeholder for internal draw logic. This method is called during the draw phase of the renderable. </p>
 
 <p>Reimplemented from <a class="el" href="classe2XD_1_1core_1_1Renderable.html#aafa5e62350d646dc53114d1f0d28705b">e2XD::core::Renderable</a>.</p>
 
@@ -339,6 +345,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Placeholder for internal update logic. This method is called during the update phase of the node. </p>
 
 </div>
 </div>
@@ -365,6 +372,12 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Add a sub-node to this node. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">node</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -382,6 +395,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Create the node and its sub-nodes. </p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -411,6 +425,13 @@ template&lt;IsNode EntityType&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Create and add a sub-node of the specified type. </p><dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">EntityType</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a pointer to the created sub-node. </dd></dl>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -438,6 +459,7 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Destroy the node and its sub-nodes. </p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -577,6 +599,7 @@ template&lt;IsNode EntityType&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Placeholder for user-defined creation logic. This method is called when the node is created. </p>
 
 </div>
 </div>
@@ -602,6 +625,7 @@ template&lt;IsNode EntityType&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Placeholder for user-defined destruction logic. This method is called when the node is destroyed. </p>
 
 </div>
 </div>
@@ -627,6 +651,7 @@ template&lt;IsNode EntityType&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Placeholder for user-defined update logic. This method is called during the update phase of the node. </p>
 
 </div>
 </div>
@@ -644,6 +669,7 @@ template&lt;IsNode EntityType&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Update the node and its sub-nodes. </p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">

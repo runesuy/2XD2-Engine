@@ -104,8 +104,8 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:a709e31e0f1cb6ee171c5125264eccf10"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a294fd2fea3d8e7070be017b3c2be5d0b" id="r_a294fd2fea3d8e7070be017b3c2be5d0b"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classe2XD_1_1framework_1_1Input.html#a294fd2fea3d8e7070be017b3c2be5d0b">isMouseButtonJustReleased</a> (<a class="el" href="MouseButton_8h.html#ac1ec3647c005eacad401b06e7e18f711">MouseButton</a> buttonCode)</td></tr>
 <tr class="separator:a294fd2fea3d8e7070be017b3c2be5d0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a38c85e531d311e2d809c9a331a597882" id="r_a38c85e531d311e2d809c9a331a597882"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structe2XD_1_1core_1_1Vec2.html">core::Vec2</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classe2XD_1_1framework_1_1Input.html#a38c85e531d311e2d809c9a331a597882">getMousePosition</a> ()</td></tr>
-<tr class="separator:a38c85e531d311e2d809c9a331a597882"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b8bfb61088e5cfcfa20460133044c1e" id="r_a8b8bfb61088e5cfcfa20460133044c1e"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structe2XD_1_1core_1_1Vec2f.html">core::Vec2f</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classe2XD_1_1framework_1_1Input.html#a8b8bfb61088e5cfcfa20460133044c1e">getMousePosition</a> ()</td></tr>
+<tr class="separator:a8b8bfb61088e5cfcfa20460133044c1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abefe2e85a4be626678113e29c4352359" id="r_abefe2e85a4be626678113e29c4352359"><td class="memItemLeft" align="right" valign="top">static std::tuple&lt; bool, float, float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classe2XD_1_1framework_1_1Input.html#abefe2e85a4be626678113e29c4352359">isWindowResized</a> ()</td></tr>
 <tr class="separator:abefe2e85a4be626678113e29c4352359"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae9ddbca3e7e7eb87ef6b16c59993b4ea" id="r_ae9ddbca3e7e7eb87ef6b16c59993b4ea"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classe2XD_1_1framework_1_1Input.html#ae9ddbca3e7e7eb87ef6b16c59993b4ea">isWindowClosed</a> ()</td></tr>
@@ -113,9 +113,12 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:af45e80adf859af06b1b78fa61d466385" id="r_af45e80adf859af06b1b78fa61d466385"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classe2XD_1_1framework_1_1Input.html#af45e80adf859af06b1b78fa61d466385">newFrame</a> ()</td></tr>
 <tr class="separator:af45e80adf859af06b1b78fa61d466385"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="a38c85e531d311e2d809c9a331a597882" name="a38c85e531d311e2d809c9a331a597882"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a38c85e531d311e2d809c9a331a597882">&#9670;&#160;</a></span>getMousePosition()</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Class providing static methods to manage input from keyboard, mouse, and other devices.</p>
+<p>Using the default game provided by framework, this class uses the inputhandler configured in the game config. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a8b8bfb61088e5cfcfa20460133044c1e" name="a8b8bfb61088e5cfcfa20460133044c1e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b8bfb61088e5cfcfa20460133044c1e">&#9670;&#160;</a></span>getMousePosition()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -124,7 +127,7 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structe2XD_1_1core_1_1Vec2.html">core::Vec2</a> e2XD::framework::Input::getMousePosition </td>
+          <td class="memname"><a class="el" href="structe2XD_1_1core_1_1Vec2f.html">core::Vec2f</a> e2XD::framework::Input::getMousePosition </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -136,13 +139,14 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>The current mouse position in window coordinates </dd></dl>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classe2XD_1_1framework_1_1Input_a38c85e531d311e2d809c9a331a597882_cgraph.png" border="0" usemap="#aclasse2XD_1_1framework_1_1Input_a38c85e531d311e2d809c9a331a597882_cgraph" alt=""/></div>
-<map name="aclasse2XD_1_1framework_1_1Input_a38c85e531d311e2d809c9a331a597882_cgraph" id="aclasse2XD_1_1framework_1_1Input_a38c85e531d311e2d809c9a331a597882_cgraph">
+<div class="center"><img src="classe2XD_1_1framework_1_1Input_a8b8bfb61088e5cfcfa20460133044c1e_cgraph.png" border="0" usemap="#aclasse2XD_1_1framework_1_1Input_a8b8bfb61088e5cfcfa20460133044c1e_cgraph" alt=""/></div>
+<map name="aclasse2XD_1_1framework_1_1Input_a8b8bfb61088e5cfcfa20460133044c1e_cgraph" id="aclasse2XD_1_1framework_1_1Input_a8b8bfb61088e5cfcfa20460133044c1e_cgraph">
 <area shape="rect" title=" " alt="" coords="5,5,161,46"/>
-<area shape="rect" href="classe2XD_1_1framework_1_1IInputHandler.html#ada2c5e07dd2d7a892f45f1896b97d4cc" title=" " alt="" coords="209,5,413,46"/>
+<area shape="rect" href="classe2XD_1_1framework_1_1IInputHandler.html#aa33819474da8330997cf24af41749fd5" title=" " alt="" coords="209,5,413,46"/>
 <area shape="poly" title=" " alt="" coords="161,23,193,23,193,28,161,28"/>
 </map>
 </div>
@@ -172,6 +176,12 @@ Here is the call graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Configure the input handler to use for input management </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">inputHandler</td><td>ptr to the input handler to use. Object must outlive the usage of this class. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -198,6 +208,13 @@ Here is the call graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">keyCode</td><td>Key to check </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the key was just pressed in this frame, and was not pressed in the last frame </dd></dl>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -234,6 +251,13 @@ Here is the call graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">keyCode</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the key was just released in this frame, and was pressed in the last frame </dd></dl>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -270,6 +294,13 @@ Here is the call graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">keyCode</td><td>Key to check </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the key was pressed or hold down in this frame </dd></dl>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -306,6 +337,13 @@ Here is the call graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">keyCode</td><td>Key to check </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the key is not pressed or hold down in this frame </dd></dl>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -342,6 +380,13 @@ Here is the call graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">buttonCode</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the mouse button was just pressed in this frame, and was not pressed in the last frame </dd></dl>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -378,6 +423,13 @@ Here is the call graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">buttonCode</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the mouse button was just released in this frame, and was pressed in the last frame </dd></dl>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -414,6 +466,13 @@ Here is the call graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">buttonCode</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the mouse button is pressed or hold down in this frame </dd></dl>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -450,6 +509,13 @@ Here is the call graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">buttonCode</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the mouse button is not pressed or hold down in this frame </dd></dl>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -485,6 +551,7 @@ Here is the call graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>true if the window was closed in this frame </dd></dl>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -520,6 +587,7 @@ Here is the call graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>&lt;resized, newSizeX, newSizeY&gt; true if the window was resized in this frame, along with the new width and height </dd></dl>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -555,6 +623,7 @@ Here is the call graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>called at the end of each frame to update internal states does not replace <a class="el" href="classe2XD_1_1framework_1_1Input.html#ae74f6ccff029e803cabbeb90cf0c29d2">pollEvents()</a> </p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -590,6 +659,7 @@ Here is the call graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Poll all events from the window and update the input states. Without calling this method, input states will not be updated. </p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">

@@ -22,131 +22,130 @@
 \DoxyCodeLine{00018\ \ \ \ \ \textcolor{keyword}{template}\ <\textcolor{keyword}{typename}\ T>}
 \DoxyCodeLine{00019\ \ \ \ \ \textcolor{keyword}{concept\ }\mbox{\hyperlink{concepte2XD_1_1core_1_1IsNode}{IsNode}}\ =\ std::is\_base\_of\_v<Node,\ T>;}
 \DoxyCodeLine{00020\ }
-\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{classe2XD_1_1core_1_1Node}{Node}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classe2XD_1_1core_1_1Renderable}{Renderable}}\{}
-\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ markedForDeletion\ =\ \textcolor{keyword}{false};}
-\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ std::list<std::unique\_ptr<Node>>\ nodes;}
-\DoxyCodeLine{00024\ }
-\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ removeDestroyedSubNodes();}
-\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keyword}{protected}:}
-\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classe2XD_1_1core_1_1Node_a7328355a0304262433852116e148bd29}{onUpdate}}()\{\};}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{classe2XD_1_1core_1_1Node}{Node}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classe2XD_1_1core_1_1Renderable}{Renderable}}\{}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ markedForDeletion\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ std::list<std::unique\_ptr<Node>>\ nodes;}
 \DoxyCodeLine{00028\ }
-\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classe2XD_1_1core_1_1Node_affae57a6faaf808b3316061c109b4bc9}{\_internal\_onUpdate}}()\{\};}
-\DoxyCodeLine{00030\ }
-\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classe2XD_1_1core_1_1Node_a5822e36f6ffecd2ea41fa8883df586e6}{onCreate}}()\{\};}
-\DoxyCodeLine{00032\ }
-\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classe2XD_1_1core_1_1Node_ab313d7c0b5d367ce215d7db4a1fdb838}{\_internal\_onCreate}}()\{\};}
-\DoxyCodeLine{00034\ }
-\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classe2XD_1_1core_1_1Node_a8c73b02dd342afea22da714f0c77014e}{onDestroy}}()\{\};}
-\DoxyCodeLine{00036\ }
-\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classe2XD_1_1core_1_1Node_a63ccab150802400899db853666aa23f6}{\_internal\_onDestroy}}()\{\};}
-\DoxyCodeLine{00038\ }
-\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classe2XD_1_1core_1_1Node_a1adb5fc119573c1e7d4c3c39c5807cc1}{\_internal\_onDraw}}()\ \textcolor{keyword}{override};}
-\DoxyCodeLine{00040\ }
-\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keyword}{public}:}
-\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \textcolor{keyword}{friend}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classe2XD_1_1core_1_1Node_a774ff000a72cab489b14effd167a2a43}{CORE\_Node}};}
-\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \textcolor{keyword}{friend}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classe2XD_1_1core_1_1Node2D}{Node2D}};}
-\DoxyCodeLine{00044\ }
-\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classe2XD_1_1core_1_1Node_a9d5e20f7395b9e9ca13548675efa4b2a}{Node}}()=\textcolor{keywordflow}{default};}
-\DoxyCodeLine{00046\ }
-\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classe2XD_1_1core_1_1Node_ac47d455a55eaa8fbc55df6c98388a272}{\string~Node}}()\ \textcolor{keyword}{override}\ =\ \textcolor{keywordflow}{default};}
-\DoxyCodeLine{00048\ }
-\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classe2XD_1_1core_1_1Node_a127ce10dcd5acdad121377eda7b5aac5}{update}}();}
-\DoxyCodeLine{00050\ }
-\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classe2XD_1_1core_1_1Node_aefd2056fdc6a70fd1ba637446e7888c0}{create}}();}
-\DoxyCodeLine{00052\ }
-\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classe2XD_1_1core_1_1Node_a1bebf88dbbd295bebfa58ac54c593218}{destroy}}();}
-\DoxyCodeLine{00054\ }
-\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ \textcolor{keyword}{template}\ <IsNode\ EntityType>}
-\DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ EntityType*\ \mbox{\hyperlink{classe2XD_1_1core_1_1Node_ac4d099f3bdcbf9f7641896076feb680e}{createSubNode}}();}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ removeDestroyedSubNodes();}
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classe2XD_1_1core_1_1Node_a7328355a0304262433852116e148bd29}{onUpdate}}()\{\};}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classe2XD_1_1core_1_1Node_affae57a6faaf808b3316061c109b4bc9}{\_internal\_onUpdate}}()\{\};}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classe2XD_1_1core_1_1Node_a5822e36f6ffecd2ea41fa8883df586e6}{onCreate}}()\{\};}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classe2XD_1_1core_1_1Node_ab313d7c0b5d367ce215d7db4a1fdb838}{\_internal\_onCreate}}()\{\};}
 \DoxyCodeLine{00057\ }
-\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classe2XD_1_1core_1_1Node_a1ab6b7ee044c4d21820d49eb9834d046}{addSubNode}}(std::unique\_ptr<Node>\ node);}
-\DoxyCodeLine{00059\ }
-\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ \textcolor{keyword}{template}\ <IsNode\ EntityType>}
-\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ [[nodiscard]]\ \textcolor{keyword}{const}\ EntityType*\ \mbox{\hyperlink{classe2XD_1_1core_1_1Node_a31c3a901f74532c72be485c7d2a7010e}{getSubNode}}()\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00067\ }
-\DoxyCodeLine{00073\ \ \ \ \ \ \ \ \ \textcolor{keyword}{template}\ <IsNode\ EntityType>}
-\DoxyCodeLine{00074\ \ \ \ \ \ \ \ \ [[nodiscard]]\ std::list<const\ EntityType*>\ \mbox{\hyperlink{classe2XD_1_1core_1_1Node_a9581c93b9693a2e51c4f065c72c6168d}{getSubNodes}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classe2XD_1_1core_1_1Node_a8c73b02dd342afea22da714f0c77014e}{onDestroy}}()\{\};}
+\DoxyCodeLine{00063\ }
+\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classe2XD_1_1core_1_1Node_a63ccab150802400899db853666aa23f6}{\_internal\_onDestroy}}()\{\};}
+\DoxyCodeLine{00069\ }
+\DoxyCodeLine{00070\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classe2XD_1_1core_1_1Node_a1adb5fc119573c1e7d4c3c39c5807cc1}{\_internal\_onDraw}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00071\ }
+\DoxyCodeLine{00072\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00073\ \ \ \ \ \ \ \ \ \textcolor{keyword}{friend}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classe2XD_1_1core_1_1Node_a774ff000a72cab489b14effd167a2a43}{CORE\_Node}};}
+\DoxyCodeLine{00074\ \ \ \ \ \ \ \ \ \textcolor{keyword}{friend}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classe2XD_1_1core_1_1Node2D}{Node2D}};}
 \DoxyCodeLine{00075\ }
-\DoxyCodeLine{00081\ \ \ \ \ \ \ \ \ \textcolor{keyword}{template}\ <IsNode\ EntityType>}
-\DoxyCodeLine{00082\ \ \ \ \ \ \ \ \ [[nodiscard]]\ EntityType*\ \mbox{\hyperlink{classe2XD_1_1core_1_1Node_a31c3a901f74532c72be485c7d2a7010e}{getSubNode}}();}
-\DoxyCodeLine{00083\ }
-\DoxyCodeLine{00089\ \ \ \ \ \ \ \ \ \textcolor{keyword}{template}\ <IsNode\ EntityType>}
-\DoxyCodeLine{00090\ \ \ \ \ \ \ \ \ [[nodiscard]]\ std::list<EntityType*>\ \mbox{\hyperlink{classe2XD_1_1core_1_1Node_a9581c93b9693a2e51c4f065c72c6168d}{getSubNodes}}();}
-\DoxyCodeLine{00091\ \ \ \ \ \};}
-\DoxyCodeLine{00092\ }
-\DoxyCodeLine{00093\ \ \ \ \ \textcolor{keyword}{template}<IsNode\ EntityType>}
-\DoxyCodeLine{00094\ \ \ \ \ EntityType*\ \mbox{\hyperlink{classe2XD_1_1core_1_1Node_ac4d099f3bdcbf9f7641896076feb680e}{Node::createSubNode}}()\ \{}
-\DoxyCodeLine{00095\ \ \ \ \ \ \ \ \ \textcolor{keyword}{auto}\ node\ =\ std::make\_unique<EntityType>();}
-\DoxyCodeLine{00096\ \ \ \ \ \ \ \ \ \textcolor{keyword}{auto}\ ptr\ =\ node.get();}
-\DoxyCodeLine{00097\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classe2XD_1_1core_1_1Node_a1ab6b7ee044c4d21820d49eb9834d046}{addSubNode}}(std::move(node));}
-\DoxyCodeLine{00098\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ ptr;}
-\DoxyCodeLine{00099\ \ \ \ \ \}}
-\DoxyCodeLine{00100\ }
-\DoxyCodeLine{00101\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classe2XD_1_1core_1_1Node_a1ab6b7ee044c4d21820d49eb9834d046}{Node::addSubNode}}(std::unique\_ptr<Node>\ node)\ \{}
-\DoxyCodeLine{00102\ \ \ \ \ \ \ \ \ node-\/>create();}
-\DoxyCodeLine{00103\ \ \ \ \ \ \ \ \ nodes.push\_back(std::move(node));}
-\DoxyCodeLine{00104\ \ \ \ \ \}}
-\DoxyCodeLine{00105\ }
-\DoxyCodeLine{00106\ \ \ \ \ \textcolor{keyword}{template}\ <IsNode\ EntityType>}
-\DoxyCodeLine{00107\ \ \ \ \ \textcolor{keyword}{const}\ EntityType*\ \mbox{\hyperlink{classe2XD_1_1core_1_1Node_a31c3a901f74532c72be485c7d2a7010e}{Node::getSubNode}}()\textcolor{keyword}{\ const}}
-\DoxyCodeLine{00108\ \textcolor{keyword}{\ \ \ \ }\{}
-\DoxyCodeLine{00109\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Search\ for\ the\ first\ sub-\/node\ of\ the\ specified\ type}}
-\DoxyCodeLine{00110\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keyword}{const}\ \textcolor{keyword}{auto}\&\ node\ :\ nodes)}
-\DoxyCodeLine{00111\ \ \ \ \ \ \ \ \ \{}
-\DoxyCodeLine{00112\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\textcolor{keyword}{auto}\ castedNode\ =\ \textcolor{keyword}{dynamic\_cast<}EntityType*\textcolor{keyword}{>}(node.get()))}
-\DoxyCodeLine{00113\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
-\DoxyCodeLine{00114\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ castedNode;}
-\DoxyCodeLine{00115\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
-\DoxyCodeLine{00116\ \ \ \ \ \ \ \ \ \}}
-\DoxyCodeLine{00117\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{nullptr};\ \textcolor{comment}{//\ Return\ nullptr\ if\ no\ matching\ sub-\/node\ is\ found}}
-\DoxyCodeLine{00118\ \ \ \ \ \}}
-\DoxyCodeLine{00119\ }
-\DoxyCodeLine{00120\ \ \ \ \ \textcolor{keyword}{template}\ <IsNode\ EntityType>}
-\DoxyCodeLine{00121\ \ \ \ \ std::list<const\ EntityType*>\ \mbox{\hyperlink{classe2XD_1_1core_1_1Node_a9581c93b9693a2e51c4f065c72c6168d}{Node::getSubNodes}}()\textcolor{keyword}{\ const}}
-\DoxyCodeLine{00122\ \textcolor{keyword}{\ \ \ \ }\{}
-\DoxyCodeLine{00123\ \ \ \ \ \ \ \ \ std::list<const\ EntityType*>\ result;}
-\DoxyCodeLine{00124\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Search\ for\ all\ sub-\/nodes\ of\ the\ specified\ type}}
-\DoxyCodeLine{00125\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keyword}{const}\ \textcolor{keyword}{auto}\&\ node\ :\ nodes)}
-\DoxyCodeLine{00126\ \ \ \ \ \ \ \ \ \{}
-\DoxyCodeLine{00127\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\textcolor{keyword}{auto}\ castedNode\ =\ \textcolor{keyword}{dynamic\_cast<}EntityType*\textcolor{keyword}{>}(node.get()))}
-\DoxyCodeLine{00128\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
-\DoxyCodeLine{00129\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ result.push\_back(castedNode);}
-\DoxyCodeLine{00130\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
-\DoxyCodeLine{00131\ \ \ \ \ \ \ \ \ \}}
-\DoxyCodeLine{00132\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ result;}
-\DoxyCodeLine{00133\ \ \ \ \ \}}
+\DoxyCodeLine{00079\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classe2XD_1_1core_1_1Node_a9d5e20f7395b9e9ca13548675efa4b2a}{Node}}()=\textcolor{keywordflow}{default};}
+\DoxyCodeLine{00080\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classe2XD_1_1core_1_1Node_ac47d455a55eaa8fbc55df6c98388a272}{\string~Node}}()\ \textcolor{keyword}{override}\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00081\ }
+\DoxyCodeLine{00085\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classe2XD_1_1core_1_1Node_a127ce10dcd5acdad121377eda7b5aac5}{update}}();}
+\DoxyCodeLine{00086\ }
+\DoxyCodeLine{00090\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classe2XD_1_1core_1_1Node_aefd2056fdc6a70fd1ba637446e7888c0}{create}}();}
+\DoxyCodeLine{00091\ }
+\DoxyCodeLine{00095\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classe2XD_1_1core_1_1Node_a1bebf88dbbd295bebfa58ac54c593218}{destroy}}();}
+\DoxyCodeLine{00096\ }
+\DoxyCodeLine{00102\ \ \ \ \ \ \ \ \ \textcolor{keyword}{template}\ <IsNode\ EntityType>}
+\DoxyCodeLine{00103\ \ \ \ \ \ \ \ \ EntityType*\ \mbox{\hyperlink{classe2XD_1_1core_1_1Node_ac4d099f3bdcbf9f7641896076feb680e}{createSubNode}}();}
+\DoxyCodeLine{00104\ }
+\DoxyCodeLine{00109\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classe2XD_1_1core_1_1Node_a1ab6b7ee044c4d21820d49eb9834d046}{addSubNode}}(std::unique\_ptr<Node>\ node);}
+\DoxyCodeLine{00110\ }
+\DoxyCodeLine{00116\ \ \ \ \ \ \ \ \ \textcolor{keyword}{template}\ <IsNode\ EntityType>}
+\DoxyCodeLine{00117\ \ \ \ \ \ \ \ \ [[nodiscard]]\ \textcolor{keyword}{const}\ EntityType*\ \mbox{\hyperlink{classe2XD_1_1core_1_1Node_a31c3a901f74532c72be485c7d2a7010e}{getSubNode}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00118\ }
+\DoxyCodeLine{00124\ \ \ \ \ \ \ \ \ \textcolor{keyword}{template}\ <IsNode\ EntityType>}
+\DoxyCodeLine{00125\ \ \ \ \ \ \ \ \ [[nodiscard]]\ std::list<const\ EntityType*>\ \mbox{\hyperlink{classe2XD_1_1core_1_1Node_a9581c93b9693a2e51c4f065c72c6168d}{getSubNodes}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00126\ }
+\DoxyCodeLine{00132\ \ \ \ \ \ \ \ \ \textcolor{keyword}{template}\ <IsNode\ EntityType>}
+\DoxyCodeLine{00133\ \ \ \ \ \ \ \ \ [[nodiscard]]\ EntityType*\ \mbox{\hyperlink{classe2XD_1_1core_1_1Node_a31c3a901f74532c72be485c7d2a7010e}{getSubNode}}();}
 \DoxyCodeLine{00134\ }
-\DoxyCodeLine{00135\ \ \ \ \ \textcolor{keyword}{template}\ <IsNode\ EntityType>}
-\DoxyCodeLine{00136\ \ \ \ \ EntityType*\ \mbox{\hyperlink{classe2XD_1_1core_1_1Node_a31c3a901f74532c72be485c7d2a7010e}{Node::getSubNode}}()}
-\DoxyCodeLine{00137\ \ \ \ \ \{}
-\DoxyCodeLine{00138\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Search\ for\ the\ first\ sub-\/node\ of\ the\ specified\ type}}
-\DoxyCodeLine{00139\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keyword}{const}\ \textcolor{keyword}{auto}\&\ node\ :\ nodes)}
-\DoxyCodeLine{00140\ \ \ \ \ \ \ \ \ \{}
-\DoxyCodeLine{00141\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\textcolor{keyword}{auto}\ castedNode\ =\ \textcolor{keyword}{dynamic\_cast<}EntityType*\textcolor{keyword}{>}(node.get()))}
-\DoxyCodeLine{00142\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
-\DoxyCodeLine{00143\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ castedNode;}
-\DoxyCodeLine{00144\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
-\DoxyCodeLine{00145\ \ \ \ \ \ \ \ \ \}}
-\DoxyCodeLine{00146\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{nullptr};\ \textcolor{comment}{//\ Return\ nullptr\ if\ no\ matching\ sub-\/node\ is\ found}}
-\DoxyCodeLine{00147\ \ \ \ \ \}}
-\DoxyCodeLine{00148\ }
-\DoxyCodeLine{00149\ \ \ \ \ \textcolor{keyword}{template}\ <IsNode\ EntityType>}
-\DoxyCodeLine{00150\ \ \ \ \ \ \ \ \ std::list<EntityType*>\ \mbox{\hyperlink{classe2XD_1_1core_1_1Node_a9581c93b9693a2e51c4f065c72c6168d}{Node::getSubNodes}}()}
-\DoxyCodeLine{00151\ \ \ \ \ \{}
-\DoxyCodeLine{00152\ \ \ \ \ \ \ \ \ std::list<EntityType*>\ result;}
-\DoxyCodeLine{00153\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Search\ for\ all\ sub-\/nodes\ of\ the\ specified\ type}}
-\DoxyCodeLine{00154\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keyword}{const}\ \textcolor{keyword}{auto}\&\ node\ :\ nodes)}
-\DoxyCodeLine{00155\ \ \ \ \ \ \ \ \ \{}
-\DoxyCodeLine{00156\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\textcolor{keyword}{auto}\ castedNode\ =\ \textcolor{keyword}{dynamic\_cast<}EntityType*\textcolor{keyword}{>}(node.get()))}
-\DoxyCodeLine{00157\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
-\DoxyCodeLine{00158\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ result.push\_back(castedNode);}
-\DoxyCodeLine{00159\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
-\DoxyCodeLine{00160\ \ \ \ \ \ \ \ \ \}}
-\DoxyCodeLine{00161\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ result;}
-\DoxyCodeLine{00162\ \ \ \ \ \}}
-\DoxyCodeLine{00163\ }
-\DoxyCodeLine{00164\ \}\ \textcolor{comment}{//\ e2XD}}
-\DoxyCodeLine{00165\ }
-\DoxyCodeLine{00166\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//INC\_2XD2\_ENGINE\_ENTITY\_H}}
+\DoxyCodeLine{00140\ \ \ \ \ \ \ \ \ \textcolor{keyword}{template}\ <IsNode\ EntityType>}
+\DoxyCodeLine{00141\ \ \ \ \ \ \ \ \ [[nodiscard]]\ std::list<EntityType*>\ \mbox{\hyperlink{classe2XD_1_1core_1_1Node_a9581c93b9693a2e51c4f065c72c6168d}{getSubNodes}}();}
+\DoxyCodeLine{00142\ \ \ \ \ \};}
+\DoxyCodeLine{00143\ }
+\DoxyCodeLine{00144\ \ \ \ \ \textcolor{keyword}{template}<IsNode\ EntityType>}
+\DoxyCodeLine{00145\ \ \ \ \ EntityType*\ \mbox{\hyperlink{classe2XD_1_1core_1_1Node_ac4d099f3bdcbf9f7641896076feb680e}{Node::createSubNode}}()\ \{}
+\DoxyCodeLine{00146\ \ \ \ \ \ \ \ \ \textcolor{keyword}{auto}\ node\ =\ std::make\_unique<EntityType>();}
+\DoxyCodeLine{00147\ \ \ \ \ \ \ \ \ \textcolor{keyword}{auto}\ ptr\ =\ node.get();}
+\DoxyCodeLine{00148\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classe2XD_1_1core_1_1Node_a1ab6b7ee044c4d21820d49eb9834d046}{addSubNode}}(std::move(node));}
+\DoxyCodeLine{00149\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ ptr;}
+\DoxyCodeLine{00150\ \ \ \ \ \}}
+\DoxyCodeLine{00151\ }
+\DoxyCodeLine{00152\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classe2XD_1_1core_1_1Node_a1ab6b7ee044c4d21820d49eb9834d046}{Node::addSubNode}}(std::unique\_ptr<Node>\ node)\ \{}
+\DoxyCodeLine{00153\ \ \ \ \ \ \ \ \ node-\/>create();}
+\DoxyCodeLine{00154\ \ \ \ \ \ \ \ \ nodes.push\_back(std::move(node));}
+\DoxyCodeLine{00155\ \ \ \ \ \}}
+\DoxyCodeLine{00156\ }
+\DoxyCodeLine{00157\ \ \ \ \ \textcolor{keyword}{template}\ <IsNode\ EntityType>}
+\DoxyCodeLine{00158\ \ \ \ \ \textcolor{keyword}{const}\ EntityType*\ \mbox{\hyperlink{classe2XD_1_1core_1_1Node_a31c3a901f74532c72be485c7d2a7010e}{Node::getSubNode}}()\textcolor{keyword}{\ const}}
+\DoxyCodeLine{00159\ \textcolor{keyword}{\ \ \ \ }\{}
+\DoxyCodeLine{00160\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Search\ for\ the\ first\ sub-\/node\ of\ the\ specified\ type}}
+\DoxyCodeLine{00161\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keyword}{const}\ \textcolor{keyword}{auto}\&\ node\ :\ nodes)}
+\DoxyCodeLine{00162\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00163\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\textcolor{keyword}{auto}\ castedNode\ =\ \textcolor{keyword}{dynamic\_cast<}EntityType*\textcolor{keyword}{>}(node.get()))}
+\DoxyCodeLine{00164\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00165\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ castedNode;}
+\DoxyCodeLine{00166\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00167\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00168\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{nullptr};\ \textcolor{comment}{//\ Return\ nullptr\ if\ no\ matching\ sub-\/node\ is\ found}}
+\DoxyCodeLine{00169\ \ \ \ \ \}}
+\DoxyCodeLine{00170\ }
+\DoxyCodeLine{00171\ \ \ \ \ \textcolor{keyword}{template}\ <IsNode\ EntityType>}
+\DoxyCodeLine{00172\ \ \ \ \ std::list<const\ EntityType*>\ \mbox{\hyperlink{classe2XD_1_1core_1_1Node_a9581c93b9693a2e51c4f065c72c6168d}{Node::getSubNodes}}()\textcolor{keyword}{\ const}}
+\DoxyCodeLine{00173\ \textcolor{keyword}{\ \ \ \ }\{}
+\DoxyCodeLine{00174\ \ \ \ \ \ \ \ \ std::list<const\ EntityType*>\ result;}
+\DoxyCodeLine{00175\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Search\ for\ all\ sub-\/nodes\ of\ the\ specified\ type}}
+\DoxyCodeLine{00176\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keyword}{const}\ \textcolor{keyword}{auto}\&\ node\ :\ nodes)}
+\DoxyCodeLine{00177\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00178\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\textcolor{keyword}{auto}\ castedNode\ =\ \textcolor{keyword}{dynamic\_cast<}EntityType*\textcolor{keyword}{>}(node.get()))}
+\DoxyCodeLine{00179\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00180\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ result.push\_back(castedNode);}
+\DoxyCodeLine{00181\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00182\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00183\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ result;}
+\DoxyCodeLine{00184\ \ \ \ \ \}}
+\DoxyCodeLine{00185\ }
+\DoxyCodeLine{00186\ \ \ \ \ \textcolor{keyword}{template}\ <IsNode\ EntityType>}
+\DoxyCodeLine{00187\ \ \ \ \ EntityType*\ \mbox{\hyperlink{classe2XD_1_1core_1_1Node_a31c3a901f74532c72be485c7d2a7010e}{Node::getSubNode}}()}
+\DoxyCodeLine{00188\ \ \ \ \ \{}
+\DoxyCodeLine{00189\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Search\ for\ the\ first\ sub-\/node\ of\ the\ specified\ type}}
+\DoxyCodeLine{00190\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keyword}{const}\ \textcolor{keyword}{auto}\&\ node\ :\ nodes)}
+\DoxyCodeLine{00191\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00192\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\textcolor{keyword}{auto}\ castedNode\ =\ \textcolor{keyword}{dynamic\_cast<}EntityType*\textcolor{keyword}{>}(node.get()))}
+\DoxyCodeLine{00193\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00194\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ castedNode;}
+\DoxyCodeLine{00195\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00196\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00197\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{nullptr};\ \textcolor{comment}{//\ Return\ nullptr\ if\ no\ matching\ sub-\/node\ is\ found}}
+\DoxyCodeLine{00198\ \ \ \ \ \}}
+\DoxyCodeLine{00199\ }
+\DoxyCodeLine{00200\ \ \ \ \ \textcolor{keyword}{template}\ <IsNode\ EntityType>}
+\DoxyCodeLine{00201\ \ \ \ \ \ \ \ \ std::list<EntityType*>\ \mbox{\hyperlink{classe2XD_1_1core_1_1Node_a9581c93b9693a2e51c4f065c72c6168d}{Node::getSubNodes}}()}
+\DoxyCodeLine{00202\ \ \ \ \ \{}
+\DoxyCodeLine{00203\ \ \ \ \ \ \ \ \ std::list<EntityType*>\ result;}
+\DoxyCodeLine{00204\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Search\ for\ all\ sub-\/nodes\ of\ the\ specified\ type}}
+\DoxyCodeLine{00205\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keyword}{const}\ \textcolor{keyword}{auto}\&\ node\ :\ nodes)}
+\DoxyCodeLine{00206\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00207\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\textcolor{keyword}{auto}\ castedNode\ =\ \textcolor{keyword}{dynamic\_cast<}EntityType*\textcolor{keyword}{>}(node.get()))}
+\DoxyCodeLine{00208\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00209\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ result.push\_back(castedNode);}
+\DoxyCodeLine{00210\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00211\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00212\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ result;}
+\DoxyCodeLine{00213\ \ \ \ \ \}}
+\DoxyCodeLine{00214\ }
+\DoxyCodeLine{00215\ \}\ \textcolor{comment}{//\ e2XD}}
+\DoxyCodeLine{00216\ }
+\DoxyCodeLine{00217\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//INC\_2XD2\_ENGINE\_ENTITY\_H}}
 
 \end{DoxyCode}

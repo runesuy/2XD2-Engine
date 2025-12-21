@@ -10,42 +10,42 @@
 \DoxyCodeLine{00006\ \textcolor{preprocessor}{\#define\ INC\_2XD2\_ENGINE\_NODE2D\_H}}
 \DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{Node_8h}{Node.h}}"{}}}
 \DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{Transform2D_8h}{Transform2D.h}}"{}}}
-\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{Vec2_8h}{Vec2.h}}"{}}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{Vec2f_8h}{Vec2f.h}}"{}}}
 \DoxyCodeLine{00010\ }
 \DoxyCodeLine{00011\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespacee2XD_1_1core}{e2XD::core}}\ \{}
-\DoxyCodeLine{00012\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{classe2XD_1_1core_1_1Node2D}{Node2D}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classe2XD_1_1core_1_1Node}{Node}}\ \{}
-\DoxyCodeLine{00013\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classe2XD_1_1core_1_1Transform2D}{Transform2D}}\ globalTransform;}
-\DoxyCodeLine{00014\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classe2XD_1_1core_1_1Transform2D}{Transform2D}}\ localTransform;}
-\DoxyCodeLine{00015\ }
-\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keyword}{public}:}
-\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classe2XD_1_1core_1_1Node2D_a70167330bb3cf9f1fb4a642d7c4a2545}{Node2D}}()\ =\ \textcolor{keywordflow}{default};}
-\DoxyCodeLine{00018\ }
-\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ [[nodiscard]]\ \textcolor{keyword}{const}\ \mbox{\hyperlink{structe2XD_1_1core_1_1Vec2}{Vec2}}\ \&\mbox{\hyperlink{classe2XD_1_1core_1_1Node2D_a5c90c3a52f79a050af0a5afcefbfd0dd}{getGlobalPosition}}()\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00020\ }
-\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classe2XD_1_1core_1_1Node2D_a5e952c01ad80d2a6700766ac05ce4320}{setGlobalPosition}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{structe2XD_1_1core_1_1Vec2}{Vec2}}\ \&position);}
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{classe2XD_1_1core_1_1Node2D}{Node2D}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classe2XD_1_1core_1_1Node}{Node}}\ \{}
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classe2XD_1_1core_1_1Transform2D}{Transform2D}}\ globalTransform;}
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classe2XD_1_1core_1_1Transform2D}{Transform2D}}\ localTransform;}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classe2XD_1_1core_1_1Node2D_a70167330bb3cf9f1fb4a642d7c4a2545}{Node2D}}()\ =\ \textcolor{keywordflow}{default};}
 \DoxyCodeLine{00022\ }
-\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ [[nodiscard]]\ \textcolor{keyword}{const}\ \mbox{\hyperlink{structe2XD_1_1core_1_1Vec2}{Vec2}}\ \&\mbox{\hyperlink{classe2XD_1_1core_1_1Node2D_ad42c07219a30db94ccba2d465524aba2}{getLocalPosition}}()\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00024\ }
-\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classe2XD_1_1core_1_1Node2D_a183fc9fda8263ca1f1ef321671016006}{setLocalPosition}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{structe2XD_1_1core_1_1Vec2}{Vec2}}\ \&position);}
-\DoxyCodeLine{00026\ }
-\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ [[nodiscard]]\ \textcolor{keyword}{const}\ \mbox{\hyperlink{structe2XD_1_1core_1_1Vec2}{Vec2}}\ \&\mbox{\hyperlink{classe2XD_1_1core_1_1Node2D_ad01cfb4fc6995785b218eab20af8bad8}{getGlobalScale}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ [[nodiscard]]\ \textcolor{keyword}{const}\ \mbox{\hyperlink{structe2XD_1_1core_1_1Vec2f}{Vec2f}}\ \&\mbox{\hyperlink{classe2XD_1_1core_1_1Node2D_ada5856c6591936276a891cf6c6a8344d}{getGlobalPosition}}()\ \textcolor{keyword}{const};}
 \DoxyCodeLine{00028\ }
-\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classe2XD_1_1core_1_1Node2D_af731fd7711d438a063c1a13ad8485828}{setGlobalScale}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{structe2XD_1_1core_1_1Vec2}{Vec2}}\ \&scale);}
-\DoxyCodeLine{00030\ }
-\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ [[nodiscard]]\ \textcolor{keyword}{const}\ \mbox{\hyperlink{structe2XD_1_1core_1_1Vec2}{Vec2}}\ \&\mbox{\hyperlink{classe2XD_1_1core_1_1Node2D_a11e2baaedf37b6019db137752ccbb9d3}{getLocalScale}}()\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00032\ }
-\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classe2XD_1_1core_1_1Node2D_ac9811aa5167bb3fa761ce38dcb13c149}{setLocalScale}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{structe2XD_1_1core_1_1Vec2}{Vec2}}\ \&scale);}
-\DoxyCodeLine{00034\ }
-\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ [[nodiscard]]\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{classe2XD_1_1core_1_1Node2D_a2f5d0bf1db3e88fdd1fb1c8e5ec429fa}{getGlobalRotation}}()\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00036\ }
-\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classe2XD_1_1core_1_1Node2D_a3a8ddbef29e2094c416875b92c5af7ad}{setGlobalRotation}}(\textcolor{keywordtype}{double}\ rotation);}
-\DoxyCodeLine{00038\ }
-\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ [[nodiscard]]\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{classe2XD_1_1core_1_1Node2D_af193f8b7bda588a28c23fcdeff161320}{getLocalRotation}}()\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00040\ }
-\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classe2XD_1_1core_1_1Node2D_a953ad7ea4487778f8ed5c35e04bb6b4a}{setLocalRotation}}(\textcolor{keywordtype}{double}\ rotation);}
-\DoxyCodeLine{00042\ \ \ \ \ \};}
-\DoxyCodeLine{00043\ \}\ \textcolor{comment}{//\ e2XD}}
-\DoxyCodeLine{00044\ }
-\DoxyCodeLine{00045\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//INC\_2XD2\_ENGINE\_NODE2D\_H}}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classe2XD_1_1core_1_1Node2D_ab9f913886c94233355bc26d746ad0bf2}{setGlobalPosition}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{structe2XD_1_1core_1_1Vec2f}{Vec2f}}\ \&position);}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ [[nodiscard]]\ \textcolor{keyword}{const}\ \mbox{\hyperlink{structe2XD_1_1core_1_1Vec2f}{Vec2f}}\ \&\mbox{\hyperlink{classe2XD_1_1core_1_1Node2D_a26175e65da87aeb5bc8a69e77fcdb499}{getLocalPosition}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classe2XD_1_1core_1_1Node2D_acf1c703ced61cc92158ce75bcbd63d93}{setLocalPosition}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{structe2XD_1_1core_1_1Vec2f}{Vec2f}}\ \&position);}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ [[nodiscard]]\ \textcolor{keyword}{const}\ \mbox{\hyperlink{structe2XD_1_1core_1_1Vec2f}{Vec2f}}\ \&\mbox{\hyperlink{classe2XD_1_1core_1_1Node2D_ab5662eeff688659c7326e9c936d61d93}{getGlobalScale}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00060\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classe2XD_1_1core_1_1Node2D_a4d477a71b9a6526049b38456d312186e}{setGlobalScale}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{structe2XD_1_1core_1_1Vec2f}{Vec2f}}\ \&scale);}
+\DoxyCodeLine{00061\ }
+\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ [[nodiscard]]\ \textcolor{keyword}{const}\ \mbox{\hyperlink{structe2XD_1_1core_1_1Vec2f}{Vec2f}}\ \&\mbox{\hyperlink{classe2XD_1_1core_1_1Node2D_afd77474056e2aa0996a5a938150af0ba}{getLocalScale}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00067\ }
+\DoxyCodeLine{00073\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classe2XD_1_1core_1_1Node2D_ac753cf1281b7c361d4e680ff784a40eb}{setLocalScale}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{structe2XD_1_1core_1_1Vec2f}{Vec2f}}\ \&scale);}
+\DoxyCodeLine{00074\ }
+\DoxyCodeLine{00079\ \ \ \ \ \ \ \ \ [[nodiscard]]\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{classe2XD_1_1core_1_1Node2D_a2f5d0bf1db3e88fdd1fb1c8e5ec429fa}{getGlobalRotation}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00080\ }
+\DoxyCodeLine{00086\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classe2XD_1_1core_1_1Node2D_a3a8ddbef29e2094c416875b92c5af7ad}{setGlobalRotation}}(\textcolor{keywordtype}{double}\ rotation);}
+\DoxyCodeLine{00087\ }
+\DoxyCodeLine{00092\ \ \ \ \ \ \ \ \ [[nodiscard]]\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{classe2XD_1_1core_1_1Node2D_af193f8b7bda588a28c23fcdeff161320}{getLocalRotation}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00093\ }
+\DoxyCodeLine{00099\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classe2XD_1_1core_1_1Node2D_a953ad7ea4487778f8ed5c35e04bb6b4a}{setLocalRotation}}(\textcolor{keywordtype}{double}\ rotation);}
+\DoxyCodeLine{00100\ \ \ \ \ \};}
+\DoxyCodeLine{00101\ \}\ \textcolor{comment}{//\ e2XD}}
+\DoxyCodeLine{00102\ }
+\DoxyCodeLine{00103\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//INC\_2XD2\_ENGINE\_NODE2D\_H}}
 
 \end{DoxyCode}

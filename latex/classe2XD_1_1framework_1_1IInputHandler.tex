@@ -39,7 +39,7 @@ virtual bool \mbox{\hyperlink{classe2XD_1_1framework_1_1IInputHandler_abc5f7f687
 \item 
 virtual bool \mbox{\hyperlink{classe2XD_1_1framework_1_1IInputHandler_aadca06621b08a4cdeca60010267e1dc6}{is\+Mouse\+Button\+Just\+Released}} (\mbox{\hyperlink{MouseButton_8h_ac1ec3647c005eacad401b06e7e18f711}{Mouse\+Button}} button\+Code) const =0
 \item 
-virtual \mbox{\hyperlink{structe2XD_1_1core_1_1Vec2}{core\+::\+Vec2}} \mbox{\hyperlink{classe2XD_1_1framework_1_1IInputHandler_ada2c5e07dd2d7a892f45f1896b97d4cc}{get\+Mouse\+Position}} () const =0
+virtual \mbox{\hyperlink{structe2XD_1_1core_1_1Vec2f}{core\+::\+Vec2f}} \mbox{\hyperlink{classe2XD_1_1framework_1_1IInputHandler_aa33819474da8330997cf24af41749fd5}{get\+Mouse\+Position}} () const =0
 \item 
 virtual std\+::tuple$<$ bool, float, float $>$ \mbox{\hyperlink{classe2XD_1_1framework_1_1IInputHandler_a96789b29e1c7f7dcb111b0e014ca32b9}{is\+Window\+Resized}} () const =0
 \item 
@@ -48,6 +48,9 @@ virtual bool \mbox{\hyperlink{classe2XD_1_1framework_1_1IInputHandler_aedf969b27
 virtual void \mbox{\hyperlink{classe2XD_1_1framework_1_1IInputHandler_a1f0b193446211db81dde88ca7fcea0e2}{new\+Frame}} ()=0
 \end{DoxyCompactItemize}
 
+
+\doxysubsection{Detailed Description}
+Input\+Handler interface to manage input from keyboard, mouse, and other devices Can be provided to the framework \doxylink{classe2XD_1_1framework_1_1Game}{Game} through \doxylink{classe2XD_1_1framework_1_1IGameConfig}{IGame\+Config}. When provided to the framework \doxylink{classe2XD_1_1framework_1_1Game}{Game}, it will be used by the static \doxylink{classe2XD_1_1framework_1_1Input}{Input} class to provide input states throughout the engine. 
 
 \doxysubsection{Constructor \& Destructor Documentation}
 \Hypertarget{classe2XD_1_1framework_1_1IInputHandler_a21c005eb00f642b22a4c7770f0b65bc4}\label{classe2XD_1_1framework_1_1IInputHandler_a21c005eb00f642b22a4c7770f0b65bc4} 
@@ -59,18 +62,18 @@ virtual void \mbox{\hyperlink{classe2XD_1_1framework_1_1IInputHandler_a1f0b19344
 
 
 \doxysubsection{Member Function Documentation}
-\Hypertarget{classe2XD_1_1framework_1_1IInputHandler_ada2c5e07dd2d7a892f45f1896b97d4cc}\label{classe2XD_1_1framework_1_1IInputHandler_ada2c5e07dd2d7a892f45f1896b97d4cc} 
+\Hypertarget{classe2XD_1_1framework_1_1IInputHandler_aa33819474da8330997cf24af41749fd5}\label{classe2XD_1_1framework_1_1IInputHandler_aa33819474da8330997cf24af41749fd5} 
 \index{e2XD::framework::IInputHandler@{e2XD::framework::IInputHandler}!getMousePosition@{getMousePosition}}
 \index{getMousePosition@{getMousePosition}!e2XD::framework::IInputHandler@{e2XD::framework::IInputHandler}}
 \doxysubsubsection{\texorpdfstring{getMousePosition()}{getMousePosition()}}
-{\footnotesize\ttfamily virtual \mbox{\hyperlink{structe2XD_1_1core_1_1Vec2}{core\+::\+Vec2}} e2\+XD\+::framework\+::\+IInput\+Handler\+::get\+Mouse\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{structe2XD_1_1core_1_1Vec2f}{core\+::\+Vec2f}} e2\+XD\+::framework\+::\+IInput\+Handler\+::get\+Mouse\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 \begin{DoxyReturn}{Returns}
 The current mouse position in window coordinates 
 \end{DoxyReturn}
 
 
-Implemented in \mbox{\hyperlink{classe2XD_1_1framework_1_1internal_1_1SFMLInputHandler_adc67be0f363d9b0ad386eac01769e8ff}{e2\+XD\+::framework\+::internal\+::\+SFMLInput\+Handler}}.
+Implemented in \mbox{\hyperlink{classe2XD_1_1framework_1_1internal_1_1SFMLInputHandler_ad9e3b236a10cf5e1b2c61f20d92ea81f}{e2\+XD\+::framework\+::internal\+::\+SFMLInput\+Handler}}.
 
 \Hypertarget{classe2XD_1_1framework_1_1IInputHandler_a87a96dbb0300813929461ac176a3eb23}\label{classe2XD_1_1framework_1_1IInputHandler_a87a96dbb0300813929461ac176a3eb23} 
 \index{e2XD::framework::IInputHandler@{e2XD::framework::IInputHandler}!initialize@{initialize}}

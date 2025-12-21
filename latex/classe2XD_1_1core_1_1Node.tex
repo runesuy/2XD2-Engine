@@ -95,6 +95,9 @@ int \mbox{\hyperlink{classe2XD_1_1core_1_1Renderable_affc18553cc6ca22ac446628d7b
 \end{DoxyCompactItemize}
 
 
+\doxysubsection{Detailed Description}
+A node in the scene graph. Is renderable by the Renderer. 
+
 \doxysubsection{Constructor \& Destructor Documentation}
 \Hypertarget{classe2XD_1_1core_1_1Node_a9d5e20f7395b9e9ca13548675efa4b2a}\label{classe2XD_1_1core_1_1Node_a9d5e20f7395b9e9ca13548675efa4b2a} 
 \index{e2XD::core::Node@{e2XD::core::Node}!Node@{Node}}
@@ -102,7 +105,7 @@ int \mbox{\hyperlink{classe2XD_1_1core_1_1Renderable_affc18553cc6ca22ac446628d7b
 \doxysubsubsection{\texorpdfstring{Node()}{Node()}}
 {\footnotesize\ttfamily e2\+XD\+::core\+::\+Node\+::\+Node (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
 
-\Hypertarget{classe2XD_1_1core_1_1Node_ac47d455a55eaa8fbc55df6c98388a272}\label{classe2XD_1_1core_1_1Node_ac47d455a55eaa8fbc55df6c98388a272} 
+Creat a new empty node. \Hypertarget{classe2XD_1_1core_1_1Node_ac47d455a55eaa8fbc55df6c98388a272}\label{classe2XD_1_1core_1_1Node_ac47d455a55eaa8fbc55df6c98388a272} 
 \index{e2XD::core::Node@{e2XD::core::Node}!````~Node@{\texorpdfstring{$\sim$}{\string~}Node}}
 \index{````~Node@{\texorpdfstring{$\sim$}{\string~}Node}!e2XD::core::Node@{e2XD::core::Node}}
 \doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Node()}{\string~Node()}}
@@ -117,19 +120,19 @@ int \mbox{\hyperlink{classe2XD_1_1core_1_1Renderable_affc18553cc6ca22ac446628d7b
 \doxysubsubsection{\texorpdfstring{\_internal\_onCreate()}{\_internal\_onCreate()}}
 {\footnotesize\ttfamily virtual void e2\+XD\+::core\+::\+Node\+::\+\_\+internal\+\_\+on\+Create (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
 
-\Hypertarget{classe2XD_1_1core_1_1Node_a63ccab150802400899db853666aa23f6}\label{classe2XD_1_1core_1_1Node_a63ccab150802400899db853666aa23f6} 
+Placeholder for internal creation logic. This method is called when the node is created. \Hypertarget{classe2XD_1_1core_1_1Node_a63ccab150802400899db853666aa23f6}\label{classe2XD_1_1core_1_1Node_a63ccab150802400899db853666aa23f6} 
 \index{e2XD::core::Node@{e2XD::core::Node}!\_internal\_onDestroy@{\_internal\_onDestroy}}
 \index{\_internal\_onDestroy@{\_internal\_onDestroy}!e2XD::core::Node@{e2XD::core::Node}}
 \doxysubsubsection{\texorpdfstring{\_internal\_onDestroy()}{\_internal\_onDestroy()}}
 {\footnotesize\ttfamily virtual void e2\+XD\+::core\+::\+Node\+::\+\_\+internal\+\_\+on\+Destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
 
-\Hypertarget{classe2XD_1_1core_1_1Node_a1adb5fc119573c1e7d4c3c39c5807cc1}\label{classe2XD_1_1core_1_1Node_a1adb5fc119573c1e7d4c3c39c5807cc1} 
+Placeholder for internal destruction logic. This method is called when the node is destroyed. \Hypertarget{classe2XD_1_1core_1_1Node_a1adb5fc119573c1e7d4c3c39c5807cc1}\label{classe2XD_1_1core_1_1Node_a1adb5fc119573c1e7d4c3c39c5807cc1} 
 \index{e2XD::core::Node@{e2XD::core::Node}!\_internal\_onDraw@{\_internal\_onDraw}}
 \index{\_internal\_onDraw@{\_internal\_onDraw}!e2XD::core::Node@{e2XD::core::Node}}
 \doxysubsubsection{\texorpdfstring{\_internal\_onDraw()}{\_internal\_onDraw()}}
 {\footnotesize\ttfamily void e2\+XD\+::core\+::\+Node\+::\+\_\+internal\+\_\+on\+Draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
 
-
+on\+Draw is a placeholder for internal draw logic. This method is called during the draw phase of the renderable. 
 
 Reimplemented from \mbox{\hyperlink{classe2XD_1_1core_1_1Renderable_aafa5e62350d646dc53114d1f0d28705b}{e2\+XD\+::core\+::\+Renderable}}.
 
@@ -143,19 +146,24 @@ Reimplemented in \mbox{\hyperlink{classe2XD_1_1framework_1_1Rectangle2D_aadb4d3e
 \doxysubsubsection{\texorpdfstring{\_internal\_onUpdate()}{\_internal\_onUpdate()}}
 {\footnotesize\ttfamily virtual void e2\+XD\+::core\+::\+Node\+::\+\_\+internal\+\_\+on\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
 
-\Hypertarget{classe2XD_1_1core_1_1Node_a1ab6b7ee044c4d21820d49eb9834d046}\label{classe2XD_1_1core_1_1Node_a1ab6b7ee044c4d21820d49eb9834d046} 
+Placeholder for internal update logic. This method is called during the update phase of the node. \Hypertarget{classe2XD_1_1core_1_1Node_a1ab6b7ee044c4d21820d49eb9834d046}\label{classe2XD_1_1core_1_1Node_a1ab6b7ee044c4d21820d49eb9834d046} 
 \index{e2XD::core::Node@{e2XD::core::Node}!addSubNode@{addSubNode}}
 \index{addSubNode@{addSubNode}!e2XD::core::Node@{e2XD::core::Node}}
 \doxysubsubsection{\texorpdfstring{addSubNode()}{addSubNode()}}
 {\footnotesize\ttfamily void e2\+XD\+::core\+::\+Node\+::add\+Sub\+Node (\begin{DoxyParamCaption}\item[{std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classe2XD_1_1core_1_1Node}{Node}} $>$}]{node }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
+Add a sub-\/node to this node. 
+\begin{DoxyParams}{Parameters}
+{\em node} & \\
+\hline
+\end{DoxyParams}
 \Hypertarget{classe2XD_1_1core_1_1Node_aefd2056fdc6a70fd1ba637446e7888c0}\label{classe2XD_1_1core_1_1Node_aefd2056fdc6a70fd1ba637446e7888c0} 
 \index{e2XD::core::Node@{e2XD::core::Node}!create@{create}}
 \index{create@{create}!e2XD::core::Node@{e2XD::core::Node}}
 \doxysubsubsection{\texorpdfstring{create()}{create()}}
 {\footnotesize\ttfamily void e2\+XD\+::core\+::\+Node\+::create (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-Here is the call graph for this function\+:
+Create the node and its sub-\/nodes. Here is the call graph for this function\+:
 \nopagebreak
 \begin{figure}[H]
 \begin{center}
@@ -170,6 +178,14 @@ Here is the call graph for this function\+:
 {\footnotesize\ttfamily template$<$Is\+Node Entity\+Type$>$ \\
 Entity\+Type \texorpdfstring{$\ast$}{*} e2\+XD\+::core\+::\+Node\+::create\+Sub\+Node (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
+Create and add a sub-\/node of the specified type. 
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Entity\+Type} & \\
+\hline
+\end{DoxyTemplParams}
+\begin{DoxyReturn}{Returns}
+a pointer to the created sub-\/node. 
+\end{DoxyReturn}
 Here is the call graph for this function\+:
 \nopagebreak
 \begin{figure}[H]
@@ -184,7 +200,7 @@ Here is the call graph for this function\+:
 \doxysubsubsection{\texorpdfstring{destroy()}{destroy()}}
 {\footnotesize\ttfamily void e2\+XD\+::core\+::\+Node\+::destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-Here is the call graph for this function\+:
+Destroy the node and its sub-\/nodes. Here is the call graph for this function\+:
 \nopagebreak
 \begin{figure}[H]
 \begin{center}
@@ -258,25 +274,25 @@ A list of pointers to the sub-\/nodes of the specified type.
 \doxysubsubsection{\texorpdfstring{onCreate()}{onCreate()}}
 {\footnotesize\ttfamily virtual void e2\+XD\+::core\+::\+Node\+::on\+Create (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
 
-\Hypertarget{classe2XD_1_1core_1_1Node_a8c73b02dd342afea22da714f0c77014e}\label{classe2XD_1_1core_1_1Node_a8c73b02dd342afea22da714f0c77014e} 
+Placeholder for user-\/defined creation logic. This method is called when the node is created. \Hypertarget{classe2XD_1_1core_1_1Node_a8c73b02dd342afea22da714f0c77014e}\label{classe2XD_1_1core_1_1Node_a8c73b02dd342afea22da714f0c77014e} 
 \index{e2XD::core::Node@{e2XD::core::Node}!onDestroy@{onDestroy}}
 \index{onDestroy@{onDestroy}!e2XD::core::Node@{e2XD::core::Node}}
 \doxysubsubsection{\texorpdfstring{onDestroy()}{onDestroy()}}
 {\footnotesize\ttfamily virtual void e2\+XD\+::core\+::\+Node\+::on\+Destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
 
-\Hypertarget{classe2XD_1_1core_1_1Node_a7328355a0304262433852116e148bd29}\label{classe2XD_1_1core_1_1Node_a7328355a0304262433852116e148bd29} 
+Placeholder for user-\/defined destruction logic. This method is called when the node is destroyed. \Hypertarget{classe2XD_1_1core_1_1Node_a7328355a0304262433852116e148bd29}\label{classe2XD_1_1core_1_1Node_a7328355a0304262433852116e148bd29} 
 \index{e2XD::core::Node@{e2XD::core::Node}!onUpdate@{onUpdate}}
 \index{onUpdate@{onUpdate}!e2XD::core::Node@{e2XD::core::Node}}
 \doxysubsubsection{\texorpdfstring{onUpdate()}{onUpdate()}}
 {\footnotesize\ttfamily virtual void e2\+XD\+::core\+::\+Node\+::on\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
 
-\Hypertarget{classe2XD_1_1core_1_1Node_a127ce10dcd5acdad121377eda7b5aac5}\label{classe2XD_1_1core_1_1Node_a127ce10dcd5acdad121377eda7b5aac5} 
+Placeholder for user-\/defined update logic. This method is called during the update phase of the node. \Hypertarget{classe2XD_1_1core_1_1Node_a127ce10dcd5acdad121377eda7b5aac5}\label{classe2XD_1_1core_1_1Node_a127ce10dcd5acdad121377eda7b5aac5} 
 \index{e2XD::core::Node@{e2XD::core::Node}!update@{update}}
 \index{update@{update}!e2XD::core::Node@{e2XD::core::Node}}
 \doxysubsubsection{\texorpdfstring{update()}{update()}}
 {\footnotesize\ttfamily void e2\+XD\+::core\+::\+Node\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-Here is the call graph for this function\+:
+Update the node and its sub-\/nodes. Here is the call graph for this function\+:
 \nopagebreak
 \begin{figure}[H]
 \begin{center}
