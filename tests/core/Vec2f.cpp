@@ -42,6 +42,14 @@ TEST(CORE_Vec2, ScalarMultiplication) {
     ASSERT_NEAR(result.y, 12.0, 0.0001);
 }
 
+TEST(CORE_Vec2, ScalarDivision) {
+    const e2XD::core::Vec2f vec(4.0, -2.0);
+    const double scalar = 2.0;
+    const e2XD::core::Vec2f result = vec / scalar;
+    ASSERT_NEAR(result.x, 2.0, 0.0001);
+    ASSERT_NEAR(result.y, -1.0, 0.0001);
+}
+
 TEST(CORE_Vec2, DotProduct) {
     const e2XD::core::Vec2f vec1(1.0, 2.0);
     const e2XD::core::Vec2f vec2(3.0, 4.0);
@@ -74,6 +82,21 @@ TEST(CORE_Vec2, CompoundAssignment) {
     ASSERT_NEAR(vec.y, 3.0, 0.0001);
 }
 
+TEST(CORE_Vec2, NormalizeHandlesNonZeroVector) {
+    e2XD::core::Vec2f vec(3.0f, 4.0f);
+    vec.normalize();
+    ASSERT_NEAR(vec.length(), 1.0, 0.0001);
+    ASSERT_NEAR(vec.x, 0.6, 0.0001);
+    ASSERT_NEAR(vec.y, 0.8, 0.0001);
+}
+
+TEST(CORE_Vec2, NormalizeLeavesZeroVectorUnchanged) {
+    e2XD::core::Vec2f vec;
+    vec.normalize();
+    ASSERT_NEAR(vec.x, 0.0, 0.0001);
+    ASSERT_NEAR(vec.y, 0.0, 0.0001);
+}
+
 TEST(CORE_Vec2, Equality) {
     const e2XD::core::Vec2f vec1(1.0, 2.0);
     const e2XD::core::Vec2f vec2(1.0, 2.0);
@@ -81,4 +104,3 @@ TEST(CORE_Vec2, Equality) {
     ASSERT_TRUE(vec1 == vec2);
     ASSERT_FALSE(vec1 == vec3);
 }
-

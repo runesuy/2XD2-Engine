@@ -1,5 +1,0 @@
-if(EXISTS "/home/runner/work/2XD2-Engine/2XD2-Engine/build/tests/2XD2_Engine_Tests[1]_tests.cmake")
-  include("/home/runner/work/2XD2-Engine/2XD2-Engine/build/tests/2XD2_Engine_Tests[1]_tests.cmake")
-else()
-  add_test(2XD2_Engine_Tests_NOT_BUILT 2XD2_Engine_Tests_NOT_BUILT)
-endif()
