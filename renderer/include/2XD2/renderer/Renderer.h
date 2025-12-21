@@ -13,6 +13,9 @@
 
 namespace e2XD::renderer
 {
+    /**
+     * Singleton class responsible for rendering objects to the screen. Using the rendering pipeline.
+     */
     class Renderer
     {
         sf::RenderWindow* window = nullptr;
