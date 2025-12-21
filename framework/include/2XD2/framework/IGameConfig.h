@@ -11,6 +11,9 @@
 
 namespace e2XD::framework
 {
+    /**
+     * Game configuration interface to provide various managers to the framework's Game implementation.
+     */
     class IGameConfig
     {
     public:

@@ -5,6 +5,9 @@
 #ifndef INC_2XD2_ENGINE_MOUSEBUTTON_H
 #define INC_2XD2_ENGINE_MOUSEBUTTON_H
 
+/**
+ * Enum representing various mouse buttons.
+ */
 enum class MouseButton
 {
     NONE,

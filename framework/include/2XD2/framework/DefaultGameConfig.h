@@ -11,6 +11,9 @@
 
 namespace e2XD::framework
     {
+        /**
+         * The default game configuration used by the framework's default game implementation.
+         */
         class DefaultGameConfig :public IGameConfig
         {
             std::unique_ptr<IInputHandler> inputHandler;
