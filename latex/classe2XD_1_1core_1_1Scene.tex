@@ -11,7 +11,7 @@ Inheritance diagram for e2\+XD\+::core\+::Scene\+:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=176pt]{classe2XD_1_1core_1_1Scene__inherit__graph}
+\includegraphics[width=197pt]{classe2XD_1_1core_1_1Scene__inherit__graph}
 \end{center}
 \end{figure}
 
@@ -21,7 +21,7 @@ Collaboration diagram for e2\+XD\+::core\+::Scene\+:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=176pt]{classe2XD_1_1core_1_1Scene__coll__graph}
+\includegraphics[width=197pt]{classe2XD_1_1core_1_1Scene__coll__graph}
 \end{center}
 \end{figure}
 \doxysubsubsection*{Public Member Functions}
@@ -60,6 +60,13 @@ void \mbox{\hyperlink{classe2XD_1_1core_1_1Node_a1ab6b7ee044c4d21820d49eb9834d04
 \item 
 {\footnotesize template$<$Is\+Node Entity\+Type$>$ }\\std\+::list$<$ Entity\+Type \texorpdfstring{$\ast$}{*} $>$ \mbox{\hyperlink{classe2XD_1_1core_1_1Node_acc4b20027400de1b1ceb19256ab3d494}{get\+Sub\+Nodes}} ()
 \end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classe2XD_1_1core_1_1Renderable}{e2\+XD\+::core\+::\+Renderable}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classe2XD_1_1core_1_1Renderable_a29919a60e1acee1e29d24df398f5959a}{\texorpdfstring{$\sim$}{\string~}\+Renderable}} ()=default
+\item 
+void \mbox{\hyperlink{classe2XD_1_1core_1_1Renderable_a9dda002e32574771aa1ae6de10d3c715}{draw}} ()
+\end{DoxyCompactItemize}
 \doxysubsubsection*{Additional Inherited Members}
 \doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{classe2XD_1_1core_1_1Node}{e2\+XD\+::core\+::\+Node}}}
 \begin{DoxyCompactItemize}
@@ -77,6 +84,18 @@ virtual void \mbox{\hyperlink{classe2XD_1_1core_1_1Node_a8c73b02dd342afea22da714
 virtual void \mbox{\hyperlink{classe2XD_1_1core_1_1Node_a63ccab150802400899db853666aa23f6}{\+\_\+internal\+\_\+on\+Destroy}} ()
 \item 
 void \mbox{\hyperlink{classe2XD_1_1core_1_1Node_a1adb5fc119573c1e7d4c3c39c5807cc1}{\+\_\+internal\+\_\+on\+Draw}} () override
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{classe2XD_1_1core_1_1Renderable}{e2\+XD\+::core\+::\+Renderable}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{classe2XD_1_1core_1_1Renderable_a48be1a3aad7417074ea2fc51fc6f9936}{on\+Draw}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classe2XD_1_1core_1_1Renderable}{e2\+XD\+::core\+::\+Renderable}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{RenderLayer_8h_ad16d91520dd8dbd7a2178564fce5a168}{Render\+Layer}} \mbox{\hyperlink{classe2XD_1_1core_1_1Renderable_a3acd958b02973be6e16678cdfe3dae07}{render\+Layer}} = \mbox{\hyperlink{RenderLayer_8h_ad16d91520dd8dbd7a2178564fce5a168a5289492cf082446ca4a6eec9f72f1ec3}{Render\+Layer\+::\+WORLD}}
+\item 
+int \mbox{\hyperlink{classe2XD_1_1core_1_1Renderable_affc18553cc6ca22ac446628d7b7d6913}{z\+Index}} =0
 \end{DoxyCompactItemize}
 
 

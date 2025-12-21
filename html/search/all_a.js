@@ -9,5 +9,6 @@ var searchData=
   ['discord_20a_6',['Join the &lt;a href=&quot;https://discord.gg/sVJzxWWbdW&quot; &gt;Discord&lt;/a&gt;',['../index.html#autotoc_md7',1,'']]],
   ['discord_20gg_20svjzxwwbdw_20discord_20a_7',['Join the &lt;a href=&quot;https://discord.gg/sVJzxWWbdW&quot; &gt;Discord&lt;/a&gt;',['../index.html#autotoc_md7',1,'']]],
   ['dot_8',['dot',['../structe2XD_1_1core_1_1Vec2.html#ac4d36455fb7b75bf3ee581fee9bd9217',1,'e2XD::core::Vec2']]],
-  ['drawable_9',['drawable',['../structe2XD_1_1renderer_1_1RenderCommand.html#ab5dcf0faf8af76429313a6b8ff7a0c0d',1,'e2XD::renderer::RenderCommand']]]
+  ['draw_9',['draw',['../classe2XD_1_1core_1_1Renderable.html#a9dda002e32574771aa1ae6de10d3c715',1,'e2XD::core::Renderable']]],
+  ['drawable_10',['drawable',['../structe2XD_1_1renderer_1_1RenderCommand.html#ab5dcf0faf8af76429313a6b8ff7a0c0d',1,'e2XD::renderer::RenderCommand']]]
 ];

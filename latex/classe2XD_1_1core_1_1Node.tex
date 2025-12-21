@@ -21,7 +21,7 @@ Collaboration diagram for e2\+XD\+::core\+::Node\+:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=171pt]{classe2XD_1_1core_1_1Node__coll__graph}
+\includegraphics[width=197pt]{classe2XD_1_1core_1_1Node__coll__graph}
 \end{center}
 \end{figure}
 \doxysubsubsection*{Public Member Functions}
@@ -49,6 +49,13 @@ void \mbox{\hyperlink{classe2XD_1_1core_1_1Node_a1ab6b7ee044c4d21820d49eb9834d04
 \item 
 {\footnotesize template$<$Is\+Node Entity\+Type$>$ }\\std\+::list$<$ Entity\+Type \texorpdfstring{$\ast$}{*} $>$ \mbox{\hyperlink{classe2XD_1_1core_1_1Node_acc4b20027400de1b1ceb19256ab3d494}{get\+Sub\+Nodes}} ()
 \end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classe2XD_1_1core_1_1Renderable}{e2\+XD\+::core\+::\+Renderable}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classe2XD_1_1core_1_1Renderable_a29919a60e1acee1e29d24df398f5959a}{\texorpdfstring{$\sim$}{\string~}\+Renderable}} ()=default
+\item 
+void \mbox{\hyperlink{classe2XD_1_1core_1_1Renderable_a9dda002e32574771aa1ae6de10d3c715}{draw}} ()
+\end{DoxyCompactItemize}
 \doxysubsubsection*{Protected Member Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -66,12 +73,25 @@ virtual void \mbox{\hyperlink{classe2XD_1_1core_1_1Node_a63ccab150802400899db853
 \item 
 void \mbox{\hyperlink{classe2XD_1_1core_1_1Node_a1adb5fc119573c1e7d4c3c39c5807cc1}{\+\_\+internal\+\_\+on\+Draw}} () override
 \end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{classe2XD_1_1core_1_1Renderable}{e2\+XD\+::core\+::\+Renderable}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{classe2XD_1_1core_1_1Renderable_a48be1a3aad7417074ea2fc51fc6f9936}{on\+Draw}} ()
+\end{DoxyCompactItemize}
 \doxysubsubsection*{Friends}
 \begin{DoxyCompactItemize}
 \item 
 class \mbox{\hyperlink{classe2XD_1_1core_1_1Node_a774ff000a72cab489b14effd167a2a43}{CORE\+\_\+\+Node}}
 \item 
 class \mbox{\hyperlink{classe2XD_1_1core_1_1Node_ab2d8f6f75e12d21702650abe7c87f7af}{Node2D}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classe2XD_1_1core_1_1Renderable}{e2\+XD\+::core\+::\+Renderable}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{RenderLayer_8h_ad16d91520dd8dbd7a2178564fce5a168}{Render\+Layer}} \mbox{\hyperlink{classe2XD_1_1core_1_1Renderable_a3acd958b02973be6e16678cdfe3dae07}{render\+Layer}} = \mbox{\hyperlink{RenderLayer_8h_ad16d91520dd8dbd7a2178564fce5a168a5289492cf082446ca4a6eec9f72f1ec3}{Render\+Layer\+::\+WORLD}}
+\item 
+int \mbox{\hyperlink{classe2XD_1_1core_1_1Renderable_affc18553cc6ca22ac446628d7b7d6913}{z\+Index}} =0
 \end{DoxyCompactItemize}
 
 
@@ -107,7 +127,15 @@ class \mbox{\hyperlink{classe2XD_1_1core_1_1Node_ab2d8f6f75e12d21702650abe7c87f7
 \index{e2XD::core::Node@{e2XD::core::Node}!\_internal\_onDraw@{\_internal\_onDraw}}
 \index{\_internal\_onDraw@{\_internal\_onDraw}!e2XD::core::Node@{e2XD::core::Node}}
 \doxysubsubsection{\texorpdfstring{\_internal\_onDraw()}{\_internal\_onDraw()}}
-{\footnotesize\ttfamily void e2\+XD\+::core\+::\+Node\+::\+\_\+internal\+\_\+on\+Draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}}
+{\footnotesize\ttfamily void e2\+XD\+::core\+::\+Node\+::\+\_\+internal\+\_\+on\+Draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classe2XD_1_1core_1_1Renderable_aafa5e62350d646dc53114d1f0d28705b}{e2\+XD\+::core\+::\+Renderable}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{classe2XD_1_1framework_1_1Rectangle2D_aadb4d3e182312d5e5b8e9f692fde44ae}{e2\+XD\+::framework\+::\+Rectangle2D}}, and \mbox{\hyperlink{classe2XD_1_1framework_1_1Sprite2D_a321b1296aef9539d923cf729d8b65213}{e2\+XD\+::framework\+::\+Sprite2D}}.
 
 \Hypertarget{classe2XD_1_1core_1_1Node_affae57a6faaf808b3316061c109b4bc9}\label{classe2XD_1_1core_1_1Node_affae57a6faaf808b3316061c109b4bc9} 
 \index{e2XD::core::Node@{e2XD::core::Node}!\_internal\_onUpdate@{\_internal\_onUpdate}}
