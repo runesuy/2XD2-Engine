@@ -216,6 +216,7 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>The current mouse position in window coordinates </dd></dl>
 
 <p>Implements <a class="el" href="classe2XD_1_1framework_1_1IInputHandler.html#ada2c5e07dd2d7a892f45f1896b97d4cc">e2XD::framework::IInputHandler</a>.</p>
 
@@ -244,6 +245,12 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Initialize the input handler with the given SFML RenderWindow. The inputhandler will use this window to poll events and get input states. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">window</td><td>ptr to the active SFML RenderWindow </td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p>Implements <a class="el" href="classe2XD_1_1framework_1_1IInputHandler.html#a87a96dbb0300813929461ac176a3eb23">e2XD::framework::IInputHandler</a>.</p>
 
@@ -272,6 +279,13 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">keyCode</td><td>Key to check </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the key was just pressed in this frame, and was not pressed in the last frame </dd></dl>
 
 <p>Implements <a class="el" href="classe2XD_1_1framework_1_1IInputHandler.html#a4a37d9b15f473d0643f7daf8845cac49">e2XD::framework::IInputHandler</a>.</p>
 
@@ -300,6 +314,13 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">keyCode</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the key was just released in this frame, and was pressed in the last frame </dd></dl>
 
 <p>Implements <a class="el" href="classe2XD_1_1framework_1_1IInputHandler.html#aed0fbf3bd44d9f68c6565bdb4d29eff7">e2XD::framework::IInputHandler</a>.</p>
 
@@ -328,6 +349,13 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">keyCode</td><td>Key to check </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the key was pressed or hold down in this frame </dd></dl>
 
 <p>Implements <a class="el" href="classe2XD_1_1framework_1_1IInputHandler.html#a2c5eddba87ce7235e0956cef682e876e">e2XD::framework::IInputHandler</a>.</p>
 
@@ -356,6 +384,13 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">keyCode</td><td>Key to check </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the key is not pressed or hold down in this frame </dd></dl>
 
 <p>Implements <a class="el" href="classe2XD_1_1framework_1_1IInputHandler.html#a69af105e6b2f04acfcd8835bd29bbe45">e2XD::framework::IInputHandler</a>.</p>
 
@@ -384,6 +419,13 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">buttonCode</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the mouse button was just pressed in this frame, and was not pressed in the last frame </dd></dl>
 
 <p>Implements <a class="el" href="classe2XD_1_1framework_1_1IInputHandler.html#af008252e4ae044e6fc9302a853830f45">e2XD::framework::IInputHandler</a>.</p>
 
@@ -412,6 +454,13 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">buttonCode</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the mouse button was just released in this frame, and was pressed in the last frame </dd></dl>
 
 <p>Implements <a class="el" href="classe2XD_1_1framework_1_1IInputHandler.html#aadca06621b08a4cdeca60010267e1dc6">e2XD::framework::IInputHandler</a>.</p>
 
@@ -440,6 +489,13 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">buttonCode</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the mouse button is pressed or hold down in this frame </dd></dl>
 
 <p>Implements <a class="el" href="classe2XD_1_1framework_1_1IInputHandler.html#af7dd7a7d8c7d6f2a89adbe74135502e3">e2XD::framework::IInputHandler</a>.</p>
 
@@ -468,6 +524,13 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">buttonCode</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the mouse button is not pressed or hold down in this frame </dd></dl>
 
 <p>Implements <a class="el" href="classe2XD_1_1framework_1_1IInputHandler.html#abc5f7f687d778e3bc54311633f4c215d">e2XD::framework::IInputHandler</a>.</p>
 
@@ -495,6 +558,7 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>true if the window was closed in this frame </dd></dl>
 
 <p>Implements <a class="el" href="classe2XD_1_1framework_1_1IInputHandler.html#aedf969b27bf30198943b6b6cfedc4d9d">e2XD::framework::IInputHandler</a>.</p>
 
@@ -550,6 +614,7 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>called at the end of each frame to update internal states does not replace <a class="el" href="classe2XD_1_1framework_1_1internal_1_1SFMLInputHandler.html#a8be5ce71ef5ddf873d4f438ce57eb3a6">pollEvents()</a> </p>
 
 <p>Implements <a class="el" href="classe2XD_1_1framework_1_1IInputHandler.html#a1f0b193446211db81dde88ca7fcea0e2">e2XD::framework::IInputHandler</a>.</p>
 
@@ -577,6 +642,7 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Poll all events from the window and update the input states. Without calling this method, input states will not be updated. </p>
 
 <p>Implements <a class="el" href="classe2XD_1_1framework_1_1IInputHandler.html#a0b933d16514069fb8a844c2c616aeb98">e2XD::framework::IInputHandler</a>.</p>
 

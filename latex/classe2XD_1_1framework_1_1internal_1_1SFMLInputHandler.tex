@@ -91,6 +91,9 @@ Singleton class to manage input from keyboard, mouse, and other devices
 \doxysubsubsection{\texorpdfstring{getMousePosition()}{getMousePosition()}}
 {\footnotesize\ttfamily \mbox{\hyperlink{structe2XD_1_1core_1_1Vec2}{core\+::\+Vec2}} e2\+XD\+::framework\+::internal\+::\+SFMLInput\+Handler\+::get\+Mouse\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
+\begin{DoxyReturn}{Returns}
+The current mouse position in window coordinates 
+\end{DoxyReturn}
 
 
 Implements \mbox{\hyperlink{classe2XD_1_1framework_1_1IInputHandler_ada2c5e07dd2d7a892f45f1896b97d4cc}{e2\+XD\+::framework\+::\+IInput\+Handler}}.
@@ -101,6 +104,11 @@ Implements \mbox{\hyperlink{classe2XD_1_1framework_1_1IInputHandler_ada2c5e07dd2
 \doxysubsubsection{\texorpdfstring{initialize()}{initialize()}}
 {\footnotesize\ttfamily void e2\+XD\+::framework\+::internal\+::\+SFMLInput\+Handler\+::initialize (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window \texorpdfstring{$\ast$}{*}}]{window }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
+Initialize the input handler with the given SFML Render\+Window. The inputhandler will use this window to poll events and get input states. 
+\begin{DoxyParams}{Parameters}
+{\em window} & ptr to the active SFML Render\+Window \\
+\hline
+\end{DoxyParams}
 
 
 Implements \mbox{\hyperlink{classe2XD_1_1framework_1_1IInputHandler_a87a96dbb0300813929461ac176a3eb23}{e2\+XD\+::framework\+::\+IInput\+Handler}}.
@@ -112,6 +120,14 @@ Implements \mbox{\hyperlink{classe2XD_1_1framework_1_1IInputHandler_a87a96dbb030
 {\footnotesize\ttfamily bool e2\+XD\+::framework\+::internal\+::\+SFMLInput\+Handler\+::is\+Key\+Just\+Pressed (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{Key_8h_ab3c7af4820830f9166ede9e5623c4e73}{Key}}}]{key\+Code }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
+\begin{DoxyParams}{Parameters}
+{\em key\+Code} & Key to check \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the key was just pressed in this frame, and was not pressed in the last frame 
+\end{DoxyReturn}
+
 
 Implements \mbox{\hyperlink{classe2XD_1_1framework_1_1IInputHandler_a4a37d9b15f473d0643f7daf8845cac49}{e2\+XD\+::framework\+::\+IInput\+Handler}}.
 
@@ -121,6 +137,14 @@ Implements \mbox{\hyperlink{classe2XD_1_1framework_1_1IInputHandler_a4a37d9b15f4
 \doxysubsubsection{\texorpdfstring{isKeyJustReleased()}{isKeyJustReleased()}}
 {\footnotesize\ttfamily bool e2\+XD\+::framework\+::internal\+::\+SFMLInput\+Handler\+::is\+Key\+Just\+Released (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{Key_8h_ab3c7af4820830f9166ede9e5623c4e73}{Key}}}]{key\+Code }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
+
+\begin{DoxyParams}{Parameters}
+{\em key\+Code} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the key was just released in this frame, and was pressed in the last frame 
+\end{DoxyReturn}
 
 
 Implements \mbox{\hyperlink{classe2XD_1_1framework_1_1IInputHandler_aed0fbf3bd44d9f68c6565bdb4d29eff7}{e2\+XD\+::framework\+::\+IInput\+Handler}}.
@@ -132,6 +156,14 @@ Implements \mbox{\hyperlink{classe2XD_1_1framework_1_1IInputHandler_aed0fbf3bd44
 {\footnotesize\ttfamily bool e2\+XD\+::framework\+::internal\+::\+SFMLInput\+Handler\+::is\+Key\+Pressed (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{Key_8h_ab3c7af4820830f9166ede9e5623c4e73}{Key}}}]{key\+Code }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
+\begin{DoxyParams}{Parameters}
+{\em key\+Code} & Key to check \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the key was pressed or hold down in this frame 
+\end{DoxyReturn}
+
 
 Implements \mbox{\hyperlink{classe2XD_1_1framework_1_1IInputHandler_a2c5eddba87ce7235e0956cef682e876e}{e2\+XD\+::framework\+::\+IInput\+Handler}}.
 
@@ -141,6 +173,14 @@ Implements \mbox{\hyperlink{classe2XD_1_1framework_1_1IInputHandler_a2c5eddba87c
 \doxysubsubsection{\texorpdfstring{isKeyReleased()}{isKeyReleased()}}
 {\footnotesize\ttfamily bool e2\+XD\+::framework\+::internal\+::\+SFMLInput\+Handler\+::is\+Key\+Released (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{Key_8h_ab3c7af4820830f9166ede9e5623c4e73}{Key}}}]{key\+Code }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
+
+\begin{DoxyParams}{Parameters}
+{\em key\+Code} & Key to check \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the key is not pressed or hold down in this frame 
+\end{DoxyReturn}
 
 
 Implements \mbox{\hyperlink{classe2XD_1_1framework_1_1IInputHandler_a69af105e6b2f04acfcd8835bd29bbe45}{e2\+XD\+::framework\+::\+IInput\+Handler}}.
@@ -152,6 +192,14 @@ Implements \mbox{\hyperlink{classe2XD_1_1framework_1_1IInputHandler_a69af105e6b2
 {\footnotesize\ttfamily bool e2\+XD\+::framework\+::internal\+::\+SFMLInput\+Handler\+::is\+Mouse\+Button\+Just\+Pressed (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{MouseButton_8h_ac1ec3647c005eacad401b06e7e18f711}{Mouse\+Button}}}]{button\+Code }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
+\begin{DoxyParams}{Parameters}
+{\em button\+Code} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the mouse button was just pressed in this frame, and was not pressed in the last frame 
+\end{DoxyReturn}
+
 
 Implements \mbox{\hyperlink{classe2XD_1_1framework_1_1IInputHandler_af008252e4ae044e6fc9302a853830f45}{e2\+XD\+::framework\+::\+IInput\+Handler}}.
 
@@ -161,6 +209,14 @@ Implements \mbox{\hyperlink{classe2XD_1_1framework_1_1IInputHandler_af008252e4ae
 \doxysubsubsection{\texorpdfstring{isMouseButtonJustReleased()}{isMouseButtonJustReleased()}}
 {\footnotesize\ttfamily bool e2\+XD\+::framework\+::internal\+::\+SFMLInput\+Handler\+::is\+Mouse\+Button\+Just\+Released (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{MouseButton_8h_ac1ec3647c005eacad401b06e7e18f711}{Mouse\+Button}}}]{button\+Code }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
+
+\begin{DoxyParams}{Parameters}
+{\em button\+Code} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the mouse button was just released in this frame, and was pressed in the last frame 
+\end{DoxyReturn}
 
 
 Implements \mbox{\hyperlink{classe2XD_1_1framework_1_1IInputHandler_aadca06621b08a4cdeca60010267e1dc6}{e2\+XD\+::framework\+::\+IInput\+Handler}}.
@@ -172,6 +228,14 @@ Implements \mbox{\hyperlink{classe2XD_1_1framework_1_1IInputHandler_aadca06621b0
 {\footnotesize\ttfamily bool e2\+XD\+::framework\+::internal\+::\+SFMLInput\+Handler\+::is\+Mouse\+Button\+Pressed (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{MouseButton_8h_ac1ec3647c005eacad401b06e7e18f711}{Mouse\+Button}}}]{button\+Code }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
+\begin{DoxyParams}{Parameters}
+{\em button\+Code} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the mouse button is pressed or hold down in this frame 
+\end{DoxyReturn}
+
 
 Implements \mbox{\hyperlink{classe2XD_1_1framework_1_1IInputHandler_af7dd7a7d8c7d6f2a89adbe74135502e3}{e2\+XD\+::framework\+::\+IInput\+Handler}}.
 
@@ -182,6 +246,14 @@ Implements \mbox{\hyperlink{classe2XD_1_1framework_1_1IInputHandler_af7dd7a7d8c7
 {\footnotesize\ttfamily bool e2\+XD\+::framework\+::internal\+::\+SFMLInput\+Handler\+::is\+Mouse\+Button\+Released (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{MouseButton_8h_ac1ec3647c005eacad401b06e7e18f711}{Mouse\+Button}}}]{button\+Code }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
+\begin{DoxyParams}{Parameters}
+{\em button\+Code} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the mouse button is not pressed or hold down in this frame 
+\end{DoxyReturn}
+
 
 Implements \mbox{\hyperlink{classe2XD_1_1framework_1_1IInputHandler_abc5f7f687d778e3bc54311633f4c215d}{e2\+XD\+::framework\+::\+IInput\+Handler}}.
 
@@ -191,6 +263,9 @@ Implements \mbox{\hyperlink{classe2XD_1_1framework_1_1IInputHandler_abc5f7f687d7
 \doxysubsubsection{\texorpdfstring{isWindowClosed()}{isWindowClosed()}}
 {\footnotesize\ttfamily bool e2\+XD\+::framework\+::internal\+::\+SFMLInput\+Handler\+::is\+Window\+Closed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
+\begin{DoxyReturn}{Returns}
+true if the window was closed in this frame 
+\end{DoxyReturn}
 
 
 Implements \mbox{\hyperlink{classe2XD_1_1framework_1_1IInputHandler_aedf969b27bf30198943b6b6cfedc4d9d}{e2\+XD\+::framework\+::\+IInput\+Handler}}.
@@ -214,7 +289,7 @@ Implements \mbox{\hyperlink{classe2XD_1_1framework_1_1IInputHandler_a96789b29e1c
 \doxysubsubsection{\texorpdfstring{newFrame()}{newFrame()}}
 {\footnotesize\ttfamily void e2\+XD\+::framework\+::internal\+::\+SFMLInput\+Handler\+::new\+Frame (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
-
+called at the end of each frame to update internal states does not replace \doxylink{classe2XD_1_1framework_1_1internal_1_1SFMLInputHandler_a8be5ce71ef5ddf873d4f438ce57eb3a6}{poll\+Events()} 
 
 Implements \mbox{\hyperlink{classe2XD_1_1framework_1_1IInputHandler_a1f0b193446211db81dde88ca7fcea0e2}{e2\+XD\+::framework\+::\+IInput\+Handler}}.
 
@@ -224,7 +299,7 @@ Implements \mbox{\hyperlink{classe2XD_1_1framework_1_1IInputHandler_a1f0b1934462
 \doxysubsubsection{\texorpdfstring{pollEvents()}{pollEvents()}}
 {\footnotesize\ttfamily void e2\+XD\+::framework\+::internal\+::\+SFMLInput\+Handler\+::poll\+Events (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
-
+Poll all events from the window and update the input states. Without calling this method, input states will not be updated. 
 
 Implements \mbox{\hyperlink{classe2XD_1_1framework_1_1IInputHandler_a0b933d16514069fb8a844c2c616aeb98}{e2\+XD\+::framework\+::\+IInput\+Handler}}.
 

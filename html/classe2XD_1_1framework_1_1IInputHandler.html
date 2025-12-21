@@ -174,6 +174,7 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>The current mouse position in window coordinates </dd></dl>
 
 <p>Implemented in <a class="el" href="classe2XD_1_1framework_1_1internal_1_1SFMLInputHandler.html#adc67be0f363d9b0ad386eac01769e8ff">e2XD::framework::internal::SFMLInputHandler</a>.</p>
 
@@ -202,6 +203,12 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Initialize the input handler with the given SFML RenderWindow. The inputhandler will use this window to poll events and get input states. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">window</td><td>ptr to the active SFML RenderWindow </td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p>Implemented in <a class="el" href="classe2XD_1_1framework_1_1internal_1_1SFMLInputHandler.html#a0bae15e1dd7ec4e2ce2fa7202db68b53">e2XD::framework::internal::SFMLInputHandler</a>.</p>
 
@@ -230,6 +237,13 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">keyCode</td><td>Key to check </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the key was just pressed in this frame, and was not pressed in the last frame </dd></dl>
 
 <p>Implemented in <a class="el" href="classe2XD_1_1framework_1_1internal_1_1SFMLInputHandler.html#a435ebeb78771e70c9db17e8975a0261f">e2XD::framework::internal::SFMLInputHandler</a>.</p>
 
@@ -258,6 +272,13 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">keyCode</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the key was just released in this frame, and was pressed in the last frame </dd></dl>
 
 <p>Implemented in <a class="el" href="classe2XD_1_1framework_1_1internal_1_1SFMLInputHandler.html#a3c7c5832712405d057042fcd42c54721">e2XD::framework::internal::SFMLInputHandler</a>.</p>
 
@@ -286,6 +307,13 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">keyCode</td><td>Key to check </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the key was pressed or hold down in this frame </dd></dl>
 
 <p>Implemented in <a class="el" href="classe2XD_1_1framework_1_1internal_1_1SFMLInputHandler.html#a5256580911ce5410eebc8089a185a44e">e2XD::framework::internal::SFMLInputHandler</a>.</p>
 
@@ -314,6 +342,13 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">keyCode</td><td>Key to check </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the key is not pressed or hold down in this frame </dd></dl>
 
 <p>Implemented in <a class="el" href="classe2XD_1_1framework_1_1internal_1_1SFMLInputHandler.html#a59a0f091231a3413951b3316fd2660d2">e2XD::framework::internal::SFMLInputHandler</a>.</p>
 
@@ -342,6 +377,13 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">buttonCode</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the mouse button was just pressed in this frame, and was not pressed in the last frame </dd></dl>
 
 <p>Implemented in <a class="el" href="classe2XD_1_1framework_1_1internal_1_1SFMLInputHandler.html#a8e82c2304fcc382914d33a4b371fd3ad">e2XD::framework::internal::SFMLInputHandler</a>.</p>
 
@@ -370,6 +412,13 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">buttonCode</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the mouse button was just released in this frame, and was pressed in the last frame </dd></dl>
 
 <p>Implemented in <a class="el" href="classe2XD_1_1framework_1_1internal_1_1SFMLInputHandler.html#a337c6c50e437e3b31c8635363821c7b4">e2XD::framework::internal::SFMLInputHandler</a>.</p>
 
@@ -398,6 +447,13 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">buttonCode</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the mouse button is pressed or hold down in this frame </dd></dl>
 
 <p>Implemented in <a class="el" href="classe2XD_1_1framework_1_1internal_1_1SFMLInputHandler.html#a1ef7f704a7d25ab70083b0514df78a81">e2XD::framework::internal::SFMLInputHandler</a>.</p>
 
@@ -426,6 +482,13 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">buttonCode</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the mouse button is not pressed or hold down in this frame </dd></dl>
 
 <p>Implemented in <a class="el" href="classe2XD_1_1framework_1_1internal_1_1SFMLInputHandler.html#a65de828f7e07cdf09e11d9be62ec7a7c">e2XD::framework::internal::SFMLInputHandler</a>.</p>
 
@@ -453,6 +516,7 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>true if the window was closed in this frame </dd></dl>
 
 <p>Implemented in <a class="el" href="classe2XD_1_1framework_1_1internal_1_1SFMLInputHandler.html#af0e255ddc8877721b2e19b8db800ff40">e2XD::framework::internal::SFMLInputHandler</a>.</p>
 
@@ -480,6 +544,7 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>&lt;resized, newSizeX, newSizeY&gt; true if the window was resized in this frame, along with the new width and height </dd></dl>
 
 <p>Implemented in <a class="el" href="classe2XD_1_1framework_1_1internal_1_1SFMLInputHandler.html#ac7ce1cd41bd4b9443faf3eea52010494">e2XD::framework::internal::SFMLInputHandler</a>.</p>
 
@@ -507,6 +572,7 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>called at the end of each frame to update internal states does not replace <a class="el" href="classe2XD_1_1framework_1_1IInputHandler.html#a0b933d16514069fb8a844c2c616aeb98">pollEvents()</a> </p>
 
 <p>Implemented in <a class="el" href="classe2XD_1_1framework_1_1internal_1_1SFMLInputHandler.html#ae4ba4f3db75ed5280b744f4a82bdda47">e2XD::framework::internal::SFMLInputHandler</a>.</p>
 
@@ -534,6 +600,7 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Poll all events from the window and update the input states. Without calling this method, input states will not be updated. </p>
 
 <p>Implemented in <a class="el" href="classe2XD_1_1framework_1_1internal_1_1SFMLInputHandler.html#a8be5ce71ef5ddf873d4f438ce57eb3a6">e2XD::framework::internal::SFMLInputHandler</a>.</p>
 
