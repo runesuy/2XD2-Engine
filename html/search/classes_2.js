@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['exception_0',['Exception',['../classe2XD_1_1framework_1_1Exception.html',1,'e2XD::framework']]]
+  ['defaultgameconfig_0',['DefaultGameConfig',['../classe2XD_1_1framework_1_1DefaultGameConfig.html',1,'e2XD::framework']]]
 ];

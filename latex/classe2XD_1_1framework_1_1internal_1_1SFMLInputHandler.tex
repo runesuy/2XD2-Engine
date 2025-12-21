@@ -1,0 +1,236 @@
+\doxysection{e2\+XD\+::framework\+::internal\+::SFMLInput\+Handler Class Reference}
+\hypertarget{classe2XD_1_1framework_1_1internal_1_1SFMLInputHandler}{}\label{classe2XD_1_1framework_1_1internal_1_1SFMLInputHandler}\index{e2XD::framework::internal::SFMLInputHandler@{e2XD::framework::internal::SFMLInputHandler}}
+
+
+{\ttfamily \#include $<$SFMLInput\+Handler.\+h$>$}
+
+
+
+Inheritance diagram for e2\+XD\+::framework\+::internal\+::SFMLInput\+Handler\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=233pt]{classe2XD_1_1framework_1_1internal_1_1SFMLInputHandler__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for e2\+XD\+::framework\+::internal\+::SFMLInput\+Handler\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=233pt]{classe2XD_1_1framework_1_1internal_1_1SFMLInputHandler__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classe2XD_1_1framework_1_1internal_1_1SFMLInputHandler_a4462f1a937ffda76dac4ccc27d1d3eaf}{SFMLInput\+Handler}} ()=default
+\item 
+\mbox{\hyperlink{classe2XD_1_1framework_1_1internal_1_1SFMLInputHandler_a67d22e9a6fe108e598745b6e262cf9d9}{\texorpdfstring{$\sim$}{\string~}\+SFMLInput\+Handler}} () override
+\item 
+void \mbox{\hyperlink{classe2XD_1_1framework_1_1internal_1_1SFMLInputHandler_a8be5ce71ef5ddf873d4f438ce57eb3a6}{poll\+Events}} () override
+\item 
+bool \mbox{\hyperlink{classe2XD_1_1framework_1_1internal_1_1SFMLInputHandler_a59a0f091231a3413951b3316fd2660d2}{is\+Key\+Released}} (\mbox{\hyperlink{Key_8h_ab3c7af4820830f9166ede9e5623c4e73}{Key}} key\+Code) const override
+\item 
+bool \mbox{\hyperlink{classe2XD_1_1framework_1_1internal_1_1SFMLInputHandler_a1ef7f704a7d25ab70083b0514df78a81}{is\+Mouse\+Button\+Pressed}} (\mbox{\hyperlink{MouseButton_8h_ac1ec3647c005eacad401b06e7e18f711}{Mouse\+Button}} button\+Code) const override
+\item 
+\mbox{\hyperlink{structe2XD_1_1core_1_1Vec2}{core\+::\+Vec2}} \mbox{\hyperlink{classe2XD_1_1framework_1_1internal_1_1SFMLInputHandler_adc67be0f363d9b0ad386eac01769e8ff}{get\+Mouse\+Position}} () const override
+\item 
+bool \mbox{\hyperlink{classe2XD_1_1framework_1_1internal_1_1SFMLInputHandler_a5256580911ce5410eebc8089a185a44e}{is\+Key\+Pressed}} (\mbox{\hyperlink{Key_8h_ab3c7af4820830f9166ede9e5623c4e73}{Key}} key\+Code) const override
+\item 
+bool \mbox{\hyperlink{classe2XD_1_1framework_1_1internal_1_1SFMLInputHandler_a65de828f7e07cdf09e11d9be62ec7a7c}{is\+Mouse\+Button\+Released}} (\mbox{\hyperlink{MouseButton_8h_ac1ec3647c005eacad401b06e7e18f711}{Mouse\+Button}} button\+Code) const override
+\item 
+bool \mbox{\hyperlink{classe2XD_1_1framework_1_1internal_1_1SFMLInputHandler_a435ebeb78771e70c9db17e8975a0261f}{is\+Key\+Just\+Pressed}} (\mbox{\hyperlink{Key_8h_ab3c7af4820830f9166ede9e5623c4e73}{Key}} key\+Code) const override
+\item 
+bool \mbox{\hyperlink{classe2XD_1_1framework_1_1internal_1_1SFMLInputHandler_a3c7c5832712405d057042fcd42c54721}{is\+Key\+Just\+Released}} (\mbox{\hyperlink{Key_8h_ab3c7af4820830f9166ede9e5623c4e73}{Key}} key\+Code) const override
+\item 
+bool \mbox{\hyperlink{classe2XD_1_1framework_1_1internal_1_1SFMLInputHandler_a8e82c2304fcc382914d33a4b371fd3ad}{is\+Mouse\+Button\+Just\+Pressed}} (\mbox{\hyperlink{MouseButton_8h_ac1ec3647c005eacad401b06e7e18f711}{Mouse\+Button}} button\+Code) const override
+\item 
+bool \mbox{\hyperlink{classe2XD_1_1framework_1_1internal_1_1SFMLInputHandler_a337c6c50e437e3b31c8635363821c7b4}{is\+Mouse\+Button\+Just\+Released}} (\mbox{\hyperlink{MouseButton_8h_ac1ec3647c005eacad401b06e7e18f711}{Mouse\+Button}} button\+Code) const override
+\item 
+std\+::tuple$<$ bool, float, float $>$ \mbox{\hyperlink{classe2XD_1_1framework_1_1internal_1_1SFMLInputHandler_ac7ce1cd41bd4b9443faf3eea52010494}{is\+Window\+Resized}} () const override
+\item 
+void \mbox{\hyperlink{classe2XD_1_1framework_1_1internal_1_1SFMLInputHandler_a0bae15e1dd7ec4e2ce2fa7202db68b53}{initialize}} (sf\+::\+Render\+Window \texorpdfstring{$\ast$}{*}window) override
+\item 
+bool \mbox{\hyperlink{classe2XD_1_1framework_1_1internal_1_1SFMLInputHandler_af0e255ddc8877721b2e19b8db800ff40}{is\+Window\+Closed}} () const override
+\item 
+void \mbox{\hyperlink{classe2XD_1_1framework_1_1internal_1_1SFMLInputHandler_ae4ba4f3db75ed5280b744f4a82bdda47}{new\+Frame}} () override
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classe2XD_1_1framework_1_1IInputHandler}{e2\+XD\+::framework\+::\+IInput\+Handler}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classe2XD_1_1framework_1_1IInputHandler_a21c005eb00f642b22a4c7770f0b65bc4}{\texorpdfstring{$\sim$}{\string~}\+IInput\+Handler}} ()=default
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Singleton class to manage input from keyboard, mouse, and other devices 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classe2XD_1_1framework_1_1internal_1_1SFMLInputHandler_a4462f1a937ffda76dac4ccc27d1d3eaf}\label{classe2XD_1_1framework_1_1internal_1_1SFMLInputHandler_a4462f1a937ffda76dac4ccc27d1d3eaf} 
+\index{e2XD::framework::internal::SFMLInputHandler@{e2XD::framework::internal::SFMLInputHandler}!SFMLInputHandler@{SFMLInputHandler}}
+\index{SFMLInputHandler@{SFMLInputHandler}!e2XD::framework::internal::SFMLInputHandler@{e2XD::framework::internal::SFMLInputHandler}}
+\doxysubsubsection{\texorpdfstring{SFMLInputHandler()}{SFMLInputHandler()}}
+{\footnotesize\ttfamily e2\+XD\+::framework\+::internal\+::\+SFMLInput\+Handler\+::\+SFMLInput\+Handler (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\Hypertarget{classe2XD_1_1framework_1_1internal_1_1SFMLInputHandler_a67d22e9a6fe108e598745b6e262cf9d9}\label{classe2XD_1_1framework_1_1internal_1_1SFMLInputHandler_a67d22e9a6fe108e598745b6e262cf9d9} 
+\index{e2XD::framework::internal::SFMLInputHandler@{e2XD::framework::internal::SFMLInputHandler}!````~SFMLInputHandler@{\texorpdfstring{$\sim$}{\string~}SFMLInputHandler}}
+\index{````~SFMLInputHandler@{\texorpdfstring{$\sim$}{\string~}SFMLInputHandler}!e2XD::framework::internal::SFMLInputHandler@{e2XD::framework::internal::SFMLInputHandler}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}SFMLInputHandler()}{\string~SFMLInputHandler()}}
+{\footnotesize\ttfamily e2\+XD\+::framework\+::internal\+::\+SFMLInput\+Handler\+::\texorpdfstring{$\sim$}{\string~}\+SFMLInput\+Handler (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classe2XD_1_1framework_1_1internal_1_1SFMLInputHandler_adc67be0f363d9b0ad386eac01769e8ff}\label{classe2XD_1_1framework_1_1internal_1_1SFMLInputHandler_adc67be0f363d9b0ad386eac01769e8ff} 
+\index{e2XD::framework::internal::SFMLInputHandler@{e2XD::framework::internal::SFMLInputHandler}!getMousePosition@{getMousePosition}}
+\index{getMousePosition@{getMousePosition}!e2XD::framework::internal::SFMLInputHandler@{e2XD::framework::internal::SFMLInputHandler}}
+\doxysubsubsection{\texorpdfstring{getMousePosition()}{getMousePosition()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structe2XD_1_1core_1_1Vec2}{core\+::\+Vec2}} e2\+XD\+::framework\+::internal\+::\+SFMLInput\+Handler\+::get\+Mouse\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classe2XD_1_1framework_1_1IInputHandler_ada2c5e07dd2d7a892f45f1896b97d4cc}{e2\+XD\+::framework\+::\+IInput\+Handler}}.
+
+\Hypertarget{classe2XD_1_1framework_1_1internal_1_1SFMLInputHandler_a0bae15e1dd7ec4e2ce2fa7202db68b53}\label{classe2XD_1_1framework_1_1internal_1_1SFMLInputHandler_a0bae15e1dd7ec4e2ce2fa7202db68b53} 
+\index{e2XD::framework::internal::SFMLInputHandler@{e2XD::framework::internal::SFMLInputHandler}!initialize@{initialize}}
+\index{initialize@{initialize}!e2XD::framework::internal::SFMLInputHandler@{e2XD::framework::internal::SFMLInputHandler}}
+\doxysubsubsection{\texorpdfstring{initialize()}{initialize()}}
+{\footnotesize\ttfamily void e2\+XD\+::framework\+::internal\+::\+SFMLInput\+Handler\+::initialize (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window \texorpdfstring{$\ast$}{*}}]{window }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classe2XD_1_1framework_1_1IInputHandler_a87a96dbb0300813929461ac176a3eb23}{e2\+XD\+::framework\+::\+IInput\+Handler}}.
+
+\Hypertarget{classe2XD_1_1framework_1_1internal_1_1SFMLInputHandler_a435ebeb78771e70c9db17e8975a0261f}\label{classe2XD_1_1framework_1_1internal_1_1SFMLInputHandler_a435ebeb78771e70c9db17e8975a0261f} 
+\index{e2XD::framework::internal::SFMLInputHandler@{e2XD::framework::internal::SFMLInputHandler}!isKeyJustPressed@{isKeyJustPressed}}
+\index{isKeyJustPressed@{isKeyJustPressed}!e2XD::framework::internal::SFMLInputHandler@{e2XD::framework::internal::SFMLInputHandler}}
+\doxysubsubsection{\texorpdfstring{isKeyJustPressed()}{isKeyJustPressed()}}
+{\footnotesize\ttfamily bool e2\+XD\+::framework\+::internal\+::\+SFMLInput\+Handler\+::is\+Key\+Just\+Pressed (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{Key_8h_ab3c7af4820830f9166ede9e5623c4e73}{Key}}}]{key\+Code }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classe2XD_1_1framework_1_1IInputHandler_a4a37d9b15f473d0643f7daf8845cac49}{e2\+XD\+::framework\+::\+IInput\+Handler}}.
+
+\Hypertarget{classe2XD_1_1framework_1_1internal_1_1SFMLInputHandler_a3c7c5832712405d057042fcd42c54721}\label{classe2XD_1_1framework_1_1internal_1_1SFMLInputHandler_a3c7c5832712405d057042fcd42c54721} 
+\index{e2XD::framework::internal::SFMLInputHandler@{e2XD::framework::internal::SFMLInputHandler}!isKeyJustReleased@{isKeyJustReleased}}
+\index{isKeyJustReleased@{isKeyJustReleased}!e2XD::framework::internal::SFMLInputHandler@{e2XD::framework::internal::SFMLInputHandler}}
+\doxysubsubsection{\texorpdfstring{isKeyJustReleased()}{isKeyJustReleased()}}
+{\footnotesize\ttfamily bool e2\+XD\+::framework\+::internal\+::\+SFMLInput\+Handler\+::is\+Key\+Just\+Released (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{Key_8h_ab3c7af4820830f9166ede9e5623c4e73}{Key}}}]{key\+Code }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classe2XD_1_1framework_1_1IInputHandler_aed0fbf3bd44d9f68c6565bdb4d29eff7}{e2\+XD\+::framework\+::\+IInput\+Handler}}.
+
+\Hypertarget{classe2XD_1_1framework_1_1internal_1_1SFMLInputHandler_a5256580911ce5410eebc8089a185a44e}\label{classe2XD_1_1framework_1_1internal_1_1SFMLInputHandler_a5256580911ce5410eebc8089a185a44e} 
+\index{e2XD::framework::internal::SFMLInputHandler@{e2XD::framework::internal::SFMLInputHandler}!isKeyPressed@{isKeyPressed}}
+\index{isKeyPressed@{isKeyPressed}!e2XD::framework::internal::SFMLInputHandler@{e2XD::framework::internal::SFMLInputHandler}}
+\doxysubsubsection{\texorpdfstring{isKeyPressed()}{isKeyPressed()}}
+{\footnotesize\ttfamily bool e2\+XD\+::framework\+::internal\+::\+SFMLInput\+Handler\+::is\+Key\+Pressed (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{Key_8h_ab3c7af4820830f9166ede9e5623c4e73}{Key}}}]{key\+Code }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classe2XD_1_1framework_1_1IInputHandler_a2c5eddba87ce7235e0956cef682e876e}{e2\+XD\+::framework\+::\+IInput\+Handler}}.
+
+\Hypertarget{classe2XD_1_1framework_1_1internal_1_1SFMLInputHandler_a59a0f091231a3413951b3316fd2660d2}\label{classe2XD_1_1framework_1_1internal_1_1SFMLInputHandler_a59a0f091231a3413951b3316fd2660d2} 
+\index{e2XD::framework::internal::SFMLInputHandler@{e2XD::framework::internal::SFMLInputHandler}!isKeyReleased@{isKeyReleased}}
+\index{isKeyReleased@{isKeyReleased}!e2XD::framework::internal::SFMLInputHandler@{e2XD::framework::internal::SFMLInputHandler}}
+\doxysubsubsection{\texorpdfstring{isKeyReleased()}{isKeyReleased()}}
+{\footnotesize\ttfamily bool e2\+XD\+::framework\+::internal\+::\+SFMLInput\+Handler\+::is\+Key\+Released (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{Key_8h_ab3c7af4820830f9166ede9e5623c4e73}{Key}}}]{key\+Code }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classe2XD_1_1framework_1_1IInputHandler_a69af105e6b2f04acfcd8835bd29bbe45}{e2\+XD\+::framework\+::\+IInput\+Handler}}.
+
+\Hypertarget{classe2XD_1_1framework_1_1internal_1_1SFMLInputHandler_a8e82c2304fcc382914d33a4b371fd3ad}\label{classe2XD_1_1framework_1_1internal_1_1SFMLInputHandler_a8e82c2304fcc382914d33a4b371fd3ad} 
+\index{e2XD::framework::internal::SFMLInputHandler@{e2XD::framework::internal::SFMLInputHandler}!isMouseButtonJustPressed@{isMouseButtonJustPressed}}
+\index{isMouseButtonJustPressed@{isMouseButtonJustPressed}!e2XD::framework::internal::SFMLInputHandler@{e2XD::framework::internal::SFMLInputHandler}}
+\doxysubsubsection{\texorpdfstring{isMouseButtonJustPressed()}{isMouseButtonJustPressed()}}
+{\footnotesize\ttfamily bool e2\+XD\+::framework\+::internal\+::\+SFMLInput\+Handler\+::is\+Mouse\+Button\+Just\+Pressed (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{MouseButton_8h_ac1ec3647c005eacad401b06e7e18f711}{Mouse\+Button}}}]{button\+Code }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classe2XD_1_1framework_1_1IInputHandler_af008252e4ae044e6fc9302a853830f45}{e2\+XD\+::framework\+::\+IInput\+Handler}}.
+
+\Hypertarget{classe2XD_1_1framework_1_1internal_1_1SFMLInputHandler_a337c6c50e437e3b31c8635363821c7b4}\label{classe2XD_1_1framework_1_1internal_1_1SFMLInputHandler_a337c6c50e437e3b31c8635363821c7b4} 
+\index{e2XD::framework::internal::SFMLInputHandler@{e2XD::framework::internal::SFMLInputHandler}!isMouseButtonJustReleased@{isMouseButtonJustReleased}}
+\index{isMouseButtonJustReleased@{isMouseButtonJustReleased}!e2XD::framework::internal::SFMLInputHandler@{e2XD::framework::internal::SFMLInputHandler}}
+\doxysubsubsection{\texorpdfstring{isMouseButtonJustReleased()}{isMouseButtonJustReleased()}}
+{\footnotesize\ttfamily bool e2\+XD\+::framework\+::internal\+::\+SFMLInput\+Handler\+::is\+Mouse\+Button\+Just\+Released (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{MouseButton_8h_ac1ec3647c005eacad401b06e7e18f711}{Mouse\+Button}}}]{button\+Code }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classe2XD_1_1framework_1_1IInputHandler_aadca06621b08a4cdeca60010267e1dc6}{e2\+XD\+::framework\+::\+IInput\+Handler}}.
+
+\Hypertarget{classe2XD_1_1framework_1_1internal_1_1SFMLInputHandler_a1ef7f704a7d25ab70083b0514df78a81}\label{classe2XD_1_1framework_1_1internal_1_1SFMLInputHandler_a1ef7f704a7d25ab70083b0514df78a81} 
+\index{e2XD::framework::internal::SFMLInputHandler@{e2XD::framework::internal::SFMLInputHandler}!isMouseButtonPressed@{isMouseButtonPressed}}
+\index{isMouseButtonPressed@{isMouseButtonPressed}!e2XD::framework::internal::SFMLInputHandler@{e2XD::framework::internal::SFMLInputHandler}}
+\doxysubsubsection{\texorpdfstring{isMouseButtonPressed()}{isMouseButtonPressed()}}
+{\footnotesize\ttfamily bool e2\+XD\+::framework\+::internal\+::\+SFMLInput\+Handler\+::is\+Mouse\+Button\+Pressed (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{MouseButton_8h_ac1ec3647c005eacad401b06e7e18f711}{Mouse\+Button}}}]{button\+Code }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classe2XD_1_1framework_1_1IInputHandler_af7dd7a7d8c7d6f2a89adbe74135502e3}{e2\+XD\+::framework\+::\+IInput\+Handler}}.
+
+\Hypertarget{classe2XD_1_1framework_1_1internal_1_1SFMLInputHandler_a65de828f7e07cdf09e11d9be62ec7a7c}\label{classe2XD_1_1framework_1_1internal_1_1SFMLInputHandler_a65de828f7e07cdf09e11d9be62ec7a7c} 
+\index{e2XD::framework::internal::SFMLInputHandler@{e2XD::framework::internal::SFMLInputHandler}!isMouseButtonReleased@{isMouseButtonReleased}}
+\index{isMouseButtonReleased@{isMouseButtonReleased}!e2XD::framework::internal::SFMLInputHandler@{e2XD::framework::internal::SFMLInputHandler}}
+\doxysubsubsection{\texorpdfstring{isMouseButtonReleased()}{isMouseButtonReleased()}}
+{\footnotesize\ttfamily bool e2\+XD\+::framework\+::internal\+::\+SFMLInput\+Handler\+::is\+Mouse\+Button\+Released (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{MouseButton_8h_ac1ec3647c005eacad401b06e7e18f711}{Mouse\+Button}}}]{button\+Code }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classe2XD_1_1framework_1_1IInputHandler_abc5f7f687d778e3bc54311633f4c215d}{e2\+XD\+::framework\+::\+IInput\+Handler}}.
+
+\Hypertarget{classe2XD_1_1framework_1_1internal_1_1SFMLInputHandler_af0e255ddc8877721b2e19b8db800ff40}\label{classe2XD_1_1framework_1_1internal_1_1SFMLInputHandler_af0e255ddc8877721b2e19b8db800ff40} 
+\index{e2XD::framework::internal::SFMLInputHandler@{e2XD::framework::internal::SFMLInputHandler}!isWindowClosed@{isWindowClosed}}
+\index{isWindowClosed@{isWindowClosed}!e2XD::framework::internal::SFMLInputHandler@{e2XD::framework::internal::SFMLInputHandler}}
+\doxysubsubsection{\texorpdfstring{isWindowClosed()}{isWindowClosed()}}
+{\footnotesize\ttfamily bool e2\+XD\+::framework\+::internal\+::\+SFMLInput\+Handler\+::is\+Window\+Closed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classe2XD_1_1framework_1_1IInputHandler_aedf969b27bf30198943b6b6cfedc4d9d}{e2\+XD\+::framework\+::\+IInput\+Handler}}.
+
+\Hypertarget{classe2XD_1_1framework_1_1internal_1_1SFMLInputHandler_ac7ce1cd41bd4b9443faf3eea52010494}\label{classe2XD_1_1framework_1_1internal_1_1SFMLInputHandler_ac7ce1cd41bd4b9443faf3eea52010494} 
+\index{e2XD::framework::internal::SFMLInputHandler@{e2XD::framework::internal::SFMLInputHandler}!isWindowResized@{isWindowResized}}
+\index{isWindowResized@{isWindowResized}!e2XD::framework::internal::SFMLInputHandler@{e2XD::framework::internal::SFMLInputHandler}}
+\doxysubsubsection{\texorpdfstring{isWindowResized()}{isWindowResized()}}
+{\footnotesize\ttfamily std\+::tuple$<$ bool, float, float $>$ e2\+XD\+::framework\+::internal\+::\+SFMLInput\+Handler\+::is\+Window\+Resized (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+\begin{DoxyReturn}{Returns}
+($<$is\+Resized$>$, $<$new\+Window\+Width$>$, $<$new\+Window\+Height$>$) 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classe2XD_1_1framework_1_1IInputHandler_a96789b29e1c7f7dcb111b0e014ca32b9}{e2\+XD\+::framework\+::\+IInput\+Handler}}.
+
+\Hypertarget{classe2XD_1_1framework_1_1internal_1_1SFMLInputHandler_ae4ba4f3db75ed5280b744f4a82bdda47}\label{classe2XD_1_1framework_1_1internal_1_1SFMLInputHandler_ae4ba4f3db75ed5280b744f4a82bdda47} 
+\index{e2XD::framework::internal::SFMLInputHandler@{e2XD::framework::internal::SFMLInputHandler}!newFrame@{newFrame}}
+\index{newFrame@{newFrame}!e2XD::framework::internal::SFMLInputHandler@{e2XD::framework::internal::SFMLInputHandler}}
+\doxysubsubsection{\texorpdfstring{newFrame()}{newFrame()}}
+{\footnotesize\ttfamily void e2\+XD\+::framework\+::internal\+::\+SFMLInput\+Handler\+::new\+Frame (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classe2XD_1_1framework_1_1IInputHandler_a1f0b193446211db81dde88ca7fcea0e2}{e2\+XD\+::framework\+::\+IInput\+Handler}}.
+
+\Hypertarget{classe2XD_1_1framework_1_1internal_1_1SFMLInputHandler_a8be5ce71ef5ddf873d4f438ce57eb3a6}\label{classe2XD_1_1framework_1_1internal_1_1SFMLInputHandler_a8be5ce71ef5ddf873d4f438ce57eb3a6} 
+\index{e2XD::framework::internal::SFMLInputHandler@{e2XD::framework::internal::SFMLInputHandler}!pollEvents@{pollEvents}}
+\index{pollEvents@{pollEvents}!e2XD::framework::internal::SFMLInputHandler@{e2XD::framework::internal::SFMLInputHandler}}
+\doxysubsubsection{\texorpdfstring{pollEvents()}{pollEvents()}}
+{\footnotesize\ttfamily void e2\+XD\+::framework\+::internal\+::\+SFMLInput\+Handler\+::poll\+Events (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classe2XD_1_1framework_1_1IInputHandler_a0b933d16514069fb8a844c2c616aeb98}{e2\+XD\+::framework\+::\+IInput\+Handler}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+framework/include/2\+XD2/framework/input/\mbox{\hyperlink{SFMLInputHandler_8h}{SFMLInput\+Handler.\+h}}\item 
+framework/src/input/\mbox{\hyperlink{SFMLInputHandler_8cpp}{SFMLInput\+Handler.\+cpp}}\end{DoxyCompactItemize}

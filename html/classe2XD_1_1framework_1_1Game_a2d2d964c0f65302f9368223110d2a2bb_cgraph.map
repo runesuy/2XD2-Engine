@@ -1,0 +1,17 @@
+<map id="e2XD::framework::Game::Game" name="e2XD::framework::Game::Game">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,201,167,242"/>
+<area shape="rect" id="Node000002" href="$classe2XD_1_1framework_1_1IGameConfig.html#a06f790486a38d1fb48893ff6440d7dc4" title=" " alt="" coords="216,5,418,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="96,200,141,130,174,91,213,57,222,51,225,56,216,61,178,95,145,133,100,202"/>
+<area shape="rect" id="Node000003" href="$classe2XD_1_1framework_1_1IGameConfig.html#a00520f027ddf8038427b1dbaf6bcefb3" title=" " alt="" coords="216,71,418,111"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="108,199,155,160,213,122,228,115,230,120,216,127,158,165,111,203"/>
+<area shape="rect" id="Node000004" href="$classe2XD_1_1framework_1_1IGameConfig.html#a943fd4933e4a21c24b2f11e51e91b8fb" title=" " alt="" coords="216,136,418,177"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="159,198,227,179,228,184,161,203"/>
+<area shape="rect" id="Node000005" href="$classe2XD_1_1framework_1_1Resources_1_1Animations.html#a90905c9cb12de6dda53368721bfab700" title=" " alt="" coords="223,201,411,242"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="167,219,207,219,207,224,167,224"/>
+<area shape="rect" id="Node000006" href="$classe2XD_1_1framework_1_1Input.html#ab1082f78a642b71373b5286a85d9714f" title=" " alt="" coords="239,267,395,307"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="161,240,228,259,227,264,159,245"/>
+<area shape="rect" id="Node000007" href="$classe2XD_1_1framework_1_1Resources_1_1Textures.html#a274c572009f2e7ce9de3fc902fb44612" title=" " alt="" coords="223,332,411,373"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="111,240,158,279,216,317,230,323,228,328,213,321,155,283,108,245"/>
+<area shape="rect" id="Node000008" href="$classe2XD_1_1framework_1_1IInputHandler.html#a87a96dbb0300813929461ac176a3eb23" title=" " alt="" coords="215,397,419,438"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="100,241,145,310,178,349,216,382,225,388,222,392,213,386,174,353,141,313,96,244"/>
+</map>

@@ -1,0 +1,16 @@
+<map id="framework/include/2XD2/framework/input/Input.h" name="framework/include/2XD2/framework/input/Input.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="421,5,584,46"/>
+<area shape="rect" id="Node000002" href="$IInputHandler_8h.html" title=" " alt="" coords="402,94,512,120"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="493,48,474,82,469,79,489,45"/>
+<area shape="rect" id="Node000007" href="$Vec2_8h.html" title=" " alt="" coords="560,168,687,193"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="520,45,606,154,602,157,515,48"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,168,234,193"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="402,122,193,167,192,161,401,117"/>
+<area shape="rect" id="Node000004" href="$Key_8h.html" title=" " alt="" coords="257,168,321,193"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="429,123,333,164,330,159,427,118"/>
+<area shape="rect" id="Node000005" href="$MouseButton_8h.html" title=" " alt="" coords="344,168,463,193"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="450,121,424,157,420,153,446,118"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="487,168,536,193"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="468,118,495,154,491,157,464,122"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="486,118,582,159,580,164,484,123"/>
+</map>

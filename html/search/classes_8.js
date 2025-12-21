@@ -1,8 +1,7 @@
 var searchData=
 [
-  ['scene_0',['Scene',['../classe2XD_1_1core_1_1Scene.html',1,'e2XD::core']]],
-  ['sfmlanimationmanager_1',['SFMLAnimationManager',['../classe2XD_1_1framework_1_1SFMLAnimationManager.html',1,'e2XD::framework']]],
-  ['sfmlinputhandler_2',['SFMLInputHandler',['../classe2XD_1_1framework_1_1SFMLInputHandler.html',1,'e2XD::framework']]],
-  ['sfmltexturemanager_3',['SFMLTextureManager',['../classe2XD_1_1framework_1_1SFMLTextureManager.html',1,'e2XD::framework']]],
-  ['sprite2d_4',['Sprite2D',['../classe2XD_1_1framework_1_1Sprite2D.html',1,'e2XD::framework']]]
+  ['rectangle2d_0',['Rectangle2D',['../classe2XD_1_1framework_1_1Rectangle2D.html',1,'e2XD::framework']]],
+  ['rendercommand_1',['RenderCommand',['../structe2XD_1_1renderer_1_1RenderCommand.html',1,'e2XD::renderer']]],
+  ['renderer_2',['Renderer',['../classe2XD_1_1renderer_1_1Renderer.html',1,'e2XD::renderer']]],
+  ['resources_3',['Resources',['../classe2XD_1_1framework_1_1Resources.html',1,'e2XD::framework']]]
 ];

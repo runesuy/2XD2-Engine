@@ -1,0 +1,112 @@
+\doxysection{e2\+XD\+::renderer\+::Renderer Class Reference}
+\hypertarget{classe2XD_1_1renderer_1_1Renderer}{}\label{classe2XD_1_1renderer_1_1Renderer}\index{e2XD::renderer::Renderer@{e2XD::renderer::Renderer}}
+
+
+{\ttfamily \#include $<$Renderer.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classe2XD_1_1renderer_1_1Renderer_af441f7f3cfbac91b997bacb9d5d38378}{Renderer}} (const \mbox{\hyperlink{classe2XD_1_1renderer_1_1Renderer}{Renderer}} \&)=delete
+\item 
+\mbox{\hyperlink{classe2XD_1_1renderer_1_1Renderer_ae1d424ab454b5d233623fff9941dc405}{Renderer}} (\mbox{\hyperlink{classe2XD_1_1renderer_1_1Renderer}{Renderer}} \&\&)=delete
+\item 
+virtual \mbox{\hyperlink{classe2XD_1_1renderer_1_1Renderer_a871393ca0263003ebc39fe6005f4a9f2}{\texorpdfstring{$\sim$}{\string~}\+Renderer}} ()=default
+\item 
+\mbox{\hyperlink{classe2XD_1_1renderer_1_1Renderer}{Renderer}} \& \mbox{\hyperlink{classe2XD_1_1renderer_1_1Renderer_a551ab40b582489978b06012146a8f560}{operator=}} (const \mbox{\hyperlink{classe2XD_1_1renderer_1_1Renderer}{Renderer}} \&)=delete
+\item 
+\mbox{\hyperlink{classe2XD_1_1renderer_1_1Renderer}{Renderer}} \& \mbox{\hyperlink{classe2XD_1_1renderer_1_1Renderer_a70523f6fc9a9f57e7f010f71096bb08c}{operator=}} (\mbox{\hyperlink{classe2XD_1_1renderer_1_1Renderer}{Renderer}} \&\&)=delete
+\item 
+void \mbox{\hyperlink{classe2XD_1_1renderer_1_1Renderer_a8c923873e485ac33848fcc0de775f3e3}{initialize}} (sf\+::\+Render\+Window \texorpdfstring{$\ast$}{*}window)
+\item 
+void \mbox{\hyperlink{classe2XD_1_1renderer_1_1Renderer_a898818bf8e5aecaae33adb1cec8c9211}{clear\+Window}} () const
+\item 
+void \mbox{\hyperlink{classe2XD_1_1renderer_1_1Renderer_a57a1de1c82ac7b22c1392952996d2262}{submit}} (const \mbox{\hyperlink{structe2XD_1_1renderer_1_1RenderCommand}{Render\+Command}} \&render\+Command)
+\item 
+void \mbox{\hyperlink{classe2XD_1_1renderer_1_1Renderer_aa6fc1cef4de3a61f794d8e5b8604b833}{flush}} (const \mbox{\hyperlink{classe2XD_1_1core_1_1Camera}{core\+::\+Camera}} \texorpdfstring{$\ast$}{*}world\+Camera)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classe2XD_1_1renderer_1_1Renderer}{Renderer}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classe2XD_1_1renderer_1_1Renderer_a23dfc5a1e7cd3865c992f60a65ea6fe3}{get\+Instance}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classe2XD_1_1renderer_1_1Renderer_af441f7f3cfbac91b997bacb9d5d38378}\label{classe2XD_1_1renderer_1_1Renderer_af441f7f3cfbac91b997bacb9d5d38378} 
+\index{e2XD::renderer::Renderer@{e2XD::renderer::Renderer}!Renderer@{Renderer}}
+\index{Renderer@{Renderer}!e2XD::renderer::Renderer@{e2XD::renderer::Renderer}}
+\doxysubsubsection{\texorpdfstring{Renderer()}{Renderer()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily e2\+XD\+::renderer\+::\+Renderer\+::\+Renderer (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classe2XD_1_1renderer_1_1Renderer}{Renderer}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\Hypertarget{classe2XD_1_1renderer_1_1Renderer_ae1d424ab454b5d233623fff9941dc405}\label{classe2XD_1_1renderer_1_1Renderer_ae1d424ab454b5d233623fff9941dc405} 
+\index{e2XD::renderer::Renderer@{e2XD::renderer::Renderer}!Renderer@{Renderer}}
+\index{Renderer@{Renderer}!e2XD::renderer::Renderer@{e2XD::renderer::Renderer}}
+\doxysubsubsection{\texorpdfstring{Renderer()}{Renderer()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily e2\+XD\+::renderer\+::\+Renderer\+::\+Renderer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classe2XD_1_1renderer_1_1Renderer}{Renderer}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\Hypertarget{classe2XD_1_1renderer_1_1Renderer_a871393ca0263003ebc39fe6005f4a9f2}\label{classe2XD_1_1renderer_1_1Renderer_a871393ca0263003ebc39fe6005f4a9f2} 
+\index{e2XD::renderer::Renderer@{e2XD::renderer::Renderer}!````~Renderer@{\texorpdfstring{$\sim$}{\string~}Renderer}}
+\index{````~Renderer@{\texorpdfstring{$\sim$}{\string~}Renderer}!e2XD::renderer::Renderer@{e2XD::renderer::Renderer}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Renderer()}{\string~Renderer()}}
+{\footnotesize\ttfamily virtual e2\+XD\+::renderer\+::\+Renderer\+::\texorpdfstring{$\sim$}{\string~}\+Renderer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classe2XD_1_1renderer_1_1Renderer_a898818bf8e5aecaae33adb1cec8c9211}\label{classe2XD_1_1renderer_1_1Renderer_a898818bf8e5aecaae33adb1cec8c9211} 
+\index{e2XD::renderer::Renderer@{e2XD::renderer::Renderer}!clearWindow@{clearWindow}}
+\index{clearWindow@{clearWindow}!e2XD::renderer::Renderer@{e2XD::renderer::Renderer}}
+\doxysubsubsection{\texorpdfstring{clearWindow()}{clearWindow()}}
+{\footnotesize\ttfamily void e2\+XD\+::renderer\+::\+Renderer\+::clear\+Window (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\Hypertarget{classe2XD_1_1renderer_1_1Renderer_aa6fc1cef4de3a61f794d8e5b8604b833}\label{classe2XD_1_1renderer_1_1Renderer_aa6fc1cef4de3a61f794d8e5b8604b833} 
+\index{e2XD::renderer::Renderer@{e2XD::renderer::Renderer}!flush@{flush}}
+\index{flush@{flush}!e2XD::renderer::Renderer@{e2XD::renderer::Renderer}}
+\doxysubsubsection{\texorpdfstring{flush()}{flush()}}
+{\footnotesize\ttfamily void e2\+XD\+::renderer\+::\+Renderer\+::flush (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classe2XD_1_1core_1_1Camera}{core\+::\+Camera}} \texorpdfstring{$\ast$}{*}}]{world\+Camera }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classe2XD_1_1renderer_1_1Renderer_aa6fc1cef4de3a61f794d8e5b8604b833_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classe2XD_1_1renderer_1_1Renderer_a23dfc5a1e7cd3865c992f60a65ea6fe3}\label{classe2XD_1_1renderer_1_1Renderer_a23dfc5a1e7cd3865c992f60a65ea6fe3} 
+\index{e2XD::renderer::Renderer@{e2XD::renderer::Renderer}!getInstance@{getInstance}}
+\index{getInstance@{getInstance}!e2XD::renderer::Renderer@{e2XD::renderer::Renderer}}
+\doxysubsubsection{\texorpdfstring{getInstance()}{getInstance()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classe2XD_1_1renderer_1_1Renderer}{Renderer}} \texorpdfstring{$\ast$}{*} e2\+XD\+::renderer\+::\+Renderer\+::get\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classe2XD_1_1renderer_1_1Renderer_a8c923873e485ac33848fcc0de775f3e3}\label{classe2XD_1_1renderer_1_1Renderer_a8c923873e485ac33848fcc0de775f3e3} 
+\index{e2XD::renderer::Renderer@{e2XD::renderer::Renderer}!initialize@{initialize}}
+\index{initialize@{initialize}!e2XD::renderer::Renderer@{e2XD::renderer::Renderer}}
+\doxysubsubsection{\texorpdfstring{initialize()}{initialize()}}
+{\footnotesize\ttfamily void e2\+XD\+::renderer\+::\+Renderer\+::initialize (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window \texorpdfstring{$\ast$}{*}}]{window }\end{DoxyParamCaption})}
+
+\Hypertarget{classe2XD_1_1renderer_1_1Renderer_a551ab40b582489978b06012146a8f560}\label{classe2XD_1_1renderer_1_1Renderer_a551ab40b582489978b06012146a8f560} 
+\index{e2XD::renderer::Renderer@{e2XD::renderer::Renderer}!operator=@{operator=}}
+\index{operator=@{operator=}!e2XD::renderer::Renderer@{e2XD::renderer::Renderer}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classe2XD_1_1renderer_1_1Renderer}{Renderer}} \& e2\+XD\+::renderer\+::\+Renderer\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classe2XD_1_1renderer_1_1Renderer}{Renderer}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\Hypertarget{classe2XD_1_1renderer_1_1Renderer_a70523f6fc9a9f57e7f010f71096bb08c}\label{classe2XD_1_1renderer_1_1Renderer_a70523f6fc9a9f57e7f010f71096bb08c} 
+\index{e2XD::renderer::Renderer@{e2XD::renderer::Renderer}!operator=@{operator=}}
+\index{operator=@{operator=}!e2XD::renderer::Renderer@{e2XD::renderer::Renderer}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classe2XD_1_1renderer_1_1Renderer}{Renderer}} \& e2\+XD\+::renderer\+::\+Renderer\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classe2XD_1_1renderer_1_1Renderer}{Renderer}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\Hypertarget{classe2XD_1_1renderer_1_1Renderer_a57a1de1c82ac7b22c1392952996d2262}\label{classe2XD_1_1renderer_1_1Renderer_a57a1de1c82ac7b22c1392952996d2262} 
+\index{e2XD::renderer::Renderer@{e2XD::renderer::Renderer}!submit@{submit}}
+\index{submit@{submit}!e2XD::renderer::Renderer@{e2XD::renderer::Renderer}}
+\doxysubsubsection{\texorpdfstring{submit()}{submit()}}
+{\footnotesize\ttfamily void e2\+XD\+::renderer\+::\+Renderer\+::submit (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structe2XD_1_1renderer_1_1RenderCommand}{Render\+Command}} \&}]{render\+Command }\end{DoxyParamCaption})}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+renderer/include/2\+XD2/renderer/\mbox{\hyperlink{Renderer_8h}{Renderer.\+h}}\item 
+renderer/src/\mbox{\hyperlink{Renderer_8cpp}{Renderer.\+cpp}}\end{DoxyCompactItemize}

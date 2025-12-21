@@ -7,5 +7,5 @@ var searchData=
   ['more_4',['Learning More',['../md_GettingStarted.html#autotoc_md13',1,'']]],
   ['mousebutton_5',['MouseButton',['../MouseButton_8h.html#ac1ec3647c005eacad401b06e7e18f711',1,'MouseButton.h']]],
   ['mousebutton_2eh_6',['MouseButton.h',['../MouseButton_8h.html',1,'']]],
-  ['mousebuttonmap_7',['mouseButtonMap',['../namespacee2XD_1_1framework_1_1input.html#af67f20c7c234d538824430868e4bd021',1,'e2XD::framework::input']]]
+  ['mousebuttonmap_7',['mouseButtonMap',['../namespacee2XD_1_1framework_1_1internal_1_1input.html#aef329e7fc9de67b73729bc6de49ca159',1,'e2XD::framework::internal::input']]]
 ];

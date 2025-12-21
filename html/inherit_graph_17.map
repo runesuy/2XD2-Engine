@@ -1,0 +1,9 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="Node000000" title=" " alt="" coords="5,46,106,72"/>
+<area shape="rect" id="Node000001" href="$classe2XD_1_1framework_1_1Exception.html" title=" " alt="" coords="154,46,336,72"/>
+<area shape="poly" id="edge11_Node000000_Node000001" title=" " alt="" coords="121,56,153,56,153,62,121,62"/>
+<area shape="rect" id="Node000002" href="$classe2XD_1_1framework_1_1FileLoadingFailedException.html" title=" " alt="" coords="388,5,581,46"/>
+<area shape="poly" id="edge12_Node000001_Node000002" title=" " alt="" coords="351,42,387,36,388,42,352,47"/>
+<area shape="rect" id="Node000003" href="$classe2XD_1_1framework_1_1NotInitializedException.html" title=" " alt="" coords="384,71,585,111"/>
+<area shape="poly" id="edge13_Node000001_Node000003" title=" " alt="" coords="352,71,384,75,383,80,351,76"/>
+</map>

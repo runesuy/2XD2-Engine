@@ -1,0 +1,13 @@
+<map id="framework/include/2XD2/framework/resource_manager/IAnimationManager.h" name="framework/include/2XD2/framework/resource_manager/IAnimationManager.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="23,5,221,61"/>
+<area shape="rect" id="Node000002" href="$AnimationMap_8h.html" title=" " alt="" coords="32,109,212,150"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="125,62,125,94,119,94,119,62"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,198,116,223"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="109,152,81,187,77,183,105,148"/>
+<area shape="rect" id="Node000004" href="$Animation_8h.html" title=" " alt="" coords="140,198,229,223"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="139,148,168,184,163,187,135,152"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="83,271,140,297"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="174,225,136,262,132,259,171,222"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="164,271,349,297"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="198,222,235,258,232,262,195,225"/>
+</map>

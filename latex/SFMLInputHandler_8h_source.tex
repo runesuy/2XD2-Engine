@@ -1,5 +1,5 @@
 \doxysection{SFMLInput\+Handler.\+h}
-\hypertarget{SFMLInputHandler_8h_source}{}\label{SFMLInputHandler_8h_source}\index{framework/include/2XD2/framework/SFMLInputHandler.h@{framework/include/2XD2/framework/SFMLInputHandler.h}}
+\hypertarget{SFMLInputHandler_8h_source}{}\label{SFMLInputHandler_8h_source}\index{framework/include/2XD2/framework/input/SFMLInputHandler.h@{framework/include/2XD2/framework/input/SFMLInputHandler.h}}
 \mbox{\hyperlink{SFMLInputHandler_8h}{Go to the documentation of this file.}}
 \begin{DoxyCode}{0}
 \DoxyCodeLine{00001\ \textcolor{comment}{//}}
@@ -15,67 +15,59 @@
 \DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{IInputHandler_8h}{IInputHandler.h}}"{}}}
 \DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{Vec2_8h}{2XD2/core/Vec2.h}}"{}}}
 \DoxyCodeLine{00013\ }
-\DoxyCodeLine{00014\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespacee2XD_1_1framework}{e2XD::framework}}}
+\DoxyCodeLine{00014\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespacee2XD_1_1framework_1_1internal}{e2XD::framework::internal}}}
 \DoxyCodeLine{00015\ \{}
-\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{classe2XD_1_1framework_1_1SFMLInputHandler}{SFMLInputHandler}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classe2XD_1_1framework_1_1IInputHandler}{IInputHandler}}}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{classe2XD_1_1framework_1_1internal_1_1SFMLInputHandler}{SFMLInputHandler}}\ final\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classe2XD_1_1framework_1_1IInputHandler}{IInputHandler}}}
 \DoxyCodeLine{00020\ \ \ \ \ \{}
-\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keyword}{static}\ \mbox{\hyperlink{classe2XD_1_1framework_1_1SFMLInputHandler}{SFMLInputHandler}}*\ \_instance\ =\ \textcolor{keyword}{nullptr};}
-\DoxyCodeLine{00022\ }
-\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ sf::RenderWindow*\ window\ =\ \textcolor{keyword}{nullptr};}
-\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \textcolor{keyword}{using\ }keyboardMapType\ =\ std::unordered\_map<Key,\ bool>;}
-\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \textcolor{keyword}{using\ }mouseButtonMapType\ =\ std::unordered\_map<MouseButton,\ bool>;}
-\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ keyboardMapType\ last\_frame\_keyboardState;}
-\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ keyboardMapType\ this\_frame\_keyboardState;}
-\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ mouseButtonMapType\ this\_frame\_mouseButtonState;}
-\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ mouseButtonMapType\ last\_frame\_mouseButtonState;}
-\DoxyCodeLine{00030\ }
-\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ std::tuple<bool,\ unsigned\ int,\ unsigned\ int>\ windowResized\ =\ \{\textcolor{keyword}{false},\ 0,\ 0\};}
-\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ windowClosed\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ sf::RenderWindow*\ window\ =\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \textcolor{keyword}{using\ }keyboardMapType\ =\ std::unordered\_map<Key,\ bool>;}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \textcolor{keyword}{using\ }mouseButtonMapType\ =\ std::unordered\_map<MouseButton,\ bool>;}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ keyboardMapType\ last\_frame\_keyboardState;}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ keyboardMapType\ this\_frame\_keyboardState;}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ mouseButtonMapType\ this\_frame\_mouseButtonState;}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ mouseButtonMapType\ last\_frame\_mouseButtonState;}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ std::tuple<bool,\ unsigned\ int,\ unsigned\ int>\ windowResized\ =\ \{\textcolor{keyword}{false},\ 0,\ 0\};}
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ windowClosed\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structe2XD_1_1core_1_1Vec2}{core::Vec2}}\ mousePosition;}
 \DoxyCodeLine{00033\ }
-\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structe2XD_1_1core_1_1Vec2}{core::Vec2}}\ mousePosition;}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ handleEvent(\textcolor{keyword}{const}\ sf::Event\&\ event);}
 \DoxyCodeLine{00035\ }
-\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classe2XD_1_1framework_1_1SFMLInputHandler}{SFMLInputHandler}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ handleKeyPress(sf::Keyboard::Key\ sfmlKeyCode);}
 \DoxyCodeLine{00037\ }
-\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ handleEvent(\textcolor{keyword}{const}\ sf::Event\&\ event);}
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ handleKeyRelease(sf::Keyboard::Key\ sfmlKeyCode);}
 \DoxyCodeLine{00039\ }
-\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ handleKeyPress(sf::Keyboard::Key\ sfmlKeyCode);}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ handleMouseButtonPress(sf::Mouse::Button\ sfmlButtonCode);}
 \DoxyCodeLine{00041\ }
-\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ handleKeyRelease(sf::Keyboard::Key\ sfmlKeyCode);}
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ handleMouseButtonRelease(sf::Mouse::Button\ sfmlButtonCode);}
 \DoxyCodeLine{00043\ }
-\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ handleMouseButtonPress(sf::Mouse::Button\ sfmlButtonCode);}
-\DoxyCodeLine{00045\ }
-\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ handleMouseButtonRelease(sf::Mouse::Button\ sfmlButtonCode);}
-\DoxyCodeLine{00047\ }
-\DoxyCodeLine{00048\ \ \ \ \ \textcolor{keyword}{public}:}
-\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classe2XD_1_1framework_1_1SFMLInputHandler_a3217f4c159f95c6a834295d476951907}{SFMLInputHandler}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classe2XD_1_1framework_1_1SFMLInputHandler}{SFMLInputHandler}}\&)\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classe2XD_1_1framework_1_1internal_1_1SFMLInputHandler_a4462f1a937ffda76dac4ccc27d1d3eaf}{SFMLInputHandler}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classe2XD_1_1framework_1_1internal_1_1SFMLInputHandler_a67d22e9a6fe108e598745b6e262cf9d9}{\string~SFMLInputHandler}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classe2XD_1_1framework_1_1internal_1_1SFMLInputHandler_a8be5ce71ef5ddf873d4f438ce57eb3a6}{pollEvents}}()\ \textcolor{keyword}{override};}
 \DoxyCodeLine{00050\ }
-\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classe2XD_1_1framework_1_1SFMLInputHandler_aca1b7272fbf5f59b66755919d493b6a5}{\string~SFMLInputHandler}}()\ \textcolor{keyword}{override};}
-\DoxyCodeLine{00052\ }
-\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classe2XD_1_1framework_1_1SFMLInputHandler}{SFMLInputHandler}}\&\ \mbox{\hyperlink{classe2XD_1_1framework_1_1SFMLInputHandler_a1891a92ecd16f5ae30b29bfc0b70b3bf}{operator=}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classe2XD_1_1framework_1_1SFMLInputHandler}{SFMLInputHandler}}\&)\ =\ \textcolor{keyword}{delete};}
-\DoxyCodeLine{00054\ }
-\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{classe2XD_1_1framework_1_1SFMLInputHandler}{SFMLInputHandler}}*\ \mbox{\hyperlink{classe2XD_1_1framework_1_1SFMLInputHandler_a6c7a189ad67a80f1fe40e2f375de46a2}{getInstance}}();}
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ [[nodiscard]]\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classe2XD_1_1framework_1_1internal_1_1SFMLInputHandler_a59a0f091231a3413951b3316fd2660d2}{isKeyReleased}}(\mbox{\hyperlink{Key_8h_ab3c7af4820830f9166ede9e5623c4e73}{Key}}\ keyCode)\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ [[nodiscard]]\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classe2XD_1_1framework_1_1internal_1_1SFMLInputHandler_a1ef7f704a7d25ab70083b0514df78a81}{isMouseButtonPressed}}(\mbox{\hyperlink{MouseButton_8h_ac1ec3647c005eacad401b06e7e18f711}{MouseButton}}\ buttonCode)\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ [[nodiscard]]\ \mbox{\hyperlink{structe2XD_1_1core_1_1Vec2}{core::Vec2}}\ \mbox{\hyperlink{classe2XD_1_1framework_1_1internal_1_1SFMLInputHandler_adc67be0f363d9b0ad386eac01769e8ff}{getMousePosition}}()\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ [[nodiscard]]\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classe2XD_1_1framework_1_1internal_1_1SFMLInputHandler_a5256580911ce5410eebc8089a185a44e}{isKeyPressed}}(\mbox{\hyperlink{Key_8h_ab3c7af4820830f9166ede9e5623c4e73}{Key}}\ keyCode)\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ [[nodiscard]]\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classe2XD_1_1framework_1_1internal_1_1SFMLInputHandler_a65de828f7e07cdf09e11d9be62ec7a7c}{isMouseButtonReleased}}(\mbox{\hyperlink{MouseButton_8h_ac1ec3647c005eacad401b06e7e18f711}{MouseButton}}\ buttonCode)\ \textcolor{keyword}{const\ override};}
 \DoxyCodeLine{00056\ }
-\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classe2XD_1_1framework_1_1SFMLInputHandler_a039051905b9440897d8f82c8a47ed272}{pollEvents}}()\ \textcolor{keyword}{override};}
-\DoxyCodeLine{00058\ }
-\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ [[nodiscard]]\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classe2XD_1_1framework_1_1SFMLInputHandler_abefcc6867e09bcd860e9e484bd73cfcb}{isKeyReleased}}(\mbox{\hyperlink{Key_8h_ab3c7af4820830f9166ede9e5623c4e73}{Key}}\ keyCode)\ \textcolor{keyword}{const\ override};}
-\DoxyCodeLine{00060\ \ \ \ \ \ \ \ \ [[nodiscard]]\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classe2XD_1_1framework_1_1SFMLInputHandler_ae8cd6de858a05a9039daaddd3c5f4bc3}{isMouseButtonPressed}}(\mbox{\hyperlink{MouseButton_8h_ac1ec3647c005eacad401b06e7e18f711}{MouseButton}}\ buttonCode)\ \textcolor{keyword}{const\ override};}
-\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ [[nodiscard]]\ \mbox{\hyperlink{structe2XD_1_1core_1_1Vec2}{core::Vec2}}\ \mbox{\hyperlink{classe2XD_1_1framework_1_1SFMLInputHandler_a44efcfd58f23dbc156c594e9c35eb76a}{getMousePosition}}()\ \textcolor{keyword}{const\ override};}
-\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ [[nodiscard]]\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classe2XD_1_1framework_1_1SFMLInputHandler_a5e7434b09a6258d9b1d5a4580d5295d4}{isKeyPressed}}(\mbox{\hyperlink{Key_8h_ab3c7af4820830f9166ede9e5623c4e73}{Key}}\ keyCode)\ \textcolor{keyword}{const\ override};}
-\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ [[nodiscard]]\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classe2XD_1_1framework_1_1SFMLInputHandler_a2a7f74ce332ecb47fa2cd4d3061d5794}{isMouseButtonReleased}}(\mbox{\hyperlink{MouseButton_8h_ac1ec3647c005eacad401b06e7e18f711}{MouseButton}}\ buttonCode)\ \textcolor{keyword}{const\ override};}
-\DoxyCodeLine{00064\ }
-\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ [[nodiscard]]\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classe2XD_1_1framework_1_1SFMLInputHandler_a248ab28d0cb1f8ad3a6842f914baeafe}{isKeyJustPressed}}(\mbox{\hyperlink{Key_8h_ab3c7af4820830f9166ede9e5623c4e73}{Key}}\ keyCode)\ \textcolor{keyword}{const\ override};}
-\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ [[nodiscard]]\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classe2XD_1_1framework_1_1SFMLInputHandler_a48ec9329689613efa1bd61a2278fd7f6}{isKeyJustReleased}}(\mbox{\hyperlink{Key_8h_ab3c7af4820830f9166ede9e5623c4e73}{Key}}\ keyCode)\ \textcolor{keyword}{const\ override};}
-\DoxyCodeLine{00067\ \ \ \ \ \ \ \ \ [[nodiscard]]\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classe2XD_1_1framework_1_1SFMLInputHandler_a859f61410a64e0bd6f2e4756588c1329}{isMouseButtonJustPressed}}(\mbox{\hyperlink{MouseButton_8h_ac1ec3647c005eacad401b06e7e18f711}{MouseButton}}\ buttonCode)\ \textcolor{keyword}{const\ override};}
-\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ [[nodiscard]]\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classe2XD_1_1framework_1_1SFMLInputHandler_a1018db0fdca2b4c297f03dbbfdd53460}{isMouseButtonJustReleased}}(\mbox{\hyperlink{MouseButton_8h_ac1ec3647c005eacad401b06e7e18f711}{MouseButton}}\ buttonCode)\ \textcolor{keyword}{const\ override};}
-\DoxyCodeLine{00069\ }
-\DoxyCodeLine{00074\ \ \ \ \ \ \ \ \ std::tuple<bool,\ float,\ float>\ \mbox{\hyperlink{classe2XD_1_1framework_1_1SFMLInputHandler_a2fc31c624d6778613adcf293178b8f23}{isWindowResized}}()\ \textcolor{keyword}{const\ override};}
-\DoxyCodeLine{00075\ }
-\DoxyCodeLine{00076\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classe2XD_1_1framework_1_1SFMLInputHandler_af07ddd6378461b00641eecd78a1a56a2}{initialize}}(sf::RenderWindow*\ window);}
-\DoxyCodeLine{00077\ \ \ \ \ \ \ \ \ [[nodiscard]]\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classe2XD_1_1framework_1_1SFMLInputHandler_af02714fe428da14e3ee7246b2e301eae}{isWindowClosed}}()\ \textcolor{keyword}{const\ override};}
-\DoxyCodeLine{00078\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classe2XD_1_1framework_1_1SFMLInputHandler_a541ba00e08661fe5d5d7d5d5eefdca1e}{newFrame}}()\ \textcolor{keyword}{override};}
-\DoxyCodeLine{00079\ \ \ \ \ \};}
-\DoxyCodeLine{00080\ \}\ \textcolor{comment}{//\ core}}
-\DoxyCodeLine{00081\ }
-\DoxyCodeLine{00082\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//INC\_2XD2\_ENGINE\_INPUTMANAGER\_H}}
+\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ [[nodiscard]]\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classe2XD_1_1framework_1_1internal_1_1SFMLInputHandler_a435ebeb78771e70c9db17e8975a0261f}{isKeyJustPressed}}(\mbox{\hyperlink{Key_8h_ab3c7af4820830f9166ede9e5623c4e73}{Key}}\ keyCode)\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ [[nodiscard]]\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classe2XD_1_1framework_1_1internal_1_1SFMLInputHandler_a3c7c5832712405d057042fcd42c54721}{isKeyJustReleased}}(\mbox{\hyperlink{Key_8h_ab3c7af4820830f9166ede9e5623c4e73}{Key}}\ keyCode)\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ [[nodiscard]]\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classe2XD_1_1framework_1_1internal_1_1SFMLInputHandler_a8e82c2304fcc382914d33a4b371fd3ad}{isMouseButtonJustPressed}}(\mbox{\hyperlink{MouseButton_8h_ac1ec3647c005eacad401b06e7e18f711}{MouseButton}}\ buttonCode)\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00060\ \ \ \ \ \ \ \ \ [[nodiscard]]\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classe2XD_1_1framework_1_1internal_1_1SFMLInputHandler_a337c6c50e437e3b31c8635363821c7b4}{isMouseButtonJustReleased}}(\mbox{\hyperlink{MouseButton_8h_ac1ec3647c005eacad401b06e7e18f711}{MouseButton}}\ buttonCode)\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00061\ }
+\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ std::tuple<bool,\ float,\ float>\ \mbox{\hyperlink{classe2XD_1_1framework_1_1internal_1_1SFMLInputHandler_ac7ce1cd41bd4b9443faf3eea52010494}{isWindowResized}}()\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00067\ }
+\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classe2XD_1_1framework_1_1internal_1_1SFMLInputHandler_a0bae15e1dd7ec4e2ce2fa7202db68b53}{initialize}}(sf::RenderWindow*\ window)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00069\ \ \ \ \ \ \ \ \ [[nodiscard]]\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classe2XD_1_1framework_1_1internal_1_1SFMLInputHandler_af0e255ddc8877721b2e19b8db800ff40}{isWindowClosed}}()\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00070\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classe2XD_1_1framework_1_1internal_1_1SFMLInputHandler_ae4ba4f3db75ed5280b744f4a82bdda47}{newFrame}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00071\ \ \ \ \ \};}
+\DoxyCodeLine{00072\ \}\ \textcolor{comment}{//\ core}}
+\DoxyCodeLine{00073\ }
+\DoxyCodeLine{00074\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//INC\_2XD2\_ENGINE\_INPUTMANAGER\_H}}
 
 \end{DoxyCode}

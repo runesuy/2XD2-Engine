@@ -4,6 +4,8 @@
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="229,43,262,38,263,44,229,48"/>
 <area shape="rect" id="Node000003" href="$classe2XD_1_1framework_1_1SFMLAnimationManager.html#ac8e63489b899b664561b6f703e5c2e5d" title=" " alt="" coords="277,71,500,111"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="229,70,262,73,261,79,229,75"/>
-<area shape="rect" id="Node000004" href="$classe2XD_1_1framework_1_1SFMLTextureManager.html#afe7edf6a9e4102fbd8a4d694619aff6f" title=" " alt="" coords="548,71,753,111"/>
+<area shape="rect" id="Node000004" href="$classe2XD_1_1framework_1_1Resources_1_1Textures.html#a4e660e57734ee116d83ae9b3e8295cb2" title=" " alt="" coords="548,71,736,111"/>
 <area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="501,88,532,88,532,94,501,94"/>
+<area shape="rect" id="Node000005" href="$classe2XD_1_1framework_1_1ITextureManager.html#ae6e31016aab5ec8fc923254b09b8b841" title=" " alt="" coords="784,71,958,111"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="737,88,769,88,769,94,737,94"/>
 </map>

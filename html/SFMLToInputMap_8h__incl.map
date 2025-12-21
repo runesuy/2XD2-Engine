@@ -1,9 +1,9 @@
-<map id="framework/include/2XD2/framework/SFMLToInputMap.h" name="framework/include/2XD2/framework/SFMLToInputMap.h">
-<area shape="rect" id="Node000001" title=" " alt="" coords="122,5,327,46"/>
+<map id="framework/include/2XD2/framework/input/SFMLToInputMap.h" name="framework/include/2XD2/framework/input/SFMLToInputMap.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="111,5,348,46"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="5,94,174,120"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="192,49,125,88,122,83,189,44"/>
-<area shape="rect" id="Node000003" href="$Key_8h.html" title=" " alt="" coords="198,94,251,120"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="227,46,227,78,222,78,222,46"/>
-<area shape="rect" id="Node000004" title=" " alt="" coords="274,94,385,120"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="252,44,303,82,299,86,249,49"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="196,49,125,88,123,84,193,44"/>
+<area shape="rect" id="Node000003" href="$Key_8h.html" title=" " alt="" coords="198,94,261,120"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="232,46,232,78,227,78,227,46"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="285,94,395,120"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="258,44,312,82,309,87,255,49"/>
 </map>

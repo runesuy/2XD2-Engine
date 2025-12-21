@@ -20,8 +20,9 @@ var searchData=
   ['settexture_17',['settexture',['../classe2XD_1_1framework_1_1Sprite2D.html#abe1756d34a1b84330ca7a48e15f16dc4',1,'e2XD::framework::Sprite2D::setTexture(const std::string &amp;textureName)'],['../classe2XD_1_1framework_1_1Sprite2D.html#ab900109f69dfb07071334f0ae327ec0c',1,'e2XD::framework::Sprite2D::setTexture(const sf::Texture &amp;texture)']]],
   ['setwindowtitle_18',['setWindowTitle',['../classe2XD_1_1framework_1_1Game.html#a64dc1af70c840c70af950fcd0d5384af',1,'e2XD::framework::Game']]],
   ['setzoom_19',['setZoom',['../classe2XD_1_1core_1_1Camera.html#a94d991330354ff24897e816826f19139',1,'e2XD::core::Camera']]],
-  ['sfmlanimationmanager_20',['sfmlanimationmanager',['../classe2XD_1_1framework_1_1SFMLAnimationManager.html#a4ff2bf5ffc3c069444dc08b33c78c152',1,'e2XD::framework::SFMLAnimationManager::SFMLAnimationManager(const SFMLAnimationManager &amp;)=delete'],['../classe2XD_1_1framework_1_1SFMLAnimationManager.html#a17d178c7ec594ea5af7ef8d25849e0fb',1,'e2XD::framework::SFMLAnimationManager::SFMLAnimationManager(SFMLAnimationManager &amp;&amp;)=delete']]],
-  ['sfmlinputhandler_21',['SFMLInputHandler',['../classe2XD_1_1framework_1_1SFMLInputHandler.html#a3217f4c159f95c6a834295d476951907',1,'e2XD::framework::SFMLInputHandler']]],
-  ['sfmltexturemanager_22',['sfmltexturemanager',['../classe2XD_1_1framework_1_1SFMLTextureManager.html#a301f7ff8d9e52037a45e47e202ef0c7f',1,'e2XD::framework::SFMLTextureManager::SFMLTextureManager(const SFMLTextureManager &amp;)=delete'],['../classe2XD_1_1framework_1_1SFMLTextureManager.html#aae58ce2843833fff748ab40d5ed3613c',1,'e2XD::framework::SFMLTextureManager::SFMLTextureManager(SFMLTextureManager &amp;&amp;)=delete']]],
-  ['sprite2d_23',['Sprite2D',['../classe2XD_1_1framework_1_1Sprite2D.html#a8d8a8d31bbfe3b273dccbb6dac4f01f6',1,'e2XD::framework::Sprite2D']]]
+  ['sfmlanimationmanager_20',['SFMLAnimationManager',['../classe2XD_1_1framework_1_1SFMLAnimationManager.html#a31358d48a03e64919318020148331c0f',1,'e2XD::framework::SFMLAnimationManager']]],
+  ['sfmlinputhandler_21',['SFMLInputHandler',['../classe2XD_1_1framework_1_1internal_1_1SFMLInputHandler.html#a4462f1a937ffda76dac4ccc27d1d3eaf',1,'e2XD::framework::internal::SFMLInputHandler']]],
+  ['sfmltexturemanager_22',['SFMLTextureManager',['../classe2XD_1_1framework_1_1SFMLTextureManager.html#a55449a9a3d586d7cf3a3398f20d25004',1,'e2XD::framework::SFMLTextureManager']]],
+  ['sprite2d_23',['Sprite2D',['../classe2XD_1_1framework_1_1Sprite2D.html#a8d8a8d31bbfe3b273dccbb6dac4f01f6',1,'e2XD::framework::Sprite2D']]],
+  ['submit_24',['submit',['../classe2XD_1_1renderer_1_1Renderer.html#a57a1de1c82ac7b22c1392952996d2262',1,'e2XD::renderer::Renderer']]]
 ];

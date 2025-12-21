@@ -4,31 +4,45 @@
 
 {\ttfamily \#include $<$SFMLTexture\+Manager.\+h$>$}
 
+
+
+Inheritance diagram for e2\+XD\+::framework\+::SFMLTexture\+Manager\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=234pt]{classe2XD_1_1framework_1_1SFMLTextureManager__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for e2\+XD\+::framework\+::SFMLTexture\+Manager\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=234pt]{classe2XD_1_1framework_1_1SFMLTextureManager__coll__graph}
+\end{center}
+\end{figure}
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{classe2XD_1_1framework_1_1SFMLTextureManager_a301f7ff8d9e52037a45e47e202ef0c7f}{SFMLTexture\+Manager}} (const \mbox{\hyperlink{classe2XD_1_1framework_1_1SFMLTextureManager}{SFMLTexture\+Manager}} \&)=delete
+\mbox{\hyperlink{classe2XD_1_1framework_1_1SFMLTextureManager_a55449a9a3d586d7cf3a3398f20d25004}{SFMLTexture\+Manager}} ()=default
 \item 
-\mbox{\hyperlink{classe2XD_1_1framework_1_1SFMLTextureManager}{SFMLTexture\+Manager}} \& \mbox{\hyperlink{classe2XD_1_1framework_1_1SFMLTextureManager_a232385ce7f998f7b70c21d5761f2d8c7}{operator=}} (const \mbox{\hyperlink{classe2XD_1_1framework_1_1SFMLTextureManager}{SFMLTexture\+Manager}} \&)=delete
+\mbox{\hyperlink{classe2XD_1_1framework_1_1SFMLTextureManager_a26ada32791db1d2f6bb97957a3e4bc7c}{\texorpdfstring{$\sim$}{\string~}\+SFMLTexture\+Manager}} () override=default
 \item 
-\mbox{\hyperlink{classe2XD_1_1framework_1_1SFMLTextureManager}{SFMLTexture\+Manager}} \& \mbox{\hyperlink{classe2XD_1_1framework_1_1SFMLTextureManager_afeca80913e97844d27e4db9e05230985}{operator=}} (\mbox{\hyperlink{classe2XD_1_1framework_1_1SFMLTextureManager}{SFMLTexture\+Manager}} \&\&)=delete
+const sf\+::\+Texture \& \mbox{\hyperlink{classe2XD_1_1framework_1_1SFMLTextureManager_a9d603b2f2f0dd2ffcc2eebf2724a1566}{get\+Texture}} (const std\+::string \&name) const override
 \item 
-\mbox{\hyperlink{classe2XD_1_1framework_1_1SFMLTextureManager_aae58ce2843833fff748ab40d5ed3613c}{SFMLTexture\+Manager}} (\mbox{\hyperlink{classe2XD_1_1framework_1_1SFMLTextureManager}{SFMLTexture\+Manager}} \&\&)=delete
+void \mbox{\hyperlink{classe2XD_1_1framework_1_1SFMLTextureManager_ad3b7fd621aec22761b144b258738ba98}{load\+Json\+Texture\+Config}} (const std\+::string \&json\+File\+Path) override
 \item 
-\mbox{\hyperlink{classe2XD_1_1framework_1_1SFMLTextureManager_a9ab53715e08362f0e6d46e7adcc74fb8}{\texorpdfstring{$\sim$}{\string~}\+SFMLTexture\+Manager}} ()=default
+bool \mbox{\hyperlink{classe2XD_1_1framework_1_1SFMLTextureManager_a3c041f71cabfb06311b22502506ebdb0}{is\+Json\+Texture\+Loaded}} (const std\+::string \&json\+File\+Path) const override
 \item 
-const sf\+::\+Texture \& \mbox{\hyperlink{classe2XD_1_1framework_1_1SFMLTextureManager_acce19e423ebed4df2bba6ee0dc63e2db}{get\+Texture}} (const std\+::string \&name) const
-\item 
-void \mbox{\hyperlink{classe2XD_1_1framework_1_1SFMLTextureManager_a2c7a45a86fd3267accbcd67d292bbfe7}{load\+Json\+Texture\+Config}} (const std\+::string \&json\+File\+Path)
-\item 
-bool \mbox{\hyperlink{classe2XD_1_1framework_1_1SFMLTextureManager_ab3f4b7a43ff786d4662f550487e09e98}{is\+Json\+Texture\+Loaded}} (const std\+::string \&json\+File\+Path) const
-\item 
-bool \mbox{\hyperlink{classe2XD_1_1framework_1_1SFMLTextureManager_ab21c47a30533e6396d53be30f06777cf}{load\+Json\+Texture\+Config\+If\+Not\+Loaded}} (const std\+::string \&json\+File\+Path)
+bool \mbox{\hyperlink{classe2XD_1_1framework_1_1SFMLTextureManager_a87c7afdc8715b75a5d12fcdfc500f265}{load\+Json\+Texture\+Config\+If\+Not\+Loaded}} (const std\+::string \&json\+File\+Path) override
 \end{DoxyCompactItemize}
-\doxysubsubsection*{Static Public Member Functions}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classe2XD_1_1framework_1_1ITextureManager}{e2\+XD\+::framework\+::\+ITexture\+Manager}}}
 \begin{DoxyCompactItemize}
 \item 
-static \mbox{\hyperlink{classe2XD_1_1framework_1_1SFMLTextureManager}{SFMLTexture\+Manager}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classe2XD_1_1framework_1_1SFMLTextureManager_afe7edf6a9e4102fbd8a4d694619aff6f}{get\+Instance}} ()
+virtual \mbox{\hyperlink{classe2XD_1_1framework_1_1ITextureManager_af4170ac58add3bb832b75afe41d4f958}{\texorpdfstring{$\sim$}{\string~}\+ITexture\+Manager}} ()=default
 \end{DoxyCompactItemize}
 \doxysubsubsection*{Friends}
 \begin{DoxyCompactItemize}
@@ -41,77 +55,69 @@ class \mbox{\hyperlink{classe2XD_1_1framework_1_1SFMLTextureManager_a4f8a7afb90a
 Singleton 
 
 \doxysubsection{Constructor \& Destructor Documentation}
-\Hypertarget{classe2XD_1_1framework_1_1SFMLTextureManager_a301f7ff8d9e52037a45e47e202ef0c7f}\label{classe2XD_1_1framework_1_1SFMLTextureManager_a301f7ff8d9e52037a45e47e202ef0c7f} 
+\Hypertarget{classe2XD_1_1framework_1_1SFMLTextureManager_a55449a9a3d586d7cf3a3398f20d25004}\label{classe2XD_1_1framework_1_1SFMLTextureManager_a55449a9a3d586d7cf3a3398f20d25004} 
 \index{e2XD::framework::SFMLTextureManager@{e2XD::framework::SFMLTextureManager}!SFMLTextureManager@{SFMLTextureManager}}
 \index{SFMLTextureManager@{SFMLTextureManager}!e2XD::framework::SFMLTextureManager@{e2XD::framework::SFMLTextureManager}}
-\doxysubsubsection{\texorpdfstring{SFMLTextureManager()}{SFMLTextureManager()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily e2\+XD\+::framework\+::\+SFMLTexture\+Manager\+::\+SFMLTexture\+Manager (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classe2XD_1_1framework_1_1SFMLTextureManager}{SFMLTexture\+Manager}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+\doxysubsubsection{\texorpdfstring{SFMLTextureManager()}{SFMLTextureManager()}}
+{\footnotesize\ttfamily e2\+XD\+::framework\+::\+SFMLTexture\+Manager\+::\+SFMLTexture\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
 
-\Hypertarget{classe2XD_1_1framework_1_1SFMLTextureManager_aae58ce2843833fff748ab40d5ed3613c}\label{classe2XD_1_1framework_1_1SFMLTextureManager_aae58ce2843833fff748ab40d5ed3613c} 
-\index{e2XD::framework::SFMLTextureManager@{e2XD::framework::SFMLTextureManager}!SFMLTextureManager@{SFMLTextureManager}}
-\index{SFMLTextureManager@{SFMLTextureManager}!e2XD::framework::SFMLTextureManager@{e2XD::framework::SFMLTextureManager}}
-\doxysubsubsection{\texorpdfstring{SFMLTextureManager()}{SFMLTextureManager()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily e2\+XD\+::framework\+::\+SFMLTexture\+Manager\+::\+SFMLTexture\+Manager (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classe2XD_1_1framework_1_1SFMLTextureManager}{SFMLTexture\+Manager}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
-
-\Hypertarget{classe2XD_1_1framework_1_1SFMLTextureManager_a9ab53715e08362f0e6d46e7adcc74fb8}\label{classe2XD_1_1framework_1_1SFMLTextureManager_a9ab53715e08362f0e6d46e7adcc74fb8} 
+\Hypertarget{classe2XD_1_1framework_1_1SFMLTextureManager_a26ada32791db1d2f6bb97957a3e4bc7c}\label{classe2XD_1_1framework_1_1SFMLTextureManager_a26ada32791db1d2f6bb97957a3e4bc7c} 
 \index{e2XD::framework::SFMLTextureManager@{e2XD::framework::SFMLTextureManager}!````~SFMLTextureManager@{\texorpdfstring{$\sim$}{\string~}SFMLTextureManager}}
 \index{````~SFMLTextureManager@{\texorpdfstring{$\sim$}{\string~}SFMLTextureManager}!e2XD::framework::SFMLTextureManager@{e2XD::framework::SFMLTextureManager}}
 \doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}SFMLTextureManager()}{\string~SFMLTextureManager()}}
-{\footnotesize\ttfamily e2\+XD\+::framework\+::\+SFMLTexture\+Manager\+::\texorpdfstring{$\sim$}{\string~}\+SFMLTexture\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+{\footnotesize\ttfamily e2\+XD\+::framework\+::\+SFMLTexture\+Manager\+::\texorpdfstring{$\sim$}{\string~}\+SFMLTexture\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [default]}}
 
 
 
 \doxysubsection{Member Function Documentation}
-\Hypertarget{classe2XD_1_1framework_1_1SFMLTextureManager_afe7edf6a9e4102fbd8a4d694619aff6f}\label{classe2XD_1_1framework_1_1SFMLTextureManager_afe7edf6a9e4102fbd8a4d694619aff6f} 
-\index{e2XD::framework::SFMLTextureManager@{e2XD::framework::SFMLTextureManager}!getInstance@{getInstance}}
-\index{getInstance@{getInstance}!e2XD::framework::SFMLTextureManager@{e2XD::framework::SFMLTextureManager}}
-\doxysubsubsection{\texorpdfstring{getInstance()}{getInstance()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{classe2XD_1_1framework_1_1SFMLTextureManager}{SFMLTexture\+Manager}} \texorpdfstring{$\ast$}{*} e2\+XD\+::framework\+::\+SFMLTexture\+Manager\+::get\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
-
-\Hypertarget{classe2XD_1_1framework_1_1SFMLTextureManager_acce19e423ebed4df2bba6ee0dc63e2db}\label{classe2XD_1_1framework_1_1SFMLTextureManager_acce19e423ebed4df2bba6ee0dc63e2db} 
+\Hypertarget{classe2XD_1_1framework_1_1SFMLTextureManager_a9d603b2f2f0dd2ffcc2eebf2724a1566}\label{classe2XD_1_1framework_1_1SFMLTextureManager_a9d603b2f2f0dd2ffcc2eebf2724a1566} 
 \index{e2XD::framework::SFMLTextureManager@{e2XD::framework::SFMLTextureManager}!getTexture@{getTexture}}
 \index{getTexture@{getTexture}!e2XD::framework::SFMLTextureManager@{e2XD::framework::SFMLTextureManager}}
 \doxysubsubsection{\texorpdfstring{getTexture()}{getTexture()}}
-{\footnotesize\ttfamily const sf\+::\+Texture \& e2\+XD\+::framework\+::\+SFMLTexture\+Manager\+::get\+Texture (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name }\end{DoxyParamCaption}) const}
+{\footnotesize\ttfamily const sf\+::\+Texture \& e2\+XD\+::framework\+::\+SFMLTexture\+Manager\+::get\+Texture (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
-\Hypertarget{classe2XD_1_1framework_1_1SFMLTextureManager_ab3f4b7a43ff786d4662f550487e09e98}\label{classe2XD_1_1framework_1_1SFMLTextureManager_ab3f4b7a43ff786d4662f550487e09e98} 
+
+
+Implements \mbox{\hyperlink{classe2XD_1_1framework_1_1ITextureManager_ae6e31016aab5ec8fc923254b09b8b841}{e2\+XD\+::framework\+::\+ITexture\+Manager}}.
+
+\Hypertarget{classe2XD_1_1framework_1_1SFMLTextureManager_a3c041f71cabfb06311b22502506ebdb0}\label{classe2XD_1_1framework_1_1SFMLTextureManager_a3c041f71cabfb06311b22502506ebdb0} 
 \index{e2XD::framework::SFMLTextureManager@{e2XD::framework::SFMLTextureManager}!isJsonTextureLoaded@{isJsonTextureLoaded}}
 \index{isJsonTextureLoaded@{isJsonTextureLoaded}!e2XD::framework::SFMLTextureManager@{e2XD::framework::SFMLTextureManager}}
 \doxysubsubsection{\texorpdfstring{isJsonTextureLoaded()}{isJsonTextureLoaded()}}
-{\footnotesize\ttfamily bool e2\+XD\+::framework\+::\+SFMLTexture\+Manager\+::is\+Json\+Texture\+Loaded (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{json\+File\+Path }\end{DoxyParamCaption}) const}
+{\footnotesize\ttfamily bool e2\+XD\+::framework\+::\+SFMLTexture\+Manager\+::is\+Json\+Texture\+Loaded (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{json\+File\+Path }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
-\Hypertarget{classe2XD_1_1framework_1_1SFMLTextureManager_a2c7a45a86fd3267accbcd67d292bbfe7}\label{classe2XD_1_1framework_1_1SFMLTextureManager_a2c7a45a86fd3267accbcd67d292bbfe7} 
+
+
+Implements \mbox{\hyperlink{classe2XD_1_1framework_1_1ITextureManager_a962bb759d66b93c572a5e6648d42d3b6}{e2\+XD\+::framework\+::\+ITexture\+Manager}}.
+
+\Hypertarget{classe2XD_1_1framework_1_1SFMLTextureManager_ad3b7fd621aec22761b144b258738ba98}\label{classe2XD_1_1framework_1_1SFMLTextureManager_ad3b7fd621aec22761b144b258738ba98} 
 \index{e2XD::framework::SFMLTextureManager@{e2XD::framework::SFMLTextureManager}!loadJsonTextureConfig@{loadJsonTextureConfig}}
 \index{loadJsonTextureConfig@{loadJsonTextureConfig}!e2XD::framework::SFMLTextureManager@{e2XD::framework::SFMLTextureManager}}
 \doxysubsubsection{\texorpdfstring{loadJsonTextureConfig()}{loadJsonTextureConfig()}}
-{\footnotesize\ttfamily void e2\+XD\+::framework\+::\+SFMLTexture\+Manager\+::load\+Json\+Texture\+Config (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{json\+File\+Path }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void e2\+XD\+::framework\+::\+SFMLTexture\+Manager\+::load\+Json\+Texture\+Config (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{json\+File\+Path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
-\Hypertarget{classe2XD_1_1framework_1_1SFMLTextureManager_ab21c47a30533e6396d53be30f06777cf}\label{classe2XD_1_1framework_1_1SFMLTextureManager_ab21c47a30533e6396d53be30f06777cf} 
+
+
+Implements \mbox{\hyperlink{classe2XD_1_1framework_1_1ITextureManager_a8ae4040b0decdd6577e03fb0a7d28c66}{e2\+XD\+::framework\+::\+ITexture\+Manager}}.
+
+\Hypertarget{classe2XD_1_1framework_1_1SFMLTextureManager_a87c7afdc8715b75a5d12fcdfc500f265}\label{classe2XD_1_1framework_1_1SFMLTextureManager_a87c7afdc8715b75a5d12fcdfc500f265} 
 \index{e2XD::framework::SFMLTextureManager@{e2XD::framework::SFMLTextureManager}!loadJsonTextureConfigIfNotLoaded@{loadJsonTextureConfigIfNotLoaded}}
 \index{loadJsonTextureConfigIfNotLoaded@{loadJsonTextureConfigIfNotLoaded}!e2XD::framework::SFMLTextureManager@{e2XD::framework::SFMLTextureManager}}
 \doxysubsubsection{\texorpdfstring{loadJsonTextureConfigIfNotLoaded()}{loadJsonTextureConfigIfNotLoaded()}}
-{\footnotesize\ttfamily bool e2\+XD\+::framework\+::\+SFMLTexture\+Manager\+::load\+Json\+Texture\+Config\+If\+Not\+Loaded (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{json\+File\+Path }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily bool e2\+XD\+::framework\+::\+SFMLTexture\+Manager\+::load\+Json\+Texture\+Config\+If\+Not\+Loaded (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{json\+File\+Path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classe2XD_1_1framework_1_1ITextureManager_a41035d5d47b5ea2ba44def504115b7f2}{e2\+XD\+::framework\+::\+ITexture\+Manager}}.
 
 Here is the call graph for this function\+:
 \nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{classe2XD_1_1framework_1_1SFMLTextureManager_ab21c47a30533e6396d53be30f06777cf_cgraph}
+\includegraphics[width=350pt]{classe2XD_1_1framework_1_1SFMLTextureManager_a87c7afdc8715b75a5d12fcdfc500f265_cgraph}
 \end{center}
 \end{figure}
-\Hypertarget{classe2XD_1_1framework_1_1SFMLTextureManager_a232385ce7f998f7b70c21d5761f2d8c7}\label{classe2XD_1_1framework_1_1SFMLTextureManager_a232385ce7f998f7b70c21d5761f2d8c7} 
-\index{e2XD::framework::SFMLTextureManager@{e2XD::framework::SFMLTextureManager}!operator=@{operator=}}
-\index{operator=@{operator=}!e2XD::framework::SFMLTextureManager@{e2XD::framework::SFMLTextureManager}}
-\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily \mbox{\hyperlink{classe2XD_1_1framework_1_1SFMLTextureManager}{SFMLTexture\+Manager}} \& e2\+XD\+::framework\+::\+SFMLTexture\+Manager\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classe2XD_1_1framework_1_1SFMLTextureManager}{SFMLTexture\+Manager}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
-
-\Hypertarget{classe2XD_1_1framework_1_1SFMLTextureManager_afeca80913e97844d27e4db9e05230985}\label{classe2XD_1_1framework_1_1SFMLTextureManager_afeca80913e97844d27e4db9e05230985} 
-\index{e2XD::framework::SFMLTextureManager@{e2XD::framework::SFMLTextureManager}!operator=@{operator=}}
-\index{operator=@{operator=}!e2XD::framework::SFMLTextureManager@{e2XD::framework::SFMLTextureManager}}
-\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily \mbox{\hyperlink{classe2XD_1_1framework_1_1SFMLTextureManager}{SFMLTexture\+Manager}} \& e2\+XD\+::framework\+::\+SFMLTexture\+Manager\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classe2XD_1_1framework_1_1SFMLTextureManager}{SFMLTexture\+Manager}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
-
 
 
 \doxysubsection{Friends And Related Symbol Documentation}

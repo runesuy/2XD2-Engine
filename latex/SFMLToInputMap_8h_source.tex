@@ -1,5 +1,5 @@
 \doxysection{SFMLTo\+Input\+Map.\+h}
-\hypertarget{SFMLToInputMap_8h_source}{}\label{SFMLToInputMap_8h_source}\index{framework/include/2XD2/framework/SFMLToInputMap.h@{framework/include/2XD2/framework/SFMLToInputMap.h}}
+\hypertarget{SFMLToInputMap_8h_source}{}\label{SFMLToInputMap_8h_source}\index{framework/include/2XD2/framework/input/SFMLToInputMap.h@{framework/include/2XD2/framework/input/SFMLToInputMap.h}}
 \mbox{\hyperlink{SFMLToInputMap_8h}{Go to the documentation of this file.}}
 \begin{DoxyCode}{0}
 \DoxyCodeLine{00001\ \textcolor{comment}{//}}
@@ -10,12 +10,12 @@
 \DoxyCodeLine{00006\ \textcolor{preprocessor}{\#define\ INC\_2XD2\_ENGINE\_SFMLTOINPUTMAP\_H}}
 \DoxyCodeLine{00007\ }
 \DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <SFML/Window/Event.hpp>}}
-\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{Key_8h}{Key.h}}"{}}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}../Key.h"{}}}
 \DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}unordered\_map"{}}}
 \DoxyCodeLine{00011\ }
-\DoxyCodeLine{00012\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespacee2XD_1_1framework_1_1input}{e2XD::framework::input}}}
+\DoxyCodeLine{00012\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespacee2XD_1_1framework_1_1internal_1_1input}{e2XD::framework::internal::input}}}
 \DoxyCodeLine{00013\ \{}
-\DoxyCodeLine{00014\ \ \ \ \ \textcolor{keyword}{inline}\ std::unordered\_map<sf::Keyboard::Key,\ Key>\ \mbox{\hyperlink{namespacee2XD_1_1framework_1_1input_a24bc5ba6f55e144efac141682cdbe854}{keyboardMap}}\{}
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{keyword}{inline}\ std::unordered\_map<sf::Keyboard::Key,\ Key>\ \mbox{\hyperlink{namespacee2XD_1_1framework_1_1internal_1_1input_a065377f561eade19bdfcb21b33c48270}{keyboardMap}}\{}
 \DoxyCodeLine{00015\ \ \ \ \ \ \ \ \ \{sf::Keyboard::A,\ \mbox{\hyperlink{Key_8h_ab3c7af4820830f9166ede9e5623c4e73a7fc56270e7a70fa81a5935b72eacbe29}{Key::A}}\},}
 \DoxyCodeLine{00016\ \ \ \ \ \ \ \ \ \{sf::Keyboard::B,\ \mbox{\hyperlink{Key_8h_ab3c7af4820830f9166ede9e5623c4e73a9d5ed678fe57bcca610140957afab571}{Key::B}}\},}
 \DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ \{sf::Keyboard::C,\ \mbox{\hyperlink{Key_8h_ab3c7af4820830f9166ede9e5623c4e73a0d61f8370cad1d412f80b84d143e1257}{Key::C}}\},}
@@ -44,7 +44,7 @@
 \DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \{sf::Keyboard::Z,\ \mbox{\hyperlink{Key_8h_ab3c7af4820830f9166ede9e5623c4e73a21c2e59531c8710156d34a3c30ac81d5}{Key::Z}}\},}
 \DoxyCodeLine{00041\ \ \ \ \ \};}
 \DoxyCodeLine{00042\ }
-\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keyword}{inline}\ std::unordered\_map<sf::Mouse::Button,\ MouseButton>\ \mbox{\hyperlink{namespacee2XD_1_1framework_1_1input_af67f20c7c234d538824430868e4bd021}{mouseButtonMap}}\{}
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keyword}{inline}\ std::unordered\_map<sf::Mouse::Button,\ MouseButton>\ \mbox{\hyperlink{namespacee2XD_1_1framework_1_1internal_1_1input_aef329e7fc9de67b73729bc6de49ca159}{mouseButtonMap}}\{}
 \DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \{sf::Mouse::Left,\ \mbox{\hyperlink{MouseButton_8h_ac1ec3647c005eacad401b06e7e18f711a684d325a7303f52e64011467ff5c5758}{MouseButton::LEFT}}\},}
 \DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \{sf::Mouse::Right,\ \mbox{\hyperlink{MouseButton_8h_ac1ec3647c005eacad401b06e7e18f711a21507b40c80068eda19865706fdc2403}{MouseButton::RIGHT}}\}}
 \DoxyCodeLine{00046\ \ \ \ \ \};}

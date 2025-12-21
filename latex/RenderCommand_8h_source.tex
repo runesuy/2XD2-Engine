@@ -1,0 +1,39 @@
+\doxysection{Render\+Command.\+h}
+\hypertarget{RenderCommand_8h_source}{}\label{RenderCommand_8h_source}\index{renderer/include/2XD2/renderer/RenderCommand.h@{renderer/include/2XD2/renderer/RenderCommand.h}}
+\mbox{\hyperlink{RenderCommand_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{//}}
+\DoxyCodeLine{00002\ \textcolor{comment}{//\ Created\ by\ rune-\/suy\ on\ 12/19/25.}}
+\DoxyCodeLine{00003\ \textcolor{comment}{//}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#ifndef\ FLATLAND\_RENDERCOMMAND\_H}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#define\ FLATLAND\_RENDERCOMMAND\_H}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <SFML/Graphics/Drawable.hpp>}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <SFML/System/Vector2.hpp>}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{RenderLayer_8h}{2XD2/core/RenderLayer.h}}"{}}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespacee2XD_1_1renderer}{e2XD::renderer}}}
+\DoxyCodeLine{00014\ \ \ \ \ \{}
+\DoxyCodeLine{00015\ \ \ \ \ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structe2XD_1_1renderer_1_1RenderCommand}{RenderCommand}}}
+\DoxyCodeLine{00016\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{RenderLayer_8h_ad16d91520dd8dbd7a2178564fce5a168}{RenderLayer}}\ \mbox{\hyperlink{structe2XD_1_1renderer_1_1RenderCommand_a61b2ead752ee1ca7c7b01b47a0a2ebf2}{renderLayer}};}
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ sf::Drawable*\ \mbox{\hyperlink{structe2XD_1_1renderer_1_1RenderCommand_ab5dcf0faf8af76429313a6b8ff7a0c0d}{drawable}};}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \ \ \ \ sf::Vector2f\ \mbox{\hyperlink{structe2XD_1_1renderer_1_1RenderCommand_a3f4c30fce6e031c72a209e3aa6d1a557}{position}};}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structe2XD_1_1renderer_1_1RenderCommand_aaee1cfd270557c0bf09bb8cb9344da67}{zIndex}};}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structe2XD_1_1renderer_1_1RenderCommand}{RenderCommand}}(\mbox{\hyperlink{RenderLayer_8h_ad16d91520dd8dbd7a2178564fce5a168}{RenderLayer}}\ \mbox{\hyperlink{structe2XD_1_1renderer_1_1RenderCommand_a61b2ead752ee1ca7c7b01b47a0a2ebf2}{renderLayer}},\ \textcolor{keyword}{const}\ sf::Drawable*\ \mbox{\hyperlink{structe2XD_1_1renderer_1_1RenderCommand_ab5dcf0faf8af76429313a6b8ff7a0c0d}{drawable}},\ \textcolor{keyword}{const}\ sf::Vector2f\ \&\mbox{\hyperlink{structe2XD_1_1renderer_1_1RenderCommand_a3f4c30fce6e031c72a209e3aa6d1a557}{position}},\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structe2XD_1_1renderer_1_1RenderCommand_aaee1cfd270557c0bf09bb8cb9344da67}{zIndex}});}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structe2XD_1_1renderer_1_1RenderCommand_ae288a3b1d57d2c7e79d630095eabbf3d}{RenderCommand}}(\mbox{\hyperlink{structe2XD_1_1renderer_1_1RenderCommand}{RenderCommand}}\&\&)\ noexcept\ =\ default;}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structe2XD_1_1renderer_1_1RenderCommand}{RenderCommand}}\&\ operator=(\mbox{\hyperlink{structe2XD_1_1renderer_1_1RenderCommand}{RenderCommand}}\&\&)\ noexcept\ =\ default;}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structe2XD_1_1renderer_1_1RenderCommand}{RenderCommand}}(const\ \mbox{\hyperlink{structe2XD_1_1renderer_1_1RenderCommand}{RenderCommand}}\&)\ =\ default;}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structe2XD_1_1renderer_1_1RenderCommand}{RenderCommand}}\&\ operator=(const\ \mbox{\hyperlink{structe2XD_1_1renderer_1_1RenderCommand}{RenderCommand}}\&)\ =\ default;}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \};}
+\DoxyCodeLine{00030\ \ \ \ \ \}\ \textcolor{comment}{//\ renderer}}
+\DoxyCodeLine{00031\ \textcolor{comment}{//\ e2XD}}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//FLATLAND\_RENDERCOMMAND\_H}}
+
+\end{DoxyCode}

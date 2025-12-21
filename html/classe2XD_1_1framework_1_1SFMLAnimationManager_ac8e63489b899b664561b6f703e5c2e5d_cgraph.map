@@ -1,5 +1,7 @@
 <map id="e2XD::framework::SFMLAnimationManager::loadJsonAnimationConfig" name="e2XD::framework::SFMLAnimationManager::loadJsonAnimationConfig">
 <area shape="rect" id="Node000001" title=" " alt="" coords="5,5,229,46"/>
-<area shape="rect" id="Node000002" href="$classe2XD_1_1framework_1_1SFMLTextureManager.html#afe7edf6a9e4102fbd8a4d694619aff6f" title=" " alt="" coords="277,5,482,46"/>
+<area shape="rect" id="Node000002" href="$classe2XD_1_1framework_1_1Resources_1_1Textures.html#a4e660e57734ee116d83ae9b3e8295cb2" title=" " alt="" coords="277,5,465,46"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="229,23,261,23,261,28,229,28"/>
+<area shape="rect" id="Node000003" href="$classe2XD_1_1framework_1_1ITextureManager.html#ae6e31016aab5ec8fc923254b09b8b841" title=" " alt="" coords="513,5,686,46"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="465,23,497,23,497,28,465,28"/>
 </map>

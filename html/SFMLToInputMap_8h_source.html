@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Doxygen: framework/include/2XD2/framework/SFMLToInputMap.h Source File</title>
+<title>Doxygen: framework/include/2XD2/framework/input/SFMLToInputMap.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -74,7 +74,7 @@ $(document).ready(function() { init_codefold(0); });
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_644e041c3a6521da7b27eba0e4eb2b95.html">framework</a></li><li class="navelem"><a class="el" href="dir_dd40116cd1cfebdc77a7c7114b29912e.html">include</a></li><li class="navelem"><a class="el" href="dir_ac01a8cbc1278a88a12548b50c8d2648.html">2XD2</a></li><li class="navelem"><a class="el" href="dir_22733eaf858c20d5335c7c08c6deb4ab.html">framework</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_644e041c3a6521da7b27eba0e4eb2b95.html">framework</a></li><li class="navelem"><a class="el" href="dir_dd40116cd1cfebdc77a7c7114b29912e.html">include</a></li><li class="navelem"><a class="el" href="dir_ac01a8cbc1278a88a12548b50c8d2648.html">2XD2</a></li><li class="navelem"><a class="el" href="dir_22733eaf858c20d5335c7c08c6deb4ab.html">framework</a></li><li class="navelem"><a class="el" href="dir_15a299aa1657ee64863b0b9ddb7dcd68.html">input</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -89,14 +89,14 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#define INC_2XD2_ENGINE_SFMLTOINPUTMAP_H</span></div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;SFML/Window/Event.hpp&gt;</span></div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &quot;<a class="code" href="Key_8h.html">Key.h</a>&quot;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &quot;../Key.h&quot;</span></div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &quot;unordered_map&quot;</span></div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
 <div class="foldopen" id="foldopen00012" data-start="{" data-end="}">
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="namespacee2XD_1_1framework_1_1input.html">   12</a></span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacee2XD_1_1framework_1_1input.html">e2XD::framework::input</a></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="namespacee2XD_1_1framework_1_1internal_1_1input.html">   12</a></span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacee2XD_1_1framework_1_1internal_1_1input.html">e2XD::framework::internal::input</a></div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>{</div>
 <div class="foldopen" id="foldopen00014" data-start="{" data-end="};">
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="namespacee2XD_1_1framework_1_1input.html#a24bc5ba6f55e144efac141682cdbe854">   14</a></span>    <span class="keyword">inline</span> std::unordered_map&lt;sf::Keyboard::Key, Key&gt; <a class="code hl_variable" href="namespacee2XD_1_1framework_1_1input.html#a24bc5ba6f55e144efac141682cdbe854">keyboardMap</a>{</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="namespacee2XD_1_1framework_1_1internal_1_1input.html#a065377f561eade19bdfcb21b33c48270">   14</a></span>    <span class="keyword">inline</span> std::unordered_map&lt;sf::Keyboard::Key, Key&gt; <a class="code hl_variable" href="namespacee2XD_1_1framework_1_1internal_1_1input.html#a065377f561eade19bdfcb21b33c48270">keyboardMap</a>{</div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>        {sf::Keyboard::A, <a class="code hl_enumvalue" href="Key_8h.html#ab3c7af4820830f9166ede9e5623c4e73a7fc56270e7a70fa81a5935b72eacbe29">Key::A</a>},</div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>        {sf::Keyboard::B, <a class="code hl_enumvalue" href="Key_8h.html#ab3c7af4820830f9166ede9e5623c4e73a9d5ed678fe57bcca610140957afab571">Key::B</a>},</div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>        {sf::Keyboard::C, <a class="code hl_enumvalue" href="Key_8h.html#ab3c7af4820830f9166ede9e5623c4e73a0d61f8370cad1d412f80b84d143e1257">Key::C</a>},</div>
@@ -127,7 +127,7 @@ $(document).ready(function() { init_codefold(0); });
 </div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
 <div class="foldopen" id="foldopen00043" data-start="{" data-end="};">
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="namespacee2XD_1_1framework_1_1input.html#af67f20c7c234d538824430868e4bd021">   43</a></span>    <span class="keyword">inline</span> std::unordered_map&lt;sf::Mouse::Button, MouseButton&gt; <a class="code hl_variable" href="namespacee2XD_1_1framework_1_1input.html#af67f20c7c234d538824430868e4bd021">mouseButtonMap</a>{</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="namespacee2XD_1_1framework_1_1internal_1_1input.html#aef329e7fc9de67b73729bc6de49ca159">   43</a></span>    <span class="keyword">inline</span> std::unordered_map&lt;sf::Mouse::Button, MouseButton&gt; <a class="code hl_variable" href="namespacee2XD_1_1framework_1_1internal_1_1input.html#aef329e7fc9de67b73729bc6de49ca159">mouseButtonMap</a>{</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        {sf::Mouse::Left, <a class="code hl_enumvalue" href="MouseButton_8h.html#ac1ec3647c005eacad401b06e7e18f711a684d325a7303f52e64011467ff5c5758">MouseButton::LEFT</a>},</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        {sf::Mouse::Right, <a class="code hl_enumvalue" href="MouseButton_8h.html#ac1ec3647c005eacad401b06e7e18f711a21507b40c80068eda19865706fdc2403">MouseButton::RIGHT</a>}</div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    };</div>
@@ -135,7 +135,6 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>}</div>
 </div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="preprocessor">#endif </span><span class="comment">//INC_2XD2_ENGINE_SFMLTOINPUTMAP_H</span></div>
-<div class="ttc" id="aKey_8h_html"><div class="ttname"><a href="Key_8h.html">Key.h</a></div></div>
 <div class="ttc" id="aKey_8h_html_ab3c7af4820830f9166ede9e5623c4e73a02129bb861061d1a052c592e2dc6b383"><div class="ttname"><a href="Key_8h.html#ab3c7af4820830f9166ede9e5623c4e73a02129bb861061d1a052c592e2dc6b383">Key::X</a></div><div class="ttdeci">@ X</div></div>
 <div class="ttc" id="aKey_8h_html_ab3c7af4820830f9166ede9e5623c4e73a0d61f8370cad1d412f80b84d143e1257"><div class="ttname"><a href="Key_8h.html#ab3c7af4820830f9166ede9e5623c4e73a0d61f8370cad1d412f80b84d143e1257">Key::C</a></div><div class="ttdeci">@ C</div></div>
 <div class="ttc" id="aKey_8h_html_ab3c7af4820830f9166ede9e5623c4e73a21c2e59531c8710156d34a3c30ac81d5"><div class="ttname"><a href="Key_8h.html#ab3c7af4820830f9166ede9e5623c4e73a21c2e59531c8710156d34a3c30ac81d5">Key::Z</a></div><div class="ttdeci">@ Z</div></div>
@@ -164,9 +163,9 @@ $(document).ready(function() { init_codefold(0); });
 <div class="ttc" id="aKey_8h_html_ab3c7af4820830f9166ede9e5623c4e73aff44570aca8241914870afbc310cdb85"><div class="ttname"><a href="Key_8h.html#ab3c7af4820830f9166ede9e5623c4e73aff44570aca8241914870afbc310cdb85">Key::J</a></div><div class="ttdeci">@ J</div></div>
 <div class="ttc" id="aMouseButton_8h_html_ac1ec3647c005eacad401b06e7e18f711a21507b40c80068eda19865706fdc2403"><div class="ttname"><a href="MouseButton_8h.html#ac1ec3647c005eacad401b06e7e18f711a21507b40c80068eda19865706fdc2403">MouseButton::RIGHT</a></div><div class="ttdeci">@ RIGHT</div></div>
 <div class="ttc" id="aMouseButton_8h_html_ac1ec3647c005eacad401b06e7e18f711a684d325a7303f52e64011467ff5c5758"><div class="ttname"><a href="MouseButton_8h.html#ac1ec3647c005eacad401b06e7e18f711a684d325a7303f52e64011467ff5c5758">MouseButton::LEFT</a></div><div class="ttdeci">@ LEFT</div></div>
-<div class="ttc" id="anamespacee2XD_1_1framework_1_1input_html"><div class="ttname"><a href="namespacee2XD_1_1framework_1_1input.html">e2XD::framework::input</a></div><div class="ttdef"><b>Definition</b> SFMLToInputMap.h:13</div></div>
-<div class="ttc" id="anamespacee2XD_1_1framework_1_1input_html_a24bc5ba6f55e144efac141682cdbe854"><div class="ttname"><a href="namespacee2XD_1_1framework_1_1input.html#a24bc5ba6f55e144efac141682cdbe854">e2XD::framework::input::keyboardMap</a></div><div class="ttdeci">std::unordered_map&lt; sf::Keyboard::Key, Key &gt; keyboardMap</div><div class="ttdef"><b>Definition</b> SFMLToInputMap.h:14</div></div>
-<div class="ttc" id="anamespacee2XD_1_1framework_1_1input_html_af67f20c7c234d538824430868e4bd021"><div class="ttname"><a href="namespacee2XD_1_1framework_1_1input.html#af67f20c7c234d538824430868e4bd021">e2XD::framework::input::mouseButtonMap</a></div><div class="ttdeci">std::unordered_map&lt; sf::Mouse::Button, MouseButton &gt; mouseButtonMap</div><div class="ttdef"><b>Definition</b> SFMLToInputMap.h:43</div></div>
+<div class="ttc" id="anamespacee2XD_1_1framework_1_1internal_1_1input_html"><div class="ttname"><a href="namespacee2XD_1_1framework_1_1internal_1_1input.html">e2XD::framework::internal::input</a></div><div class="ttdef"><b>Definition</b> SFMLToInputMap.h:13</div></div>
+<div class="ttc" id="anamespacee2XD_1_1framework_1_1internal_1_1input_html_a065377f561eade19bdfcb21b33c48270"><div class="ttname"><a href="namespacee2XD_1_1framework_1_1internal_1_1input.html#a065377f561eade19bdfcb21b33c48270">e2XD::framework::internal::input::keyboardMap</a></div><div class="ttdeci">std::unordered_map&lt; sf::Keyboard::Key, Key &gt; keyboardMap</div><div class="ttdef"><b>Definition</b> SFMLToInputMap.h:14</div></div>
+<div class="ttc" id="anamespacee2XD_1_1framework_1_1internal_1_1input_html_aef329e7fc9de67b73729bc6de49ca159"><div class="ttname"><a href="namespacee2XD_1_1framework_1_1internal_1_1input.html#aef329e7fc9de67b73729bc6de49ca159">e2XD::framework::internal::input::mouseButtonMap</a></div><div class="ttdeci">std::unordered_map&lt; sf::Mouse::Button, MouseButton &gt; mouseButtonMap</div><div class="ttdef"><b>Definition</b> SFMLToInputMap.h:43</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
