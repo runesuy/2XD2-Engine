@@ -8,6 +8,9 @@
 
 using namespace e2XD::framework;
 
+// This is a simple pong game example using the 2XD2 framework.
+
+
 int main() {
     DefaultGameConfig config;
     Game game{config};
