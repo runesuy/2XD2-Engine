@@ -8,6 +8,7 @@
 #include <string>
 #include <unordered_map>
 
+#include "IAnimationManager.h"
 #include "2XD2/framework/AnimationMap.h"
 
 namespace e2XD::framework
@@ -15,7 +16,7 @@ namespace e2XD::framework
     /**
      * Animation manager implementation using SFML Textures.
      */
-    class SFMLAnimationManager final
+    class SFMLAnimationManager final : public IAnimationManager
     {
         std::unordered_map<std::string, AnimationMap> loadedAnimationMaps;
 
@@ -23,9 +24,9 @@ namespace e2XD::framework
 
     public:
         SFMLAnimationManager()=default;
-        ~SFMLAnimationManager() = default;
+        ~SFMLAnimationManager() override = default;
 
-        [[nodiscard]] const AnimationMap& getAnimationMap(const std::string& name) const;
+        [[nodiscard]] const AnimationMap& getAnimationMap(const std::string& name) const override;
 
         /**
          * Load animations in the manager using a json config file.
@@ -53,12 +54,12 @@ namespace e2XD::framework
          *
          * @param jsonFilePath
          */
-        void loadJsonAnimationConfig(const std::string& jsonFilePath);
+        void loadJsonAnimationConfig(const std::string& jsonFilePath) override;
 
 
-        bool isJsonAnimationLoaded(const std::string& jsonFilePath) const;
+        bool isJsonAnimationLoaded(const std::string& jsonFilePath) const override;
 
-        bool loadJsonAnimationConfigIfNotLoaded(const std::string& jsonFilePath);
+        bool loadJsonAnimationConfigIfNotLoaded(const std::string& jsonFilePath) override;
     };
 }
 

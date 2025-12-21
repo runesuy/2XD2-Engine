@@ -10,7 +10,7 @@ file(GLOB_RECURSE CORE_SOURCES
 add_library(2XD2_Engine_Core ${CORE_SOURCES})
 
 target_include_directories(2XD2_Engine_Core PUBLIC
-        ${CMAKE_CURRENT_SOURCE_DIR}/include
+        include
 )
 
 target_include_directories(2XD2_Engine_Core

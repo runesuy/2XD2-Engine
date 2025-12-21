@@ -8,7 +8,7 @@ file(GLOB_RECURSE RENDERER_SOURCES
 add_library(2XD2_Engine_Renderer ${RENDERER_SOURCES})
 
 target_include_directories(2XD2_Engine_Renderer PUBLIC
-        ${CMAKE_CURRENT_SOURCE_DIR}/include
+        include
 )
 
 find_package(SFML 2.6 COMPONENTS system window graphics REQUIRED)

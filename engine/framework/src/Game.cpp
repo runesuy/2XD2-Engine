@@ -6,6 +6,7 @@
 
 #include "2XD2/core/Time.h"
 #include "../include/2XD2/framework/input/SFMLInputHandler.h"
+#include "2XD2/core/exceptions/NotInitializedException.h"
 #include "2XD2/framework/input/Input.h"
 #include "2XD2/framework/resource_manager/Animations.h"
 #include "2XD2/framework/resource_manager/Resources.h"
@@ -16,6 +17,8 @@
 namespace e2XD::framework {
     Game::Game(IGameConfig& config)
     {
+        auto inputHandler = config.getInputHandler();
+        if (!inputHandler) throw NotInitializedException("GameConfig.getInputHandler()", "Game::Game(IGameConfig& config)");
         config.getInputHandler()->initialize(&window);
         Input::initialize(config.getInputHandler());
         Resources::Textures::initialize(config.getTextureManager());
