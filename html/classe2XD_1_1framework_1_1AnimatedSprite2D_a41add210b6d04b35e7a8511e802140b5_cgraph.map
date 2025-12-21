@@ -1,7 +1,0 @@
-<map id="e2XD::framework::AnimatedSprite2D::playAnimation" name="e2XD::framework::AnimatedSprite2D::playAnimation">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,39,187,79"/>
-<area shape="rect" id="Node000002" href="$classe2XD_1_1framework_1_1Animation.html#a42b33d06f68a2fec0289da69b2bce1c0" title=" " alt="" coords="235,5,419,46"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="186,43,219,39,220,44,187,49"/>
-<area shape="rect" id="Node000003" href="$classe2XD_1_1framework_1_1Animation.html#ad9b8f5e01b51190c54074b6dfa61ab41" title=" " alt="" coords="235,71,419,111"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="187,69,220,73,219,79,186,74"/>
-</map>

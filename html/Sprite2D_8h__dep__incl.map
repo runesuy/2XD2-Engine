@@ -1,9 +1,0 @@
-<map id="framework/include/2XD2/framework/nodes/Sprite2D.h" name="framework/include/2XD2/framework/nodes/Sprite2D.h">
-<area shape="rect" id="Node000001" title=" " alt="" coords="141,5,330,46"/>
-<area shape="rect" id="Node000002" href="$AnimatedSprite2D_8h.html" title=" " alt="" coords="5,94,250,135"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="201,58,154,96,150,91,197,54"/>
-<area shape="rect" id="Node000004" href="$Sprite2D_8cpp.html" title=" " alt="" coords="273,94,417,135"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="274,54,322,91,318,96,271,58"/>
-<area shape="rect" id="Node000003" href="$AnimatedSprite2D_8cpp.html" title=" " alt="" coords="50,183,205,223"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="130,150,130,182,125,182,125,150"/>
-</map>

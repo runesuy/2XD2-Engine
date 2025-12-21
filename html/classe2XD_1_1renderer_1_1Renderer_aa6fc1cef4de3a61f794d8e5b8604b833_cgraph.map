@@ -1,9 +1,0 @@
-<map id="e2XD::renderer::Renderer::flush" name="e2XD::renderer::Renderer::flush">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,39,170,79"/>
-<area shape="rect" id="Node000002" href="$classe2XD_1_1core_1_1Node2D.html#ada5856c6591936276a891cf6c6a8344d" title=" " alt="" coords="218,5,355,46"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="170,43,202,37,203,42,171,48"/>
-<area shape="rect" id="Node000004" href="$classe2XD_1_1core_1_1Camera.html#a5e172f64e9a7ce680268eece9bd113a0" title=" " alt="" coords="219,71,354,111"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="171,70,204,75,203,80,170,75"/>
-<area shape="rect" id="Node000003" href="$classe2XD_1_1core_1_1Transform2D.html#a3887912f0b91e58c3967856d374869c9" title=" " alt="" coords="403,5,568,46"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="355,23,387,23,387,28,355,28"/>
-</map>
