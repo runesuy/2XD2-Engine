@@ -27,4 +27,4 @@ target_include_directories(2XD2_Engine_Tests PUBLIC core renderer framework)
 
 
 include(GoogleTest)
-gtest_discover_tests(2XD2_Engine_Tests WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR})
+gtest_discover_tests(2XD2_Engine_Tests WORKING_DIRECTORY ${CMAKE_SOURCE_DIR}/tests)
