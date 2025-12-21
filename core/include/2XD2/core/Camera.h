@@ -7,14 +7,25 @@
 #include "Node2D.h"
 
     namespace e2XD::core {
+        /**
+         * Camera node to define the view in a 2D scene.
+         */
         class Camera : public Node2D {
             float zoom=1;
         public:
             Camera()=default;
             ~Camera() override=default;
 
+            /**
+             *
+             * @return the zoom level of the camera. 1.0f is default, less than 1.0f is zoomed in, greater than 1.0f is zoomed out.
+             */
             [[nodiscard]] float getZoom() const;
 
+            /**
+             * Set the zoom level of the camera. 1.0f is default, less than 1.0f is zoomed in, greater than 1.0f is zoomed out.
+             * @param newZoom
+             */
             void setZoom(float newZoom);
         };
     } // core

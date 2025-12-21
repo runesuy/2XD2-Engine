@@ -14,6 +14,9 @@
 
 namespace e2XD::framework
 {
+    /**
+     * Default exception class for the engine.
+     */
     class Exception : public std::exception
     {
         const std::string msg;

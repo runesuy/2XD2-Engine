@@ -7,7 +7,7 @@
 
     namespace e2XD::framework
     {
-        core::Vec2 Input::getMousePosition()
+        core::Vec2f Input::getMousePosition()
         {
             return _input_handler->getMousePosition();
         }

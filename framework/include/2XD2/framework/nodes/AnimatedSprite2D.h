@@ -13,6 +13,9 @@
 
 namespace e2XD::framework
 {
+    /**
+     * A 2D sprite that can play animations.
+     */
     class AnimatedSprite2D : public Sprite2D
     {
         Animation _currentAnimation;
@@ -24,10 +27,25 @@ namespace e2XD::framework
         void _updateCurrentFrame(float deltaTime);
 
     public:
+        /**
+         * Initialize the animated sprite without any animations.
+         */
         AnimatedSprite2D() = default;
+
+        /**
+         * Initialize the animated sprite with a map of animations.
+         * @param animations
+         */
         explicit AnimatedSprite2D(const AnimationMap* animations);
+
         ~AnimatedSprite2D() override = default;
 
+        /**
+         * Play an animation by its name.
+         * Animation needs to be present in the animations map set for this sprite.
+         * @param name
+         * @param continueAtCurrentFrame
+         */
         void playAnimation(const std::string& name, bool continueAtCurrentFrame=false);
 
         /**

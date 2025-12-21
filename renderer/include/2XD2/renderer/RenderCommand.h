@@ -12,6 +12,10 @@
 
 namespace e2XD::renderer
     {
+        /**
+         * Command representing a renderable object with its render layer, position and z-index.
+         * Can be given to the renderer to be drawn in the correct order.
+         */
         struct RenderCommand
         {
             RenderLayer renderLayer;

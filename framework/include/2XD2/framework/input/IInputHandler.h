@@ -9,11 +9,16 @@
 #include "../Key.h"
 #include "../MouseButton.h"
 #include "tuple"
-#include "2XD2/core/Vec2.h"
+#include "2XD2/core/Vec2f.h"
 
 
 namespace e2XD::framework
 {
+    /**
+     * InputHandler interface to manage input from keyboard, mouse, and other devices
+     * Can be provided to the framework Game through IGameConfig.
+     * When provided to the framework Game, it will be used by the static Input class to provide input states throughout the engine.
+     */
     class IInputHandler
     {
     public:
@@ -22,7 +27,7 @@ namespace e2XD::framework
          * The inputhandler will use this window to poll events and get input states.
          * @param window ptr to the active SFML RenderWindow
          */
-        virtual void initialize(sf::RenderWindow* window)=0;
+        virtual void initialize(sf::RenderWindow* window) =0;
 
         virtual ~IInputHandler() = default;
 
@@ -91,7 +96,7 @@ namespace e2XD::framework
          *
          * @return The current mouse position in window coordinates
          */
-        [[nodiscard]] virtual core::Vec2 getMousePosition() const = 0;
+        [[nodiscard]] virtual core::Vec2f getMousePosition() const = 0;
 
         /**
          *

@@ -5,11 +5,11 @@
 #include "2XD2/core/Transform2D.h"
 
 namespace e2XD::core {
-    const Vec2 &Transform2D::getPosition() const {
+    const Vec2f &Transform2D::getPosition() const {
         return position;
     }
 
-    void Transform2D::setPosition(const Vec2 &position) {
+    void Transform2D::setPosition(const Vec2f &position) {
         this->position = position;
     }
 
@@ -21,11 +21,11 @@ namespace e2XD::core {
         this->rotation = rotation;
     }
 
-    const Vec2 &Transform2D::getScale() const {
+    const Vec2f &Transform2D::getScale() const {
         return scale;
     }
 
-    void Transform2D::setScale(const Vec2 &scale) {
+    void Transform2D::setScale(const Vec2f &scale) {
         this->scale = scale;
     }
 } // core

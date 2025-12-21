@@ -5,11 +5,11 @@
 #include "2XD2/core/Node2D.h"
 
 namespace e2XD::core {
-    const Vec2 &Node2D::getGlobalPosition() const {
+    const Vec2f &Node2D::getGlobalPosition() const {
         return globalTransform.getPosition();
     }
 
-    void Node2D::setGlobalPosition(const Vec2 &position) {
+    void Node2D::setGlobalPosition(const Vec2f &position) {
         auto positionDiff = position - globalTransform.getPosition();
         globalTransform.setPosition(position);
         localTransform.setPosition(localTransform.getPosition() + positionDiff);
@@ -23,11 +23,11 @@ namespace e2XD::core {
         }
     }
 
-    const Vec2 &Node2D::getLocalPosition() const {
+    const Vec2f &Node2D::getLocalPosition() const {
         return localTransform.getPosition();
     }
 
-    void Node2D::setLocalPosition(const Vec2 &position) {
+    void Node2D::setLocalPosition(const Vec2f &position) {
         auto positionDiff = position - localTransform.getPosition();
         localTransform.setPosition(position);
         globalTransform.setPosition(globalTransform.getPosition() + positionDiff);
@@ -41,11 +41,11 @@ namespace e2XD::core {
         }
     }
 
-    const Vec2 &Node2D::getGlobalScale() const {
+    const Vec2f &Node2D::getGlobalScale() const {
         return globalTransform.getScale();
     }
 
-    void Node2D::setGlobalScale(const Vec2 &scale) {
+    void Node2D::setGlobalScale(const Vec2f &scale) {
         auto scaleDiff = scale / globalTransform.getScale();
         this->globalTransform.setScale(scale);
         this->localTransform.setScale(localTransform.getScale() * scaleDiff);
@@ -59,11 +59,11 @@ namespace e2XD::core {
         }
     }
 
-    const Vec2 &Node2D::getLocalScale() const {
+    const Vec2f &Node2D::getLocalScale() const {
         return localTransform.getScale();
     }
 
-    void Node2D::setLocalScale(const Vec2 &scale) {
+    void Node2D::setLocalScale(const Vec2f &scale) {
         auto scaleDiff = scale / localTransform.getScale();
         this->localTransform.setScale(scale);
         this->globalTransform.setScale(globalTransform.getScale() * scaleDiff);

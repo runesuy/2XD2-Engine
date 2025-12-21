@@ -6,9 +6,13 @@
 #define INC_2XD2_ENGINE_NODE2D_H
 #include "Node.h"
 #include "Transform2D.h"
-#include "Vec2.h"
+#include "Vec2f.h"
 
 namespace e2XD::core {
+    /**
+     * A 2D node in the scene graph.
+     * Has 2D transformation properties like position, scale and rotation.
+     */
     class Node2D : public Node {
         Transform2D globalTransform;
         Transform2D localTransform;
@@ -16,28 +20,82 @@ namespace e2XD::core {
     public:
         Node2D() = default;
 
-        [[nodiscard]] const Vec2 &getGlobalPosition() const;
+        /**
+         *
+         * @return the absolute global position of the node in the scene.
+         */
+        [[nodiscard]] const Vec2f &getGlobalPosition() const;
 
-        void setGlobalPosition(const Vec2 &position);
+        /**
+         * Set the absolute global position of the node in the scene.
+         * Children positions will be updated accordingly.
+         * @param position
+         */
+        void setGlobalPosition(const Vec2f &position);
 
-        [[nodiscard]] const Vec2 &getLocalPosition() const;
+        /**
+         *
+         * @return the local position of the node relative to its parent.
+         */
+        [[nodiscard]] const Vec2f &getLocalPosition() const;
 
-        void setLocalPosition(const Vec2 &position);
+        /**
+         * Set the local position of the node relative to its parent.
+         * Children positions will be updated accordingly.
+         * @param position
+         */
+        void setLocalPosition(const Vec2f &position);
 
-        [[nodiscard]] const Vec2 &getGlobalScale() const;
+        /**
+         *
+         * @return the absolute global scale of the node in the scene.
+         */
+        [[nodiscard]] const Vec2f &getGlobalScale() const;
 
-        void setGlobalScale(const Vec2 &scale);
+        /**
+         * Set the absolute global scale of the node in the scene.
+         * Children scales will be updated accordingly.
+         * @param scale
+         */
+        void setGlobalScale(const Vec2f &scale);
 
-        [[nodiscard]] const Vec2 &getLocalScale() const;
+        /**
+         *
+         * @return the local scale of the node relative to its parent.
+         */
+        [[nodiscard]] const Vec2f &getLocalScale() const;
 
-        void setLocalScale(const Vec2 &scale);
+        /**
+         * Set the local scale of the node relative to its parent.
+         * Children scales will be updated accordingly.
+         * @param scale
+         */
+        void setLocalScale(const Vec2f &scale);
 
+        /**
+         *
+         * @return the absolute global rotation of the node in the scene, in degrees.
+         */
         [[nodiscard]] double getGlobalRotation() const;
 
+        /**
+         * Set the absolute global rotation of the node in the scene, in degrees.
+         * Children rotations will be updated accordingly.
+         * @param rotation
+         */
         void setGlobalRotation(double rotation);
 
+        /**
+         *
+         * @return the local rotation of the node relative to its parent, in degrees.
+         */
         [[nodiscard]] double getLocalRotation() const;
 
+        /**
+         * Set the local rotation of the node relative to its parent, in degrees.
+         * Children rotations will be updated accordingly.
+         * @param rotation
+         */
         void setLocalRotation(double rotation);
     };
 } // e2XD

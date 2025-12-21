@@ -18,22 +18,53 @@ namespace e2XD::core {
     template <typename T>
     concept IsNode = std::is_base_of_v<Node, T>;
 
+    /**
+     * A node in the scene graph.
+     * Is renderable by the Renderer.
+     */
     class Node : public Renderable{
         bool markedForDeletion = false;
         std::list<std::unique_ptr<Node>> nodes;
 
+        /**
+         * Remove all sub-nodes that are marked for deletion.
+         */
         void removeDestroyedSubNodes();
     protected:
+        /**
+         * Placeholder for user-defined update logic.
+         * This method is called during the update phase of the node.
+         */
         virtual void onUpdate(){};
 
+        /**
+         * Placeholder for internal update logic.
+         * This method is called during the update phase of the node.
+         */
         virtual void _internal_onUpdate(){};
 
+        /**
+         * Placeholder for user-defined creation logic.
+         * This method is called when the node is created.
+         */
         virtual void onCreate(){};
 
+        /**
+         * Placeholder for internal creation logic.
+         * This method is called when the node is created.
+         */
         virtual void _internal_onCreate(){};
 
+        /**
+         * Placeholder for user-defined destruction logic.
+         * This method is called when the node is destroyed.
+         */
         virtual void onDestroy(){};
 
+        /**
+         * Placeholder for internal destruction logic.
+         * This method is called when the node is destroyed.
+         */
         virtual void _internal_onDestroy(){};
 
         void _internal_onDraw() override;
@@ -42,19 +73,39 @@ namespace e2XD::core {
         friend class CORE_Node;
         friend class Node2D;
 
+        /**
+         * Creat a new empty node.
+         */
         Node()=default;
-
         ~Node() override = default;
 
+        /**
+         * Update the node and its sub-nodes.
+         */
         void update();
 
+        /**
+         * Create the node and its sub-nodes.
+         */
         void create();
 
+        /**
+         * Destroy the node and its sub-nodes.
+         */
         void destroy();
 
+        /**
+         * Create and add a sub-node of the specified type.
+         * @tparam EntityType
+         * @return a pointer to the created sub-node.
+         */
         template <IsNode EntityType>
         EntityType* createSubNode();
 
+        /**
+         * Add a sub-node to this node.
+         * @param node
+         */
         void addSubNode(std::unique_ptr<Node> node);
 
         /**

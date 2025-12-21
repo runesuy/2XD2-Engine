@@ -20,7 +20,7 @@ namespace e2XD::framework::internal
         if (!window) throw NotInitializedException("SFMLInputHandler", "void SFMLInputHandler::pollEvents()");
 
         const auto posM = sf::Mouse::getPosition();
-        mousePosition = core::Vec2(posM.x, posM.y);
+        mousePosition = core::Vec2f(posM.x, posM.y);
 
         sf::Event event{};
         while (window->pollEvent(event))
@@ -66,7 +66,7 @@ namespace e2XD::framework::internal
         return false;
     }
 
-    core::Vec2 SFMLInputHandler::getMousePosition() const
+    core::Vec2f SFMLInputHandler::getMousePosition() const
     {
         return mousePosition;
     }

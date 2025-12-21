@@ -18,7 +18,7 @@ Player::Player()
 
 void Player::onUpdate()
 {
-    e2XD::core::Vec2 velocity{0,0};
+    e2XD::core::Vec2f velocity{0,0};
     if (Input::isKeyPressed(Key::W))
     {
         velocity.y -= speed;

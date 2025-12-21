@@ -12,6 +12,9 @@
 
 namespace e2XD::framework
 {
+    /**
+     * A 2D sprite node.
+     */
     class Sprite2D : public core::Node2D
     {
         sf::Sprite _sprite;

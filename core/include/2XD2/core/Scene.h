@@ -14,6 +14,9 @@ namespace e2XD::core {
     template <typename T>
     concept IsScene = std::is_base_of_v<Scene, T>;
 
+    /**
+     * Scene node representing the root of a scene graph.
+     */
     class Scene: public Node {
         const Camera* activeCamera = nullptr;
     public:

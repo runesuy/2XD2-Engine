@@ -11,6 +11,9 @@
 
 namespace e2XD::framework::internal::input
 {
+    /**
+     * Map used by SFMLInputHandler to convert SFML key codes to framework key codes
+     */
     inline std::unordered_map<sf::Keyboard::Key, Key> keyboardMap{
         {sf::Keyboard::A, Key::A},
         {sf::Keyboard::B, Key::B},
