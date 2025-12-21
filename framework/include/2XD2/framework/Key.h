@@ -5,6 +5,9 @@
 #ifndef INC_2XD2_ENGINE_INPUTEVENT_H
 #define INC_2XD2_ENGINE_INPUTEVENT_H
 
+/**
+ * Enum representing various keys on the keyboard.
+ */
 enum class Key
 {
     NONE,
