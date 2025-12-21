@@ -6,8 +6,8 @@
 #define INC_2XD2_ENGINE_IINPUTMANAGER_H
 #include <SFML/Graphics/RenderWindow.hpp>
 
-#include "Key.h"
-#include "MouseButton.h"
+#include "../Key.h"
+#include "../MouseButton.h"
 #include "tuple"
 #include "2XD2/core/Vec2.h"
 
@@ -17,6 +17,8 @@ namespace e2XD::framework
     class IInputHandler
     {
     public:
+        virtual void initialize(sf::RenderWindow* window)=0;
+
         virtual ~IInputHandler() = default;
 
         virtual void pollEvents() = 0;

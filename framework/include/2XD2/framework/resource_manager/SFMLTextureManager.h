@@ -9,39 +9,31 @@
 #include <string>
 #include <SFML/Graphics/Texture.hpp>
 
+#include "ITextureManager.h"
+
 
 namespace e2XD::framework
 {
     /**
      * Singleton
      */
-    class SFMLTextureManager final
+    class SFMLTextureManager final : public ITextureManager
     {
         std::unordered_map<std::string, sf::Texture> loadedTextures;
         std::set<std::string> loadedFiles;
 
-        inline static SFMLTextureManager* _instance = nullptr;
-
-        SFMLTextureManager() = default;
-
     public:
         friend class FRAMEWORK_SFMLTextureParser_TEST;
-        SFMLTextureManager(const SFMLTextureManager&) = delete;
-        SFMLTextureManager& operator=(const SFMLTextureManager&) = delete;
-        SFMLTextureManager& operator=(SFMLTextureManager&&) = delete;
-        SFMLTextureManager(SFMLTextureManager&&) = delete;
+        SFMLTextureManager() = default;
+        ~SFMLTextureManager() override = default;
 
-        ~SFMLTextureManager() = default;
+        [[nodiscard]] const sf::Texture& getTexture(const std::string& name) const override;
 
-        static SFMLTextureManager* getInstance();
+        void loadJsonTextureConfig(const std::string& jsonFilePath) override;
 
-        [[nodiscard]] const sf::Texture& getTexture(const std::string& name) const;
+        bool isJsonTextureLoaded(const std::string& jsonFilePath) const override;
 
-        void loadJsonTextureConfig(const std::string& jsonFilePath);
-
-        bool isJsonTextureLoaded(const std::string& jsonFilePath) const;
-
-        bool loadJsonTextureConfigIfNotLoaded(const std::string& jsonFilePath);
+        bool loadJsonTextureConfigIfNotLoaded(const std::string& jsonFilePath) override;
     };
 }
 

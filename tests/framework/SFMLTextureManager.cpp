@@ -11,26 +11,18 @@ namespace e2XD::framework
     class FRAMEWORK_SFMLTextureParser_TEST : public ::testing::Test
     {
     public:
-        static const std::unordered_map<std::string, sf::Texture>& getLoadedTextures()
+        SFMLTextureManager* parser = new SFMLTextureManager();
+        const std::unordered_map<std::string, sf::Texture>& getLoadedTextures()
         {
-            return SFMLTextureManager::getInstance()->loadedTextures;
+            return parser->loadedTextures;
         }
     };
 
-    TEST_F(FRAMEWORK_SFMLTextureParser_TEST, getInstanceTest)
-    {
-        SFMLTextureManager* instance1 = SFMLTextureManager::getInstance();
-        SFMLTextureManager* instance2 = SFMLTextureManager::getInstance();
-        ASSERT_EQ(instance1, instance2);
-        ASSERT_TRUE(instance1);
-        ASSERT_TRUE(instance2);
-    }
+
 
     TEST_F(FRAMEWORK_SFMLTextureParser_TEST, loadJsonTextureConfigTest)
     {
-        SFMLTextureManager* parser = SFMLTextureManager::getInstance();
         ASSERT_NO_THROW(parser->loadJsonTextureConfig("framework/resources/input/test_textures.json"));
-
         const auto& textures = getLoadedTextures();
         ASSERT_EQ(textures.size(), 4); // Assuming the JSON file defines 2 textures
 
@@ -43,7 +35,6 @@ namespace e2XD::framework
 
     TEST_F(FRAMEWORK_SFMLTextureParser_TEST, getTextureTest)
     {
-        SFMLTextureManager* parser = SFMLTextureManager::getInstance();
         parser->loadJsonTextureConfig("framework/resources/input/test_textures.json");
 
         ASSERT_NO_THROW({

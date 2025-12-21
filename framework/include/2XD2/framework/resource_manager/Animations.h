@@ -1,31 +1,26 @@
 //
-// Created by rune-suy on 12/18/25.
+// Created by rune-suy on 12/21/25.
 //
 
-#ifndef FLATLAND_ANIMATIONMANAGER_H
-#define FLATLAND_ANIMATIONMANAGER_H
-#include <set>
+#ifndef INC_2XD2_ENGINE_ANIMATIONS_H
+#define INC_2XD2_ENGINE_ANIMATIONS_H
 #include <string>
-#include <unordered_map>
 
+#include "IAnimationManager.h"
+#include "Resources.h"
 #include "2XD2/framework/AnimationMap.h"
 
 namespace e2XD::framework
 {
-    /**
-     * Singleton
-     */
-    class SFMLAnimationManager final
+    class Resources::Animations final
     {
-        std::unordered_map<std::string, AnimationMap> loadedAnimationMaps;
-
-        std::set<std::string> loadedFiles;
+        inline static IAnimationManager* _animationManager=nullptr;
 
     public:
-        SFMLAnimationManager()=default;
-        ~SFMLAnimationManager() = default;
+        static void initialize(IAnimationManager* animationManager);
 
-        [[nodiscard]] const AnimationMap& getAnimationMap(const std::string& name) const;
+
+        [[nodiscard]] static const AnimationMap& getAnimationMap(const std::string& name);
 
         /**
          * Load animations in the manager using a json config file.
@@ -53,13 +48,14 @@ namespace e2XD::framework
          *
          * @param jsonFilePath
          */
-        void loadJsonAnimationConfig(const std::string& jsonFilePath);
+        static void loadJsonAnimationConfig(const std::string& jsonFilePath);
 
 
-        bool isJsonAnimationLoaded(const std::string& jsonFilePath) const;
+        [[nodiscard]] static bool isJsonAnimationLoaded(const std::string& jsonFilePath);
 
-        bool loadJsonAnimationConfigIfNotLoaded(const std::string& jsonFilePath);
+        static bool loadJsonAnimationConfigIfNotLoaded(const std::string& jsonFilePath);
     };
-}
+} // framework
+// e2XD
 
-#endif //FLATLAND_ANIMATIONMANAGER_H
+#endif //INC_2XD2_ENGINE_ANIMATIONS_H

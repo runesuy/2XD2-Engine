@@ -5,6 +5,8 @@
 #include "2XD2/framework/nodes/Sprite2D.h"
 
 #include "../../include/2XD2/framework/resource_manager/SFMLTextureManager.h"
+#include "2XD2/framework/resource_manager/Resources.h"
+#include "2XD2/framework/resource_manager/Textures.h"
 #include "2XD2/renderer/Renderer.h"
 
 
@@ -12,7 +14,7 @@ namespace e2XD::framework
 {
     void Sprite2D::setTexture(const std::string& textureName)
     {
-        setTexture(SFMLTextureManager::getInstance()->getTexture(textureName));
+        setTexture(Resources::Textures::getTexture(textureName));
     }
 
     void Sprite2D::setTexture(const sf::Texture& texture)

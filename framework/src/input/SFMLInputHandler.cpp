@@ -2,25 +2,15 @@
 // Created by runes on 14/12/2025.
 //
 
-#include "2XD2/framework/SFMLInputHandler.h"
+#include "../../include/2XD2/framework/input/SFMLInputHandler.h"
 
 #include <SFML/Window/Event.hpp>
 
-#include "2XD2/framework/SFMLToInputMap.h"
-#include "../../core/include/2XD2/core/exceptions/NotInitializedException.h"
+#include "../../include/2XD2/framework/input/SFMLToInputMap.h"
+#include "../../../core/include/2XD2/core/exceptions/NotInitializedException.h"
 
-namespace e2XD::framework
+namespace e2XD::framework::internal
 {
-    SFMLInputHandler* SFMLInputHandler::getInstance()
-    {
-        if (!_instance) _instance = new SFMLInputHandler();
-        return _instance;
-    }
-
-    SFMLInputHandler::~SFMLInputHandler()
-    {
-        delete _instance;
-    }
 
     void SFMLInputHandler::pollEvents()
     {

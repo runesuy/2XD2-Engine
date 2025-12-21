@@ -9,17 +9,13 @@
 
 #include "json.hpp"
 #include "../../../core/include/2XD2/core/exceptions/FileLoadingFailedException.h"
+#include "2XD2/framework/resource_manager/Resources.h"
 #include "2XD2/framework/resource_manager/SFMLTextureManager.h"
+#include "2XD2/framework/resource_manager/Textures.h"
 
 
 namespace e2XD::framework
 {
-    SFMLAnimationManager* SFMLAnimationManager::getInstance()
-    {
-        if (!_instance) _instance = new SFMLAnimationManager();
-        return _instance;
-    }
-
     const AnimationMap& SFMLAnimationManager::getAnimationMap(const std::string& name) const
     {
         if (loadedAnimationMaps.contains(name))  return loadedAnimationMaps.at(name);
@@ -44,10 +40,9 @@ namespace e2XD::framework
             const float& frame_duration = animation.at("frame-duration");
             const auto& framesList = animation.at("frames");
             std::vector<const sf::Texture*> frameTextures;
-            auto* textureManager = SFMLTextureManager::getInstance();
             for (const auto& frame : framesList)
             {
-                const sf::Texture& texture = textureManager->getTexture(frame);
+                const sf::Texture& texture = Resources::Textures::getTexture(frame);
                 frameTextures.push_back(&texture);
             }
 

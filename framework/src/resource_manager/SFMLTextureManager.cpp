@@ -53,12 +53,6 @@ namespace e2XD::framework
         throw std::invalid_argument("SFMLTextureParser::getTexture: Texture does not exist");
     }
 
-    SFMLTextureManager* SFMLTextureManager::getInstance()
-    {
-        if (!_instance) _instance = new SFMLTextureManager();
-        return _instance;
-    }
-
     bool SFMLTextureManager::isJsonTextureLoaded(const std::string& jsonFilePath) const
     {
         return loadedFiles.contains(jsonFilePath);

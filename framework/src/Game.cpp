@@ -5,30 +5,41 @@
 #include "2XD2/framework/Game.h"
 
 #include "2XD2/core/Time.h"
-#include "2XD2/framework/SFMLInputHandler.h"
+#include "../include/2XD2/framework/input/SFMLInputHandler.h"
+#include "2XD2/framework/input/Input.h"
+#include "2XD2/framework/resource_manager/Animations.h"
+#include "2XD2/framework/resource_manager/Resources.h"
+#include "2XD2/framework/resource_manager/Textures.h"
 #include "2XD2/renderer/Renderer.h"
 
 
 namespace e2XD::framework {
+    Game::Game(IGameConfig& config)
+    {
+        config.getInputHandler()->initialize(&window);
+        Input::initialize(config.getInputHandler());
+        Resources::Textures::initialize(config.getTextureManager());
+        Resources::Animations::initialize(config.getAnimationManager());
+    }
+
+
     void Game::run() {
         running = true;
         window.setKeyRepeatEnabled(false);
 
         renderer::Renderer::getInstance()->initialize(&window);
-        const auto inputHandler = SFMLInputHandler::getInstance();
-        inputHandler->initialize(&window);
 
         while (running && window.isOpen()) {
             core::Time::tick();
             // Poll events
-            SFMLInputHandler::getInstance()->pollEvents();
-            if (const auto& resized = SFMLInputHandler::getInstance()->isWindowResized(); std::get<0>(resized))
+            Input::pollEvents();
+            if (const auto& resized = Input::isWindowResized(); std::get<0>(resized))
             {
                 sf::FloatRect visibleArea(0, 0, std::get<1>(resized), std::get<2>(resized));
                 window.setView(sf::View(visibleArea));
             }
 
-            if (SFMLInputHandler::getInstance()->isWindowClosed()) window.close();
+            if (Input::isWindowClosed()) window.close();
 
             if (activeScene) {
                 activeScene->update();
@@ -40,7 +51,7 @@ namespace e2XD::framework {
             }
             renderer::Renderer::getInstance()->flush(activeScene ? activeScene->getActiveCamera() : nullptr);
             window.display();
-            inputHandler->newFrame();
+            Input::newFrame();
         }
     }
 

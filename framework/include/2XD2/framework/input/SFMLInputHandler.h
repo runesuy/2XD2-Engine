@@ -11,15 +11,13 @@
 #include "IInputHandler.h"
 #include "2XD2/core/Vec2.h"
 
-namespace e2XD::framework
+namespace e2XD::framework::internal
 {
     /**
      * Singleton class to manage input from keyboard, mouse, and other devices
      */
-    class SFMLInputHandler : public IInputHandler
+    class SFMLInputHandler final : public IInputHandler
     {
-        inline static SFMLInputHandler* _instance = nullptr;
-
         sf::RenderWindow* window = nullptr;
         using keyboardMapType = std::unordered_map<Key, bool>;
         using mouseButtonMapType = std::unordered_map<MouseButton, bool>;
@@ -33,8 +31,6 @@ namespace e2XD::framework
 
         core::Vec2 mousePosition;
 
-        SFMLInputHandler() = default;
-
         void handleEvent(const sf::Event& event);
 
         void handleKeyPress(sf::Keyboard::Key sfmlKeyCode);
@@ -46,13 +42,9 @@ namespace e2XD::framework
         void handleMouseButtonRelease(sf::Mouse::Button sfmlButtonCode);
 
     public:
-        SFMLInputHandler(const SFMLInputHandler&) = delete;
+        SFMLInputHandler() = default;
 
         ~SFMLInputHandler() override;
-
-        SFMLInputHandler& operator=(const SFMLInputHandler&) = delete;
-
-        static SFMLInputHandler* getInstance();
 
         void pollEvents() override;
 
@@ -73,7 +65,7 @@ namespace e2XD::framework
          */
         std::tuple<bool, float, float> isWindowResized() const override;
 
-        void initialize(sf::RenderWindow* window);
+        void initialize(sf::RenderWindow* window) override;
         [[nodiscard]] bool isWindowClosed() const override;
         void newFrame() override;
     };

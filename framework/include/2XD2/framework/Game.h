@@ -8,6 +8,7 @@
 
 #include "2XD2/core/Scene.h"
 #include <SFML/Graphics.hpp>
+#include "IGameConfig.h"
 
 namespace e2XD::framework
 {
@@ -19,7 +20,7 @@ namespace e2XD::framework
         inline static bool running = false;
 
     public:
-        Game() = default;
+        explicit Game(IGameConfig& config);
         void run();
 
         void setWindowTitle(const std::string& title);

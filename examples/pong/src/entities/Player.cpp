@@ -5,7 +5,10 @@
 #include "Player.h"
 
 #include "2XD2/core/Time.h"
-#include "2XD2/framework/SFMLInputHandler.h"
+#include "../../../../framework/include/2XD2/framework/input/SFMLInputHandler.h"
+#include "2XD2/framework/input/Input.h"
+
+using namespace e2XD::framework;
 
 Player::Player()
 {
@@ -15,13 +18,12 @@ Player::Player()
 
 void Player::onUpdate()
 {
-    const auto* inputHandler = e2XD::framework::SFMLInputHandler::getInstance();
     e2XD::core::Vec2 velocity{0,0};
-    if (inputHandler->isKeyPressed(Key::W))
+    if (Input::isKeyPressed(Key::W))
     {
         velocity.y -= speed;
     }
-    if (inputHandler->isKeyPressed(Key::S))
+    if (Input::isKeyPressed(Key::S))
     {
         velocity.y += speed;
     }
