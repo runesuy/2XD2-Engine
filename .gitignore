@@ -1,3 +1,4 @@
 doxygen/
 build/
 Testing/
+_codeql_build_dir/

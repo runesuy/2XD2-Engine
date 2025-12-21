@@ -1,2 +1,0 @@
-/usr/bin/ar qc lib2XD2_Engine_Core.a CMakeFiles/2XD2_Engine_Core.dir/src/Camera.cpp.o CMakeFiles/2XD2_Engine_Core.dir/src/Node.cpp.o CMakeFiles/2XD2_Engine_Core.dir/src/Node2D.cpp.o CMakeFiles/2XD2_Engine_Core.dir/src/Renderable.cpp.o CMakeFiles/2XD2_Engine_Core.dir/src/Scene.cpp.o CMakeFiles/2XD2_Engine_Core.dir/src/Time.cpp.o CMakeFiles/2XD2_Engine_Core.dir/src/Transform2D.cpp.o CMakeFiles/2XD2_Engine_Core.dir/src/Vec2f.cpp.o
-/usr/bin/ranlib lib2XD2_Engine_Core.a
