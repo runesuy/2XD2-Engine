@@ -14,9 +14,7 @@ namespace e2XD::core
 
     void Camera::setZoom(const float newZoom)
     {
-        zoom=newZoom;
+        zoom = newZoom;
     }
-
-
 } // core
 // e2XD

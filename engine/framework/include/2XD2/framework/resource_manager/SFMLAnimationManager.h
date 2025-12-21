@@ -23,7 +23,7 @@ namespace e2XD::framework
         std::set<std::string> loadedFiles;
 
     public:
-        SFMLAnimationManager()=default;
+        SFMLAnimationManager() = default;
         ~SFMLAnimationManager() override = default;
 
         [[nodiscard]] const AnimationMap& getAnimationMap(const std::string& name) const override;

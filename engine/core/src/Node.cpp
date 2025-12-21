@@ -4,41 +4,56 @@
 
 #include "2XD2/core/Node.h"
 
-namespace e2XD::core {
-    void Node::destroy() {
+namespace e2XD::core
+{
+    void Node::destroy()
+    {
         markedForDeletion = true;
-        for (const auto & node : nodes) {
+        for (const auto& node : nodes)
+        {
             node->destroy();
         }
         onDestroy();
     }
 
-    void Node::create() {
-        for (const auto & node : nodes) {
+    void Node::create()
+    {
+        for (const auto& node : nodes)
+        {
             node->create();
         }
         onCreate();
     }
-    void Node::update() {
+
+    void Node::update()
+    {
         removeDestroyedSubNodes();
-        for (const auto & node : nodes) {
+        for (const auto& node : nodes)
+        {
             node->update();
         }
         onUpdate();
     }
 
-    void Node::_internal_onDraw() {
-        for (const auto & node : nodes) {
+    void Node::_internal_onDraw()
+    {
+        for (const auto& node : nodes)
+        {
             node->draw();
         }
     }
 
-    void Node::removeDestroyedSubNodes() {
-        for (auto it = nodes.begin(); it != nodes.end(); ) {
-            if ((*it)->markedForDeletion) {
+    void Node::removeDestroyedSubNodes()
+    {
+        for (auto it = nodes.begin(); it != nodes.end();)
+        {
+            if ((*it)->markedForDeletion)
+            {
                 (*it)->destroy();
                 it = nodes.erase(it);
-            } else {
+            }
+            else
+            {
                 ++it;
             }
         }

@@ -18,14 +18,15 @@ namespace e2XD::framework
 {
     const AnimationMap& SFMLAnimationManager::getAnimationMap(const std::string& name) const
     {
-        if (loadedAnimationMaps.contains(name))  return loadedAnimationMaps.at(name);
+        if (loadedAnimationMaps.contains(name)) return loadedAnimationMaps.at(name);
         throw std::invalid_argument("SFMLAnimationManager::getAnimationMap: Animation map does not exist");
     }
 
     void SFMLAnimationManager::loadJsonAnimationConfig(const std::string& jsonFilePath)
     {
         std::ifstream file(jsonFilePath);
-        if (!file.is_open()) throw FileLoadingFailedException(jsonFilePath, "void SFMLAnimationManager::loadJsonAnimationConfig(const std::string& jsonFilePath)");
+        if (!file.is_open()) throw FileLoadingFailedException(jsonFilePath,
+                                                              "void SFMLAnimationManager::loadJsonAnimationConfig(const std::string& jsonFilePath)");
         nlohmann::json json;
         file >> json;
         file.close();
@@ -46,9 +47,8 @@ namespace e2XD::framework
                 frameTextures.push_back(&texture);
             }
 
-            Animation newAnimation={frameTextures, frame_duration, repeat};
+            Animation newAnimation = {frameTextures, frame_duration, repeat};
             loadedAnimationMaps[mapName][name] = newAnimation;
-
         }
     }
 
@@ -67,7 +67,5 @@ namespace e2XD::framework
         }
         return false;
     }
-
-
 } // framework
 // e2XD

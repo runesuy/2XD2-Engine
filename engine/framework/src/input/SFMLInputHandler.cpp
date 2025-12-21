@@ -11,7 +11,6 @@
 
 namespace e2XD::framework::internal
 {
-
     void SFMLInputHandler::pollEvents()
     {
         windowResized = {false, 0, 0};
@@ -176,7 +175,4 @@ namespace e2XD::framework::internal
         last_frame_mouseButtonState = this_frame_mouseButtonState;
         last_frame_keyboardState = this_frame_keyboardState;
     }
-
-
-
 } // core

@@ -14,11 +14,13 @@
 #include "2XD2/renderer/Renderer.h"
 
 
-namespace e2XD::framework {
+namespace e2XD::framework
+{
     Game::Game(IGameConfig& config)
     {
         auto inputHandler = config.getInputHandler();
-        if (!inputHandler) throw NotInitializedException("GameConfig.getInputHandler()", "Game::Game(IGameConfig& config)");
+        if (!inputHandler) throw NotInitializedException("GameConfig.getInputHandler()",
+                                                         "Game::Game(IGameConfig& config)");
         config.getInputHandler()->initialize(&window);
         Input::initialize(config.getInputHandler());
         Resources::Textures::initialize(config.getTextureManager());
@@ -26,13 +28,15 @@ namespace e2XD::framework {
     }
 
 
-    void Game::run() {
+    void Game::run()
+    {
         running = true;
         window.setKeyRepeatEnabled(false);
 
         renderer::Renderer::getInstance()->initialize(&window);
 
-        while (running && window.isOpen()) {
+        while (running && window.isOpen())
+        {
             core::Time::tick();
             // Poll events
             Input::pollEvents();
@@ -44,12 +48,13 @@ namespace e2XD::framework {
 
             if (Input::isWindowClosed()) window.close();
 
-            if (activeScene) {
+            if (activeScene)
+            {
                 activeScene->update();
                 const auto& renderer = renderer::Renderer::getInstance();
                 renderer->clearWindow();
                 const auto& activeCamera = activeScene->getActiveCamera();
-                core::Vec2f cameraPos = {0,0};
+                core::Vec2f cameraPos = {0, 0};
                 activeScene->draw();
             }
             renderer::Renderer::getInstance()->flush(activeScene ? activeScene->getActiveCamera() : nullptr);
@@ -68,5 +73,4 @@ namespace e2XD::framework {
         activeScene = std::move(scene);
         activeScene->create();
     }
-
 }

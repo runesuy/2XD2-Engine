@@ -13,23 +13,24 @@
 
 
 namespace e2XD::framework
+{
+    /**
+     * The default game configuration used by the framework's default game implementation.
+     */
+    class DefaultGameConfig : public IGameConfig
     {
-        /**
-         * The default game configuration used by the framework's default game implementation.
-         */
-        class DefaultGameConfig :public IGameConfig
-        {
-            std::unique_ptr<IInputHandler> inputHandler = std::make_unique<internal::SFMLInputHandler>();
-            std::unique_ptr<ITextureManager> textureManager = std::make_unique<SFMLTextureManager>();
-            std::unique_ptr<IAnimationManager> animationManager = std::make_unique<SFMLAnimationManager>();
-        public:
-            [[nodiscard]] IInputHandler* getInputHandler() const override;
+        std::unique_ptr<IInputHandler> inputHandler = std::make_unique<internal::SFMLInputHandler>();
+        std::unique_ptr<ITextureManager> textureManager = std::make_unique<SFMLTextureManager>();
+        std::unique_ptr<IAnimationManager> animationManager = std::make_unique<SFMLAnimationManager>();
 
-            [[nodiscard]] IAnimationManager* getAnimationManager() const override;
+    public:
+        [[nodiscard]] IInputHandler* getInputHandler() const override;
 
-            [[nodiscard]] ITextureManager* getTextureManager() const override;
-        };
-    } // framework
+        [[nodiscard]] IAnimationManager* getAnimationManager() const override;
+
+        [[nodiscard]] ITextureManager* getTextureManager() const override;
+    };
+} // framework
 // e2XD
 
 #endif //INC_2XD2_ENGINE_DEFAULTGAMECONFIG_H

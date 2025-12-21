@@ -19,13 +19,12 @@ namespace e2XD::framework
     public:
         virtual ~IGameConfig() = default;
 
-        [[nodiscard]] virtual IInputHandler *getInputHandler() const=0;
+        [[nodiscard]] virtual IInputHandler* getInputHandler() const =0;
 
-        [[nodiscard]] virtual IAnimationManager* getAnimationManager() const=0;
+        [[nodiscard]] virtual IAnimationManager* getAnimationManager() const =0;
 
-        [[nodiscard]] virtual ITextureManager* getTextureManager() const=0;
+        [[nodiscard]] virtual ITextureManager* getTextureManager() const =0;
     };
-
 } // framework
 // e2XD
 

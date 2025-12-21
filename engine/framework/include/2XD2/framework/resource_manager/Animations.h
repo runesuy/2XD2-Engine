@@ -14,7 +14,7 @@ namespace e2XD::framework
 {
     class Resources::Animations final
     {
-        inline static IAnimationManager* _animationManager=nullptr;
+        inline static IAnimationManager* _animationManager = nullptr;
 
     public:
         static void initialize(IAnimationManager* animationManager);

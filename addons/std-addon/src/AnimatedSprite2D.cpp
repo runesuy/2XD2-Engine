@@ -2,14 +2,14 @@
 // Created by rune-suy on 12/17/25.
 //
 
-#include "2XD2/framework/nodes/AnimatedSprite2D.h"
+#include "../include/2XD2/std_addon/AnimatedSprite2D.h"
 
 #include "2XD2/core/Time.h"
 
 
-namespace e2XD::framework
+namespace e2XD::std_addon
 {
-    void AnimatedSprite2D::setAnimations(const std::unordered_map<std::string, Animation>& newAnimations)
+    void AnimatedSprite2D::setAnimations(const std::unordered_map<std::string, framework::Animation>& newAnimations)
     {
         animations = &newAnimations;
         _currentFrameIndex = 0;
@@ -18,7 +18,7 @@ namespace e2XD::framework
 
     void AnimatedSprite2D::playAnimation(const std::string& name, const bool continueAtCurrentFrame)
     {
-        if (name ==_currentAnimationName) return;
+        if (name == _currentAnimationName) return;
         _currentAnimationName = name;
         if (!animations)
         {
@@ -30,7 +30,8 @@ namespace e2XD::framework
             _currentAnimation = animations->at(name);
             if (continueAtCurrentFrame)
             {
-                _currentFrameIndex = std::min(_currentFrameIndex, static_cast<unsigned int>(_currentAnimation.getFrames().size()-1));
+                _currentFrameIndex = std::min(_currentFrameIndex,
+                                              static_cast<unsigned int>(_currentAnimation.getFrames().size() - 1));
                 _frameTimer = std::min(_frameTimer, _currentAnimation.getFrameDuration());
             }
             else
@@ -47,8 +48,9 @@ namespace e2XD::framework
         }
     }
 
-    AnimatedSprite2D::AnimatedSprite2D(const std::unordered_map<std::string, Animation>* animations) : animations(
-        animations)
+    AnimatedSprite2D::AnimatedSprite2D(const std::unordered_map<std::string, framework::Animation>* animations) :
+        animations(
+            animations)
     {
     }
 
@@ -79,7 +81,5 @@ namespace e2XD::framework
             }
         }
     }
-
-
 } // framework
 // e2XD

@@ -35,7 +35,7 @@ namespace e2XD::framework
     T* Game::createActiveScene()
     {
         auto scene = new T();
-        auto uniqueScene = std::unique_ptr < T > (scene);
+        auto uniqueScene = std::unique_ptr<T>(scene);
         setActiveScene(std::move(uniqueScene));
         return scene;
     }

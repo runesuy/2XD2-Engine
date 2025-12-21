@@ -2,12 +2,12 @@
 // Created by rune-suy on 12/20/25.
 //
 
-#include "../../include/2XD2/framework/nodes/Rectangle2D.h"
+#include "../include/2XD2/std_addon/Rectangle2D.h"
 
 #include "2XD2/renderer/Renderer.h"
 
 
-namespace e2XD::framework
+namespace e2XD::std_addon
 {
     void Rectangle2D::_internal_onDraw()
     {
@@ -15,11 +15,11 @@ namespace e2XD::framework
         const auto& position = getGlobalPosition();
         rectangleShape.setOrigin(rectangleShape.getSize().x / 2, rectangleShape.getSize().y / 2);
         renderer->submit({
-             renderLayer,
-             &rectangleShape,
-             {position.x, position.y},
-             zIndex
-         });
+            renderLayer,
+            &rectangleShape,
+            {position.x, position.y},
+            zIndex
+        });
         Node2D::_internal_onDraw();
     }
 
@@ -32,6 +32,5 @@ namespace e2XD::framework
     {
         rectangleShape.setSize({size.x, size.y});
     }
-
 } // framework
 // e2XD

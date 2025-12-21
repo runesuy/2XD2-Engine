@@ -45,10 +45,10 @@ namespace e2XD::renderer
                 {
                     const auto& camPos = worldCamera->getGlobalPosition();
                     auto view = sf::View{
-                        {camPos.x, camPos.y}, sf::Vector2f{window->getSize()}};
+                        {camPos.x, camPos.y}, sf::Vector2f{window->getSize()}
+                    };
                     view.zoom(worldCamera->getZoom());
                     window->setView(view);
-
                 }
                 else
                 {
@@ -58,7 +58,8 @@ namespace e2XD::renderer
                 // sort by zIndex
 
                 std::ranges::sort(renderQueue[layer],
-                                  [](const RenderCommand& a, const RenderCommand& b) {
+                                  [](const RenderCommand& a, const RenderCommand& b)
+                                  {
                                       if (a.zIndex != b.zIndex) return a.zIndex < b.zIndex;
                                       return a.position.y < b.position.y;
                                   });
@@ -74,7 +75,4 @@ namespace e2XD::renderer
         }
         renderQueue.clear();
     }
-
-
-
 } // e2XD

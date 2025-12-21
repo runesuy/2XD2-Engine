@@ -6,10 +6,11 @@
 
 
 namespace e2XD::core
+{
+    void Renderable::draw()
     {
-        void Renderable::draw() {
-            _internal_onDraw();
-            onDraw();
-        }
-    } // core
+        _internal_onDraw();
+        onDraw();
+    }
+} // core
 // e2XD

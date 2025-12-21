@@ -25,7 +25,7 @@ namespace e2XD::framework
          * @param name
          * @return the texture associated with the given name.
          */
-        [[nodiscard]] virtual  const sf::Texture& getTexture(const std::string& name) const =0;
+        [[nodiscard]] virtual const sf::Texture& getTexture(const std::string& name) const =0;
 
         /**
          *
@@ -52,21 +52,21 @@ namespace e2XD::framework
          *}
          *@endcode
          */
-        virtual void loadJsonTextureConfig(const std::string& jsonFilePath)=0;
+        virtual void loadJsonTextureConfig(const std::string& jsonFilePath) =0;
 
         /**
          *
          * @param jsonFilePath
          * @return true if the json texture config file has already been loaded in the manager.
          */
-        [[nodiscard]] virtual bool isJsonTextureLoaded(const std::string& jsonFilePath) const=0;
+        [[nodiscard]] virtual bool isJsonTextureLoaded(const std::string& jsonFilePath) const =0;
 
         /**
          * Load textures in the manager using a json config file if it has not been loaded yet.
          * @param jsonFilePath
          * @return true if the json texture config file was not loaded and has been loaded by this call.
          */
-        virtual bool loadJsonTextureConfigIfNotLoaded(const std::string& jsonFilePath)=0;
+        virtual bool loadJsonTextureConfigIfNotLoaded(const std::string& jsonFilePath) =0;
     };
 } // framework
 // e2XD

@@ -7,7 +7,8 @@
 
 namespace e2XD::renderer
 {
-    RenderCommand::RenderCommand(const RenderLayer renderLayer, const sf::Drawable* drawable, const sf::Vector2f& position,
+    RenderCommand::RenderCommand(const RenderLayer renderLayer, const sf::Drawable* drawable,
+                                 const sf::Vector2f& position,
                                  const int zIndex) :
         renderLayer(renderLayer),
         drawable(drawable),

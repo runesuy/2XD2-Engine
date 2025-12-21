@@ -10,7 +10,7 @@
 #include "2XD2/core/Node2D.h"
 
 
-namespace e2XD::framework
+namespace e2XD::std_addon
 {
     /**
      * A 2D sprite node.

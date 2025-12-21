@@ -4,10 +4,10 @@
 
 #ifndef INC_2XD2_ENGINE_PLAYER_H
 #define INC_2XD2_ENGINE_PLAYER_H
-#include "2XD2/framework/nodes/Rectangle2D.h"
+#include "2XD2/std_addon/Rectangle2D.h"
 
 
-class Player : public e2XD::framework::Rectangle2D
+class Player : public e2XD::std_addon::Rectangle2D
 {
     float speed = 300.0f;
     static constexpr float minY = -280.0f;

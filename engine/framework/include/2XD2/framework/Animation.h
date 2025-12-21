@@ -21,8 +21,9 @@ namespace e2XD::framework
 
     public:
         Animation() = default;
-        Animation(const std::initializer_list<const sf::Texture*> &frameList, float frameDuration, bool isLooping = false);
-        Animation(const std::vector<const sf::Texture*> &frameList, float frameDuration, bool isLooping = false);
+        Animation(const std::initializer_list<const sf::Texture*>& frameList, float frameDuration,
+                  bool isLooping = false);
+        Animation(const std::vector<const sf::Texture*>& frameList, float frameDuration, bool isLooping = false);
 
         /**
          * Add a frame to the animation.

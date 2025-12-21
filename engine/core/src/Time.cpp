@@ -8,10 +8,12 @@ using namespace std::chrono;
 
 namespace e2XD::core
 {
-    void Time::tick() noexcept{
+    void Time::tick() noexcept
+    {
         time_point<high_resolution_clock, high_resolution_clock::duration> newTime = high_resolution_clock::now();
 
-        if (_firstTick) {
+        if (_firstTick)
+        {
             _firstTick = false;
             _previous = newTime;
             return;
@@ -22,7 +24,8 @@ namespace e2XD::core
         _previous = newTime;
     }
 
-    float Time::getDeltaTime() noexcept{
+    float Time::getDeltaTime() noexcept
+    {
         return deltaTime;
     }
 }

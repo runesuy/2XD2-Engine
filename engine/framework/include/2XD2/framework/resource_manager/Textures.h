@@ -11,24 +11,25 @@
 #include "Resources.h"
 
 
-    namespace e2XD::framework
+namespace e2XD::framework
+{
+    class Resources::Textures final
     {
-        class Resources::Textures final
-        {
-            inline static ITextureManager* _textureManager = nullptr;
-        public:
-            ~Textures() = default;
-            static void initialize(ITextureManager* textureManager);
+        inline static ITextureManager* _textureManager = nullptr;
 
-            [[nodiscard]] static  const sf::Texture& getTexture(const std::string& name);
+    public:
+        ~Textures() = default;
+        static void initialize(ITextureManager* textureManager);
 
-            static void loadJsonTextureConfig(const std::string& jsonFilePath);
+        [[nodiscard]] static const sf::Texture& getTexture(const std::string& name);
 
-            [[nodiscard]] static bool isJsonTextureLoaded(const std::string& jsonFilePath);
+        static void loadJsonTextureConfig(const std::string& jsonFilePath);
 
-            static bool loadJsonTextureConfigIfNotLoaded(const std::string& jsonFilePath);
-        };
-    } // framework
+        [[nodiscard]] static bool isJsonTextureLoaded(const std::string& jsonFilePath);
+
+        static bool loadJsonTextureConfigIfNotLoaded(const std::string& jsonFilePath);
+    };
+} // framework
 // e2XD
 
 #endif //INC_2XD2_ENGINE_TEXTURES_H

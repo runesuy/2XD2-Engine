@@ -44,7 +44,7 @@ namespace e2XD::framework::internal
     public:
         SFMLInputHandler() = default;
 
-        ~SFMLInputHandler() override=default;
+        ~SFMLInputHandler() override = default;
 
         void pollEvents() override;
 

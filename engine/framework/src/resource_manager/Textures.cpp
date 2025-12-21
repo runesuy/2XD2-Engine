@@ -32,7 +32,5 @@ namespace e2XD::framework
     {
         return _textureManager->isJsonTextureLoaded(jsonFilePath);
     }
-
-
 } // framework
 // e2XD

@@ -6,13 +6,15 @@
 #define INC_2XD2_ENGINE_STOPWATCH_H
 #include "chrono"
 
-namespace e2XD::core {
+namespace e2XD::core
+{
     using namespace std::chrono;
 
     /**
      * Calculates and holds the time in seconds between the last two ticks.
      */
-    class Time {
+    class Time
+    {
         /**
          * Holds the previous tick timepoint.
          */
@@ -26,12 +28,11 @@ namespace e2XD::core {
         /**
          * The time between the last tick and the one before that. In seconds.
          */
-        inline static float deltaTime=0;
+        inline static float deltaTime = 0;
 
-        Time()=default;
+        Time() = default;
 
     public:
-
         /**
          *  Update the deltaTime
          *  Sets deltaTime to the gap in seconds between this and the previous tick.

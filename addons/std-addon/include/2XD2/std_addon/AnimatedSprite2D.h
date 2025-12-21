@@ -11,18 +11,18 @@
 #include "2XD2/framework/AnimationMap.h"
 
 
-namespace e2XD::framework
+namespace e2XD::std_addon
 {
     /**
      * A 2D sprite that can play animations.
      */
     class AnimatedSprite2D : public Sprite2D
     {
-        Animation _currentAnimation;
+        framework::Animation _currentAnimation;
         std::string _currentAnimationName;
-        const AnimationMap* animations=nullptr;
-        unsigned int _currentFrameIndex=0;
-        float _frameTimer=0.0f;
+        const AnimationMap* animations = nullptr;
+        unsigned int _currentFrameIndex = 0;
+        float _frameTimer = 0.0f;
 
         void _updateCurrentFrame(float deltaTime);
 
@@ -46,7 +46,7 @@ namespace e2XD::framework
          * @param name
          * @param continueAtCurrentFrame
          */
-        void playAnimation(const std::string& name, bool continueAtCurrentFrame=false);
+        void playAnimation(const std::string& name, bool continueAtCurrentFrame = false);
 
         /**
          * Unordered map of all animations available for this sprite.
@@ -54,7 +54,6 @@ namespace e2XD::framework
          * @param newAnimations
          */
         void setAnimations(const AnimationMap& newAnimations);
-
 
     protected:
         void _internal_onDraw() override;

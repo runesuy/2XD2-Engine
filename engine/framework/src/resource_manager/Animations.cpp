@@ -29,9 +29,7 @@ namespace e2XD::framework
 
     void Resources::Animations::initialize(IAnimationManager* animationManager)
     {
-        _animationManager=animationManager;
+        _animationManager = animationManager;
     }
-
-
 } // framework
 // e2XD

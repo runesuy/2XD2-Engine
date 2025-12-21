@@ -8,8 +8,8 @@
 #include "Camera.h"
 #include "Node.h"
 
-namespace e2XD::core {
-
+namespace e2XD::core
+{
     class Scene;
     template <typename T>
     concept IsScene = std::is_base_of_v<Scene, T>;
@@ -17,11 +17,13 @@ namespace e2XD::core {
     /**
      * Scene node representing the root of a scene graph.
      */
-    class Scene: public Node {
+    class Scene : public Node
+    {
         const Camera* activeCamera = nullptr;
+
     public:
-        Scene()=default;
-        ~Scene() override=default;
+        Scene() = default;
+        ~Scene() override = default;
 
         void setActiveCamera(const Camera* camera);
         [[nodiscard]] const Camera* getActiveCamera() const;

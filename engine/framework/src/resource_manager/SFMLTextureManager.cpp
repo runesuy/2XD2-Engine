@@ -17,20 +17,22 @@ namespace e2XD::framework
         nlohmann::json json;
 
         std::ifstream file(jsonFilePath);
-        if (!file.is_open()) throw e2XD::framework::FileLoadingFailedException(jsonFilePath, "void SFMLTextureParser::loadJsonTextureConfig(const std::string& jsonFilePath)");
+        if (!file.is_open()) throw e2XD::framework::FileLoadingFailedException(
+            jsonFilePath, "void SFMLTextureParser::loadJsonTextureConfig(const std::string& jsonFilePath)");
         file >> json;
         file.close();
 
-        for (const auto fileList = json.at("files"); const auto &fileJ : fileList)
+        for (const auto fileList = json.at("files"); const auto& fileJ : fileList)
         {
             const auto& fileName = fileJ.at("filename");
 
             // open target texture file
             sf::Image image;
 
-            if (bool successLoading = image.loadFromFile(fileName); !successLoading) throw FileLoadingFailedException(fileName, "void SFMLTextureParser::loadJsonTextureConfig(const std::string& jsonFilePath)");
+            if (bool successLoading = image.loadFromFile(fileName); !successLoading) throw FileLoadingFailedException(
+                fileName, "void SFMLTextureParser::loadJsonTextureConfig(const std::string& jsonFilePath)");
 
-            for (const auto &textureList = fileJ.at("textures"); auto textureJ : textureList)
+            for (const auto& textureList = fileJ.at("textures"); auto textureJ : textureList)
             {
                 const auto textureName = textureJ.at("texture-name");
                 const auto textureSelect = textureJ.at("texture-select");
@@ -49,7 +51,7 @@ namespace e2XD::framework
 
     const sf::Texture& SFMLTextureManager::getTexture(const std::string& name) const
     {
-        if (loadedTextures.contains(name))  return loadedTextures.at(name);
+        if (loadedTextures.contains(name)) return loadedTextures.at(name);
         throw std::invalid_argument("SFMLTextureParser::getTexture: Texture does not exist");
     }
 
@@ -67,8 +69,4 @@ namespace e2XD::framework
         }
         return false;
     }
-
-
-
 }
-

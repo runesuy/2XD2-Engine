@@ -6,5 +6,5 @@ file (GLOB_RECURSE PONG_SOURCES
 add_executable(pong-example ${PONG_SOURCES})
 
 target_link_libraries(pong-example PUBLIC
-        2XD2_Engine_Framework
+        2XD2_Engine
         )

@@ -13,7 +13,8 @@
 #include "Renderable.h"
 
 
-namespace e2XD::core {
+namespace e2XD::core
+{
     class Node;
     template <typename T>
     concept IsNode = std::is_base_of_v<Node, T>;
@@ -22,7 +23,8 @@ namespace e2XD::core {
      * A node in the scene graph.
      * Is renderable by the Renderer.
      */
-    class Node : public Renderable{
+    class Node : public Renderable
+    {
         bool markedForDeletion = false;
         std::list<std::unique_ptr<Node>> nodes;
 
@@ -30,42 +32,55 @@ namespace e2XD::core {
          * Remove all sub-nodes that are marked for deletion.
          */
         void removeDestroyedSubNodes();
+
     protected:
         /**
          * Placeholder for user-defined update logic.
          * This method is called during the update phase of the node.
          */
-        virtual void onUpdate(){};
+        virtual void onUpdate()
+        {
+        };
 
         /**
          * Placeholder for internal update logic.
          * This method is called during the update phase of the node.
          */
-        virtual void _internal_onUpdate(){};
+        virtual void _internal_onUpdate()
+        {
+        };
 
         /**
          * Placeholder for user-defined creation logic.
          * This method is called when the node is created.
          */
-        virtual void onCreate(){};
+        virtual void onCreate()
+        {
+        };
 
         /**
          * Placeholder for internal creation logic.
          * This method is called when the node is created.
          */
-        virtual void _internal_onCreate(){};
+        virtual void _internal_onCreate()
+        {
+        };
 
         /**
          * Placeholder for user-defined destruction logic.
          * This method is called when the node is destroyed.
          */
-        virtual void onDestroy(){};
+        virtual void onDestroy()
+        {
+        };
 
         /**
          * Placeholder for internal destruction logic.
          * This method is called when the node is destroyed.
          */
-        virtual void _internal_onDestroy(){};
+        virtual void _internal_onDestroy()
+        {
+        };
 
         void _internal_onDraw() override;
 
@@ -76,7 +91,7 @@ namespace e2XD::core {
         /**
          * Creat a new empty node.
          */
-        Node()=default;
+        Node() = default;
         ~Node() override = default;
 
         /**
@@ -141,15 +156,17 @@ namespace e2XD::core {
         [[nodiscard]] std::list<EntityType*> getSubNodes();
     };
 
-    template<IsNode EntityType>
-    EntityType* Node::createSubNode() {
+    template <IsNode EntityType>
+    EntityType* Node::createSubNode()
+    {
         auto node = std::make_unique<EntityType>();
         auto ptr = node.get();
         addSubNode(std::move(node));
         return ptr;
     }
 
-    inline void Node::addSubNode(std::unique_ptr<Node> node) {
+    inline void Node::addSubNode(std::unique_ptr<Node> node)
+    {
         node->create();
         nodes.push_back(std::move(node));
     }
@@ -198,7 +215,7 @@ namespace e2XD::core {
     }
 
     template <IsNode EntityType>
-        std::list<EntityType*> Node::getSubNodes()
+    std::list<EntityType*> Node::getSubNodes()
     {
         std::list<EntityType*> result;
         // Search for all sub-nodes of the specified type
@@ -211,7 +228,6 @@ namespace e2XD::core {
         }
         return result;
     }
-
 } // e2XD
 
 #endif //INC_2XD2_ENGINE_ENTITY_H
