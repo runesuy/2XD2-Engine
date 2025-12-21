@@ -55,3 +55,5 @@ Contributions are welcome! If you would like to contribute to 2XD2-Engine, pleas
 Please ensure that your code adheres to the existing coding style and includes appropriate tests.
 
 For more details, refer to the [contributing guidelines](CONTRIBUTING.md).
+
+## Join the [Discord](https://discord.gg/sVJzxWWbdW)
