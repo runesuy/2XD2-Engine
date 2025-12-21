@@ -14,6 +14,8 @@ The main objectsives of this project are to provide an easy-to-use framework for
 - **Event handling**: Built-in event system for handling user input and other events using SFML.
 - **Rendering**: Simple rendering system using SFML for drawing sprites, shapes, and text.
 - **Resource management**: Load and manage game assets such as textures, fonts, and sounds, animations. (WIP)
+- **Collision handling**: Powerfull and efficient collision system. (COMING SOON)
+- **Physics simulation**: Modular and easily extendable physics base. (COMING SOON)
 
 I plan to add more features in the future, such as physics integration, audio support, and further optimizations and modularity improvements.
 
