@@ -9,6 +9,9 @@
 
 namespace e2XD::framework
 {
+    /**
+     * Exception thrown when a component is used before being initialized.
+     */
     class NotInitializedException : public Exception
     {
     public:
