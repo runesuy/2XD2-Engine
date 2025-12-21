@@ -9,6 +9,9 @@
 
 namespace e2XD::core
     {
+        /**
+         * An object renderable by the Renderer.
+         */
         class Renderable
         {
         protected:
@@ -16,12 +19,24 @@ namespace e2XD::core
 
             int zIndex=0;
 
+            /**
+             * onDraw is a placeholder for user-defined draw logic.
+             * This method is called during the draw phase of the renderable.
+             */
             virtual void onDraw(){};
 
+            /**
+             * onDraw is a placeholder for internal draw logic.
+             * This method is called during the draw phase of the renderable.
+             */
             virtual void _internal_onDraw(){};
 
         public:
             virtual ~Renderable() = default;
+
+            /**
+             * Draw the renderable by calling internal and user-defined draw methods.
+             */
             void draw();
         };
     } // core
