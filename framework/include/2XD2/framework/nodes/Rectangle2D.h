@@ -10,6 +10,9 @@
 
 namespace e2XD::framework
 {
+    /**
+     * A 2D rectangle shape node.
+     */
     class Rectangle2D : public core::Node2D
     {
         sf::RectangleShape rectangleShape;
@@ -17,8 +20,16 @@ namespace e2XD::framework
         void _internal_onDraw() override;
 
     public:
+        /**
+         * Set the fill color of the rectangle.
+         * @param color
+         */
         void setFillColor(const sf::Color& color);
 
+        /**
+         * Set the size of the rectangle using game units.
+         * @param size
+         */
         void setSize(const core::Vec2& size);
     };
 } // framework
