@@ -81,5 +81,4 @@ jobs:
 
     - name: Test
       working-directory: ${{ github.workspace }}/build
-
-      run: ctest -C Release
+      run: ctest -C Release --output-on-failure --verbose --rerun-failed --output-on-failure
