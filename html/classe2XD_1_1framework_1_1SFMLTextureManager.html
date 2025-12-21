@@ -127,7 +127,7 @@ Friends</h2></td></tr>
 <tr class="separator:a4f8a7afb90a1d9ccf9758e8dde64269c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Singleton </p>
+<div class="textblock"><p>Texture manager implementation using SFML Textures. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a55449a9a3d586d7cf3a3398f20d25004" name="a55449a9a3d586d7cf3a3398f20d25004"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a55449a9a3d586d7cf3a3398f20d25004">&#9670;&#160;</a></span>SFMLTextureManager()</h2>
@@ -203,6 +203,14 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<dl class="section pre"><dt>Precondition</dt><dd>The texture with the given name must be loaded in the manager. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the texture associated with the given name. </dd></dl>
 
 <p>Implements <a class="el" href="classe2XD_1_1framework_1_1ITextureManager.html#ae6e31016aab5ec8fc923254b09b8b841">e2XD::framework::ITextureManager</a>.</p>
 
@@ -231,6 +239,13 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">jsonFilePath</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the json texture config file has already been loaded in the manager. </dd></dl>
 
 <p>Implements <a class="el" href="classe2XD_1_1framework_1_1ITextureManager.html#a962bb759d66b93c572a5e6648d42d3b6">e2XD::framework::ITextureManager</a>.</p>
 
@@ -259,6 +274,30 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">jsonFilePath</td><td>load textures in the manager using a json config file. Json format: <div class="fragment"><div class="line"> {</div>
+<div class="line"><span class="stringliteral">&quot;files&quot;</span>: [</div>
+<div class="line">      {</div>
+<div class="line">        <span class="stringliteral">&quot;filename&quot;</span>: <span class="stringliteral">&quot;filename1&quot;</span>,</div>
+<div class="line">        <span class="stringliteral">&quot;textures&quot;</span>: [</div>
+<div class="line">          {<span class="stringliteral">&quot;texture-name&quot;</span>: <span class="stringliteral">&quot;texture1&quot;</span>, <span class="stringliteral">&quot;texture-select&quot;</span>: {<span class="stringliteral">&quot;x&quot;</span>: 0, <span class="stringliteral">&quot;y&quot;</span>: 0, <span class="stringliteral">&quot;height&quot;</span>: 10, <span class="stringliteral">&quot;width&quot;</span>: 10}},</div>
+<div class="line">          {<span class="stringliteral">&quot;texture-name&quot;</span>: <span class="stringliteral">&quot;texture2&quot;</span>, <span class="stringliteral">&quot;texture-select&quot;</span>: {<span class="stringliteral">&quot;x&quot;</span>: 0, <span class="stringliteral">&quot;y&quot;</span>: 0, <span class="stringliteral">&quot;height&quot;</span>: 10, <span class="stringliteral">&quot;width&quot;</span>: 10}}</div>
+<div class="line">        ]</div>
+<div class="line">      },</div>
+<div class="line">      {</div>
+<div class="line">        <span class="stringliteral">&quot;filename&quot;</span>: <span class="stringliteral">&quot;filename2&quot;</span>,</div>
+<div class="line">        <span class="stringliteral">&quot;textures&quot;</span>: [</div>
+<div class="line">          {<span class="stringliteral">&quot;texture-name&quot;</span>: <span class="stringliteral">&quot;texture3&quot;</span>, <span class="stringliteral">&quot;texture-select&quot;</span>: {<span class="stringliteral">&quot;x&quot;</span>: 0, <span class="stringliteral">&quot;y&quot;</span>: 0, <span class="stringliteral">&quot;height&quot;</span>: 10, <span class="stringliteral">&quot;width&quot;</span>: 10}},</div>
+<div class="line">          {<span class="stringliteral">&quot;texture-name&quot;</span>: <span class="stringliteral">&quot;texture4&quot;</span>, <span class="stringliteral">&quot;texture-select&quot;</span>: {<span class="stringliteral">&quot;x&quot;</span>: 0, <span class="stringliteral">&quot;y&quot;</span>: 0, <span class="stringliteral">&quot;height&quot;</span>: 10, <span class="stringliteral">&quot;width&quot;</span>: 10}}</div>
+<div class="line">        ]</div>
+<div class="line">      }</div>
+<div class="line">  ]</div>
+<div class="line">}</div>
+</div><!-- fragment --> </td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p>Implements <a class="el" href="classe2XD_1_1framework_1_1ITextureManager.html#a8ae4040b0decdd6577e03fb0a7d28c66">e2XD::framework::ITextureManager</a>.</p>
 
@@ -287,6 +326,13 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Load textures in the manager using a json config file if it has not been loaded yet. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">jsonFilePath</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the json texture config file was not loaded and has been loaded by this call. </dd></dl>
 
 <p>Implements <a class="el" href="classe2XD_1_1framework_1_1ITextureManager.html#a41035d5d47b5ea2ba44def504115b7f2">e2XD::framework::ITextureManager</a>.</p>
 <div class="dynheader">

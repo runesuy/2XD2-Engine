@@ -29,6 +29,9 @@ virtual bool \mbox{\hyperlink{classe2XD_1_1framework_1_1ITextureManager_a41035d5
 \end{DoxyCompactItemize}
 
 
+\doxysubsection{Detailed Description}
+Texture manager interface Used to manage textures in the framework. Can be implemented and passed to \doxylink{classe2XD_1_1framework_1_1Resources_1_1Textures}{Resources\+::\+Textures} to provide custom texture management. 
+
 \doxysubsection{Constructor \& Destructor Documentation}
 \Hypertarget{classe2XD_1_1framework_1_1ITextureManager_af4170ac58add3bb832b75afe41d4f958}\label{classe2XD_1_1framework_1_1ITextureManager_af4170ac58add3bb832b75afe41d4f958} 
 \index{e2XD::framework::ITextureManager@{e2XD::framework::ITextureManager}!````~ITextureManager@{\texorpdfstring{$\sim$}{\string~}ITextureManager}}
@@ -45,6 +48,17 @@ virtual bool \mbox{\hyperlink{classe2XD_1_1framework_1_1ITextureManager_a41035d5
 \doxysubsubsection{\texorpdfstring{getTexture()}{getTexture()}}
 {\footnotesize\ttfamily virtual const sf\+::\+Texture \& e2\+XD\+::framework\+::\+ITexture\+Manager\+::get\+Texture (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
+\begin{DoxyPrecond}{Precondition}
+The texture with the given name must be loaded in the manager. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}{Parameters}
+{\em name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the texture associated with the given name. 
+\end{DoxyReturn}
 
 
 Implemented in \mbox{\hyperlink{classe2XD_1_1framework_1_1SFMLTextureManager_a9d603b2f2f0dd2ffcc2eebf2724a1566}{e2\+XD\+::framework\+::\+SFMLTexture\+Manager}}.
@@ -56,6 +70,14 @@ Implemented in \mbox{\hyperlink{classe2XD_1_1framework_1_1SFMLTextureManager_a9d
 {\footnotesize\ttfamily virtual bool e2\+XD\+::framework\+::\+ITexture\+Manager\+::is\+Json\+Texture\+Loaded (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{json\+File\+Path }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
+\begin{DoxyParams}{Parameters}
+{\em json\+File\+Path} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the json texture config file has already been loaded in the manager. 
+\end{DoxyReturn}
+
 
 Implemented in \mbox{\hyperlink{classe2XD_1_1framework_1_1SFMLTextureManager_a3c041f71cabfb06311b22502506ebdb0}{e2\+XD\+::framework\+::\+SFMLTexture\+Manager}}.
 
@@ -66,6 +88,33 @@ Implemented in \mbox{\hyperlink{classe2XD_1_1framework_1_1SFMLTextureManager_a3c
 {\footnotesize\ttfamily virtual void e2\+XD\+::framework\+::\+ITexture\+Manager\+::load\+Json\+Texture\+Config (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{json\+File\+Path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
+\begin{DoxyParams}{Parameters}
+{\em json\+File\+Path} & load textures in the manager using a json config file. Json format\+: 
+\begin{DoxyCode}{1}
+\DoxyCodeLine{\ \{}
+\DoxyCodeLine{\textcolor{stringliteral}{"{}files"{}}:\ [}
+\DoxyCodeLine{\ \ \ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}filename"{}}:\ \textcolor{stringliteral}{"{}filename1"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}textures"{}}:\ [}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \{\textcolor{stringliteral}{"{}texture-\/name"{}}:\ \textcolor{stringliteral}{"{}texture1"{}},\ \textcolor{stringliteral}{"{}texture-\/select"{}}:\ \{\textcolor{stringliteral}{"{}x"{}}:\ 0,\ \textcolor{stringliteral}{"{}y"{}}:\ 0,\ \textcolor{stringliteral}{"{}height"{}}:\ 10,\ \textcolor{stringliteral}{"{}width"{}}:\ 10\}\},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \{\textcolor{stringliteral}{"{}texture-\/name"{}}:\ \textcolor{stringliteral}{"{}texture2"{}},\ \textcolor{stringliteral}{"{}texture-\/select"{}}:\ \{\textcolor{stringliteral}{"{}x"{}}:\ 0,\ \textcolor{stringliteral}{"{}y"{}}:\ 0,\ \textcolor{stringliteral}{"{}height"{}}:\ 10,\ \textcolor{stringliteral}{"{}width"{}}:\ 10\}\}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ ]}
+\DoxyCodeLine{\ \ \ \ \ \ \},}
+\DoxyCodeLine{\ \ \ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}filename"{}}:\ \textcolor{stringliteral}{"{}filename2"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}textures"{}}:\ [}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \{\textcolor{stringliteral}{"{}texture-\/name"{}}:\ \textcolor{stringliteral}{"{}texture3"{}},\ \textcolor{stringliteral}{"{}texture-\/select"{}}:\ \{\textcolor{stringliteral}{"{}x"{}}:\ 0,\ \textcolor{stringliteral}{"{}y"{}}:\ 0,\ \textcolor{stringliteral}{"{}height"{}}:\ 10,\ \textcolor{stringliteral}{"{}width"{}}:\ 10\}\},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \{\textcolor{stringliteral}{"{}texture-\/name"{}}:\ \textcolor{stringliteral}{"{}texture4"{}},\ \textcolor{stringliteral}{"{}texture-\/select"{}}:\ \{\textcolor{stringliteral}{"{}x"{}}:\ 0,\ \textcolor{stringliteral}{"{}y"{}}:\ 0,\ \textcolor{stringliteral}{"{}height"{}}:\ 10,\ \textcolor{stringliteral}{"{}width"{}}:\ 10\}\}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ ]}
+\DoxyCodeLine{\ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ ]}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+ \\
+\hline
+\end{DoxyParams}
+
 
 Implemented in \mbox{\hyperlink{classe2XD_1_1framework_1_1SFMLTextureManager_ad3b7fd621aec22761b144b258738ba98}{e2\+XD\+::framework\+::\+SFMLTexture\+Manager}}.
 
@@ -75,6 +124,14 @@ Implemented in \mbox{\hyperlink{classe2XD_1_1framework_1_1SFMLTextureManager_ad3
 \doxysubsubsection{\texorpdfstring{loadJsonTextureConfigIfNotLoaded()}{loadJsonTextureConfigIfNotLoaded()}}
 {\footnotesize\ttfamily virtual bool e2\+XD\+::framework\+::\+ITexture\+Manager\+::load\+Json\+Texture\+Config\+If\+Not\+Loaded (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{json\+File\+Path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
+Load textures in the manager using a json config file if it has not been loaded yet. 
+\begin{DoxyParams}{Parameters}
+{\em json\+File\+Path} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the json texture config file was not loaded and has been loaded by this call. 
+\end{DoxyReturn}
 
 
 Implemented in \mbox{\hyperlink{classe2XD_1_1framework_1_1SFMLTextureManager_a87c7afdc8715b75a5d12fcdfc500f265}{e2\+XD\+::framework\+::\+SFMLTexture\+Manager}}.

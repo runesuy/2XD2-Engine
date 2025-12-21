@@ -52,7 +52,7 @@ class \mbox{\hyperlink{classe2XD_1_1framework_1_1SFMLTextureManager_a4f8a7afb90a
 
 
 \doxysubsection{Detailed Description}
-Singleton 
+Texture manager implementation using SFML Textures. 
 
 \doxysubsection{Constructor \& Destructor Documentation}
 \Hypertarget{classe2XD_1_1framework_1_1SFMLTextureManager_a55449a9a3d586d7cf3a3398f20d25004}\label{classe2XD_1_1framework_1_1SFMLTextureManager_a55449a9a3d586d7cf3a3398f20d25004} 
@@ -76,6 +76,17 @@ Singleton
 \doxysubsubsection{\texorpdfstring{getTexture()}{getTexture()}}
 {\footnotesize\ttfamily const sf\+::\+Texture \& e2\+XD\+::framework\+::\+SFMLTexture\+Manager\+::get\+Texture (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
+\begin{DoxyPrecond}{Precondition}
+The texture with the given name must be loaded in the manager. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}{Parameters}
+{\em name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the texture associated with the given name. 
+\end{DoxyReturn}
 
 
 Implements \mbox{\hyperlink{classe2XD_1_1framework_1_1ITextureManager_ae6e31016aab5ec8fc923254b09b8b841}{e2\+XD\+::framework\+::\+ITexture\+Manager}}.
@@ -87,6 +98,14 @@ Implements \mbox{\hyperlink{classe2XD_1_1framework_1_1ITextureManager_ae6e31016a
 {\footnotesize\ttfamily bool e2\+XD\+::framework\+::\+SFMLTexture\+Manager\+::is\+Json\+Texture\+Loaded (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{json\+File\+Path }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
+\begin{DoxyParams}{Parameters}
+{\em json\+File\+Path} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the json texture config file has already been loaded in the manager. 
+\end{DoxyReturn}
+
 
 Implements \mbox{\hyperlink{classe2XD_1_1framework_1_1ITextureManager_a962bb759d66b93c572a5e6648d42d3b6}{e2\+XD\+::framework\+::\+ITexture\+Manager}}.
 
@@ -97,6 +116,33 @@ Implements \mbox{\hyperlink{classe2XD_1_1framework_1_1ITextureManager_a962bb759d
 {\footnotesize\ttfamily void e2\+XD\+::framework\+::\+SFMLTexture\+Manager\+::load\+Json\+Texture\+Config (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{json\+File\+Path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
+\begin{DoxyParams}{Parameters}
+{\em json\+File\+Path} & load textures in the manager using a json config file. Json format\+: 
+\begin{DoxyCode}{1}
+\DoxyCodeLine{\ \{}
+\DoxyCodeLine{\textcolor{stringliteral}{"{}files"{}}:\ [}
+\DoxyCodeLine{\ \ \ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}filename"{}}:\ \textcolor{stringliteral}{"{}filename1"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}textures"{}}:\ [}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \{\textcolor{stringliteral}{"{}texture-\/name"{}}:\ \textcolor{stringliteral}{"{}texture1"{}},\ \textcolor{stringliteral}{"{}texture-\/select"{}}:\ \{\textcolor{stringliteral}{"{}x"{}}:\ 0,\ \textcolor{stringliteral}{"{}y"{}}:\ 0,\ \textcolor{stringliteral}{"{}height"{}}:\ 10,\ \textcolor{stringliteral}{"{}width"{}}:\ 10\}\},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \{\textcolor{stringliteral}{"{}texture-\/name"{}}:\ \textcolor{stringliteral}{"{}texture2"{}},\ \textcolor{stringliteral}{"{}texture-\/select"{}}:\ \{\textcolor{stringliteral}{"{}x"{}}:\ 0,\ \textcolor{stringliteral}{"{}y"{}}:\ 0,\ \textcolor{stringliteral}{"{}height"{}}:\ 10,\ \textcolor{stringliteral}{"{}width"{}}:\ 10\}\}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ ]}
+\DoxyCodeLine{\ \ \ \ \ \ \},}
+\DoxyCodeLine{\ \ \ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}filename"{}}:\ \textcolor{stringliteral}{"{}filename2"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}textures"{}}:\ [}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \{\textcolor{stringliteral}{"{}texture-\/name"{}}:\ \textcolor{stringliteral}{"{}texture3"{}},\ \textcolor{stringliteral}{"{}texture-\/select"{}}:\ \{\textcolor{stringliteral}{"{}x"{}}:\ 0,\ \textcolor{stringliteral}{"{}y"{}}:\ 0,\ \textcolor{stringliteral}{"{}height"{}}:\ 10,\ \textcolor{stringliteral}{"{}width"{}}:\ 10\}\},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \{\textcolor{stringliteral}{"{}texture-\/name"{}}:\ \textcolor{stringliteral}{"{}texture4"{}},\ \textcolor{stringliteral}{"{}texture-\/select"{}}:\ \{\textcolor{stringliteral}{"{}x"{}}:\ 0,\ \textcolor{stringliteral}{"{}y"{}}:\ 0,\ \textcolor{stringliteral}{"{}height"{}}:\ 10,\ \textcolor{stringliteral}{"{}width"{}}:\ 10\}\}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ ]}
+\DoxyCodeLine{\ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ ]}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+ \\
+\hline
+\end{DoxyParams}
+
 
 Implements \mbox{\hyperlink{classe2XD_1_1framework_1_1ITextureManager_a8ae4040b0decdd6577e03fb0a7d28c66}{e2\+XD\+::framework\+::\+ITexture\+Manager}}.
 
@@ -106,6 +152,14 @@ Implements \mbox{\hyperlink{classe2XD_1_1framework_1_1ITextureManager_a8ae4040b0
 \doxysubsubsection{\texorpdfstring{loadJsonTextureConfigIfNotLoaded()}{loadJsonTextureConfigIfNotLoaded()}}
 {\footnotesize\ttfamily bool e2\+XD\+::framework\+::\+SFMLTexture\+Manager\+::load\+Json\+Texture\+Config\+If\+Not\+Loaded (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{json\+File\+Path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
+Load textures in the manager using a json config file if it has not been loaded yet. 
+\begin{DoxyParams}{Parameters}
+{\em json\+File\+Path} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the json texture config file was not loaded and has been loaded by this call. 
+\end{DoxyReturn}
 
 
 Implements \mbox{\hyperlink{classe2XD_1_1framework_1_1ITextureManager_a41035d5d47b5ea2ba44def504115b7f2}{e2\+XD\+::framework\+::\+ITexture\+Manager}}.

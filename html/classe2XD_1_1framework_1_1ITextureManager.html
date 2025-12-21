@@ -105,7 +105,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a41035d5d47b5ea2ba44def504115b7f2" id="r_a41035d5d47b5ea2ba44def504115b7f2"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classe2XD_1_1framework_1_1ITextureManager.html#a41035d5d47b5ea2ba44def504115b7f2">loadJsonTextureConfigIfNotLoaded</a> (const std::string &amp;jsonFilePath)=0</td></tr>
 <tr class="separator:a41035d5d47b5ea2ba44def504115b7f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Texture manager interface Used to manage textures in the framework. Can be implemented and passed to <a class="el" href="classe2XD_1_1framework_1_1Resources_1_1Textures.html">Resources::Textures</a> to provide custom texture management. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="af4170ac58add3bb832b75afe41d4f958" name="af4170ac58add3bb832b75afe41d4f958"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af4170ac58add3bb832b75afe41d4f958">&#9670;&#160;</a></span>~ITextureManager()</h2>
 
@@ -155,6 +157,14 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<dl class="section pre"><dt>Precondition</dt><dd>The texture with the given name must be loaded in the manager. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the texture associated with the given name. </dd></dl>
 
 <p>Implemented in <a class="el" href="classe2XD_1_1framework_1_1SFMLTextureManager.html#a9d603b2f2f0dd2ffcc2eebf2724a1566">e2XD::framework::SFMLTextureManager</a>.</p>
 
@@ -183,6 +193,13 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">jsonFilePath</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the json texture config file has already been loaded in the manager. </dd></dl>
 
 <p>Implemented in <a class="el" href="classe2XD_1_1framework_1_1SFMLTextureManager.html#a3c041f71cabfb06311b22502506ebdb0">e2XD::framework::SFMLTextureManager</a>.</p>
 
@@ -211,6 +228,30 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">jsonFilePath</td><td>load textures in the manager using a json config file. Json format: <div class="fragment"><div class="line"> {</div>
+<div class="line"><span class="stringliteral">&quot;files&quot;</span>: [</div>
+<div class="line">      {</div>
+<div class="line">        <span class="stringliteral">&quot;filename&quot;</span>: <span class="stringliteral">&quot;filename1&quot;</span>,</div>
+<div class="line">        <span class="stringliteral">&quot;textures&quot;</span>: [</div>
+<div class="line">          {<span class="stringliteral">&quot;texture-name&quot;</span>: <span class="stringliteral">&quot;texture1&quot;</span>, <span class="stringliteral">&quot;texture-select&quot;</span>: {<span class="stringliteral">&quot;x&quot;</span>: 0, <span class="stringliteral">&quot;y&quot;</span>: 0, <span class="stringliteral">&quot;height&quot;</span>: 10, <span class="stringliteral">&quot;width&quot;</span>: 10}},</div>
+<div class="line">          {<span class="stringliteral">&quot;texture-name&quot;</span>: <span class="stringliteral">&quot;texture2&quot;</span>, <span class="stringliteral">&quot;texture-select&quot;</span>: {<span class="stringliteral">&quot;x&quot;</span>: 0, <span class="stringliteral">&quot;y&quot;</span>: 0, <span class="stringliteral">&quot;height&quot;</span>: 10, <span class="stringliteral">&quot;width&quot;</span>: 10}}</div>
+<div class="line">        ]</div>
+<div class="line">      },</div>
+<div class="line">      {</div>
+<div class="line">        <span class="stringliteral">&quot;filename&quot;</span>: <span class="stringliteral">&quot;filename2&quot;</span>,</div>
+<div class="line">        <span class="stringliteral">&quot;textures&quot;</span>: [</div>
+<div class="line">          {<span class="stringliteral">&quot;texture-name&quot;</span>: <span class="stringliteral">&quot;texture3&quot;</span>, <span class="stringliteral">&quot;texture-select&quot;</span>: {<span class="stringliteral">&quot;x&quot;</span>: 0, <span class="stringliteral">&quot;y&quot;</span>: 0, <span class="stringliteral">&quot;height&quot;</span>: 10, <span class="stringliteral">&quot;width&quot;</span>: 10}},</div>
+<div class="line">          {<span class="stringliteral">&quot;texture-name&quot;</span>: <span class="stringliteral">&quot;texture4&quot;</span>, <span class="stringliteral">&quot;texture-select&quot;</span>: {<span class="stringliteral">&quot;x&quot;</span>: 0, <span class="stringliteral">&quot;y&quot;</span>: 0, <span class="stringliteral">&quot;height&quot;</span>: 10, <span class="stringliteral">&quot;width&quot;</span>: 10}}</div>
+<div class="line">        ]</div>
+<div class="line">      }</div>
+<div class="line">  ]</div>
+<div class="line">}</div>
+</div><!-- fragment --> </td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p>Implemented in <a class="el" href="classe2XD_1_1framework_1_1SFMLTextureManager.html#ad3b7fd621aec22761b144b258738ba98">e2XD::framework::SFMLTextureManager</a>.</p>
 
@@ -239,6 +280,13 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Load textures in the manager using a json config file if it has not been loaded yet. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">jsonFilePath</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the json texture config file was not loaded and has been loaded by this call. </dd></dl>
 
 <p>Implemented in <a class="el" href="classe2XD_1_1framework_1_1SFMLTextureManager.html#a87c7afdc8715b75a5d12fcdfc500f265">e2XD::framework::SFMLTextureManager</a>.</p>
 
