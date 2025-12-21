@@ -5,7 +5,7 @@
 #ifndef INC_2XD2_ENGINE_INPUT_H
 #define INC_2XD2_ENGINE_INPUT_H
 #include "IInputHandler.h"
-#include "2XD2/core/Vec2.h"
+#include "2XD2/core/Vec2f.h"
 
 
 namespace e2XD::framework
@@ -91,7 +91,7 @@ namespace e2XD::framework
              *
              * @return The current mouse position in window coordinates
              */
-            [[nodiscard]] static core::Vec2 getMousePosition();
+            [[nodiscard]] static core::Vec2f getMousePosition();
 
             /**
              *

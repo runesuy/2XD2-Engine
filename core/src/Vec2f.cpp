@@ -2,69 +2,69 @@
 // Created by runes on 14/12/2025.
 //
 
-#include "2XD2/core/Vec2.h"
+#include "2XD2/core/Vec2f.h"
 #include <cmath>
 
 namespace e2XD::core {
-    Vec2::Vec2(const float x, const float y) : x(x), y(y) {}
+    Vec2f::Vec2f(const float x, const float y) : x(x), y(y) {}
 
-    float Vec2::length() const {
+    float Vec2f::length() const {
         return std::sqrt(x * x + y * y);
     }
 
-    Vec2 Vec2::operator*(float scalar) const {
+    Vec2f Vec2f::operator*(float scalar) const {
         return {x*scalar, y*scalar};
     }
 
-    Vec2 Vec2::operator+(const Vec2 &vector) const {
+    Vec2f Vec2f::operator+(const Vec2f &vector) const {
         return {x + vector.x, y + vector.y};
     }
 
-    Vec2 Vec2::operator-(const Vec2 &vector) const {
+    Vec2f Vec2f::operator-(const Vec2f &vector) const {
         return {x - vector.x, y - vector.y};
     }
 
-    Vec2 Vec2::operator/(const float scalar) const {
+    Vec2f Vec2f::operator/(const float scalar) const {
         return {x / scalar, y / scalar};
     }
 
-    Vec2 &Vec2::operator*=(const float scalar) {
+    Vec2f &Vec2f::operator*=(const float scalar) {
         x *= scalar;
         y *= scalar;
         return *this;
     }
 
-    Vec2 &Vec2::operator+=(const Vec2 &vector) {
+    Vec2f &Vec2f::operator+=(const Vec2f &vector) {
         x += vector.x;
         y += vector.y;
         return *this;
     }
 
-    Vec2 &Vec2::operator-=(const Vec2 &vector) {
+    Vec2f &Vec2f::operator-=(const Vec2f &vector) {
         x -= vector.x;
         y -= vector.y;
         return *this;
     }
 
-    Vec2 &Vec2::operator/=(const float scalar) {
+    Vec2f &Vec2f::operator/=(const float scalar) {
         x /= scalar;
         y /= scalar;
         return *this;
     }
 
-    float Vec2::dot(const Vec2 &vector) const {
+    float Vec2f::dot(const Vec2f &vector) const {
         return x * vector.x + y * vector.y;
     }
 
-    Vec2 Vec2::operator/(const Vec2 &vector) const {
+    Vec2f Vec2f::operator/(const Vec2f &vector) const {
         return {x / vector.x, y / vector.y};
     }
 
-    Vec2 Vec2::operator*(const Vec2 &vector) const {
+    Vec2f Vec2f::operator*(const Vec2f &vector) const {
         return {x * vector.x, y * vector.y};
     }
 
-    void Vec2::normalize()
+    void Vec2f::normalize()
     {
         float l = length();
         if (l== 0) return;

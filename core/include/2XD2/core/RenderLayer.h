@@ -5,6 +5,9 @@
 #ifndef FLATLAND_RENDERLAYER_H
 #define FLATLAND_RENDERLAYER_H
 
+/**
+ * Basic render layers for renderable objects.
+ */
 enum class RenderLayer
 {
     BACKGROUND,

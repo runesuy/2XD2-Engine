@@ -30,7 +30,7 @@ namespace e2XD::framework
          * Set the size of the rectangle using game units.
          * @param size
          */
-        void setSize(const core::Vec2& size);
+        void setSize(const core::Vec2f& size);
     };
 } // framework
 // e2XD

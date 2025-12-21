@@ -9,7 +9,7 @@
 #include "../Key.h"
 #include "../MouseButton.h"
 #include "tuple"
-#include "2XD2/core/Vec2.h"
+#include "2XD2/core/Vec2f.h"
 
 
 namespace e2XD::framework
@@ -96,7 +96,7 @@ namespace e2XD::framework
          *
          * @return The current mouse position in window coordinates
          */
-        [[nodiscard]] virtual core::Vec2 getMousePosition() const = 0;
+        [[nodiscard]] virtual core::Vec2f getMousePosition() const = 0;
 
         /**
          *

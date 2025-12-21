@@ -46,7 +46,7 @@ namespace e2XD::framework {
                 const auto& renderer = renderer::Renderer::getInstance();
                 renderer->clearWindow();
                 const auto& activeCamera = activeScene->getActiveCamera();
-                core::Vec2 cameraPos = {0,0};
+                core::Vec2f cameraPos = {0,0};
                 activeScene->draw();
             }
             renderer::Renderer::getInstance()->flush(activeScene ? activeScene->getActiveCamera() : nullptr);
