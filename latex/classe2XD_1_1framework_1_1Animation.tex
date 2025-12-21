@@ -27,6 +27,9 @@ bool \mbox{\hyperlink{classe2XD_1_1framework_1_1Animation_a53d0c6447de0cd37e6927
 \end{DoxyCompactItemize}
 
 
+\doxysubsection{Detailed Description}
+\doxylink{classe2XD_1_1framework_1_1Animation}{Animation} class representing a sequence of frames (textures) with timing and looping information. 
+
 \doxysubsection{Constructor \& Destructor Documentation}
 \Hypertarget{classe2XD_1_1framework_1_1Animation_a9f965a7f09ec998fa5a7a1bfbd4d5774}\label{classe2XD_1_1framework_1_1Animation_a9f965a7f09ec998fa5a7a1bfbd4d5774} 
 \index{e2XD::framework::Animation@{e2XD::framework::Animation}!Animation@{Animation}}
@@ -66,18 +69,27 @@ Add a frame to the animation.
 \doxysubsubsection{\texorpdfstring{getFrameDuration()}{getFrameDuration()}}
 {\footnotesize\ttfamily float e2\+XD\+::framework\+::\+Animation\+::get\+Frame\+Duration (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
+\begin{DoxyReturn}{Returns}
+the frame duration in seconds. 
+\end{DoxyReturn}
 \Hypertarget{classe2XD_1_1framework_1_1Animation_ad9b8f5e01b51190c54074b6dfa61ab41}\label{classe2XD_1_1framework_1_1Animation_ad9b8f5e01b51190c54074b6dfa61ab41} 
 \index{e2XD::framework::Animation@{e2XD::framework::Animation}!getFrames@{getFrames}}
 \index{getFrames@{getFrames}!e2XD::framework::Animation@{e2XD::framework::Animation}}
 \doxysubsubsection{\texorpdfstring{getFrames()}{getFrames()}}
 {\footnotesize\ttfamily const std\+::vector$<$ const sf\+::\+Texture \texorpdfstring{$\ast$}{*} $>$ \& e2\+XD\+::framework\+::\+Animation\+::get\+Frames (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
+\begin{DoxyReturn}{Returns}
+a const reference to the vector of frame textures. 
+\end{DoxyReturn}
 \Hypertarget{classe2XD_1_1framework_1_1Animation_a53d0c6447de0cd37e6927ac85ebb5549}\label{classe2XD_1_1framework_1_1Animation_a53d0c6447de0cd37e6927ac85ebb5549} 
 \index{e2XD::framework::Animation@{e2XD::framework::Animation}!isLooping@{isLooping}}
 \index{isLooping@{isLooping}!e2XD::framework::Animation@{e2XD::framework::Animation}}
 \doxysubsubsection{\texorpdfstring{isLooping()}{isLooping()}}
 {\footnotesize\ttfamily bool e2\+XD\+::framework\+::\+Animation\+::is\+Looping (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
+\begin{DoxyReturn}{Returns}
+true if the animation is set to loop, false otherwise. 
+\end{DoxyReturn}
 \Hypertarget{classe2XD_1_1framework_1_1Animation_a41ad6477c2f1d02289843a99863b4411}\label{classe2XD_1_1framework_1_1Animation_a41ad6477c2f1d02289843a99863b4411} 
 \index{e2XD::framework::Animation@{e2XD::framework::Animation}!setFrameDuration@{setFrameDuration}}
 \index{setFrameDuration@{setFrameDuration}!e2XD::framework::Animation@{e2XD::framework::Animation}}
