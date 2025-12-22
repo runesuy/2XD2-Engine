@@ -17,6 +17,13 @@ namespace e2XD::framework
     {
         inline static ITextureManager* _textureManager = nullptr;
 
+        /**
+         * Checks if the Textures resource manager is initialized.
+         * @throws NotInitializedException(Resources::Framework, caller) if not initialized
+         * @param caller The name of the caller function
+         */
+        static void throwIfNotInitialized(const std::string& caller) ;
+
     public:
         ~Textures() = default;
         static void initialize(ITextureManager* textureManager);

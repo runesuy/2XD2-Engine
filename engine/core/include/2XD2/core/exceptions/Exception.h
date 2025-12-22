@@ -25,7 +25,7 @@ namespace e2XD::framework
     public:
         explicit Exception(std::string message, std::string where) : msg(std::move(message)), where(std::move(where))
         {
-            std::cerr << "Exception occurred in " << where << std::endl;
+            std::cerr << "Exception occurred in " << this->where << std::endl;
         }
 
         [[nodiscard]] const char* what() const noexcept override
