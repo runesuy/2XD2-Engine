@@ -33,7 +33,7 @@ namespace e2XD::core
          * Children positions will be updated accordingly.
          * @param position
          */
-        void setGlobalPosition(const Vec2f& position);
+        virtual void setGlobalPosition(const Vec2f& position);
 
         /**
          *
@@ -46,7 +46,7 @@ namespace e2XD::core
          * Children positions will be updated accordingly.
          * @param position
          */
-        void setLocalPosition(const Vec2f& position);
+        virtual void setLocalPosition(const Vec2f& position);
 
         /**
          *
@@ -59,7 +59,7 @@ namespace e2XD::core
          * Children scales will be updated accordingly.
          * @param scale
          */
-        void setGlobalScale(const Vec2f& scale);
+        virtual void setGlobalScale(const Vec2f& scale);
 
         /**
          *
@@ -72,7 +72,7 @@ namespace e2XD::core
          * Children scales will be updated accordingly.
          * @param scale
          */
-        void setLocalScale(const Vec2f& scale);
+        virtual void setLocalScale(const Vec2f& scale);
 
         /**
          *
@@ -85,7 +85,7 @@ namespace e2XD::core
          * Children rotations will be updated accordingly.
          * @param rotation
          */
-        void setGlobalRotation(double rotation);
+        virtual void setGlobalRotation(double rotation);
 
         /**
          *
@@ -98,7 +98,7 @@ namespace e2XD::core
          * Children rotations will be updated accordingly.
          * @param rotation
          */
-        void setLocalRotation(double rotation);
+        virtual void setLocalRotation(double rotation);
     };
 } // e2XD
 
