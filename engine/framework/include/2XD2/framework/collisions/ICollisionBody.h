@@ -4,7 +4,7 @@
 
 #ifndef INC_2XD2_ENGINE_ICOLLISIONBODY_H
 #define INC_2XD2_ENGINE_ICOLLISIONBODY_H
-#include "CollisionHandler.h"
+#include "ICollisionHandler.h"
 
 
 namespace e2XD::core
@@ -26,7 +26,7 @@ namespace e2XD::core
          *
          * @return The collision type of this body.
          */
-        [[nodiscard]] virtual CollisionHandler::CollisionType getCollisionType() const = 0;
+        [[nodiscard]] virtual ICollisionHandler::CollisionType getCollisionType() const = 0;
 
         /**
          *

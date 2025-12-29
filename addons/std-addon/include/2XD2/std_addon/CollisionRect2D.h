@@ -6,7 +6,7 @@
 #define INC_2XD2_ENGINE_COLLISIONRECT2D_H
 #include <SFML/Graphics/Rect.hpp>
 
-#include "2XD2/core/collisions/CollisionBody2D.h"
+#include "2XD2/framework/collisions/CollisionBody2D.h"
 
 
 namespace e2XD::std_addon
@@ -27,6 +27,8 @@ namespace e2XD::std_addon
         [[nodiscard]] float getHeight() const;
 
         bool areColliding(CollisionBody2D* other) const override;
+        void setGlobalPosition(const core::Vec2f& position) override;
+        void setLocalPosition(const core::Vec2f& position) override;
     };
 } // std_addon
 // e2XD

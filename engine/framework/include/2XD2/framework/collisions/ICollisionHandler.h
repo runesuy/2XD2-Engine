@@ -8,7 +8,7 @@
 
 namespace e2XD::core
 {
-    class CollisionHandler
+    class ICollisionHandler
     {
     public:
         /**
@@ -21,6 +21,13 @@ namespace e2XD::core
             STATIC,
             DYNAMIC
         };
+
+        virtual ~ICollisionHandler() = default;
+
+        virtual void registerCollisionBody(class CollisionBody2D* body) = 0;
+
+
+
     };
 } // core
 // e2XD

@@ -2,7 +2,7 @@
 // Created by rune-suy on 12/29/25.
 //
 
-#include "2XD2/core/collisions/CollisionBody2D.h"
+#include "2XD2/framework/collisions/CollisionBody2D.h"
 
 namespace e2XD::core
 {
@@ -11,7 +11,7 @@ namespace e2XD::core
         return collisionLayer;
     }
 
-    CollisionHandler::CollisionType CollisionBody2D::getCollisionType() const
+    ICollisionHandler::CollisionType CollisionBody2D::getCollisionType() const
     {
         return collisionType;
     }
