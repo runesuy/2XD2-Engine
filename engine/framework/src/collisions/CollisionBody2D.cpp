@@ -15,4 +15,10 @@ namespace e2XD::framework
     {
         return collisionType;
     }
+
+    void CollisionBody2D::_internal_onCreate()
+    {
+        Collisions::registerCollisionBody(this);
+        Node2D::_internal_onCreate();
+    }
 } // core

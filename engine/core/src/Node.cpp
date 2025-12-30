@@ -13,15 +13,13 @@ namespace e2XD::framework
         {
             node->destroy();
         }
+        _internal_onDestroy();
         onDestroy();
     }
 
     void Node::create()
     {
-        for (const auto& node : nodes)
-        {
-            node->create();
-        }
+        _internal_onCreate();
         onCreate();
     }
 
@@ -32,6 +30,7 @@ namespace e2XD::framework
         {
             node->update();
         }
+        _internal_onUpdate();
         onUpdate();
     }
 

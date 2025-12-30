@@ -4,6 +4,7 @@
 
 #ifndef INC_2XD2_ENGINE_PLAYER_H
 #define INC_2XD2_ENGINE_PLAYER_H
+#include "2XD2/std_addon/CollisionRect2D.h"
 #include "2XD2/std_addon/Rectangle2D.h"
 
 

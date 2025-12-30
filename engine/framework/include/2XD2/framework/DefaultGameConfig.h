@@ -7,6 +7,7 @@
 #include <memory>
 
 #include "IGameConfig.h"
+#include "collisions/DefaultCollisionHandler.h"
 #include "input/SFMLInputHandler.h"
 #include "resource_manager/SFMLAnimationManager.h"
 #include "resource_manager/SFMLTextureManager.h"
@@ -22,7 +23,7 @@ namespace e2XD::framework
         std::unique_ptr<IInputHandler> inputHandler = std::make_unique<internal::SFMLInputHandler>();
         std::unique_ptr<ITextureManager> textureManager = std::make_unique<SFMLTextureManager>();
         std::unique_ptr<IAnimationManager> animationManager = std::make_unique<SFMLAnimationManager>();
-        std::unique_ptr<ICollisionHandler> collisionHandler;
+        std::unique_ptr<ICollisionHandler> collisionHandler = std::make_unique<DefaultCollisionHandler>();
 
     public:
         [[nodiscard]] IInputHandler* getInputHandler() const override;

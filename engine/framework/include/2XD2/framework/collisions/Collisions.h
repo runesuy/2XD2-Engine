@@ -4,6 +4,7 @@
 
 #ifndef INC_2XD2_ENGINE_COLLISIONS_H
 #define INC_2XD2_ENGINE_COLLISIONS_H
+#include <string>
 
 
 namespace e2XD::framework
@@ -12,6 +13,8 @@ namespace e2XD::framework
     class Collisions
     {
         inline static class ICollisionHandler* _collision_handler;
+
+        static void throwIfNotInitialized(const std::string& where);
 
     public:
         /**

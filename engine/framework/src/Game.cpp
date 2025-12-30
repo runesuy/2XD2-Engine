@@ -38,9 +38,10 @@ namespace e2XD::framework
 
         while (running && window.isOpen())
         {
-            framework::Time::tick();
+            Time::tick();
             // Poll events
             Input::pollEvents();
+            Collisions::checkCollisions();
             if (const auto& resized = Input::isWindowResized(); std::get<0>(resized))
             {
                 sf::FloatRect visibleArea(0, 0, std::get<1>(resized), std::get<2>(resized));
@@ -54,8 +55,6 @@ namespace e2XD::framework
                 activeScene->update();
                 const auto& renderer = renderer::Renderer::getInstance();
                 renderer->clearWindow();
-                const auto& activeCamera = activeScene->getActiveCamera();
-                framework::Vec2f cameraPos = {0, 0};
                 activeScene->draw();
             }
             renderer::Renderer::getInstance()->flush(activeScene ? activeScene->getActiveCamera() : nullptr);

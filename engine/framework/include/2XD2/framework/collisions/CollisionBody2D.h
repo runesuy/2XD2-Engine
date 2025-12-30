@@ -34,6 +34,9 @@ namespace e2XD::framework
 
         [[nodiscard]] Collisions::CollisionType getCollisionType() const override;
         [[nodiscard]] int getCollisionLayer() const override;
+
+    protected:
+        void _internal_onCreate() override;
     };
 } // core
 // e2XD

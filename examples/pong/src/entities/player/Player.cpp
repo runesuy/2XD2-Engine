@@ -4,6 +4,7 @@
 
 #include "Player.h"
 
+#include "PlayerHitBox.h"
 #include "2XD2/core/Time.h"
 #include "2XD2/framework/input/SFMLInputHandler.h"
 #include "2XD2/framework/input/Input.h"
@@ -14,11 +15,15 @@ Player::Player()
 {
     setFillColor(sf::Color::White);
     setSize({10,40});
+    auto* hitbox = new PlayerHitBox();
+    hitbox->setHeight(40);
+    hitbox->setWidth(10);
+    addSubNode(std::unique_ptr<Node>(hitbox));
 }
 
 void Player::onUpdate()
 {
-    e2XD::framework::Vec2f velocity{0,0};
+    Vec2f velocity{0,0};
     if (Input::isKeyPressed(Key::W))
     {
         velocity.y -= speed;
@@ -28,7 +33,7 @@ void Player::onUpdate()
         velocity.y += speed;
     }
 
-    auto newPos = getGlobalPosition() + velocity * e2XD::framework::Time::getDeltaTime();
+    auto newPos = getGlobalPosition() + velocity * Time::getDeltaTime();
     newPos.y = std::clamp(newPos.y, minY, maxY);
     setGlobalPosition(newPos);
 }
