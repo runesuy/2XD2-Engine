@@ -4,7 +4,7 @@
 
 #include "2XD2/core/Node.h"
 
-namespace e2XD::core
+namespace e2XD::framework
 {
     void Node::destroy()
     {

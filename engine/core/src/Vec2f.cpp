@@ -5,7 +5,7 @@
 #include "2XD2/core/Vec2f.h"
 #include <cmath>
 
-namespace e2XD::core
+namespace e2XD::framework
 {
     Vec2f::Vec2f(const float x, const float y) : x(x), y(y)
     {

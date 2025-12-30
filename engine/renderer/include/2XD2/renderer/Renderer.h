@@ -19,7 +19,7 @@ namespace e2XD::renderer
     class Renderer
     {
         sf::RenderWindow* window = nullptr;
-        core::Camera* _camera = nullptr;
+        framework::Camera* _camera = nullptr;
 
         inline static Renderer* _instance = nullptr;
 
@@ -42,7 +42,7 @@ namespace e2XD::renderer
 
         void submit(const RenderCommand& renderCommand);
 
-        void flush(const core::Camera* worldCamera);
+        void flush(const framework::Camera* worldCamera);
     };
 }
 

@@ -7,10 +7,10 @@
 #include "2XD2/core/Scene.h"
 #include "2XD2/core/Camera.h"
 
-class MainScene : public e2XD::core::Scene
+class MainScene : public e2XD::framework::Scene
 {
     public:
-    e2XD::core::Camera camera;
+    e2XD::framework::Camera camera;
     MainScene();
 };
 

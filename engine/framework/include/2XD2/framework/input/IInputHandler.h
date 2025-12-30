@@ -96,7 +96,7 @@ namespace e2XD::framework
          *
          * @return The current mouse position in window coordinates
          */
-        [[nodiscard]] virtual core::Vec2f getMousePosition() const = 0;
+        [[nodiscard]] virtual framework::Vec2f getMousePosition() const = 0;
 
         /**
          *

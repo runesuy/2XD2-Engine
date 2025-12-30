@@ -11,7 +11,7 @@
 
 namespace e2XD::std_addon
 {
-    class Circle2D : public core::Node2D
+    class Circle2D : public framework::Node2D
     {
         sf::CircleShape _shape;
     public:

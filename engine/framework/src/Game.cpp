@@ -25,6 +25,7 @@ namespace e2XD::framework
         Input::initialize(config.getInputHandler());
         Resources::Textures::initialize(config.getTextureManager());
         Resources::Animations::initialize(config.getAnimationManager());
+        Collisions::initialize(config.getCollisionHandler());
     }
 
 
@@ -37,7 +38,7 @@ namespace e2XD::framework
 
         while (running && window.isOpen())
         {
-            core::Time::tick();
+            framework::Time::tick();
             // Poll events
             Input::pollEvents();
             if (const auto& resized = Input::isWindowResized(); std::get<0>(resized))
@@ -54,7 +55,7 @@ namespace e2XD::framework
                 const auto& renderer = renderer::Renderer::getInstance();
                 renderer->clearWindow();
                 const auto& activeCamera = activeScene->getActiveCamera();
-                core::Vec2f cameraPos = {0, 0};
+                framework::Vec2f cameraPos = {0, 0};
                 activeScene->draw();
             }
             renderer::Renderer::getInstance()->flush(activeScene ? activeScene->getActiveCamera() : nullptr);
@@ -68,7 +69,7 @@ namespace e2XD::framework
         window.setTitle(title);
     }
 
-    void Game::setActiveScene(std::unique_ptr<core::Scene>&& scene)
+    void Game::setActiveScene(std::unique_ptr<framework::Scene>&& scene)
     {
         activeScene = std::move(scene);
         activeScene->create();

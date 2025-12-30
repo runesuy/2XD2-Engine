@@ -28,7 +28,7 @@ namespace e2XD::std_addon
         rectangleShape.setFillColor(color);
     }
 
-    void Rectangle2D::setSize(const core::Vec2f& size)
+    void Rectangle2D::setSize(const framework::Vec2f& size)
     {
         rectangleShape.setSize({size.x, size.y});
     }

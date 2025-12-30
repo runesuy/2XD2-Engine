@@ -5,7 +5,7 @@
 #include "2XD2/core/Node.h"
 #include <gtest/gtest.h>
 #include <gmock/gmock.h>
-namespace e2XD::core {
+namespace e2XD::framework {
     class MockNode : public Node {
     public:
         MOCK_METHOD(void, onCreate, (), (override));

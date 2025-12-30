@@ -8,7 +8,7 @@
 #include "Transform2D.h"
 #include "Vec2f.h"
 
-namespace e2XD::core
+namespace e2XD::framework
 {
     /**
      * A 2D node in the scene graph.

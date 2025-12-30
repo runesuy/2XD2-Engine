@@ -4,29 +4,22 @@
 
 #ifndef INC_2XD2_ENGINE_COLLISIONHANDLER_H
 #define INC_2XD2_ENGINE_COLLISIONHANDLER_H
+#include "ICollisionBody.h"
 
 
-namespace e2XD::core
+namespace e2XD::framework
 {
+
     class ICollisionHandler
     {
     public:
-        /**
-         * Collision types for collision bodies.
-         * STATIC: does not move, used for environment
-         * DYNAMIC: can move, used for characters and objects
-         */
-        enum class CollisionType
-        {
-            STATIC,
-            DYNAMIC
-        };
-
         virtual ~ICollisionHandler() = default;
 
-        virtual void registerCollisionBody(class CollisionBody2D* body) = 0;
+        virtual void registerCollisionBody(ICollisionBody* body) = 0;
 
+        virtual void removeCollisionBody(ICollisionBody* body) = 0;
 
+        virtual void checkCollisions() const = 0;
 
     };
 } // core

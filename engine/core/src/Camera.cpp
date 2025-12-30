@@ -5,7 +5,7 @@
 #include "2XD2/core/Camera.h"
 
 
-namespace e2XD::core
+namespace e2XD::framework
 {
     float Camera::getZoom() const
     {

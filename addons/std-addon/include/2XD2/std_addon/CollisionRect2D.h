@@ -14,7 +14,7 @@ namespace e2XD::std_addon
     /**
      * A rectangular collision body in 2D space.
      */
-    class CollisionRect2D : public core::CollisionBody2D
+    class CollisionRect2D : public framework::CollisionBody2D
     {
         sf::Rect<float> rectangle;
     public:
@@ -26,9 +26,9 @@ namespace e2XD::std_addon
         [[nodiscard]] float getWidth() const;
         [[nodiscard]] float getHeight() const;
 
-        bool areColliding(CollisionBody2D* other) const override;
-        void setGlobalPosition(const core::Vec2f& position) override;
-        void setLocalPosition(const core::Vec2f& position) override;
+        bool areColliding(ICollisionBody* other) const override;
+        void setGlobalPosition(const framework::Vec2f& position) override;
+        void setLocalPosition(const framework::Vec2f& position) override;
     };
 } // std_addon
 // e2XD

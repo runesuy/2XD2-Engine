@@ -34,7 +34,7 @@ namespace e2XD::renderer
         renderQueue[renderCommand.renderLayer].push_back(renderCommand);
     }
 
-    void Renderer::flush(const core::Camera* worldCamera)
+    void Renderer::flush(const framework::Camera* worldCamera)
     {
         for (const auto& [layer, commands] : renderQueue)
         {

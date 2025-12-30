@@ -18,7 +18,7 @@ Player::Player()
 
 void Player::onUpdate()
 {
-    e2XD::core::Vec2f velocity{0,0};
+    e2XD::framework::Vec2f velocity{0,0};
     if (Input::isKeyPressed(Key::W))
     {
         velocity.y -= speed;
@@ -28,7 +28,7 @@ void Player::onUpdate()
         velocity.y += speed;
     }
 
-    auto newPos = getGlobalPosition() + velocity * e2XD::core::Time::getDeltaTime();
+    auto newPos = getGlobalPosition() + velocity * e2XD::framework::Time::getDeltaTime();
     newPos.y = std::clamp(newPos.y, minY, maxY);
     setGlobalPosition(newPos);
 }

@@ -4,7 +4,7 @@
 
 #include "2XD2/core/Transform2D.h"
 
-namespace e2XD::core
+namespace e2XD::framework
 {
     const Vec2f& Transform2D::getPosition() const
     {

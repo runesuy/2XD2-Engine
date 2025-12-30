@@ -6,7 +6,7 @@
 #define INC_2XD2_ENGINE_STOPWATCH_H
 #include "chrono"
 
-namespace e2XD::core
+namespace e2XD::framework
 {
     using namespace std::chrono;
 

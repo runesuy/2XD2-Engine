@@ -4,7 +4,7 @@
 
 #include "2XD2/core/Scene.h"
 
-namespace e2XD::core
+namespace e2XD::framework
 {
     const Camera* Scene::getActiveCamera() const
     {

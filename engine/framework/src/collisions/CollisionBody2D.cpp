@@ -4,14 +4,14 @@
 
 #include "2XD2/framework/collisions/CollisionBody2D.h"
 
-namespace e2XD::core
+namespace e2XD::framework
 {
     int CollisionBody2D::getCollisionLayer() const
     {
         return collisionLayer;
     }
 
-    ICollisionHandler::CollisionType CollisionBody2D::getCollisionType() const
+    Collisions::CollisionType CollisionBody2D::getCollisionType() const
     {
         return collisionType;
     }

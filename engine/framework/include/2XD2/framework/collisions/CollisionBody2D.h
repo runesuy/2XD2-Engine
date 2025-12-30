@@ -4,17 +4,17 @@
 
 #ifndef INC_2XD2_ENGINE_COLLISIONBODY_H
 #define INC_2XD2_ENGINE_COLLISIONBODY_H
-#include "ICollisionHandler.h"
+#include "Collisions.h"
 #include "ICollisionBody.h"
 #include "2XD2/core/Node2D.h"
 
 
-namespace e2XD::core
+namespace e2XD::framework
 {
     /**
      * A collision body in 2D space.
      */
-    class CollisionBody2D  : ICollisionBody<CollisionBody2D>, public Node2D
+    class CollisionBody2D  : public ICollisionBody, public Node2D
     {
     protected:
         /**
@@ -26,13 +26,13 @@ namespace e2XD::core
          * The type of collision body.
          * @see CollisionHandler::CollisionType
          */
-        ICollisionHandler::CollisionType collisionType = ICollisionHandler::CollisionType::DYNAMIC;
+        Collisions::CollisionType collisionType = Collisions::CollisionType::DYNAMIC;
     public:
         CollisionBody2D() = default;
         ~CollisionBody2D() override = default;
 
 
-        [[nodiscard]] ICollisionHandler::CollisionType getCollisionType() const override;
+        [[nodiscard]] Collisions::CollisionType getCollisionType() const override;
         [[nodiscard]] int getCollisionLayer() const override;
     };
 } // core

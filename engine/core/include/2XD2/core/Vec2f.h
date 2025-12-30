@@ -5,7 +5,7 @@
 #ifndef INC_2XD2_ENGINE_VEC2_H
 #define INC_2XD2_ENGINE_VEC2_H
 
-namespace e2XD::core
+namespace e2XD::framework
 {
     /**
      * Defines a 2D vector with x and y float components.

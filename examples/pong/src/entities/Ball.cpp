@@ -13,6 +13,6 @@ Ball::Ball()
 
 void Ball::onUpdate()
 {
-    setGlobalPosition(getGlobalPosition() + velocity* e2XD::core::Time::getDeltaTime());
+    setGlobalPosition(getGlobalPosition() + velocity* e2XD::framework::Time::getDeltaTime());
 }
 

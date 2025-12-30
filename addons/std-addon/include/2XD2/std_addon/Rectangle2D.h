@@ -13,7 +13,7 @@ namespace e2XD::std_addon
     /**
      * A 2D rectangle shape node.
      */
-    class Rectangle2D : public core::Node2D
+    class Rectangle2D : public framework::Node2D
     {
         sf::RectangleShape rectangleShape;
 
@@ -31,7 +31,7 @@ namespace e2XD::std_addon
          * Set the size of the rectangle using game units.
          * @param size
          */
-        void setSize(const core::Vec2f& size);
+        void setSize(const framework::Vec2f& size);
     };
 } // framework
 // e2XD

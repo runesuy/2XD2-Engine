@@ -13,7 +13,7 @@
 #include "Renderable.h"
 
 
-namespace e2XD::core
+namespace e2XD::framework
 {
     class Node;
     template <typename T>

@@ -10,7 +10,7 @@
 class Ball final : public e2XD::std_addon::Circle2D
 {
     const float radius=15;
-    e2XD::core::Vec2f velocity{200.0f,0};
+    e2XD::framework::Vec2f velocity{200.0f,0};
 public:
     Ball();
 

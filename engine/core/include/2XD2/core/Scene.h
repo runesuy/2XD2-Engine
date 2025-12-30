@@ -8,7 +8,7 @@
 #include "Camera.h"
 #include "Node.h"
 
-namespace e2XD::core
+namespace e2XD::framework
 {
     class Scene;
     template <typename T>

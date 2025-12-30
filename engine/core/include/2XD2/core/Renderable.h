@@ -7,7 +7,7 @@
 #include "RenderLayer.h"
 
 
-namespace e2XD::core
+namespace e2XD::framework
 {
     /**
      * An object renderable by the Renderer.

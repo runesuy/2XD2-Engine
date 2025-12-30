@@ -7,12 +7,12 @@
 
 namespace e2XD::std_addon
 {
-    void CollisionRect2D::setWidth(float width)
+    void CollisionRect2D::setWidth(const float width)
     {
         rectangle.width = width;
     }
 
-    void CollisionRect2D::setHeight(float height)
+    void CollisionRect2D::setHeight(const float height)
     {
         rectangle.height = height;
     }
@@ -27,7 +27,7 @@ namespace e2XD::std_addon
         return rectangle.height;
     }
 
-    bool CollisionRect2D::areColliding(CollisionBody2D* other) const
+    bool CollisionRect2D::areColliding(ICollisionBody* other) const
     {
         // Simple AABB collision detection for rectangular bodies
         if (const auto* otherRect = dynamic_cast<CollisionRect2D*>(other))
@@ -37,14 +37,14 @@ namespace e2XD::std_addon
         return false;
     }
 
-    void CollisionRect2D::setLocalPosition(const core::Vec2f& position)
+    void CollisionRect2D::setLocalPosition(const framework::Vec2f& position)
     {
         CollisionBody2D::setLocalPosition(position);
         rectangle.left = getGlobalPosition().x;
         rectangle.top = getGlobalPosition().y;
     }
 
-    void CollisionRect2D::setGlobalPosition(const core::Vec2f& position)
+    void CollisionRect2D::setGlobalPosition(const framework::Vec2f& position)
     {
         CollisionBody2D::setGlobalPosition(position);
         rectangle.left = position.x;

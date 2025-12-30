@@ -5,7 +5,7 @@
 #include "../include/2XD2/core/Renderable.h"
 
 
-namespace e2XD::core
+namespace e2XD::framework
 {
     void Renderable::draw()
     {

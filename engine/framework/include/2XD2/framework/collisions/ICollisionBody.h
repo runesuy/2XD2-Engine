@@ -4,12 +4,11 @@
 
 #ifndef INC_2XD2_ENGINE_ICOLLISIONBODY_H
 #define INC_2XD2_ENGINE_ICOLLISIONBODY_H
-#include "ICollisionHandler.h"
+#include "Collisions.h"
 
 
-namespace e2XD::core
+namespace e2XD::framework
 {
-    template<class Derived>
     class ICollisionBody
     {
     public:
@@ -20,13 +19,13 @@ namespace e2XD::core
          * @param other
          * @return True if this body is colliding with the other body.
          */
-        virtual bool areColliding(Derived* other)const =0;
+        virtual bool areColliding(ICollisionBody* other)const =0;
 
         /**
          *
          * @return The collision type of this body.
          */
-        [[nodiscard]] virtual ICollisionHandler::CollisionType getCollisionType() const = 0;
+        [[nodiscard]] virtual Collisions::CollisionType getCollisionType() const = 0;
 
         /**
          *
@@ -38,13 +37,13 @@ namespace e2XD::core
          * Called when this body starts colliding with another body.
          * @param other
          */
-        virtual void onCollisionEnter(Derived* other) {}
+        virtual void onCollisionEnter(ICollisionBody* other) {}
 
         /**
          * Called when this body exits collision with another body.
          * @param other
          */
-        virtual void onCollisionExit(Derived* other) {}
+        virtual void onCollisionExit(ICollisionBody* other) {}
     };
 } // core
 // e2XD

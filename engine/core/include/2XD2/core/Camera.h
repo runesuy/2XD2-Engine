@@ -6,7 +6,7 @@
 #define INC_2XD2_ENGINE_CAMERA_H
 #include "Node2D.h"
 
-namespace e2XD::core
+namespace e2XD::framework
 {
     /**
      * Camera node to define the view in a 2D scene.

@@ -4,7 +4,7 @@
 
 #include "2XD2/core/Node2D.h"
 
-namespace e2XD::core
+namespace e2XD::framework
 {
     const Vec2f& Node2D::getGlobalPosition() const
     {

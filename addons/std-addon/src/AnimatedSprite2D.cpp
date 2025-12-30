@@ -56,7 +56,7 @@ namespace e2XD::std_addon
 
     void AnimatedSprite2D::_internal_onDraw()
     {
-        _updateCurrentFrame(core::Time::getDeltaTime());
+        _updateCurrentFrame(framework::Time::getDeltaTime());
         setTexture(*_currentAnimation.getFrames().at(_currentFrameIndex));
         Sprite2D::_internal_onDraw();
     }

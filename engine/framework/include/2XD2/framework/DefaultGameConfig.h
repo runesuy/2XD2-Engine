@@ -22,6 +22,7 @@ namespace e2XD::framework
         std::unique_ptr<IInputHandler> inputHandler = std::make_unique<internal::SFMLInputHandler>();
         std::unique_ptr<ITextureManager> textureManager = std::make_unique<SFMLTextureManager>();
         std::unique_ptr<IAnimationManager> animationManager = std::make_unique<SFMLAnimationManager>();
+        std::unique_ptr<ICollisionHandler> collisionHandler;
 
     public:
         [[nodiscard]] IInputHandler* getInputHandler() const override;
@@ -29,6 +30,8 @@ namespace e2XD::framework
         [[nodiscard]] IAnimationManager* getAnimationManager() const override;
 
         [[nodiscard]] ITextureManager* getTextureManager() const override;
+
+        [[nodiscard]] ICollisionHandler* getCollisionHandler() const override;
     };
 } // framework
 // e2XD

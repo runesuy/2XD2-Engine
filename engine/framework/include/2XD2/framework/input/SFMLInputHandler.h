@@ -29,7 +29,7 @@ namespace e2XD::framework::internal
         std::tuple<bool, unsigned int, unsigned int> windowResized = {false, 0, 0};
         bool windowClosed = false;
 
-        core::Vec2f mousePosition;
+        framework::Vec2f mousePosition;
 
         void handleEvent(const sf::Event& event);
 
@@ -50,7 +50,7 @@ namespace e2XD::framework::internal
 
         [[nodiscard]] bool isKeyReleased(Key keyCode) const override;
         [[nodiscard]] bool isMouseButtonPressed(MouseButton buttonCode) const override;
-        [[nodiscard]] core::Vec2f getMousePosition() const override;
+        [[nodiscard]] framework::Vec2f getMousePosition() const override;
         [[nodiscard]] bool isKeyPressed(Key keyCode) const override;
         [[nodiscard]] bool isMouseButtonReleased(MouseButton buttonCode) const override;
 

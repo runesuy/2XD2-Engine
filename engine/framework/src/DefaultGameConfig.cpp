@@ -21,5 +21,10 @@ namespace e2XD::framework
     {
         return textureManager.get();
     }
+
+    ICollisionHandler* DefaultGameConfig::getCollisionHandler() const
+    {
+        return collisionHandler.get();
+    }
 } // framework
 // e2XD
