@@ -21,6 +21,10 @@ namespace e2XD::framework
     {
         _internal_onCreate();
         onCreate();
+        for (const auto& node : nodes)
+        {
+            node->create();
+        }
     }
 
     void Node::update()
@@ -56,5 +60,25 @@ namespace e2XD::framework
                 ++it;
             }
         }
+    }
+
+    std::list<Node*> Node::getSubNodes()
+    {
+        std::list<Node*> nodesL;
+        for (const auto& node : this->nodes)
+        {
+            nodesL.push_back(node.get());
+        }
+        return nodesL;
+    }
+
+    std::list<const Node*> Node::getSubNodes() const
+    {
+        std::list<const Node*> nodesL;
+        for (const auto& node : this->nodes)
+        {
+            nodesL.push_back(node.get());
+        }
+        return nodesL;
     }
 } // e2XD

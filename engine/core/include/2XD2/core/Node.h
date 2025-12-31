@@ -52,7 +52,7 @@ namespace e2XD::framework
 
         /**
          * Placeholder for user-defined creation logic.
-         * This method is called when the node is created.
+         * This method is called when the node is added to the scene.
          */
         virtual void onCreate()
         {
@@ -121,7 +121,7 @@ namespace e2XD::framework
          * Add a sub-node to this node.
          * @param node
          */
-        void addSubNode(std::unique_ptr<Node> node);
+        virtual void addSubNode(std::unique_ptr<Node> node);
 
         /**
          * Get the first sub-node of the specified type.
@@ -154,6 +154,10 @@ namespace e2XD::framework
          */
         template <IsNode EntityType>
         [[nodiscard]] std::list<EntityType*> getSubNodes();
+
+        [[nodiscard]] std::list<Node*> getSubNodes();
+
+        [[nodiscard]] std::list<const Node*> getSubNodes() const;
     };
 
     template <IsNode EntityType>
@@ -167,7 +171,6 @@ namespace e2XD::framework
 
     inline void Node::addSubNode(std::unique_ptr<Node> node)
     {
-        node->create();
         nodes.push_back(std::move(node));
     }
 
