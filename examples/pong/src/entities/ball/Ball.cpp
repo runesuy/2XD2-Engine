@@ -5,15 +5,15 @@
 #include "Ball.h"
 
 #include "BallHitBox.h"
-#include "../../../../../engine/framework/include/2XD2/framework/Time.h"
+#include "2XD2/framework/Time.h"
 
 Ball::Ball()
 {
     setRadius(radius);
-    auto* hitbox = new BallHitBox(this);
+    auto hitbox = std::make_unique<BallHitBox>(this);
     hitbox->setHeight(radius*2);
     hitbox->setWidth(radius*2);
-    Node::addSubNode(std::unique_ptr<Node>(hitbox));
+    Node::addSubNode(std::move(hitbox));
 }
 
 void Ball::onUpdate()
