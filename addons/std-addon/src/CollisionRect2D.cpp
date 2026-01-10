@@ -40,15 +40,15 @@ namespace e2XD::std_addon
     void CollisionRect2D::setLocalPosition(const core::Vec2f& position)
     {
         CollisionBody2D::setLocalPosition(position);
-        rectangle.left = getGlobalPosition().x;
-        rectangle.top = getGlobalPosition().y;
+        rectangle.left = getGlobalPosition().x - rectangle.width/2;
+        rectangle.top = getGlobalPosition().y - rectangle.height/2;
     }
 
     void CollisionRect2D::setGlobalPosition(const core::Vec2f& position)
     {
         CollisionBody2D::setGlobalPosition(position);
-        rectangle.left = position.x;
-        rectangle.top = position.y;
+        rectangle.left = position.x - rectangle.width/2;
+        rectangle.top = position.y - rectangle.height/2;
     }
 } // std_addon
 // e2XD
