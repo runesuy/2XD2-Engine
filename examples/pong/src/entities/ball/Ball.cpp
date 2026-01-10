@@ -13,11 +13,17 @@ Ball::Ball()
     auto* hitbox = new BallHitBox(this);
     hitbox->setHeight(radius*2);
     hitbox->setWidth(radius*2);
-    addSubNode(std::unique_ptr<Node>(hitbox));
+    Node::addSubNode(std::unique_ptr<Node>(hitbox));
 }
 
 void Ball::onUpdate()
 {
     setGlobalPosition(getGlobalPosition() + velocity* e2XD::framework::Time::getDeltaTime());
+
+    // bottom and top wall collision
+    if (getGlobalPosition().y + radius >= UPPERBOUND || getGlobalPosition().y - radius <= LOWERBOUND)
+    {
+        velocity.y = -velocity.y;
+    }
 }
 

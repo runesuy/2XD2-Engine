@@ -10,8 +10,11 @@
 class Ball final : public e2XD::std_addon::Circle2D
 {
     const float radius=15;
-    e2XD::framework::Vec2f velocity{200.0f,0};
     friend class BallHitBox;
+    static constexpr float SPEED = 350.0f;
+    static constexpr float UPPERBOUND = 300.0f;
+    static constexpr float LOWERBOUND = -300.0f;
+    e2XD::framework::Vec2f velocity{2*SPEED/3,SPEED/3};
 public:
     Ball();
 

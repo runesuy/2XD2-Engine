@@ -32,6 +32,10 @@ namespace e2XD::std_addon
          * @param size
          */
         void setSize(const framework::Vec2f& size);
+
+        float getHeight() const;
+
+        float getWidth() const;
     };
 } // framework
 // e2XD

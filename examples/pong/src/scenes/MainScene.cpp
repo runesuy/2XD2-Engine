@@ -18,4 +18,5 @@ MainScene::MainScene()
     ball->setGlobalPosition({0,0});
     camera.setGlobalPosition({0,0});
     setActiveCamera(&camera);
+    opponent->linkBall(ball);
 }

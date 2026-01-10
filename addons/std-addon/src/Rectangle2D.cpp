@@ -31,6 +31,17 @@ namespace e2XD::std_addon
     void Rectangle2D::setSize(const framework::Vec2f& size)
     {
         rectangleShape.setSize({size.x, size.y});
+        setGlobalScale(size);
+    }
+
+    float Rectangle2D::getHeight() const
+    {
+        return rectangleShape.getSize().y;
+    }
+
+    float Rectangle2D::getWidth() const
+    {
+        return rectangleShape.getSize().x;
     }
 } // framework
 // e2XD

@@ -5,6 +5,10 @@
 #include "Opponent.h"
 
 #include "OpponentHitBox.h"
+#include "../ball/Ball.h"
+#include "2XD2/core/Time.h"
+
+using namespace e2XD::framework;
 
 Opponent::Opponent()
 {
@@ -13,4 +17,27 @@ Opponent::Opponent()
     auto* hitbox = createSubNode<OpponentHitBox>();
     hitbox->setHeight(40);
     hitbox->setWidth(10);
+}
+
+void Opponent::linkBall(Ball* ball)
+{
+    this->ball = ball;
+}
+
+void Opponent::onUpdate()
+{
+    if (!ball) return;
+
+    if (ball->getGlobalPosition().y > getGlobalPosition().y + 5)
+    {
+        float newY = getGlobalPosition().y + speed * Time::getDeltaTime();
+        if (newY > 280) newY = 280;
+        setGlobalPosition({getGlobalPosition().x, newY});
+    }
+    else if (ball->getGlobalPosition().y < getGlobalPosition().y - 5)
+    {
+        float newY = getGlobalPosition().y - speed * Time::getDeltaTime();
+        if (newY < -280) newY = -280;
+        setGlobalPosition({getGlobalPosition().x, newY});
+    }
 }
