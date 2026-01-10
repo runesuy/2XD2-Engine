@@ -13,10 +13,10 @@ using namespace e2XD::framework;
 Opponent::Opponent()
 {
     setFillColor(sf::Color::Red);
-    setSize({10,40});
+    setSize(initialSize);
     auto* hitbox = createSubNode<OpponentHitBox>();
-    hitbox->setHeight(40);
-    hitbox->setWidth(10);
+    hitbox->setHeight(initialSize.y);
+    hitbox->setWidth(initialSize.x);
 }
 
 void Opponent::linkBall(Ball* ball)
@@ -37,7 +37,7 @@ void Opponent::onUpdate()
     else if (ball->getGlobalPosition().y < getGlobalPosition().y - 5)
     {
         float newY = getGlobalPosition().y - speed * Time::getDeltaTime();
-        if (newY < -minY) newY = -minY;
+        if (newY < minY) newY = minY;
         setGlobalPosition({getGlobalPosition().x, newY});
     }
 }

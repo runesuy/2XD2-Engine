@@ -19,7 +19,7 @@ namespace e2XD::framework
 
         virtual void removeCollisionBody(ICollisionBody* body) = 0;
 
-        virtual void checkCollisions() const = 0;
+        virtual void checkCollisions() = 0;
 
     };
 }

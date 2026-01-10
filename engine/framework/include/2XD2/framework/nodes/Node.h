@@ -26,6 +26,7 @@ namespace e2XD::framework
     class Node : public Renderable
     {
         bool markedForDeletion = false;
+        bool _isCreated = false;
         std::list<std::unique_ptr<Node>> nodes;
 
         /**
@@ -172,6 +173,10 @@ namespace e2XD::framework
     inline void Node::addSubNode(std::unique_ptr<Node> node)
     {
         nodes.push_back(std::move(node));
+        if (_isCreated)
+        {
+            nodes.back()->create();
+        }
     }
 
     template <IsNode EntityType>

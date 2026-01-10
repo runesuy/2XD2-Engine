@@ -18,7 +18,7 @@ namespace e2XD::framework
         _collision_bodies.remove_if([body](const auto& pair) { return pair == body; });
     }
 
-    void DefaultCollisionHandler::checkCollisions() const
+    void DefaultCollisionHandler::checkCollisions()
     {
         for (auto itA = _collision_bodies.begin(); itA != _collision_bodies.end(); ++itA)
         {

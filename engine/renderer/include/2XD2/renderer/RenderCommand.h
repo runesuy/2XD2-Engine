@@ -6,8 +6,7 @@
 #define FLATLAND_RENDERCOMMAND_H
 #include <SFML/Graphics/Drawable.hpp>
 #include <SFML/System/Vector2.hpp>
-
-#include "../../../../framework/include/2XD2/framework/drawing/RenderLayer.h"
+#include "RenderLayer.h"
 
 
 namespace e2XD::renderer

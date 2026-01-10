@@ -20,6 +20,7 @@ namespace e2XD::framework
     void Node::create()
     {
         _internal_onCreate();
+        _isCreated = true;
         onCreate();
         for (const auto& node : nodes)
         {

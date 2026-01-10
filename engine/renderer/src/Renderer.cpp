@@ -6,6 +6,7 @@
 
 #include "2XD2/core/exceptions/NotInitializedException.h"
 #include "2XD2/renderer/RenderCommand.h"
+#include "2XD2/renderer/RenderLayer.h"
 
 namespace e2XD::renderer
 {

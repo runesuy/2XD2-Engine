@@ -14,16 +14,15 @@ namespace e2XD::framework
 {
     class DefaultCollisionHandler : public ICollisionHandler
     {
-        // pair<ICollisionBody*, wasCollidingLastCheck>
-        mutable std::list<ICollisionBody*> _collision_bodies;
-        mutable std::vector<std::pair<ICollisionBody*, ICollisionBody*>> _collisions_this_frame;
-        mutable std::vector<std::pair<ICollisionBody*, ICollisionBody*>> _collisions_last_frame;
+        std::list<ICollisionBody*> _collision_bodies;
+        std::vector<std::pair<ICollisionBody*, ICollisionBody*>> _collisions_this_frame;
+        std::vector<std::pair<ICollisionBody*, ICollisionBody*>> _collisions_last_frame;
     public:
         void registerCollisionBody(ICollisionBody* body) override;
 
         void removeCollisionBody(ICollisionBody* body) override;
 
-        void checkCollisions() const override;
+        void checkCollisions() override;
     };
 } // framework
 // e2XD
