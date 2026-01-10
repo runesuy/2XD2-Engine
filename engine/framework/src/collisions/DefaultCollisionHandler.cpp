@@ -25,8 +25,13 @@ namespace e2XD::framework
             for (auto itB = std::next(itA); itB != _collision_bodies.end(); ++itB)
             {
                 auto& bodyA = *itA;
+                auto& bodyB = *itB;
 
-                if (auto& bodyB = *itB; bodyA->areColliding(bodyB))
+                if (bodyA->getCollisionLayer() != bodyB->getCollisionLayer()) continue; // Skip if layers do not match
+                if (bodyA->getCollisionType()==Collisions::CollisionType::STATIC &&
+                    bodyB->getCollisionType()==Collisions::CollisionType::STATIC) continue; // Skip static-static collisions
+
+                if (bodyA->areColliding(bodyB))
                 {
                     if (bodyA < bodyB) _collisions_this_frame.emplace_back(bodyA, bodyB);
                     else _collisions_this_frame.emplace_back(bodyB, bodyA);
