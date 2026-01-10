@@ -15,10 +15,9 @@ Player::Player()
 {
     setFillColor(sf::Color::White);
     setSize({10,40});
-    auto* hitbox = new PlayerHitBox();
+    auto* hitbox = createSubNode<PlayerHitBox>();
     hitbox->setHeight(40);
     hitbox->setWidth(10);
-    addSubNode(std::unique_ptr<Node>(hitbox));
 }
 
 void Player::onUpdate()

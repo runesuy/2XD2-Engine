@@ -10,8 +10,7 @@ Opponent::Opponent()
 {
     setFillColor(sf::Color::Red);
     setSize({10,40});
-    auto* hitbox = new OpponentHitBox();
+    auto* hitbox = createSubNode<OpponentHitBox>();
     hitbox->setHeight(40);
     hitbox->setWidth(10);
-    addSubNode(std::unique_ptr<Node>(hitbox));
 }

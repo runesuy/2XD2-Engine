@@ -21,4 +21,4 @@ namespace e2XD::framework
         Collisions::registerCollisionBody(this);
         Node2D::_internal_onCreate();
     }
-} // core
+}
