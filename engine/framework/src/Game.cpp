@@ -4,7 +4,7 @@
 
 #include "2XD2/framework/Game.h"
 
-#include "2XD2/core/Time.h"
+#include "../include/2XD2/framework/Time.h"
 #include "../include/2XD2/framework/input/SFMLInputHandler.h"
 #include "2XD2/core/exceptions/NotInitializedException.h"
 #include "2XD2/framework/input/Input.h"
@@ -19,12 +19,13 @@ namespace e2XD::framework
     Game::Game(IGameConfig& config)
     {
         auto inputHandler = config.getInputHandler();
-        if (!inputHandler) throw NotInitializedException("GameConfig.getInputHandler()",
+        if (!inputHandler) throw core::NotInitializedException("GameConfig.getInputHandler()",
                                                          "Game::Game(IGameConfig& config)");
         config.getInputHandler()->initialize(&window);
         Input::initialize(config.getInputHandler());
         Resources::Textures::initialize(config.getTextureManager());
         Resources::Animations::initialize(config.getAnimationManager());
+        Collisions::initialize(config.getCollisionHandler());
     }
 
 
@@ -37,9 +38,10 @@ namespace e2XD::framework
 
         while (running && window.isOpen())
         {
-            core::Time::tick();
+            Time::tick();
             // Poll events
             Input::pollEvents();
+            Collisions::checkCollisions();
             if (const auto& resized = Input::isWindowResized(); std::get<0>(resized))
             {
                 sf::FloatRect visibleArea(0, 0, std::get<1>(resized), std::get<2>(resized));
@@ -53,11 +55,15 @@ namespace e2XD::framework
                 activeScene->update();
                 const auto& renderer = renderer::Renderer::getInstance();
                 renderer->clearWindow();
-                const auto& activeCamera = activeScene->getActiveCamera();
-                core::Vec2f cameraPos = {0, 0};
                 activeScene->draw();
             }
-            renderer::Renderer::getInstance()->flush(activeScene ? activeScene->getActiveCamera() : nullptr);
+            if (activeScene)
+            {
+                if (const Camera* activeCamera = activeScene->getActiveCamera())
+                {
+                    renderer::Renderer::getInstance()->flush(activeCamera->getGlobalPosition(), activeCamera->getZoom());
+                }
+            }
             window.display();
             Input::newFrame();
         }
@@ -68,7 +74,7 @@ namespace e2XD::framework
         window.setTitle(title);
     }
 
-    void Game::setActiveScene(std::unique_ptr<core::Scene>&& scene)
+    void Game::setActiveScene(std::unique_ptr<framework::Scene>&& scene)
     {
         activeScene = std::move(scene);
         activeScene->create();

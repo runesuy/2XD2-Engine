@@ -9,7 +9,7 @@
 #include <unordered_map>
 
 #include "IAnimationManager.h"
-#include "2XD2/framework/AnimationMap.h"
+#include "AnimationMap.h"
 
 namespace e2XD::framework
 {

@@ -6,7 +6,7 @@
 #define INC_2XD2_ENGINE_SFMLTOINPUTMAP_H
 
 #include <SFML/Window/Event.hpp>
-#include "../Key.h"
+#include "Key.h"
 #include "unordered_map"
 
 namespace e2XD::framework::internal::input

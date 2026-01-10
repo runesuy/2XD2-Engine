@@ -6,12 +6,12 @@
 #define INC_2XD2_ENGINE_CIRCLE2D_H
 #include <SFML/Graphics/CircleShape.hpp>
 
-#include "2XD2/core/Node2D.h"
+#include "2XD2/framework/nodes/Node2D.h"
 
 
 namespace e2XD::std_addon
 {
-    class Circle2D : public core::Node2D
+    class Circle2D : public framework::Node2D
     {
         sf::CircleShape _shape;
     public:

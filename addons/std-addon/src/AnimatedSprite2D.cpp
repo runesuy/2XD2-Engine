@@ -4,7 +4,7 @@
 
 #include "../include/2XD2/std_addon/AnimatedSprite2D.h"
 
-#include "2XD2/core/Time.h"
+#include "2XD2/framework/Time.h"
 
 
 namespace e2XD::std_addon
@@ -56,7 +56,7 @@ namespace e2XD::std_addon
 
     void AnimatedSprite2D::_internal_onDraw()
     {
-        _updateCurrentFrame(core::Time::getDeltaTime());
+        _updateCurrentFrame(framework::Time::getDeltaTime());
         setTexture(*_currentAnimation.getFrames().at(_currentFrameIndex));
         Sprite2D::_internal_onDraw();
     }

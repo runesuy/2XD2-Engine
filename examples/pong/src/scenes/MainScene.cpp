@@ -4,9 +4,9 @@
 
 #include "MainScene.h"
 
-#include "../entities/Opponent.h"
-#include "../entities/Player.h"
-#include "../entities/Ball.h"
+#include "../entities/opponent/Opponent.h"
+#include "../entities/player/Player.h"
+#include "../entities/ball/Ball.h"
 
 MainScene::MainScene()
 {
@@ -18,4 +18,5 @@ MainScene::MainScene()
     ball->setGlobalPosition({0,0});
     camera.setGlobalPosition({0,0});
     setActiveCamera(&camera);
+    opponent->linkBall(ball);
 }

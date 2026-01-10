@@ -4,12 +4,13 @@
 
 #ifndef INC_2XD2_ENGINE_RENDERER_H
 #define INC_2XD2_ENGINE_RENDERER_H
-#include <unordered_map>
 #include <SFML/Graphics/RenderWindow.hpp>
 #include <SFML/Graphics/Shape.hpp>
 #include "RenderCommand.h"
-#include "2XD2/core/Camera.h"
-#include "2XD2/core/RenderLayer.h"
+#include "2XD2/core/Vec2f.h"
+#include <unordered_map>
+
+#include "RenderLayer.h"
 
 namespace e2XD::renderer
 {
@@ -19,7 +20,6 @@ namespace e2XD::renderer
     class Renderer
     {
         sf::RenderWindow* window = nullptr;
-        core::Camera* _camera = nullptr;
 
         inline static Renderer* _instance = nullptr;
 
@@ -42,7 +42,7 @@ namespace e2XD::renderer
 
         void submit(const RenderCommand& renderCommand);
 
-        void flush(const core::Camera* worldCamera);
+        void flush(const core::Vec2f& cameraPosition, float cameraZoom);
     };
 }
 

@@ -12,7 +12,7 @@ namespace e2XD::std_addon
     {
         const auto renderer = renderer::Renderer::getInstance();
         const auto& position = getGlobalPosition();
-        _shape.setOrigin(_shape.getRadius() / 2, _shape.getRadius() / 2);
+        _shape.setOrigin(_shape.getRadius(), _shape.getRadius());
         renderer->submit({
             renderLayer,
             &_shape,

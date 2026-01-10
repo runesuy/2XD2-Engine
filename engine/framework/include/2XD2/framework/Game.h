@@ -6,15 +6,15 @@
 #define INC_2XD2_ENGINE_GAME_H
 #include <memory>
 
-#include "2XD2/core/Scene.h"
+#include "scene/Scene.h"
 #include <SFML/Graphics.hpp>
-#include "IGameConfig.h"
+#include "config/IGameConfig.h"
 
 namespace e2XD::framework
 {
     class Game
     {
-        std::unique_ptr<core::Scene> activeScene;
+        std::unique_ptr<framework::Scene> activeScene;
         sf::RenderWindow window = {sf::VideoMode(800, 600), "2XD2 Game"};
 
         inline static bool running = false;
@@ -25,13 +25,13 @@ namespace e2XD::framework
 
         void setWindowTitle(const std::string& title);
 
-        void setActiveScene(std::unique_ptr<core::Scene>&& scene);
+        void setActiveScene(std::unique_ptr<framework::Scene>&& scene);
 
-        template <core::IsScene T>
+        template <framework::IsScene T>
         T* createActiveScene();
     };
 
-    template <core::IsScene T>
+    template <framework::IsScene T>
     T* Game::createActiveScene()
     {
         auto scene = new T();
