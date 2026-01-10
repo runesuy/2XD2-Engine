@@ -8,7 +8,7 @@ namespace e2XD::framework
 {
     void DefaultCollisionHandler::registerCollisionBody(ICollisionBody* body)
     {
-        _collision_bodies.push_back({body, false});
+        _collision_bodies.emplace_back(body, false);
     }
 
     void DefaultCollisionHandler::removeCollisionBody(ICollisionBody* body)
@@ -18,22 +18,38 @@ namespace e2XD::framework
 
     void DefaultCollisionHandler::checkCollisions() const
     {
-        for (auto& bodyA : _collision_bodies)
+        for (auto itA = _collision_bodies.begin(); itA != _collision_bodies.end(); ++itA)
         {
-            for (auto& bodyB : _collision_bodies)
+            for (auto itB = std::next(itA); itB != _collision_bodies.end(); ++itB)
             {
-                if (bodyA.first == bodyB.first)
-                    continue;
+                auto& bodyA = *itA;
+                auto& bodyB = *itB;
 
-                if (bodyA.first->areColliding(bodyB.first) && !bodyA.second)
+                if (bodyA.first->areColliding(bodyB.first))
                 {
-                    bodyA.first->onCollisionEnter(bodyB.first);
-                    bodyA.second = true;
+                    if (!bodyA.second)
+                    {
+                        bodyA.first->onCollisionEnter(bodyB.first);
+                        bodyA.second = true;
+                    }
+                    if (!bodyB.second)
+                    {
+                        bodyB.first->onCollisionEnter(bodyA.first);
+                        bodyB.second = true;
+                    }
                 }
-                else if (bodyB.second)
+                else
                 {
-                    bodyA.first->onCollisionExit(bodyB.first);
-                    bodyA.second = false;
+                    if (bodyA.second)
+                    {
+                        bodyA.first->onCollisionExit(bodyB.first);
+                        bodyA.second = false;
+                    }
+                    if (bodyB.second)
+                    {
+                        bodyB.first->onCollisionExit(bodyA.first);
+                        bodyB.second = false;
+                    }
                 }
             }
         }
