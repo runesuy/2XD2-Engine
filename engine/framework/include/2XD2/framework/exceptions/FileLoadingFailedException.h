@@ -4,14 +4,14 @@
 
 #ifndef FLATLAND_FILELOADINGEXCEPTION_H
 #define FLATLAND_FILELOADINGEXCEPTION_H
-#include "Exception.h"
+#include "2XD2/core/exceptions/Exception.h"
 
 namespace e2XD::framework
 {
     /**
      * Logic exception thrown when a file fails to load.
      */
-    class FileLoadingFailedException : public Exception
+    class FileLoadingFailedException : public core::Exception
     {
     public:
         FileLoadingFailedException(const std::string& filePath, const std::string& where) :

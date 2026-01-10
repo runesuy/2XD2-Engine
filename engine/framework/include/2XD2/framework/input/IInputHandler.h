@@ -6,8 +6,8 @@
 #define INC_2XD2_ENGINE_IINPUTMANAGER_H
 #include <SFML/Graphics/RenderWindow.hpp>
 
-#include "../Key.h"
-#include "../MouseButton.h"
+#include "Key.h"
+#include "MouseButton.h"
 #include "tuple"
 #include "2XD2/core/Vec2f.h"
 
@@ -96,7 +96,7 @@ namespace e2XD::framework
          *
          * @return The current mouse position in window coordinates
          */
-        [[nodiscard]] virtual framework::Vec2f getMousePosition() const = 0;
+        [[nodiscard]] virtual core::Vec2f getMousePosition() const = 0;
 
         /**
          *

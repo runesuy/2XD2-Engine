@@ -2,16 +2,16 @@
 // Created by runes on 14/12/2025.
 //
 
-#include "2XD2/core/Node2D.h"
+#include "../../include/2XD2/framework/nodes/Node2D.h"
 
 namespace e2XD::framework
 {
-    const Vec2f& Node2D::getGlobalPosition() const
+    const core::Vec2f& Node2D::getGlobalPosition() const
     {
         return globalTransform.getPosition();
     }
 
-    void Node2D::setGlobalPosition(const Vec2f& position)
+    void Node2D::setGlobalPosition(const core::Vec2f& position)
     {
         auto positionDiff = position - globalTransform.getPosition();
         globalTransform.setPosition(position);
@@ -28,12 +28,12 @@ namespace e2XD::framework
         }
     }
 
-    const Vec2f& Node2D::getLocalPosition() const
+    const core::Vec2f& Node2D::getLocalPosition() const
     {
         return localTransform.getPosition();
     }
 
-    void Node2D::setLocalPosition(const Vec2f& position)
+    void Node2D::setLocalPosition(const core::Vec2f& position)
     {
         auto positionDiff = position - localTransform.getPosition();
         localTransform.setPosition(position);
@@ -50,12 +50,12 @@ namespace e2XD::framework
         }
     }
 
-    const Vec2f& Node2D::getGlobalScale() const
+    const core::Vec2f& Node2D::getGlobalScale() const
     {
         return globalTransform.getScale();
     }
 
-    void Node2D::setGlobalScale(const Vec2f& scale)
+    void Node2D::setGlobalScale(const core::Vec2f& scale)
     {
         auto scaleDiff = scale / globalTransform.getScale();
         this->globalTransform.setScale(scale);
@@ -72,12 +72,12 @@ namespace e2XD::framework
         }
     }
 
-    const Vec2f& Node2D::getLocalScale() const
+    const core::Vec2f& Node2D::getLocalScale() const
     {
         return localTransform.getScale();
     }
 
-    void Node2D::setLocalScale(const Vec2f& scale)
+    void Node2D::setLocalScale(const core::Vec2f& scale)
     {
         auto scaleDiff = scale / localTransform.getScale();
         this->localTransform.setScale(scale);

@@ -6,9 +6,9 @@
 #define INC_2XD2_ENGINE_GAME_H
 #include <memory>
 
-#include "2XD2/core/Scene.h"
+#include "scene/Scene.h"
 #include <SFML/Graphics.hpp>
-#include "IGameConfig.h"
+#include "config/IGameConfig.h"
 
 namespace e2XD::framework
 {

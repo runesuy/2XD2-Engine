@@ -14,7 +14,7 @@ class Ball final : public e2XD::std_addon::Circle2D
     static constexpr float SPEED = 350.0f;
     static constexpr float UPPERBOUND = 300.0f;
     static constexpr float LOWERBOUND = -300.0f;
-    e2XD::framework::Vec2f velocity{2*SPEED/3,SPEED/3};
+    e2XD::core::Vec2f velocity{2*SPEED/3,SPEED/3};
 public:
     Ball();
 

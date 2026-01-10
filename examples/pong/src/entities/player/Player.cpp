@@ -5,7 +5,7 @@
 #include "Player.h"
 
 #include "PlayerHitBox.h"
-#include "2XD2/core/Time.h"
+#include "../../../../../engine/framework/include/2XD2/framework/Time.h"
 #include "2XD2/framework/input/SFMLInputHandler.h"
 #include "2XD2/framework/input/Input.h"
 
@@ -22,7 +22,7 @@ Player::Player()
 
 void Player::onUpdate()
 {
-    Vec2f velocity{0,0};
+    e2XD::core::Vec2f velocity{0,0};
     if (Input::isKeyPressed(Key::W))
     {
         velocity.y -= speed;

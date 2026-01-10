@@ -4,9 +4,9 @@
 
 #ifndef INC_2XD2_ENGINE_NODE2D_H
 #define INC_2XD2_ENGINE_NODE2D_H
-#include "Node.h"
-#include "Transform2D.h"
-#include "Vec2f.h"
+#include "2XD2/framework/nodes/Node.h"
+#include "2XD2/core/Transform2D.h"
+#include "2XD2/core/Vec2f.h"
 
 namespace e2XD::framework
 {
@@ -16,8 +16,8 @@ namespace e2XD::framework
      */
     class Node2D : public Node
     {
-        Transform2D globalTransform;
-        Transform2D localTransform;
+        core::Transform2D globalTransform;
+        core::Transform2D localTransform;
 
     public:
         Node2D() = default;
@@ -26,53 +26,53 @@ namespace e2XD::framework
          *
          * @return the absolute global position of the node in the scene.
          */
-        [[nodiscard]] const Vec2f& getGlobalPosition() const;
+        [[nodiscard]] const core::Vec2f& getGlobalPosition() const;
 
         /**
          * Set the absolute global position of the node in the scene.
          * Children positions will be updated accordingly.
          * @param position
          */
-        virtual void setGlobalPosition(const Vec2f& position);
+        virtual void setGlobalPosition(const core::Vec2f& position);
 
         /**
          *
          * @return the local position of the node relative to its parent.
          */
-        [[nodiscard]] const Vec2f& getLocalPosition() const;
+        [[nodiscard]] const core::Vec2f& getLocalPosition() const;
 
         /**
          * Set the local position of the node relative to its parent.
          * Children positions will be updated accordingly.
          * @param position
          */
-        virtual void setLocalPosition(const Vec2f& position);
+        virtual void setLocalPosition(const core::Vec2f& position);
 
         /**
          *
          * @return the absolute global scale of the node in the scene.
          */
-        [[nodiscard]] const Vec2f& getGlobalScale() const;
+        [[nodiscard]] const core::Vec2f& getGlobalScale() const;
 
         /**
          * Set the absolute global scale of the node in the scene.
          * Children scales will be updated accordingly.
          * @param scale
          */
-        virtual void setGlobalScale(const Vec2f& scale);
+        virtual void setGlobalScale(const core::Vec2f& scale);
 
         /**
          *
          * @return the local scale of the node relative to its parent.
          */
-        [[nodiscard]] const Vec2f& getLocalScale() const;
+        [[nodiscard]] const core::Vec2f& getLocalScale() const;
 
         /**
          * Set the local scale of the node relative to its parent.
          * Children scales will be updated accordingly.
          * @param scale
          */
-        virtual void setLocalScale(const Vec2f& scale);
+        virtual void setLocalScale(const core::Vec2f& scale);
 
         /**
          *

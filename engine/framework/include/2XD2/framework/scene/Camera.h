@@ -4,7 +4,7 @@
 
 #ifndef INC_2XD2_ENGINE_CAMERA_H
 #define INC_2XD2_ENGINE_CAMERA_H
-#include "Node2D.h"
+#include "../nodes/Node2D.h"
 
 namespace e2XD::framework
 {

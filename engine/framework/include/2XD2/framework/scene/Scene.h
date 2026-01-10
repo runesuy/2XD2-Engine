@@ -5,8 +5,8 @@
 #ifndef INC_2XD2_ENGINE_SCENE_H
 #define INC_2XD2_ENGINE_SCENE_H
 
-#include "Camera.h"
-#include "Node.h"
+#include "2XD2/framework/scene/Camera.h"
+#include "2XD2/framework/nodes/Node.h"
 
 namespace e2XD::framework
 {

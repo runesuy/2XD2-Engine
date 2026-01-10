@@ -4,10 +4,10 @@
 
 #ifndef INC_2XD2_ENGINE_IGAMECONFIG_H
 #define INC_2XD2_ENGINE_IGAMECONFIG_H
-#include "collisions/ICollisionHandler.h"
-#include "input/IInputHandler.h"
-#include "resource_manager/IAnimationManager.h"
-#include "resource_manager/ITextureManager.h"
+#include "../collisions/ICollisionHandler.h"
+#include "../input/IInputHandler.h"
+#include "../resource_manager/IAnimationManager.h"
+#include "../resource_manager/ITextureManager.h"
 
 
 namespace e2XD::framework

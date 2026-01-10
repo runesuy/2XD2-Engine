@@ -18,7 +18,7 @@ namespace e2XD::framework
     {
         if (!_collision_handler)
         {
-            throw NotInitializedException("Collisions", where);
+            throw core::NotInitializedException("Collisions", where);
         }
     }
 

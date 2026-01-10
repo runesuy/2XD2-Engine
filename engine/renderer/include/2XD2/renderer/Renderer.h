@@ -8,8 +8,7 @@
 #include <SFML/Graphics/RenderWindow.hpp>
 #include <SFML/Graphics/Shape.hpp>
 #include "RenderCommand.h"
-#include "2XD2/core/Camera.h"
-#include "2XD2/core/RenderLayer.h"
+#include "2XD2/core/Vec2f.h"
 
 namespace e2XD::renderer
 {
@@ -19,7 +18,6 @@ namespace e2XD::renderer
     class Renderer
     {
         sf::RenderWindow* window = nullptr;
-        framework::Camera* _camera = nullptr;
 
         inline static Renderer* _instance = nullptr;
 
@@ -42,7 +40,7 @@ namespace e2XD::renderer
 
         void submit(const RenderCommand& renderCommand);
 
-        void flush(const framework::Camera* worldCamera);
+        void flush(const core::Vec2f& cameraPosition, float cameraZoom);
     };
 }
 

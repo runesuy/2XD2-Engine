@@ -6,7 +6,7 @@
 #define INC_2XD2_ENGINE_COLLISIONBODY_H
 #include "Collisions.h"
 #include "ICollisionBody.h"
-#include "2XD2/core/Node2D.h"
+#include "../nodes/Node2D.h"
 
 
 namespace e2XD::framework

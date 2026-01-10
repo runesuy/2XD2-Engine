@@ -27,8 +27,8 @@ namespace e2XD::std_addon
         [[nodiscard]] float getHeight() const;
 
         bool areColliding(ICollisionBody* other) const override;
-        void setGlobalPosition(const framework::Vec2f& position) override;
-        void setLocalPosition(const framework::Vec2f& position) override;
+        void setGlobalPosition(const core::Vec2f& position) override;
+        void setLocalPosition(const core::Vec2f& position) override;
     };
 } // std_addon
 // e2XD

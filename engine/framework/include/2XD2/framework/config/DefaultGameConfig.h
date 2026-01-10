@@ -7,10 +7,10 @@
 #include <memory>
 
 #include "IGameConfig.h"
-#include "collisions/DefaultCollisionHandler.h"
-#include "input/SFMLInputHandler.h"
-#include "resource_manager/SFMLAnimationManager.h"
-#include "resource_manager/SFMLTextureManager.h"
+#include "../collisions/DefaultCollisionHandler.h"
+#include "../input/SFMLInputHandler.h"
+#include "../resource_manager/SFMLAnimationManager.h"
+#include "../resource_manager/SFMLTextureManager.h"
 
 
 namespace e2XD::framework

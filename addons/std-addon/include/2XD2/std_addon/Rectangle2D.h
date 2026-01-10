@@ -6,7 +6,7 @@
 #define INC_2XD2_ENGINE_RECTANGLE2D_H
 #include <SFML/Graphics/RectangleShape.hpp>
 
-#include "2XD2/core/Node2D.h"
+#include "../../../../../engine/framework/include/2XD2/framework/nodes/Node2D.h"
 
 namespace e2XD::std_addon
 {
@@ -31,7 +31,7 @@ namespace e2XD::std_addon
          * Set the size of the rectangle using game units.
          * @param size
          */
-        void setSize(const framework::Vec2f& size);
+        void setSize(const core::Vec2f& size);
 
         float getHeight() const;
 

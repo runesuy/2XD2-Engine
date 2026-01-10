@@ -8,7 +8,7 @@
 
 #include "IAnimationManager.h"
 #include "Resources.h"
-#include "2XD2/framework/AnimationMap.h"
+#include "AnimationMap.h"
 
 namespace e2XD::framework
 {

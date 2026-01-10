@@ -41,7 +41,7 @@ namespace e2XD::framework
 
     void Resources::Textures::throwIfNotInitialized(const std::string& caller)
     {
-        if (!_textureManager) throw NotInitializedException("Resources::Textures", caller);
+        if (!_textureManager) throw core::NotInitializedException("Resources::Textures", caller);
     }
 
 } // framework

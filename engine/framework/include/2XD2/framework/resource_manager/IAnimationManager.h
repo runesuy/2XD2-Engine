@@ -4,7 +4,7 @@
 
 #ifndef INC_2XD2_ENGINE_IANIMATIONMANAGER_H
 #define INC_2XD2_ENGINE_IANIMATIONMANAGER_H
-#include "2XD2/framework/AnimationMap.h"
+#include "AnimationMap.h"
 
 
 namespace e2XD::framework

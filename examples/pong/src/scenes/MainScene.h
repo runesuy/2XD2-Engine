@@ -4,8 +4,8 @@
 
 #ifndef INC_2XD2_ENGINE_MAINSCENE_H
 #define INC_2XD2_ENGINE_MAINSCENE_H
-#include "2XD2/core/Scene.h"
-#include "2XD2/core/Camera.h"
+#include "2XD2/framework/scene/Scene.h"
+#include "2XD2/framework/scene/Camera.h"
 
 class MainScene : public e2XD::framework::Scene
 {

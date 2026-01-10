@@ -2,7 +2,7 @@
 // Created by rune-suy on 12/19/25.
 //
 
-#include "../include/2XD2/core/Renderable.h"
+#include "../../include/2XD2/framework/drawing/Renderable.h"
 
 
 namespace e2XD::framework

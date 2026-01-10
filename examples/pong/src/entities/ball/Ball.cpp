@@ -5,7 +5,7 @@
 #include "Ball.h"
 
 #include "BallHitBox.h"
-#include "2XD2/core/Time.h"
+#include "../../../../../engine/framework/include/2XD2/framework/Time.h"
 
 Ball::Ball()
 {

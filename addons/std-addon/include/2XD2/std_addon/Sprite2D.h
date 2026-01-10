@@ -7,7 +7,7 @@
 #include <SFML/Graphics/Sprite.hpp>
 #include <SFML/Graphics/Texture.hpp>
 
-#include "2XD2/core/Node2D.h"
+#include "../../../../../engine/framework/include/2XD2/framework/nodes/Node2D.h"
 
 
 namespace e2XD::std_addon

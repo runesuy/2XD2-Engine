@@ -6,7 +6,7 @@
 #define INC_2XD2_ENGINE_TRANSFORM2D_H
 #include "Vec2f.h"
 
-namespace e2XD::framework
+namespace e2XD::core
 {
     /**
      * Defines a 2D transformation with position, scale and rotation.

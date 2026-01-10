@@ -2,7 +2,7 @@
 // Created by runes on 3/11/2025.
 //
 
-#include "2XD2/core/Time.h"
+#include "../include/2XD2/framework/Time.h"
 
 using namespace std::chrono;
 

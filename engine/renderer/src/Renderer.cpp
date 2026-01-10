@@ -34,20 +34,20 @@ namespace e2XD::renderer
         renderQueue[renderCommand.renderLayer].push_back(renderCommand);
     }
 
-    void Renderer::flush(const framework::Camera* worldCamera)
+    void Renderer::flush(const core::Vec2f& cameraPosition, float cameraZoom)
     {
         for (const auto& [layer, commands] : renderQueue)
         {
             for (const auto& command : commands)
             {
                 //Setup view
-                if (layer == RenderLayer::WORLD && worldCamera)
+                if (layer == RenderLayer::WORLD)
                 {
-                    const auto& camPos = worldCamera->getGlobalPosition();
+                    const auto& camPos = cameraPosition;
                     auto view = sf::View{
                         {camPos.x, camPos.y}, sf::Vector2f{window->getSize()}
                     };
-                    view.zoom(worldCamera->getZoom());
+                    view.zoom(cameraZoom);
                     window->setView(view);
                 }
                 else

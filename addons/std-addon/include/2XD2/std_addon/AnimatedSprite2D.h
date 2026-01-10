@@ -7,8 +7,8 @@
 #include <unordered_map>
 
 #include "Sprite2D.h"
-#include "2XD2/framework/Animation.h"
-#include "2XD2/framework/AnimationMap.h"
+#include "2XD2/framework/resource_manager/Animation.h"
+#include "2XD2/framework/resource_manager/AnimationMap.h"
 
 
 namespace e2XD::std_addon

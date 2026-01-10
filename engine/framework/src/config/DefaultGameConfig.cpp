@@ -2,7 +2,7 @@
 // Created by rune-suy on 12/20/25.
 //
 
-#include "../include/2XD2/framework/DefaultGameConfig.h"
+#include "../../include/2XD2/framework/config/DefaultGameConfig.h"
 
 
 namespace e2XD::framework
