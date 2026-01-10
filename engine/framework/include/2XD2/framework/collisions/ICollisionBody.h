@@ -19,7 +19,7 @@ namespace e2XD::framework
          * @param other
          * @return True if this body is colliding with the other body.
          */
-        virtual bool areColliding(ICollisionBody* other)const =0;
+        virtual bool areColliding(ICollisionBody* other) const =0;
 
         /**
          *
@@ -45,7 +45,7 @@ namespace e2XD::framework
          */
         virtual void onCollisionExit(ICollisionBody* other) {}
     };
-} // core
+}
 // e2XD
 
 #endif //INC_2XD2_ENGINE_ICOLLISIONBODY_H

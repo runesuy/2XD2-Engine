@@ -6,7 +6,7 @@
 
 #include "OpponentHitBox.h"
 #include "../ball/Ball.h"
-#include "../../../../../engine/framework/include/2XD2/framework/Time.h"
+#include "2XD2/framework/Time.h"
 
 using namespace e2XD::framework;
 
@@ -31,13 +31,13 @@ void Opponent::onUpdate()
     if (ball->getGlobalPosition().y > getGlobalPosition().y + 5)
     {
         float newY = getGlobalPosition().y + speed * Time::getDeltaTime();
-        if (newY > 280) newY = 280;
+        if (newY > maxY) newY = maxY;
         setGlobalPosition({getGlobalPosition().x, newY});
     }
     else if (ball->getGlobalPosition().y < getGlobalPosition().y - 5)
     {
         float newY = getGlobalPosition().y - speed * Time::getDeltaTime();
-        if (newY < -280) newY = -280;
+        if (newY < -minY) newY = -minY;
         setGlobalPosition({getGlobalPosition().x, newY});
     }
 }

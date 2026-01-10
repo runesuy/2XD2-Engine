@@ -9,6 +9,7 @@
 
 class OpponentHitBox : public e2XD::std_addon::CollisionRect2D
 {
+
 public:
     OpponentHitBox() = default;
 };

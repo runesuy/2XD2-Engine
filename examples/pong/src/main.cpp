@@ -2,7 +2,7 @@
 // Created by rune-suy on 12/20/25.
 //
 
-#include "../../../engine/framework/include/2XD2/framework/config/DefaultGameConfig.h"
+#include "2XD2/framework/config/DefaultGameConfig.h"
 #include "2XD2/framework/Game.h"
 #include "scenes/MainScene.h"
 

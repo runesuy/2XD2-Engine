@@ -5,9 +5,7 @@
 #ifndef FLATLAND_SPRITE2D_H
 #define FLATLAND_SPRITE2D_H
 #include <SFML/Graphics/Sprite.hpp>
-#include <SFML/Graphics/Texture.hpp>
-
-#include "../../../../../engine/framework/include/2XD2/framework/nodes/Node2D.h"
+#include "2XD2/framework/nodes/Node2D.h"
 
 
 namespace e2XD::std_addon

@@ -21,4 +21,10 @@ namespace e2XD::framework
         Collisions::registerCollisionBody(this);
         Node2D::_internal_onCreate();
     }
+
+    void CollisionBody2D::_internal_onDestroy()
+    {
+        Node2D::_internal_onDestroy();
+        Collisions::removeCollisionBody(this);
+    }
 }

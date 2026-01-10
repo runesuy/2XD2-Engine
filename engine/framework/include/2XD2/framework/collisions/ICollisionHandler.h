@@ -22,7 +22,7 @@ namespace e2XD::framework
         virtual void checkCollisions() const = 0;
 
     };
-} // core
+}
 // e2XD
 
 #endif //INC_2XD2_ENGINE_COLLISIONHANDLER_H

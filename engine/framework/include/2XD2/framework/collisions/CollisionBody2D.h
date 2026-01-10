@@ -37,6 +37,8 @@ namespace e2XD::framework
 
     protected:
         void _internal_onCreate() override;
+
+        void _internal_onDestroy() override;
     };
 } // core
 // e2XD

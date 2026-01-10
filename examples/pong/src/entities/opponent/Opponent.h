@@ -11,6 +11,8 @@ class Opponent : public  e2XD::std_addon::Rectangle2D
 {
     class Ball* ball = nullptr;
     float speed = 250.0f;
+    static constexpr float minY = -280.0f;
+    static constexpr float maxY = 280.0f;
 public:
     Opponent();
 

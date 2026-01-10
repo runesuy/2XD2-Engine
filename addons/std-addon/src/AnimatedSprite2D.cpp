@@ -4,7 +4,7 @@
 
 #include "../include/2XD2/std_addon/AnimatedSprite2D.h"
 
-#include "../../../engine/framework/include/2XD2/framework/Time.h"
+#include "2XD2/framework/Time.h"
 
 
 namespace e2XD::std_addon
