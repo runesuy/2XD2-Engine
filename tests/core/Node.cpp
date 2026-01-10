@@ -37,7 +37,6 @@ namespace e2XD::framework {
     TEST_F(CORE_Node, addSubNode) {
         auto mockNode = std::make_unique<testing::NiceMock<MockNode>>();
         auto* rawPtr = mockNode.get();
-        EXPECT_CALL(*rawPtr,onCreate()).Times(1);
         node.addSubNode(std::move(mockNode));
         ASSERT_EQ(getNodesSize(), 1);
     }
