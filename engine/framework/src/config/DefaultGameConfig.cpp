@@ -31,5 +31,10 @@ namespace e2XD::framework
     {
         return renderer.get();
     }
+
+    IFontManager* DefaultGameConfig::getFontManager() const
+    {
+        return fontManager.get();
+    }
 } // framework
 // e2XD

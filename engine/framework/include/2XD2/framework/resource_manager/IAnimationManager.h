@@ -21,8 +21,8 @@ namespace e2XD::framework
         [[nodiscard]] virtual const AnimationMap& getAnimationMap(const std::string& name) const =0;
 
         /**
-         * Load animations in the manager using a json config file.
-         * Json format:
+         * Load animations in the manager using a JSON config file.
+         * JSON format:
          * @code
          * {
          *    "animation-map-name": "example-animations",

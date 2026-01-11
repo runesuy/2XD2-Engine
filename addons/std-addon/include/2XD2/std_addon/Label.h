@@ -15,7 +15,7 @@ namespace e2XD::std_addon
     /**
      * A text label node.
      */
-    class Label : public e2XD::framework::Node2D
+    class Label : public framework::Node2D
     {
         sf::Text _text;
     public:

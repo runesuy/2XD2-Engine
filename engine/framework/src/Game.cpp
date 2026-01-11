@@ -12,6 +12,7 @@
 #include "2XD2/framework/resource_manager/Resources.h"
 #include "2XD2/framework/resource_manager/Textures.h"
 #include "../include/2XD2/framework/drawing/Renderer.h"
+#include "2XD2/framework/resource_manager/Fonts.h"
 
 
 namespace e2XD::framework
@@ -28,6 +29,7 @@ namespace e2XD::framework
         Collisions::initialize(config.getCollisionHandler());
         Renderer::initialize(config.getRenderer());
         Renderer::initialize(&window);
+        Resources::Fonts::initialize(config.getFontManager());
     }
 
 
