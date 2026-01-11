@@ -6,6 +6,7 @@
 
 #include "BallHitBox.h"
 #include "2XD2/framework/Time.h"
+#include "../../scenes/MainScene.h"
 
 Ball::Ball()
 {
@@ -24,6 +25,12 @@ void Ball::onUpdate()
     if (getGlobalPosition().y + radius >= UPPERBOUND || getGlobalPosition().y - radius <= LOWERBOUND)
     {
         velocity.y = -velocity.y;
+    }
+
+    if (getGlobalPosition().x - radius < MainScene::leftBound ||
+        getGlobalPosition().x + radius > MainScene::rightBound)
+    {
+        outOfBounds.emit();
     }
 }
 
