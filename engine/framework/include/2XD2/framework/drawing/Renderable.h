@@ -4,7 +4,7 @@
 
 #ifndef FLATLAND_RENDERABLE_H
 #define FLATLAND_RENDERABLE_H
-#include "../../../../../renderer/include/2XD2/renderer/RenderLayer.h"
+#include "2XD2/renderer/RenderLayer.h"
 
 
 namespace e2XD::framework
@@ -15,9 +15,9 @@ namespace e2XD::framework
     class Renderable
     {
     protected:
-        RenderLayer renderLayer = RenderLayer::WORLD;
-
         int zIndex = 0;
+        bool visible = true;
+        RenderLayer renderLayer = RenderLayer::WORLD;
 
         /**
          * onDraw is a placeholder for user-defined draw logic.
@@ -42,6 +42,10 @@ namespace e2XD::framework
          * Draw the renderable by calling internal and user-defined draw methods.
          */
         void draw();
+
+        virtual void setVisible(bool visible);
+
+        virtual void setRenderLayer(RenderLayer renderLayer);
     };
 } // core
 // e2XD

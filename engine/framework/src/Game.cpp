@@ -11,21 +11,23 @@
 #include "2XD2/framework/resource_manager/Animations.h"
 #include "2XD2/framework/resource_manager/Resources.h"
 #include "2XD2/framework/resource_manager/Textures.h"
-#include "2XD2/renderer/Renderer.h"
+#include "../include/2XD2/framework/drawing/Renderer.h"
 
 
 namespace e2XD::framework
 {
-    Game::Game(IGameConfig& config)
+    Game::Game(const IGameConfig& config)
     {
-        auto inputHandler = config.getInputHandler();
-        if (!inputHandler) throw core::NotInitializedException("GameConfig.getInputHandler()",
-                                                         "Game::Game(IGameConfig& config)");
+        if (const auto inputHandler = config.getInputHandler(); !inputHandler)
+            throw core::NotInitializedException("GameConfig.getInputHandler()",
+                                                "Game::Game(IGameConfig& config)");
         config.getInputHandler()->initialize(&window);
         Input::initialize(config.getInputHandler());
         Resources::Textures::initialize(config.getTextureManager());
         Resources::Animations::initialize(config.getAnimationManager());
         Collisions::initialize(config.getCollisionHandler());
+        Renderer::initialize(config.getRenderer());
+        Renderer::initialize(&window);
     }
 
 
@@ -33,8 +35,6 @@ namespace e2XD::framework
     {
         running = true;
         window.setKeyRepeatEnabled(false);
-
-        renderer::Renderer::getInstance()->initialize(&window);
 
         while (running && window.isOpen())
         {
@@ -49,19 +49,25 @@ namespace e2XD::framework
             }
 
             if (Input::isWindowClosed()) window.close();
+            const auto& windowResized = Input::isWindowResized();
+            if (std::get<0>(windowResized))
+            {
+                Renderer::setWindowView(RenderLayer::UI, {std::get<1>(windowResized), std::get<2>(windowResized)});
+                Renderer::setWindowView(RenderLayer::BACKGROUND, {std::get<1>(windowResized), std::get<2>(windowResized)});
+                Renderer::setWindowView(RenderLayer::OVERLAY, {std::get<1>(windowResized), std::get<2>(windowResized)});
+            }
 
             if (activeScene)
             {
                 activeScene->update();
-                const auto& renderer = renderer::Renderer::getInstance();
-                renderer->clearWindow();
+                Renderer::clearWindow();
                 activeScene->draw();
             }
             if (activeScene)
             {
                 if (const Camera* activeCamera = activeScene->getActiveCamera())
                 {
-                    renderer::Renderer::getInstance()->flush(activeCamera->getGlobalPosition(), activeCamera->getZoom());
+                    Renderer::flush(activeCamera->getGlobalPosition(), activeCamera->getZoom());
                 }
             }
             window.display();

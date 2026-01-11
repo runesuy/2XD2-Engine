@@ -26,5 +26,10 @@ namespace e2XD::framework
     {
         return collisionHandler.get();
     }
+
+    renderer::IRenderer* DefaultGameConfig::getRenderer() const
+    {
+        return renderer.get();
+    }
 } // framework
 // e2XD

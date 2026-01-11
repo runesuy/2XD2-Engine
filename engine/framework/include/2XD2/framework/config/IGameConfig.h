@@ -8,6 +8,7 @@
 #include "../input/IInputHandler.h"
 #include "../resource_manager/IAnimationManager.h"
 #include "../resource_manager/ITextureManager.h"
+#include "2XD2/renderer/IRenderer.h"
 
 
 namespace e2XD::framework
@@ -27,6 +28,8 @@ namespace e2XD::framework
         [[nodiscard]] virtual ITextureManager* getTextureManager() const =0;
 
         [[nodiscard]] virtual ICollisionHandler* getCollisionHandler() const =0;
+
+        [[nodiscard]] virtual renderer::IRenderer* getRenderer() const =0;
     };
 } // framework
 // e2XD

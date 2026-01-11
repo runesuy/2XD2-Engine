@@ -7,7 +7,7 @@
 #include "../../../engine/framework/include/2XD2/framework/resource_manager/SFMLTextureManager.h"
 #include "2XD2/framework/resource_manager/Resources.h"
 #include "2XD2/framework/resource_manager/Textures.h"
-#include "2XD2/renderer/Renderer.h"
+#include "../../../engine/framework/include/2XD2/framework/drawing/Renderer.h"
 
 
 namespace e2XD::std_addon
@@ -24,10 +24,9 @@ namespace e2XD::std_addon
 
     void Sprite2D::_internal_onDraw()
     {
-        auto* renderer = renderer::Renderer::getInstance();
         const auto& position = getGlobalPosition();
         _sprite.setOrigin(_sprite.getGlobalBounds().width / 2, _sprite.getGlobalBounds().height / 2);
-        renderer->submit({
+        framework::Renderer::submit({
             renderLayer,
             &_sprite,
             {position.x, position.y},

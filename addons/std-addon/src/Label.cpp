@@ -4,7 +4,7 @@
 
 #include "2XD2/std_addon/Label.h"
 
-#include "2XD2/renderer/Renderer.h"
+#include "../../../engine/framework/include/2XD2/framework/drawing/Renderer.h"
 
 
 namespace e2XD::std_addon
@@ -21,9 +21,9 @@ namespace e2XD::std_addon
 
     void Label::_internal_onDraw()
     {
-        const auto renderer = renderer::Renderer::getInstance();
         const auto& position = getGlobalPosition();
-        renderer->submit({
+        _text.setFillColor(sf::Color::White);
+        framework::Renderer::submit({
             renderLayer,
             &_text,
             {position.x, position.y},

@@ -20,7 +20,7 @@ namespace e2XD::framework
         inline static bool running = false;
 
     public:
-        explicit Game(IGameConfig& config);
+        explicit Game(const IGameConfig& config);
         void run();
 
         void setWindowTitle(const std::string& title);

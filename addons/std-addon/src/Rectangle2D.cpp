@@ -4,17 +4,16 @@
 
 #include "../include/2XD2/std_addon/Rectangle2D.h"
 
-#include "2XD2/renderer/Renderer.h"
+#include "../../../engine/framework/include/2XD2/framework/drawing/Renderer.h"
 
 
 namespace e2XD::std_addon
 {
     void Rectangle2D::_internal_onDraw()
     {
-        auto renderer = renderer::Renderer::getInstance();
         const auto& position = getGlobalPosition();
         rectangleShape.setOrigin(rectangleShape.getSize().x / 2, rectangleShape.getSize().y / 2);
-        renderer->submit({
+        framework::Renderer::submit({
             renderLayer,
             &rectangleShape,
             {position.x, position.y},

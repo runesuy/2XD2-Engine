@@ -1,45 +1,33 @@
 //
-// Created by runes on 14/12/2025.
+// Created by rune-suy on 1/11/26.
 //
 
-#include "2XD2/renderer/Renderer.h"
+#include "../include/2XD2/renderer/DefaultRenderer.h"
 
-#include "2XD2/core/exceptions/NotInitializedException.h"
-#include "2XD2/renderer/RenderCommand.h"
-#include "2XD2/renderer/RenderLayer.h"
 
 namespace e2XD::renderer
 {
-    void Renderer::initialize(sf::RenderWindow* window)
+    void DefaultRenderer::initialize(sf::RenderWindow* window)
     {
         this->window = window;
     }
 
-    Renderer* Renderer::getInstance()
-    {
-        if (!_instance)
-        {
-            _instance = new Renderer();
-        }
-        return _instance;
-    }
-
-    void Renderer::clearWindow() const
+    void DefaultRenderer::clearWindow() const
     {
         window->clear();
     }
 
 
-    void Renderer::submit(const RenderCommand& renderCommand)
+    void DefaultRenderer::submit(const RenderCommand& renderCommand)
     {
         renderQueue[renderCommand.renderLayer].push_back(renderCommand);
     }
 
-    void Renderer::flush(const core::Vec2f& cameraPosition, float cameraZoom)
+    void DefaultRenderer::flush(const core::Vec2f& cameraPosition, float cameraZoom)
     {
-        for (const auto& [layer, commands] : renderQueue)
+        for (const auto& layer : RenderOrder)
         {
-            for (const auto& command : commands)
+            for (const auto& command : renderQueue[layer])
             {
                 //Setup view
                 if (layer == RenderLayer::WORLD)
@@ -53,7 +41,8 @@ namespace e2XD::renderer
                 }
                 else
                 {
-                    window->setView(window->getDefaultView());
+                    if (_viewSizes.contains(layer)) window->setView(sf::View{_viewSizes.at(layer)});
+                    else window->setView(window->getDefaultView());
                 }
 
                 // sort by zIndex
@@ -76,4 +65,15 @@ namespace e2XD::renderer
         }
         renderQueue.clear();
     }
-} // e2XD
+
+    core::Vec2<unsigned int> DefaultRenderer::getWindowSize() const
+    {
+        return {window->getSize().x, window->getSize().y};
+    }
+
+    void DefaultRenderer::setWindowView(const RenderLayer layer, const core::Vec2f &viewSize)
+    {
+        _viewSizes[layer] = sf::FloatRect{0,0, viewSize.x, viewSize.y};
+    }
+} // DefaultRenderer
+// e2XD
