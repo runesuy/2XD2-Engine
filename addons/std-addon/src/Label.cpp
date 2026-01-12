@@ -31,7 +31,6 @@ namespace e2XD::std_addon
     {
         _text.setOrigin(_text.getLocalBounds().width / 2, _text.getLocalBounds().height / 2);
         const auto& position = getGlobalPosition();
-        _text.setFillColor(sf::Color::White);
         framework::Renderer::submit({
             renderLayer,
             &_text,

@@ -16,7 +16,7 @@ namespace e2XD::framework
     {
         inline static IConfigManager* _configManager = nullptr;
     public:
-        virtual ~Config() = default;
+
         static void initialize(IConfigManager* configManager);
 
         static const nlohmann::json& loadConfig(const std::string& configPath);

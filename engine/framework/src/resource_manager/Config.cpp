@@ -4,6 +4,8 @@
 
 #include "2XD2/framework/resource_manager/Config.h"
 
+#include "2XD2/core/exceptions/NotInitializedException.h"
+
 namespace e2XD::framework
 {
     void Resources::Config::initialize(IConfigManager* configManager)
@@ -14,7 +16,7 @@ namespace e2XD::framework
     const nlohmann::json& Resources::Config::loadConfig(const std::string& configPath)
     {
         if (!_configManager)
-            throw std::runtime_error("Resources::Config::loadConfig: ConfigManager not initialized.");
+            throw core::NotInitializedException("Resources::Config::loadConfig: ConfigManager not initialized.", "Resources::Config::loadConfig(const std::string& configPath)");
         return _configManager->loadConfig(configPath);
     }
 

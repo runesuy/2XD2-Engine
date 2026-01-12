@@ -11,6 +11,11 @@ namespace e2XD::framework
     enum class ProcessMode
     {
 
+        /**
+         * Use the node's standard processing behavior: inherit pause state
+         * and process mode from the parent unless explicitly overridden.
+         * The node reacts normally to pause changes in its parent.
+         */
         DEFAULT,
 
         /**

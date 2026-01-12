@@ -29,14 +29,13 @@ namespace e2XD::framework
             const std::string& name = fontEntry.at("name");
             const std::string& path = fontEntry.at("path");
 
-            sf::Font font;
-            if (!font.loadFromFile(path))
+            _loadedFonts[name];
+            if (!_loadedFonts.at(name).loadFromFile(path))
             {
                 throw FileLoadingFailedException(path,
                                                  "DefaultFontManager::loadFontMap(const std::string& fontMapPath)");
             }
 
-            _loadedFonts[name] = font;
         }
         _loadedFiles.insert(fontMapPath);
     }
@@ -60,9 +59,12 @@ namespace e2XD::framework
 
     void DefaultFontManager::loadFont(const std::string& fontName, const std::string& filePath)
     {
-        sf::Font font;
-        font.loadFromFile(filePath);
-        _loadedFonts[fontName] = font;
+        _loadedFonts[fontName];
+        if (!_loadedFonts.at(fontName).loadFromFile(filePath))
+        {
+            throw FileLoadingFailedException(filePath,
+                                             "DefaultFontManager::loadFont(const std::string& fontName, const std::string& filePath)");
+        }
         _loadedFiles.insert(filePath);
     }
 } // framework
