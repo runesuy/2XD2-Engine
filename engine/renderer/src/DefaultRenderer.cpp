@@ -33,8 +33,11 @@ namespace e2XD::renderer
                 if (layer == RenderLayer::WORLD)
                 {
                     const auto& camPos = cameraPosition;
+                    const float aspectRatio = static_cast<float>(window->getSize().x) / static_cast<float>(window->getSize().
+                        y);
                     auto view = sf::View{
-                        {camPos.x, camPos.y}, sf::Vector2f{window->getSize()}
+                        {camPos.x, camPos.y},
+                        {window->getDefaultView().getSize().y*aspectRatio, window->getDefaultView().getSize().y}
                     };
                     view.zoom(cameraZoom);
                     window->setView(view);
@@ -71,9 +74,9 @@ namespace e2XD::renderer
         return {window->getSize().x, window->getSize().y};
     }
 
-    void DefaultRenderer::setWindowView(const RenderLayer layer, const core::Vec2f &viewSize)
+    void DefaultRenderer::setWindowView(const RenderLayer layer, const core::Vec2f& viewSize)
     {
-        _viewSizes[layer] = sf::FloatRect{0,0, viewSize.x, viewSize.y};
+        _viewSizes[layer] = sf::FloatRect{0, 0, viewSize.x, viewSize.y};
     }
 } // DefaultRenderer
 // e2XD
