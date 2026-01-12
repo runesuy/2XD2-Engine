@@ -18,7 +18,12 @@ namespace e2XD::framework
                                              "DefaultConfigManager::loadConfig(const std::string& configPath)");
         }
         nlohmann::json configJson;
-        file >> configJson;
+        try
+        {file >> configJson;}
+        catch (...)
+        {
+            throw FileLoadingFailedException(configPath, "DefaultConfigManager::loadConfig(const std::string& configPath)");
+        }
         file.close();
         _loadedFiles[configPath] = configJson;
         return _loadedFiles.at(configPath);

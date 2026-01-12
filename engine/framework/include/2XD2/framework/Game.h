@@ -21,7 +21,7 @@ namespace e2XD::framework
         std::string RESOURCES_PATH;
 
     public:
-        inline static const std::string DEFAULT_FONT_NAME = "<e2XD_default>";
+        inline static const std::string DEFAULT_FONT_NAME = "__e2XD_default__";
 
     private:
         // Relative from engine resource folder
