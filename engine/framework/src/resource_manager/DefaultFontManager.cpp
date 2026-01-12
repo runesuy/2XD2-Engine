@@ -63,7 +63,7 @@ namespace e2XD::framework
         sf::Font font;
         font.loadFromFile(filePath);
         _loadedFonts[fontName] = font;
-        _loadedFiles.insert(fontName);
+        _loadedFiles.insert(filePath);
     }
 } // framework
 

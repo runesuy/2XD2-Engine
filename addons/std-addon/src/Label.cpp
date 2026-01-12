@@ -4,7 +4,8 @@
 
 #include "2XD2/std_addon/Label.h"
 
-#include "../../../engine/framework/include/2XD2/framework/drawing/Renderer.h"
+#include "2XD2/framework/drawing/Renderer.h"
+#include "2XD2/framework/Game.h"
 #include "2XD2/framework/resource_manager/Fonts.h"
 #include "2XD2/framework/resource_manager/Resources.h"
 
@@ -13,7 +14,7 @@ namespace e2XD::std_addon
 {
     Label::Label()
     {
-        _text.setFont(framework::Resources::Fonts::getFont("<e2XD_default>"));
+        _text.setFont(framework::Resources::Fonts::getFont(framework::Game::DEFAULT_FONT_NAME));
     }
 
     void Label::setText(const std::string &text)
@@ -28,6 +29,7 @@ namespace e2XD::std_addon
 
     void Label::_internal_onDraw()
     {
+        _text.setOrigin(_text.getLocalBounds().width / 2, _text.getLocalBounds().height / 2);
         const auto& position = getGlobalPosition();
         _text.setFillColor(sf::Color::White);
         framework::Renderer::submit({

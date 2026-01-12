@@ -20,6 +20,13 @@ namespace e2XD::framework
         const std::string CONFIG_FILE_PATH;
         std::string RESOURCES_PATH;
 
+    public:
+        inline static const std::string DEFAULT_FONT_NAME = "<e2XD_default>";
+
+    private:
+        // Relative from engine resource folder
+        inline static const std::string DEFAULT_FONT_DEFAULT_PATH = "Roboto-VariableFont.ttf";
+
         inline static bool running = false;
 
     public:

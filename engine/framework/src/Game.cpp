@@ -37,8 +37,13 @@ namespace e2XD::framework
         // load resources
         auto json = Resources::Config::loadConfig(CONFIG_FILE_PATH);
         RESOURCES_PATH = json.at("engine-resources").get<std::string>();
+        if (json.contains("default-font"))
+        {
+            const auto& defaultFontPath = json.at("default-font").get<std::string>();
+            Resources::Fonts::loadFont(DEFAULT_FONT_NAME, defaultFontPath);
+        }
+        else Resources::Fonts::loadFont(DEFAULT_FONT_NAME, RESOURCES_PATH + DEFAULT_FONT_DEFAULT_PATH);
         Resources::Config::closeConfig(CONFIG_FILE_PATH);
-        Resources::Fonts::loadFont("<e2XD_default>", RESOURCES_PATH + "Roboto-VariableFont.ttf");
     }
 
 
