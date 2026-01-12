@@ -9,6 +9,9 @@
 
 namespace e2XD::framework
 {
+    /**
+     * Default implementation of IConfigManager using nlohmann::json
+     */
     class DefaultConfigManager : public IConfigManager
     {
         std::unordered_map<std::string, nlohmann::json> _loadedFiles;

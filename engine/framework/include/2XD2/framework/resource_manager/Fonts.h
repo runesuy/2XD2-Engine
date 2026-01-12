@@ -63,6 +63,14 @@ namespace e2XD::framework
          */
         static bool loadFontMapIfNotLoaded(const std::string& fontMapPath);
 
+        /**
+         * Load a single font from a file.
+         *
+         * After loading the font, it can be accessed by its name.
+         *
+         * @param fontName Name to associate with the font.
+         * @param fontPath Path to the font file.
+         */
         static void loadFont(const std::string& fontName, const std::string& fontPath);
     };
 } // framework

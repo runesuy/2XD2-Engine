@@ -11,6 +11,9 @@
 
 namespace e2XD::framework
 {
+    /**
+     * Default implementation of IFontManager using SFML
+     */
     class DefaultFontManager : public IFontManager
     {
         std::map<std::string, sf::Font> _loadedFonts;

@@ -23,16 +23,42 @@ namespace e2XD::framework
         static void setWindowView(RenderLayer renderLayer, const core::Vec2f&);
 
     public:
+        /**
+         * Initialize the renderer system with the provided renderer.
+         * @param renderer
+         */
         static void initialize(renderer::IRenderer* renderer);
 
+        /**
+         * Initialize the renderer system with the provided SFML RenderWindow.
+         * Does not replace the need for renderer initialization.
+         * @param window
+         */
         static void initialize(sf::RenderWindow* window);
 
+        /**
+         * Clear the window before rendering a new frame.
+         */
         static void clearWindow();
 
+        /**
+         * Submit a render command to the renderer.
+         * Command will be rendered on next flush.
+         * @param renderCommand
+         */
         static void submit(const renderer::RenderCommand& renderCommand);
 
+        /**
+         * Flush all submitted render commands to the window.
+         * @param cameraPosition
+         * @param cameraZoom
+         */
         static void flush(const core::Vec2f& cameraPosition, float cameraZoom);
 
+        /**
+         * Get the current window size.
+         * @return
+         */
         static core::Vec2<unsigned int> getWindowSize();
     };
 }

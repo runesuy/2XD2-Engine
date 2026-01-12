@@ -8,6 +8,9 @@
 
 namespace e2XD::framework
 {
+    /**
+     * Base class for objects that can receive signals.
+     */
     class SignalReceiver
     {
         std::shared_ptr<int> _lifeTimeToken = std::make_shared<int>(0);

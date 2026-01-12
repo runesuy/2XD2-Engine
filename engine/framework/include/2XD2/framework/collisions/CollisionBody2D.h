@@ -31,8 +31,8 @@ namespace e2XD::framework
         CollisionBody2D() = default;
         ~CollisionBody2D() override = default;
 
-
         [[nodiscard]] Collisions::CollisionType getCollisionType() const override;
+
         [[nodiscard]] int getCollisionLayer() const override;
 
     protected:

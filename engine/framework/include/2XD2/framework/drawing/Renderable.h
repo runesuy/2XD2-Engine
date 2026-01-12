@@ -43,8 +43,17 @@ namespace e2XD::framework
          */
         void draw();
 
+        /**
+         * Sets the visibility of the renderable.
+         * If false the draw methods will not be called.
+         * @param visible
+         */
         virtual void setVisible(bool visible);
 
+        /**
+         * Set the render layer of the renderable.
+         * @param renderLayer
+         */
         virtual void setRenderLayer(RenderLayer renderLayer);
     };
 } // core
