@@ -6,6 +6,7 @@
 #define INC_2XD2_ENGINE_SIGNAL_H
 #include <functional>
 #include <vector>
+#include <algorithm>
 #include "SignalReceiver.h"
 
 namespace e2XD::framework
