@@ -7,7 +7,7 @@
 
 #include "Exception.h"
 
-namespace e2XD::framework
+namespace e2XD::core
 {
     /**
      * Exception thrown when a component is used before being initialized.

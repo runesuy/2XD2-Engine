@@ -2,13 +2,11 @@
 // Created by rune-suy on 12/15/25.
 //
 
-#include "../include/2XD2/framework/resource_manager/SFMLTextureManager.h"
+#include "2XD2/framework/resource_manager/SFMLTextureManager.h"
 #include "json.hpp"
 #include "fstream"
-
 #include <stdexcept>
-
-#include "../../../core/include/2XD2/core/exceptions/FileLoadingFailedException.h"
+#include "2XD2/framework/exceptions/FileLoadingFailedException.h"
 
 namespace e2XD::framework
 {
@@ -17,7 +15,7 @@ namespace e2XD::framework
         nlohmann::json json;
 
         std::ifstream file(jsonFilePath);
-        if (!file.is_open()) throw e2XD::framework::FileLoadingFailedException(
+        if (!file.is_open()) throw FileLoadingFailedException(
             jsonFilePath, "void SFMLTextureParser::loadJsonTextureConfig(const std::string& jsonFilePath)");
         file >> json;
         file.close();

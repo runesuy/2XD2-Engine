@@ -2,8 +2,7 @@
 // Created by rune-suy on 12/21/25.
 //
 
-#include "../../include/2XD2/framework/resource_manager/Textures.h"
-
+#include "2XD2/framework/resource_manager/Textures.h"
 #include "2XD2/core/exceptions/NotInitializedException.h"
 
 
@@ -41,8 +40,7 @@ namespace e2XD::framework
 
     void Resources::Textures::throwIfNotInitialized(const std::string& caller)
     {
-        if (!_textureManager) throw NotInitializedException("Resources::Textures", caller);
+        if (!_textureManager) throw core::NotInitializedException("Resources::Textures", caller);
     }
-
 } // framework
 // e2XD

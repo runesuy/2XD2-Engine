@@ -14,7 +14,7 @@ The main objectsives of this project are to provide an easy-to-use framework for
 - **Event handling**: Built-in event system for handling user input and other events using SFML.
 - **Rendering**: Simple rendering system using SFML for drawing sprites, shapes, and text.
 - **Resource management**: Load and manage game assets such as textures, fonts, and sounds, animations. (WIP)
-- **Collision handling**: Powerfull and efficient collision system. (COMING SOON)
+- **Collision handling**: Powerfull and efficient collision system. (BASICS)
 - **Physics simulation**: Modular and easily extendable physics base. (COMING SOON)
 
 I plan to add more features in the future, such as physics integration, audio support, and further optimizations and modularity improvements.
@@ -59,3 +59,6 @@ Please ensure that your code adheres to the existing coding style and includes a
 For more details, refer to the [contributing guidelines](CONTRIBUTING.md).
 
 ## Join the [Discord](https://discord.gg/sVJzxWWbdW)
+
+Links:
+- [doxygen delveloper docs](https://runesuy.github.io/2XD2-Engine/)

@@ -12,7 +12,7 @@
 #include "exception"
 
 
-namespace e2XD::framework
+namespace e2XD::core
 {
     /**
      * Default exception class for the engine.

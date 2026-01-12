@@ -6,32 +6,43 @@
 #define INC_2XD2_ENGINE_GAME_H
 #include <memory>
 
-#include "2XD2/core/Scene.h"
+#include "scene/Scene.h"
 #include <SFML/Graphics.hpp>
-#include "IGameConfig.h"
+#include "config/IGameConfig.h"
 
 namespace e2XD::framework
 {
     class Game
     {
-        std::unique_ptr<core::Scene> activeScene;
+        std::unique_ptr<Scene> activeScene;
         sf::RenderWindow window = {sf::VideoMode(800, 600), "2XD2 Game"};
+
+        const std::string CONFIG_FILE_PATH;
+        std::string RESOURCES_PATH;
+
+    public:
+        inline static const std::string DEFAULT_FONT_NAME = "__e2XD_default__";
+
+    private:
+        // Relative from engine resource folder
+        inline static const std::string DEFAULT_FONT_DEFAULT_PATH = "Roboto-VariableFont.ttf";
 
         inline static bool running = false;
 
     public:
-        explicit Game(IGameConfig& config);
+        explicit Game(const IGameConfig& config, std::string configFilePath = "2xd_config.json");
+
         void run();
 
         void setWindowTitle(const std::string& title);
 
-        void setActiveScene(std::unique_ptr<core::Scene>&& scene);
+        void setActiveScene(std::unique_ptr<framework::Scene>&& scene);
 
-        template <core::IsScene T>
+        template <IsScene T>
         T* createActiveScene();
     };
 
-    template <core::IsScene T>
+    template <IsScene T>
     T* Game::createActiveScene()
     {
         auto scene = new T();

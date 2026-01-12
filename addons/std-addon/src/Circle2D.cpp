@@ -3,17 +3,16 @@
 //
 
 #include "2XD2/std_addon/Circle2D.h"
-#include "2XD2/renderer/Renderer.h"
+#include "2XD2/framework/drawing/Renderer.h"
 
 
 namespace e2XD::std_addon
 {
     void Circle2D::_internal_onDraw()
     {
-        const auto renderer = renderer::Renderer::getInstance();
         const auto& position = getGlobalPosition();
-        _shape.setOrigin(_shape.getRadius() / 2, _shape.getRadius() / 2);
-        renderer->submit({
+        _shape.setOrigin(_shape.getRadius(), _shape.getRadius());
+        framework::Renderer::submit({
             renderLayer,
             &_shape,
             {position.x, position.y},

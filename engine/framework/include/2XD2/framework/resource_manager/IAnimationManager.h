@@ -4,7 +4,7 @@
 
 #ifndef INC_2XD2_ENGINE_IANIMATIONMANAGER_H
 #define INC_2XD2_ENGINE_IANIMATIONMANAGER_H
-#include "2XD2/framework/AnimationMap.h"
+#include "AnimationMap.h"
 
 
 namespace e2XD::framework
@@ -21,8 +21,8 @@ namespace e2XD::framework
         [[nodiscard]] virtual const AnimationMap& getAnimationMap(const std::string& name) const =0;
 
         /**
-         * Load animations in the manager using a json config file.
-         * Json format:
+         * Load animations in the manager using a JSON config file.
+         * JSON format:
          * @code
          * {
          *    "animation-map-name": "example-animations",

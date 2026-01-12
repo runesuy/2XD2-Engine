@@ -9,7 +9,7 @@
 #include <unordered_map>
 
 #include "IAnimationManager.h"
-#include "2XD2/framework/AnimationMap.h"
+#include "AnimationMap.h"
 
 namespace e2XD::framework
 {
@@ -29,8 +29,8 @@ namespace e2XD::framework
         [[nodiscard]] const AnimationMap& getAnimationMap(const std::string& name) const override;
 
         /**
-         * Load animations in the manager using a json config file.
-         * Json format:
+         * Load animations in the manager using a JSON config file.
+         * JSON format:
          * @code
          * {
          *    "animation-map-name": "example-animations",
