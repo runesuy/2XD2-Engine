@@ -45,7 +45,9 @@ namespace e2XD::framework
     {
         if (!_loadedFiles.contains(fontMapPath)) {
             loadFontMap(fontMapPath);
+            return true;
         }
+        return false;
     }
 
     const sf::Font& DefaultFontManager::getFont(const std::string& fontName)
