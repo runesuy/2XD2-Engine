@@ -5,12 +5,17 @@
 #ifndef INC_2XD2_ENGINE_SIGNAL_H
 #define INC_2XD2_ENGINE_SIGNAL_H
 #include <functional>
-#include <set>
 #include <vector>
+#include <algorithm>
 #include "SignalReceiver.h"
 
 namespace e2XD::framework
 {
+    /**
+     * A signal that can be emitted to notify connected receivers.
+     * Given arguments are forwarded to the connected callbacks.
+     * @tparam Args
+     */
     template <typename... Args>
     class Signal
     {
@@ -27,10 +32,23 @@ namespace e2XD::framework
         Signal() = default;
         virtual ~Signal() = default;
 
+        /**
+         * Emit the signal, calling all connected callbacks with the given arguments.
+         * @param args
+         */
         void emit(Args... args);
 
+        /**
+         * Connect a receiver's callback to this signal.
+         * @param receiver
+         * @param callback
+         */
         void connect(SignalReceiver& receiver, const CallBack& callback);
 
+        /**
+         * Disconnect all callbacks associated with the given receiver.
+         * @param receiver
+         */
         void disconnect(SignalReceiver& receiver);
     };
 

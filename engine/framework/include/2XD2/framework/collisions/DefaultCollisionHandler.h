@@ -12,6 +12,9 @@
 
 namespace e2XD::framework
 {
+    /**
+     * Default implementation of ICollisionHandler.
+     */
     class DefaultCollisionHandler : public ICollisionHandler
     {
         std::list<ICollisionBody*> _collision_bodies;

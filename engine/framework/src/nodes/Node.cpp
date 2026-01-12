@@ -31,6 +31,14 @@ namespace e2XD::framework
     void Node::update()
     {
         removeDestroyedSubNodes();
+        if (_paused && processMode != ProcessMode::ALWAYS_RUNNING) return;
+        if (processMode == ProcessMode::ALWAYS_INHERIT && _parent != nullptr)
+        {
+            if (_parent->_paused)
+            {
+                return;
+            }
+        }
         for (const auto& node : nodes)
         {
             node->update();
@@ -81,5 +89,34 @@ namespace e2XD::framework
             nodesL.push_back(node.get());
         }
         return nodesL;
+    }
+
+    void Node::setRenderLayer(RenderLayer renderLayer)
+    {
+        Renderable::setRenderLayer(renderLayer);
+        for (const auto& node : nodes)
+        {
+            node->setRenderLayer(renderLayer);
+        }
+    }
+
+    const Node* Node::getParent() const
+    {
+        return _parent;
+    }
+
+    Node* Node::getParent()
+    {
+        return _parent;
+    }
+
+    void Node::setPaused(bool paused)
+    {
+        _paused = paused;
+        for (const auto& node : nodes)
+        {
+            if (node->processMode != ProcessMode::STUBBORN)
+                node->setPaused(paused);
+        }
     }
 } // e2XD

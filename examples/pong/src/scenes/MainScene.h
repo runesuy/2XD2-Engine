@@ -7,17 +7,22 @@
 #include "2XD2/framework/scene/Scene.h"
 #include "2XD2/framework/scene/Camera.h"
 #include "2XD2/framework/signals/SignalReceiver.h"
+#include "GameOverScreen/GameOverScreen.h"
 
-class MainScene : public e2XD::framework::Scene, public e2XD::framework::SignalReceiver
+class MainScene : public Scene, public SignalReceiver
 {
     public:
-    e2XD::framework::Camera camera;
+    Camera camera;
     MainScene();
 
     static constexpr float leftBound = -400.0f;
     static constexpr float rightBound = 400.0f;
 
-    static void GameOver();
+    void GameOver();
+
+    bool isGameOver = false;
+    GameOverScreen* gameOverScreen = nullptr;
+
 };
 
 

@@ -2,7 +2,7 @@
 // Created by rune-suy on 12/20/25.
 //
 
-#include "../../include/2XD2/framework/config/DefaultGameConfig.h"
+#include "2XD2/framework/config/DefaultGameConfig.h"
 
 
 namespace e2XD::framework
@@ -25,6 +25,21 @@ namespace e2XD::framework
     ICollisionHandler* DefaultGameConfig::getCollisionHandler() const
     {
         return collisionHandler.get();
+    }
+
+    renderer::IRenderer* DefaultGameConfig::getRenderer() const
+    {
+        return renderer.get();
+    }
+
+    IFontManager* DefaultGameConfig::getFontManager() const
+    {
+        return fontManager.get();
+    }
+
+    IConfigManager* DefaultGameConfig::getConfigManager() const
+    {
+        return configManager.get();
     }
 } // framework
 // e2XD

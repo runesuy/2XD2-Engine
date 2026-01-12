@@ -2,7 +2,7 @@
 // Created by rune-suy on 12/17/25.
 //
 
-#include "../include/2XD2/std_addon/AnimatedSprite2D.h"
+#include "2XD2/std_addon/AnimatedSprite2D.h"
 
 #include "2XD2/framework/Time.h"
 

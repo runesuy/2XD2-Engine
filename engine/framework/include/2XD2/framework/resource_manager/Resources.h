@@ -17,6 +17,7 @@ namespace e2XD::framework
         class Textures;
         class Animations;
         class Config;
+        class Fonts;
     };
 } // framework
 // e2XD

@@ -3,29 +3,47 @@
 //
 
 #include "2XD2/framework/Game.h"
-
-#include "../include/2XD2/framework/Time.h"
-#include "../include/2XD2/framework/input/SFMLInputHandler.h"
+#include <utility>
+#include "2XD2/framework/Time.h"
+#include "2XD2/framework/input/SFMLInputHandler.h"
 #include "2XD2/core/exceptions/NotInitializedException.h"
 #include "2XD2/framework/input/Input.h"
 #include "2XD2/framework/resource_manager/Animations.h"
 #include "2XD2/framework/resource_manager/Resources.h"
 #include "2XD2/framework/resource_manager/Textures.h"
-#include "2XD2/renderer/Renderer.h"
+#include "2XD2/framework/drawing/Renderer.h"
+#include "2XD2/framework/resource_manager/Config.h"
+#include "2XD2/framework/resource_manager/Fonts.h"
 
 
 namespace e2XD::framework
 {
-    Game::Game(IGameConfig& config)
+    Game::Game(const IGameConfig& config, std::string configFilePath)
+        : CONFIG_FILE_PATH(std::move(configFilePath))
     {
-        auto inputHandler = config.getInputHandler();
-        if (!inputHandler) throw core::NotInitializedException("GameConfig.getInputHandler()",
-                                                         "Game::Game(IGameConfig& config)");
+        if (const auto inputHandler = config.getInputHandler(); !inputHandler)
+            throw core::NotInitializedException("GameConfig.getInputHandler()",
+                                                "Game::Game(IGameConfig& config)");
         config.getInputHandler()->initialize(&window);
         Input::initialize(config.getInputHandler());
         Resources::Textures::initialize(config.getTextureManager());
         Resources::Animations::initialize(config.getAnimationManager());
         Collisions::initialize(config.getCollisionHandler());
+        Renderer::initialize(config.getRenderer());
+        Renderer::initialize(&window);
+        Resources::Fonts::initialize(config.getFontManager());
+        Resources::Config::initialize(config.getConfigManager());
+
+        // load resources
+        auto json = Resources::Config::loadConfig(CONFIG_FILE_PATH);
+        RESOURCES_PATH = json.at("engine-resources").get<std::string>();
+        if (json.contains("default-font"))
+        {
+            const auto& defaultFontPath = json.at("default-font").get<std::string>();
+            Resources::Fonts::loadFont(DEFAULT_FONT_NAME, defaultFontPath);
+        }
+        else Resources::Fonts::loadFont(DEFAULT_FONT_NAME, RESOURCES_PATH + DEFAULT_FONT_DEFAULT_PATH);
+        Resources::Config::closeConfig(CONFIG_FILE_PATH);
     }
 
 
@@ -33,8 +51,6 @@ namespace e2XD::framework
     {
         running = true;
         window.setKeyRepeatEnabled(false);
-
-        renderer::Renderer::getInstance()->initialize(&window);
 
         while (running && window.isOpen())
         {
@@ -49,19 +65,27 @@ namespace e2XD::framework
             }
 
             if (Input::isWindowClosed()) window.close();
+            const auto& windowResized = Input::isWindowResized();
+            if (std::get<0>(windowResized))
+            {
+                Renderer::setWindowView(RenderLayer::UI, {std::get<1>(windowResized), std::get<2>(windowResized)});
+                Renderer::setWindowView(RenderLayer::BACKGROUND, {
+                                            std::get<1>(windowResized), std::get<2>(windowResized)
+                                        });
+                Renderer::setWindowView(RenderLayer::OVERLAY, {std::get<1>(windowResized), std::get<2>(windowResized)});
+            }
 
             if (activeScene)
             {
                 activeScene->update();
-                const auto& renderer = renderer::Renderer::getInstance();
-                renderer->clearWindow();
+                Renderer::clearWindow();
                 activeScene->draw();
             }
             if (activeScene)
             {
                 if (const Camera* activeCamera = activeScene->getActiveCamera())
                 {
-                    renderer::Renderer::getInstance()->flush(activeCamera->getGlobalPosition(), activeCamera->getZoom());
+                    Renderer::flush(activeCamera->getGlobalPosition(), activeCamera->getZoom());
                 }
             }
             window.display();

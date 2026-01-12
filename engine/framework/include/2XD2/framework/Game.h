@@ -14,24 +14,35 @@ namespace e2XD::framework
 {
     class Game
     {
-        std::unique_ptr<framework::Scene> activeScene;
+        std::unique_ptr<Scene> activeScene;
         sf::RenderWindow window = {sf::VideoMode(800, 600), "2XD2 Game"};
+
+        const std::string CONFIG_FILE_PATH;
+        std::string RESOURCES_PATH;
+
+    public:
+        inline static const std::string DEFAULT_FONT_NAME = "__e2XD_default__";
+
+    private:
+        // Relative from engine resource folder
+        inline static const std::string DEFAULT_FONT_DEFAULT_PATH = "Roboto-VariableFont.ttf";
 
         inline static bool running = false;
 
     public:
-        explicit Game(IGameConfig& config);
+        explicit Game(const IGameConfig& config, std::string configFilePath = "2xd_config.json");
+
         void run();
 
         void setWindowTitle(const std::string& title);
 
         void setActiveScene(std::unique_ptr<framework::Scene>&& scene);
 
-        template <framework::IsScene T>
+        template <IsScene T>
         T* createActiveScene();
     };
 
-    template <framework::IsScene T>
+    template <IsScene T>
     T* Game::createActiveScene()
     {
         auto scene = new T();

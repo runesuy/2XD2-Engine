@@ -59,3 +59,6 @@ Please ensure that your code adheres to the existing coding style and includes a
 For more details, refer to the [contributing guidelines](CONTRIBUTING.md).
 
 ## Join the [Discord](https://discord.gg/sVJzxWWbdW)
+
+Links:
+- [doxygen delveloper docs](https://runesuy.github.io/2XD2-Engine/)

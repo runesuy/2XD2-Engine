@@ -2,12 +2,10 @@
 // Created by rune-suy on 12/15/25.
 //
 
-#include "../include/2XD2/framework/resource_manager/SFMLTextureManager.h"
+#include "2XD2/framework/resource_manager/SFMLTextureManager.h"
 #include "json.hpp"
 #include "fstream"
-
 #include <stdexcept>
-
 #include "2XD2/framework/exceptions/FileLoadingFailedException.h"
 
 namespace e2XD::framework

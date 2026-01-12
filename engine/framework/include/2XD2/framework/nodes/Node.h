@@ -10,6 +10,7 @@
 #include "Node.h"
 #include<type_traits>
 
+#include "ProcessMode.h"
 #include "2XD2/framework/drawing/Renderable.h"
 
 
@@ -27,6 +28,10 @@ namespace e2XD::framework
     {
         bool markedForDeletion = false;
         bool _isCreated = false;
+        bool _paused = false;
+
+        Node* _parent=nullptr;
+
         std::list<std::unique_ptr<Node>> nodes;
 
         /**
@@ -35,6 +40,8 @@ namespace e2XD::framework
         void removeDestroyedSubNodes();
 
     protected:
+        ProcessMode processMode = ProcessMode::DEFAULT;
+
         /**
          * Placeholder for user-defined update logic.
          * This method is called during the update phase of the node.
@@ -156,9 +163,25 @@ namespace e2XD::framework
         template <IsNode EntityType>
         [[nodiscard]] std::list<EntityType*> getSubNodes();
 
+        /**
+         * Get a list of all sub-nodes.
+         * @return A list of pointers to all sub-nodes.
+         */
         [[nodiscard]] std::list<Node*> getSubNodes();
 
+        /**
+         * Get a list of all sub-nodes.
+         * @return A list of pointers to all sub-nodes.
+         */
         [[nodiscard]] std::list<const Node*> getSubNodes() const;
+
+        void setRenderLayer(RenderLayer renderLayer) override;
+
+        [[nodiscard]] const Node* getParent() const;
+
+        [[nodiscard]] Node* getParent();
+
+        void setPaused(bool paused);
     };
 
     template <IsNode EntityType>
@@ -172,6 +195,7 @@ namespace e2XD::framework
 
     inline void Node::addSubNode(std::unique_ptr<Node> node)
     {
+        node->_parent = this;
         nodes.push_back(std::move(node));
         if (_isCreated)
         {

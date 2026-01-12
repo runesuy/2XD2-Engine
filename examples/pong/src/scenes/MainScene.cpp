@@ -21,10 +21,17 @@ MainScene::MainScene()
     camera.setGlobalPosition({0,0});
     setActiveCamera(&camera);
     opponent->linkBall(ball);
-    ball->outOfBounds.connect(*this, &GameOver);
+    gameOverScreen = createSubNode<GameOverScreen>();
+    ball->outOfBounds.connect(*this, [this]()
+    {
+        GameOver();
+    });
 }
 
 void MainScene::GameOver()
 {
-    std::cout << "Game Over!" << std::endl;
+    isGameOver = true;
+    setPaused(true);
+    gameOverScreen->setVisible(true);
 }
+
