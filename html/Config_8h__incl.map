@@ -1,0 +1,13 @@
+<map id="engine/framework/include/2XD2/framework/resource_manager/Config.h" name="engine/framework/include/2XD2/framework/resource_manager/Config.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="45,5,221,61"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="10,183,64,208"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="64,64,35,84,13,110,8,124,10,139,22,169,17,171,4,141,3,124,8,108,31,80,61,59"/>
+<area shape="rect" id="Node000003" href="$IConfigManager_8h.html" title=" " alt="" coords="23,109,144,135"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="120,63,101,97,96,94,115,60"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="94,183,164,208"/>
+<area shape="poly" id="edge5_Node000001_Node000004" title=" " alt="" coords="149,61,160,96,162,116,160,135,146,170,141,168,154,134,156,116,154,97,144,62"/>
+<area shape="rect" id="Node000005" href="$Resources_8h.html" title=" " alt="" coords="220,109,313,135"/>
+<area shape="poly" id="edge6_Node000001_Node000005" title=" " alt="" coords="176,59,237,98,234,103,173,64"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="78,136,55,171,51,168,74,133"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="93,133,116,168,111,171,89,136"/>
+</map>

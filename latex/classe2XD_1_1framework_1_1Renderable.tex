@@ -1,0 +1,141 @@
+\doxysection{e2\+XD\+::framework\+::Renderable Class Reference}
+\hypertarget{classe2XD_1_1framework_1_1Renderable}{}\label{classe2XD_1_1framework_1_1Renderable}\index{e2XD::framework::Renderable@{e2XD::framework::Renderable}}
+
+
+{\ttfamily \#include $<$Renderable.\+h$>$}
+
+
+
+Inheritance diagram for e2\+XD\+::framework\+::Renderable\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classe2XD_1_1framework_1_1Renderable__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classe2XD_1_1framework_1_1Renderable_ae1ecc921fd8112a12e82bc78282c42d9}{\texorpdfstring{$\sim$}{\string~}\+Renderable}} ()=default
+\item 
+void \mbox{\hyperlink{classe2XD_1_1framework_1_1Renderable_a8e7d1036e4bc4d1f60a639fdd1cbaee1}{draw}} ()
+\item 
+virtual void \mbox{\hyperlink{classe2XD_1_1framework_1_1Renderable_a084810e1e0d412501eb24f3c3067417b}{set\+Visible}} (bool \mbox{\hyperlink{classe2XD_1_1framework_1_1Renderable_a5f075727608df3d602ea422e19c82648}{visible}})
+\item 
+virtual void \mbox{\hyperlink{classe2XD_1_1framework_1_1Renderable_a9fd26e67c1415ab39123607bc7d56dc6}{set\+Render\+Layer}} (\mbox{\hyperlink{RenderLayer_8h_ad16d91520dd8dbd7a2178564fce5a168}{Render\+Layer}} \mbox{\hyperlink{classe2XD_1_1framework_1_1Renderable_a73a98b5c0defcdfd7a1e2a6c528b0f91}{render\+Layer}})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{classe2XD_1_1framework_1_1Renderable_a4816842499b76973a9428104f32e5ec5}{on\+Draw}} ()
+\item 
+virtual void \mbox{\hyperlink{classe2XD_1_1framework_1_1Renderable_a349d240f57d236ee05d1a0a3c83495df}{\+\_\+internal\+\_\+on\+Draw}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classe2XD_1_1framework_1_1Renderable_ad4e09e08a878138093f4705c7747fc67}{z\+Index}} = 0
+\item 
+bool \mbox{\hyperlink{classe2XD_1_1framework_1_1Renderable_a5f075727608df3d602ea422e19c82648}{visible}} = true
+\item 
+\mbox{\hyperlink{RenderLayer_8h_ad16d91520dd8dbd7a2178564fce5a168}{Render\+Layer}} \mbox{\hyperlink{classe2XD_1_1framework_1_1Renderable_a73a98b5c0defcdfd7a1e2a6c528b0f91}{render\+Layer}} = \mbox{\hyperlink{RenderLayer_8h_ad16d91520dd8dbd7a2178564fce5a168a5289492cf082446ca4a6eec9f72f1ec3}{Render\+Layer\+::\+WORLD}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+An object renderable by the \doxylink{classe2XD_1_1framework_1_1Renderer}{Renderer}. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classe2XD_1_1framework_1_1Renderable_ae1ecc921fd8112a12e82bc78282c42d9}\label{classe2XD_1_1framework_1_1Renderable_ae1ecc921fd8112a12e82bc78282c42d9} 
+\index{e2XD::framework::Renderable@{e2XD::framework::Renderable}!````~Renderable@{\texorpdfstring{$\sim$}{\string~}Renderable}}
+\index{````~Renderable@{\texorpdfstring{$\sim$}{\string~}Renderable}!e2XD::framework::Renderable@{e2XD::framework::Renderable}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Renderable()}{\string~Renderable()}}
+{\footnotesize\ttfamily virtual e2\+XD\+::framework\+::\+Renderable\+::\texorpdfstring{$\sim$}{\string~}\+Renderable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classe2XD_1_1framework_1_1Renderable_a349d240f57d236ee05d1a0a3c83495df}\label{classe2XD_1_1framework_1_1Renderable_a349d240f57d236ee05d1a0a3c83495df} 
+\index{e2XD::framework::Renderable@{e2XD::framework::Renderable}!\_internal\_onDraw@{\_internal\_onDraw}}
+\index{\_internal\_onDraw@{\_internal\_onDraw}!e2XD::framework::Renderable@{e2XD::framework::Renderable}}
+\doxysubsubsection{\texorpdfstring{\_internal\_onDraw()}{\_internal\_onDraw()}}
+{\footnotesize\ttfamily virtual void e2\+XD\+::framework\+::\+Renderable\+::\+\_\+internal\+\_\+on\+Draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+on\+Draw is a placeholder for internal draw logic. This method is called during the draw phase of the renderable. 
+
+Reimplemented in \mbox{\hyperlink{classe2XD_1_1std__addon_1_1AnimatedSprite2D_af7c165c0139fc61cb9485f3575178a7e}{e2\+XD\+::std\+\_\+addon\+::\+Animated\+Sprite2D}}, \mbox{\hyperlink{classe2XD_1_1std__addon_1_1Circle2D_ad043c53f1c5b595880739932d3876231}{e2\+XD\+::std\+\_\+addon\+::\+Circle2D}}, \mbox{\hyperlink{classe2XD_1_1std__addon_1_1Label_ab509aeee075b54008a2e5306a00bad6a}{e2\+XD\+::std\+\_\+addon\+::\+Label}}, \mbox{\hyperlink{classe2XD_1_1std__addon_1_1Rectangle2D_afcc2f753be2ee94e7460c74fcfb962c4}{e2\+XD\+::std\+\_\+addon\+::\+Rectangle2D}}, \mbox{\hyperlink{classe2XD_1_1std__addon_1_1Sprite2D_a865427d52ac04ea643ccde74c1dfa75c}{e2\+XD\+::std\+\_\+addon\+::\+Sprite2D}}, and \mbox{\hyperlink{classe2XD_1_1framework_1_1Node_af891d43c352e1420c1d2c27ce9ae88fb}{e2\+XD\+::framework\+::\+Node}}.
+
+\Hypertarget{classe2XD_1_1framework_1_1Renderable_a8e7d1036e4bc4d1f60a639fdd1cbaee1}\label{classe2XD_1_1framework_1_1Renderable_a8e7d1036e4bc4d1f60a639fdd1cbaee1} 
+\index{e2XD::framework::Renderable@{e2XD::framework::Renderable}!draw@{draw}}
+\index{draw@{draw}!e2XD::framework::Renderable@{e2XD::framework::Renderable}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void e2\+XD\+::framework\+::\+Renderable\+::draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Draw the renderable by calling internal and user-\/defined draw methods. Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classe2XD_1_1framework_1_1Renderable_a8e7d1036e4bc4d1f60a639fdd1cbaee1_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classe2XD_1_1framework_1_1Renderable_a4816842499b76973a9428104f32e5ec5}\label{classe2XD_1_1framework_1_1Renderable_a4816842499b76973a9428104f32e5ec5} 
+\index{e2XD::framework::Renderable@{e2XD::framework::Renderable}!onDraw@{onDraw}}
+\index{onDraw@{onDraw}!e2XD::framework::Renderable@{e2XD::framework::Renderable}}
+\doxysubsubsection{\texorpdfstring{onDraw()}{onDraw()}}
+{\footnotesize\ttfamily virtual void e2\+XD\+::framework\+::\+Renderable\+::on\+Draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+on\+Draw is a placeholder for user-\/defined draw logic. This method is called during the draw phase of the renderable. \Hypertarget{classe2XD_1_1framework_1_1Renderable_a9fd26e67c1415ab39123607bc7d56dc6}\label{classe2XD_1_1framework_1_1Renderable_a9fd26e67c1415ab39123607bc7d56dc6} 
+\index{e2XD::framework::Renderable@{e2XD::framework::Renderable}!setRenderLayer@{setRenderLayer}}
+\index{setRenderLayer@{setRenderLayer}!e2XD::framework::Renderable@{e2XD::framework::Renderable}}
+\doxysubsubsection{\texorpdfstring{setRenderLayer()}{setRenderLayer()}}
+{\footnotesize\ttfamily void e2\+XD\+::framework\+::\+Renderable\+::set\+Render\+Layer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{RenderLayer_8h_ad16d91520dd8dbd7a2178564fce5a168}{Render\+Layer}}}]{render\+Layer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Set the render layer of the renderable. 
+\begin{DoxyParams}{Parameters}
+{\em render\+Layer} & \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{classe2XD_1_1framework_1_1Node_ab222834736fecb7f778040c291bf653b}{e2\+XD\+::framework\+::\+Node}}.
+
+\Hypertarget{classe2XD_1_1framework_1_1Renderable_a084810e1e0d412501eb24f3c3067417b}\label{classe2XD_1_1framework_1_1Renderable_a084810e1e0d412501eb24f3c3067417b} 
+\index{e2XD::framework::Renderable@{e2XD::framework::Renderable}!setVisible@{setVisible}}
+\index{setVisible@{setVisible}!e2XD::framework::Renderable@{e2XD::framework::Renderable}}
+\doxysubsubsection{\texorpdfstring{setVisible()}{setVisible()}}
+{\footnotesize\ttfamily void e2\+XD\+::framework\+::\+Renderable\+::set\+Visible (\begin{DoxyParamCaption}\item[{bool}]{visible }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Sets the visibility of the renderable. If false the draw methods will not be called. 
+\begin{DoxyParams}{Parameters}
+{\em visible} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classe2XD_1_1framework_1_1Renderable_a73a98b5c0defcdfd7a1e2a6c528b0f91}\label{classe2XD_1_1framework_1_1Renderable_a73a98b5c0defcdfd7a1e2a6c528b0f91} 
+\index{e2XD::framework::Renderable@{e2XD::framework::Renderable}!renderLayer@{renderLayer}}
+\index{renderLayer@{renderLayer}!e2XD::framework::Renderable@{e2XD::framework::Renderable}}
+\doxysubsubsection{\texorpdfstring{renderLayer}{renderLayer}}
+{\footnotesize\ttfamily \mbox{\hyperlink{RenderLayer_8h_ad16d91520dd8dbd7a2178564fce5a168}{Render\+Layer}} e2\+XD\+::framework\+::\+Renderable\+::render\+Layer = \mbox{\hyperlink{RenderLayer_8h_ad16d91520dd8dbd7a2178564fce5a168a5289492cf082446ca4a6eec9f72f1ec3}{Render\+Layer\+::\+WORLD}}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classe2XD_1_1framework_1_1Renderable_a5f075727608df3d602ea422e19c82648}\label{classe2XD_1_1framework_1_1Renderable_a5f075727608df3d602ea422e19c82648} 
+\index{e2XD::framework::Renderable@{e2XD::framework::Renderable}!visible@{visible}}
+\index{visible@{visible}!e2XD::framework::Renderable@{e2XD::framework::Renderable}}
+\doxysubsubsection{\texorpdfstring{visible}{visible}}
+{\footnotesize\ttfamily bool e2\+XD\+::framework\+::\+Renderable\+::visible = true\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classe2XD_1_1framework_1_1Renderable_ad4e09e08a878138093f4705c7747fc67}\label{classe2XD_1_1framework_1_1Renderable_ad4e09e08a878138093f4705c7747fc67} 
+\index{e2XD::framework::Renderable@{e2XD::framework::Renderable}!zIndex@{zIndex}}
+\index{zIndex@{zIndex}!e2XD::framework::Renderable@{e2XD::framework::Renderable}}
+\doxysubsubsection{\texorpdfstring{zIndex}{zIndex}}
+{\footnotesize\ttfamily int e2\+XD\+::framework\+::\+Renderable\+::z\+Index = 0\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+engine/framework/include/2\+XD2/framework/drawing/\mbox{\hyperlink{Renderable_8h}{Renderable.\+h}}\item 
+engine/framework/src/drawing/\mbox{\hyperlink{Renderable_8cpp}{Renderable.\+cpp}}\end{DoxyCompactItemize}

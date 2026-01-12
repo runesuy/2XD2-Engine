@@ -1,0 +1,419 @@
+\doxysection{e2\+XD\+::framework\+::Node Class Reference}
+\hypertarget{classe2XD_1_1framework_1_1Node}{}\label{classe2XD_1_1framework_1_1Node}\index{e2XD::framework::Node@{e2XD::framework::Node}}
+
+
+{\ttfamily \#include $<$Node.\+h$>$}
+
+
+
+Inheritance diagram for e2\+XD\+::framework\+::Node\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classe2XD_1_1framework_1_1Node__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for e2\+XD\+::framework\+::Node\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=224pt]{classe2XD_1_1framework_1_1Node__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classe2XD_1_1framework_1_1Node_a131881db1f212ce2d5ea8db9dddc0475}{Node}} ()=default
+\item 
+\mbox{\hyperlink{classe2XD_1_1framework_1_1Node_a613541edc80979c11b37c646a4afdbb8}{\texorpdfstring{$\sim$}{\string~}\+Node}} () override=default
+\item 
+void \mbox{\hyperlink{classe2XD_1_1framework_1_1Node_a5ef907ce5d1cef1dd7238a88cbdaff61}{update}} ()
+\item 
+void \mbox{\hyperlink{classe2XD_1_1framework_1_1Node_a9aaf0d4a9499a43153bba28c0e482201}{create}} ()
+\item 
+void \mbox{\hyperlink{classe2XD_1_1framework_1_1Node_a7831b27923edd33f0545eb56208d4631}{destroy}} ()
+\item 
+{\footnotesize template$<$Is\+Node Entity\+Type$>$ }\\Entity\+Type \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classe2XD_1_1framework_1_1Node_af964fd54baaa40992497d852be754086}{create\+Sub\+Node}} ()
+\item 
+virtual void \mbox{\hyperlink{classe2XD_1_1framework_1_1Node_abc834854340010c6750a1463e3254e28}{add\+Sub\+Node}} (std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classe2XD_1_1framework_1_1Node}{Node}} $>$ node)
+\item 
+{\footnotesize template$<$Is\+Node Entity\+Type$>$ }\\const Entity\+Type \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classe2XD_1_1framework_1_1Node_a7a214d4356a49c08bd4ca1b94ee4b5bd}{get\+Sub\+Node}} () const
+\item 
+{\footnotesize template$<$Is\+Node Entity\+Type$>$ }\\std\+::list$<$ const Entity\+Type \texorpdfstring{$\ast$}{*} $>$ \mbox{\hyperlink{classe2XD_1_1framework_1_1Node_aefe0d967a19a44aa3963407ff981a32b}{get\+Sub\+Nodes}} () const
+\item 
+{\footnotesize template$<$Is\+Node Entity\+Type$>$ }\\Entity\+Type \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classe2XD_1_1framework_1_1Node_af7d8ff352a37988e3dbc838bc1a6124b}{get\+Sub\+Node}} ()
+\item 
+{\footnotesize template$<$Is\+Node Entity\+Type$>$ }\\std\+::list$<$ Entity\+Type \texorpdfstring{$\ast$}{*} $>$ \mbox{\hyperlink{classe2XD_1_1framework_1_1Node_a1bd94a9504ff119521433958cd6b3c8c}{get\+Sub\+Nodes}} ()
+\item 
+std\+::list$<$ \mbox{\hyperlink{classe2XD_1_1framework_1_1Node}{Node}} \texorpdfstring{$\ast$}{*} $>$ \mbox{\hyperlink{classe2XD_1_1framework_1_1Node_a5486973cd5bcaee78c48e20633b3d53e}{get\+Sub\+Nodes}} ()
+\item 
+std\+::list$<$ const \mbox{\hyperlink{classe2XD_1_1framework_1_1Node}{Node}} \texorpdfstring{$\ast$}{*} $>$ \mbox{\hyperlink{classe2XD_1_1framework_1_1Node_ac56c09adaac5f33c3a095e73d480e9c6}{get\+Sub\+Nodes}} () const
+\item 
+void \mbox{\hyperlink{classe2XD_1_1framework_1_1Node_ab222834736fecb7f778040c291bf653b}{set\+Render\+Layer}} (\mbox{\hyperlink{RenderLayer_8h_ad16d91520dd8dbd7a2178564fce5a168}{Render\+Layer}} \mbox{\hyperlink{classe2XD_1_1framework_1_1Renderable_a73a98b5c0defcdfd7a1e2a6c528b0f91}{render\+Layer}}) override
+\item 
+const \mbox{\hyperlink{classe2XD_1_1framework_1_1Node}{Node}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classe2XD_1_1framework_1_1Node_a3b6cd8707bf978600bcf9d5fb8934e01}{get\+Parent}} () const
+\item 
+\mbox{\hyperlink{classe2XD_1_1framework_1_1Node}{Node}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classe2XD_1_1framework_1_1Node_a40286968151235c93254f56f9b0b993a}{get\+Parent}} ()
+\item 
+void \mbox{\hyperlink{classe2XD_1_1framework_1_1Node_aa0cdcbad57add9ecddb4d2df12c44e33}{set\+Paused}} (bool paused)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classe2XD_1_1framework_1_1Renderable}{e2\+XD\+::framework\+::\+Renderable}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classe2XD_1_1framework_1_1Renderable_ae1ecc921fd8112a12e82bc78282c42d9}{\texorpdfstring{$\sim$}{\string~}\+Renderable}} ()=default
+\item 
+void \mbox{\hyperlink{classe2XD_1_1framework_1_1Renderable_a8e7d1036e4bc4d1f60a639fdd1cbaee1}{draw}} ()
+\item 
+virtual void \mbox{\hyperlink{classe2XD_1_1framework_1_1Renderable_a084810e1e0d412501eb24f3c3067417b}{set\+Visible}} (bool \mbox{\hyperlink{classe2XD_1_1framework_1_1Renderable_a5f075727608df3d602ea422e19c82648}{visible}})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{classe2XD_1_1framework_1_1Node_a6aad0a85b3abdfb1b34e193a4171ce66}{on\+Update}} ()
+\item 
+virtual void \mbox{\hyperlink{classe2XD_1_1framework_1_1Node_a7d7c39c57b0ea8d05c1c771bb14edeb3}{\+\_\+internal\+\_\+on\+Update}} ()
+\item 
+virtual void \mbox{\hyperlink{classe2XD_1_1framework_1_1Node_adff5310c5d37fd27541b8d7fd4d6916c}{on\+Create}} ()
+\item 
+virtual void \mbox{\hyperlink{classe2XD_1_1framework_1_1Node_a4fdd6de7936646da823db7097730b4fb}{\+\_\+internal\+\_\+on\+Create}} ()
+\item 
+virtual void \mbox{\hyperlink{classe2XD_1_1framework_1_1Node_a37ef50b0e9003613fab64d595304e5ba}{on\+Destroy}} ()
+\item 
+virtual void \mbox{\hyperlink{classe2XD_1_1framework_1_1Node_ae5de5aa456c080e89812370611ac38fb}{\+\_\+internal\+\_\+on\+Destroy}} ()
+\item 
+void \mbox{\hyperlink{classe2XD_1_1framework_1_1Node_af891d43c352e1420c1d2c27ce9ae88fb}{\+\_\+internal\+\_\+on\+Draw}} () override
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{classe2XD_1_1framework_1_1Renderable}{e2\+XD\+::framework\+::\+Renderable}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{classe2XD_1_1framework_1_1Renderable_a4816842499b76973a9428104f32e5ec5}{on\+Draw}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacee2XD_1_1framework_a6c4f6e2bcbc3eed7f9560cb99f987005}{Process\+Mode}} \mbox{\hyperlink{classe2XD_1_1framework_1_1Node_a0ab65bf542aa34b46fec6c8a25b6345d}{process\+Mode}} = \mbox{\hyperlink{namespacee2XD_1_1framework_a6c4f6e2bcbc3eed7f9560cb99f987005a5b39c8b553c821e7cddc6da64b5bd2ee}{Process\+Mode\+::\+DEFAULT}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classe2XD_1_1framework_1_1Renderable}{e2\+XD\+::framework\+::\+Renderable}}}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classe2XD_1_1framework_1_1Renderable_ad4e09e08a878138093f4705c7747fc67}{z\+Index}} = 0
+\item 
+bool \mbox{\hyperlink{classe2XD_1_1framework_1_1Renderable_a5f075727608df3d602ea422e19c82648}{visible}} = true
+\item 
+\mbox{\hyperlink{RenderLayer_8h_ad16d91520dd8dbd7a2178564fce5a168}{Render\+Layer}} \mbox{\hyperlink{classe2XD_1_1framework_1_1Renderable_a73a98b5c0defcdfd7a1e2a6c528b0f91}{render\+Layer}} = \mbox{\hyperlink{RenderLayer_8h_ad16d91520dd8dbd7a2178564fce5a168a5289492cf082446ca4a6eec9f72f1ec3}{Render\+Layer\+::\+WORLD}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classe2XD_1_1framework_1_1Node_a774ff000a72cab489b14effd167a2a43}{CORE\+\_\+\+Node}}
+\item 
+class \mbox{\hyperlink{classe2XD_1_1framework_1_1Node_ab2d8f6f75e12d21702650abe7c87f7af}{Node2D}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A node in the scene graph. Is renderable by the \doxylink{classe2XD_1_1framework_1_1Renderer}{Renderer}. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classe2XD_1_1framework_1_1Node_a131881db1f212ce2d5ea8db9dddc0475}\label{classe2XD_1_1framework_1_1Node_a131881db1f212ce2d5ea8db9dddc0475} 
+\index{e2XD::framework::Node@{e2XD::framework::Node}!Node@{Node}}
+\index{Node@{Node}!e2XD::framework::Node@{e2XD::framework::Node}}
+\doxysubsubsection{\texorpdfstring{Node()}{Node()}}
+{\footnotesize\ttfamily e2\+XD\+::framework\+::\+Node\+::\+Node (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+Creat a new empty node. \Hypertarget{classe2XD_1_1framework_1_1Node_a613541edc80979c11b37c646a4afdbb8}\label{classe2XD_1_1framework_1_1Node_a613541edc80979c11b37c646a4afdbb8} 
+\index{e2XD::framework::Node@{e2XD::framework::Node}!````~Node@{\texorpdfstring{$\sim$}{\string~}Node}}
+\index{````~Node@{\texorpdfstring{$\sim$}{\string~}Node}!e2XD::framework::Node@{e2XD::framework::Node}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Node()}{\string~Node()}}
+{\footnotesize\ttfamily e2\+XD\+::framework\+::\+Node\+::\texorpdfstring{$\sim$}{\string~}\+Node (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classe2XD_1_1framework_1_1Node_a4fdd6de7936646da823db7097730b4fb}\label{classe2XD_1_1framework_1_1Node_a4fdd6de7936646da823db7097730b4fb} 
+\index{e2XD::framework::Node@{e2XD::framework::Node}!\_internal\_onCreate@{\_internal\_onCreate}}
+\index{\_internal\_onCreate@{\_internal\_onCreate}!e2XD::framework::Node@{e2XD::framework::Node}}
+\doxysubsubsection{\texorpdfstring{\_internal\_onCreate()}{\_internal\_onCreate()}}
+{\footnotesize\ttfamily virtual void e2\+XD\+::framework\+::\+Node\+::\+\_\+internal\+\_\+on\+Create (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+Placeholder for internal creation logic. This method is called when the node is created. 
+
+Reimplemented in \mbox{\hyperlink{classe2XD_1_1framework_1_1CollisionBody2D_a540862f820c28e51ce8108560ffad3ab}{e2\+XD\+::framework\+::\+Collision\+Body2D}}.
+
+\Hypertarget{classe2XD_1_1framework_1_1Node_ae5de5aa456c080e89812370611ac38fb}\label{classe2XD_1_1framework_1_1Node_ae5de5aa456c080e89812370611ac38fb} 
+\index{e2XD::framework::Node@{e2XD::framework::Node}!\_internal\_onDestroy@{\_internal\_onDestroy}}
+\index{\_internal\_onDestroy@{\_internal\_onDestroy}!e2XD::framework::Node@{e2XD::framework::Node}}
+\doxysubsubsection{\texorpdfstring{\_internal\_onDestroy()}{\_internal\_onDestroy()}}
+{\footnotesize\ttfamily virtual void e2\+XD\+::framework\+::\+Node\+::\+\_\+internal\+\_\+on\+Destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+Placeholder for internal destruction logic. This method is called when the node is destroyed. 
+
+Reimplemented in \mbox{\hyperlink{classe2XD_1_1framework_1_1CollisionBody2D_aab6d9f7b51b4708ee4d8b3308149a739}{e2\+XD\+::framework\+::\+Collision\+Body2D}}.
+
+\Hypertarget{classe2XD_1_1framework_1_1Node_af891d43c352e1420c1d2c27ce9ae88fb}\label{classe2XD_1_1framework_1_1Node_af891d43c352e1420c1d2c27ce9ae88fb} 
+\index{e2XD::framework::Node@{e2XD::framework::Node}!\_internal\_onDraw@{\_internal\_onDraw}}
+\index{\_internal\_onDraw@{\_internal\_onDraw}!e2XD::framework::Node@{e2XD::framework::Node}}
+\doxysubsubsection{\texorpdfstring{\_internal\_onDraw()}{\_internal\_onDraw()}}
+{\footnotesize\ttfamily void e2\+XD\+::framework\+::\+Node\+::\+\_\+internal\+\_\+on\+Draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+on\+Draw is a placeholder for internal draw logic. This method is called during the draw phase of the renderable. 
+
+Reimplemented from \mbox{\hyperlink{classe2XD_1_1framework_1_1Renderable_a349d240f57d236ee05d1a0a3c83495df}{e2\+XD\+::framework\+::\+Renderable}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{classe2XD_1_1std__addon_1_1Rectangle2D_afcc2f753be2ee94e7460c74fcfb962c4}{e2\+XD\+::std\+\_\+addon\+::\+Rectangle2D}}, and \mbox{\hyperlink{classe2XD_1_1std__addon_1_1Sprite2D_a865427d52ac04ea643ccde74c1dfa75c}{e2\+XD\+::std\+\_\+addon\+::\+Sprite2D}}.
+
+\Hypertarget{classe2XD_1_1framework_1_1Node_a7d7c39c57b0ea8d05c1c771bb14edeb3}\label{classe2XD_1_1framework_1_1Node_a7d7c39c57b0ea8d05c1c771bb14edeb3} 
+\index{e2XD::framework::Node@{e2XD::framework::Node}!\_internal\_onUpdate@{\_internal\_onUpdate}}
+\index{\_internal\_onUpdate@{\_internal\_onUpdate}!e2XD::framework::Node@{e2XD::framework::Node}}
+\doxysubsubsection{\texorpdfstring{\_internal\_onUpdate()}{\_internal\_onUpdate()}}
+{\footnotesize\ttfamily virtual void e2\+XD\+::framework\+::\+Node\+::\+\_\+internal\+\_\+on\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+Placeholder for internal update logic. This method is called during the update phase of the node. \Hypertarget{classe2XD_1_1framework_1_1Node_abc834854340010c6750a1463e3254e28}\label{classe2XD_1_1framework_1_1Node_abc834854340010c6750a1463e3254e28} 
+\index{e2XD::framework::Node@{e2XD::framework::Node}!addSubNode@{addSubNode}}
+\index{addSubNode@{addSubNode}!e2XD::framework::Node@{e2XD::framework::Node}}
+\doxysubsubsection{\texorpdfstring{addSubNode()}{addSubNode()}}
+{\footnotesize\ttfamily void e2\+XD\+::framework\+::\+Node\+::add\+Sub\+Node (\begin{DoxyParamCaption}\item[{std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classe2XD_1_1framework_1_1Node}{Node}} $>$}]{node }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Add a sub-\/node to this node. 
+\begin{DoxyParams}{Parameters}
+{\em node} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classe2XD_1_1framework_1_1Node_a9aaf0d4a9499a43153bba28c0e482201}\label{classe2XD_1_1framework_1_1Node_a9aaf0d4a9499a43153bba28c0e482201} 
+\index{e2XD::framework::Node@{e2XD::framework::Node}!create@{create}}
+\index{create@{create}!e2XD::framework::Node@{e2XD::framework::Node}}
+\doxysubsubsection{\texorpdfstring{create()}{create()}}
+{\footnotesize\ttfamily void e2\+XD\+::framework\+::\+Node\+::create (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Create the node and its sub-\/nodes. Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classe2XD_1_1framework_1_1Node_a9aaf0d4a9499a43153bba28c0e482201_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classe2XD_1_1framework_1_1Node_af964fd54baaa40992497d852be754086}\label{classe2XD_1_1framework_1_1Node_af964fd54baaa40992497d852be754086} 
+\index{e2XD::framework::Node@{e2XD::framework::Node}!createSubNode@{createSubNode}}
+\index{createSubNode@{createSubNode}!e2XD::framework::Node@{e2XD::framework::Node}}
+\doxysubsubsection{\texorpdfstring{createSubNode()}{createSubNode()}}
+{\footnotesize\ttfamily template$<$Is\+Node Entity\+Type$>$ \\
+Entity\+Type \texorpdfstring{$\ast$}{*} e2\+XD\+::framework\+::\+Node\+::create\+Sub\+Node (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Create and add a sub-\/node of the specified type. 
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Entity\+Type} & \\
+\hline
+\end{DoxyTemplParams}
+\begin{DoxyReturn}{Returns}
+a pointer to the created sub-\/node. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classe2XD_1_1framework_1_1Node_af964fd54baaa40992497d852be754086_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classe2XD_1_1framework_1_1Node_a7831b27923edd33f0545eb56208d4631}\label{classe2XD_1_1framework_1_1Node_a7831b27923edd33f0545eb56208d4631} 
+\index{e2XD::framework::Node@{e2XD::framework::Node}!destroy@{destroy}}
+\index{destroy@{destroy}!e2XD::framework::Node@{e2XD::framework::Node}}
+\doxysubsubsection{\texorpdfstring{destroy()}{destroy()}}
+{\footnotesize\ttfamily void e2\+XD\+::framework\+::\+Node\+::destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Destroy the node and its sub-\/nodes. Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classe2XD_1_1framework_1_1Node_a7831b27923edd33f0545eb56208d4631_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classe2XD_1_1framework_1_1Node_a40286968151235c93254f56f9b0b993a}\label{classe2XD_1_1framework_1_1Node_a40286968151235c93254f56f9b0b993a} 
+\index{e2XD::framework::Node@{e2XD::framework::Node}!getParent@{getParent}}
+\index{getParent@{getParent}!e2XD::framework::Node@{e2XD::framework::Node}}
+\doxysubsubsection{\texorpdfstring{getParent()}{getParent()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classe2XD_1_1framework_1_1Node}{Node}} \texorpdfstring{$\ast$}{*} e2\+XD\+::framework\+::\+Node\+::get\+Parent (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{classe2XD_1_1framework_1_1Node_a3b6cd8707bf978600bcf9d5fb8934e01}\label{classe2XD_1_1framework_1_1Node_a3b6cd8707bf978600bcf9d5fb8934e01} 
+\index{e2XD::framework::Node@{e2XD::framework::Node}!getParent@{getParent}}
+\index{getParent@{getParent}!e2XD::framework::Node@{e2XD::framework::Node}}
+\doxysubsubsection{\texorpdfstring{getParent()}{getParent()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classe2XD_1_1framework_1_1Node}{Node}} \texorpdfstring{$\ast$}{*} e2\+XD\+::framework\+::\+Node\+::get\+Parent (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\Hypertarget{classe2XD_1_1framework_1_1Node_af7d8ff352a37988e3dbc838bc1a6124b}\label{classe2XD_1_1framework_1_1Node_af7d8ff352a37988e3dbc838bc1a6124b} 
+\index{e2XD::framework::Node@{e2XD::framework::Node}!getSubNode@{getSubNode}}
+\index{getSubNode@{getSubNode}!e2XD::framework::Node@{e2XD::framework::Node}}
+\doxysubsubsection{\texorpdfstring{getSubNode()}{getSubNode()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$Is\+Node Entity\+Type$>$ \\
+Entity\+Type \texorpdfstring{$\ast$}{*} e2\+XD\+::framework\+::\+Node\+::get\+Sub\+Node (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get the first sub-\/node of the specified type. 
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Entity\+Type} & \\
+\hline
+\end{DoxyTemplParams}
+\begin{DoxyReturn}{Returns}
+A pointer to the sub-\/node of the specified type, or nullptr if not found. 
+\end{DoxyReturn}
+\Hypertarget{classe2XD_1_1framework_1_1Node_a7a214d4356a49c08bd4ca1b94ee4b5bd}\label{classe2XD_1_1framework_1_1Node_a7a214d4356a49c08bd4ca1b94ee4b5bd} 
+\index{e2XD::framework::Node@{e2XD::framework::Node}!getSubNode@{getSubNode}}
+\index{getSubNode@{getSubNode}!e2XD::framework::Node@{e2XD::framework::Node}}
+\doxysubsubsection{\texorpdfstring{getSubNode()}{getSubNode()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$Is\+Node Entity\+Type$>$ \\
+const Entity\+Type \texorpdfstring{$\ast$}{*} e2\+XD\+::framework\+::\+Node\+::get\+Sub\+Node (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Get the first sub-\/node of the specified type. 
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Entity\+Type} & \\
+\hline
+\end{DoxyTemplParams}
+\begin{DoxyReturn}{Returns}
+A pointer to the sub-\/node of the specified type, or nullptr if not found. 
+\end{DoxyReturn}
+\Hypertarget{classe2XD_1_1framework_1_1Node_a1bd94a9504ff119521433958cd6b3c8c}\label{classe2XD_1_1framework_1_1Node_a1bd94a9504ff119521433958cd6b3c8c} 
+\index{e2XD::framework::Node@{e2XD::framework::Node}!getSubNodes@{getSubNodes}}
+\index{getSubNodes@{getSubNodes}!e2XD::framework::Node@{e2XD::framework::Node}}
+\doxysubsubsection{\texorpdfstring{getSubNodes()}{getSubNodes()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily template$<$Is\+Node Entity\+Type$>$ \\
+std\+::list$<$ Entity\+Type \texorpdfstring{$\ast$}{*} $>$ e2\+XD\+::framework\+::\+Node\+::get\+Sub\+Nodes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get a list of all sub-\/nodes of the specified type. 
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Entity\+Type} & \\
+\hline
+\end{DoxyTemplParams}
+\begin{DoxyReturn}{Returns}
+A list of pointers to the sub-\/nodes of the specified type. 
+\end{DoxyReturn}
+\Hypertarget{classe2XD_1_1framework_1_1Node_a5486973cd5bcaee78c48e20633b3d53e}\label{classe2XD_1_1framework_1_1Node_a5486973cd5bcaee78c48e20633b3d53e} 
+\index{e2XD::framework::Node@{e2XD::framework::Node}!getSubNodes@{getSubNodes}}
+\index{getSubNodes@{getSubNodes}!e2XD::framework::Node@{e2XD::framework::Node}}
+\doxysubsubsection{\texorpdfstring{getSubNodes()}{getSubNodes()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily std\+::list$<$ \mbox{\hyperlink{classe2XD_1_1framework_1_1Node}{Node}} \texorpdfstring{$\ast$}{*} $>$ e2\+XD\+::framework\+::\+Node\+::get\+Sub\+Nodes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get a list of all sub-\/nodes. \begin{DoxyReturn}{Returns}
+A list of pointers to all sub-\/nodes. 
+\end{DoxyReturn}
+\Hypertarget{classe2XD_1_1framework_1_1Node_aefe0d967a19a44aa3963407ff981a32b}\label{classe2XD_1_1framework_1_1Node_aefe0d967a19a44aa3963407ff981a32b} 
+\index{e2XD::framework::Node@{e2XD::framework::Node}!getSubNodes@{getSubNodes}}
+\index{getSubNodes@{getSubNodes}!e2XD::framework::Node@{e2XD::framework::Node}}
+\doxysubsubsection{\texorpdfstring{getSubNodes()}{getSubNodes()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily template$<$Is\+Node Entity\+Type$>$ \\
+std\+::list$<$ const Entity\+Type \texorpdfstring{$\ast$}{*} $>$ e2\+XD\+::framework\+::\+Node\+::get\+Sub\+Nodes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Get a list of all sub-\/nodes of the specified type. 
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Entity\+Type} & \\
+\hline
+\end{DoxyTemplParams}
+\begin{DoxyReturn}{Returns}
+A list of pointers to the sub-\/nodes of the specified type. 
+\end{DoxyReturn}
+\Hypertarget{classe2XD_1_1framework_1_1Node_ac56c09adaac5f33c3a095e73d480e9c6}\label{classe2XD_1_1framework_1_1Node_ac56c09adaac5f33c3a095e73d480e9c6} 
+\index{e2XD::framework::Node@{e2XD::framework::Node}!getSubNodes@{getSubNodes}}
+\index{getSubNodes@{getSubNodes}!e2XD::framework::Node@{e2XD::framework::Node}}
+\doxysubsubsection{\texorpdfstring{getSubNodes()}{getSubNodes()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily std\+::list$<$ const \mbox{\hyperlink{classe2XD_1_1framework_1_1Node}{Node}} \texorpdfstring{$\ast$}{*} $>$ e2\+XD\+::framework\+::\+Node\+::get\+Sub\+Nodes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Get a list of all sub-\/nodes. \begin{DoxyReturn}{Returns}
+A list of pointers to all sub-\/nodes. 
+\end{DoxyReturn}
+\Hypertarget{classe2XD_1_1framework_1_1Node_adff5310c5d37fd27541b8d7fd4d6916c}\label{classe2XD_1_1framework_1_1Node_adff5310c5d37fd27541b8d7fd4d6916c} 
+\index{e2XD::framework::Node@{e2XD::framework::Node}!onCreate@{onCreate}}
+\index{onCreate@{onCreate}!e2XD::framework::Node@{e2XD::framework::Node}}
+\doxysubsubsection{\texorpdfstring{onCreate()}{onCreate()}}
+{\footnotesize\ttfamily virtual void e2\+XD\+::framework\+::\+Node\+::on\+Create (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+Placeholder for user-\/defined creation logic. This method is called when the node is added to the scene. \Hypertarget{classe2XD_1_1framework_1_1Node_a37ef50b0e9003613fab64d595304e5ba}\label{classe2XD_1_1framework_1_1Node_a37ef50b0e9003613fab64d595304e5ba} 
+\index{e2XD::framework::Node@{e2XD::framework::Node}!onDestroy@{onDestroy}}
+\index{onDestroy@{onDestroy}!e2XD::framework::Node@{e2XD::framework::Node}}
+\doxysubsubsection{\texorpdfstring{onDestroy()}{onDestroy()}}
+{\footnotesize\ttfamily virtual void e2\+XD\+::framework\+::\+Node\+::on\+Destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+Placeholder for user-\/defined destruction logic. This method is called when the node is destroyed. \Hypertarget{classe2XD_1_1framework_1_1Node_a6aad0a85b3abdfb1b34e193a4171ce66}\label{classe2XD_1_1framework_1_1Node_a6aad0a85b3abdfb1b34e193a4171ce66} 
+\index{e2XD::framework::Node@{e2XD::framework::Node}!onUpdate@{onUpdate}}
+\index{onUpdate@{onUpdate}!e2XD::framework::Node@{e2XD::framework::Node}}
+\doxysubsubsection{\texorpdfstring{onUpdate()}{onUpdate()}}
+{\footnotesize\ttfamily virtual void e2\+XD\+::framework\+::\+Node\+::on\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+Placeholder for user-\/defined update logic. This method is called during the update phase of the node. \Hypertarget{classe2XD_1_1framework_1_1Node_aa0cdcbad57add9ecddb4d2df12c44e33}\label{classe2XD_1_1framework_1_1Node_aa0cdcbad57add9ecddb4d2df12c44e33} 
+\index{e2XD::framework::Node@{e2XD::framework::Node}!setPaused@{setPaused}}
+\index{setPaused@{setPaused}!e2XD::framework::Node@{e2XD::framework::Node}}
+\doxysubsubsection{\texorpdfstring{setPaused()}{setPaused()}}
+{\footnotesize\ttfamily void e2\+XD\+::framework\+::\+Node\+::set\+Paused (\begin{DoxyParamCaption}\item[{bool}]{paused }\end{DoxyParamCaption})}
+
+\Hypertarget{classe2XD_1_1framework_1_1Node_ab222834736fecb7f778040c291bf653b}\label{classe2XD_1_1framework_1_1Node_ab222834736fecb7f778040c291bf653b} 
+\index{e2XD::framework::Node@{e2XD::framework::Node}!setRenderLayer@{setRenderLayer}}
+\index{setRenderLayer@{setRenderLayer}!e2XD::framework::Node@{e2XD::framework::Node}}
+\doxysubsubsection{\texorpdfstring{setRenderLayer()}{setRenderLayer()}}
+{\footnotesize\ttfamily void e2\+XD\+::framework\+::\+Node\+::set\+Render\+Layer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{RenderLayer_8h_ad16d91520dd8dbd7a2178564fce5a168}{Render\+Layer}}}]{render\+Layer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Set the render layer of the renderable. 
+\begin{DoxyParams}{Parameters}
+{\em render\+Layer} & \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classe2XD_1_1framework_1_1Renderable_a9fd26e67c1415ab39123607bc7d56dc6}{e2\+XD\+::framework\+::\+Renderable}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classe2XD_1_1framework_1_1Node_ab222834736fecb7f778040c291bf653b_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classe2XD_1_1framework_1_1Node_a5ef907ce5d1cef1dd7238a88cbdaff61}\label{classe2XD_1_1framework_1_1Node_a5ef907ce5d1cef1dd7238a88cbdaff61} 
+\index{e2XD::framework::Node@{e2XD::framework::Node}!update@{update}}
+\index{update@{update}!e2XD::framework::Node@{e2XD::framework::Node}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void e2\+XD\+::framework\+::\+Node\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Update the node and its sub-\/nodes. Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classe2XD_1_1framework_1_1Node_a5ef907ce5d1cef1dd7238a88cbdaff61_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Friends And Related Symbol Documentation}
+\Hypertarget{classe2XD_1_1framework_1_1Node_a774ff000a72cab489b14effd167a2a43}\label{classe2XD_1_1framework_1_1Node_a774ff000a72cab489b14effd167a2a43} 
+\index{e2XD::framework::Node@{e2XD::framework::Node}!CORE\_Node@{CORE\_Node}}
+\index{CORE\_Node@{CORE\_Node}!e2XD::framework::Node@{e2XD::framework::Node}}
+\doxysubsubsection{\texorpdfstring{CORE\_Node}{CORE\_Node}}
+{\footnotesize\ttfamily friend class CORE\+\_\+\+Node\hspace{0.3cm}{\ttfamily [friend]}}
+
+\Hypertarget{classe2XD_1_1framework_1_1Node_ab2d8f6f75e12d21702650abe7c87f7af}\label{classe2XD_1_1framework_1_1Node_ab2d8f6f75e12d21702650abe7c87f7af} 
+\index{e2XD::framework::Node@{e2XD::framework::Node}!Node2D@{Node2D}}
+\index{Node2D@{Node2D}!e2XD::framework::Node@{e2XD::framework::Node}}
+\doxysubsubsection{\texorpdfstring{Node2D}{Node2D}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{classe2XD_1_1framework_1_1Node2D}{Node2D}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classe2XD_1_1framework_1_1Node_a0ab65bf542aa34b46fec6c8a25b6345d}\label{classe2XD_1_1framework_1_1Node_a0ab65bf542aa34b46fec6c8a25b6345d} 
+\index{e2XD::framework::Node@{e2XD::framework::Node}!processMode@{processMode}}
+\index{processMode@{processMode}!e2XD::framework::Node@{e2XD::framework::Node}}
+\doxysubsubsection{\texorpdfstring{processMode}{processMode}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacee2XD_1_1framework_a6c4f6e2bcbc3eed7f9560cb99f987005}{Process\+Mode}} e2\+XD\+::framework\+::\+Node\+::process\+Mode = \mbox{\hyperlink{namespacee2XD_1_1framework_a6c4f6e2bcbc3eed7f9560cb99f987005a5b39c8b553c821e7cddc6da64b5bd2ee}{Process\+Mode\+::\+DEFAULT}}\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+engine/framework/include/2\+XD2/framework/nodes/\mbox{\hyperlink{Node_8h}{Node.\+h}}\item 
+engine/framework/src/nodes/\mbox{\hyperlink{Node_8cpp}{Node.\+cpp}}\end{DoxyCompactItemize}

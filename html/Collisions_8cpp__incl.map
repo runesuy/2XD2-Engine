@@ -1,0 +1,24 @@
+<map id="engine/framework/src/collisions/Collisions.cpp" name="engine/framework/src/collisions/Collisions.cpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="117,5,281,46"/>
+<area shape="rect" id="Node000002" href="$Collisions_8h.html" title=" " alt="" coords="5,256,182,297"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="153,49,124,68,101,95,88,132,83,170,84,208,88,241,83,241,79,208,78,170,83,130,97,93,120,64,150,44"/>
+<area shape="rect" id="Node000004" href="$NotInitializedException_8h.html" title=" " alt="" coords="312,94,478,135"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="244,44,338,85,335,90,242,49"/>
+<area shape="rect" id="Node000010" href="$ICollisionHandler_8h.html" title=" " alt="" coords="111,94,287,135"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="202,47,202,78,196,78,196,47"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="67,345,120,371"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="96,297,96,329,91,329,91,297"/>
+<area shape="rect" id="Node000005" href="$Exception_8h.html" title=" " alt="" coords="351,183,439,208"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="398,135,398,167,392,167,392,135"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="246,264,317,290"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="379,211,313,257,310,253,376,207"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="341,264,409,290"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="394,209,384,250,379,248,389,208"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="433,264,485,290"/>
+<area shape="poly" id="edge7_Node000005_Node000008" title=" " alt="" coords="407,207,441,250,437,253,402,210"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="509,264,585,290"/>
+<area shape="poly" id="edge8_Node000005_Node000009" title=" " alt="" coords="419,206,511,254,509,259,417,211"/>
+<area shape="rect" id="Node000011" href="$ICollisionBody_8h.html" title=" " alt="" coords="128,183,241,208"/>
+<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="198,136,192,168,187,167,193,135"/>
+<area shape="poly" id="edge11_Node000011_Node000002" title=" " alt="" coords="172,211,129,248,126,244,169,207"/>
+</map>

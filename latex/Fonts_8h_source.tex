@@ -1,0 +1,36 @@
+\doxysection{Fonts.\+h}
+\hypertarget{Fonts_8h_source}{}\label{Fonts_8h_source}\index{engine/framework/include/2XD2/framework/resource\_manager/Fonts.h@{engine/framework/include/2XD2/framework/resource\_manager/Fonts.h}}
+\mbox{\hyperlink{Fonts_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{//}}
+\DoxyCodeLine{00002\ \textcolor{comment}{//\ Created\ by\ rune-\/suy\ on\ 1/11/26.}}
+\DoxyCodeLine{00003\ \textcolor{comment}{//}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#ifndef\ INC\_2XD2\_ENGINE\_FONTS\_H}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#define\ INC\_2XD2\_ENGINE\_FONTS\_H}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{IFontManager_8h}{IFontManager.h}}"{}}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{Resources_8h}{Resources.h}}"{}}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespacee2XD_1_1framework}{e2XD::framework}}}
+\DoxyCodeLine{00012\ \{}
+\DoxyCodeLine{00013\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{classe2XD_1_1framework_1_1Resources_1_1Fonts}{Resources::Fonts}}}
+\DoxyCodeLine{00014\ \ \ \ \ \{}
+\DoxyCodeLine{00015\ \ \ \ \ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keyword}{static}\ \mbox{\hyperlink{classe2XD_1_1framework_1_1IFontManager}{IFontManager}}*\ \_fontManager\ =\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classe2XD_1_1framework_1_1Resources_1_1Fonts_a35de8061a05c0af313adb6bdbb7fbff6}{initialize}}(\mbox{\hyperlink{classe2XD_1_1framework_1_1IFontManager}{IFontManager}}*\ fontManager);}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ sf::Font\&\ \mbox{\hyperlink{classe2XD_1_1framework_1_1Resources_1_1Fonts_a99dc9c61f5a028a00d1ba2e8bd3e3ddf}{getFont}}(\textcolor{keyword}{const}\ std::string\&\ fontName);}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classe2XD_1_1framework_1_1Resources_1_1Fonts_a116aab351f38f75e97ed1f39990eac32}{loadFontMap}}(\textcolor{keyword}{const}\ std::string\&\ fontMapPath);}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classe2XD_1_1framework_1_1Resources_1_1Fonts_a2684e70e1776e49ad2780e5bf2b2f94c}{loadFontMapIfNotLoaded}}(\textcolor{keyword}{const}\ std::string\&\ fontMapPath);}
+\DoxyCodeLine{00065\ }
+\DoxyCodeLine{00074\ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classe2XD_1_1framework_1_1Resources_1_1Fonts_a74e99a1a1a234454542c4b7326172934}{loadFont}}(\textcolor{keyword}{const}\ std::string\&\ fontName,\ \textcolor{keyword}{const}\ std::string\&\ fontPath);}
+\DoxyCodeLine{00075\ \ \ \ \ \};}
+\DoxyCodeLine{00076\ \}\ \textcolor{comment}{//\ framework}}
+\DoxyCodeLine{00077\ \textcolor{comment}{//\ e2XD}}
+\DoxyCodeLine{00078\ }
+\DoxyCodeLine{00079\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//INC\_2XD2\_ENGINE\_FONTS\_H}}
+
+\end{DoxyCode}

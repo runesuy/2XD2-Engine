@@ -1,4 +1,29 @@
 var searchData=
 [
-  ['using_20cmake_0',['using cmake',['../index.html#autotoc_md5',1,'Using CMake'],['../md_GettingStarted.html#autotoc_md11',1,'Using Cmake']]]
+  ['r_0',['R',['../Key_8h.html#ab3c7af4820830f9166ede9e5623c4e73ae1e1d3d40573127e9ee0480caf1283d6',1,'Key.h']]],
+  ['readme_2emd_1',['README.md',['../README_8md.html',1,'']]],
+  ['rectangle2d_2',['Rectangle2D',['../classe2XD_1_1std__addon_1_1Rectangle2D.html',1,'e2XD::std_addon']]],
+  ['rectangle2d_2ecpp_3',['Rectangle2D.cpp',['../Rectangle2D_8cpp.html',1,'']]],
+  ['rectangle2d_2eh_4',['Rectangle2D.h',['../Rectangle2D_8h.html',1,'']]],
+  ['registercollisionbody_5',['registercollisionbody',['../classe2XD_1_1framework_1_1ICollisionHandler.html#a359ccdd8a7e5bce41ffb38a247cc64f5',1,'e2XD::framework::ICollisionHandler::registerCollisionBody()'],['../classe2XD_1_1framework_1_1DefaultCollisionHandler.html#a35861731b934262ae7677b66cb5658a1',1,'e2XD::framework::DefaultCollisionHandler::registerCollisionBody()'],['../classe2XD_1_1framework_1_1Collisions.html#aeadffd722b6179d9da94b7cb4ae94eac',1,'e2XD::framework::Collisions::registerCollisionBody()']]],
+  ['removecollisionbody_6',['removecollisionbody',['../classe2XD_1_1framework_1_1ICollisionHandler.html#a73f700cf84c9acb90f8255da64cae7ed',1,'e2XD::framework::ICollisionHandler::removeCollisionBody()'],['../classe2XD_1_1framework_1_1DefaultCollisionHandler.html#a220360f14f54dc512ee040729ad7b6e1',1,'e2XD::framework::DefaultCollisionHandler::removeCollisionBody()'],['../classe2XD_1_1framework_1_1Collisions.html#aabbe0c1a9f74d73ac679c2392c927b27',1,'e2XD::framework::Collisions::removeCollisionBody()']]],
+  ['renderable_7',['Renderable',['../classe2XD_1_1framework_1_1Renderable.html',1,'e2XD::framework']]],
+  ['renderable_2ecpp_8',['Renderable.cpp',['../Renderable_8cpp.html',1,'']]],
+  ['renderable_2eh_9',['Renderable.h',['../Renderable_8h.html',1,'']]],
+  ['rendercommand_10',['rendercommand',['../structe2XD_1_1renderer_1_1RenderCommand.html',1,'e2XD::renderer::RenderCommand'],['../structe2XD_1_1renderer_1_1RenderCommand.html#aa6f759373a9b27774ff9a35cc2fbfc9d',1,'e2XD::renderer::RenderCommand::RenderCommand(const RenderCommand &amp;)=default'],['../structe2XD_1_1renderer_1_1RenderCommand.html#ae288a3b1d57d2c7e79d630095eabbf3d',1,'e2XD::renderer::RenderCommand::RenderCommand(RenderCommand &amp;&amp;) noexcept=default'],['../structe2XD_1_1renderer_1_1RenderCommand.html#a8146ff9cbc2c3e9ea6498bad8bfb1858',1,'e2XD::renderer::RenderCommand::RenderCommand(RenderLayer renderLayer, const sf::Drawable *drawable, const sf::Vector2f &amp;position, int zIndex)']]],
+  ['rendercommand_2ecpp_11',['RenderCommand.cpp',['../RenderCommand_8cpp.html',1,'']]],
+  ['rendercommand_2eh_12',['RenderCommand.h',['../RenderCommand_8h.html',1,'']]],
+  ['renderer_13',['Renderer',['../classe2XD_1_1framework_1_1Renderer.html',1,'e2XD::framework']]],
+  ['renderer_2ecpp_14',['Renderer.cpp',['../Renderer_8cpp.html',1,'']]],
+  ['renderer_2eh_15',['Renderer.h',['../Renderer_8h.html',1,'']]],
+  ['renderlayer_16',['renderlayer',['../classe2XD_1_1framework_1_1Renderable.html#a73a98b5c0defcdfd7a1e2a6c528b0f91',1,'e2XD::framework::Renderable::renderLayer'],['../structe2XD_1_1renderer_1_1RenderCommand.html#a61b2ead752ee1ca7c7b01b47a0a2ebf2',1,'e2XD::renderer::RenderCommand::renderLayer'],['../RenderLayer_8h.html#ad16d91520dd8dbd7a2178564fce5a168',1,'RenderLayer:&#160;RenderLayer.h']]],
+  ['renderlayer_2eh_17',['RenderLayer.h',['../RenderLayer_8h.html',1,'']]],
+  ['renderorder_18',['RenderOrder',['../RenderLayer_8h.html#aff8a0861e4724253257407ec8c4c20ec',1,'RenderLayer.h']]],
+  ['repository_19',['1. Fork the Repository',['../md_CONTRIBUTING.html#autotoc_md16',1,'']]],
+  ['request_20',['6. Create a Pull Request',['../md_CONTRIBUTING.html#autotoc_md21',1,'']]],
+  ['resources_21',['Resources',['../classe2XD_1_1framework_1_1Resources.html',1,'e2XD::framework']]],
+  ['resources_2ecpp_22',['Resources.cpp',['../Resources_8cpp.html',1,'']]],
+  ['resources_2eh_23',['Resources.h',['../Resources_8h.html',1,'']]],
+  ['right_24',['RIGHT',['../MouseButton_8h.html#ac1ec3647c005eacad401b06e7e18f711a21507b40c80068eda19865706fdc2403',1,'MouseButton.h']]],
+  ['run_25',['run',['../classe2XD_1_1framework_1_1Game.html#a3b33447365a8d953488d5b2c90b4d4ee',1,'e2XD::framework::Game']]]
 ];

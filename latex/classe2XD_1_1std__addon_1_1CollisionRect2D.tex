@@ -1,0 +1,282 @@
+\doxysection{e2\+XD\+::std\+\_\+addon\+::Collision\+Rect2D Class Reference}
+\hypertarget{classe2XD_1_1std__addon_1_1CollisionRect2D}{}\label{classe2XD_1_1std__addon_1_1CollisionRect2D}\index{e2XD::std\_addon::CollisionRect2D@{e2XD::std\_addon::CollisionRect2D}}
+
+
+{\ttfamily \#include $<$Collision\+Rect2\+D.\+h$>$}
+
+
+
+Inheritance diagram for e2\+XD\+::std\+\_\+addon\+::Collision\+Rect2D\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classe2XD_1_1std__addon_1_1CollisionRect2D__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for e2\+XD\+::std\+\_\+addon\+::Collision\+Rect2D\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classe2XD_1_1std__addon_1_1CollisionRect2D__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classe2XD_1_1std__addon_1_1CollisionRect2D_a4deb0c3c25a570e16b54aff495a1f451}{Collision\+Rect2D}} ()=default
+\item 
+\mbox{\hyperlink{classe2XD_1_1std__addon_1_1CollisionRect2D_a12d0d98e9cd8de8ed63d4c31917558a4}{\texorpdfstring{$\sim$}{\string~}\+Collision\+Rect2D}} () override=default
+\item 
+void \mbox{\hyperlink{classe2XD_1_1std__addon_1_1CollisionRect2D_ab39d17d6f6b46e49ff8f725fe91e9b44}{set\+Width}} (float width)
+\item 
+void \mbox{\hyperlink{classe2XD_1_1std__addon_1_1CollisionRect2D_a788bd6d8c6250794aedc1a763e8f2a48}{set\+Height}} (float height)
+\item 
+float \mbox{\hyperlink{classe2XD_1_1std__addon_1_1CollisionRect2D_a2884c6092c83642a0f76b0bd08a43a3c}{get\+Width}} () const
+\item 
+float \mbox{\hyperlink{classe2XD_1_1std__addon_1_1CollisionRect2D_a866b776b5c723df76771461e432520eb}{get\+Height}} () const
+\item 
+bool \mbox{\hyperlink{classe2XD_1_1std__addon_1_1CollisionRect2D_a55865cd8cc2da552691daba3dab41549}{are\+Colliding}} (ICollision\+Body \texorpdfstring{$\ast$}{*}other) const override
+\item 
+void \mbox{\hyperlink{classe2XD_1_1std__addon_1_1CollisionRect2D_aa5c6051a512d966db76f38f411faa13d}{set\+Global\+Position}} (const \mbox{\hyperlink{namespacee2XD_1_1core_a64915d4955e6ed3347eb48450b60d026}{core\+::\+Vec2f}} \&position) override
+\item 
+void \mbox{\hyperlink{classe2XD_1_1std__addon_1_1CollisionRect2D_ae058d4873bca81c67c1fe54db407b4bf}{set\+Local\+Position}} (const \mbox{\hyperlink{namespacee2XD_1_1core_a64915d4955e6ed3347eb48450b60d026}{core\+::\+Vec2f}} \&position) override
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classe2XD_1_1framework_1_1CollisionBody2D}{e2\+XD\+::framework\+::\+Collision\+Body2D}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classe2XD_1_1framework_1_1CollisionBody2D_ad975e140ceb2c24799db53a2f3b2e9eb}{Collision\+Body2D}} ()=default
+\item 
+\mbox{\hyperlink{classe2XD_1_1framework_1_1CollisionBody2D_a9da483a00de0c18bfb137805137da427}{\texorpdfstring{$\sim$}{\string~}\+Collision\+Body2D}} () override=default
+\item 
+\mbox{\hyperlink{classe2XD_1_1framework_1_1Collisions_a4c40efafd0f193182e6067660a620a99}{Collisions\+::\+Collision\+Type}} \mbox{\hyperlink{classe2XD_1_1framework_1_1CollisionBody2D_abfc7590446be1b3e27a9a9b42a25c74e}{get\+Collision\+Type}} () const override
+\item 
+int \mbox{\hyperlink{classe2XD_1_1framework_1_1CollisionBody2D_ae8e8945110cc8a57cd8126374e5a2434}{get\+Collision\+Layer}} () const override
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classe2XD_1_1framework_1_1ICollisionBody}{e2\+XD\+::framework\+::\+ICollision\+Body}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classe2XD_1_1framework_1_1ICollisionBody_a3ff75d9d724d9250601bbec552041a26}{\texorpdfstring{$\sim$}{\string~}\+ICollision\+Body}} ()=default
+\item 
+virtual bool \mbox{\hyperlink{classe2XD_1_1framework_1_1ICollisionBody_a309114add04f737dde3dbe72f29f1e89}{are\+Colliding}} (\mbox{\hyperlink{classe2XD_1_1framework_1_1ICollisionBody}{ICollision\+Body}} \texorpdfstring{$\ast$}{*}other) const =0
+\item 
+virtual void \mbox{\hyperlink{classe2XD_1_1framework_1_1ICollisionBody_acad511aebc1dc8536f9281f1956b0ef0}{on\+Collision\+Enter}} (\mbox{\hyperlink{classe2XD_1_1framework_1_1ICollisionBody}{ICollision\+Body}} \texorpdfstring{$\ast$}{*}other)
+\item 
+virtual void \mbox{\hyperlink{classe2XD_1_1framework_1_1ICollisionBody_a9a651f65ca62d1fe54e74e2e09d282bb}{on\+Collision\+Exit}} (\mbox{\hyperlink{classe2XD_1_1framework_1_1ICollisionBody}{ICollision\+Body}} \texorpdfstring{$\ast$}{*}other)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classe2XD_1_1framework_1_1Node2D}{e2\+XD\+::framework\+::\+Node2D}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classe2XD_1_1framework_1_1Node2D_acb3a90bdb7f0147e0f81e2ff5febaaa3}{Node2D}} ()=default
+\item 
+const \mbox{\hyperlink{namespacee2XD_1_1core_a64915d4955e6ed3347eb48450b60d026}{core\+::\+Vec2f}} \& \mbox{\hyperlink{classe2XD_1_1framework_1_1Node2D_a7b63977014241fc1a59ffa539c0910ba}{get\+Global\+Position}} () const
+\item 
+const \mbox{\hyperlink{namespacee2XD_1_1core_a64915d4955e6ed3347eb48450b60d026}{core\+::\+Vec2f}} \& \mbox{\hyperlink{classe2XD_1_1framework_1_1Node2D_aad9c5f2760abe587c91a8905aabfbdf3}{get\+Local\+Position}} () const
+\item 
+const \mbox{\hyperlink{namespacee2XD_1_1core_a64915d4955e6ed3347eb48450b60d026}{core\+::\+Vec2f}} \& \mbox{\hyperlink{classe2XD_1_1framework_1_1Node2D_a64c2ece0a46a7aa4f3b4b91d7c1a3ca3}{get\+Global\+Scale}} () const
+\item 
+virtual void \mbox{\hyperlink{classe2XD_1_1framework_1_1Node2D_a874686661030a4d4076c4c0c9b4ce9b3}{set\+Global\+Scale}} (const \mbox{\hyperlink{namespacee2XD_1_1core_a64915d4955e6ed3347eb48450b60d026}{core\+::\+Vec2f}} \&scale)
+\item 
+const \mbox{\hyperlink{namespacee2XD_1_1core_a64915d4955e6ed3347eb48450b60d026}{core\+::\+Vec2f}} \& \mbox{\hyperlink{classe2XD_1_1framework_1_1Node2D_a3ee0c1294037ec66cf478c78b7777867}{get\+Local\+Scale}} () const
+\item 
+virtual void \mbox{\hyperlink{classe2XD_1_1framework_1_1Node2D_a1a797c70a4ea6c78ecbfa8bb0165b266}{set\+Local\+Scale}} (const \mbox{\hyperlink{namespacee2XD_1_1core_a64915d4955e6ed3347eb48450b60d026}{core\+::\+Vec2f}} \&scale)
+\item 
+double \mbox{\hyperlink{classe2XD_1_1framework_1_1Node2D_aa23c7227e6f07ebb0853ef8a72fd49f4}{get\+Global\+Rotation}} () const
+\item 
+virtual void \mbox{\hyperlink{classe2XD_1_1framework_1_1Node2D_ac4f24e2e6fc0a0c7767e5f13c2bca388}{set\+Global\+Rotation}} (double rotation)
+\item 
+double \mbox{\hyperlink{classe2XD_1_1framework_1_1Node2D_a57b06bce7d6a2cb082f8722ea21d3ebd}{get\+Local\+Rotation}} () const
+\item 
+virtual void \mbox{\hyperlink{classe2XD_1_1framework_1_1Node2D_afdc293c49a18222e4ad81a53368a18ab}{set\+Local\+Rotation}} (double rotation)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classe2XD_1_1framework_1_1Node}{e2\+XD\+::framework\+::\+Node}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classe2XD_1_1framework_1_1Node_a131881db1f212ce2d5ea8db9dddc0475}{Node}} ()=default
+\item 
+\mbox{\hyperlink{classe2XD_1_1framework_1_1Node_a613541edc80979c11b37c646a4afdbb8}{\texorpdfstring{$\sim$}{\string~}\+Node}} () override=default
+\item 
+void \mbox{\hyperlink{classe2XD_1_1framework_1_1Node_a5ef907ce5d1cef1dd7238a88cbdaff61}{update}} ()
+\item 
+void \mbox{\hyperlink{classe2XD_1_1framework_1_1Node_a9aaf0d4a9499a43153bba28c0e482201}{create}} ()
+\item 
+void \mbox{\hyperlink{classe2XD_1_1framework_1_1Node_a7831b27923edd33f0545eb56208d4631}{destroy}} ()
+\item 
+{\footnotesize template$<$Is\+Node Entity\+Type$>$ }\\Entity\+Type \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classe2XD_1_1framework_1_1Node_af964fd54baaa40992497d852be754086}{create\+Sub\+Node}} ()
+\item 
+virtual void \mbox{\hyperlink{classe2XD_1_1framework_1_1Node_abc834854340010c6750a1463e3254e28}{add\+Sub\+Node}} (std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classe2XD_1_1framework_1_1Node}{Node}} $>$ node)
+\item 
+{\footnotesize template$<$Is\+Node Entity\+Type$>$ }\\const Entity\+Type \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classe2XD_1_1framework_1_1Node_a7a214d4356a49c08bd4ca1b94ee4b5bd}{get\+Sub\+Node}} () const
+\item 
+{\footnotesize template$<$Is\+Node Entity\+Type$>$ }\\std\+::list$<$ const Entity\+Type \texorpdfstring{$\ast$}{*} $>$ \mbox{\hyperlink{classe2XD_1_1framework_1_1Node_aefe0d967a19a44aa3963407ff981a32b}{get\+Sub\+Nodes}} () const
+\item 
+{\footnotesize template$<$Is\+Node Entity\+Type$>$ }\\Entity\+Type \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classe2XD_1_1framework_1_1Node_af7d8ff352a37988e3dbc838bc1a6124b}{get\+Sub\+Node}} ()
+\item 
+{\footnotesize template$<$Is\+Node Entity\+Type$>$ }\\std\+::list$<$ Entity\+Type \texorpdfstring{$\ast$}{*} $>$ \mbox{\hyperlink{classe2XD_1_1framework_1_1Node_a1bd94a9504ff119521433958cd6b3c8c}{get\+Sub\+Nodes}} ()
+\item 
+std\+::list$<$ \mbox{\hyperlink{classe2XD_1_1framework_1_1Node}{Node}} \texorpdfstring{$\ast$}{*} $>$ \mbox{\hyperlink{classe2XD_1_1framework_1_1Node_a5486973cd5bcaee78c48e20633b3d53e}{get\+Sub\+Nodes}} ()
+\item 
+std\+::list$<$ const \mbox{\hyperlink{classe2XD_1_1framework_1_1Node}{Node}} \texorpdfstring{$\ast$}{*} $>$ \mbox{\hyperlink{classe2XD_1_1framework_1_1Node_ac56c09adaac5f33c3a095e73d480e9c6}{get\+Sub\+Nodes}} () const
+\item 
+void \mbox{\hyperlink{classe2XD_1_1framework_1_1Node_ab222834736fecb7f778040c291bf653b}{set\+Render\+Layer}} (\mbox{\hyperlink{RenderLayer_8h_ad16d91520dd8dbd7a2178564fce5a168}{Render\+Layer}} \mbox{\hyperlink{classe2XD_1_1framework_1_1Renderable_a73a98b5c0defcdfd7a1e2a6c528b0f91}{render\+Layer}}) override
+\item 
+const \mbox{\hyperlink{classe2XD_1_1framework_1_1Node}{Node}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classe2XD_1_1framework_1_1Node_a3b6cd8707bf978600bcf9d5fb8934e01}{get\+Parent}} () const
+\item 
+\mbox{\hyperlink{classe2XD_1_1framework_1_1Node}{Node}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classe2XD_1_1framework_1_1Node_a40286968151235c93254f56f9b0b993a}{get\+Parent}} ()
+\item 
+void \mbox{\hyperlink{classe2XD_1_1framework_1_1Node_aa0cdcbad57add9ecddb4d2df12c44e33}{set\+Paused}} (bool paused)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classe2XD_1_1framework_1_1Renderable}{e2\+XD\+::framework\+::\+Renderable}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classe2XD_1_1framework_1_1Renderable_ae1ecc921fd8112a12e82bc78282c42d9}{\texorpdfstring{$\sim$}{\string~}\+Renderable}} ()=default
+\item 
+void \mbox{\hyperlink{classe2XD_1_1framework_1_1Renderable_a8e7d1036e4bc4d1f60a639fdd1cbaee1}{draw}} ()
+\item 
+virtual void \mbox{\hyperlink{classe2XD_1_1framework_1_1Renderable_a084810e1e0d412501eb24f3c3067417b}{set\+Visible}} (bool \mbox{\hyperlink{classe2XD_1_1framework_1_1Renderable_a5f075727608df3d602ea422e19c82648}{visible}})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{classe2XD_1_1framework_1_1CollisionBody2D}{e2\+XD\+::framework\+::\+Collision\+Body2D}}}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classe2XD_1_1framework_1_1CollisionBody2D_a540862f820c28e51ce8108560ffad3ab}{\+\_\+internal\+\_\+on\+Create}} () override
+\item 
+void \mbox{\hyperlink{classe2XD_1_1framework_1_1CollisionBody2D_aab6d9f7b51b4708ee4d8b3308149a739}{\+\_\+internal\+\_\+on\+Destroy}} () override
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{classe2XD_1_1framework_1_1Node}{e2\+XD\+::framework\+::\+Node}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{classe2XD_1_1framework_1_1Node_a6aad0a85b3abdfb1b34e193a4171ce66}{on\+Update}} ()
+\item 
+virtual void \mbox{\hyperlink{classe2XD_1_1framework_1_1Node_a7d7c39c57b0ea8d05c1c771bb14edeb3}{\+\_\+internal\+\_\+on\+Update}} ()
+\item 
+virtual void \mbox{\hyperlink{classe2XD_1_1framework_1_1Node_adff5310c5d37fd27541b8d7fd4d6916c}{on\+Create}} ()
+\item 
+virtual void \mbox{\hyperlink{classe2XD_1_1framework_1_1Node_a37ef50b0e9003613fab64d595304e5ba}{on\+Destroy}} ()
+\item 
+void \mbox{\hyperlink{classe2XD_1_1framework_1_1Node_af891d43c352e1420c1d2c27ce9ae88fb}{\+\_\+internal\+\_\+on\+Draw}} () override
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{classe2XD_1_1framework_1_1Renderable}{e2\+XD\+::framework\+::\+Renderable}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{classe2XD_1_1framework_1_1Renderable_a4816842499b76973a9428104f32e5ec5}{on\+Draw}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classe2XD_1_1framework_1_1CollisionBody2D}{e2\+XD\+::framework\+::\+Collision\+Body2D}}}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classe2XD_1_1framework_1_1CollisionBody2D_a72bd13ec3fc59ae7fef13d39cf827419}{collision\+Layer}} =0
+\item 
+\mbox{\hyperlink{classe2XD_1_1framework_1_1Collisions_a4c40efafd0f193182e6067660a620a99}{Collisions\+::\+Collision\+Type}} \mbox{\hyperlink{classe2XD_1_1framework_1_1CollisionBody2D_af187a3771a0a31b44c0bfba031241820}{collision\+Type}} = \mbox{\hyperlink{classe2XD_1_1framework_1_1Collisions_a4c40efafd0f193182e6067660a620a99a0fcc90da4811c877ba9f9c12f7d60bc9}{Collisions\+::\+Collision\+Type\+::\+DYNAMIC}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classe2XD_1_1framework_1_1Node}{e2\+XD\+::framework\+::\+Node}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacee2XD_1_1framework_a6c4f6e2bcbc3eed7f9560cb99f987005}{Process\+Mode}} \mbox{\hyperlink{classe2XD_1_1framework_1_1Node_a0ab65bf542aa34b46fec6c8a25b6345d}{process\+Mode}} = \mbox{\hyperlink{namespacee2XD_1_1framework_a6c4f6e2bcbc3eed7f9560cb99f987005a5b39c8b553c821e7cddc6da64b5bd2ee}{Process\+Mode\+::\+DEFAULT}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classe2XD_1_1framework_1_1Renderable}{e2\+XD\+::framework\+::\+Renderable}}}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classe2XD_1_1framework_1_1Renderable_ad4e09e08a878138093f4705c7747fc67}{z\+Index}} = 0
+\item 
+bool \mbox{\hyperlink{classe2XD_1_1framework_1_1Renderable_a5f075727608df3d602ea422e19c82648}{visible}} = true
+\item 
+\mbox{\hyperlink{RenderLayer_8h_ad16d91520dd8dbd7a2178564fce5a168}{Render\+Layer}} \mbox{\hyperlink{classe2XD_1_1framework_1_1Renderable_a73a98b5c0defcdfd7a1e2a6c528b0f91}{render\+Layer}} = \mbox{\hyperlink{RenderLayer_8h_ad16d91520dd8dbd7a2178564fce5a168a5289492cf082446ca4a6eec9f72f1ec3}{Render\+Layer\+::\+WORLD}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A rectangular collision body in 2D space. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classe2XD_1_1std__addon_1_1CollisionRect2D_a4deb0c3c25a570e16b54aff495a1f451}\label{classe2XD_1_1std__addon_1_1CollisionRect2D_a4deb0c3c25a570e16b54aff495a1f451} 
+\index{e2XD::std\_addon::CollisionRect2D@{e2XD::std\_addon::CollisionRect2D}!CollisionRect2D@{CollisionRect2D}}
+\index{CollisionRect2D@{CollisionRect2D}!e2XD::std\_addon::CollisionRect2D@{e2XD::std\_addon::CollisionRect2D}}
+\doxysubsubsection{\texorpdfstring{CollisionRect2D()}{CollisionRect2D()}}
+{\footnotesize\ttfamily e2\+XD\+::std\+\_\+addon\+::\+Collision\+Rect2\+D\+::\+Collision\+Rect2D (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\Hypertarget{classe2XD_1_1std__addon_1_1CollisionRect2D_a12d0d98e9cd8de8ed63d4c31917558a4}\label{classe2XD_1_1std__addon_1_1CollisionRect2D_a12d0d98e9cd8de8ed63d4c31917558a4} 
+\index{e2XD::std\_addon::CollisionRect2D@{e2XD::std\_addon::CollisionRect2D}!````~CollisionRect2D@{\texorpdfstring{$\sim$}{\string~}CollisionRect2D}}
+\index{````~CollisionRect2D@{\texorpdfstring{$\sim$}{\string~}CollisionRect2D}!e2XD::std\_addon::CollisionRect2D@{e2XD::std\_addon::CollisionRect2D}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}CollisionRect2D()}{\string~CollisionRect2D()}}
+{\footnotesize\ttfamily e2\+XD\+::std\+\_\+addon\+::\+Collision\+Rect2\+D\+::\texorpdfstring{$\sim$}{\string~}\+Collision\+Rect2D (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classe2XD_1_1std__addon_1_1CollisionRect2D_a55865cd8cc2da552691daba3dab41549}\label{classe2XD_1_1std__addon_1_1CollisionRect2D_a55865cd8cc2da552691daba3dab41549} 
+\index{e2XD::std\_addon::CollisionRect2D@{e2XD::std\_addon::CollisionRect2D}!areColliding@{areColliding}}
+\index{areColliding@{areColliding}!e2XD::std\_addon::CollisionRect2D@{e2XD::std\_addon::CollisionRect2D}}
+\doxysubsubsection{\texorpdfstring{areColliding()}{areColliding()}}
+{\footnotesize\ttfamily bool e2\+XD\+::std\+\_\+addon\+::\+Collision\+Rect2\+D\+::are\+Colliding (\begin{DoxyParamCaption}\item[{ICollision\+Body \texorpdfstring{$\ast$}{*}}]{other }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}}
+
+\Hypertarget{classe2XD_1_1std__addon_1_1CollisionRect2D_a866b776b5c723df76771461e432520eb}\label{classe2XD_1_1std__addon_1_1CollisionRect2D_a866b776b5c723df76771461e432520eb} 
+\index{e2XD::std\_addon::CollisionRect2D@{e2XD::std\_addon::CollisionRect2D}!getHeight@{getHeight}}
+\index{getHeight@{getHeight}!e2XD::std\_addon::CollisionRect2D@{e2XD::std\_addon::CollisionRect2D}}
+\doxysubsubsection{\texorpdfstring{getHeight()}{getHeight()}}
+{\footnotesize\ttfamily float e2\+XD\+::std\+\_\+addon\+::\+Collision\+Rect2\+D\+::get\+Height (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\Hypertarget{classe2XD_1_1std__addon_1_1CollisionRect2D_a2884c6092c83642a0f76b0bd08a43a3c}\label{classe2XD_1_1std__addon_1_1CollisionRect2D_a2884c6092c83642a0f76b0bd08a43a3c} 
+\index{e2XD::std\_addon::CollisionRect2D@{e2XD::std\_addon::CollisionRect2D}!getWidth@{getWidth}}
+\index{getWidth@{getWidth}!e2XD::std\_addon::CollisionRect2D@{e2XD::std\_addon::CollisionRect2D}}
+\doxysubsubsection{\texorpdfstring{getWidth()}{getWidth()}}
+{\footnotesize\ttfamily float e2\+XD\+::std\+\_\+addon\+::\+Collision\+Rect2\+D\+::get\+Width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\Hypertarget{classe2XD_1_1std__addon_1_1CollisionRect2D_aa5c6051a512d966db76f38f411faa13d}\label{classe2XD_1_1std__addon_1_1CollisionRect2D_aa5c6051a512d966db76f38f411faa13d} 
+\index{e2XD::std\_addon::CollisionRect2D@{e2XD::std\_addon::CollisionRect2D}!setGlobalPosition@{setGlobalPosition}}
+\index{setGlobalPosition@{setGlobalPosition}!e2XD::std\_addon::CollisionRect2D@{e2XD::std\_addon::CollisionRect2D}}
+\doxysubsubsection{\texorpdfstring{setGlobalPosition()}{setGlobalPosition()}}
+{\footnotesize\ttfamily void e2\+XD\+::std\+\_\+addon\+::\+Collision\+Rect2\+D\+::set\+Global\+Position (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespacee2XD_1_1core_a64915d4955e6ed3347eb48450b60d026}{core\+::\+Vec2f}} \&}]{position }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Set the absolute global position of the node in the scene. Children positions will be updated accordingly. 
+\begin{DoxyParams}{Parameters}
+{\em position} & \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classe2XD_1_1framework_1_1Node2D_a04aa16150ec9336a0878029b2c5ae3cd}{e2\+XD\+::framework\+::\+Node2D}}.
+
+\Hypertarget{classe2XD_1_1std__addon_1_1CollisionRect2D_a788bd6d8c6250794aedc1a763e8f2a48}\label{classe2XD_1_1std__addon_1_1CollisionRect2D_a788bd6d8c6250794aedc1a763e8f2a48} 
+\index{e2XD::std\_addon::CollisionRect2D@{e2XD::std\_addon::CollisionRect2D}!setHeight@{setHeight}}
+\index{setHeight@{setHeight}!e2XD::std\_addon::CollisionRect2D@{e2XD::std\_addon::CollisionRect2D}}
+\doxysubsubsection{\texorpdfstring{setHeight()}{setHeight()}}
+{\footnotesize\ttfamily void e2\+XD\+::std\+\_\+addon\+::\+Collision\+Rect2\+D\+::set\+Height (\begin{DoxyParamCaption}\item[{float}]{height }\end{DoxyParamCaption})}
+
+\Hypertarget{classe2XD_1_1std__addon_1_1CollisionRect2D_ae058d4873bca81c67c1fe54db407b4bf}\label{classe2XD_1_1std__addon_1_1CollisionRect2D_ae058d4873bca81c67c1fe54db407b4bf} 
+\index{e2XD::std\_addon::CollisionRect2D@{e2XD::std\_addon::CollisionRect2D}!setLocalPosition@{setLocalPosition}}
+\index{setLocalPosition@{setLocalPosition}!e2XD::std\_addon::CollisionRect2D@{e2XD::std\_addon::CollisionRect2D}}
+\doxysubsubsection{\texorpdfstring{setLocalPosition()}{setLocalPosition()}}
+{\footnotesize\ttfamily void e2\+XD\+::std\+\_\+addon\+::\+Collision\+Rect2\+D\+::set\+Local\+Position (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespacee2XD_1_1core_a64915d4955e6ed3347eb48450b60d026}{core\+::\+Vec2f}} \&}]{position }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Set the local position of the node relative to its parent. Children positions will be updated accordingly. 
+\begin{DoxyParams}{Parameters}
+{\em position} & \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classe2XD_1_1framework_1_1Node2D_a8d2305af52e303ef69649ccac523b586}{e2\+XD\+::framework\+::\+Node2D}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classe2XD_1_1std__addon_1_1CollisionRect2D_ae058d4873bca81c67c1fe54db407b4bf_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classe2XD_1_1std__addon_1_1CollisionRect2D_ab39d17d6f6b46e49ff8f725fe91e9b44}\label{classe2XD_1_1std__addon_1_1CollisionRect2D_ab39d17d6f6b46e49ff8f725fe91e9b44} 
+\index{e2XD::std\_addon::CollisionRect2D@{e2XD::std\_addon::CollisionRect2D}!setWidth@{setWidth}}
+\index{setWidth@{setWidth}!e2XD::std\_addon::CollisionRect2D@{e2XD::std\_addon::CollisionRect2D}}
+\doxysubsubsection{\texorpdfstring{setWidth()}{setWidth()}}
+{\footnotesize\ttfamily void e2\+XD\+::std\+\_\+addon\+::\+Collision\+Rect2\+D\+::set\+Width (\begin{DoxyParamCaption}\item[{float}]{width }\end{DoxyParamCaption})}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+addons/std-\/addon/include/2\+XD2/std\+\_\+addon/\mbox{\hyperlink{CollisionRect2D_8h}{Collision\+Rect2\+D.\+h}}\item 
+addons/std-\/addon/src/\mbox{\hyperlink{CollisionRect2D_8cpp}{Collision\+Rect2\+D.\+cpp}}\end{DoxyCompactItemize}

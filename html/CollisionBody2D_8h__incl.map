@@ -1,0 +1,38 @@
+<map id="engine/framework/include/2XD2/framework/collisions/CollisionBody2D.h" name="engine/framework/include/2XD2/framework/collisions/CollisionBody2D.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="97,5,277,61"/>
+<area shape="rect" id="Node000002" href="$Collisions_8h.html" title=" " alt="" coords="48,190,136,216"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="157,63,137,85,120,110,106,143,98,175,93,174,101,142,115,108,133,82,153,60"/>
+<area shape="rect" id="Node000004" href="$ICollisionBody_8h.html" title=" " alt="" coords="130,109,243,135"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="189,61,189,93,184,93,184,61"/>
+<area shape="rect" id="Node000005" href="$Node2D_8h.html" title=" " alt="" coords="327,109,454,135"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="252,59,349,100,347,105,250,64"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,279,59,305"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="86,218,51,268,47,265,81,215"/>
+<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="174,137,120,182,116,178,171,133"/>
+<area shape="rect" id="Node000006" href="$Node_8h.html" title=" " alt="" coords="209,183,367,223"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="377,137,327,175,324,171,373,133"/>
+<area shape="rect" id="Node000014" href="$Transform2D_8h.html" title=" " alt="" coords="458,190,630,216"/>
+<area shape="poly" id="edge15_Node000005_Node000014" title=" " alt="" coords="415,133,508,180,506,185,413,137"/>
+<area shape="rect" id="Node000015" href="$Vec2f_8h.html" title=" " alt="" coords="669,279,734,305"/>
+<area shape="poly" id="edge19_Node000005_Node000015" title=" " alt="" coords="455,122,500,127,549,137,598,154,643,181,662,199,677,221,696,263,691,265,672,223,658,202,640,185,596,159,548,142,499,132,455,127"/>
+<area shape="poly" id="edge9_Node000006_Node000006" title=" " alt="" coords="368,186,386,192,393,203,390,211,383,216,380,211,386,207,388,203,383,196,366,191"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="82,279,121,305"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="240,226,135,274,133,269,237,221"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="145,279,212,305"/>
+<area shape="poly" id="edge8_Node000006_Node000008" title=" " alt="" coords="265,226,207,271,204,267,262,222"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="237,279,318,305"/>
+<area shape="poly" id="edge10_Node000006_Node000009" title=" " alt="" coords="288,224,283,264,278,263,283,224"/>
+<area shape="rect" id="Node000010" href="$ProcessMode_8h.html" title=" " alt="" coords="342,279,453,305"/>
+<area shape="poly" id="edge11_Node000006_Node000010" title=" " alt="" coords="314,222,372,267,369,271,311,226"/>
+<area shape="rect" id="Node000011" href="$Renderable_8h.html" title=" " alt="" coords="478,271,645,312"/>
+<area shape="poly" id="edge12_Node000006_Node000011" title=" " alt="" coords="351,221,485,264,484,269,350,226"/>
+<area shape="rect" id="Node000012" href="$RenderLayer_8h.html" title=" " alt="" coords="458,360,649,386"/>
+<area shape="poly" id="edge13_Node000011_Node000012" title=" " alt="" coords="562,313,559,345,553,344,557,312"/>
+<area shape="rect" id="Node000013" title=" " alt="" coords="525,434,582,459"/>
+<area shape="poly" id="edge14_Node000012_Node000013" title=" " alt="" coords="556,386,556,418,551,418,551,386"/>
+<area shape="poly" id="edge16_Node000014_Node000015" title=" " alt="" coords="567,214,667,269,665,273,565,219"/>
+<area shape="rect" id="Node000016" href="$Vec2_8hpp.html" title=" " alt="" coords="673,360,748,386"/>
+<area shape="poly" id="edge17_Node000015_Node000016" title=" " alt="" coords="705,305,710,344,705,345,700,305"/>
+<area shape="rect" id="Node000017" title=" " alt="" coords="682,434,739,459"/>
+<area shape="poly" id="edge18_Node000016_Node000017" title=" " alt="" coords="713,386,713,418,708,418,708,386"/>
+</map>

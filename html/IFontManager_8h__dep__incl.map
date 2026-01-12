@@ -1,0 +1,26 @@
+<map id="engine/framework/include/2XD2/framework/resource_manager/IFontManager.h" name="engine/framework/include/2XD2/framework/resource_manager/IFontManager.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="378,5,554,61"/>
+<area shape="rect" id="Node000002" href="$IGameConfig_8h.html" title=" " alt="" coords="381,109,551,165"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="469,77,469,108,463,108,463,77"/>
+<area shape="rect" id="Node000008" href="$DefaultFontManager_8h.html" title=" " alt="" coords="575,109,784,165"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="538,66,623,106,621,111,536,70"/>
+<area shape="rect" id="Node000010" href="$Fonts_8h.html" title=" " alt="" coords="181,213,357,268"/>
+<area shape="poly" id="edge10_Node000001_Node000010" title=" " alt="" coords="416,72,371,111,324,164,289,214,284,211,320,161,367,107,412,68"/>
+<area shape="rect" id="Node000003" href="$Game_8h.html" title=" " alt="" coords="380,220,552,261"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="469,180,469,220,463,220,463,180"/>
+<area shape="rect" id="Node000006" href="$DefaultGameConfig_8h.html" title=" " alt="" coords="577,213,747,268"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="533,170,611,210,608,214,531,175"/>
+<area shape="rect" id="Node000004" href="$Label_8cpp.html" title=" " alt="" coords="222,316,369,357"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="418,271,332,318,330,313,416,266"/>
+<area shape="rect" id="Node000005" href="$Game_8cpp.html" title=" " alt="" coords="393,316,539,357"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="469,276,469,316,463,316,463,276"/>
+<area shape="rect" id="Node000007" href="$DefaultGameConfig_8cpp.html" title=" " alt="" coords="564,316,763,357"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="665,284,666,316,660,316,660,284"/>
+<area shape="poly" id="edge8_Node000008_Node000006" title=" " alt="" coords="675,181,669,212,664,212,669,180"/>
+<area shape="rect" id="Node000009" href="$DefaultFontManager_8cpp.html" title=" " alt="" coords="771,213,974,268"/>
+<area shape="poly" id="edge9_Node000008_Node000009" title=" " alt="" coords="746,170,822,210,819,214,743,175"/>
+<area shape="poly" id="edge11_Node000010_Node000004" title=" " alt="" coords="283,283,292,315,287,317,278,284"/>
+<area shape="poly" id="edge12_Node000010_Node000005" title=" " alt="" coords="341,273,426,313,424,318,338,278"/>
+<area shape="rect" id="Node000011" href="$Fonts_8cpp.html" title=" " alt="" coords="5,316,199,357"/>
+<area shape="poly" id="edge13_Node000010_Node000011" title=" " alt="" coords="209,278,138,318,136,313,206,274"/>
+</map>

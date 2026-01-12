@@ -1,0 +1,148 @@
+\doxysection{e2\+XD\+::framework\+::Renderer Class Reference}
+\hypertarget{classe2XD_1_1framework_1_1Renderer}{}\label{classe2XD_1_1framework_1_1Renderer}\index{e2XD::framework::Renderer@{e2XD::framework::Renderer}}
+
+
+{\ttfamily \#include $<$Renderer.\+h$>$}
+
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classe2XD_1_1framework_1_1Renderer_ae0eeb514b0c48b288e1abf4d290583e5}{initialize}} (\mbox{\hyperlink{classe2XD_1_1renderer_1_1IRenderer}{renderer\+::\+IRenderer}} \texorpdfstring{$\ast$}{*}renderer)
+\item 
+static void \mbox{\hyperlink{classe2XD_1_1framework_1_1Renderer_a469a4670e4d0e1ba07c2e49234399773}{initialize}} (sf\+::\+Render\+Window \texorpdfstring{$\ast$}{*}window)
+\item 
+static void \mbox{\hyperlink{classe2XD_1_1framework_1_1Renderer_aebbb4b065f6ae0a93e02ae150436648e}{clear\+Window}} ()
+\item 
+static void \mbox{\hyperlink{classe2XD_1_1framework_1_1Renderer_af99d771f4163ee774e2c72aec437cb3e}{submit}} (const \mbox{\hyperlink{structe2XD_1_1renderer_1_1RenderCommand}{renderer\+::\+Render\+Command}} \&render\+Command)
+\item 
+static void \mbox{\hyperlink{classe2XD_1_1framework_1_1Renderer_a51b45aadc810df3c0482c1958e00b03c}{flush}} (const \mbox{\hyperlink{namespacee2XD_1_1core_a64915d4955e6ed3347eb48450b60d026}{core\+::\+Vec2f}} \&camera\+Position, float camera\+Zoom)
+\item 
+static \mbox{\hyperlink{structe2XD_1_1core_1_1Vec2}{core\+::\+Vec2}}$<$ unsigned int $>$ \mbox{\hyperlink{classe2XD_1_1framework_1_1Renderer_a437cc54782bb68e19cb9ea4fd2aeeab2}{get\+Window\+Size}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classe2XD_1_1framework_1_1Renderer_aa2fab026580d6f14280c2ffb8063a314}{Game}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Interface that works as middle man between the framework and the IRenderer provided by IConfig. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classe2XD_1_1framework_1_1Renderer_aebbb4b065f6ae0a93e02ae150436648e}\label{classe2XD_1_1framework_1_1Renderer_aebbb4b065f6ae0a93e02ae150436648e} 
+\index{e2XD::framework::Renderer@{e2XD::framework::Renderer}!clearWindow@{clearWindow}}
+\index{clearWindow@{clearWindow}!e2XD::framework::Renderer@{e2XD::framework::Renderer}}
+\doxysubsubsection{\texorpdfstring{clearWindow()}{clearWindow()}}
+{\footnotesize\ttfamily void e2\+XD\+::framework\+::\+Renderer\+::clear\+Window (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Clear the window before rendering a new frame. Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classe2XD_1_1framework_1_1Renderer_aebbb4b065f6ae0a93e02ae150436648e_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classe2XD_1_1framework_1_1Renderer_a51b45aadc810df3c0482c1958e00b03c}\label{classe2XD_1_1framework_1_1Renderer_a51b45aadc810df3c0482c1958e00b03c} 
+\index{e2XD::framework::Renderer@{e2XD::framework::Renderer}!flush@{flush}}
+\index{flush@{flush}!e2XD::framework::Renderer@{e2XD::framework::Renderer}}
+\doxysubsubsection{\texorpdfstring{flush()}{flush()}}
+{\footnotesize\ttfamily void e2\+XD\+::framework\+::\+Renderer\+::flush (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespacee2XD_1_1core_a64915d4955e6ed3347eb48450b60d026}{core\+::\+Vec2f}} \&}]{camera\+Position,  }\item[{float}]{camera\+Zoom }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Flush all submitted render commands to the window. 
+\begin{DoxyParams}{Parameters}
+{\em camera\+Position} & \\
+\hline
+{\em camera\+Zoom} & \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classe2XD_1_1framework_1_1Renderer_a51b45aadc810df3c0482c1958e00b03c_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classe2XD_1_1framework_1_1Renderer_a437cc54782bb68e19cb9ea4fd2aeeab2}\label{classe2XD_1_1framework_1_1Renderer_a437cc54782bb68e19cb9ea4fd2aeeab2} 
+\index{e2XD::framework::Renderer@{e2XD::framework::Renderer}!getWindowSize@{getWindowSize}}
+\index{getWindowSize@{getWindowSize}!e2XD::framework::Renderer@{e2XD::framework::Renderer}}
+\doxysubsubsection{\texorpdfstring{getWindowSize()}{getWindowSize()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structe2XD_1_1core_1_1Vec2}{core\+::\+Vec2}}$<$ unsigned int $>$ e2\+XD\+::framework\+::\+Renderer\+::get\+Window\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Get the current window size. \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classe2XD_1_1framework_1_1Renderer_a437cc54782bb68e19cb9ea4fd2aeeab2_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classe2XD_1_1framework_1_1Renderer_ae0eeb514b0c48b288e1abf4d290583e5}\label{classe2XD_1_1framework_1_1Renderer_ae0eeb514b0c48b288e1abf4d290583e5} 
+\index{e2XD::framework::Renderer@{e2XD::framework::Renderer}!initialize@{initialize}}
+\index{initialize@{initialize}!e2XD::framework::Renderer@{e2XD::framework::Renderer}}
+\doxysubsubsection{\texorpdfstring{initialize()}{initialize()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void e2\+XD\+::framework\+::\+Renderer\+::initialize (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classe2XD_1_1renderer_1_1IRenderer}{renderer\+::\+IRenderer}} \texorpdfstring{$\ast$}{*}}]{renderer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Initialize the renderer system with the provided renderer. 
+\begin{DoxyParams}{Parameters}
+{\em renderer} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classe2XD_1_1framework_1_1Renderer_a469a4670e4d0e1ba07c2e49234399773}\label{classe2XD_1_1framework_1_1Renderer_a469a4670e4d0e1ba07c2e49234399773} 
+\index{e2XD::framework::Renderer@{e2XD::framework::Renderer}!initialize@{initialize}}
+\index{initialize@{initialize}!e2XD::framework::Renderer@{e2XD::framework::Renderer}}
+\doxysubsubsection{\texorpdfstring{initialize()}{initialize()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void e2\+XD\+::framework\+::\+Renderer\+::initialize (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window \texorpdfstring{$\ast$}{*}}]{window }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Initialize the renderer system with the provided SFML Render\+Window. Does not replace the need for renderer initialization. 
+\begin{DoxyParams}{Parameters}
+{\em window} & \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classe2XD_1_1framework_1_1Renderer_a469a4670e4d0e1ba07c2e49234399773_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classe2XD_1_1framework_1_1Renderer_af99d771f4163ee774e2c72aec437cb3e}\label{classe2XD_1_1framework_1_1Renderer_af99d771f4163ee774e2c72aec437cb3e} 
+\index{e2XD::framework::Renderer@{e2XD::framework::Renderer}!submit@{submit}}
+\index{submit@{submit}!e2XD::framework::Renderer@{e2XD::framework::Renderer}}
+\doxysubsubsection{\texorpdfstring{submit()}{submit()}}
+{\footnotesize\ttfamily void e2\+XD\+::framework\+::\+Renderer\+::submit (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structe2XD_1_1renderer_1_1RenderCommand}{renderer\+::\+Render\+Command}} \&}]{render\+Command }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Submit a render command to the renderer. Command will be rendered on next flush. 
+\begin{DoxyParams}{Parameters}
+{\em render\+Command} & \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classe2XD_1_1framework_1_1Renderer_af99d771f4163ee774e2c72aec437cb3e_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Friends And Related Symbol Documentation}
+\Hypertarget{classe2XD_1_1framework_1_1Renderer_aa2fab026580d6f14280c2ffb8063a314}\label{classe2XD_1_1framework_1_1Renderer_aa2fab026580d6f14280c2ffb8063a314} 
+\index{e2XD::framework::Renderer@{e2XD::framework::Renderer}!Game@{Game}}
+\index{Game@{Game}!e2XD::framework::Renderer@{e2XD::framework::Renderer}}
+\doxysubsubsection{\texorpdfstring{Game}{Game}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{classe2XD_1_1framework_1_1Game}{Game}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+engine/framework/include/2\+XD2/framework/drawing/\mbox{\hyperlink{Renderer_8h}{Renderer.\+h}}\item 
+engine/framework/src/drawing/\mbox{\hyperlink{Renderer_8cpp}{Renderer.\+cpp}}\end{DoxyCompactItemize}

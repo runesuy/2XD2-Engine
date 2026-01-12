@@ -1,0 +1,151 @@
+\doxysection{e2\+XD\+::framework\+::Default\+Font\+Manager Class Reference}
+\hypertarget{classe2XD_1_1framework_1_1DefaultFontManager}{}\label{classe2XD_1_1framework_1_1DefaultFontManager}\index{e2XD::framework::DefaultFontManager@{e2XD::framework::DefaultFontManager}}
+
+
+{\ttfamily \#include $<$Default\+Font\+Manager.\+h$>$}
+
+
+
+Inheritance diagram for e2\+XD\+::framework\+::Default\+Font\+Manager\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=235pt]{classe2XD_1_1framework_1_1DefaultFontManager__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for e2\+XD\+::framework\+::Default\+Font\+Manager\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=235pt]{classe2XD_1_1framework_1_1DefaultFontManager__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classe2XD_1_1framework_1_1DefaultFontManager_ab22c127b12f9e24a97214512ab8aa9fb}{load\+Font\+Map}} (const std\+::string \&font\+Map\+Path) override
+\item 
+bool \mbox{\hyperlink{classe2XD_1_1framework_1_1DefaultFontManager_a58051726c33fba66b0d4fcc50bd3d6fb}{load\+Font\+Map\+If\+Not\+Loaded}} (const std\+::string \&font\+Map\+Path) override
+\item 
+void \mbox{\hyperlink{classe2XD_1_1framework_1_1DefaultFontManager_a813a61c6239a5367e96109f48f13f7e9}{load\+Font}} (const std\+::string \&font\+Name, const std\+::string \&file\+Path) override
+\item 
+const sf\+::\+Font \& \mbox{\hyperlink{classe2XD_1_1framework_1_1DefaultFontManager_a31b1de57bbb74822fc0ad722524a62a7}{get\+Font}} (const std\+::string \&font\+Name) override
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classe2XD_1_1framework_1_1IFontManager}{e2\+XD\+::framework\+::\+IFont\+Manager}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classe2XD_1_1framework_1_1IFontManager_a4dbb68560f24c95d555e392562516a8a}{\texorpdfstring{$\sim$}{\string~}\+IFont\+Manager}} ()=default
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Default implementation of \doxylink{classe2XD_1_1framework_1_1IFontManager}{IFont\+Manager} using SFML 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classe2XD_1_1framework_1_1DefaultFontManager_a31b1de57bbb74822fc0ad722524a62a7}\label{classe2XD_1_1framework_1_1DefaultFontManager_a31b1de57bbb74822fc0ad722524a62a7} 
+\index{e2XD::framework::DefaultFontManager@{e2XD::framework::DefaultFontManager}!getFont@{getFont}}
+\index{getFont@{getFont}!e2XD::framework::DefaultFontManager@{e2XD::framework::DefaultFontManager}}
+\doxysubsubsection{\texorpdfstring{getFont()}{getFont()}}
+{\footnotesize\ttfamily const sf\+::\+Font \& e2\+XD\+::framework\+::\+Default\+Font\+Manager\+::get\+Font (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{font\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classe2XD_1_1framework_1_1IFontManager_aeb882fd970a5e37eac725626e6f57934}{e2\+XD\+::framework\+::\+IFont\+Manager}}.
+
+\Hypertarget{classe2XD_1_1framework_1_1DefaultFontManager_a813a61c6239a5367e96109f48f13f7e9}\label{classe2XD_1_1framework_1_1DefaultFontManager_a813a61c6239a5367e96109f48f13f7e9} 
+\index{e2XD::framework::DefaultFontManager@{e2XD::framework::DefaultFontManager}!loadFont@{loadFont}}
+\index{loadFont@{loadFont}!e2XD::framework::DefaultFontManager@{e2XD::framework::DefaultFontManager}}
+\doxysubsubsection{\texorpdfstring{loadFont()}{loadFont()}}
+{\footnotesize\ttfamily void e2\+XD\+::framework\+::\+Default\+Font\+Manager\+::load\+Font (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{font\+Name,  }\item[{const std\+::string \&}]{file\+Path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classe2XD_1_1framework_1_1IFontManager_a691ef2b34a8c5503f0f09c66a9164f0a}{e2\+XD\+::framework\+::\+IFont\+Manager}}.
+
+\Hypertarget{classe2XD_1_1framework_1_1DefaultFontManager_ab22c127b12f9e24a97214512ab8aa9fb}\label{classe2XD_1_1framework_1_1DefaultFontManager_ab22c127b12f9e24a97214512ab8aa9fb} 
+\index{e2XD::framework::DefaultFontManager@{e2XD::framework::DefaultFontManager}!loadFontMap@{loadFontMap}}
+\index{loadFontMap@{loadFontMap}!e2XD::framework::DefaultFontManager@{e2XD::framework::DefaultFontManager}}
+\doxysubsubsection{\texorpdfstring{loadFontMap()}{loadFontMap()}}
+{\footnotesize\ttfamily void e2\+XD\+::framework\+::\+Default\+Font\+Manager\+::load\+Font\+Map (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{font\+Map\+Path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Load font map from a file.
+
+After loading the file, fonts can be accessed by their names.
+
+Format (JSON)\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{[}
+\DoxyCodeLine{\ \ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}name"{}}:\ \textcolor{stringliteral}{"{}default"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}path"{}}:\ \textcolor{stringliteral}{"{}presets/assets/fonts/default.ttf"{}}}
+\DoxyCodeLine{\ \ \ \ \ \},}
+\DoxyCodeLine{\ \ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}name"{}}:\ \textcolor{stringliteral}{"{}title"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}path"{}}:\ \textcolor{stringliteral}{"{}presets/assets/fonts/title.ttf"{}}}
+\DoxyCodeLine{\ \ \ \ \ \}}
+\DoxyCodeLine{]}
+
+\end{DoxyCode}
+ 
+\begin{DoxyParams}{Parameters}
+{\em font\+Map\+Path} & Path to the font map file. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classe2XD_1_1framework_1_1IFontManager_a334b4f34c3602b320fc39af28d60f4b7}{e2\+XD\+::framework\+::\+IFont\+Manager}}.
+
+\Hypertarget{classe2XD_1_1framework_1_1DefaultFontManager_a58051726c33fba66b0d4fcc50bd3d6fb}\label{classe2XD_1_1framework_1_1DefaultFontManager_a58051726c33fba66b0d4fcc50bd3d6fb} 
+\index{e2XD::framework::DefaultFontManager@{e2XD::framework::DefaultFontManager}!loadFontMapIfNotLoaded@{loadFontMapIfNotLoaded}}
+\index{loadFontMapIfNotLoaded@{loadFontMapIfNotLoaded}!e2XD::framework::DefaultFontManager@{e2XD::framework::DefaultFontManager}}
+\doxysubsubsection{\texorpdfstring{loadFontMapIfNotLoaded()}{loadFontMapIfNotLoaded()}}
+{\footnotesize\ttfamily bool e2\+XD\+::framework\+::\+Default\+Font\+Manager\+::load\+Font\+Map\+If\+Not\+Loaded (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{font\+Map\+Path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Load font map from a file if it is not already loaded.
+
+After loading the file, fonts can be accessed by their names.
+
+Format (JSON)\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{[}
+\DoxyCodeLine{\ \ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}name"{}}:\ \textcolor{stringliteral}{"{}default"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}path"{}}:\ \textcolor{stringliteral}{"{}presets/assets/fonts/default.ttf"{}}}
+\DoxyCodeLine{\ \ \ \ \ \},}
+\DoxyCodeLine{\ \ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}name"{}}:\ \textcolor{stringliteral}{"{}title"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}path"{}}:\ \textcolor{stringliteral}{"{}presets/assets/fonts/title.ttf"{}}}
+\DoxyCodeLine{\ \ \ \ \ \}}
+\DoxyCodeLine{]}
+
+\end{DoxyCode}
+ 
+\begin{DoxyParams}{Parameters}
+{\em font\+Map\+Path} & Path to the font map file. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if font map was loaded now, false if it was already loaded. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classe2XD_1_1framework_1_1IFontManager_a927e0c85d54e8e46ec62f11b6bb8173a}{e2\+XD\+::framework\+::\+IFont\+Manager}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classe2XD_1_1framework_1_1DefaultFontManager_a58051726c33fba66b0d4fcc50bd3d6fb_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+engine/framework/include/2\+XD2/framework/resource\+\_\+manager/\mbox{\hyperlink{DefaultFontManager_8h}{Default\+Font\+Manager.\+h}}\item 
+engine/framework/src/resource\+\_\+manager/\mbox{\hyperlink{DefaultFontManager_8cpp}{Default\+Font\+Manager.\+cpp}}\end{DoxyCompactItemize}

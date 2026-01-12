@@ -1,0 +1,9 @@
+<map id="e2XD::framework::CollisionBody2D::_internal_onDestroy" name="e2XD::framework::CollisionBody2D::_internal_onDestroy">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,39,192,79"/>
+<area shape="rect" id="Node000002" href="$classe2XD_1_1framework_1_1Node.html#ae5de5aa456c080e89812370611ac38fb" title=" " alt="" coords="252,5,410,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="192,43,236,37,237,42,192,48"/>
+<area shape="rect" id="Node000003" href="$classe2XD_1_1framework_1_1Collisions.html#aabbe0c1a9f74d73ac679c2392c927b27" title=" " alt="" coords="240,71,422,111"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="192,69,225,74,224,79,192,74"/>
+<area shape="rect" id="Node000004" href="$classe2XD_1_1framework_1_1ICollisionHandler.html#a73f700cf84c9acb90f8255da64cae7ed" title=" " alt="" coords="470,71,663,111"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="423,88,454,88,454,94,423,94"/>
+</map>

@@ -1,0 +1,159 @@
+\doxysection{e2\+XD\+::framework\+::Scene Class Reference}
+\hypertarget{classe2XD_1_1framework_1_1Scene}{}\label{classe2XD_1_1framework_1_1Scene}\index{e2XD::framework::Scene@{e2XD::framework::Scene}}
+
+
+{\ttfamily \#include $<$Scene.\+h$>$}
+
+
+
+Inheritance diagram for e2\+XD\+::framework\+::Scene\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=224pt]{classe2XD_1_1framework_1_1Scene__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for e2\+XD\+::framework\+::Scene\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=224pt]{classe2XD_1_1framework_1_1Scene__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classe2XD_1_1framework_1_1Scene_a794ef3b997231ef62bd1701ba8071ef2}{Scene}} ()=default
+\item 
+\mbox{\hyperlink{classe2XD_1_1framework_1_1Scene_aa4840238cd2814b4d8616466b31de276}{\texorpdfstring{$\sim$}{\string~}\+Scene}} () override=default
+\item 
+void \mbox{\hyperlink{classe2XD_1_1framework_1_1Scene_ad3dca786e9160de5ae1602fac2e3d1bb}{set\+Active\+Camera}} (const \mbox{\hyperlink{classe2XD_1_1framework_1_1Camera}{Camera}} \texorpdfstring{$\ast$}{*}camera)
+\item 
+const \mbox{\hyperlink{classe2XD_1_1framework_1_1Camera}{Camera}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classe2XD_1_1framework_1_1Scene_af91d4ad7c210d5bb531abc09a059ec29}{get\+Active\+Camera}} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classe2XD_1_1framework_1_1Node}{e2\+XD\+::framework\+::\+Node}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classe2XD_1_1framework_1_1Node_a131881db1f212ce2d5ea8db9dddc0475}{Node}} ()=default
+\item 
+\mbox{\hyperlink{classe2XD_1_1framework_1_1Node_a613541edc80979c11b37c646a4afdbb8}{\texorpdfstring{$\sim$}{\string~}\+Node}} () override=default
+\item 
+void \mbox{\hyperlink{classe2XD_1_1framework_1_1Node_a5ef907ce5d1cef1dd7238a88cbdaff61}{update}} ()
+\item 
+void \mbox{\hyperlink{classe2XD_1_1framework_1_1Node_a9aaf0d4a9499a43153bba28c0e482201}{create}} ()
+\item 
+void \mbox{\hyperlink{classe2XD_1_1framework_1_1Node_a7831b27923edd33f0545eb56208d4631}{destroy}} ()
+\item 
+{\footnotesize template$<$Is\+Node Entity\+Type$>$ }\\Entity\+Type \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classe2XD_1_1framework_1_1Node_af964fd54baaa40992497d852be754086}{create\+Sub\+Node}} ()
+\item 
+virtual void \mbox{\hyperlink{classe2XD_1_1framework_1_1Node_abc834854340010c6750a1463e3254e28}{add\+Sub\+Node}} (std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classe2XD_1_1framework_1_1Node}{Node}} $>$ node)
+\item 
+{\footnotesize template$<$Is\+Node Entity\+Type$>$ }\\const Entity\+Type \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classe2XD_1_1framework_1_1Node_a7a214d4356a49c08bd4ca1b94ee4b5bd}{get\+Sub\+Node}} () const
+\item 
+{\footnotesize template$<$Is\+Node Entity\+Type$>$ }\\std\+::list$<$ const Entity\+Type \texorpdfstring{$\ast$}{*} $>$ \mbox{\hyperlink{classe2XD_1_1framework_1_1Node_aefe0d967a19a44aa3963407ff981a32b}{get\+Sub\+Nodes}} () const
+\item 
+{\footnotesize template$<$Is\+Node Entity\+Type$>$ }\\Entity\+Type \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classe2XD_1_1framework_1_1Node_af7d8ff352a37988e3dbc838bc1a6124b}{get\+Sub\+Node}} ()
+\item 
+{\footnotesize template$<$Is\+Node Entity\+Type$>$ }\\std\+::list$<$ Entity\+Type \texorpdfstring{$\ast$}{*} $>$ \mbox{\hyperlink{classe2XD_1_1framework_1_1Node_a1bd94a9504ff119521433958cd6b3c8c}{get\+Sub\+Nodes}} ()
+\item 
+std\+::list$<$ \mbox{\hyperlink{classe2XD_1_1framework_1_1Node}{Node}} \texorpdfstring{$\ast$}{*} $>$ \mbox{\hyperlink{classe2XD_1_1framework_1_1Node_a5486973cd5bcaee78c48e20633b3d53e}{get\+Sub\+Nodes}} ()
+\item 
+std\+::list$<$ const \mbox{\hyperlink{classe2XD_1_1framework_1_1Node}{Node}} \texorpdfstring{$\ast$}{*} $>$ \mbox{\hyperlink{classe2XD_1_1framework_1_1Node_ac56c09adaac5f33c3a095e73d480e9c6}{get\+Sub\+Nodes}} () const
+\item 
+void \mbox{\hyperlink{classe2XD_1_1framework_1_1Node_ab222834736fecb7f778040c291bf653b}{set\+Render\+Layer}} (\mbox{\hyperlink{RenderLayer_8h_ad16d91520dd8dbd7a2178564fce5a168}{Render\+Layer}} \mbox{\hyperlink{classe2XD_1_1framework_1_1Renderable_a73a98b5c0defcdfd7a1e2a6c528b0f91}{render\+Layer}}) override
+\item 
+const \mbox{\hyperlink{classe2XD_1_1framework_1_1Node}{Node}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classe2XD_1_1framework_1_1Node_a3b6cd8707bf978600bcf9d5fb8934e01}{get\+Parent}} () const
+\item 
+\mbox{\hyperlink{classe2XD_1_1framework_1_1Node}{Node}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classe2XD_1_1framework_1_1Node_a40286968151235c93254f56f9b0b993a}{get\+Parent}} ()
+\item 
+void \mbox{\hyperlink{classe2XD_1_1framework_1_1Node_aa0cdcbad57add9ecddb4d2df12c44e33}{set\+Paused}} (bool paused)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classe2XD_1_1framework_1_1Renderable}{e2\+XD\+::framework\+::\+Renderable}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classe2XD_1_1framework_1_1Renderable_ae1ecc921fd8112a12e82bc78282c42d9}{\texorpdfstring{$\sim$}{\string~}\+Renderable}} ()=default
+\item 
+void \mbox{\hyperlink{classe2XD_1_1framework_1_1Renderable_a8e7d1036e4bc4d1f60a639fdd1cbaee1}{draw}} ()
+\item 
+virtual void \mbox{\hyperlink{classe2XD_1_1framework_1_1Renderable_a084810e1e0d412501eb24f3c3067417b}{set\+Visible}} (bool \mbox{\hyperlink{classe2XD_1_1framework_1_1Renderable_a5f075727608df3d602ea422e19c82648}{visible}})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{classe2XD_1_1framework_1_1Node}{e2\+XD\+::framework\+::\+Node}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{classe2XD_1_1framework_1_1Node_a6aad0a85b3abdfb1b34e193a4171ce66}{on\+Update}} ()
+\item 
+virtual void \mbox{\hyperlink{classe2XD_1_1framework_1_1Node_a7d7c39c57b0ea8d05c1c771bb14edeb3}{\+\_\+internal\+\_\+on\+Update}} ()
+\item 
+virtual void \mbox{\hyperlink{classe2XD_1_1framework_1_1Node_adff5310c5d37fd27541b8d7fd4d6916c}{on\+Create}} ()
+\item 
+virtual void \mbox{\hyperlink{classe2XD_1_1framework_1_1Node_a4fdd6de7936646da823db7097730b4fb}{\+\_\+internal\+\_\+on\+Create}} ()
+\item 
+virtual void \mbox{\hyperlink{classe2XD_1_1framework_1_1Node_a37ef50b0e9003613fab64d595304e5ba}{on\+Destroy}} ()
+\item 
+virtual void \mbox{\hyperlink{classe2XD_1_1framework_1_1Node_ae5de5aa456c080e89812370611ac38fb}{\+\_\+internal\+\_\+on\+Destroy}} ()
+\item 
+void \mbox{\hyperlink{classe2XD_1_1framework_1_1Node_af891d43c352e1420c1d2c27ce9ae88fb}{\+\_\+internal\+\_\+on\+Draw}} () override
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{classe2XD_1_1framework_1_1Renderable}{e2\+XD\+::framework\+::\+Renderable}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{classe2XD_1_1framework_1_1Renderable_a4816842499b76973a9428104f32e5ec5}{on\+Draw}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classe2XD_1_1framework_1_1Node}{e2\+XD\+::framework\+::\+Node}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacee2XD_1_1framework_a6c4f6e2bcbc3eed7f9560cb99f987005}{Process\+Mode}} \mbox{\hyperlink{classe2XD_1_1framework_1_1Node_a0ab65bf542aa34b46fec6c8a25b6345d}{process\+Mode}} = \mbox{\hyperlink{namespacee2XD_1_1framework_a6c4f6e2bcbc3eed7f9560cb99f987005a5b39c8b553c821e7cddc6da64b5bd2ee}{Process\+Mode\+::\+DEFAULT}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classe2XD_1_1framework_1_1Renderable}{e2\+XD\+::framework\+::\+Renderable}}}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classe2XD_1_1framework_1_1Renderable_ad4e09e08a878138093f4705c7747fc67}{z\+Index}} = 0
+\item 
+bool \mbox{\hyperlink{classe2XD_1_1framework_1_1Renderable_a5f075727608df3d602ea422e19c82648}{visible}} = true
+\item 
+\mbox{\hyperlink{RenderLayer_8h_ad16d91520dd8dbd7a2178564fce5a168}{Render\+Layer}} \mbox{\hyperlink{classe2XD_1_1framework_1_1Renderable_a73a98b5c0defcdfd7a1e2a6c528b0f91}{render\+Layer}} = \mbox{\hyperlink{RenderLayer_8h_ad16d91520dd8dbd7a2178564fce5a168a5289492cf082446ca4a6eec9f72f1ec3}{Render\+Layer\+::\+WORLD}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\doxylink{classe2XD_1_1framework_1_1Scene}{Scene} node representing the root of a scene graph. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classe2XD_1_1framework_1_1Scene_a794ef3b997231ef62bd1701ba8071ef2}\label{classe2XD_1_1framework_1_1Scene_a794ef3b997231ef62bd1701ba8071ef2} 
+\index{e2XD::framework::Scene@{e2XD::framework::Scene}!Scene@{Scene}}
+\index{Scene@{Scene}!e2XD::framework::Scene@{e2XD::framework::Scene}}
+\doxysubsubsection{\texorpdfstring{Scene()}{Scene()}}
+{\footnotesize\ttfamily e2\+XD\+::framework\+::\+Scene\+::\+Scene (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\Hypertarget{classe2XD_1_1framework_1_1Scene_aa4840238cd2814b4d8616466b31de276}\label{classe2XD_1_1framework_1_1Scene_aa4840238cd2814b4d8616466b31de276} 
+\index{e2XD::framework::Scene@{e2XD::framework::Scene}!````~Scene@{\texorpdfstring{$\sim$}{\string~}Scene}}
+\index{````~Scene@{\texorpdfstring{$\sim$}{\string~}Scene}!e2XD::framework::Scene@{e2XD::framework::Scene}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Scene()}{\string~Scene()}}
+{\footnotesize\ttfamily e2\+XD\+::framework\+::\+Scene\+::\texorpdfstring{$\sim$}{\string~}\+Scene (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classe2XD_1_1framework_1_1Scene_af91d4ad7c210d5bb531abc09a059ec29}\label{classe2XD_1_1framework_1_1Scene_af91d4ad7c210d5bb531abc09a059ec29} 
+\index{e2XD::framework::Scene@{e2XD::framework::Scene}!getActiveCamera@{getActiveCamera}}
+\index{getActiveCamera@{getActiveCamera}!e2XD::framework::Scene@{e2XD::framework::Scene}}
+\doxysubsubsection{\texorpdfstring{getActiveCamera()}{getActiveCamera()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classe2XD_1_1framework_1_1Camera}{Camera}} \texorpdfstring{$\ast$}{*} e2\+XD\+::framework\+::\+Scene\+::get\+Active\+Camera (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\Hypertarget{classe2XD_1_1framework_1_1Scene_ad3dca786e9160de5ae1602fac2e3d1bb}\label{classe2XD_1_1framework_1_1Scene_ad3dca786e9160de5ae1602fac2e3d1bb} 
+\index{e2XD::framework::Scene@{e2XD::framework::Scene}!setActiveCamera@{setActiveCamera}}
+\index{setActiveCamera@{setActiveCamera}!e2XD::framework::Scene@{e2XD::framework::Scene}}
+\doxysubsubsection{\texorpdfstring{setActiveCamera()}{setActiveCamera()}}
+{\footnotesize\ttfamily void e2\+XD\+::framework\+::\+Scene\+::set\+Active\+Camera (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classe2XD_1_1framework_1_1Camera}{Camera}} \texorpdfstring{$\ast$}{*}}]{camera }\end{DoxyParamCaption})}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+engine/framework/include/2\+XD2/framework/scene/\mbox{\hyperlink{Scene_8h}{Scene.\+h}}\item 
+engine/framework/src/scene/\mbox{\hyperlink{Scene_8cpp}{Scene.\+cpp}}\end{DoxyCompactItemize}

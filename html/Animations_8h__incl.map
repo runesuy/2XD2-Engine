@@ -1,0 +1,20 @@
+<map id="engine/framework/include/2XD2/framework/resource_manager/Animations.h" name="engine/framework/include/2XD2/framework/resource_manager/Animations.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="121,5,298,61"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,109,59,135"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="155,64,72,104,69,99,153,59"/>
+<area shape="rect" id="Node000003" href="$IAnimationManager_8h.html" title=" " alt="" coords="83,109,226,135"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="195,63,173,97,168,94,190,60"/>
+<area shape="rect" id="Node000004" href="$AnimationMap_8h.html" title=" " alt="" coords="152,183,267,208"/>
+<area shape="poly" id="edge9_Node000001_Node000004" title=" " alt="" coords="228,61,240,96,243,115,241,135,227,170,222,168,236,134,238,116,235,97,223,62"/>
+<area shape="rect" id="Node000009" href="$Resources_8h.html" title=" " alt="" coords="301,109,395,135"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="254,59,317,98,315,103,251,64"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="166,133,193,169,189,172,162,137"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="93,256,203,282"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="201,210,170,246,166,243,197,207"/>
+<area shape="rect" id="Node000006" href="$Animation_8h.html" title=" " alt="" coords="227,256,317,282"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="222,207,253,243,249,246,218,210"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="171,330,229,356"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="262,284,225,321,221,317,258,280"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="253,330,438,356"/>
+<area shape="poly" id="edge7_Node000006_Node000008" title=" " alt="" coords="286,280,324,317,320,321,282,284"/>
+</map>

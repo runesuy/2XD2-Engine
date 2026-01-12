@@ -1,0 +1,115 @@
+\doxysection{e2\+XD\+::framework\+::Collisions Class Reference}
+\hypertarget{classe2XD_1_1framework_1_1Collisions}{}\label{classe2XD_1_1framework_1_1Collisions}\index{e2XD::framework::Collisions@{e2XD::framework::Collisions}}
+
+
+{\ttfamily \#include $<$Collisions.\+h$>$}
+
+\doxysubsubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum class \mbox{\hyperlink{classe2XD_1_1framework_1_1Collisions_a4c40efafd0f193182e6067660a620a99}{Collision\+Type}} \{ \mbox{\hyperlink{classe2XD_1_1framework_1_1Collisions_a4c40efafd0f193182e6067660a620a99afe6f99ef1ec99efbdc19a9786cf1facc}{STATIC}}
+, \mbox{\hyperlink{classe2XD_1_1framework_1_1Collisions_a4c40efafd0f193182e6067660a620a99a0fcc90da4811c877ba9f9c12f7d60bc9}{DYNAMIC}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classe2XD_1_1framework_1_1Collisions_ad653fac991d02e07c523ed16acde4e6a}{initialize}} (\mbox{\hyperlink{classe2XD_1_1framework_1_1ICollisionHandler}{ICollision\+Handler}} \texorpdfstring{$\ast$}{*}collision\+Handler)
+\item 
+static void \mbox{\hyperlink{classe2XD_1_1framework_1_1Collisions_aeadffd722b6179d9da94b7cb4ae94eac}{register\+Collision\+Body}} (\mbox{\hyperlink{classe2XD_1_1framework_1_1ICollisionBody}{ICollision\+Body}} \texorpdfstring{$\ast$}{*}body)
+\item 
+static void \mbox{\hyperlink{classe2XD_1_1framework_1_1Collisions_aabbe0c1a9f74d73ac679c2392c927b27}{remove\+Collision\+Body}} (\mbox{\hyperlink{classe2XD_1_1framework_1_1ICollisionBody}{ICollision\+Body}} \texorpdfstring{$\ast$}{*}body)
+\item 
+static void \mbox{\hyperlink{classe2XD_1_1framework_1_1Collisions_a61e36a66c62221e7976421c1534129f0}{check\+Collisions}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Enumeration Documentation}
+\Hypertarget{classe2XD_1_1framework_1_1Collisions_a4c40efafd0f193182e6067660a620a99}\label{classe2XD_1_1framework_1_1Collisions_a4c40efafd0f193182e6067660a620a99} 
+\index{e2XD::framework::Collisions@{e2XD::framework::Collisions}!CollisionType@{CollisionType}}
+\index{CollisionType@{CollisionType}!e2XD::framework::Collisions@{e2XD::framework::Collisions}}
+\doxysubsubsection{\texorpdfstring{CollisionType}{CollisionType}}
+{\footnotesize\ttfamily enum class \mbox{\hyperlink{classe2XD_1_1framework_1_1Collisions_a4c40efafd0f193182e6067660a620a99}{e2\+XD\+::framework\+::\+Collisions\+::\+Collision\+Type}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+Collision types for collision bodies. STATIC\+: does not move, used for environment DYNAMIC\+: can move, used for characters and objects \begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{STATIC@{STATIC}!e2XD::framework::Collisions@{e2XD::framework::Collisions}}\index{e2XD::framework::Collisions@{e2XD::framework::Collisions}!STATIC@{STATIC}}}\Hypertarget{classe2XD_1_1framework_1_1Collisions_a4c40efafd0f193182e6067660a620a99afe6f99ef1ec99efbdc19a9786cf1facc}\label{classe2XD_1_1framework_1_1Collisions_a4c40efafd0f193182e6067660a620a99afe6f99ef1ec99efbdc19a9786cf1facc} 
+STATIC&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DYNAMIC@{DYNAMIC}!e2XD::framework::Collisions@{e2XD::framework::Collisions}}\index{e2XD::framework::Collisions@{e2XD::framework::Collisions}!DYNAMIC@{DYNAMIC}}}\Hypertarget{classe2XD_1_1framework_1_1Collisions_a4c40efafd0f193182e6067660a620a99a0fcc90da4811c877ba9f9c12f7d60bc9}\label{classe2XD_1_1framework_1_1Collisions_a4c40efafd0f193182e6067660a620a99a0fcc90da4811c877ba9f9c12f7d60bc9} 
+DYNAMIC&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classe2XD_1_1framework_1_1Collisions_a61e36a66c62221e7976421c1534129f0}\label{classe2XD_1_1framework_1_1Collisions_a61e36a66c62221e7976421c1534129f0} 
+\index{e2XD::framework::Collisions@{e2XD::framework::Collisions}!checkCollisions@{checkCollisions}}
+\index{checkCollisions@{checkCollisions}!e2XD::framework::Collisions@{e2XD::framework::Collisions}}
+\doxysubsubsection{\texorpdfstring{checkCollisions()}{checkCollisions()}}
+{\footnotesize\ttfamily void e2\+XD\+::framework\+::\+Collisions\+::check\+Collisions (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Check for collisions between registered collision bodies. This method should be called every frame to detect collisions. Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classe2XD_1_1framework_1_1Collisions_a61e36a66c62221e7976421c1534129f0_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classe2XD_1_1framework_1_1Collisions_ad653fac991d02e07c523ed16acde4e6a}\label{classe2XD_1_1framework_1_1Collisions_ad653fac991d02e07c523ed16acde4e6a} 
+\index{e2XD::framework::Collisions@{e2XD::framework::Collisions}!initialize@{initialize}}
+\index{initialize@{initialize}!e2XD::framework::Collisions@{e2XD::framework::Collisions}}
+\doxysubsubsection{\texorpdfstring{initialize()}{initialize()}}
+{\footnotesize\ttfamily void e2\+XD\+::framework\+::\+Collisions\+::initialize (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classe2XD_1_1framework_1_1ICollisionHandler}{ICollision\+Handler}} \texorpdfstring{$\ast$}{*}}]{collision\+Handler }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Initialize the collision system with a collision handler. 
+\begin{DoxyParams}{Parameters}
+{\em collision\+Handler} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classe2XD_1_1framework_1_1Collisions_aeadffd722b6179d9da94b7cb4ae94eac}\label{classe2XD_1_1framework_1_1Collisions_aeadffd722b6179d9da94b7cb4ae94eac} 
+\index{e2XD::framework::Collisions@{e2XD::framework::Collisions}!registerCollisionBody@{registerCollisionBody}}
+\index{registerCollisionBody@{registerCollisionBody}!e2XD::framework::Collisions@{e2XD::framework::Collisions}}
+\doxysubsubsection{\texorpdfstring{registerCollisionBody()}{registerCollisionBody()}}
+{\footnotesize\ttfamily void e2\+XD\+::framework\+::\+Collisions\+::register\+Collision\+Body (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classe2XD_1_1framework_1_1ICollisionBody}{ICollision\+Body}} \texorpdfstring{$\ast$}{*}}]{body }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Register a collision body to the collision system. After registering, the body will be checked for collisions. on\+Collision events will be triggered when collisions occur. 
+\begin{DoxyParams}{Parameters}
+{\em body} & \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classe2XD_1_1framework_1_1Collisions_aeadffd722b6179d9da94b7cb4ae94eac_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classe2XD_1_1framework_1_1Collisions_aabbe0c1a9f74d73ac679c2392c927b27}\label{classe2XD_1_1framework_1_1Collisions_aabbe0c1a9f74d73ac679c2392c927b27} 
+\index{e2XD::framework::Collisions@{e2XD::framework::Collisions}!removeCollisionBody@{removeCollisionBody}}
+\index{removeCollisionBody@{removeCollisionBody}!e2XD::framework::Collisions@{e2XD::framework::Collisions}}
+\doxysubsubsection{\texorpdfstring{removeCollisionBody()}{removeCollisionBody()}}
+{\footnotesize\ttfamily void e2\+XD\+::framework\+::\+Collisions\+::remove\+Collision\+Body (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classe2XD_1_1framework_1_1ICollisionBody}{ICollision\+Body}} \texorpdfstring{$\ast$}{*}}]{body }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Remove a collision body from the collision system. After removing, the body will no longer be checked for collisions. 
+\begin{DoxyParams}{Parameters}
+{\em body} & \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classe2XD_1_1framework_1_1Collisions_aabbe0c1a9f74d73ac679c2392c927b27_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+engine/framework/include/2\+XD2/framework/collisions/\mbox{\hyperlink{Collisions_8h}{Collisions.\+h}}\item 
+engine/framework/src/collisions/\mbox{\hyperlink{Collisions_8cpp}{Collisions.\+cpp}}\end{DoxyCompactItemize}

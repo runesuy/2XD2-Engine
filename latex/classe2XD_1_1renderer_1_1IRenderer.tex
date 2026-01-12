@@ -1,0 +1,110 @@
+\doxysection{e2\+XD\+::renderer\+::IRenderer Class Reference}
+\hypertarget{classe2XD_1_1renderer_1_1IRenderer}{}\label{classe2XD_1_1renderer_1_1IRenderer}\index{e2XD::renderer::IRenderer@{e2XD::renderer::IRenderer}}
+
+
+{\ttfamily \#include $<$IRenderer.\+h$>$}
+
+
+
+Inheritance diagram for e2\+XD\+::renderer\+::IRenderer\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=234pt]{classe2XD_1_1renderer_1_1IRenderer__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classe2XD_1_1renderer_1_1IRenderer_a9b0dbf7a660afd198571c9d630b2e1c5}{\texorpdfstring{$\sim$}{\string~}\+IRenderer}} ()=default
+\item 
+virtual void \mbox{\hyperlink{classe2XD_1_1renderer_1_1IRenderer_a5b64a5f683f8e734b2efbd6383c6a414}{initialize}} (sf\+::\+Render\+Window \texorpdfstring{$\ast$}{*}window)=0
+\item 
+virtual void \mbox{\hyperlink{classe2XD_1_1renderer_1_1IRenderer_af8e84be1f3d73aaf0511ff458a91e659}{clear\+Window}} () const =0
+\item 
+virtual void \mbox{\hyperlink{classe2XD_1_1renderer_1_1IRenderer_af32d8921a875a56ae0efabf19f3d14a0}{submit}} (const \mbox{\hyperlink{structe2XD_1_1renderer_1_1RenderCommand}{Render\+Command}} \&render\+Command)=0
+\item 
+virtual void \mbox{\hyperlink{classe2XD_1_1renderer_1_1IRenderer_a9418ea8644de80fd30b887e87ddae15a}{flush}} (const \mbox{\hyperlink{namespacee2XD_1_1core_a64915d4955e6ed3347eb48450b60d026}{core\+::\+Vec2f}} \&camera\+Position, float camera\+Zoom)=0
+\item 
+virtual \mbox{\hyperlink{structe2XD_1_1core_1_1Vec2}{core\+::\+Vec2}}$<$ unsigned int $>$ \mbox{\hyperlink{classe2XD_1_1renderer_1_1IRenderer_a731231c9334b938f7593a4221d5aef9e}{get\+Window\+Size}} () const =0
+\item 
+virtual void \mbox{\hyperlink{classe2XD_1_1renderer_1_1IRenderer_aaf399b6866e2147fb85c7d11a0b33c96}{set\+Window\+View}} (\mbox{\hyperlink{RenderLayer_8h_ad16d91520dd8dbd7a2178564fce5a168}{Render\+Layer}}, const \mbox{\hyperlink{namespacee2XD_1_1core_a64915d4955e6ed3347eb48450b60d026}{core\+::\+Vec2f}} \&)=0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classe2XD_1_1renderer_1_1IRenderer_a9b0dbf7a660afd198571c9d630b2e1c5}\label{classe2XD_1_1renderer_1_1IRenderer_a9b0dbf7a660afd198571c9d630b2e1c5} 
+\index{e2XD::renderer::IRenderer@{e2XD::renderer::IRenderer}!````~IRenderer@{\texorpdfstring{$\sim$}{\string~}IRenderer}}
+\index{````~IRenderer@{\texorpdfstring{$\sim$}{\string~}IRenderer}!e2XD::renderer::IRenderer@{e2XD::renderer::IRenderer}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}IRenderer()}{\string~IRenderer()}}
+{\footnotesize\ttfamily virtual e2\+XD\+::renderer\+::\+IRenderer\+::\texorpdfstring{$\sim$}{\string~}\+IRenderer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classe2XD_1_1renderer_1_1IRenderer_af8e84be1f3d73aaf0511ff458a91e659}\label{classe2XD_1_1renderer_1_1IRenderer_af8e84be1f3d73aaf0511ff458a91e659} 
+\index{e2XD::renderer::IRenderer@{e2XD::renderer::IRenderer}!clearWindow@{clearWindow}}
+\index{clearWindow@{clearWindow}!e2XD::renderer::IRenderer@{e2XD::renderer::IRenderer}}
+\doxysubsubsection{\texorpdfstring{clearWindow()}{clearWindow()}}
+{\footnotesize\ttfamily virtual void e2\+XD\+::renderer\+::\+IRenderer\+::clear\+Window (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classe2XD_1_1renderer_1_1DefaultRenderer_a7a4652e27982f63a9ce13ba50375d6f9}{e2\+XD\+::renderer\+::\+Default\+Renderer}}.
+
+\Hypertarget{classe2XD_1_1renderer_1_1IRenderer_a9418ea8644de80fd30b887e87ddae15a}\label{classe2XD_1_1renderer_1_1IRenderer_a9418ea8644de80fd30b887e87ddae15a} 
+\index{e2XD::renderer::IRenderer@{e2XD::renderer::IRenderer}!flush@{flush}}
+\index{flush@{flush}!e2XD::renderer::IRenderer@{e2XD::renderer::IRenderer}}
+\doxysubsubsection{\texorpdfstring{flush()}{flush()}}
+{\footnotesize\ttfamily virtual void e2\+XD\+::renderer\+::\+IRenderer\+::flush (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespacee2XD_1_1core_a64915d4955e6ed3347eb48450b60d026}{core\+::\+Vec2f}} \&}]{camera\+Position,  }\item[{float}]{camera\+Zoom }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classe2XD_1_1renderer_1_1DefaultRenderer_ae59e6af3ccf2918b408e56d73bf33a41}{e2\+XD\+::renderer\+::\+Default\+Renderer}}.
+
+\Hypertarget{classe2XD_1_1renderer_1_1IRenderer_a731231c9334b938f7593a4221d5aef9e}\label{classe2XD_1_1renderer_1_1IRenderer_a731231c9334b938f7593a4221d5aef9e} 
+\index{e2XD::renderer::IRenderer@{e2XD::renderer::IRenderer}!getWindowSize@{getWindowSize}}
+\index{getWindowSize@{getWindowSize}!e2XD::renderer::IRenderer@{e2XD::renderer::IRenderer}}
+\doxysubsubsection{\texorpdfstring{getWindowSize()}{getWindowSize()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{structe2XD_1_1core_1_1Vec2}{core\+::\+Vec2}}$<$ unsigned int $>$ e2\+XD\+::renderer\+::\+IRenderer\+::get\+Window\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classe2XD_1_1renderer_1_1DefaultRenderer_a539a3eaeb05250fda35e476fe3b82f99}{e2\+XD\+::renderer\+::\+Default\+Renderer}}.
+
+\Hypertarget{classe2XD_1_1renderer_1_1IRenderer_a5b64a5f683f8e734b2efbd6383c6a414}\label{classe2XD_1_1renderer_1_1IRenderer_a5b64a5f683f8e734b2efbd6383c6a414} 
+\index{e2XD::renderer::IRenderer@{e2XD::renderer::IRenderer}!initialize@{initialize}}
+\index{initialize@{initialize}!e2XD::renderer::IRenderer@{e2XD::renderer::IRenderer}}
+\doxysubsubsection{\texorpdfstring{initialize()}{initialize()}}
+{\footnotesize\ttfamily virtual void e2\+XD\+::renderer\+::\+IRenderer\+::initialize (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window \texorpdfstring{$\ast$}{*}}]{window }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classe2XD_1_1renderer_1_1DefaultRenderer_abc16c8aac9efa10a7b01ba78ab90a8d1}{e2\+XD\+::renderer\+::\+Default\+Renderer}}.
+
+\Hypertarget{classe2XD_1_1renderer_1_1IRenderer_aaf399b6866e2147fb85c7d11a0b33c96}\label{classe2XD_1_1renderer_1_1IRenderer_aaf399b6866e2147fb85c7d11a0b33c96} 
+\index{e2XD::renderer::IRenderer@{e2XD::renderer::IRenderer}!setWindowView@{setWindowView}}
+\index{setWindowView@{setWindowView}!e2XD::renderer::IRenderer@{e2XD::renderer::IRenderer}}
+\doxysubsubsection{\texorpdfstring{setWindowView()}{setWindowView()}}
+{\footnotesize\ttfamily virtual void e2\+XD\+::renderer\+::\+IRenderer\+::set\+Window\+View (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{RenderLayer_8h_ad16d91520dd8dbd7a2178564fce5a168}{Render\+Layer}}}]{,  }\item[{const \mbox{\hyperlink{namespacee2XD_1_1core_a64915d4955e6ed3347eb48450b60d026}{core\+::\+Vec2f}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classe2XD_1_1renderer_1_1DefaultRenderer_aed74efbd313b96270a8c3130734d78ee}{e2\+XD\+::renderer\+::\+Default\+Renderer}}.
+
+\Hypertarget{classe2XD_1_1renderer_1_1IRenderer_af32d8921a875a56ae0efabf19f3d14a0}\label{classe2XD_1_1renderer_1_1IRenderer_af32d8921a875a56ae0efabf19f3d14a0} 
+\index{e2XD::renderer::IRenderer@{e2XD::renderer::IRenderer}!submit@{submit}}
+\index{submit@{submit}!e2XD::renderer::IRenderer@{e2XD::renderer::IRenderer}}
+\doxysubsubsection{\texorpdfstring{submit()}{submit()}}
+{\footnotesize\ttfamily virtual void e2\+XD\+::renderer\+::\+IRenderer\+::submit (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structe2XD_1_1renderer_1_1RenderCommand}{Render\+Command}} \&}]{render\+Command }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classe2XD_1_1renderer_1_1DefaultRenderer_a708de49cbd228b8c2b31cfdece3ddd4c}{e2\+XD\+::renderer\+::\+Default\+Renderer}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+engine/renderer/include/2\+XD2/renderer/\mbox{\hyperlink{IRenderer_8h}{IRenderer.\+h}}\end{DoxyCompactItemize}

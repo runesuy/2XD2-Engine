@@ -1,0 +1,75 @@
+\doxysection{e2\+XD\+::framework\+::IConfig\+Manager Class Reference}
+\hypertarget{classe2XD_1_1framework_1_1IConfigManager}{}\label{classe2XD_1_1framework_1_1IConfigManager}\index{e2XD::framework::IConfigManager@{e2XD::framework::IConfigManager}}
+
+
+{\ttfamily \#include $<$IConfig\+Manager.\+h$>$}
+
+
+
+Inheritance diagram for e2\+XD\+::framework\+::IConfig\+Manager\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=206pt]{classe2XD_1_1framework_1_1IConfigManager__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classe2XD_1_1framework_1_1IConfigManager_a07fe5d787d15ae0efa96215017f8df68}{\texorpdfstring{$\sim$}{\string~}\+IConfig\+Manager}} ()=default
+\item 
+virtual const nlohmann\+::json \& \mbox{\hyperlink{classe2XD_1_1framework_1_1IConfigManager_ab9383d84f954d360eeac3be921a3adeb}{load\+Config}} (const std\+::string \&config\+Path)=0
+\item 
+virtual void \mbox{\hyperlink{classe2XD_1_1framework_1_1IConfigManager_ab8c6f1b62cc634006e0eadb4bab60e01}{close\+Config}} (const std\+::string \&config\+Path)=0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classe2XD_1_1framework_1_1IConfigManager_a07fe5d787d15ae0efa96215017f8df68}\label{classe2XD_1_1framework_1_1IConfigManager_a07fe5d787d15ae0efa96215017f8df68} 
+\index{e2XD::framework::IConfigManager@{e2XD::framework::IConfigManager}!````~IConfigManager@{\texorpdfstring{$\sim$}{\string~}IConfigManager}}
+\index{````~IConfigManager@{\texorpdfstring{$\sim$}{\string~}IConfigManager}!e2XD::framework::IConfigManager@{e2XD::framework::IConfigManager}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}IConfigManager()}{\string~IConfigManager()}}
+{\footnotesize\ttfamily virtual e2\+XD\+::framework\+::\+IConfig\+Manager\+::\texorpdfstring{$\sim$}{\string~}\+IConfig\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classe2XD_1_1framework_1_1IConfigManager_ab8c6f1b62cc634006e0eadb4bab60e01}\label{classe2XD_1_1framework_1_1IConfigManager_ab8c6f1b62cc634006e0eadb4bab60e01} 
+\index{e2XD::framework::IConfigManager@{e2XD::framework::IConfigManager}!closeConfig@{closeConfig}}
+\index{closeConfig@{closeConfig}!e2XD::framework::IConfigManager@{e2XD::framework::IConfigManager}}
+\doxysubsubsection{\texorpdfstring{closeConfig()}{closeConfig()}}
+{\footnotesize\ttfamily virtual void e2\+XD\+::framework\+::\+IConfig\+Manager\+::close\+Config (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{config\+Path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Close the configuration file and free the associated resources. 
+\begin{DoxyParams}{Parameters}
+{\em config\+Path} & \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classe2XD_1_1framework_1_1DefaultConfigManager_a681b48d0a35a6015e5fd5addaac0ebb5}{e2\+XD\+::framework\+::\+Default\+Config\+Manager}}.
+
+\Hypertarget{classe2XD_1_1framework_1_1IConfigManager_ab9383d84f954d360eeac3be921a3adeb}\label{classe2XD_1_1framework_1_1IConfigManager_ab9383d84f954d360eeac3be921a3adeb} 
+\index{e2XD::framework::IConfigManager@{e2XD::framework::IConfigManager}!loadConfig@{loadConfig}}
+\index{loadConfig@{loadConfig}!e2XD::framework::IConfigManager@{e2XD::framework::IConfigManager}}
+\doxysubsubsection{\texorpdfstring{loadConfig()}{loadConfig()}}
+{\footnotesize\ttfamily virtual const nlohmann\+::json \& e2\+XD\+::framework\+::\+IConfig\+Manager\+::load\+Config (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{config\+Path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Load a configuration file and return its JSON representation. 
+\begin{DoxyParams}{Parameters}
+{\em config\+Path} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+returns the JSON object representing the configuration. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classe2XD_1_1framework_1_1DefaultConfigManager_a961a340175018822ecc1c9856d5df535}{e2\+XD\+::framework\+::\+Default\+Config\+Manager}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+engine/framework/include/2\+XD2/framework/resource\+\_\+manager/\mbox{\hyperlink{IConfigManager_8h}{IConfig\+Manager.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,15 @@
+<map id="engine/framework/include/2XD2/framework/collisions/DefaultCollisionHandler.h" name="engine/framework/include/2XD2/framework/collisions/DefaultCollisionHandler.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="6,5,187,61"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,109,44,135"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="76,63,47,98,42,95,72,60"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="68,109,125,135"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="99,61,99,93,94,93,94,61"/>
+<area shape="rect" id="Node000004" href="$ICollisionHandler_8h.html" title=" " alt="" coords="149,109,279,135"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="135,59,187,97,184,102,131,63"/>
+<area shape="rect" id="Node000005" href="$ICollisionBody_8h.html" title=" " alt="" coords="157,183,271,208"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="217,135,217,167,211,167,211,135"/>
+<area shape="rect" id="Node000006" href="$Collisions_8h.html" title=" " alt="" coords="170,256,258,282"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="217,209,217,241,211,241,211,209"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="187,330,241,356"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="217,282,217,314,211,314,211,282"/>
+</map>

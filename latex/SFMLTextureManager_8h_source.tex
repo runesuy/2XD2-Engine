@@ -1,0 +1,44 @@
+\doxysection{SFMLTexture\+Manager.\+h}
+\hypertarget{SFMLTextureManager_8h_source}{}\label{SFMLTextureManager_8h_source}\index{engine/framework/include/2XD2/framework/resource\_manager/SFMLTextureManager.h@{engine/framework/include/2XD2/framework/resource\_manager/SFMLTextureManager.h}}
+\mbox{\hyperlink{SFMLTextureManager_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{//}}
+\DoxyCodeLine{00002\ \textcolor{comment}{//\ Created\ by\ rune-\/suy\ on\ 12/15/25.}}
+\DoxyCodeLine{00003\ \textcolor{comment}{//}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#ifndef\ FLATLAND\_ITEXTUREPARSER\_H}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#define\ FLATLAND\_ITEXTUREPARSER\_H}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <set>}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <unordered\_map>}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <SFML/Graphics/Texture.hpp>}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{ITextureManager_8h}{ITextureManager.h}}"{}}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespacee2XD_1_1framework}{e2XD::framework}}}
+\DoxyCodeLine{00016\ \{}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{classe2XD_1_1framework_1_1SFMLTextureManager}{SFMLTextureManager}}\ final\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classe2XD_1_1framework_1_1ITextureManager}{ITextureManager}}}
+\DoxyCodeLine{00021\ \ \ \ \ \{}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ std::unordered\_map<std::string,\ sf::Texture>\ loadedTextures;}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ std::set<std::string>\ loadedFiles;}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \textcolor{keyword}{friend}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classe2XD_1_1framework_1_1SFMLTextureManager_a4f8a7afb90a1d9ccf9758e8dde64269c}{FRAMEWORK\_SFMLTextureParser\_TEST}};}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classe2XD_1_1framework_1_1SFMLTextureManager_a55449a9a3d586d7cf3a3398f20d25004}{SFMLTextureManager}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classe2XD_1_1framework_1_1SFMLTextureManager_a26ada32791db1d2f6bb97957a3e4bc7c}{\string~SFMLTextureManager}}()\ \textcolor{keyword}{override}\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ [[nodiscard]]\ \textcolor{keyword}{const}\ sf::Texture\&\ \mbox{\hyperlink{classe2XD_1_1framework_1_1SFMLTextureManager_a9d603b2f2f0dd2ffcc2eebf2724a1566}{getTexture}}(\textcolor{keyword}{const}\ std::string\&\ name)\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classe2XD_1_1framework_1_1SFMLTextureManager_ad3b7fd621aec22761b144b258738ba98}{loadJsonTextureConfig}}(\textcolor{keyword}{const}\ std::string\&\ jsonFilePath)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classe2XD_1_1framework_1_1SFMLTextureManager_a3c041f71cabfb06311b22502506ebdb0}{isJsonTextureLoaded}}(\textcolor{keyword}{const}\ std::string\&\ jsonFilePath)\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classe2XD_1_1framework_1_1SFMLTextureManager_a87c7afdc8715b75a5d12fcdfc500f265}{loadJsonTextureConfigIfNotLoaded}}(\textcolor{keyword}{const}\ std::string\&\ jsonFilePath)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00037\ \ \ \ \ \};}
+\DoxyCodeLine{00038\ \}}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00041\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//FLATLAND\_ITEXTUREPARSER\_H}}
+
+\end{DoxyCode}

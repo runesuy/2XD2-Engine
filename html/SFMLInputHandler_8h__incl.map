@@ -1,0 +1,26 @@
+<map id="engine/framework/include/2XD2/framework/input/SFMLInputHandler.h" name="engine/framework/include/2XD2/framework/input/SFMLInputHandler.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="328,5,551,61"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,109,116,135"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="328,63,129,108,128,102,327,57"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="139,109,329,135"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="376,64,277,105,275,100,374,59"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="352,109,526,135"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="442,61,442,93,437,93,437,61"/>
+<area shape="rect" id="Node000005" href="$IInputHandler_8h.html" title=" " alt="" coords="550,109,659,135"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="492,59,570,99,567,104,490,64"/>
+<area shape="rect" id="Node000010" href="$Vec2f_8h.html" title=" " alt="" coords="703,183,834,208"/>
+<area shape="poly" id="edge12_Node000001_Node000010" title=" " alt="" coords="552,58,613,79,673,107,716,138,750,170,746,174,712,142,670,111,611,84,550,63"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="168,183,396,208"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="550,138,352,181,351,176,549,133"/>
+<area shape="rect" id="Node000007" href="$Key_8h.html" title=" " alt="" coords="421,183,474,208"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="579,138,489,178,487,173,577,133"/>
+<area shape="rect" id="Node000008" href="$MouseButton_8h.html" title=" " alt="" coords="498,183,607,208"/>
+<area shape="poly" id="edge7_Node000005_Node000008" title=" " alt="" coords="598,136,572,172,568,168,594,133"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="631,183,680,208"/>
+<area shape="poly" id="edge8_Node000005_Node000009" title=" " alt="" coords="615,133,640,168,636,171,611,136"/>
+<area shape="poly" id="edge9_Node000005_Node000010" title=" " alt="" coords="633,133,728,174,726,179,631,138"/>
+<area shape="rect" id="Node000011" href="$Vec2_8hpp.html" title=" " alt="" coords="731,256,806,282"/>
+<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="771,209,771,241,766,241,766,209"/>
+<area shape="rect" id="Node000012" title=" " alt="" coords="740,330,797,356"/>
+<area shape="poly" id="edge11_Node000011_Node000012" title=" " alt="" coords="771,282,771,314,766,314,766,282"/>
+</map>

@@ -1,0 +1,13 @@
+<map id="engine/framework/include/2XD2/framework/resource_manager/Textures.h" name="engine/framework/include/2XD2/framework/resource_manager/Textures.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="81,5,258,61"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,183,59,208"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="100,64,69,84,45,110,34,138,32,167,27,167,29,137,40,108,66,80,97,59"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="112,183,296,208"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="183,61,197,108,205,167,200,168,192,110,177,62"/>
+<area shape="rect" id="Node000004" href="$ITextureManager_8h.html" title=" " alt="" coords="55,109,183,135"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="156,63,136,97,131,94,151,60"/>
+<area shape="rect" id="Node000005" href="$Resources_8h.html" title=" " alt="" coords="257,109,351,135"/>
+<area shape="poly" id="edge6_Node000001_Node000005" title=" " alt="" coords="213,59,274,98,271,103,210,64"/>
+<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="106,137,60,175,56,171,102,133"/>
+<area shape="poly" id="edge5_Node000004_Node000003" title=" " alt="" coords="135,133,180,171,177,175,131,137"/>
+</map>

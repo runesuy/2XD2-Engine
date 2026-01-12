@@ -1,0 +1,118 @@
+\doxysection{e2\+XD\+::framework\+::Resources\+::Fonts Class Reference}
+\hypertarget{classe2XD_1_1framework_1_1Resources_1_1Fonts}{}\label{classe2XD_1_1framework_1_1Resources_1_1Fonts}\index{e2XD::framework::Resources::Fonts@{e2XD::framework::Resources::Fonts}}
+
+
+{\ttfamily \#include $<$Fonts.\+h$>$}
+
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classe2XD_1_1framework_1_1Resources_1_1Fonts_a35de8061a05c0af313adb6bdbb7fbff6}{initialize}} (\mbox{\hyperlink{classe2XD_1_1framework_1_1IFontManager}{IFont\+Manager}} \texorpdfstring{$\ast$}{*}font\+Manager)
+\item 
+static const sf\+::\+Font \& \mbox{\hyperlink{classe2XD_1_1framework_1_1Resources_1_1Fonts_a99dc9c61f5a028a00d1ba2e8bd3e3ddf}{get\+Font}} (const std\+::string \&font\+Name)
+\item 
+static void \mbox{\hyperlink{classe2XD_1_1framework_1_1Resources_1_1Fonts_a116aab351f38f75e97ed1f39990eac32}{load\+Font\+Map}} (const std\+::string \&font\+Map\+Path)
+\item 
+static bool \mbox{\hyperlink{classe2XD_1_1framework_1_1Resources_1_1Fonts_a2684e70e1776e49ad2780e5bf2b2f94c}{load\+Font\+Map\+If\+Not\+Loaded}} (const std\+::string \&font\+Map\+Path)
+\item 
+static void \mbox{\hyperlink{classe2XD_1_1framework_1_1Resources_1_1Fonts_a74e99a1a1a234454542c4b7326172934}{load\+Font}} (const std\+::string \&font\+Name, const std\+::string \&font\+Path)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classe2XD_1_1framework_1_1Resources_1_1Fonts_a99dc9c61f5a028a00d1ba2e8bd3e3ddf}\label{classe2XD_1_1framework_1_1Resources_1_1Fonts_a99dc9c61f5a028a00d1ba2e8bd3e3ddf} 
+\index{e2XD::framework::Resources::Fonts@{e2XD::framework::Resources::Fonts}!getFont@{getFont}}
+\index{getFont@{getFont}!e2XD::framework::Resources::Fonts@{e2XD::framework::Resources::Fonts}}
+\doxysubsubsection{\texorpdfstring{getFont()}{getFont()}}
+{\footnotesize\ttfamily const sf\+::\+Font \& e2\+XD\+::framework\+::\+Resources\+::\+Fonts\+::get\+Font (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{font\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classe2XD_1_1framework_1_1Resources_1_1Fonts_a35de8061a05c0af313adb6bdbb7fbff6}\label{classe2XD_1_1framework_1_1Resources_1_1Fonts_a35de8061a05c0af313adb6bdbb7fbff6} 
+\index{e2XD::framework::Resources::Fonts@{e2XD::framework::Resources::Fonts}!initialize@{initialize}}
+\index{initialize@{initialize}!e2XD::framework::Resources::Fonts@{e2XD::framework::Resources::Fonts}}
+\doxysubsubsection{\texorpdfstring{initialize()}{initialize()}}
+{\footnotesize\ttfamily void e2\+XD\+::framework\+::\+Resources\+::\+Fonts\+::initialize (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classe2XD_1_1framework_1_1IFontManager}{IFont\+Manager}} \texorpdfstring{$\ast$}{*}}]{font\+Manager }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classe2XD_1_1framework_1_1Resources_1_1Fonts_a74e99a1a1a234454542c4b7326172934}\label{classe2XD_1_1framework_1_1Resources_1_1Fonts_a74e99a1a1a234454542c4b7326172934} 
+\index{e2XD::framework::Resources::Fonts@{e2XD::framework::Resources::Fonts}!loadFont@{loadFont}}
+\index{loadFont@{loadFont}!e2XD::framework::Resources::Fonts@{e2XD::framework::Resources::Fonts}}
+\doxysubsubsection{\texorpdfstring{loadFont()}{loadFont()}}
+{\footnotesize\ttfamily void e2\+XD\+::framework\+::\+Resources\+::\+Fonts\+::load\+Font (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{font\+Name,  }\item[{const std\+::string \&}]{font\+Path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Load a single font from a file.
+
+After loading the font, it can be accessed by its name.
+
+
+\begin{DoxyParams}{Parameters}
+{\em font\+Name} & Name to associate with the font. \\
+\hline
+{\em font\+Path} & Path to the font file. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classe2XD_1_1framework_1_1Resources_1_1Fonts_a116aab351f38f75e97ed1f39990eac32}\label{classe2XD_1_1framework_1_1Resources_1_1Fonts_a116aab351f38f75e97ed1f39990eac32} 
+\index{e2XD::framework::Resources::Fonts@{e2XD::framework::Resources::Fonts}!loadFontMap@{loadFontMap}}
+\index{loadFontMap@{loadFontMap}!e2XD::framework::Resources::Fonts@{e2XD::framework::Resources::Fonts}}
+\doxysubsubsection{\texorpdfstring{loadFontMap()}{loadFontMap()}}
+{\footnotesize\ttfamily void e2\+XD\+::framework\+::\+Resources\+::\+Fonts\+::load\+Font\+Map (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{font\+Map\+Path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Load font map from a file.
+
+After loading the file, fonts can be accessed by their names.
+
+Format (JSON)\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{[}
+\DoxyCodeLine{\ \ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}name"{}}:\ \textcolor{stringliteral}{"{}default"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}path"{}}:\ \textcolor{stringliteral}{"{}presets/assets/fonts/default.ttf"{}}}
+\DoxyCodeLine{\ \ \ \ \ \},}
+\DoxyCodeLine{\ \ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}name"{}}:\ \textcolor{stringliteral}{"{}title"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}path"{}}:\ \textcolor{stringliteral}{"{}presets/assets/fonts/title.ttf"{}}}
+\DoxyCodeLine{\ \ \ \ \ \}}
+\DoxyCodeLine{]}
+
+\end{DoxyCode}
+ 
+\begin{DoxyParams}{Parameters}
+{\em font\+Map\+Path} & Path to the font map file. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classe2XD_1_1framework_1_1Resources_1_1Fonts_a2684e70e1776e49ad2780e5bf2b2f94c}\label{classe2XD_1_1framework_1_1Resources_1_1Fonts_a2684e70e1776e49ad2780e5bf2b2f94c} 
+\index{e2XD::framework::Resources::Fonts@{e2XD::framework::Resources::Fonts}!loadFontMapIfNotLoaded@{loadFontMapIfNotLoaded}}
+\index{loadFontMapIfNotLoaded@{loadFontMapIfNotLoaded}!e2XD::framework::Resources::Fonts@{e2XD::framework::Resources::Fonts}}
+\doxysubsubsection{\texorpdfstring{loadFontMapIfNotLoaded()}{loadFontMapIfNotLoaded()}}
+{\footnotesize\ttfamily bool e2\+XD\+::framework\+::\+Resources\+::\+Fonts\+::load\+Font\+Map\+If\+Not\+Loaded (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{font\+Map\+Path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Load font map from a file if it is not already loaded.
+
+After loading the file, fonts can be accessed by their names.
+
+Format (JSON)\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{[}
+\DoxyCodeLine{\ \ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}name"{}}:\ \textcolor{stringliteral}{"{}default"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}path"{}}:\ \textcolor{stringliteral}{"{}presets/assets/fonts/default.ttf"{}}}
+\DoxyCodeLine{\ \ \ \ \ \},}
+\DoxyCodeLine{\ \ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}name"{}}:\ \textcolor{stringliteral}{"{}title"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}path"{}}:\ \textcolor{stringliteral}{"{}presets/assets/fonts/title.ttf"{}}}
+\DoxyCodeLine{\ \ \ \ \ \}}
+\DoxyCodeLine{]}
+
+\end{DoxyCode}
+ 
+\begin{DoxyParams}{Parameters}
+{\em font\+Map\+Path} & Path to the font map file. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if font map was loaded now, false if it was already loaded. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+engine/framework/include/2\+XD2/framework/resource\+\_\+manager/\mbox{\hyperlink{Fonts_8h}{Fonts.\+h}}\item 
+engine/framework/src/resource\+\_\+manager/\mbox{\hyperlink{Fonts_8cpp}{Fonts.\+cpp}}\end{DoxyCompactItemize}

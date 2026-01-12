@@ -1,0 +1,27 @@
+\doxysection{File\+Loading\+Failed\+Exception.\+h}
+\hypertarget{FileLoadingFailedException_8h_source}{}\label{FileLoadingFailedException_8h_source}\index{engine/framework/include/2XD2/framework/exceptions/FileLoadingFailedException.h@{engine/framework/include/2XD2/framework/exceptions/FileLoadingFailedException.h}}
+\mbox{\hyperlink{FileLoadingFailedException_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{//}}
+\DoxyCodeLine{00002\ \textcolor{comment}{//\ Created\ by\ rune-\/suy\ on\ 12/17/25.}}
+\DoxyCodeLine{00003\ \textcolor{comment}{//}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#ifndef\ FLATLAND\_FILELOADINGEXCEPTION\_H}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#define\ FLATLAND\_FILELOADINGEXCEPTION\_H}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{Exception_8h}{2XD2/core/exceptions/Exception.h}}"{}}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespacee2XD_1_1framework}{e2XD::framework}}}
+\DoxyCodeLine{00010\ \{}
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{classe2XD_1_1framework_1_1FileLoadingFailedException}{FileLoadingFailedException}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classe2XD_1_1core_1_1Exception}{core::Exception}}}
+\DoxyCodeLine{00015\ \ \ \ \ \{}
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classe2XD_1_1framework_1_1FileLoadingFailedException_a4283bec326fb6e31a8fd2cde1b2dc9b5}{FileLoadingFailedException}}(\textcolor{keyword}{const}\ std::string\&\ filePath,\ \textcolor{keyword}{const}\ std::string\&\ where)\ :}
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classe2XD_1_1core_1_1Exception_afaad72e096c17c22c220de1e703627b8}{Exception}}(\textcolor{stringliteral}{"{}Failed\ to\ load\ file:\ "{}}\ +\ std::string(filePath),\ where)}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00021\ \ \ \ \ \};}
+\DoxyCodeLine{00022\ \}}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//FLATLAND\_FILELOADINGEXCEPTION\_H}}
+
+\end{DoxyCode}

@@ -1,0 +1,317 @@
+\doxysection{e2\+XD\+::framework\+::Input Class Reference}
+\hypertarget{classe2XD_1_1framework_1_1Input}{}\label{classe2XD_1_1framework_1_1Input}\index{e2XD::framework::Input@{e2XD::framework::Input}}
+
+
+{\ttfamily \#include $<$Input.\+h$>$}
+
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classe2XD_1_1framework_1_1Input_ab1082f78a642b71373b5286a85d9714f}{initialize}} (\mbox{\hyperlink{classe2XD_1_1framework_1_1IInputHandler}{IInput\+Handler}} \texorpdfstring{$\ast$}{*}input\+Handler)
+\item 
+static void \mbox{\hyperlink{classe2XD_1_1framework_1_1Input_ae74f6ccff029e803cabbeb90cf0c29d2}{poll\+Events}} ()
+\item 
+static bool \mbox{\hyperlink{classe2XD_1_1framework_1_1Input_a1c10c95d50644c04947544896c50d21e}{is\+Key\+Pressed}} (\mbox{\hyperlink{Key_8h_ab3c7af4820830f9166ede9e5623c4e73}{Key}} key\+Code)
+\item 
+static bool \mbox{\hyperlink{classe2XD_1_1framework_1_1Input_aaab36591f09cc46cec2696a9d063ee2c}{is\+Key\+Just\+Pressed}} (\mbox{\hyperlink{Key_8h_ab3c7af4820830f9166ede9e5623c4e73}{Key}} key\+Code)
+\item 
+static bool \mbox{\hyperlink{classe2XD_1_1framework_1_1Input_a4a0b43b923b8e0cd095af2f8848c8825}{is\+Key\+Released}} (\mbox{\hyperlink{Key_8h_ab3c7af4820830f9166ede9e5623c4e73}{Key}} key\+Code)
+\item 
+static bool \mbox{\hyperlink{classe2XD_1_1framework_1_1Input_a00d0725cd60fb819f79e5b5fe7250e12}{is\+Key\+Just\+Released}} (\mbox{\hyperlink{Key_8h_ab3c7af4820830f9166ede9e5623c4e73}{Key}} key\+Code)
+\item 
+static bool \mbox{\hyperlink{classe2XD_1_1framework_1_1Input_acf13e51e2275f6ffe0a7b291f3752702}{is\+Mouse\+Button\+Pressed}} (\mbox{\hyperlink{MouseButton_8h_ac1ec3647c005eacad401b06e7e18f711}{Mouse\+Button}} button\+Code)
+\item 
+static bool \mbox{\hyperlink{classe2XD_1_1framework_1_1Input_a320df1536f5f842aaba8d61c1b820c34}{is\+Mouse\+Button\+Just\+Pressed}} (\mbox{\hyperlink{MouseButton_8h_ac1ec3647c005eacad401b06e7e18f711}{Mouse\+Button}} button\+Code)
+\item 
+static bool \mbox{\hyperlink{classe2XD_1_1framework_1_1Input_a709e31e0f1cb6ee171c5125264eccf10}{is\+Mouse\+Button\+Released}} (\mbox{\hyperlink{MouseButton_8h_ac1ec3647c005eacad401b06e7e18f711}{Mouse\+Button}} button\+Code)
+\item 
+static bool \mbox{\hyperlink{classe2XD_1_1framework_1_1Input_a294fd2fea3d8e7070be017b3c2be5d0b}{is\+Mouse\+Button\+Just\+Released}} (\mbox{\hyperlink{MouseButton_8h_ac1ec3647c005eacad401b06e7e18f711}{Mouse\+Button}} button\+Code)
+\item 
+static \mbox{\hyperlink{namespacee2XD_1_1core_a64915d4955e6ed3347eb48450b60d026}{core\+::\+Vec2f}} \mbox{\hyperlink{classe2XD_1_1framework_1_1Input_a8b8bfb61088e5cfcfa20460133044c1e}{get\+Mouse\+Position}} ()
+\item 
+static std\+::tuple$<$ bool, float, float $>$ \mbox{\hyperlink{classe2XD_1_1framework_1_1Input_abefe2e85a4be626678113e29c4352359}{is\+Window\+Resized}} ()
+\item 
+static bool \mbox{\hyperlink{classe2XD_1_1framework_1_1Input_ae9ddbca3e7e7eb87ef6b16c59993b4ea}{is\+Window\+Closed}} ()
+\item 
+static void \mbox{\hyperlink{classe2XD_1_1framework_1_1Input_af45e80adf859af06b1b78fa61d466385}{new\+Frame}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class providing static methods to manage input from keyboard, mouse, and other devices.
+
+Using the default game provided by framework, this class uses the inputhandler configured in the game config. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classe2XD_1_1framework_1_1Input_a8b8bfb61088e5cfcfa20460133044c1e}\label{classe2XD_1_1framework_1_1Input_a8b8bfb61088e5cfcfa20460133044c1e} 
+\index{e2XD::framework::Input@{e2XD::framework::Input}!getMousePosition@{getMousePosition}}
+\index{getMousePosition@{getMousePosition}!e2XD::framework::Input@{e2XD::framework::Input}}
+\doxysubsubsection{\texorpdfstring{getMousePosition()}{getMousePosition()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacee2XD_1_1core_a64915d4955e6ed3347eb48450b60d026}{core\+::\+Vec2f}} e2\+XD\+::framework\+::\+Input\+::get\+Mouse\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxyReturn}{Returns}
+The current mouse position in window coordinates 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classe2XD_1_1framework_1_1Input_a8b8bfb61088e5cfcfa20460133044c1e_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classe2XD_1_1framework_1_1Input_ab1082f78a642b71373b5286a85d9714f}\label{classe2XD_1_1framework_1_1Input_ab1082f78a642b71373b5286a85d9714f} 
+\index{e2XD::framework::Input@{e2XD::framework::Input}!initialize@{initialize}}
+\index{initialize@{initialize}!e2XD::framework::Input@{e2XD::framework::Input}}
+\doxysubsubsection{\texorpdfstring{initialize()}{initialize()}}
+{\footnotesize\ttfamily void e2\+XD\+::framework\+::\+Input\+::initialize (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classe2XD_1_1framework_1_1IInputHandler}{IInput\+Handler}} \texorpdfstring{$\ast$}{*}}]{input\+Handler }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Configure the input handler to use for input management 
+\begin{DoxyParams}{Parameters}
+{\em input\+Handler} & ptr to the input handler to use. Object must outlive the usage of this class. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classe2XD_1_1framework_1_1Input_aaab36591f09cc46cec2696a9d063ee2c}\label{classe2XD_1_1framework_1_1Input_aaab36591f09cc46cec2696a9d063ee2c} 
+\index{e2XD::framework::Input@{e2XD::framework::Input}!isKeyJustPressed@{isKeyJustPressed}}
+\index{isKeyJustPressed@{isKeyJustPressed}!e2XD::framework::Input@{e2XD::framework::Input}}
+\doxysubsubsection{\texorpdfstring{isKeyJustPressed()}{isKeyJustPressed()}}
+{\footnotesize\ttfamily bool e2\+XD\+::framework\+::\+Input\+::is\+Key\+Just\+Pressed (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{Key_8h_ab3c7af4820830f9166ede9e5623c4e73}{Key}}}]{key\+Code }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em key\+Code} & Key to check \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the key was just pressed in this frame, and was not pressed in the last frame 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classe2XD_1_1framework_1_1Input_aaab36591f09cc46cec2696a9d063ee2c_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classe2XD_1_1framework_1_1Input_a00d0725cd60fb819f79e5b5fe7250e12}\label{classe2XD_1_1framework_1_1Input_a00d0725cd60fb819f79e5b5fe7250e12} 
+\index{e2XD::framework::Input@{e2XD::framework::Input}!isKeyJustReleased@{isKeyJustReleased}}
+\index{isKeyJustReleased@{isKeyJustReleased}!e2XD::framework::Input@{e2XD::framework::Input}}
+\doxysubsubsection{\texorpdfstring{isKeyJustReleased()}{isKeyJustReleased()}}
+{\footnotesize\ttfamily bool e2\+XD\+::framework\+::\+Input\+::is\+Key\+Just\+Released (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{Key_8h_ab3c7af4820830f9166ede9e5623c4e73}{Key}}}]{key\+Code }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em key\+Code} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the key was just released in this frame, and was pressed in the last frame 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classe2XD_1_1framework_1_1Input_a00d0725cd60fb819f79e5b5fe7250e12_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classe2XD_1_1framework_1_1Input_a1c10c95d50644c04947544896c50d21e}\label{classe2XD_1_1framework_1_1Input_a1c10c95d50644c04947544896c50d21e} 
+\index{e2XD::framework::Input@{e2XD::framework::Input}!isKeyPressed@{isKeyPressed}}
+\index{isKeyPressed@{isKeyPressed}!e2XD::framework::Input@{e2XD::framework::Input}}
+\doxysubsubsection{\texorpdfstring{isKeyPressed()}{isKeyPressed()}}
+{\footnotesize\ttfamily bool e2\+XD\+::framework\+::\+Input\+::is\+Key\+Pressed (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{Key_8h_ab3c7af4820830f9166ede9e5623c4e73}{Key}}}]{key\+Code }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em key\+Code} & Key to check \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the key was pressed or hold down in this frame 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classe2XD_1_1framework_1_1Input_a1c10c95d50644c04947544896c50d21e_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classe2XD_1_1framework_1_1Input_a4a0b43b923b8e0cd095af2f8848c8825}\label{classe2XD_1_1framework_1_1Input_a4a0b43b923b8e0cd095af2f8848c8825} 
+\index{e2XD::framework::Input@{e2XD::framework::Input}!isKeyReleased@{isKeyReleased}}
+\index{isKeyReleased@{isKeyReleased}!e2XD::framework::Input@{e2XD::framework::Input}}
+\doxysubsubsection{\texorpdfstring{isKeyReleased()}{isKeyReleased()}}
+{\footnotesize\ttfamily bool e2\+XD\+::framework\+::\+Input\+::is\+Key\+Released (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{Key_8h_ab3c7af4820830f9166ede9e5623c4e73}{Key}}}]{key\+Code }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em key\+Code} & Key to check \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the key is not pressed or hold down in this frame 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classe2XD_1_1framework_1_1Input_a4a0b43b923b8e0cd095af2f8848c8825_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classe2XD_1_1framework_1_1Input_a320df1536f5f842aaba8d61c1b820c34}\label{classe2XD_1_1framework_1_1Input_a320df1536f5f842aaba8d61c1b820c34} 
+\index{e2XD::framework::Input@{e2XD::framework::Input}!isMouseButtonJustPressed@{isMouseButtonJustPressed}}
+\index{isMouseButtonJustPressed@{isMouseButtonJustPressed}!e2XD::framework::Input@{e2XD::framework::Input}}
+\doxysubsubsection{\texorpdfstring{isMouseButtonJustPressed()}{isMouseButtonJustPressed()}}
+{\footnotesize\ttfamily bool e2\+XD\+::framework\+::\+Input\+::is\+Mouse\+Button\+Just\+Pressed (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{MouseButton_8h_ac1ec3647c005eacad401b06e7e18f711}{Mouse\+Button}}}]{button\+Code }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em button\+Code} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the mouse button was just pressed in this frame, and was not pressed in the last frame 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classe2XD_1_1framework_1_1Input_a320df1536f5f842aaba8d61c1b820c34_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classe2XD_1_1framework_1_1Input_a294fd2fea3d8e7070be017b3c2be5d0b}\label{classe2XD_1_1framework_1_1Input_a294fd2fea3d8e7070be017b3c2be5d0b} 
+\index{e2XD::framework::Input@{e2XD::framework::Input}!isMouseButtonJustReleased@{isMouseButtonJustReleased}}
+\index{isMouseButtonJustReleased@{isMouseButtonJustReleased}!e2XD::framework::Input@{e2XD::framework::Input}}
+\doxysubsubsection{\texorpdfstring{isMouseButtonJustReleased()}{isMouseButtonJustReleased()}}
+{\footnotesize\ttfamily bool e2\+XD\+::framework\+::\+Input\+::is\+Mouse\+Button\+Just\+Released (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{MouseButton_8h_ac1ec3647c005eacad401b06e7e18f711}{Mouse\+Button}}}]{button\+Code }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em button\+Code} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the mouse button was just released in this frame, and was pressed in the last frame 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classe2XD_1_1framework_1_1Input_a294fd2fea3d8e7070be017b3c2be5d0b_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classe2XD_1_1framework_1_1Input_acf13e51e2275f6ffe0a7b291f3752702}\label{classe2XD_1_1framework_1_1Input_acf13e51e2275f6ffe0a7b291f3752702} 
+\index{e2XD::framework::Input@{e2XD::framework::Input}!isMouseButtonPressed@{isMouseButtonPressed}}
+\index{isMouseButtonPressed@{isMouseButtonPressed}!e2XD::framework::Input@{e2XD::framework::Input}}
+\doxysubsubsection{\texorpdfstring{isMouseButtonPressed()}{isMouseButtonPressed()}}
+{\footnotesize\ttfamily bool e2\+XD\+::framework\+::\+Input\+::is\+Mouse\+Button\+Pressed (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{MouseButton_8h_ac1ec3647c005eacad401b06e7e18f711}{Mouse\+Button}}}]{button\+Code }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em button\+Code} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the mouse button is pressed or hold down in this frame 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classe2XD_1_1framework_1_1Input_acf13e51e2275f6ffe0a7b291f3752702_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classe2XD_1_1framework_1_1Input_a709e31e0f1cb6ee171c5125264eccf10}\label{classe2XD_1_1framework_1_1Input_a709e31e0f1cb6ee171c5125264eccf10} 
+\index{e2XD::framework::Input@{e2XD::framework::Input}!isMouseButtonReleased@{isMouseButtonReleased}}
+\index{isMouseButtonReleased@{isMouseButtonReleased}!e2XD::framework::Input@{e2XD::framework::Input}}
+\doxysubsubsection{\texorpdfstring{isMouseButtonReleased()}{isMouseButtonReleased()}}
+{\footnotesize\ttfamily bool e2\+XD\+::framework\+::\+Input\+::is\+Mouse\+Button\+Released (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{MouseButton_8h_ac1ec3647c005eacad401b06e7e18f711}{Mouse\+Button}}}]{button\+Code }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em button\+Code} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the mouse button is not pressed or hold down in this frame 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classe2XD_1_1framework_1_1Input_a709e31e0f1cb6ee171c5125264eccf10_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classe2XD_1_1framework_1_1Input_ae9ddbca3e7e7eb87ef6b16c59993b4ea}\label{classe2XD_1_1framework_1_1Input_ae9ddbca3e7e7eb87ef6b16c59993b4ea} 
+\index{e2XD::framework::Input@{e2XD::framework::Input}!isWindowClosed@{isWindowClosed}}
+\index{isWindowClosed@{isWindowClosed}!e2XD::framework::Input@{e2XD::framework::Input}}
+\doxysubsubsection{\texorpdfstring{isWindowClosed()}{isWindowClosed()}}
+{\footnotesize\ttfamily bool e2\+XD\+::framework\+::\+Input\+::is\+Window\+Closed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxyReturn}{Returns}
+true if the window was closed in this frame 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classe2XD_1_1framework_1_1Input_ae9ddbca3e7e7eb87ef6b16c59993b4ea_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classe2XD_1_1framework_1_1Input_abefe2e85a4be626678113e29c4352359}\label{classe2XD_1_1framework_1_1Input_abefe2e85a4be626678113e29c4352359} 
+\index{e2XD::framework::Input@{e2XD::framework::Input}!isWindowResized@{isWindowResized}}
+\index{isWindowResized@{isWindowResized}!e2XD::framework::Input@{e2XD::framework::Input}}
+\doxysubsubsection{\texorpdfstring{isWindowResized()}{isWindowResized()}}
+{\footnotesize\ttfamily std\+::tuple$<$ bool, float, float $>$ e2\+XD\+::framework\+::\+Input\+::is\+Window\+Resized (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxyReturn}{Returns}
+\texorpdfstring{$<$}{<}resized, new\+SizeX, new\+SizeY\texorpdfstring{$>$}{>} true if the window was resized in this frame, along with the new width and height 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classe2XD_1_1framework_1_1Input_abefe2e85a4be626678113e29c4352359_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classe2XD_1_1framework_1_1Input_af45e80adf859af06b1b78fa61d466385}\label{classe2XD_1_1framework_1_1Input_af45e80adf859af06b1b78fa61d466385} 
+\index{e2XD::framework::Input@{e2XD::framework::Input}!newFrame@{newFrame}}
+\index{newFrame@{newFrame}!e2XD::framework::Input@{e2XD::framework::Input}}
+\doxysubsubsection{\texorpdfstring{newFrame()}{newFrame()}}
+{\footnotesize\ttfamily void e2\+XD\+::framework\+::\+Input\+::new\+Frame (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+called at the end of each frame to update internal states does not replace \doxylink{classe2XD_1_1framework_1_1Input_ae74f6ccff029e803cabbeb90cf0c29d2}{poll\+Events()} Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classe2XD_1_1framework_1_1Input_af45e80adf859af06b1b78fa61d466385_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classe2XD_1_1framework_1_1Input_ae74f6ccff029e803cabbeb90cf0c29d2}\label{classe2XD_1_1framework_1_1Input_ae74f6ccff029e803cabbeb90cf0c29d2} 
+\index{e2XD::framework::Input@{e2XD::framework::Input}!pollEvents@{pollEvents}}
+\index{pollEvents@{pollEvents}!e2XD::framework::Input@{e2XD::framework::Input}}
+\doxysubsubsection{\texorpdfstring{pollEvents()}{pollEvents()}}
+{\footnotesize\ttfamily void e2\+XD\+::framework\+::\+Input\+::poll\+Events (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Poll all events from the window and update the input states. Without calling this method, input states will not be updated. Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classe2XD_1_1framework_1_1Input_ae74f6ccff029e803cabbeb90cf0c29d2_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+engine/framework/include/2\+XD2/framework/input/\mbox{\hyperlink{Input_8h}{Input.\+h}}\item 
+engine/framework/src/input/\mbox{\hyperlink{Input_8cpp}{Input.\+cpp}}\end{DoxyCompactItemize}

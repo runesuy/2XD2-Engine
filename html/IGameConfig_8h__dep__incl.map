@@ -1,0 +1,13 @@
+<map id="engine/framework/include/2XD2/framework/config/IGameConfig.h" name="engine/framework/include/2XD2/framework/config/IGameConfig.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="262,5,431,61"/>
+<area shape="rect" id="Node000002" href="$Game_8h.html" title=" " alt="" coords="164,117,335,157"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="312,74,270,118,266,115,308,71"/>
+<area shape="rect" id="Node000005" href="$DefaultGameConfig_8h.html" title=" " alt="" coords="361,109,530,165"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="385,70,421,106,417,110,381,74"/>
+<area shape="rect" id="Node000003" href="$Label_8cpp.html" title=" " alt="" coords="5,213,152,253"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="201,167,116,214,113,210,199,163"/>
+<area shape="rect" id="Node000004" href="$Game_8cpp.html" title=" " alt="" coords="176,213,322,253"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="252,173,252,212,247,212,247,173"/>
+<area shape="rect" id="Node000006" href="$DefaultGameConfig_8cpp.html" title=" " alt="" coords="347,213,546,253"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="448,180,449,212,444,212,443,181"/>
+</map>

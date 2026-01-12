@@ -1,0 +1,13 @@
+<map id="engine/core/include/2XD2/core/exceptions/NotInitializedException.h" name="engine/core/include/2XD2/core/exceptions/NotInitializedException.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="93,5,259,61"/>
+<area shape="rect" id="Node000002" href="$Exception_8h.html" title=" " alt="" coords="132,109,219,135"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="178,61,178,93,173,93,173,61"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,183,77,208"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="154,138,78,177,76,173,152,133"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="100,183,169,208"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="171,136,151,171,147,168,167,134"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="193,183,244,208"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="185,134,206,168,201,171,180,136"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="268,183,345,208"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="199,133,272,173,270,177,197,138"/>
+</map>

@@ -1,0 +1,54 @@
+\doxysection{SFMLTo\+Input\+Map.\+h}
+\hypertarget{SFMLToInputMap_8h_source}{}\label{SFMLToInputMap_8h_source}\index{engine/framework/include/2XD2/framework/input/SFMLToInputMap.h@{engine/framework/include/2XD2/framework/input/SFMLToInputMap.h}}
+\mbox{\hyperlink{SFMLToInputMap_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{//}}
+\DoxyCodeLine{00002\ \textcolor{comment}{//\ Created\ by\ rune-\/suy\ on\ 12/15/25.}}
+\DoxyCodeLine{00003\ \textcolor{comment}{//}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#ifndef\ INC\_2XD2\_ENGINE\_SFMLTOINPUTMAP\_H}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#define\ INC\_2XD2\_ENGINE\_SFMLTOINPUTMAP\_H}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <SFML/Window/Event.hpp>}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{Key_8h}{Key.h}}"{}}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}unordered\_map"{}}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespacee2XD_1_1framework_1_1internal_1_1input}{e2XD::framework::internal::input}}}
+\DoxyCodeLine{00013\ \{}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keyword}{inline}\ std::unordered\_map<sf::Keyboard::Key,\ Key>\ \mbox{\hyperlink{namespacee2XD_1_1framework_1_1internal_1_1input_a065377f561eade19bdfcb21b33c48270}{keyboardMap}}\{}
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ \{sf::Keyboard::A,\ \mbox{\hyperlink{Key_8h_ab3c7af4820830f9166ede9e5623c4e73a7fc56270e7a70fa81a5935b72eacbe29}{Key::A}}\},}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \{sf::Keyboard::B,\ \mbox{\hyperlink{Key_8h_ab3c7af4820830f9166ede9e5623c4e73a9d5ed678fe57bcca610140957afab571}{Key::B}}\},}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ \{sf::Keyboard::C,\ \mbox{\hyperlink{Key_8h_ab3c7af4820830f9166ede9e5623c4e73a0d61f8370cad1d412f80b84d143e1257}{Key::C}}\},}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \{sf::Keyboard::D,\ \mbox{\hyperlink{Key_8h_ab3c7af4820830f9166ede9e5623c4e73af623e75af30e62bbd73d6df5b50bb7b5}{Key::D}}\},}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \{sf::Keyboard::E,\ \mbox{\hyperlink{Key_8h_ab3c7af4820830f9166ede9e5623c4e73a3a3ea00cfc35332cedf6e5e9a32e94da}{Key::E}}\},}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \{sf::Keyboard::F,\ \mbox{\hyperlink{Key_8h_ab3c7af4820830f9166ede9e5623c4e73a800618943025315f869e4e1f09471012}{Key::F}}\},}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \{sf::Keyboard::G,\ \mbox{\hyperlink{Key_8h_ab3c7af4820830f9166ede9e5623c4e73adfcf28d0734569a6a693bc8194de62bf}{Key::G}}\},}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \{sf::Keyboard::H,\ \mbox{\hyperlink{Key_8h_ab3c7af4820830f9166ede9e5623c4e73ac1d9f50f86825a1a2302ec2449c17196}{Key::H}}\},}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \{sf::Keyboard::I,\ \mbox{\hyperlink{Key_8h_ab3c7af4820830f9166ede9e5623c4e73add7536794b63bf90eccfd37f9b147d7f}{Key::I}}\},}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \{sf::Keyboard::J,\ \mbox{\hyperlink{Key_8h_ab3c7af4820830f9166ede9e5623c4e73aff44570aca8241914870afbc310cdb85}{Key::J}}\},}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \{sf::Keyboard::K,\ \mbox{\hyperlink{Key_8h_ab3c7af4820830f9166ede9e5623c4e73aa5f3c6a11b03839d46af9fb43c97c188}{Key::K}}\},}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \{sf::Keyboard::L,\ \mbox{\hyperlink{Key_8h_ab3c7af4820830f9166ede9e5623c4e73ad20caec3b48a1eef164cb4ca81ba2587}{Key::L}}\},}
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \{sf::Keyboard::M,\ \mbox{\hyperlink{Key_8h_ab3c7af4820830f9166ede9e5623c4e73a69691c7bdcc3ce6d5d8a1361f22d04ac}{Key::M}}\},}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \{sf::Keyboard::N,\ \mbox{\hyperlink{Key_8h_ab3c7af4820830f9166ede9e5623c4e73a8d9c307cb7f3c4a32822a51922d1ceaa}{Key::N}}\},}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \{sf::Keyboard::O,\ \mbox{\hyperlink{Key_8h_ab3c7af4820830f9166ede9e5623c4e73af186217753c37b9b9f958d906208506e}{Key::O}}\},}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \{sf::Keyboard::P,\ \mbox{\hyperlink{Key_8h_ab3c7af4820830f9166ede9e5623c4e73a44c29edb103a2872f519ad0c9a0fdaaa}{Key::P}}\},}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \{sf::Keyboard::Q,\ \mbox{\hyperlink{Key_8h_ab3c7af4820830f9166ede9e5623c4e73af09564c9ca56850d4cd6b3319e541aee}{Key::Q}}\},}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \{sf::Keyboard::R,\ \mbox{\hyperlink{Key_8h_ab3c7af4820830f9166ede9e5623c4e73ae1e1d3d40573127e9ee0480caf1283d6}{Key::R}}\},}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \{sf::Keyboard::S,\ \mbox{\hyperlink{Key_8h_ab3c7af4820830f9166ede9e5623c4e73a5dbc98dcc983a70728bd082d1a47546e}{Key::S}}\},}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \{sf::Keyboard::T,\ \mbox{\hyperlink{Key_8h_ab3c7af4820830f9166ede9e5623c4e73ab9ece18c950afbfa6b0fdbfa4ff731d3}{Key::T}}\},}
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \{sf::Keyboard::U,\ \mbox{\hyperlink{Key_8h_ab3c7af4820830f9166ede9e5623c4e73a4c614360da93c0a041b22e537de151eb}{Key::U}}\},}
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \{sf::Keyboard::V,\ \mbox{\hyperlink{Key_8h_ab3c7af4820830f9166ede9e5623c4e73a5206560a306a2e085a437fd258eb57ce}{Key::V}}\},}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \{sf::Keyboard::W,\ \mbox{\hyperlink{Key_8h_ab3c7af4820830f9166ede9e5623c4e73a61e9c06ea9a85a5088a499df6458d276}{Key::W}}\},}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \{sf::Keyboard::X,\ \mbox{\hyperlink{Key_8h_ab3c7af4820830f9166ede9e5623c4e73a02129bb861061d1a052c592e2dc6b383}{Key::X}}\},}
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \{sf::Keyboard::Y,\ \mbox{\hyperlink{Key_8h_ab3c7af4820830f9166ede9e5623c4e73a57cec4137b614c87cb4e24a3d003a3e0}{Key::Y}}\},}
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \{sf::Keyboard::Z,\ \mbox{\hyperlink{Key_8h_ab3c7af4820830f9166ede9e5623c4e73a21c2e59531c8710156d34a3c30ac81d5}{Key::Z}}\},}
+\DoxyCodeLine{00044\ \ \ \ \ \};}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00046\ \ \ \ \ \textcolor{keyword}{inline}\ std::unordered\_map<sf::Mouse::Button,\ MouseButton>\ \mbox{\hyperlink{namespacee2XD_1_1framework_1_1internal_1_1input_aef329e7fc9de67b73729bc6de49ca159}{mouseButtonMap}}\{}
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \{sf::Mouse::Left,\ \mbox{\hyperlink{MouseButton_8h_ac1ec3647c005eacad401b06e7e18f711a684d325a7303f52e64011467ff5c5758}{MouseButton::LEFT}}\},}
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \{sf::Mouse::Right,\ \mbox{\hyperlink{MouseButton_8h_ac1ec3647c005eacad401b06e7e18f711a21507b40c80068eda19865706fdc2403}{MouseButton::RIGHT}}\}}
+\DoxyCodeLine{00049\ \ \ \ \ \};}
+\DoxyCodeLine{00050\ \}}
+\DoxyCodeLine{00051\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//INC\_2XD2\_ENGINE\_SFMLTOINPUTMAP\_H}}
+
+\end{DoxyCode}

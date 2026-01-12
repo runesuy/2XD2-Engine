@@ -1,0 +1,11 @@
+<map id="engine/framework/include/2XD2/framework/resource_manager/SFMLTextureManager.h" name="engine/framework/include/2XD2/framework/resource_manager/SFMLTextureManager.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="218,5,440,61"/>
+<area shape="rect" id="Node000002" href="$DefaultGameConfig_8h.html" title=" " alt="" coords="20,109,190,165"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="256,70,166,111,164,106,254,65"/>
+<area shape="rect" id="Node000004" href="$SFMLAnimationManager_8cpp.html" title=" " alt="" coords="214,109,444,165"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="332,77,332,108,326,108,326,77"/>
+<area shape="rect" id="Node000005" href="$SFMLTextureManager_8cpp.html" title=" " alt="" coords="468,109,683,165"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="410,65,510,106,508,111,408,70"/>
+<area shape="rect" id="Node000003" href="$DefaultGameConfig_8cpp.html" title=" " alt="" coords="5,213,205,253"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="108,180,108,212,102,212,102,180"/>
+</map>

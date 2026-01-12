@@ -1,0 +1,110 @@
+\doxysection{e2\+XD\+::framework\+::ICollision\+Body Class Reference}
+\hypertarget{classe2XD_1_1framework_1_1ICollisionBody}{}\label{classe2XD_1_1framework_1_1ICollisionBody}\index{e2XD::framework::ICollisionBody@{e2XD::framework::ICollisionBody}}
+
+
+{\ttfamily \#include $<$ICollision\+Body.\+h$>$}
+
+
+
+Inheritance diagram for e2\+XD\+::framework\+::ICollision\+Body\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=236pt]{classe2XD_1_1framework_1_1ICollisionBody__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classe2XD_1_1framework_1_1ICollisionBody_a3ff75d9d724d9250601bbec552041a26}{\texorpdfstring{$\sim$}{\string~}\+ICollision\+Body}} ()=default
+\item 
+virtual bool \mbox{\hyperlink{classe2XD_1_1framework_1_1ICollisionBody_a309114add04f737dde3dbe72f29f1e89}{are\+Colliding}} (\mbox{\hyperlink{classe2XD_1_1framework_1_1ICollisionBody}{ICollision\+Body}} \texorpdfstring{$\ast$}{*}other) const =0
+\item 
+virtual \mbox{\hyperlink{classe2XD_1_1framework_1_1Collisions_a4c40efafd0f193182e6067660a620a99}{Collisions\+::\+Collision\+Type}} \mbox{\hyperlink{classe2XD_1_1framework_1_1ICollisionBody_aa9b188b0d6b1b8957e98fac3901318db}{get\+Collision\+Type}} () const =0
+\item 
+virtual int \mbox{\hyperlink{classe2XD_1_1framework_1_1ICollisionBody_ade6b57c1e071b9b2b49203801d3e2bcd}{get\+Collision\+Layer}} () const =0
+\item 
+virtual void \mbox{\hyperlink{classe2XD_1_1framework_1_1ICollisionBody_acad511aebc1dc8536f9281f1956b0ef0}{on\+Collision\+Enter}} (\mbox{\hyperlink{classe2XD_1_1framework_1_1ICollisionBody}{ICollision\+Body}} \texorpdfstring{$\ast$}{*}other)
+\item 
+virtual void \mbox{\hyperlink{classe2XD_1_1framework_1_1ICollisionBody_a9a651f65ca62d1fe54e74e2e09d282bb}{on\+Collision\+Exit}} (\mbox{\hyperlink{classe2XD_1_1framework_1_1ICollisionBody}{ICollision\+Body}} \texorpdfstring{$\ast$}{*}other)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classe2XD_1_1framework_1_1ICollisionBody_a3ff75d9d724d9250601bbec552041a26}\label{classe2XD_1_1framework_1_1ICollisionBody_a3ff75d9d724d9250601bbec552041a26} 
+\index{e2XD::framework::ICollisionBody@{e2XD::framework::ICollisionBody}!````~ICollisionBody@{\texorpdfstring{$\sim$}{\string~}ICollisionBody}}
+\index{````~ICollisionBody@{\texorpdfstring{$\sim$}{\string~}ICollisionBody}!e2XD::framework::ICollisionBody@{e2XD::framework::ICollisionBody}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}ICollisionBody()}{\string~ICollisionBody()}}
+{\footnotesize\ttfamily virtual e2\+XD\+::framework\+::\+ICollision\+Body\+::\texorpdfstring{$\sim$}{\string~}\+ICollision\+Body (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classe2XD_1_1framework_1_1ICollisionBody_a309114add04f737dde3dbe72f29f1e89}\label{classe2XD_1_1framework_1_1ICollisionBody_a309114add04f737dde3dbe72f29f1e89} 
+\index{e2XD::framework::ICollisionBody@{e2XD::framework::ICollisionBody}!areColliding@{areColliding}}
+\index{areColliding@{areColliding}!e2XD::framework::ICollisionBody@{e2XD::framework::ICollisionBody}}
+\doxysubsubsection{\texorpdfstring{areColliding()}{areColliding()}}
+{\footnotesize\ttfamily virtual bool e2\+XD\+::framework\+::\+ICollision\+Body\+::are\+Colliding (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classe2XD_1_1framework_1_1ICollisionBody}{ICollision\+Body}} \texorpdfstring{$\ast$}{*}}]{other }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if this body is colliding with the other body. 
+\end{DoxyReturn}
+\Hypertarget{classe2XD_1_1framework_1_1ICollisionBody_ade6b57c1e071b9b2b49203801d3e2bcd}\label{classe2XD_1_1framework_1_1ICollisionBody_ade6b57c1e071b9b2b49203801d3e2bcd} 
+\index{e2XD::framework::ICollisionBody@{e2XD::framework::ICollisionBody}!getCollisionLayer@{getCollisionLayer}}
+\index{getCollisionLayer@{getCollisionLayer}!e2XD::framework::ICollisionBody@{e2XD::framework::ICollisionBody}}
+\doxysubsubsection{\texorpdfstring{getCollisionLayer()}{getCollisionLayer()}}
+{\footnotesize\ttfamily virtual int e2\+XD\+::framework\+::\+ICollision\+Body\+::get\+Collision\+Layer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+\begin{DoxyReturn}{Returns}
+The collision layer of this body. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classe2XD_1_1framework_1_1CollisionBody2D_ae8e8945110cc8a57cd8126374e5a2434}{e2\+XD\+::framework\+::\+Collision\+Body2D}}.
+
+\Hypertarget{classe2XD_1_1framework_1_1ICollisionBody_aa9b188b0d6b1b8957e98fac3901318db}\label{classe2XD_1_1framework_1_1ICollisionBody_aa9b188b0d6b1b8957e98fac3901318db} 
+\index{e2XD::framework::ICollisionBody@{e2XD::framework::ICollisionBody}!getCollisionType@{getCollisionType}}
+\index{getCollisionType@{getCollisionType}!e2XD::framework::ICollisionBody@{e2XD::framework::ICollisionBody}}
+\doxysubsubsection{\texorpdfstring{getCollisionType()}{getCollisionType()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classe2XD_1_1framework_1_1Collisions_a4c40efafd0f193182e6067660a620a99}{Collisions\+::\+Collision\+Type}} e2\+XD\+::framework\+::\+ICollision\+Body\+::get\+Collision\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+\begin{DoxyReturn}{Returns}
+The collision type of this body. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classe2XD_1_1framework_1_1CollisionBody2D_abfc7590446be1b3e27a9a9b42a25c74e}{e2\+XD\+::framework\+::\+Collision\+Body2D}}.
+
+\Hypertarget{classe2XD_1_1framework_1_1ICollisionBody_acad511aebc1dc8536f9281f1956b0ef0}\label{classe2XD_1_1framework_1_1ICollisionBody_acad511aebc1dc8536f9281f1956b0ef0} 
+\index{e2XD::framework::ICollisionBody@{e2XD::framework::ICollisionBody}!onCollisionEnter@{onCollisionEnter}}
+\index{onCollisionEnter@{onCollisionEnter}!e2XD::framework::ICollisionBody@{e2XD::framework::ICollisionBody}}
+\doxysubsubsection{\texorpdfstring{onCollisionEnter()}{onCollisionEnter()}}
+{\footnotesize\ttfamily virtual void e2\+XD\+::framework\+::\+ICollision\+Body\+::on\+Collision\+Enter (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classe2XD_1_1framework_1_1ICollisionBody}{ICollision\+Body}} \texorpdfstring{$\ast$}{*}}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Called when this body starts colliding with another body. 
+\begin{DoxyParams}{Parameters}
+{\em other} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classe2XD_1_1framework_1_1ICollisionBody_a9a651f65ca62d1fe54e74e2e09d282bb}\label{classe2XD_1_1framework_1_1ICollisionBody_a9a651f65ca62d1fe54e74e2e09d282bb} 
+\index{e2XD::framework::ICollisionBody@{e2XD::framework::ICollisionBody}!onCollisionExit@{onCollisionExit}}
+\index{onCollisionExit@{onCollisionExit}!e2XD::framework::ICollisionBody@{e2XD::framework::ICollisionBody}}
+\doxysubsubsection{\texorpdfstring{onCollisionExit()}{onCollisionExit()}}
+{\footnotesize\ttfamily virtual void e2\+XD\+::framework\+::\+ICollision\+Body\+::on\+Collision\+Exit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classe2XD_1_1framework_1_1ICollisionBody}{ICollision\+Body}} \texorpdfstring{$\ast$}{*}}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Called when this body exits collision with another body. 
+\begin{DoxyParams}{Parameters}
+{\em other} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+engine/framework/include/2\+XD2/framework/collisions/\mbox{\hyperlink{ICollisionBody_8h}{ICollision\+Body.\+h}}\end{DoxyCompactItemize}
