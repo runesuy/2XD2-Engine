@@ -2,7 +2,7 @@
 // Created by runes on 15/12/2025.
 //
 
-#include "../../include/2XD2/framework/scene/Camera.h"
+#include "2XD2/framework/scene/Camera.h"
 
 
 namespace e2XD::framework

@@ -5,13 +5,10 @@
 #ifndef INC_2XD2_ENGINE_RENDERER_H
 #define INC_2XD2_ENGINE_RENDERER_H
 #include <SFML/Graphics/RenderWindow.hpp>
-#include <SFML/Graphics/Shape.hpp>
-#include "../../../../../renderer/include/2XD2/renderer/RenderCommand.h"
+#include "2XD2/renderer/RenderCommand.h"
 #include "2XD2/core/Vec2f.h"
-#include <unordered_map>
-
-#include "../../../../../renderer/include/2XD2/renderer/IRenderer.h"
-#include "../../../../../renderer/include/2XD2/renderer/RenderLayer.h"
+#include "2XD2/renderer/IRenderer.h"
+#include "2XD2/renderer/RenderLayer.h"
 
 namespace e2XD::framework
 {

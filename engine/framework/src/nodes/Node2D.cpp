@@ -2,7 +2,7 @@
 // Created by runes on 14/12/2025.
 //
 
-#include "../../include/2XD2/framework/nodes/Node2D.h"
+#include "2XD2/framework/nodes/Node2D.h"
 
 namespace e2XD::framework
 {

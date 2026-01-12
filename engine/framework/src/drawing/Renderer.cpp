@@ -2,9 +2,7 @@
 // Created by runes on 14/12/2025.
 //
 
-#include "../../include/2XD2/framework/drawing/Renderer.h"
-
-#include "2XD2/core/exceptions/NotInitializedException.h"
+#include "2XD2/framework/drawing/Renderer.h"
 #include "2XD2/renderer/RenderCommand.h"
 #include "2XD2/renderer/RenderLayer.h"
 

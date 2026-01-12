@@ -3,18 +3,15 @@
 //
 
 #include "2XD2/framework/Game.h"
-
-#include <filesystem>
 #include <utility>
-
-#include "../include/2XD2/framework/Time.h"
-#include "../include/2XD2/framework/input/SFMLInputHandler.h"
+#include "2XD2/framework/Time.h"
+#include "2XD2/framework/input/SFMLInputHandler.h"
 #include "2XD2/core/exceptions/NotInitializedException.h"
 #include "2XD2/framework/input/Input.h"
 #include "2XD2/framework/resource_manager/Animations.h"
 #include "2XD2/framework/resource_manager/Resources.h"
 #include "2XD2/framework/resource_manager/Textures.h"
-#include "../include/2XD2/framework/drawing/Renderer.h"
+#include "2XD2/framework/drawing/Renderer.h"
 #include "2XD2/framework/resource_manager/Config.h"
 #include "2XD2/framework/resource_manager/Fonts.h"
 

@@ -2,7 +2,7 @@
 // Created by rune-suy on 1/11/26.
 //
 
-#include "../include/2XD2/renderer/DefaultRenderer.h"
+#include "2XD2/renderer/DefaultRenderer.h"
 
 
 namespace e2XD::renderer

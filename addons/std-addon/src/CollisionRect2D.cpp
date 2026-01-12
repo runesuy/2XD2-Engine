@@ -2,7 +2,7 @@
 // Created by rune-suy on 12/29/25.
 //
 
-#include "../include/2XD2/std_addon/CollisionRect2D.h"
+#include "2XD2/std_addon/CollisionRect2D.h"
 
 
 namespace e2XD::std_addon
