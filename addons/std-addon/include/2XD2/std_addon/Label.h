@@ -19,6 +19,8 @@ namespace e2XD::std_addon
     {
         sf::Text _text;
     public:
+        Label();
+
         void setText(const std::string &text);
 
         void setFontSize(unsigned int size);

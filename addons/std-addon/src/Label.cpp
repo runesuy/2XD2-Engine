@@ -5,10 +5,17 @@
 #include "2XD2/std_addon/Label.h"
 
 #include "../../../engine/framework/include/2XD2/framework/drawing/Renderer.h"
+#include "2XD2/framework/resource_manager/Fonts.h"
+#include "2XD2/framework/resource_manager/Resources.h"
 
 
 namespace e2XD::std_addon
 {
+    Label::Label()
+    {
+        _text.setFont(framework::Resources::Fonts::getFont("<e2XD_default>"));
+    }
+
     void Label::setText(const std::string &text)
     {
         _text.setString(text);

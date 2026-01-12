@@ -33,5 +33,25 @@ namespace e2XD::framework
         }
         _fontManager->loadFontMap(fontMapPath);
     }
+
+    bool Resources::Fonts::loadFontMapIfNotLoaded(const std::string& fontMapPath)
+    {
+        if (!_fontManager)
+        {
+            throw core::NotInitializedException("Fonts manager not initialized",
+                                                "Resources::Fonts::loadFontMapIfNotLoaded(const std::string& fontMapPath)");
+        }
+        return _fontManager->loadFontMapIfNotLoaded(fontMapPath);
+    }
+
+    void Resources::Fonts::loadFont(const std::string& fontName, const std::string& fontPath)
+    {
+        if (!_fontManager)
+        {
+            throw core::NotInitializedException("Fonts manager not initialized",
+                                                "Resources::Fonts::loadFont(const std::string& fontName, const std::string& fontPath)");
+        }
+        _fontManager->loadFont(fontName, fontPath);
+    }
 } // framework
 // e2XD

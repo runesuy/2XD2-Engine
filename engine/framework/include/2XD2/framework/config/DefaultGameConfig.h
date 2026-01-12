@@ -11,6 +11,7 @@
 #include "../input/SFMLInputHandler.h"
 #include "../resource_manager/SFMLAnimationManager.h"
 #include "../resource_manager/SFMLTextureManager.h"
+#include "2XD2/framework/resource_manager/DefaultConfigManager.h"
 #include "2XD2/framework/resource_manager/DefaultFontManager.h"
 #include "2XD2/renderer/DefaultRenderer.h"
 
@@ -28,6 +29,7 @@ namespace e2XD::framework
         std::unique_ptr<ICollisionHandler> collisionHandler = std::make_unique<DefaultCollisionHandler>();
         std::unique_ptr<renderer::IRenderer> renderer = std::make_unique<renderer::DefaultRenderer>();
         std::unique_ptr<IFontManager> fontManager = std::make_unique<DefaultFontManager>();
+        std::unique_ptr<IConfigManager> configManager = std::make_unique<DefaultConfigManager>();
 
     public:
         [[nodiscard]] IInputHandler* getInputHandler() const override;
@@ -41,6 +43,8 @@ namespace e2XD::framework
         [[nodiscard]] renderer::IRenderer* getRenderer() const override;
 
         [[nodiscard]] IFontManager* getFontManager() const override;
+
+        [[nodiscard]] IConfigManager* getConfigManager() const override;
     };
 } // framework
 // e2XD

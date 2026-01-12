@@ -22,6 +22,8 @@ namespace e2XD::framework
 
         bool loadFontMapIfNotLoaded(const std::string& fontMapPath) override;
 
+        void loadFont(const std::string& fontName, const std::string& filePath) override;
+
         const sf::Font& getFont(const std::string& fontName) override;
     };
 } // framework

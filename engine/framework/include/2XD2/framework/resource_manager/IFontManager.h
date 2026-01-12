@@ -14,6 +14,8 @@ namespace e2XD::framework
     public:
         virtual ~IFontManager() = default;
 
+        virtual void loadFont(const std::string& fontName, const std::string& filePath) =0;
+
         /**
          * Load font map from a file.
          *
@@ -57,7 +59,7 @@ namespace e2XD::framework
          * @param fontMapPath Path to the font map file.
          * @return true if font map was loaded now, false if it was already loaded.
          */
-        virtual bool loadFontMapIfNotLoaded(const std::string& fontMapPath)=0;
+        virtual bool loadFontMapIfNotLoaded(const std::string& fontMapPath) =0;
 
         virtual const sf::Font& getFont(const std::string& fontName) =0;
     };

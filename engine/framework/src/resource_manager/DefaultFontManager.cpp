@@ -57,5 +57,14 @@ namespace e2XD::framework
         }
         return _loadedFonts.at(fontName);
     }
+
+    void DefaultFontManager::loadFont(const std::string& fontName, const std::string& filePath)
+    {
+        sf::Font font;
+        font.loadFromFile(filePath);
+        _loadedFonts[fontName] = font;
+        _loadedFiles.insert(fontName);
+    }
 } // framework
+
 // e2XD

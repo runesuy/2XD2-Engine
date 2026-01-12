@@ -62,6 +62,8 @@ namespace e2XD::framework
          * @return true if font map was loaded now, false if it was already loaded.
          */
         static bool loadFontMapIfNotLoaded(const std::string& fontMapPath);
+
+        static void loadFont(const std::string& fontName, const std::string& fontPath);
     };
 } // framework
 // e2XD
