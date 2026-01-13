@@ -54,6 +54,14 @@ namespace e2XD::framework
 
         while (running && window.isOpen())
         {
+            // If there's a new active scene, switch to it
+            if (newActiveScene)
+            {
+                activeScene = std::move(newActiveScene);
+                activeScene->create();
+                newActiveScene = nullptr;
+            }
+
             Time::tick();
             // Poll events
             Input::pollEvents();
@@ -65,15 +73,6 @@ namespace e2XD::framework
             }
 
             if (Input::isWindowClosed()) window.close();
-            const auto& windowResized = Input::isWindowResized();
-            if (std::get<0>(windowResized))
-            {
-                Renderer::setWindowView(RenderLayer::UI, {std::get<1>(windowResized), std::get<2>(windowResized)});
-                Renderer::setWindowView(RenderLayer::BACKGROUND, {
-                                            std::get<1>(windowResized), std::get<2>(windowResized)
-                                        });
-                Renderer::setWindowView(RenderLayer::OVERLAY, {std::get<1>(windowResized), std::get<2>(windowResized)});
-            }
 
             if (activeScene)
             {
@@ -85,7 +84,7 @@ namespace e2XD::framework
             {
                 if (const Camera* activeCamera = activeScene->getActiveCamera())
                 {
-                    Renderer::flush(activeCamera->getGlobalPosition(), activeCamera->getZoom());
+                    Renderer::flush(activeCamera->getGlobalPosition(), activeCamera->getSize(), activeCamera->getZoom());
                 }
             }
             window.display();
@@ -98,9 +97,18 @@ namespace e2XD::framework
         window.setTitle(title);
     }
 
-    void Game::setActiveScene(std::unique_ptr<framework::Scene>&& scene)
+    void Game::setActiveScene(std::unique_ptr<Scene>&& scene)
     {
-        activeScene = std::move(scene);
-        activeScene->create();
+        // If the game is running, set the new scene to be activated at the start of the next frame
+        // This is to avoid the destruction of the current scene while it's still being used
+        if (!running)
+        {
+            activeScene = std::move(scene);
+            activeScene->create();
+        }
+        else
+        {
+            newActiveScene = std::move(scene);
+        }
     }
 }

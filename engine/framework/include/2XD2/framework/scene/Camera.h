@@ -14,6 +14,7 @@ namespace e2XD::framework
     class Camera : public Node2D
     {
         float zoom = 1;
+        core::Vec2f size = {800, 600};
 
     public:
         Camera() = default;
@@ -30,6 +31,18 @@ namespace e2XD::framework
          * @param newZoom
          */
         void setZoom(float newZoom);
+
+        /**
+         * Set the size of the camera view in world units.
+         * @param newSize
+         */
+        void setSize(const core::Vec2f& newSize);
+
+        /**
+         *
+         * @return the size of the camera view in world units.
+         */
+        [[nodiscard]] const core::Vec2f& getSize() const;
     };
 } // core
 // e2XD

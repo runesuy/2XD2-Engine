@@ -31,6 +31,10 @@ namespace e2XD::framework
     void Node::update()
     {
         removeDestroyedSubNodes();
+        for (const auto& node : nodes)
+        {
+            node->update();
+        }
         if (_paused && processMode != ProcessMode::ALWAYS_RUNNING) return;
         if (processMode == ProcessMode::ALWAYS_INHERIT && _parent != nullptr)
         {
@@ -39,9 +43,12 @@ namespace e2XD::framework
                 return;
             }
         }
-        for (const auto& node : nodes)
+        if (processMode== ProcessMode::DEFAULT && _parent != nullptr)
         {
-            node->update();
+            if (_parent->_paused)
+            {
+                return;
+            }
         }
         _internal_onUpdate();
         onUpdate();

@@ -16,5 +16,15 @@ namespace e2XD::framework
     {
         zoom = newZoom;
     }
+
+    const core::Vec2f& Camera::getSize() const
+    {
+        return size;
+    }
+
+    void Camera::setSize(const core::Vec2f& newSize)
+    {
+        size = newSize;
+    }
 } // core
 // e2XD

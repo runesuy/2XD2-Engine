@@ -7,6 +7,7 @@
 #include <SFML/Graphics/RenderWindow.hpp>
 
 #include "RenderCommand.h"
+#include "ViewMode.h"
 #include "2XD2/core/Vec2f.h"
 
 
@@ -22,11 +23,9 @@ namespace e2XD::renderer
 
         virtual void submit(const RenderCommand& renderCommand) =0;
 
-        virtual void flush(const core::Vec2f& cameraPosition, float cameraZoom) =0;
+        virtual void flush(const core::Vec2f& cameraPosition, const core::Vec2f& cameraSize, float cameraZoom) =0;
 
-        [[nodiscard]] virtual core::Vec2<unsigned int> getWindowSize() const =0;
-
-        virtual void setWindowView(RenderLayer, const core::Vec2f&) =0;
+        virtual void setViewMode(RenderLayer, ViewMode viewMode) =0;
     };
 } // renderer
 // e2XD

@@ -5,34 +5,32 @@
 #include "GameOverScreen.h"
 
 #include "2XD2/framework/drawing/Renderer.h"
+#include "2XD2/framework/input/Input.h"
 
 GameOverScreen::GameOverScreen()
 {
     visible = false;
     renderLayer = RenderLayer::UI;
-    background = createSubNode<Rectangle2D>();
-    background->setRenderLayer(RenderLayer::UI);
-    background->setGlobalPosition({
-        static_cast<float>(Renderer::getWindowSize().x) / 2, static_cast<float>(Renderer::getWindowSize().y) / 2
-    });
-    background->setFillColor(sf::Color(250, 0, 0, 150));
-    background->setSize({1200.0f, 800.0f});
 
     label = createSubNode<Label>();
     label->setRenderLayer(RenderLayer::UI);
-    label->setGlobalPosition({
-        static_cast<float>(Renderer::getWindowSize().x) / 2, static_cast<float>(Renderer::getWindowSize().y) / 2
-    });
     label->setText("Game Over");
+    label->setLocalPosition({0, -30});
+
+    restartLabel = createSubNode<Label>();
+    restartLabel->setRenderLayer(RenderLayer::UI);
+    restartLabel->setText("Press R to Restart");
+
+    processMode = ProcessMode::ALWAYS_RUNNING;
 }
 
-void GameOverScreen::onDraw()
+void GameOverScreen::onUpdate()
 {
-    background->setGlobalPosition({
-        static_cast<float>(Renderer::getWindowSize().x) / 2, static_cast<float>(Renderer::getWindowSize().y) / 2
-    });
+    if (!visible) return;
 
-    label->setGlobalPosition({
-        static_cast<float>(Renderer::getWindowSize().x) / 2, static_cast<float>(Renderer::getWindowSize().y) / 2
-    });
+    if (Input::isKeyJustPressed(Key::R))
+    {
+        restartPressed.emit();
+    }
 }
+
