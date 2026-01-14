@@ -33,6 +33,7 @@ namespace e2XD::framework
         bool markedForDeletion = false;
         bool _isCreated = false;
         bool _paused = false;
+        bool _isDestroyed = false;
 
         Node* _parent=nullptr;
 
@@ -104,7 +105,7 @@ namespace e2XD::framework
          * Creat a new empty node.
          */
         Node() = default;
-        ~Node() override = default;
+        ~Node() override;
 
         /**
          * Update the node and its sub-nodes.

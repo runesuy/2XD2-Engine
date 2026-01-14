@@ -31,9 +31,11 @@ namespace e2XD::renderer
     {
         for (const auto& layer : RenderOrder)
         {
+            if (window->getSize().x == 0 || window->getSize().y == 0) break;
             //Setup view
             if (layer == RenderLayer::WORLD)
             {
+                if (cameraSize.x == 0 || cameraSize.y == 0) continue;
                 _setViewSize(_viewModes[layer], cameraPosition, cameraSize, cameraZoom);
             }
             else
@@ -143,13 +145,12 @@ namespace e2XD::renderer
                 window->setView(view);
                 return;
             }
-
-            if (cameraRatio < windowRatio)
+            else
             {
                 // Camera is taller than window
                 const float newHeight = size.x / windowRatio;
                 sf::View view{
-                    sf::Vector2f{center.x, center.y}, sf::Vector2f{size.x* cameraZoom, newHeight * cameraZoom}
+                    sf::Vector2f{center.x, center.y}, sf::Vector2f{size.x * cameraZoom, newHeight * cameraZoom}
                 };
                 window->setView(view);
                 return;
@@ -159,6 +160,7 @@ namespace e2XD::renderer
 
     void DefaultRenderer::_setViewSize(const ViewMode viewMode) const
     {
+        // TODO: Implement other view modes for UI layers
         if (viewMode == ViewMode::StretchToFill)
         {
             window->setView(window->getDefaultView());

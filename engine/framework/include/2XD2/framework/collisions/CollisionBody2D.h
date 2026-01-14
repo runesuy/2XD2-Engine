@@ -33,7 +33,7 @@ namespace e2XD::framework
         Collisions::CollisionType collisionType = Collisions::CollisionType::DYNAMIC;
     public:
         CollisionBody2D() = default;
-        ~CollisionBody2D() override;
+        ~CollisionBody2D() override=default;
 
         [[nodiscard]] Collisions::CollisionType getCollisionType() const override;
 

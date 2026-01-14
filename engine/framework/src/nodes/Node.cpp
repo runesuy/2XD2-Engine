@@ -10,6 +10,14 @@
 
 namespace e2XD::framework
 {
+    Node::~Node()
+    {
+        if (!_isDestroyed)
+        {
+            destroy();
+        }
+    }
+
     void Node::destroy()
     {
         markedForDeletion = true;
@@ -19,6 +27,7 @@ namespace e2XD::framework
         }
         _internal_onDestroy();
         onDestroy();
+        _isDestroyed = true;
     }
 
     void Node::create()
@@ -47,7 +56,7 @@ namespace e2XD::framework
                 return;
             }
         }
-        if (processMode== ProcessMode::DEFAULT && _parent != nullptr)
+        if (processMode == ProcessMode::DEFAULT && _parent != nullptr)
         {
             if (_parent->_paused)
             {

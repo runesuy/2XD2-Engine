@@ -25,7 +25,8 @@ namespace e2XD::renderer
         std::unordered_map<RenderLayer, ViewMode> _viewModes = {
             {RenderLayer::BACKGROUND, ViewMode::Expand},
             {RenderLayer::WORLD, ViewMode::Expand},
-            {RenderLayer::UI, ViewMode::Expand}
+            {RenderLayer::UI, ViewMode::Expand},
+            {RenderLayer::OVERLAY, ViewMode::Expand}
         };
 
         void _setViewSize(ViewMode viewMode) const;

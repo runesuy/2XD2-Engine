@@ -18,7 +18,7 @@ namespace e2XD::framework
     class Game
     {
         std::unique_ptr<Scene> activeScene;
-        std::unique_ptr<Scene> newActiveScene=nullptr;
+        std::unique_ptr<Scene> newActiveScene = nullptr;
         sf::RenderWindow window = {sf::VideoMode(800, 600), "2XD2 Game"};
 
         const std::string CONFIG_FILE_PATH;
