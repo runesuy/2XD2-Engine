@@ -11,7 +11,7 @@
 #include <string>
 
 #include "IConfigManager.h"
-#include "json.hpp"
+#include <nlohmann/json.hpp>
 #include "Resources.h"
 
 namespace e2XD::framework

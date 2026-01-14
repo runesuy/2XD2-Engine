@@ -10,7 +10,7 @@
 
 #include <fstream>
 
-#include "json.hpp"
+#include <nlohmann/json.hpp>
 #include "2XD2/framework/exceptions/FileLoadingFailedException.h"
 
 

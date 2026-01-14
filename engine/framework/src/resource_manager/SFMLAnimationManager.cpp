@@ -11,7 +11,7 @@
 #include <fstream>
 #include <stdexcept>
 
-#include "json.hpp"
+#include <nlohmann/json.hpp>
 #include "2XD2/framework/exceptions/FileLoadingFailedException.h"
 #include "2XD2/framework/resource_manager/Resources.h"
 #include "2XD2/framework/resource_manager/SFMLTextureManager.h"

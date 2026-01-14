@@ -7,7 +7,7 @@
 //
 
 #include "2XD2/framework/resource_manager/SFMLTextureManager.h"
-#include "json.hpp"
+#include <nlohmann/json.hpp>
 #include "fstream"
 #include <stdexcept>
 #include "2XD2/framework/exceptions/FileLoadingFailedException.h"

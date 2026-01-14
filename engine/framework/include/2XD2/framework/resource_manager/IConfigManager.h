@@ -9,7 +9,7 @@
 #ifndef INC_2XD2_ENGINE_ICONFIGMANAGER_H
 #define INC_2XD2_ENGINE_ICONFIGMANAGER_H
 #include <string>
-#include "json.hpp"
+#include <nlohmann/json.hpp>
 
 
 namespace e2XD::framework
