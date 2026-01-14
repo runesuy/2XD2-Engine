@@ -1,3 +1,7 @@
+// Copyright (c) 2026 Rune Suy and the 2XD2-Engine contributors.
+// Licensed under the MIT License.
+//
+
 //
 // Created by runes on 14/12/2025.
 //

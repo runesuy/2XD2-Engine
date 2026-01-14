@@ -5,6 +5,19 @@
   </component>
   <component name="CMakeWorkspace" PROJECT_DIR="$PROJECT_DIR$" />
   <component name="CidrRootsConfiguration">
+    <sourceRoots>
+      <file path="$PROJECT_DIR$/addons/std-addon/include" />
+      <file path="$PROJECT_DIR$/addons/std-addon/src" />
+      <file path="$PROJECT_DIR$/engine/core/include" />
+      <file path="$PROJECT_DIR$/engine/core/src" />
+      <file path="$PROJECT_DIR$/engine/framework/include" />
+      <file path="$PROJECT_DIR$/engine/framework/src" />
+      <file path="$PROJECT_DIR$/engine/renderer/include" />
+      <file path="$PROJECT_DIR$/engine/renderer/src" />
+    </sourceRoots>
+    <libraryRoots>
+      <file path="$PROJECT_DIR$/engine/framework/lib" />
+    </libraryRoots>
     <excludeRoots>
       <file path="$PROJECT_DIR$/Testing" />
       <file path="$PROJECT_DIR$/doxygen" />
