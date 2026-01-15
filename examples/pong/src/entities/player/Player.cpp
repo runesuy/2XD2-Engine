@@ -24,7 +24,7 @@ Player::Player()
     hitbox->setWidth(10);
 }
 
-void Player::onUpdate()
+void Player::onUpdate(double deltaTime)
 {
     e2XD::core::Vec2f velocity{0,0};
     if (Input::isKeyPressed(Key::W))
@@ -36,7 +36,7 @@ void Player::onUpdate()
         velocity.y += speed;
     }
 
-    auto newPos = getGlobalPosition() + velocity * Time::getDeltaTime();
+    auto newPos = getGlobalPosition() + velocity * deltaTime;
     newPos.y = std::clamp(newPos.y, minY, maxY);
     setGlobalPosition(newPos);
 }

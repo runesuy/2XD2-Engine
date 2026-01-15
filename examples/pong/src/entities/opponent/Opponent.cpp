@@ -28,19 +28,19 @@ void Opponent::linkBall(Ball* ball)
     this->ball = ball;
 }
 
-void Opponent::onUpdate()
+void Opponent::onUpdate(double deltaTime)
 {
     if (!ball) return;
 
     if (ball->getGlobalPosition().y > getGlobalPosition().y + 5)
     {
-        float newY = getGlobalPosition().y + speed * Time::getDeltaTime();
+        float newY = getGlobalPosition().y + speed * deltaTime;
         if (newY > maxY) newY = maxY;
         setGlobalPosition({getGlobalPosition().x, newY});
     }
     else if (ball->getGlobalPosition().y < getGlobalPosition().y - 5)
     {
-        float newY = getGlobalPosition().y - speed * Time::getDeltaTime();
+        float newY = getGlobalPosition().y - speed * deltaTime;
         if (newY < minY) newY = minY;
         setGlobalPosition({getGlobalPosition().x, newY});
     }

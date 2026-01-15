@@ -10,7 +10,7 @@
 
 using namespace std::chrono;
 
-namespace e2XD::framework
+namespace e2XD::framework::internal
 {
     void Time::tick() noexcept
     {

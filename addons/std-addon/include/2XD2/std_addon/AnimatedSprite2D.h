@@ -26,9 +26,9 @@ namespace e2XD::std_addon
         std::string _currentAnimationName;
         const AnimationMap* animations = nullptr;
         unsigned int _currentFrameIndex = 0;
-        float _frameTimer = 0.0f;
+        double _frameTimer = 0.0f;
 
-        void _updateCurrentFrame(float deltaTime);
+        void _updateCurrentFrame(double deltaTime);
 
     public:
         /**
@@ -61,6 +61,8 @@ namespace e2XD::std_addon
 
     protected:
         void _internal_onDraw() override;
+
+        void _internal_onUpdate(double deltaTime) override;
     };
 } // framework
 // e2XD

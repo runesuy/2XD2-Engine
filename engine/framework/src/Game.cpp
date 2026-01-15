@@ -22,6 +22,8 @@
 
 namespace e2XD::framework
 {
+    using internal::Time;
+
     Game::Game(const IGameConfig& config, std::string configFilePath)
         : CONFIG_FILE_PATH(std::move(configFilePath))
     {
@@ -55,6 +57,9 @@ namespace e2XD::framework
     {
         running = true;
         window.setKeyRepeatEnabled(false);
+        window.setVerticalSyncEnabled(_useVSync);
+
+        double accumulator = 0.0; // For fixed timestep logic
 
         while (running && window.isOpen())
         {
@@ -67,6 +72,8 @@ namespace e2XD::framework
             }
 
             Time::tick();
+            accumulator += Time::getDeltaTime();
+
             // Poll events
             Input::pollEvents();
             Collisions::checkCollisions();
@@ -80,7 +87,17 @@ namespace e2XD::framework
 
             if (activeScene)
             {
-                activeScene->update();
+                // Fixed timestep physics update
+                const double physicsDeltaTime = 1.0 / _physicsTicksPerSecond;
+                while (accumulator >= physicsDeltaTime)
+                {
+                    activeScene->physicsUpdate(physicsDeltaTime);
+                    accumulator -= physicsDeltaTime;
+                }
+
+                // Variable timestep update
+                activeScene->update(Time::getDeltaTime());
+                // Variable timestep drawing (maybe vSynced)
                 Renderer::clearWindow();
                 activeScene->draw();
             }
@@ -114,5 +131,22 @@ namespace e2XD::framework
         {
             newActiveScene = std::move(scene);
         }
+    }
+
+    void Game::enableVSync()
+    {
+        _useVSync = true;
+        window.setVerticalSyncEnabled(true);
+    }
+
+    void Game::disableVSync()
+    {
+        _useVSync = false;
+        window.setVerticalSyncEnabled(false);
+    }
+
+    void Game::setPhysicsTicksPerSecond(int ticksPerSecond)
+    {
+        _physicsTicksPerSecond = ticksPerSecond;
     }
 }

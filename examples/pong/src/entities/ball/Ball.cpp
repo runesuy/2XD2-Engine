@@ -21,9 +21,9 @@ Ball::Ball()
     Node::addSubNode(std::move(hitbox));
 }
 
-void Ball::onUpdate()
+void Ball::onUpdate(double deltaTime)
 {
-    setGlobalPosition(getGlobalPosition() + velocity * Time::getDeltaTime());
+    setGlobalPosition(getGlobalPosition() + velocity * deltaTime);
 
     // bottom and top wall collision
     if (getGlobalPosition().y + radius >= UPPERBOUND || getGlobalPosition().y - radius <= LOWERBOUND)

@@ -24,6 +24,9 @@ namespace e2XD::framework
         const std::string CONFIG_FILE_PATH;
         std::string RESOURCES_PATH;
 
+        int _physicsTicksPerSecond = 120;
+        bool _useVSync = true;
+
     public:
         inline static const std::string DEFAULT_FONT_NAME = "__e2XD_default__";
 
@@ -39,6 +42,12 @@ namespace e2XD::framework
         void run();
 
         void setWindowTitle(const std::string& title);
+
+        void setPhysicsTicksPerSecond(int ticksPerSecond);
+
+        void enableVSync();
+
+        void disableVSync();
 
         void setActiveScene(std::unique_ptr<Scene>&& scene);
 

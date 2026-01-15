@@ -26,7 +26,7 @@ public:
     inline static Signal<> restartPressed;
 
 protected:
-    void onUpdate() override;
+    void onUpdate(double deltaTime) override;
 };
 
 

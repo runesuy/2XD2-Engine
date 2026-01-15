@@ -28,7 +28,7 @@ public:
     Signal<> outOfBounds;
 
 protected:
-    void onUpdate() override;
+    void onUpdate(double deltaTime) override;
 };
 
 

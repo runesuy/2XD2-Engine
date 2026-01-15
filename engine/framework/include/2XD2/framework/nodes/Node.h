@@ -51,7 +51,7 @@ namespace e2XD::framework
          * Placeholder for user-defined update logic.
          * This method is called during the update phase of the node.
          */
-        virtual void onUpdate()
+        virtual void onUpdate(double deltaTime)
         {
         };
 
@@ -59,7 +59,25 @@ namespace e2XD::framework
          * Placeholder for internal update logic.
          * This method is called during the update phase of the node.
          */
-        virtual void _internal_onUpdate()
+        virtual void _internal_onUpdate(double deltaTime)
+        {
+        };
+
+        /**
+         * Placeholder for user-defined physics update logic.
+         * This method is called during the physics update phase of the node.
+         * Called a fixed number of times per second.
+         */
+        virtual void onPhysicsUpdate(double deltaTime)
+        {
+        };
+
+        /**
+         * Placeholder for internal physics update logic.
+         * This method is called during the physics update phase of the node.
+         * Called a fixed number of times per second.
+         */
+        virtual void _internal_onPhysicsUpdate(double deltaTime)
         {
         };
 
@@ -110,7 +128,13 @@ namespace e2XD::framework
         /**
          * Update the node and its sub-nodes.
          */
-        void update();
+        void update(double deltaTime);
+
+        /**
+         * Call the physics update on the node and its sub-nodes.
+         * @param deltaTime
+         */
+        void physicsUpdate(double deltaTime);
 
         /**
          * Create the node and its sub-nodes.

@@ -41,12 +41,12 @@ namespace e2XD::framework
         }
     }
 
-    void Node::update()
+    void Node::update(const double deltaTime)
     {
         removeDestroyedSubNodes();
         for (const auto& node : nodes)
         {
-            node->update();
+            node->update(deltaTime);
         }
         if (_paused && processMode != ProcessMode::ALWAYS_RUNNING) return;
         if (processMode == ProcessMode::ALWAYS_INHERIT && _parent != nullptr)
@@ -63,9 +63,37 @@ namespace e2XD::framework
                 return;
             }
         }
-        _internal_onUpdate();
-        onUpdate();
+        _internal_onUpdate(deltaTime);
+        onUpdate(deltaTime);
     }
+
+    void Node::physicsUpdate(const double deltaTime)
+    {
+        removeDestroyedSubNodes();
+        for (const auto& node : nodes)
+        {
+            node->physicsUpdate(deltaTime);
+        }
+        if (_paused && processMode != ProcessMode::ALWAYS_RUNNING) return;
+        if (processMode == ProcessMode::ALWAYS_INHERIT && _parent != nullptr)
+        {
+            if (_parent->_paused)
+            {
+                return;
+            }
+        }
+        if (processMode == ProcessMode::DEFAULT && _parent != nullptr)
+        {
+            if (_parent->_paused)
+            {
+                return;
+            }
+        }
+        _internal_onPhysicsUpdate(deltaTime);
+        onPhysicsUpdate(deltaTime);
+    }
+
+
 
     void Node::_internal_onDraw()
     {
