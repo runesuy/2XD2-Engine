@@ -74,8 +74,6 @@ namespace e2XD::framework
             Time::tick();
             accumulator += Time::getDeltaTime();
 
-            // Poll events
-            Input::pollEvents();
             Collisions::checkCollisions();
             if (const auto& resized = Input::isWindowResized(); std::get<0>(resized))
             {
@@ -91,6 +89,8 @@ namespace e2XD::framework
                 const double physicsDeltaTime = 1.0 / _physicsTicksPerSecond;
                 while (accumulator >= physicsDeltaTime)
                 {
+                    // Poll events
+                    Input::pollEvents();
                     activeScene->physicsUpdate(physicsDeltaTime);
                     accumulator -= physicsDeltaTime;
                 }
