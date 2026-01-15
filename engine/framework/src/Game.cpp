@@ -73,8 +73,6 @@ namespace e2XD::framework
 
             Time::tick();
             accumulator += Time::getDeltaTime();
-
-            Collisions::checkCollisions();
             if (const auto& resized = Input::isWindowResized(); std::get<0>(resized))
             {
                 sf::FloatRect visibleArea(0, 0, std::get<1>(resized), std::get<2>(resized));
@@ -83,29 +81,36 @@ namespace e2XD::framework
 
             if (Input::isWindowClosed()) window.close();
 
+            // Poll events
+            Input::pollEvents();
+
+            // Physics update with fixed timestep
             if (activeScene)
             {
                 // Fixed timestep physics update
                 const double physicsDeltaTime = 1.0 / _physicsTicksPerSecond;
                 while (accumulator >= physicsDeltaTime)
                 {
-                    // Poll events
-                    Input::pollEvents();
                     activeScene->physicsUpdate(physicsDeltaTime);
                     accumulator -= physicsDeltaTime;
                 }
+            }
+            // Check collisions after physics update
+            Collisions::checkCollisions();
 
+            // Update and draw
+            if (activeScene)
+            {
                 // Variable timestep update
                 activeScene->update(Time::getDeltaTime());
                 // Variable timestep drawing (maybe vSynced)
                 Renderer::clearWindow();
                 activeScene->draw();
-            }
-            if (activeScene)
-            {
+
                 if (const Camera* activeCamera = activeScene->getActiveCamera())
                 {
-                    Renderer::flush(activeCamera->getGlobalPosition(), activeCamera->getSize(), activeCamera->getZoom());
+                    Renderer::flush(activeCamera->getGlobalPosition(), activeCamera->getSize(),
+                                    activeCamera->getZoom());
                 }
             }
             window.display();

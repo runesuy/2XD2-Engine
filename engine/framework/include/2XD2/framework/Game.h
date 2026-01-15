@@ -43,12 +43,38 @@ namespace e2XD::framework
 
         void setWindowTitle(const std::string& title);
 
+        /**
+         * Set the number of physics ticks (updates) per second.
+         * A higher number results in more frequent physics updates, leading to smoother and more accurate physics simulations,
+         * but may increase CPU usage. A lower number reduces CPU load but may result in less accurate physics behavior.
+         * The default value is 120 ticks per second.
+         * @param ticksPerSecond The desired number of physics ticks per second.
+         */
         void setPhysicsTicksPerSecond(int ticksPerSecond);
 
+        /**
+         * Enable vertical synchronization (VSync) for the game window.
+         * This synchronizes the frame rate of the game with the refresh rate of the monitor,
+         * reducing screen tearing and providing a smoother visual experience.
+         * This also includes the drawing and update.
+         * Does not influence the physics update rate.
+         */
         void enableVSync();
 
+        /**
+         * Disable vertical synchronization (VSync) for the game window.
+         * This allows the game to run at an uncapped frame rate, which may lead to screen tearing
+         * but can improve performance on some systems.
+         * Does not influence the physics update rate.
+         */
         void disableVSync();
 
+        /**
+         * Set the active scene for the game.
+         * If the game is currently running, the new scene will be activated at the start of the next frame
+         * to avoid destroying the current scene while it's still in use.
+         * @param scene
+         */
         void setActiveScene(std::unique_ptr<Scene>&& scene);
 
         template <IsScene T>

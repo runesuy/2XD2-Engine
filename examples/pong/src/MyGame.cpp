@@ -8,6 +8,7 @@
 
 #include "MyGame.h"
 #include "scenes/MainScene.h"
+#include "scenes/GameOverScreen/GameOverScreen.h"
 
 
 MyGame::MyGame(const IGameConfig& config) : Game(config)

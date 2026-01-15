@@ -36,7 +36,7 @@ namespace e2XD::framework
 
             for (const auto& textureList = fileJ.at("textures"); auto textureJ : textureList)
             {
-                const auto textureName = textureJ.at("texture-name");
+                const auto textureName = textureJ.at("texture-name").get<std::string>();
                 const auto textureSelect = textureJ.at("texture-select");
                 int x = textureSelect.at("x");
                 int y = textureSelect.at("y");
