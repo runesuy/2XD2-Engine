@@ -1,16 +1,16 @@
-#if !defined(${NAME}_H)
-#define ${NAME}_H
+#[[#ifndef]]# ${INCLUDE_GUARD}
+#[[#define]]# ${INCLUDE_GUARD}
 
-#include "e2XD/framework/nodes/Node.h"
+#[[#include]]# <2XD2/framework/nodes/Node.h>
 
-class ${NAME} : public Node {
+class ${NAME} : public e2XD::framework::Node {
 public:
     ${NAME}();
-    virtual ~${NAME}() = default;
+    ~${NAME}() override = default;
 
     void onCreate() override;
     
     void onUpdate() override;
 };
 
-#endif // ${NAME}_H
+#[[#endif]]# //${INCLUDE_GUARD}

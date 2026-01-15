@@ -26,7 +26,7 @@ namespace e2XD::framework
 
         for (const auto fileList = json.at("files"); const auto& fileJ : fileList)
         {
-            const auto& fileName = fileJ.at("filename");
+            const auto& fileName = fileJ.at("filename").get<std::string>();
 
             // open target texture file
             sf::Image image;

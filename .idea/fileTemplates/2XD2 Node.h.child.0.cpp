@@ -1,4 +1,6 @@
-#include "${NAME}.h"
+#[[#include]]# "${NAME}.h"
+
+using namespace e2XD::framework
 
 ${NAME}::${NAME}() {
     // Initialization logic
