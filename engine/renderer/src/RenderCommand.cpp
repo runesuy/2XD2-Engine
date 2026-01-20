@@ -11,11 +11,11 @@
 
 namespace e2XD::renderer
 {
-    RenderCommand::RenderCommand(const RenderLayer renderLayer, const sf::Drawable* drawable,
-                                 const sf::Vector2f& position,
+    RenderCommand::RenderCommand(const RenderLayer renderLayer, const IRenderable* renderable,
+                                 const core::Vec2f& position,
                                  const int zIndex) :
         renderLayer(renderLayer),
-        drawable(drawable),
+        renderable(renderable),
         position(position),
         zIndex(zIndex)
     {

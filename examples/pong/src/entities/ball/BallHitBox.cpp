@@ -11,7 +11,7 @@
 #include <cmath>
 
 #include "Ball.h"
-#include "2XD2/std_addon/Rectangle2D.h"
+#include "../../../../../addons/std-addon/include/2XD2/std_addon/nodes/Rectangle2D.h"
 
 void BallHitBox::onCollisionEnter(ICollisionBody* other)
 {

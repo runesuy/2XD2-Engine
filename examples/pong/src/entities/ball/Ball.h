@@ -9,7 +9,7 @@
 #ifndef INC_2XD2_ENGINE_BALL_H
 #define INC_2XD2_ENGINE_BALL_H
 #include "2XD2/framework/signals/Signal.h"
-#include "2XD2/std_addon/Circle2D.h"
+#include "../../../../../addons/std-addon/include/2XD2/std_addon/nodes/Circle2D.h"
 
 using namespace e2XD::framework;
 

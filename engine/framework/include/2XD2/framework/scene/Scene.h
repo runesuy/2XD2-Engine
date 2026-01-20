@@ -31,6 +31,8 @@ namespace e2XD::framework
 
         void setActiveCamera(const Camera* camera);
         [[nodiscard]] const Camera* getActiveCamera() const;
+
+        void addSubNode(std::unique_ptr<Node> node) override;
     };
 } // e2XD
 

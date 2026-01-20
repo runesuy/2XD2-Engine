@@ -8,8 +8,8 @@
 
 #ifndef INC_2XD2_ENGINE_PLAYER_H
 #define INC_2XD2_ENGINE_PLAYER_H
-#include "2XD2/std_addon/CollisionRect2D.h"
-#include "2XD2/std_addon/Rectangle2D.h"
+#include "../../../../../addons/std-addon/include/2XD2/std_addon/nodes/CollisionRect2D.h"
+#include "../../../../../addons/std-addon/include/2XD2/std_addon/nodes/Rectangle2D.h"
 
 
 class Player : public e2XD::std_addon::Rectangle2D

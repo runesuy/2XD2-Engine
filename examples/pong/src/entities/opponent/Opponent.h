@@ -8,7 +8,7 @@
 
 #ifndef INC_2XD2_ENGINE_OPPONENT_H
 #define INC_2XD2_ENGINE_OPPONENT_H
-#include "2XD2/std_addon/Rectangle2D.h"
+#include "../../../../../addons/std-addon/include/2XD2/std_addon/nodes/Rectangle2D.h"
 
 
 class Opponent : public  e2XD::std_addon::Rectangle2D

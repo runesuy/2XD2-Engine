@@ -8,10 +8,9 @@
 
 #ifndef FLATLAND_RENDERCOMMAND_H
 #define FLATLAND_RENDERCOMMAND_H
-#include <SFML/Graphics/Drawable.hpp>
-#include <SFML/System/Vector2.hpp>
 #include "RenderLayer.h"
-
+#include "2XD2/core/Vec2f.h"
+#include "2XD2/renderer/IRenderable.h"
 
 namespace e2XD::renderer
 {
@@ -22,11 +21,11 @@ namespace e2XD::renderer
     struct RenderCommand
     {
         RenderLayer renderLayer;
-        const sf::Drawable* drawable;
-        sf::Vector2f position;
+        const IRenderable* renderable;
+        core::Vec2f position;
         int zIndex;
 
-        RenderCommand(RenderLayer renderLayer, const sf::Drawable* drawable, const sf::Vector2f& position, int zIndex);
+        RenderCommand(RenderLayer renderLayer, const IRenderable* renderable, const core::Vec2f& position, int zIndex);
 
         RenderCommand(RenderCommand&&) noexcept = default;
         RenderCommand& operator=(RenderCommand&&) noexcept = default;

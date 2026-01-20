@@ -10,6 +10,7 @@
 
 namespace e2XD::framework
 {
+    // --------------- Construction/Destruction ---------------
     Node::~Node()
     {
         if (!_isDestroyed)
@@ -17,6 +18,36 @@ namespace e2XD::framework
             destroy();
         }
     }
+
+    // --------------- Private Members ---------------
+
+    void Node::removeDestroyedSubNodes()
+    {
+        for (auto it = nodes.begin(); it != nodes.end();)
+        {
+            if ((*it)->markedForDeletion)
+            {
+                (*it)->destroy();
+                it = nodes.erase(it);
+            }
+            else
+            {
+                ++it;
+            }
+        }
+    }
+
+    // --------------- Protected Members ---------------
+
+    void Node::_internal_onDraw()
+    {
+        for (const auto& node : nodes)
+        {
+            node->draw();
+        }
+    }
+
+    // --------------- Public Members ---------------
 
     void Node::destroy()
     {
@@ -94,31 +125,6 @@ namespace e2XD::framework
     }
 
 
-
-    void Node::_internal_onDraw()
-    {
-        for (const auto& node : nodes)
-        {
-            node->draw();
-        }
-    }
-
-    void Node::removeDestroyedSubNodes()
-    {
-        for (auto it = nodes.begin(); it != nodes.end();)
-        {
-            if ((*it)->markedForDeletion)
-            {
-                (*it)->destroy();
-                it = nodes.erase(it);
-            }
-            else
-            {
-                ++it;
-            }
-        }
-    }
-
     std::list<Node*> Node::getSubNodes()
     {
         std::list<Node*> nodesL;
@@ -139,7 +145,7 @@ namespace e2XD::framework
         return nodesL;
     }
 
-    void Node::setRenderLayer(RenderLayer renderLayer)
+    void Node::setRenderLayer(const RenderLayer renderLayer)
     {
         Renderable::setRenderLayer(renderLayer);
         for (const auto& node : nodes)
@@ -158,7 +164,7 @@ namespace e2XD::framework
         return _parent;
     }
 
-    void Node::setPaused(bool paused)
+    void Node::setPaused(const bool paused)
     {
         _paused = paused;
         for (const auto& node : nodes)
@@ -166,5 +172,15 @@ namespace e2XD::framework
             if (node->processMode != ProcessMode::STUBBORN)
                 node->setPaused(paused);
         }
+    }
+
+    Scene* Node::getScene()
+    {
+        return _scene;
+    }
+
+    const Scene* Node::getScene() const
+    {
+        return _scene;
     }
 } // e2XD

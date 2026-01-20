@@ -19,4 +19,10 @@ namespace e2XD::framework
     {
         activeCamera = camera;
     }
+
+    void Scene::addSubNode(std::unique_ptr<Node> node)
+    {
+        node->_scene = this;
+        Node::addSubNode(std::move(node));
+    }
 } // e2XD

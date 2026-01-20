@@ -46,7 +46,8 @@ enum class Key
     TAB,
     ALT,
     CTRL,
-    SHIFT,
+    L_SHIFT,
+    R_SHIFT
 };
 
 #endif //INC_2XD2_ENGINE_INPUTEVENT_H

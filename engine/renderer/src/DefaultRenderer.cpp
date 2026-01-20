@@ -8,9 +8,25 @@
 
 #include "2XD2/renderer/DefaultRenderer.h"
 
+#include "2XD2/renderer/internal/SfmlConversions.h"
+
 
 namespace e2XD::renderer
 {
+    DefaultRenderer::RenderTarget::RenderTarget(sf::RenderWindow& targetWindow) : window(targetWindow)
+    {
+    }
+
+    void DefaultRenderer::RenderTarget::draw(const sf::Drawable& drawable) const
+    {
+        if (transform)
+        {
+            window.draw(drawable, sf::RenderStates(*transform));
+            return;
+        }
+        window.draw(drawable);
+    }
+
     void DefaultRenderer::initialize(sf::RenderWindow* window)
     {
         this->window = window;
@@ -29,6 +45,7 @@ namespace e2XD::renderer
 
     void DefaultRenderer::flush(const core::Vec2f& cameraPosition, const core::Vec2f& cameraSize, float cameraZoom)
     {
+        static RenderTarget renderTarget(*window);
         for (const auto& layer : RenderOrder)
         {
             if (window->getSize().x == 0 || window->getSize().y == 0) break;
@@ -56,8 +73,9 @@ namespace e2XD::renderer
             for (const auto& render_command : renderQueue[layer])
             {
                 sf::Transform transform;
-                transform.translate(render_command.position);
-                window->draw(*render_command.drawable, transform);
+                transform.translate(internal::toSfmlVector(render_command.position));
+                renderTarget.transform = &transform;
+                render_command.renderable->draw(renderTarget);
             }
         }
 

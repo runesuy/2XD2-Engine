@@ -31,9 +31,22 @@ namespace e2XD::renderer
 
         void _setViewSize(ViewMode viewMode) const;
 
-        void _setViewSize(ViewMode viewMode, const core::Vec2f& center, const core::Vec2f& size, float cameraZoom) const;
+        void _setViewSize(ViewMode viewMode, const core::Vec2f& center, const core::Vec2f& size,
+                          float cameraZoom) const;
 
     public:
+        class RenderTarget : public IRenderTarget
+        {
+            sf::RenderWindow& window;
+            sf::Transform* transform=nullptr;
+            friend class DefaultRenderer;
+
+        public:
+            explicit RenderTarget(sf::RenderWindow& targetWindow);
+
+            virtual void draw(const sf::Drawable& drawable) const override;
+        };
+
         DefaultRenderer() = default;
 
         void initialize(sf::RenderWindow* window) override;

@@ -1,30 +1,24 @@
-// Copyright (c) 2026 Rune Suy and the 2XD2-Engine contributors.
-// Licensed under the MIT License.
+//
+// Created by rune-suy on 1/19/26.
 //
 
-//
-// Created by rune-suy on 12/20/25.
-//
-
-#ifndef INC_2XD2_ENGINE_RECTANGLE2D_H
-#define INC_2XD2_ENGINE_RECTANGLE2D_H
+#ifndef FLATLAND_RECTANGLERENDERABLE_H
+#define FLATLAND_RECTANGLERENDERABLE_H
+#include <SFML/Graphics/Color.hpp>
 #include <SFML/Graphics/RectangleShape.hpp>
 
-#include "2XD2/framework/nodes/Node2D.h"
+#include "2XD2/core/Vec2f.h"
+#include "2XD2/renderer/IRenderable.h"
+
 
 namespace e2XD::std_addon
 {
-    /**
-     * A 2D rectangle shape node.
-     */
-    class Rectangle2D : public framework::Node2D
+    class RectangleRenderable : public renderer::IRenderable
     {
         sf::RectangleShape rectangleShape;
-
-    protected:
-        void _internal_onDraw() override;
-
     public:
+        void draw(renderer::IRenderTarget& renderTarget) const override;
+
         /**
          * Set the fill color of the rectangle.
          * @param color
@@ -41,7 +35,7 @@ namespace e2XD::std_addon
 
         float getWidth() const;
     };
-} // framework
+} // std_addon
 // e2XD
 
-#endif //INC_2XD2_ENGINE_RECTANGLE2D_H
+#endif //FLATLAND_RECTANGLERENDERABLE_H

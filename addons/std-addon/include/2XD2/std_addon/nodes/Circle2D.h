@@ -8,28 +8,26 @@
 
 #ifndef INC_2XD2_ENGINE_CIRCLE2D_H
 #define INC_2XD2_ENGINE_CIRCLE2D_H
-#include <SFML/Graphics/CircleShape.hpp>
-
 #include "2XD2/framework/nodes/Node2D.h"
+#include "2XD2/std_addon/renderables/CircleRenderable.h"
 
 
 namespace e2XD::std_addon
 {
     class Circle2D : public framework::Node2D
     {
-        sf::CircleShape _shape;
     public:
-        Circle2D()=default;
-        ~Circle2D()override=default;
+        Circle2D() = default;
+        ~Circle2D() override = default;
 
-        void setRadius(float radius);
-
-        [[nodiscard]] float getRadius() const;
-
-        void setFillColor(const sf::Color& color);
+        CircleRenderable _renderable;
 
     protected:
         void _internal_onDraw() override;
+
+        CircleRenderable& getRenderable() { return _renderable; }
+
+        const CircleRenderable& getRenderable() const { return _renderable; }
     };
 } // std_addon
 // e2XD

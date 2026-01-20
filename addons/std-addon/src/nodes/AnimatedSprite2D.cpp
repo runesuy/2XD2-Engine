@@ -6,7 +6,7 @@
 // Created by rune-suy on 12/17/25.
 //
 
-#include "2XD2/std_addon/AnimatedSprite2D.h"
+#include "../include/2XD2/std_addon/nodes/AnimatedSprite2D.h"
 
 #include "2XD2/framework/Time.h"
 
@@ -60,7 +60,7 @@ namespace e2XD::std_addon
 
     void AnimatedSprite2D::_internal_onDraw()
     {
-        setTexture(*_currentAnimation.getFrames().at(_currentFrameIndex));
+        getRenderable().setTexture(*_currentAnimation.getFrames().at(_currentFrameIndex));
         Sprite2D::_internal_onDraw();
     }
 

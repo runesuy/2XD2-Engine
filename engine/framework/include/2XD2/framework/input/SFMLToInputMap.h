@@ -45,6 +45,8 @@ namespace e2XD::framework::internal::input
         {sf::Keyboard::X, Key::X},
         {sf::Keyboard::Y, Key::Y},
         {sf::Keyboard::Z, Key::Z},
+        {sf::Keyboard::LShift, Key::L_SHIFT},
+        {sf::Keyboard::RShift, Key::R_SHIFT},
     };
 
     inline std::unordered_map<sf::Mouse::Button, MouseButton> mouseButtonMap{

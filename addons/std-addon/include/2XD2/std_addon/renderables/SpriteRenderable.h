@@ -1,29 +1,24 @@
-// Copyright (c) 2026 Rune Suy and the 2XD2-Engine contributors.
-// Licensed under the MIT License.
+//
+// Created by rune-suy on 1/20/26.
 //
 
-//
-// Created by rune-suy on 12/17/25.
-//
-
-#ifndef FLATLAND_SPRITE2D_H
-#define FLATLAND_SPRITE2D_H
+#ifndef FLATLAND_SPRITERENDERABLE_H
+#define FLATLAND_SPRITERENDERABLE_H
+#include <string>
 #include <SFML/Graphics/Sprite.hpp>
-#include "2XD2/framework/nodes/Node2D.h"
+
+#include "2XD2/renderer/IRenderable.h"
 
 
 namespace e2XD::std_addon
 {
-    /**
-     * A 2D sprite node.
-     */
-    class Sprite2D : public framework::Node2D
+    class SpriteRenderable : public renderer::IRenderable
     {
         sf::Sprite _sprite;
-
     public:
-        Sprite2D() = default;
-        ~Sprite2D() override = default;
+        SpriteRenderable();
+
+        void draw(renderer::IRenderTarget& renderTarget) const override;
 
         /**
          * Set the texture of the sprite by its name.
@@ -38,11 +33,8 @@ namespace e2XD::std_addon
          * @param texture sf::Texture that must exist as long as the sprite uses it.
          */
         virtual void setTexture(const sf::Texture& texture);
-
-    protected:
-        void _internal_onDraw() override;
     };
-} // framework
+} // std_addon
 // e2XD
 
-#endif //FLATLAND_SPRITE2D_H
+#endif //FLATLAND_SPRITERENDERABLE_H

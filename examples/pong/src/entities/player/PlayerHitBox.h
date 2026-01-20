@@ -8,7 +8,7 @@
 
 #ifndef INC_2XD2_ENGINE_PLAYERHITBOX_H
 #define INC_2XD2_ENGINE_PLAYERHITBOX_H
-#include "2XD2/std_addon/CollisionRect2D.h"
+#include "../../../../../addons/std-addon/include/2XD2/std_addon/nodes/CollisionRect2D.h"
 
 
 class PlayerHitBox : public e2XD::std_addon::CollisionRect2D

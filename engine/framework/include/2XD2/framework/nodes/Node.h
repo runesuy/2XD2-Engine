@@ -20,6 +20,7 @@
 
 namespace e2XD::framework
 {
+    class Scene;
     class Node;
     template <typename T>
     concept IsNode = std::is_base_of_v<Node, T>;
@@ -36,6 +37,9 @@ namespace e2XD::framework
         bool _isDestroyed = false;
 
         Node* _parent=nullptr;
+
+        friend class Scene;
+        Scene* _scene=nullptr;
 
         std::list<std::unique_ptr<Node>> nodes;
 
@@ -151,8 +155,8 @@ namespace e2XD::framework
          * @tparam EntityType
          * @return a pointer to the created sub-node.
          */
-        template <IsNode EntityType>
-        EntityType* createSubNode();
+        template <IsNode EntityType, typename... Args>
+        EntityType* createSubNode(Args&& ...args);
 
         /**
          * Add a sub-node to this node.
@@ -206,17 +210,37 @@ namespace e2XD::framework
 
         void setRenderLayer(RenderLayer renderLayer) override;
 
+        /**
+         *
+         * @return the parent node, or nullptr if this node has no parent.
+         */
         [[nodiscard]] const Node* getParent() const;
 
+        /**
+         *
+         * @return the parent node, or nullptr if this node has no parent.
+         */
         [[nodiscard]] Node* getParent();
+
+        /**
+         *
+         * @return the scene this node belongs to, or nullptr if this node is not part of a scene.
+         */
+        [[nodiscard]] const Scene* getScene() const;
+
+        /**
+         *
+         * @return the scene this node belongs to, or nullptr if this node is not part of a scene.
+         */
+        [[nodiscard]] Scene* getScene();
 
         void setPaused(bool paused);
     };
 
-    template <IsNode EntityType>
-    EntityType* Node::createSubNode()
+    template <IsNode EntityType, typename... Args>
+    EntityType* Node::createSubNode(Args&&...args)
     {
-        auto node = std::make_unique<EntityType>();
+        auto node = std::make_unique<EntityType>(args...);
         auto ptr = node.get();
         addSubNode(std::move(node));
         return ptr;
