@@ -17,6 +17,7 @@
 MainScene::MainScene()
 {
     auto* player = createSubNode<Player>();
+    float temp = player->getRenderable().getWidth();
     player->setGlobalPosition({leftBound+player->getRenderable().getWidth()/2, 0});
     auto* opponent = createSubNode<Opponent>();
     opponent->setGlobalPosition({rightBound - opponent->getRenderable().getWidth()/2, 0});

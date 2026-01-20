@@ -7,6 +7,11 @@
 
 namespace e2XD::std_addon
 {
+    RectangleRenderable::RectangleRenderable()
+    {
+        rectangleShape.setOrigin(rectangleShape.getSize()/2.0f);
+    }
+
     void RectangleRenderable::draw(renderer::IRenderTarget& renderTarget) const
     {
         renderTarget.draw(rectangleShape);
@@ -20,6 +25,7 @@ namespace e2XD::std_addon
     void RectangleRenderable::setSize(const core::Vec2f& size)
     {
         rectangleShape.setSize({size.x, size.y});
+        rectangleShape.setOrigin(rectangleShape.getSize()/2.0f);
     }
 
     float RectangleRenderable::getHeight() const
@@ -30,6 +36,18 @@ namespace e2XD::std_addon
     float RectangleRenderable::getWidth() const
     {
         return rectangleShape.getSize().x;
+    }
+
+    void RectangleRenderable::setHeight(SizeType height)
+    {
+        const auto width = rectangleShape.getSize().y;
+        rectangleShape.setSize({width, height});
+    }
+
+    void RectangleRenderable::setWidth(SizeType width)
+    {
+        const auto height = rectangleShape.getSize().y;
+        rectangleShape.setSize({width, height});
     }
 } // std_addon
 // e2XD

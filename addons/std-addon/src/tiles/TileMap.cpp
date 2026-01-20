@@ -47,24 +47,24 @@ namespace e2XD::std_addon
     {
     }
 
-    void TileMap::setTileSize(const TileSizeType size)
+    void TileMap::setTileSize(const TileSizeT size)
     {
         _tileSize = size;
     }
 
-    TileMap::TileSizeType TileMap::getTileSize() const
+    TileMap::TileSizeT TileMap::getTileSize() const
     {
         return _tileSize;
     }
 
-    const TileMap::TileIdType& TileMap::getTile(const int x, const int y) const
+    const TileMap::TileIdT& TileMap::getTile(const int x, const int y) const
     {
         const auto [chunkCoords, relativeCoords] = _calculateChunkCoordinates(x, y);
         const auto& chunkIt = _chunks.find(chunkCoords);
         return _chunks.at(chunkCoords).getTile(relativeCoords.x, relativeCoords.y).id;
     }
 
-    void TileMap::setTile(const int x, const int y, const TileIdType tileId)
+    void TileMap::setTile(const int x, const int y, const TileIdT tileId)
     {
         const auto [chunkCoords, relativeCoords] = _calculateChunkCoordinates(x, y);
         auto& chunk = _chunks[chunkCoords];
@@ -74,7 +74,7 @@ namespace e2XD::std_addon
 
     //----------------- ChunkMap Hash Implementation -----------------
 
-    size_t TileMap::Hash_::operator()(const ChunkCoordType& coords) const noexcept
+    size_t TileMap::Hash_::operator()(const ChunkCoordT& coords) const noexcept
     {
         return std::hash<TileMapSizeType>()(coords.x) ^ (std::hash<TileMapSizeType>()(coords.y) << 1); // Combine hashes
     }

@@ -11,21 +11,19 @@
 
 namespace e2XD::std_addon
 {
-
+    /**
+     * A 2D tile map node.
+     */
     class TileMap : public framework::Node2D
     {
     public:
-        using TileIdType = unsigned short;
-
         using TileMapSizeType = int;
 
     private:
         friend class internal::TileMapRenderable;
 
-        /**
-         * Type used as key for chunk coordinates.
-         */
-        using ChunkCoordType = core::Vec2<TileMapSizeType>;
+        using TileIdT = internal::Tile::TileIdType;
+        using ChunkCoordT = core::Vec2<TileMapSizeType>;
 
         /**
          * Struct used for hashing chunk coordinates.
@@ -33,33 +31,26 @@ namespace e2XD::std_addon
         struct Hash_
         {
             Hash_() = default;
-            size_t operator()(const ChunkCoordType& coords) const noexcept;
+            size_t operator()(const ChunkCoordT& coords) const noexcept;
         };
 
         /**
          * Map of chunks, keyed by their hashed coordinates.
          */
-        using ChunkMap = std::unordered_map<ChunkCoordType, internal::TileChunk, Hash_>;
+        using ChunkMap = std::unordered_map<ChunkCoordT, internal::TileChunk, Hash_>;
 
-        /**
-         * Contains all chunks in the tile map.
-         */
-        ChunkMap _chunks;
+        using TileSizeT = int;
 
-        TileSet _tileSet;
 
-        /**
-         * Size of each chunk in tiles.
-         * Make this a power of two for optimal performance.
-         */
         const internal::TileChunk::ChunkSizeType _chunkSize = 16; // in tiles
 
-        /**
-         * Type used for tile size in pixels.
-         */
-        using TileSizeType = int;
-        TileSizeType _tileSize = 32; // in pixels
+        TileSizeT _tileSize = 32; // in pixels
+        internal::TileMapRenderable _renderable;
 
+        ChunkMap _chunks;
+        TileSet _tileSet;
+
+        // ------------------ Methods ------------------
         /**
          * Calculates the chunk coordinates and relative tile coordinates within that chunk for given tile coordinates.
          * Tile coördinates can be negative and are grid positions, not world positions.
@@ -70,14 +61,6 @@ namespace e2XD::std_addon
         [[nodiscard]] std::pair<core::Vec2<int>, core::Vec2<int>>
         _calculateChunkCoordinates(int tileX, int tileY) const;
 
-        sf::Sprite _sprite; // Reusable sprite for drawing tiles
-
-        internal::TileMapRenderable _renderable;
-
-    public:
-        explicit TileMap(const TileSet& tileSet);
-        ~TileMap() override = default;
-
     protected:
         /**
          * Draws the visible chunks of the tile map.
@@ -85,13 +68,38 @@ namespace e2XD::std_addon
         void onDraw() override;
 
     public:
-        void setTileSize(TileSizeType size);
+        explicit TileMap(const TileSet& tileSet);
+        ~TileMap() override = default;
 
-        [[nodiscard]] TileSizeType getTileSize() const;
+        /**
+         * Set the size of each tile in pixels.
+         * @param size
+         */
+        void setTileSize(TileSizeT size);
 
-        [[nodiscard]] const TileIdType& getTile(int x, int y) const;
+        /**
+         * Get the size of each tile in pixels.
+         * @return The size of each tile in pixels.
+         */
+        [[nodiscard]] TileSizeT getTileSize() const;
 
-        void setTile(int x, int y, TileIdType tileId);
+        /**
+         * Get the tile ID at the specified tile coordinates.
+         * Tile coördinates can be negative and are grid positions, not world positions.
+         * @param x Tile X coordinate.
+         * @param y Tile Y coordinate.
+         * @return The tile ID at the specified coordinates.
+         */
+        [[nodiscard]] const TileIdT& getTile(int x, int y) const;
+
+        /**
+         * Set the tile ID at the specified tile coordinates.
+         * Tile coördinates can be negative and are grid positions, not world positions.
+         * @param x Tile X coordinate.
+         * @param y Tile Y coordinate.
+         * @param tileId The tile ID to set.
+         */
+        void setTile(int x, int y, TileIdT tileId);
     };
 }
 

@@ -10,6 +10,9 @@
 
 namespace e2XD::std_addon
 {
+    /**
+     * Circle shape renderable.
+     */
     class CircleRenderable : public renderer::IRenderable
     {
         sf::CircleShape _shape;
@@ -18,10 +21,22 @@ namespace e2XD::std_addon
 
         void draw(renderer::IRenderTarget& renderTarget) const override;
 
+        /**
+         * Set the radius of the circle.
+         * @param radius
+         */
         void setRadius(float radius);
 
+        /**
+         *
+         * @return The radius of the circle.
+         */
         [[nodiscard]] float getRadius() const;
 
+        /**
+         * Set the fill color of the circle.
+         * @param color
+         */
         void setFillColor(const sf::Color& color);
     };
 } // std_addon

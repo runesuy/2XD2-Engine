@@ -17,7 +17,6 @@
 namespace e2XD::std_addon
 {
 
-
     void Label::_internal_onDraw()
     {
 

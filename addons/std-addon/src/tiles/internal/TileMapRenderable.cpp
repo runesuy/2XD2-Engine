@@ -17,6 +17,7 @@ namespace e2XD::std_addon::internal
 
     void TileMapRenderable::draw(renderer::IRenderTarget& renderTarget) const
     {
+        static sf::Sprite sprite;
         const auto* scene = _tileMap.getScene();
         if (!scene) return;
 
@@ -47,7 +48,6 @@ namespace e2XD::std_addon::internal
                             const auto& [id, metaData] = chunk.getTile(tileX, tileY);
                             if (id != 0) // assuming 0 is empty tile
                             {
-                                sf::Sprite sprite;
                                 sprite.setTexture(_tileMap._tileSet.getTexture(id));
                                 // Here you would set the texture rect based on the tile ID and tileset
                                 renderTarget.draw(sprite);

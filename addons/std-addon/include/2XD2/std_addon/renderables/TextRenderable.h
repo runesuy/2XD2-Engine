@@ -11,18 +11,36 @@
 
 namespace e2XD::std_addon
 {
+    /**
+     * Renderable capable of displaying text.
+     */
     class TextRenderable : public renderer::IRenderable
     {
         sf::Text _text;
-
+        using FontType = sf::Font;
     public:
         TextRenderable();
 
         void draw(renderer::IRenderTarget& renderTarget) const override;
 
+        /**
+         * Set the text string to display.
+         * @param text
+         */
         void setText(const std::string &text);
 
+        /**
+         * Set the font size of the text.
+         * @param size
+         */
         void setFontSize(unsigned int size);
+
+        /**
+         * Set the font of the text.
+         * Font must exist as long as the text uses it.
+         * @param font
+         */
+        void setFont(const FontType& font);
     };
 } // std_addon
 // e2XD

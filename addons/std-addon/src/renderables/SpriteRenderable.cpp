@@ -4,10 +4,6 @@
 
 #include "2XD2/std_addon/renderables/SpriteRenderable.h"
 
-#include "2XD2/framework/resource_manager/Resources.h"
-#include "2XD2/framework/resource_manager/Textures.h"
-
-
 namespace e2XD::std_addon
 {
     SpriteRenderable::SpriteRenderable()
@@ -18,11 +14,6 @@ namespace e2XD::std_addon
     void SpriteRenderable::draw(renderer::IRenderTarget& renderTarget) const
     {
         renderTarget.draw(_sprite);
-    }
-
-    void SpriteRenderable::setTexture(const std::string& textureName)
-    {
-        setTexture(framework::Resources::Textures::getTexture(textureName));
     }
 
     void SpriteRenderable::setTexture(const sf::Texture& texture)

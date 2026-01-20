@@ -13,10 +13,17 @@
 
 namespace e2XD::std_addon
 {
+    /**
+     * A rectangle shape renderable.
+     */
     class RectangleRenderable : public renderer::IRenderable
     {
         sf::RectangleShape rectangleShape;
+
+        using SizeType = float;
     public:
+        RectangleRenderable();
+
         void draw(renderer::IRenderTarget& renderTarget) const override;
 
         /**
@@ -29,11 +36,31 @@ namespace e2XD::std_addon
          * Set the size of the rectangle using game units.
          * @param size
          */
-        void setSize(const core::Vec2f& size);
+        void setSize(const core::Vec2<SizeType>& size);
 
-        float getHeight() const;
+        /**
+         * Set the width of the rectangle.
+         * @param width
+         */
+        void setWidth(SizeType width);
 
-        float getWidth() const;
+        /**
+         * Set the height of the rectangle.
+         * @param height
+         */
+        void setHeight(SizeType height);
+
+        /**
+         * Get the height of the rectangle.
+         * @return The height of the rectangle.
+         */
+        SizeType getHeight() const;
+
+        /**
+         * Get the width of the rectangle.
+         * @return The width of the rectangle.
+         */
+        SizeType getWidth() const;
     };
 } // std_addon
 // e2XD

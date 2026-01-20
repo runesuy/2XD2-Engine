@@ -28,8 +28,18 @@ namespace e2XD::std_addon
     protected:
         void _internal_onDraw() override;
     public:
+        /**
+         * Get the text renderable of the label.
+         * This is the renderable that handles the text display.
+         * Can be used to change text properties.
+         * @return The text renderable of the label.
+         */
         TextRenderable& getRenderable() { return _renderable; }
 
+        /**
+         *
+         * @return The text renderable of the label.
+         */
         const TextRenderable& getRenderable() const { return _renderable; }
     };
 } // std_addon

@@ -25,8 +25,19 @@ namespace e2XD::std_addon
     protected:
         void _internal_onDraw() override;
     public:
+        /**
+         * Get the circle renderable.
+         * This is the renderable that handles the circle shape display.
+         * Can be used to change circle properties.
+         * @return A reference to the circle renderable.
+         */
         CircleRenderable& getRenderable() { return _renderable; }
 
+        /**
+         * Get the circle renderable.
+         * This is the renderable that handles the circle shape display.
+         * @return A const reference to the circle renderable.
+         */
         const CircleRenderable& getRenderable() const { return _renderable; }
     };
 } // std_addon

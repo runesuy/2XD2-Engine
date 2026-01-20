@@ -23,8 +23,18 @@ namespace e2XD::std_addon
     protected:
         void _internal_onDraw() override;
     public:
+        /**
+         * Get the rectangle renderable.
+         * This is the renderable that handles the rectangle shape display.
+         * @return A reference to the rectangle renderable.
+         */
         RectangleRenderable& getRenderable() { return _renderable; }
 
+        /**
+         * Get the rectangle renderable.
+         * This is the renderable that handles the rectangle shape display.
+         * @return A const reference to the rectangle renderable.
+         */
         const RectangleRenderable& getRenderable() const { return _renderable; }
 
     public:

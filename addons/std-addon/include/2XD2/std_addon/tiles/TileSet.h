@@ -12,6 +12,9 @@
 
 namespace e2XD::std_addon
 {
+    /**
+     * A set of tiles, each associated with a texture.
+     */
     class TileSet
     {
     public:
@@ -25,8 +28,18 @@ namespace e2XD::std_addon
         virtual ~TileSet() = default;
         TileSet() = default;
 
+        /**
+         * Get the texture associated with a specific tile ID.
+         * @param id The ID of the tile.
+         * @return The texture associated with the tile ID.
+         */
         [[nodiscard]] virtual const TextureType& getTexture(TileIdType id) const;
 
+        /**
+         * Set the texture for a specific tile ID.
+         * @param id The ID of the tile.
+         * @param texture The texture to associate with the tile ID.
+         */
         virtual void setTexture(TileIdType id, const TextureType& texture);
     };
 } // std_addon

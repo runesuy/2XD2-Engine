@@ -33,5 +33,11 @@ namespace e2XD::std_addon
         _text.setCharacterSize(size);
         _text.setOrigin(_text.getLocalBounds().width / 2, _text.getLocalBounds().height / 2);
     }
+
+    void TextRenderable::setFont(const FontType& font)
+    {
+        _text.setFont(font);
+        _text.setOrigin(_text.getLocalBounds().width / 2, _text.getLocalBounds().height / 2);
+    }
 } // std_addon
 // e2XD
