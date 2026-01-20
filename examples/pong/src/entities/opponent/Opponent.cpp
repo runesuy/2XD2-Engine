@@ -16,8 +16,8 @@ using namespace e2XD::framework;
 
 Opponent::Opponent()
 {
-    setFillColor(sf::Color::Red);
-    setSize(initialSize);
+    getRenderable().setFillColor(sf::Color::Red);
+    getRenderable().setSize(initialSize);
     auto* hitbox = createSubNode<OpponentHitBox>();
     hitbox->setHeight(initialSize.y);
     hitbox->setWidth(initialSize.x);

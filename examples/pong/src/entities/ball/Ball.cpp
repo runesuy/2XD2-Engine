@@ -14,7 +14,7 @@
 
 Ball::Ball()
 {
-    setRadius(radius);
+    getRenderable().setRadius(radius);
     auto hitbox = std::make_unique<BallHitBox>(this);
     hitbox->setHeight(radius * 2);
     hitbox->setWidth(radius * 2);
