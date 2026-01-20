@@ -18,12 +18,12 @@ GameOverScreen::GameOverScreen()
 
     label = createSubNode<Label>();
     label->setRenderLayer(RenderLayer::UI);
-    label->setText("Game Over");
+    label->getRenderable().setText("Game Over");
     label->setLocalPosition({0, -30});
 
     restartLabel = createSubNode<Label>();
     restartLabel->setRenderLayer(RenderLayer::UI);
-    restartLabel->setText("Press R to Restart");
+    restartLabel->getRenderable().setText("Press R to Restart");
 
     processMode = ProcessMode::ALWAYS_RUNNING;
 }

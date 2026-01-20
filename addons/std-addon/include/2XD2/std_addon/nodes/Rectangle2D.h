@@ -22,7 +22,7 @@ namespace e2XD::std_addon
         RectangleRenderable _renderable;
     protected:
         void _internal_onDraw() override;
-
+    public:
         RectangleRenderable& getRenderable() { return _renderable; }
 
         const RectangleRenderable& getRenderable() const { return _renderable; }

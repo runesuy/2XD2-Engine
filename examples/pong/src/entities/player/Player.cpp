@@ -17,8 +17,8 @@ using namespace e2XD::framework;
 
 Player::Player()
 {
-    setFillColor(sf::Color::White);
-    setSize({10,40});
+    getRenderable().setFillColor(sf::Color::White);
+    getRenderable().setSize({10,40});
     auto* hitbox = createSubNode<PlayerHitBox>();
     hitbox->setHeight(40);
     hitbox->setWidth(10);

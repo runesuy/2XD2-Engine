@@ -27,7 +27,7 @@ namespace e2XD::std_addon
 
     protected:
         void _internal_onDraw() override;
-
+    public:
         TextRenderable& getRenderable() { return _renderable; }
 
         const TextRenderable& getRenderable() const { return _renderable; }

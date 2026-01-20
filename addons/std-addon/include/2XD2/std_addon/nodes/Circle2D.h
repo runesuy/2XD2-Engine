@@ -24,7 +24,7 @@ namespace e2XD::std_addon
 
     protected:
         void _internal_onDraw() override;
-
+    public:
         CircleRenderable& getRenderable() { return _renderable; }
 
         const CircleRenderable& getRenderable() const { return _renderable; }
