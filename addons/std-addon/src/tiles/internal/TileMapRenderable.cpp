@@ -49,6 +49,9 @@ namespace e2XD::std_addon::internal
                             if (id != 0) // assuming 0 is empty tile
                             {
                                 sprite.setTexture(_tileMap._tileSet.getTexture(id));
+                                const auto posX = _tileMap._tileSize * (tileX + (startChunkX + chunkX) * _tileMap._chunkSize);
+                                const auto posY = _tileMap._tileSize * (tileY + (startChunkY + chunkY) * _tileMap._chunkSize);
+                                sprite.setPosition(posX, posY);
                                 // Here you would set the texture rect based on the tile ID and tileset
                                 renderTarget.draw(sprite);
                             }

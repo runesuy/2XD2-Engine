@@ -45,6 +45,7 @@ namespace e2XD::std_addon
     // PUBLIC MEMBERS
     TileMap::TileMap(const TileSet& tileSet) : _tileSet(tileSet), _renderable(*this)
     {
+        zIndex = -100; // Default z-index for tile maps
     }
 
     void TileMap::setTileSize(const TileSizeT size)
