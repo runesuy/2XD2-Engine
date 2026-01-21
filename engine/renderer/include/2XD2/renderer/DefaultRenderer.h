@@ -8,6 +8,7 @@
 
 #ifndef INC_2XD2_ENGINE_DEFAULTRENDERER_H
 #define INC_2XD2_ENGINE_DEFAULTRENDERER_H
+#include <memory>
 #include <unordered_map>
 
 #include "IRenderer.h"
@@ -37,16 +38,30 @@ namespace e2XD::renderer
     public:
         class RenderTarget : public IRenderTarget
         {
+        protected:
             sf::RenderWindow& window;
-            sf::Transform* transform=nullptr;
+            sf::Transform* transform = nullptr;
             friend class DefaultRenderer;
 
         public:
             explicit RenderTarget(sf::RenderWindow& targetWindow);
 
-            virtual void draw(const sf::Drawable& drawable) const override;
+            void draw(const sf::Drawable& drawable) const override;
         };
 
+    protected:
+        /** Render target used for drawing. */
+        std::unique_ptr<RenderTarget> renderTarget = nullptr;
+
+        /**
+         * Called to draw a single render command.
+         * @param command
+         */
+        virtual inline void _drawRenderCommand(const RenderCommand& command) const;
+
+        virtual inline void _sortRenderLayerRenderCommands(std::vector<RenderCommand>& renderCommands) const;
+
+    public:
         DefaultRenderer() = default;
 
         void initialize(sf::RenderWindow* window) override;

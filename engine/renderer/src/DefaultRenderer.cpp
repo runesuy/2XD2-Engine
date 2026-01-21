@@ -30,6 +30,7 @@ namespace e2XD::renderer
     void DefaultRenderer::initialize(sf::RenderWindow* window)
     {
         this->window = window;
+        renderTarget = std::make_unique<RenderTarget>(*window);
     }
 
     void DefaultRenderer::clearWindow() const
@@ -43,9 +44,8 @@ namespace e2XD::renderer
         renderQueue[renderCommand.renderLayer].push_back(renderCommand);
     }
 
-    void DefaultRenderer::flush(const core::Vec2f& cameraPosition, const core::Vec2f& cameraSize, float cameraZoom)
+    void DefaultRenderer::flush(const core::Vec2f& cameraPosition, const core::Vec2f& cameraSize, const float cameraZoom)
     {
-        static RenderTarget renderTarget(*window);
         for (const auto& layer : RenderOrder)
         {
             if (window->getSize().x == 0 || window->getSize().y == 0) break;
@@ -61,25 +61,34 @@ namespace e2XD::renderer
             }
 
             // sort by zIndex
+            _sortRenderLayerRenderCommands(renderQueue[layer]);
 
-            std::ranges::sort(renderQueue[layer],
+            // draw commands
+            for (const auto& render_command : renderQueue[layer])
+            {
+                _drawRenderCommand(render_command);
+            }
+        }
+
+        renderQueue.clear();
+    }
+
+    void DefaultRenderer::_sortRenderLayerRenderCommands(std::vector<RenderCommand>& renderCommands) const
+    {
+        std::ranges::sort(renderCommands,
                               [](const RenderCommand& a, const RenderCommand& b)
                               {
                                   if (a.zIndex != b.zIndex) return a.zIndex < b.zIndex;
                                   return a.position.y < b.position.y;
                               });
+    }
 
-            // draw commands
-            for (const auto& render_command : renderQueue[layer])
-            {
-                sf::Transform transform;
-                transform.translate(internal::toSfmlVector(render_command.position));
-                renderTarget.transform = &transform;
-                render_command.renderable->draw(renderTarget);
-            }
-        }
-
-        renderQueue.clear();
+    void DefaultRenderer::_drawRenderCommand(const RenderCommand& command) const
+    {
+        sf::Transform transform;
+        transform.translate(internal::toSfmlVector(command.position));
+        renderTarget->transform = &transform;
+        command.renderable->draw(*renderTarget);
     }
 
     void DefaultRenderer::_setViewSize(const ViewMode viewMode, const core::Vec2f& center,
