@@ -1,9 +1,13 @@
+// Copyright (c) 2026 Rune Suy and the 2XD2-Engine contributors.
+// Licensed under the MIT License.
+//
+
 //
 // Created by rune-suy on 12/15/25.
 //
 
 #include "2XD2/framework/resource_manager/SFMLTextureManager.h"
-#include "json.hpp"
+#include <nlohmann/json.hpp>
 #include "fstream"
 #include <stdexcept>
 #include "2XD2/framework/exceptions/FileLoadingFailedException.h"
@@ -22,7 +26,7 @@ namespace e2XD::framework
 
         for (const auto fileList = json.at("files"); const auto& fileJ : fileList)
         {
-            const auto& fileName = fileJ.at("filename");
+            const auto& fileName = fileJ.at("filename").get<std::string>();
 
             // open target texture file
             sf::Image image;
@@ -32,7 +36,7 @@ namespace e2XD::framework
 
             for (const auto& textureList = fileJ.at("textures"); auto textureJ : textureList)
             {
-                const auto textureName = textureJ.at("texture-name");
+                const auto textureName = textureJ.at("texture-name").get<std::string>();
                 const auto textureSelect = textureJ.at("texture-select");
                 int x = textureSelect.at("x");
                 int y = textureSelect.at("y");

@@ -1,3 +1,7 @@
+// Copyright (c) 2026 Rune Suy and the 2XD2-Engine contributors.
+// Licensed under the MIT License.
+//
+
 //
 // Created by runes on 14/12/2025.
 //
@@ -16,6 +20,7 @@
 
 namespace e2XD::framework
 {
+    class Scene;
     class Node;
     template <typename T>
     concept IsNode = std::is_base_of_v<Node, T>;
@@ -29,8 +34,12 @@ namespace e2XD::framework
         bool markedForDeletion = false;
         bool _isCreated = false;
         bool _paused = false;
+        bool _isDestroyed = false;
 
         Node* _parent=nullptr;
+
+        friend class Scene;
+        Scene* _scene=nullptr;
 
         std::list<std::unique_ptr<Node>> nodes;
 
@@ -46,7 +55,7 @@ namespace e2XD::framework
          * Placeholder for user-defined update logic.
          * This method is called during the update phase of the node.
          */
-        virtual void onUpdate()
+        virtual void onUpdate(double deltaTime)
         {
         };
 
@@ -54,7 +63,25 @@ namespace e2XD::framework
          * Placeholder for internal update logic.
          * This method is called during the update phase of the node.
          */
-        virtual void _internal_onUpdate()
+        virtual void _internal_onUpdate(double deltaTime)
+        {
+        };
+
+        /**
+         * Placeholder for user-defined physics update logic.
+         * This method is called during the physics update phase of the node.
+         * Called a fixed number of times per second.
+         */
+        virtual void onPhysicsUpdate(double deltaTime)
+        {
+        };
+
+        /**
+         * Placeholder for internal physics update logic.
+         * This method is called during the physics update phase of the node.
+         * Called a fixed number of times per second.
+         */
+        virtual void _internal_onPhysicsUpdate(double deltaTime)
         {
         };
 
@@ -100,12 +127,18 @@ namespace e2XD::framework
          * Creat a new empty node.
          */
         Node() = default;
-        ~Node() override = default;
+        ~Node() override;
 
         /**
          * Update the node and its sub-nodes.
          */
-        void update();
+        void update(double deltaTime);
+
+        /**
+         * Call the physics update on the node and its sub-nodes.
+         * @param deltaTime
+         */
+        void physicsUpdate(double deltaTime);
 
         /**
          * Create the node and its sub-nodes.
@@ -122,8 +155,8 @@ namespace e2XD::framework
          * @tparam EntityType
          * @return a pointer to the created sub-node.
          */
-        template <IsNode EntityType>
-        EntityType* createSubNode();
+        template <IsNode EntityType, typename... Args>
+        EntityType* createSubNode(Args&& ...args);
 
         /**
          * Add a sub-node to this node.
@@ -177,17 +210,37 @@ namespace e2XD::framework
 
         void setRenderLayer(RenderLayer renderLayer) override;
 
+        /**
+         *
+         * @return the parent node, or nullptr if this node has no parent.
+         */
         [[nodiscard]] const Node* getParent() const;
 
+        /**
+         *
+         * @return the parent node, or nullptr if this node has no parent.
+         */
         [[nodiscard]] Node* getParent();
+
+        /**
+         *
+         * @return the scene this node belongs to, or nullptr if this node is not part of a scene.
+         */
+        [[nodiscard]] const Scene* getScene() const;
+
+        /**
+         *
+         * @return the scene this node belongs to, or nullptr if this node is not part of a scene.
+         */
+        [[nodiscard]] Scene* getScene();
 
         void setPaused(bool paused);
     };
 
-    template <IsNode EntityType>
-    EntityType* Node::createSubNode()
+    template <IsNode EntityType, typename... Args>
+    EntityType* Node::createSubNode(Args&&...args)
     {
-        auto node = std::make_unique<EntityType>();
+        auto node = std::make_unique<EntityType>(args...);
         auto ptr = node.get();
         addSubNode(std::move(node));
         return ptr;

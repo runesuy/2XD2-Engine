@@ -1,3 +1,7 @@
+// Copyright (c) 2026 Rune Suy and the 2XD2-Engine contributors.
+// Licensed under the MIT License.
+//
+
 //
 // Created by rune-suy on 12/20/25.
 //
@@ -13,9 +17,10 @@
 MainScene::MainScene()
 {
     auto* player = createSubNode<Player>();
-    player->setGlobalPosition({leftBound+player->getWidth()/2, 0});
+    float temp = player->getRenderable().getWidth();
+    player->setGlobalPosition({leftBound+player->getRenderable().getWidth()/2, 0});
     auto* opponent = createSubNode<Opponent>();
-    opponent->setGlobalPosition({rightBound - opponent->getWidth()/2, 0});
+    opponent->setGlobalPosition({rightBound - opponent->getRenderable().getWidth()/2, 0});
     auto* ball = createSubNode<Ball>();
     ball->setGlobalPosition({0,0});
     camera.setGlobalPosition({0,0});

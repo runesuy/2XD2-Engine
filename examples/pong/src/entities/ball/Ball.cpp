@@ -1,3 +1,7 @@
+// Copyright (c) 2026 Rune Suy and the 2XD2-Engine contributors.
+// Licensed under the MIT License.
+//
+
 //
 // Created by rune-suy on 12/21/25.
 //
@@ -10,16 +14,16 @@
 
 Ball::Ball()
 {
-    setRadius(radius);
+    getRenderable().setRadius(radius);
     auto hitbox = std::make_unique<BallHitBox>(this);
     hitbox->setHeight(radius * 2);
     hitbox->setWidth(radius * 2);
     Node::addSubNode(std::move(hitbox));
 }
 
-void Ball::onUpdate()
+void Ball::onUpdate(double deltaTime)
 {
-    setGlobalPosition(getGlobalPosition() + velocity * Time::getDeltaTime());
+    setGlobalPosition(getGlobalPosition() + velocity * deltaTime);
 
     // bottom and top wall collision
     if (getGlobalPosition().y + radius >= UPPERBOUND || getGlobalPosition().y - radius <= LOWERBOUND)

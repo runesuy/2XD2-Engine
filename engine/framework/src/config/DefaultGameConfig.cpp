@@ -1,3 +1,7 @@
+// Copyright (c) 2026 Rune Suy and the 2XD2-Engine contributors.
+// Licensed under the MIT License.
+//
+
 //
 // Created by rune-suy on 12/20/25.
 //
@@ -41,5 +45,12 @@ namespace e2XD::framework
     {
         return configManager.get();
     }
+
+#ifndef e2XD_REMOVE_DEBUG
+    const IDebugConfig* DefaultGameConfig::getDebugConfig() const
+    {
+        return debugConfig.get();
+    }
+#endif
 } // framework
 // e2XD

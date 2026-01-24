@@ -1,3 +1,7 @@
+// Copyright (c) 2026 Rune Suy and the 2XD2-Engine contributors.
+// Licensed under the MIT License.
+//
+
 //
 // Created by runes on 14/12/2025.
 //
@@ -27,6 +31,8 @@ namespace e2XD::framework
 
         void setActiveCamera(const Camera* camera);
         [[nodiscard]] const Camera* getActiveCamera() const;
+
+        void addSubNode(std::unique_ptr<Node> node) override;
     };
 } // e2XD
 

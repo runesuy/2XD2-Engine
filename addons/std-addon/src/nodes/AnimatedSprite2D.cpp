@@ -1,8 +1,12 @@
+// Copyright (c) 2026 Rune Suy and the 2XD2-Engine contributors.
+// Licensed under the MIT License.
+//
+
 //
 // Created by rune-suy on 12/17/25.
 //
 
-#include "2XD2/std_addon/AnimatedSprite2D.h"
+#include "../include/2XD2/std_addon/nodes/AnimatedSprite2D.h"
 
 #include "2XD2/framework/Time.h"
 
@@ -56,12 +60,16 @@ namespace e2XD::std_addon
 
     void AnimatedSprite2D::_internal_onDraw()
     {
-        _updateCurrentFrame(framework::Time::getDeltaTime());
-        setTexture(*_currentAnimation.getFrames().at(_currentFrameIndex));
+        getRenderable().setTexture(*_currentAnimation.getFrames().at(_currentFrameIndex));
         Sprite2D::_internal_onDraw();
     }
 
-    void AnimatedSprite2D::_updateCurrentFrame(const float deltaTime)
+    void AnimatedSprite2D::_internal_onUpdate(const double deltaTime)
+    {
+        _updateCurrentFrame(deltaTime);
+    }
+
+    void AnimatedSprite2D::_updateCurrentFrame(const double deltaTime)
     {
         _frameTimer += deltaTime;
         while (_frameTimer >= _currentAnimation.getFrameDuration())

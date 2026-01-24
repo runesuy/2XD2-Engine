@@ -1,3 +1,7 @@
+// Copyright (c) 2026 Rune Suy and the 2XD2-Engine contributors.
+// Licensed under the MIT License.
+//
+
 //
 // Created by rune-suy on 12/21/25.
 //
@@ -5,7 +9,7 @@
 #ifndef INC_2XD2_ENGINE_BALL_H
 #define INC_2XD2_ENGINE_BALL_H
 #include "2XD2/framework/signals/Signal.h"
-#include "2XD2/std_addon/Circle2D.h"
+#include "../../../../../addons/std-addon/include/2XD2/std_addon/nodes/Circle2D.h"
 
 using namespace e2XD::framework;
 
@@ -24,7 +28,7 @@ public:
     Signal<> outOfBounds;
 
 protected:
-    void onUpdate() override;
+    void onUpdate(double deltaTime) override;
 };
 
 

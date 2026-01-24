@@ -1,9 +1,13 @@
+// Copyright (c) 2026 Rune Suy and the 2XD2-Engine contributors.
+// Licensed under the MIT License.
+//
+
 //
 // Created by rune-suy on 12/20/25.
 //
 
 #include "2XD2/framework/config/DefaultGameConfig.h"
-#include "2XD2/framework/Game.h"
+#include "MyGame.h"
 #include "scenes/MainScene.h"
 
 using namespace e2XD::framework;
@@ -12,11 +16,8 @@ using namespace e2XD::framework;
 
 
 int main() {
-    DefaultGameConfig config;
-    Game game{config};
-
-    game.setWindowTitle("pong example");
-    game.createActiveScene<MainScene>();
+    const DefaultGameConfig config;
+    MyGame game{config};
 
     game.run();
 
