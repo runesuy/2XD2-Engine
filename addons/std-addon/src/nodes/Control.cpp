@@ -8,6 +8,8 @@
 
 #include "../include/2XD2/std_addon/nodes/Control.h"
 
+#include <algorithm>
+
 namespace e2XD::std_addon
 {
     void Control::setSize(const core::Vec2f& size)

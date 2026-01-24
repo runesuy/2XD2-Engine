@@ -8,6 +8,8 @@
 
 #include "../include/2XD2/std_addon/nodes/MarginContainer.h"
 
+#include <algorithm>
+
 namespace e2XD::std_addon
 {
     void MarginContainer::setMargins(const Margins& margins)
