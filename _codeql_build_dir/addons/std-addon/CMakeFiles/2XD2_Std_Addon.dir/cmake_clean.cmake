@@ -1,0 +1,41 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/2XD2_Std_Addon.dir/src/nodes/AnimatedSprite2D.cpp.o"
+  "CMakeFiles/2XD2_Std_Addon.dir/src/nodes/AnimatedSprite2D.cpp.o.d"
+  "CMakeFiles/2XD2_Std_Addon.dir/src/nodes/Circle2D.cpp.o"
+  "CMakeFiles/2XD2_Std_Addon.dir/src/nodes/Circle2D.cpp.o.d"
+  "CMakeFiles/2XD2_Std_Addon.dir/src/nodes/CollisionRect2D.cpp.o"
+  "CMakeFiles/2XD2_Std_Addon.dir/src/nodes/CollisionRect2D.cpp.o.d"
+  "CMakeFiles/2XD2_Std_Addon.dir/src/nodes/Control.cpp.o"
+  "CMakeFiles/2XD2_Std_Addon.dir/src/nodes/Control.cpp.o.d"
+  "CMakeFiles/2XD2_Std_Addon.dir/src/nodes/Label.cpp.o"
+  "CMakeFiles/2XD2_Std_Addon.dir/src/nodes/Label.cpp.o.d"
+  "CMakeFiles/2XD2_Std_Addon.dir/src/nodes/MarginContainer.cpp.o"
+  "CMakeFiles/2XD2_Std_Addon.dir/src/nodes/MarginContainer.cpp.o.d"
+  "CMakeFiles/2XD2_Std_Addon.dir/src/nodes/Rectangle2D.cpp.o"
+  "CMakeFiles/2XD2_Std_Addon.dir/src/nodes/Rectangle2D.cpp.o.d"
+  "CMakeFiles/2XD2_Std_Addon.dir/src/nodes/Sprite2D.cpp.o"
+  "CMakeFiles/2XD2_Std_Addon.dir/src/nodes/Sprite2D.cpp.o.d"
+  "CMakeFiles/2XD2_Std_Addon.dir/src/renderables/CircleRenderable.cpp.o"
+  "CMakeFiles/2XD2_Std_Addon.dir/src/renderables/CircleRenderable.cpp.o.d"
+  "CMakeFiles/2XD2_Std_Addon.dir/src/renderables/RectangleRenderable.cpp.o"
+  "CMakeFiles/2XD2_Std_Addon.dir/src/renderables/RectangleRenderable.cpp.o.d"
+  "CMakeFiles/2XD2_Std_Addon.dir/src/renderables/SpriteRenderable.cpp.o"
+  "CMakeFiles/2XD2_Std_Addon.dir/src/renderables/SpriteRenderable.cpp.o.d"
+  "CMakeFiles/2XD2_Std_Addon.dir/src/renderables/TextRenderable.cpp.o"
+  "CMakeFiles/2XD2_Std_Addon.dir/src/renderables/TextRenderable.cpp.o.d"
+  "CMakeFiles/2XD2_Std_Addon.dir/src/tiles/TileMap.cpp.o"
+  "CMakeFiles/2XD2_Std_Addon.dir/src/tiles/TileMap.cpp.o.d"
+  "CMakeFiles/2XD2_Std_Addon.dir/src/tiles/TileSet.cpp.o"
+  "CMakeFiles/2XD2_Std_Addon.dir/src/tiles/TileSet.cpp.o.d"
+  "CMakeFiles/2XD2_Std_Addon.dir/src/tiles/internal/TileChunk.cpp.o"
+  "CMakeFiles/2XD2_Std_Addon.dir/src/tiles/internal/TileChunk.cpp.o.d"
+  "CMakeFiles/2XD2_Std_Addon.dir/src/tiles/internal/TileMapRenderable.cpp.o"
+  "CMakeFiles/2XD2_Std_Addon.dir/src/tiles/internal/TileMapRenderable.cpp.o.d"
+  "lib2XD2_Std_Addon.a"
+  "lib2XD2_Std_Addon.pdb"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/2XD2_Std_Addon.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()
