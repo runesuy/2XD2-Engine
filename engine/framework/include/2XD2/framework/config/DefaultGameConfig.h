@@ -58,6 +58,10 @@ namespace e2XD::framework
         [[nodiscard]] IConfigManager* getConfigManager() const override;
 
 #ifndef e2XD_REMOVE_DEBUG
+        /**
+         * Get the debug configuration.
+         * @return A pointer to the debug configuration.
+         */
         [[nodiscard]] const IDebugConfig* getDebugConfig() const override;
 #endif
     };

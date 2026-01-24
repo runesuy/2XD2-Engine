@@ -16,6 +16,9 @@
 
 namespace e2XD::framework
 {
+    /**
+     * The default renderable used to mark the origin of nodes.
+     */
     class DefaultOriginMarker : public renderer::IRenderable
     {
         static constexpr float RADIUS = 3.0f;

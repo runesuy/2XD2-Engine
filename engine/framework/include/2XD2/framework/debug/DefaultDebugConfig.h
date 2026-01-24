@@ -18,6 +18,10 @@
 
 namespace e2XD::framework
 {
+    /**
+     * The default implementation of IDebugConfig.
+     * Provides default debug renderables.
+     */
     class DefaultDebugConfig : public IDebugConfig
     {
         const std::unique_ptr<renderer::IRenderable> originMarker =

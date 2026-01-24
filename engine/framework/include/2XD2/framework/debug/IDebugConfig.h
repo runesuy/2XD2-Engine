@@ -14,11 +14,19 @@
 
 namespace e2XD::framework
 {
+    /**
+     * Interface for debug configuration.
+     * Provides renderables used for debugging purposes.
+     */
     class IDebugConfig
     {
     public:
         virtual ~IDebugConfig() = default;
 
+        /**
+         * Get the renderable used to mark the origin of nodes.
+         * @return A pointer to the origin marker renderable.
+         */
         [[nodiscard]] virtual const renderer::IRenderable* getOriginMarker() const = 0;
     };
 } // framework
