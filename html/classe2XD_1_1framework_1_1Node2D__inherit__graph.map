@@ -1,21 +1,23 @@
 <map id="e2XD::framework::Node2D" name="e2XD::framework::Node2D">
-<area shape="rect" id="Node000001" title=" " alt="" coords="450,145,623,171"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="450,169,623,195"/>
 <area shape="rect" id="Node000004" href="$classe2XD_1_1framework_1_1Camera.html" title=" " alt="" coords="685,5,857,31"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="558,132,606,86,637,62,670,41,700,29,702,34,673,46,640,66,610,90,562,136"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="554,155,602,97,634,67,670,41,697,29,699,34,673,46,637,71,606,101,558,158"/>
 <area shape="rect" id="Node000005" href="$classe2XD_1_1framework_1_1CollisionBody2D.html" title=" " alt="" coords="683,55,859,96"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="585,137,670,105,703,94,705,99,672,110,587,142"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="571,158,617,131,670,105,699,94,701,99,672,110,620,136,573,163"/>
 <area shape="rect" id="Node000007" href="$classe2XD_1_1std__addon_1_1Circle2D.html" title=" " alt="" coords="684,120,858,146"/>
-<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="639,144,683,140,684,145,639,150"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="616,163,706,144,707,149,617,168"/>
 <area shape="rect" id="Node000008" href="$classe2XD_1_1std__addon_1_1Label.html" title=" " alt="" coords="692,169,850,195"/>
-<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="639,166,692,171,691,177,638,171"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="638,180,692,180,692,185,638,185"/>
 <area shape="rect" id="Node000009" href="$classe2XD_1_1std__addon_1_1Rectangle2D.html" title=" " alt="" coords="671,219,871,244"/>
-<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="586,175,672,205,711,216,709,221,671,210,584,180"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="617,196,707,215,706,221,616,201"/>
 <area shape="rect" id="Node000010" href="$classe2XD_1_1std__addon_1_1Sprite2D.html" title=" " alt="" coords="683,268,859,294"/>
-<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="565,179,613,218,672,254,701,265,699,270,670,259,610,223,561,184"/>
-<area shape="rect" id="Node000002" href="$classe2XD_1_1framework_1_1Node.html" title=" " alt="" coords="245,145,402,171"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="418,156,450,156,450,161,418,161"/>
-<area shape="rect" id="Node000003" href="$classe2XD_1_1framework_1_1Renderable.html" title=" " alt="" coords="5,145,197,171"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="212,156,244,156,244,161,212,161"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="572,202,619,229,672,254,705,265,703,270,670,259,616,234,569,206"/>
+<area shape="rect" id="Node000012" href="$classe2XD_1_1std__addon_1_1TileMap.html" title=" " alt="" coords="685,317,857,343"/>
+<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="560,205,608,256,639,282,673,304,698,314,696,319,670,309,636,286,604,260,556,209"/>
+<area shape="rect" id="Node000002" href="$classe2XD_1_1framework_1_1Node.html" title=" " alt="" coords="245,169,402,195"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="418,180,450,180,450,185,418,185"/>
+<area shape="rect" id="Node000003" href="$classe2XD_1_1framework_1_1Renderable.html" title=" " alt="" coords="5,169,197,195"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="212,180,244,180,244,185,212,185"/>
 <area shape="rect" id="Node000006" href="$classe2XD_1_1std__addon_1_1CollisionRect2D.html" title=" " alt="" coords="922,55,1096,96"/>
 <area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="874,73,921,73,921,78,874,78"/>
 <area shape="rect" id="Node000011" href="$classe2XD_1_1std__addon_1_1AnimatedSprite2D.html" title=" " alt="" coords="919,261,1099,301"/>

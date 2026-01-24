@@ -1,49 +1,55 @@
 \doxysection{Animated\+Sprite2\+D.\+h}
-\hypertarget{AnimatedSprite2D_8h_source}{}\label{AnimatedSprite2D_8h_source}\index{addons/std-\/addon/include/2XD2/std\_addon/AnimatedSprite2D.h@{addons/std-\/addon/include/2XD2/std\_addon/AnimatedSprite2D.h}}
+\hypertarget{AnimatedSprite2D_8h_source}{}\label{AnimatedSprite2D_8h_source}\index{addons/std-\/addon/include/2XD2/std\_addon/nodes/AnimatedSprite2D.h@{addons/std-\/addon/include/2XD2/std\_addon/nodes/AnimatedSprite2D.h}}
 \mbox{\hyperlink{AnimatedSprite2D_8h}{Go to the documentation of this file.}}
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00001\ \textcolor{comment}{//}}
-\DoxyCodeLine{00002\ \textcolor{comment}{//\ Created\ by\ rune-\/suy\ on\ 12/17/25.}}
+\DoxyCodeLine{00001\ \textcolor{comment}{//\ Copyright\ (c)\ 2026\ Rune\ Suy\ and\ the\ 2XD2-\/Engine\ contributors.}}
+\DoxyCodeLine{00002\ \textcolor{comment}{//\ Licensed\ under\ the\ MIT\ License.}}
 \DoxyCodeLine{00003\ \textcolor{comment}{//}}
 \DoxyCodeLine{00004\ }
-\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#ifndef\ FLATLAND\_ANIMATEDSPRITE2D\_H}}
-\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#define\ FLATLAND\_ANIMATEDSPRITE2D\_H}}
-\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <unordered\_map>}}
+\DoxyCodeLine{00005\ \textcolor{comment}{//}}
+\DoxyCodeLine{00006\ \textcolor{comment}{//\ Created\ by\ rune-\/suy\ on\ 12/17/25.}}
+\DoxyCodeLine{00007\ \textcolor{comment}{//}}
 \DoxyCodeLine{00008\ }
-\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{Sprite2D_8h}{Sprite2D.h}}"{}}}
-\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{Animation_8h}{2XD2/framework/resource\_manager/Animation.h}}"{}}}
-\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{AnimationMap_8h}{2XD2/framework/resource\_manager/AnimationMap.h}}"{}}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#ifndef\ FLATLAND\_ANIMATEDSPRITE2D\_H}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#define\ FLATLAND\_ANIMATEDSPRITE2D\_H}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <unordered\_map>}}
 \DoxyCodeLine{00012\ }
-\DoxyCodeLine{00013\ }
-\DoxyCodeLine{00014\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespacee2XD_1_1std__addon}{e2XD::std\_addon}}}
-\DoxyCodeLine{00015\ \{}
-\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{classe2XD_1_1std__addon_1_1AnimatedSprite2D}{AnimatedSprite2D}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classe2XD_1_1std__addon_1_1Sprite2D}{Sprite2D}}}
-\DoxyCodeLine{00020\ \ \ \ \ \{}
-\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classe2XD_1_1framework_1_1Animation}{framework::Animation}}\ \_currentAnimation;}
-\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ std::string\ \_currentAnimationName;}
-\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{AnimationMap_8h_a2a59f1490d3e20cda1971a331ebcc0c9}{AnimationMap}}*\ animations\ =\ \textcolor{keyword}{nullptr};}
-\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ \_currentFrameIndex\ =\ 0;}
-\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ \_frameTimer\ =\ 0.0f;}
-\DoxyCodeLine{00026\ }
-\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \_updateCurrentFrame(\textcolor{keywordtype}{float}\ deltaTime);}
-\DoxyCodeLine{00028\ }
-\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keyword}{public}:}
-\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classe2XD_1_1std__addon_1_1AnimatedSprite2D_a6568be406bde8a0324267fa8cda97fd5}{AnimatedSprite2D}}()\ =\ \textcolor{keywordflow}{default};}
-\DoxyCodeLine{00034\ }
-\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{classe2XD_1_1std__addon_1_1AnimatedSprite2D_accba8275803a39cbdeab5821d7f8e3f7}{AnimatedSprite2D}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{AnimationMap_8h_a2a59f1490d3e20cda1971a331ebcc0c9}{AnimationMap}}*\ animations);}
-\DoxyCodeLine{00040\ }
-\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classe2XD_1_1std__addon_1_1AnimatedSprite2D_a40bf6c935e9ae63460f48968db9c8655}{\string~AnimatedSprite2D}}()\ \textcolor{keyword}{override}\ =\ \textcolor{keywordflow}{default};}
-\DoxyCodeLine{00042\ }
-\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classe2XD_1_1std__addon_1_1AnimatedSprite2D_a9924a0b85db7ae7f88e9cf4376369ef1}{playAnimation}}(\textcolor{keyword}{const}\ std::string\&\ name,\ \textcolor{keywordtype}{bool}\ continueAtCurrentFrame\ =\ \textcolor{keyword}{false});}
-\DoxyCodeLine{00050\ }
-\DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classe2XD_1_1std__addon_1_1AnimatedSprite2D_a8985d429de43375e007335f2f1c3c57c}{setAnimations}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{AnimationMap_8h_a2a59f1490d3e20cda1971a331ebcc0c9}{AnimationMap}}\&\ newAnimations);}
-\DoxyCodeLine{00057\ }
-\DoxyCodeLine{00058\ \ \ \ \ \textcolor{keyword}{protected}:}
-\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classe2XD_1_1std__addon_1_1AnimatedSprite2D_af7c165c0139fc61cb9485f3575178a7e}{\_internal\_onDraw}}()\ \textcolor{keyword}{override};}
-\DoxyCodeLine{00060\ \ \ \ \ \};}
-\DoxyCodeLine{00061\ \}\ \textcolor{comment}{//\ framework}}
-\DoxyCodeLine{00062\ \textcolor{comment}{//\ e2XD}}
-\DoxyCodeLine{00063\ }
-\DoxyCodeLine{00064\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//FLATLAND\_ANIMATEDSPRITE2D\_H}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{Sprite2D_8h}{Sprite2D.h}}"{}}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{Animation_8h}{2XD2/framework/resource\_manager/Animation.h}}"{}}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{AnimationMap_8h}{2XD2/framework/resource\_manager/AnimationMap.h}}"{}}}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespacee2XD_1_1std__addon}{e2XD::std\_addon}}}
+\DoxyCodeLine{00019\ \{}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{classe2XD_1_1std__addon_1_1AnimatedSprite2D}{AnimatedSprite2D}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classe2XD_1_1std__addon_1_1Sprite2D}{Sprite2D}}}
+\DoxyCodeLine{00024\ \ \ \ \ \{}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classe2XD_1_1framework_1_1Animation}{framework::Animation}}\ \_currentAnimation;}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ std::string\ \_currentAnimationName;}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{AnimationMap_8h_a2a59f1490d3e20cda1971a331ebcc0c9}{AnimationMap}}*\ animations\ =\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ \_currentFrameIndex\ =\ 0;}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ \_frameTimer\ =\ 0.0f;}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \_updateCurrentFrame(\textcolor{keywordtype}{double}\ deltaTime);}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classe2XD_1_1std__addon_1_1AnimatedSprite2D_a6568be406bde8a0324267fa8cda97fd5}{AnimatedSprite2D}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{classe2XD_1_1std__addon_1_1AnimatedSprite2D_accba8275803a39cbdeab5821d7f8e3f7}{AnimatedSprite2D}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{AnimationMap_8h_a2a59f1490d3e20cda1971a331ebcc0c9}{AnimationMap}}*\ animations);}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classe2XD_1_1std__addon_1_1AnimatedSprite2D_a40bf6c935e9ae63460f48968db9c8655}{\string~AnimatedSprite2D}}()\ \textcolor{keyword}{override}\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classe2XD_1_1std__addon_1_1AnimatedSprite2D_a9924a0b85db7ae7f88e9cf4376369ef1}{playAnimation}}(\textcolor{keyword}{const}\ std::string\&\ name,\ \textcolor{keywordtype}{bool}\ continueAtCurrentFrame\ =\ \textcolor{keyword}{false});}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00060\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classe2XD_1_1std__addon_1_1AnimatedSprite2D_a8985d429de43375e007335f2f1c3c57c}{setAnimations}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{AnimationMap_8h_a2a59f1490d3e20cda1971a331ebcc0c9}{AnimationMap}}\&\ newAnimations);}
+\DoxyCodeLine{00061\ }
+\DoxyCodeLine{00062\ \ \ \ \ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classe2XD_1_1std__addon_1_1AnimatedSprite2D_af7c165c0139fc61cb9485f3575178a7e}{\_internal\_onDraw}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00064\ }
+\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classe2XD_1_1std__addon_1_1AnimatedSprite2D_ae5eeee820931c53ff5d6b7f3dbe1d733}{\_internal\_onUpdate}}(\textcolor{keywordtype}{double}\ deltaTime)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00066\ \ \ \ \ \};}
+\DoxyCodeLine{00067\ \}\ \textcolor{comment}{//\ framework}}
+\DoxyCodeLine{00068\ \textcolor{comment}{//\ e2XD}}
+\DoxyCodeLine{00069\ }
+\DoxyCodeLine{00070\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//FLATLAND\_ANIMATEDSPRITE2D\_H}}
 
 \end{DoxyCode}

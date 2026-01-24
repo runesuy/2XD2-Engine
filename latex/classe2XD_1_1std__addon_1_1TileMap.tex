@@ -1,0 +1,287 @@
+\doxysection{e2\+XD\+::std\+\_\+addon\+::Tile\+Map Class Reference}
+\hypertarget{classe2XD_1_1std__addon_1_1TileMap}{}\label{classe2XD_1_1std__addon_1_1TileMap}\index{e2XD::std\_addon::TileMap@{e2XD::std\_addon::TileMap}}
+
+
+{\ttfamily \#include $<$Tile\+Map.\+h$>$}
+
+
+
+Inheritance diagram for e2\+XD\+::std\+\_\+addon\+::Tile\+Map\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=224pt]{classe2XD_1_1std__addon_1_1TileMap__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for e2\+XD\+::std\+\_\+addon\+::Tile\+Map\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=224pt]{classe2XD_1_1std__addon_1_1TileMap__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+using \mbox{\hyperlink{classe2XD_1_1std__addon_1_1TileMap_a66a55093eb29ad7b7280aceb8669525c}{Tile\+Map\+Size\+Type}} = int
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classe2XD_1_1std__addon_1_1TileMap_ade5a9abb5deeedb44ea7fc4095dfd183}{Tile\+Map}} (const \mbox{\hyperlink{classe2XD_1_1std__addon_1_1TileSet}{Tile\+Set}} \&tile\+Set)
+\item 
+\mbox{\hyperlink{classe2XD_1_1std__addon_1_1TileMap_a58619168000d93b06406cffb1fe038c2}{\texorpdfstring{$\sim$}{\string~}\+Tile\+Map}} () override=default
+\item 
+void \mbox{\hyperlink{classe2XD_1_1std__addon_1_1TileMap_a31766b1488bdd556e93201cd9c2697ab}{set\+Tile\+Size}} (Tile\+SizeT size)
+\item 
+Tile\+SizeT \mbox{\hyperlink{classe2XD_1_1std__addon_1_1TileMap_a0345809c34c798ae9aa09450edb91163}{get\+Tile\+Size}} () const
+\item 
+const Tile\+IdT \& \mbox{\hyperlink{classe2XD_1_1std__addon_1_1TileMap_ad4d461fb3cfc3c4f247e5853a16e4345}{get\+Tile}} (int x, int y) const
+\item 
+void \mbox{\hyperlink{classe2XD_1_1std__addon_1_1TileMap_a2d4d48d59003d98164f957ceb9e491d8}{set\+Tile}} (int x, int y, Tile\+IdT tile\+Id)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classe2XD_1_1framework_1_1Node2D}{e2\+XD\+::framework\+::\+Node2D}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classe2XD_1_1framework_1_1Node2D_acb3a90bdb7f0147e0f81e2ff5febaaa3}{Node2D}} ()=default
+\item 
+const \mbox{\hyperlink{namespacee2XD_1_1core_a64915d4955e6ed3347eb48450b60d026}{core\+::\+Vec2f}} \& \mbox{\hyperlink{classe2XD_1_1framework_1_1Node2D_a7b63977014241fc1a59ffa539c0910ba}{get\+Global\+Position}} () const
+\item 
+virtual void \mbox{\hyperlink{classe2XD_1_1framework_1_1Node2D_a04aa16150ec9336a0878029b2c5ae3cd}{set\+Global\+Position}} (const \mbox{\hyperlink{namespacee2XD_1_1core_a64915d4955e6ed3347eb48450b60d026}{core\+::\+Vec2f}} \&position)
+\item 
+const \mbox{\hyperlink{namespacee2XD_1_1core_a64915d4955e6ed3347eb48450b60d026}{core\+::\+Vec2f}} \& \mbox{\hyperlink{classe2XD_1_1framework_1_1Node2D_aad9c5f2760abe587c91a8905aabfbdf3}{get\+Local\+Position}} () const
+\item 
+virtual void \mbox{\hyperlink{classe2XD_1_1framework_1_1Node2D_a8d2305af52e303ef69649ccac523b586}{set\+Local\+Position}} (const \mbox{\hyperlink{namespacee2XD_1_1core_a64915d4955e6ed3347eb48450b60d026}{core\+::\+Vec2f}} \&position)
+\item 
+const \mbox{\hyperlink{namespacee2XD_1_1core_a64915d4955e6ed3347eb48450b60d026}{core\+::\+Vec2f}} \& \mbox{\hyperlink{classe2XD_1_1framework_1_1Node2D_a64c2ece0a46a7aa4f3b4b91d7c1a3ca3}{get\+Global\+Scale}} () const
+\item 
+virtual void \mbox{\hyperlink{classe2XD_1_1framework_1_1Node2D_a874686661030a4d4076c4c0c9b4ce9b3}{set\+Global\+Scale}} (const \mbox{\hyperlink{namespacee2XD_1_1core_a64915d4955e6ed3347eb48450b60d026}{core\+::\+Vec2f}} \&scale)
+\item 
+const \mbox{\hyperlink{namespacee2XD_1_1core_a64915d4955e6ed3347eb48450b60d026}{core\+::\+Vec2f}} \& \mbox{\hyperlink{classe2XD_1_1framework_1_1Node2D_a3ee0c1294037ec66cf478c78b7777867}{get\+Local\+Scale}} () const
+\item 
+virtual void \mbox{\hyperlink{classe2XD_1_1framework_1_1Node2D_a1a797c70a4ea6c78ecbfa8bb0165b266}{set\+Local\+Scale}} (const \mbox{\hyperlink{namespacee2XD_1_1core_a64915d4955e6ed3347eb48450b60d026}{core\+::\+Vec2f}} \&scale)
+\item 
+double \mbox{\hyperlink{classe2XD_1_1framework_1_1Node2D_aa23c7227e6f07ebb0853ef8a72fd49f4}{get\+Global\+Rotation}} () const
+\item 
+virtual void \mbox{\hyperlink{classe2XD_1_1framework_1_1Node2D_ac4f24e2e6fc0a0c7767e5f13c2bca388}{set\+Global\+Rotation}} (double rotation)
+\item 
+double \mbox{\hyperlink{classe2XD_1_1framework_1_1Node2D_a57b06bce7d6a2cb082f8722ea21d3ebd}{get\+Local\+Rotation}} () const
+\item 
+virtual void \mbox{\hyperlink{classe2XD_1_1framework_1_1Node2D_afdc293c49a18222e4ad81a53368a18ab}{set\+Local\+Rotation}} (double rotation)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classe2XD_1_1framework_1_1Node}{e2\+XD\+::framework\+::\+Node}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classe2XD_1_1framework_1_1Node_a131881db1f212ce2d5ea8db9dddc0475}{Node}} ()=default
+\item 
+\mbox{\hyperlink{classe2XD_1_1framework_1_1Node_acbbfae8af7d895de77f0fb150df3fbdb}{\texorpdfstring{$\sim$}{\string~}\+Node}} () override
+\item 
+void \mbox{\hyperlink{classe2XD_1_1framework_1_1Node_a0957c712c6511db3eb7c7d1b7f6a2ade}{update}} (double delta\+Time)
+\item 
+void \mbox{\hyperlink{classe2XD_1_1framework_1_1Node_aa0455bfb83dcbef3b833e8d82e347516}{physics\+Update}} (double delta\+Time)
+\item 
+void \mbox{\hyperlink{classe2XD_1_1framework_1_1Node_a9aaf0d4a9499a43153bba28c0e482201}{create}} ()
+\item 
+void \mbox{\hyperlink{classe2XD_1_1framework_1_1Node_a7831b27923edd33f0545eb56208d4631}{destroy}} ()
+\item 
+{\footnotesize template$<$Is\+Node Entity\+Type, typename... Args$>$ }\\Entity\+Type \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classe2XD_1_1framework_1_1Node_a672e1b21a8ca8cc34d3735cea5196f0a}{create\+Sub\+Node}} (Args \&\&...args)
+\item 
+virtual void \mbox{\hyperlink{classe2XD_1_1framework_1_1Node_abc834854340010c6750a1463e3254e28}{add\+Sub\+Node}} (std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classe2XD_1_1framework_1_1Node}{Node}} $>$ node)
+\item 
+{\footnotesize template$<$Is\+Node Entity\+Type$>$ }\\const Entity\+Type \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classe2XD_1_1framework_1_1Node_a7a214d4356a49c08bd4ca1b94ee4b5bd}{get\+Sub\+Node}} () const
+\item 
+{\footnotesize template$<$Is\+Node Entity\+Type$>$ }\\std\+::list$<$ const Entity\+Type \texorpdfstring{$\ast$}{*} $>$ \mbox{\hyperlink{classe2XD_1_1framework_1_1Node_aefe0d967a19a44aa3963407ff981a32b}{get\+Sub\+Nodes}} () const
+\item 
+{\footnotesize template$<$Is\+Node Entity\+Type$>$ }\\Entity\+Type \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classe2XD_1_1framework_1_1Node_af7d8ff352a37988e3dbc838bc1a6124b}{get\+Sub\+Node}} ()
+\item 
+{\footnotesize template$<$Is\+Node Entity\+Type$>$ }\\std\+::list$<$ Entity\+Type \texorpdfstring{$\ast$}{*} $>$ \mbox{\hyperlink{classe2XD_1_1framework_1_1Node_a1bd94a9504ff119521433958cd6b3c8c}{get\+Sub\+Nodes}} ()
+\item 
+std\+::list$<$ \mbox{\hyperlink{classe2XD_1_1framework_1_1Node}{Node}} \texorpdfstring{$\ast$}{*} $>$ \mbox{\hyperlink{classe2XD_1_1framework_1_1Node_a5486973cd5bcaee78c48e20633b3d53e}{get\+Sub\+Nodes}} ()
+\item 
+std\+::list$<$ const \mbox{\hyperlink{classe2XD_1_1framework_1_1Node}{Node}} \texorpdfstring{$\ast$}{*} $>$ \mbox{\hyperlink{classe2XD_1_1framework_1_1Node_ac56c09adaac5f33c3a095e73d480e9c6}{get\+Sub\+Nodes}} () const
+\item 
+void \mbox{\hyperlink{classe2XD_1_1framework_1_1Node_ab222834736fecb7f778040c291bf653b}{set\+Render\+Layer}} (\mbox{\hyperlink{RenderLayer_8h_ad16d91520dd8dbd7a2178564fce5a168}{Render\+Layer}} \mbox{\hyperlink{classe2XD_1_1framework_1_1Renderable_a73a98b5c0defcdfd7a1e2a6c528b0f91}{render\+Layer}}) override
+\item 
+const \mbox{\hyperlink{classe2XD_1_1framework_1_1Node}{Node}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classe2XD_1_1framework_1_1Node_a3b6cd8707bf978600bcf9d5fb8934e01}{get\+Parent}} () const
+\item 
+\mbox{\hyperlink{classe2XD_1_1framework_1_1Node}{Node}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classe2XD_1_1framework_1_1Node_a40286968151235c93254f56f9b0b993a}{get\+Parent}} ()
+\item 
+const \mbox{\hyperlink{classe2XD_1_1framework_1_1Scene}{Scene}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classe2XD_1_1framework_1_1Node_a32ec3dffba82641afe50244b0ff4f6c2}{get\+Scene}} () const
+\item 
+\mbox{\hyperlink{classe2XD_1_1framework_1_1Scene}{Scene}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classe2XD_1_1framework_1_1Node_aff928ab6f2b8d4f3c44e7731ba8117c6}{get\+Scene}} ()
+\item 
+void \mbox{\hyperlink{classe2XD_1_1framework_1_1Node_aa0cdcbad57add9ecddb4d2df12c44e33}{set\+Paused}} (bool paused)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classe2XD_1_1framework_1_1Renderable}{e2\+XD\+::framework\+::\+Renderable}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classe2XD_1_1framework_1_1Renderable_ae1ecc921fd8112a12e82bc78282c42d9}{\texorpdfstring{$\sim$}{\string~}\+Renderable}} ()=default
+\item 
+void \mbox{\hyperlink{classe2XD_1_1framework_1_1Renderable_a8e7d1036e4bc4d1f60a639fdd1cbaee1}{draw}} ()
+\item 
+virtual void \mbox{\hyperlink{classe2XD_1_1framework_1_1Renderable_a084810e1e0d412501eb24f3c3067417b}{set\+Visible}} (bool \mbox{\hyperlink{classe2XD_1_1framework_1_1Renderable_a5f075727608df3d602ea422e19c82648}{visible}})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classe2XD_1_1std__addon_1_1TileMap_a096fac2cdd0b12dcec6ca1d88d148d9f}{on\+Draw}} () override
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{classe2XD_1_1framework_1_1Node}{e2\+XD\+::framework\+::\+Node}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{classe2XD_1_1framework_1_1Node_af89d371346d6d288569ec326ee776b65}{on\+Update}} (double delta\+Time)
+\item 
+virtual void \mbox{\hyperlink{classe2XD_1_1framework_1_1Node_ac3d8e9b06bd7e94459d71e05aacf8185}{\+\_\+internal\+\_\+on\+Update}} (double delta\+Time)
+\item 
+virtual void \mbox{\hyperlink{classe2XD_1_1framework_1_1Node_ac49b7a8b26c55897c78f68b599390316}{on\+Physics\+Update}} (double delta\+Time)
+\item 
+virtual void \mbox{\hyperlink{classe2XD_1_1framework_1_1Node_af7d4ffe839e9fa07342f6c32c9c91f49}{\+\_\+internal\+\_\+on\+Physics\+Update}} (double delta\+Time)
+\item 
+virtual void \mbox{\hyperlink{classe2XD_1_1framework_1_1Node_adff5310c5d37fd27541b8d7fd4d6916c}{on\+Create}} ()
+\item 
+virtual void \mbox{\hyperlink{classe2XD_1_1framework_1_1Node_a4fdd6de7936646da823db7097730b4fb}{\+\_\+internal\+\_\+on\+Create}} ()
+\item 
+virtual void \mbox{\hyperlink{classe2XD_1_1framework_1_1Node_a37ef50b0e9003613fab64d595304e5ba}{on\+Destroy}} ()
+\item 
+virtual void \mbox{\hyperlink{classe2XD_1_1framework_1_1Node_ae5de5aa456c080e89812370611ac38fb}{\+\_\+internal\+\_\+on\+Destroy}} ()
+\item 
+void \mbox{\hyperlink{classe2XD_1_1framework_1_1Node_af891d43c352e1420c1d2c27ce9ae88fb}{\+\_\+internal\+\_\+on\+Draw}} () override
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classe2XD_1_1std__addon_1_1TileMap_a6c3cb36e0114265b00f20550ae15d3a1}{internal\+::\+Tile\+Map\+Renderable}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classe2XD_1_1framework_1_1Node}{e2\+XD\+::framework\+::\+Node}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacee2XD_1_1framework_a6c4f6e2bcbc3eed7f9560cb99f987005}{Process\+Mode}} \mbox{\hyperlink{classe2XD_1_1framework_1_1Node_a0ab65bf542aa34b46fec6c8a25b6345d}{process\+Mode}} = \mbox{\hyperlink{namespacee2XD_1_1framework_a6c4f6e2bcbc3eed7f9560cb99f987005a5b39c8b553c821e7cddc6da64b5bd2ee}{Process\+Mode\+::\+DEFAULT}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classe2XD_1_1framework_1_1Renderable}{e2\+XD\+::framework\+::\+Renderable}}}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classe2XD_1_1framework_1_1Renderable_ad4e09e08a878138093f4705c7747fc67}{z\+Index}} = 0
+\item 
+bool \mbox{\hyperlink{classe2XD_1_1framework_1_1Renderable_a5f075727608df3d602ea422e19c82648}{visible}} = true
+\item 
+\mbox{\hyperlink{RenderLayer_8h_ad16d91520dd8dbd7a2178564fce5a168}{Render\+Layer}} \mbox{\hyperlink{classe2XD_1_1framework_1_1Renderable_a73a98b5c0defcdfd7a1e2a6c528b0f91}{render\+Layer}} = \mbox{\hyperlink{RenderLayer_8h_ad16d91520dd8dbd7a2178564fce5a168a5289492cf082446ca4a6eec9f72f1ec3}{Render\+Layer\+::\+WORLD}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A 2D tile map node. 
+
+\doxysubsection{Member Typedef Documentation}
+\Hypertarget{classe2XD_1_1std__addon_1_1TileMap_a66a55093eb29ad7b7280aceb8669525c}\label{classe2XD_1_1std__addon_1_1TileMap_a66a55093eb29ad7b7280aceb8669525c} 
+\index{e2XD::std\_addon::TileMap@{e2XD::std\_addon::TileMap}!TileMapSizeType@{TileMapSizeType}}
+\index{TileMapSizeType@{TileMapSizeType}!e2XD::std\_addon::TileMap@{e2XD::std\_addon::TileMap}}
+\doxysubsubsection{\texorpdfstring{TileMapSizeType}{TileMapSizeType}}
+{\footnotesize\ttfamily using \mbox{\hyperlink{classe2XD_1_1std__addon_1_1TileMap_a66a55093eb29ad7b7280aceb8669525c}{e2\+XD\+::std\+\_\+addon\+::\+Tile\+Map\+::\+Tile\+Map\+Size\+Type}} =  int}
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classe2XD_1_1std__addon_1_1TileMap_ade5a9abb5deeedb44ea7fc4095dfd183}\label{classe2XD_1_1std__addon_1_1TileMap_ade5a9abb5deeedb44ea7fc4095dfd183} 
+\index{e2XD::std\_addon::TileMap@{e2XD::std\_addon::TileMap}!TileMap@{TileMap}}
+\index{TileMap@{TileMap}!e2XD::std\_addon::TileMap@{e2XD::std\_addon::TileMap}}
+\doxysubsubsection{\texorpdfstring{TileMap()}{TileMap()}}
+{\footnotesize\ttfamily e2\+XD\+::std\+\_\+addon\+::\+Tile\+Map\+::\+Tile\+Map (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classe2XD_1_1std__addon_1_1TileSet}{Tile\+Set}} \&}]{tile\+Set }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+\Hypertarget{classe2XD_1_1std__addon_1_1TileMap_a58619168000d93b06406cffb1fe038c2}\label{classe2XD_1_1std__addon_1_1TileMap_a58619168000d93b06406cffb1fe038c2} 
+\index{e2XD::std\_addon::TileMap@{e2XD::std\_addon::TileMap}!````~TileMap@{\texorpdfstring{$\sim$}{\string~}TileMap}}
+\index{````~TileMap@{\texorpdfstring{$\sim$}{\string~}TileMap}!e2XD::std\_addon::TileMap@{e2XD::std\_addon::TileMap}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}TileMap()}{\string~TileMap()}}
+{\footnotesize\ttfamily e2\+XD\+::std\+\_\+addon\+::\+Tile\+Map\+::\texorpdfstring{$\sim$}{\string~}\+Tile\+Map (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classe2XD_1_1std__addon_1_1TileMap_ad4d461fb3cfc3c4f247e5853a16e4345}\label{classe2XD_1_1std__addon_1_1TileMap_ad4d461fb3cfc3c4f247e5853a16e4345} 
+\index{e2XD::std\_addon::TileMap@{e2XD::std\_addon::TileMap}!getTile@{getTile}}
+\index{getTile@{getTile}!e2XD::std\_addon::TileMap@{e2XD::std\_addon::TileMap}}
+\doxysubsubsection{\texorpdfstring{getTile()}{getTile()}}
+{\footnotesize\ttfamily const Tile\+Map\+::\+Tile\+IdT \& e2\+XD\+::std\+\_\+addon\+::\+Tile\+Map\+::get\+Tile (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption}) const}
+
+Get the tile ID at the specified tile coordinates. Tile coördinates can be negative and are grid positions, not world positions. 
+\begin{DoxyParams}{Parameters}
+{\em x} & Tile X coordinate. \\
+\hline
+{\em y} & Tile Y coordinate. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The tile ID at the specified coordinates. 
+\end{DoxyReturn}
+\Hypertarget{classe2XD_1_1std__addon_1_1TileMap_a0345809c34c798ae9aa09450edb91163}\label{classe2XD_1_1std__addon_1_1TileMap_a0345809c34c798ae9aa09450edb91163} 
+\index{e2XD::std\_addon::TileMap@{e2XD::std\_addon::TileMap}!getTileSize@{getTileSize}}
+\index{getTileSize@{getTileSize}!e2XD::std\_addon::TileMap@{e2XD::std\_addon::TileMap}}
+\doxysubsubsection{\texorpdfstring{getTileSize()}{getTileSize()}}
+{\footnotesize\ttfamily Tile\+Map\+::\+Tile\+SizeT e2\+XD\+::std\+\_\+addon\+::\+Tile\+Map\+::get\+Tile\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Get the size of each tile in pixels. \begin{DoxyReturn}{Returns}
+The size of each tile in pixels. 
+\end{DoxyReturn}
+\Hypertarget{classe2XD_1_1std__addon_1_1TileMap_a096fac2cdd0b12dcec6ca1d88d148d9f}\label{classe2XD_1_1std__addon_1_1TileMap_a096fac2cdd0b12dcec6ca1d88d148d9f} 
+\index{e2XD::std\_addon::TileMap@{e2XD::std\_addon::TileMap}!onDraw@{onDraw}}
+\index{onDraw@{onDraw}!e2XD::std\_addon::TileMap@{e2XD::std\_addon::TileMap}}
+\doxysubsubsection{\texorpdfstring{onDraw()}{onDraw()}}
+{\footnotesize\ttfamily void e2\+XD\+::std\+\_\+addon\+::\+Tile\+Map\+::on\+Draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+Draws the visible chunks of the tile map. 
+
+Reimplemented from \mbox{\hyperlink{classe2XD_1_1framework_1_1Renderable_a4816842499b76973a9428104f32e5ec5}{e2\+XD\+::framework\+::\+Renderable}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classe2XD_1_1std__addon_1_1TileMap_a096fac2cdd0b12dcec6ca1d88d148d9f_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classe2XD_1_1std__addon_1_1TileMap_a2d4d48d59003d98164f957ceb9e491d8}\label{classe2XD_1_1std__addon_1_1TileMap_a2d4d48d59003d98164f957ceb9e491d8} 
+\index{e2XD::std\_addon::TileMap@{e2XD::std\_addon::TileMap}!setTile@{setTile}}
+\index{setTile@{setTile}!e2XD::std\_addon::TileMap@{e2XD::std\_addon::TileMap}}
+\doxysubsubsection{\texorpdfstring{setTile()}{setTile()}}
+{\footnotesize\ttfamily void e2\+XD\+::std\+\_\+addon\+::\+Tile\+Map\+::set\+Tile (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{Tile\+IdT}]{tile\+Id }\end{DoxyParamCaption})}
+
+Set the tile ID at the specified tile coordinates. Tile coördinates can be negative and are grid positions, not world positions. 
+\begin{DoxyParams}{Parameters}
+{\em x} & Tile X coordinate. \\
+\hline
+{\em y} & Tile Y coordinate. \\
+\hline
+{\em tile\+Id} & The tile ID to set. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classe2XD_1_1std__addon_1_1TileMap_a31766b1488bdd556e93201cd9c2697ab}\label{classe2XD_1_1std__addon_1_1TileMap_a31766b1488bdd556e93201cd9c2697ab} 
+\index{e2XD::std\_addon::TileMap@{e2XD::std\_addon::TileMap}!setTileSize@{setTileSize}}
+\index{setTileSize@{setTileSize}!e2XD::std\_addon::TileMap@{e2XD::std\_addon::TileMap}}
+\doxysubsubsection{\texorpdfstring{setTileSize()}{setTileSize()}}
+{\footnotesize\ttfamily void e2\+XD\+::std\+\_\+addon\+::\+Tile\+Map\+::set\+Tile\+Size (\begin{DoxyParamCaption}\item[{Tile\+SizeT}]{size }\end{DoxyParamCaption})}
+
+Set the size of each tile in pixels. 
+\begin{DoxyParams}{Parameters}
+{\em size} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Friends And Related Symbol Documentation}
+\Hypertarget{classe2XD_1_1std__addon_1_1TileMap_a6c3cb36e0114265b00f20550ae15d3a1}\label{classe2XD_1_1std__addon_1_1TileMap_a6c3cb36e0114265b00f20550ae15d3a1} 
+\index{e2XD::std\_addon::TileMap@{e2XD::std\_addon::TileMap}!internal::TileMapRenderable@{internal::TileMapRenderable}}
+\index{internal::TileMapRenderable@{internal::TileMapRenderable}!e2XD::std\_addon::TileMap@{e2XD::std\_addon::TileMap}}
+\doxysubsubsection{\texorpdfstring{internal::TileMapRenderable}{internal::TileMapRenderable}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{classe2XD_1_1std__addon_1_1internal_1_1TileMapRenderable}{internal\+::\+Tile\+Map\+Renderable}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+addons/std-\/addon/include/2\+XD2/std\+\_\+addon/tiles/\mbox{\hyperlink{TileMap_8h}{Tile\+Map.\+h}}\item 
+addons/std-\/addon/src/tiles/\mbox{\hyperlink{TileMap_8cpp}{Tile\+Map.\+cpp}}\end{DoxyCompactItemize}

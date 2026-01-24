@@ -9,10 +9,14 @@ var searchData=
   ['e2xd_3a_3aframework_3a_3aisnode_6',['IsNode',['../concepte2XD_1_1framework_1_1IsNode.html',1,'e2XD::framework']]],
   ['e2xd_3a_3aframework_3a_3aisscene_7',['IsScene',['../concepte2XD_1_1framework_1_1IsScene.html',1,'e2XD::framework']]],
   ['e2xd_3a_3arenderer_8',['renderer',['../namespacee2XD_1_1renderer.html',1,'e2XD']]],
-  ['e2xd_3a_3astd_5faddon_9',['std_addon',['../namespacee2XD_1_1std__addon.html',1,'e2XD']]],
-  ['emit_10',['emit',['../classe2XD_1_1framework_1_1Signal.html#a7325faa48e2cc8d344fa10d7a3feb98a',1,'e2XD::framework::Signal']]],
-  ['engine_11',['engine',['../index.html',1,'2XD2-Engine'],['../md_GettingStarted.html',1,'Getting Started with 2XD2-Engine']]],
-  ['esc_12',['ESC',['../Key_8h.html#ab3c7af4820830f9166ede9e5623c4e73a6351aefd1e5e1b62c76f8580116964be',1,'Key.h']]],
-  ['exception_13',['exception',['../classe2XD_1_1core_1_1Exception.html',1,'e2XD::core::Exception'],['../classe2XD_1_1core_1_1Exception.html#afaad72e096c17c22c220de1e703627b8',1,'e2XD::core::Exception::Exception()']]],
-  ['exception_2eh_14',['Exception.h',['../Exception_8h.html',1,'']]]
+  ['e2xd_3a_3arenderer_3a_3ainternal_9',['internal',['../namespacee2XD_1_1renderer_1_1internal.html',1,'e2XD::renderer']]],
+  ['e2xd_3a_3astd_5faddon_10',['std_addon',['../namespacee2XD_1_1std__addon.html',1,'e2XD']]],
+  ['e2xd_3a_3astd_5faddon_3a_3ainternal_11',['internal',['../namespacee2XD_1_1std__addon_1_1internal.html',1,'e2XD::std_addon']]],
+  ['emit_12',['emit',['../classe2XD_1_1framework_1_1Signal.html#a7325faa48e2cc8d344fa10d7a3feb98a',1,'e2XD::framework::Signal']]],
+  ['enablevsync_13',['enableVSync',['../classe2XD_1_1framework_1_1Game.html#a9d7fa311b41227cfab9267c71fdea508',1,'e2XD::framework::Game']]],
+  ['engine_14',['engine',['../index.html',1,'2XD2-Engine'],['../md_GettingStarted.html',1,'Getting Started with 2XD2-Engine']]],
+  ['esc_15',['ESC',['../Key_8h.html#ab3c7af4820830f9166ede9e5623c4e73a6351aefd1e5e1b62c76f8580116964be',1,'Key.h']]],
+  ['exception_16',['exception',['../classe2XD_1_1core_1_1Exception.html',1,'e2XD::core::Exception'],['../classe2XD_1_1core_1_1Exception.html#afaad72e096c17c22c220de1e703627b8',1,'e2XD::core::Exception::Exception()']]],
+  ['exception_2eh_17',['Exception.h',['../Exception_8h.html',1,'']]],
+  ['expand_18',['Expand',['../namespacee2XD_1_1renderer.html#a759edd8f84d4cd8d0ff76b633dbc4662a8098b34f582537833b36b58273c3545b',1,'e2XD::renderer']]]
 ];

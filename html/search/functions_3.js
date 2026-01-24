@@ -1,8 +1,11 @@
 var searchData=
 [
-  ['defaultrenderer_0',['DefaultRenderer',['../classe2XD_1_1renderer_1_1DefaultRenderer.html#afbdc71a30936215cf9a6d9d31598ebaa',1,'e2XD::renderer::DefaultRenderer']]],
-  ['destroy_1',['destroy',['../classe2XD_1_1framework_1_1Node.html#a7831b27923edd33f0545eb56208d4631',1,'e2XD::framework::Node']]],
-  ['disconnect_2',['disconnect',['../classe2XD_1_1framework_1_1Signal.html#af0f16ede4795e13ed5855621af23b442',1,'e2XD::framework::Signal']]],
-  ['dot_3',['dot',['../structe2XD_1_1core_1_1Vec2.html#a89385edd556a344ac53268e81f2e1685',1,'e2XD::core::Vec2']]],
-  ['draw_4',['draw',['../classe2XD_1_1framework_1_1Renderable.html#a8e7d1036e4bc4d1f60a639fdd1cbaee1',1,'e2XD::framework::Renderable']]]
+  ['debugrendertarget_0',['DebugRenderTarget',['../classe2XD_1_1renderer_1_1DebugRenderTarget.html#af1faa1fff107de44287ee75a84882771',1,'e2XD::renderer::DebugRenderTarget']]],
+  ['defaultdebugrenderer_1',['DefaultDebugRenderer',['../classe2XD_1_1renderer_1_1DefaultDebugRenderer.html#a7b8130ba3d8b78c5152d118fff3ac963',1,'e2XD::renderer::DefaultDebugRenderer']]],
+  ['defaultrenderer_2',['DefaultRenderer',['../classe2XD_1_1renderer_1_1DefaultRenderer.html#afbdc71a30936215cf9a6d9d31598ebaa',1,'e2XD::renderer::DefaultRenderer']]],
+  ['destroy_3',['destroy',['../classe2XD_1_1framework_1_1Node.html#a7831b27923edd33f0545eb56208d4631',1,'e2XD::framework::Node']]],
+  ['disablevsync_4',['disableVSync',['../classe2XD_1_1framework_1_1Game.html#aa69efc79266b88d0544d21c4010cabbb',1,'e2XD::framework::Game']]],
+  ['disconnect_5',['disconnect',['../classe2XD_1_1framework_1_1Signal.html#af0f16ede4795e13ed5855621af23b442',1,'e2XD::framework::Signal']]],
+  ['dot_6',['dot',['../structe2XD_1_1core_1_1Vec2.html#a89385edd556a344ac53268e81f2e1685',1,'e2XD::core::Vec2']]],
+  ['draw_7',['draw',['../classe2XD_1_1std__addon_1_1internal_1_1TileMapRenderable.html#ab2729d7642282541a63cba25efc999e5',1,'e2XD::std_addon::internal::TileMapRenderable::draw()'],['../classe2XD_1_1std__addon_1_1TextRenderable.html#a61d4c233ed5004fba1f8b6ca3db4140d',1,'e2XD::std_addon::TextRenderable::draw()'],['../classe2XD_1_1std__addon_1_1SpriteRenderable.html#ad9acf175c5053d7bc76b09ca9285afad',1,'e2XD::std_addon::SpriteRenderable::draw()'],['../classe2XD_1_1std__addon_1_1RectangleRenderable.html#a89bbe2a78770ccfaea4d88e9fddffeca',1,'e2XD::std_addon::RectangleRenderable::draw()'],['../classe2XD_1_1std__addon_1_1CircleRenderable.html#a5dad60f21ad3cf82654d640454d5addd',1,'e2XD::std_addon::CircleRenderable::draw()'],['../classe2XD_1_1renderer_1_1IRenderTarget.html#ac03071abf0a4d0f2b307e1d6dce237f8',1,'e2XD::renderer::IRenderTarget::draw()'],['../classe2XD_1_1renderer_1_1IRenderable.html#a3e33b6b8b3bada5dade0a8905de1f537',1,'e2XD::renderer::IRenderable::draw()'],['../classe2XD_1_1renderer_1_1DefaultRenderer_1_1RenderTarget.html#a2a1a1bb1d2f37813ff0df9b9017b23ef',1,'e2XD::renderer::DefaultRenderer::RenderTarget::draw()'],['../classe2XD_1_1renderer_1_1DebugRenderTarget.html#ad267d09d2d3a983c924991ccfa9149eb',1,'e2XD::renderer::DebugRenderTarget::draw()'],['../classe2XD_1_1framework_1_1Renderable.html#a8e7d1036e4bc4d1f60a639fdd1cbaee1',1,'e2XD::framework::Renderable::draw()']]]
 ];

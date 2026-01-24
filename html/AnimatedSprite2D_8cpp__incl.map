@@ -1,52 +1,9 @@
-<map id="addons/std&#45;addon/src/AnimatedSprite2D.cpp" name="addons/std&#45;addon/src/AnimatedSprite2D.cpp">
-<area shape="rect" id="Node000001" title=" " alt="" coords="615,5,770,46"/>
-<area shape="rect" id="Node000002" href="$AnimatedSprite2D_8h.html" title=" " alt="" coords="464,94,700,120"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="667,49,613,87,610,82,663,44"/>
-<area shape="rect" id="Node000022" href="$Time_8h.html" title=" " alt="" coords="724,94,885,120"/>
-<area shape="poly" id="edge26_Node000001_Node000022" title=" " alt="" coords="722,44,776,82,773,87,718,49"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="667,264,777,290"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="625,118,664,136,683,150,698,166,710,186,718,207,724,248,719,249,712,208,705,188,694,169,679,154,661,141,623,123"/>
-<area shape="rect" id="Node000004" href="$Sprite2D_8h.html" title=" " alt="" coords="300,175,381,201"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="545,123,392,173,391,167,544,118"/>
-<area shape="rect" id="Node000019" href="$Animation_8h.html" title=" " alt="" coords="470,256,643,297"/>
-<area shape="poly" id="edge20_Node000002_Node000019" title=" " alt="" coords="553,122,523,141,509,154,499,169,494,188,499,207,510,226,524,244,520,247,505,229,494,209,489,188,494,167,505,150,519,137,550,118"/>
-<area shape="rect" id="Node000021" href="$AnimationMap_8h.html" title=" " alt="" coords="509,168,684,208"/>
-<area shape="poly" id="edge23_Node000002_Node000021" title=" " alt="" coords="587,120,593,152,587,153,581,121"/>
-<area shape="rect" id="Node000005" title=" " alt="" coords="253,264,428,290"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="343,201,343,248,338,248,338,201"/>
-<area shape="rect" id="Node000006" href="$Node2D_8h.html" title=" " alt="" coords="52,256,210,297"/>
-<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="312,204,193,253,191,248,310,199"/>
-<area shape="rect" id="Node000007" href="$Node_8h.html" title=" " alt="" coords="231,345,388,386"/>
-<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="173,295,257,336,255,340,170,300"/>
-<area shape="rect" id="Node000015" href="$Transform2D_8h.html" title=" " alt="" coords="36,353,207,378"/>
-<area shape="poly" id="edge15_Node000006_Node000015" title=" " alt="" coords="132,298,127,337,122,337,126,297"/>
-<area shape="rect" id="Node000016" href="$Vec2f_8h.html" title=" " alt="" coords="10,441,76,467"/>
-<area shape="poly" id="edge19_Node000006_Node000016" title=" " alt="" coords="80,300,50,319,27,346,20,366,21,387,32,427,27,428,15,388,15,365,22,344,47,315,78,295"/>
-<area shape="poly" id="edge9_Node000007_Node000007" title=" " alt="" coords="390,347,407,353,415,365,412,374,405,379,402,375,408,370,410,366,404,357,388,352"/>
-<area shape="rect" id="Node000008" title=" " alt="" coords="100,441,138,467"/>
-<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="260,389,153,436,151,431,257,384"/>
-<area shape="rect" id="Node000009" title=" " alt="" coords="163,441,230,467"/>
-<area shape="poly" id="edge8_Node000007_Node000009" title=" " alt="" coords="286,388,226,434,222,430,282,384"/>
-<area shape="rect" id="Node000010" title=" " alt="" coords="254,441,336,467"/>
-<area shape="poly" id="edge10_Node000007_Node000010" title=" " alt="" coords="309,387,302,426,297,425,304,386"/>
-<area shape="rect" id="Node000011" href="$ProcessMode_8h.html" title=" " alt="" coords="359,441,471,467"/>
-<area shape="poly" id="edge11_Node000007_Node000011" title=" " alt="" coords="335,384,390,429,387,433,332,388"/>
-<area shape="rect" id="Node000012" href="$Renderable_8h.html" title=" " alt="" coords="495,434,663,474"/>
-<area shape="poly" id="edge12_Node000007_Node000012" title=" " alt="" coords="372,384,504,426,503,431,370,389"/>
-<area shape="rect" id="Node000013" href="$RenderLayer_8h.html" title=" " alt="" coords="471,522,663,548"/>
-<area shape="poly" id="edge13_Node000012_Node000013" title=" " alt="" coords="579,475,574,507,569,506,573,474"/>
-<area shape="rect" id="Node000014" title=" " alt="" coords="605,596,662,622"/>
-<area shape="poly" id="edge14_Node000013_Node000014" title=" " alt="" coords="580,546,614,583,610,586,576,550"/>
-<area shape="poly" id="edge16_Node000015_Node000016" title=" " alt="" coords="113,380,66,432,62,428,109,377"/>
-<area shape="rect" id="Node000017" href="$Vec2_8hpp.html" title=" " alt="" coords="5,522,81,548"/>
-<area shape="poly" id="edge17_Node000016_Node000017" title=" " alt="" coords="46,467,46,506,40,506,40,467"/>
-<area shape="rect" id="Node000018" title=" " alt="" coords="14,596,72,622"/>
-<area shape="poly" id="edge18_Node000017_Node000018" title=" " alt="" coords="46,548,46,580,40,580,40,548"/>
-<area shape="poly" id="edge21_Node000019_Node000014" title=" " alt="" coords="605,295,636,316,663,343,690,396,699,442,694,491,678,549,669,568,657,585,653,582,664,566,672,547,688,490,694,443,685,397,658,347,633,320,602,300"/>
-<area shape="rect" id="Node000020" title=" " alt="" coords="464,353,649,378"/>
-<area shape="poly" id="edge22_Node000019_Node000020" title=" " alt="" coords="559,298,559,337,554,337,554,298"/>
-<area shape="poly" id="edge24_Node000021_Node000003" title=" " alt="" coords="626,207,693,253,690,257,623,211"/>
-<area shape="poly" id="edge25_Node000021_Node000019" title=" " alt="" coords="590,210,574,243,569,241,585,208"/>
-<area shape="rect" id="Node000023" title=" " alt="" coords="774,175,835,201"/>
-<area shape="poly" id="edge27_Node000022_Node000023" title=" " alt="" coords="807,120,807,159,802,159,802,120"/>
+<map id="addons/std&#45;addon/src/nodes/AnimatedSprite2D.cpp" name="addons/std&#45;addon/src/nodes/AnimatedSprite2D.cpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="127,5,321,46"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,94,227,135"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="201,49,154,86,151,82,198,44"/>
+<area shape="rect" id="Node000003" href="$Time_8h.html" title=" " alt="" coords="251,102,413,127"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="250,44,307,90,304,94,247,49"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="302,183,362,208"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="335,128,335,167,329,167,329,128"/>
 </map>

@@ -1,39 +1,43 @@
 \doxysection{Collision\+Rect2\+D.\+h}
-\hypertarget{CollisionRect2D_8h_source}{}\label{CollisionRect2D_8h_source}\index{addons/std-\/addon/include/2XD2/std\_addon/CollisionRect2D.h@{addons/std-\/addon/include/2XD2/std\_addon/CollisionRect2D.h}}
+\hypertarget{CollisionRect2D_8h_source}{}\label{CollisionRect2D_8h_source}\index{addons/std-\/addon/include/2XD2/std\_addon/nodes/CollisionRect2D.h@{addons/std-\/addon/include/2XD2/std\_addon/nodes/CollisionRect2D.h}}
 \mbox{\hyperlink{CollisionRect2D_8h}{Go to the documentation of this file.}}
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00001\ \textcolor{comment}{//}}
-\DoxyCodeLine{00002\ \textcolor{comment}{//\ Created\ by\ rune-\/suy\ on\ 12/29/25.}}
+\DoxyCodeLine{00001\ \textcolor{comment}{//\ Copyright\ (c)\ 2026\ Rune\ Suy\ and\ the\ 2XD2-\/Engine\ contributors.}}
+\DoxyCodeLine{00002\ \textcolor{comment}{//\ Licensed\ under\ the\ MIT\ License.}}
 \DoxyCodeLine{00003\ \textcolor{comment}{//}}
 \DoxyCodeLine{00004\ }
-\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#ifndef\ INC\_2XD2\_ENGINE\_COLLISIONRECT2D\_H}}
-\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#define\ INC\_2XD2\_ENGINE\_COLLISIONRECT2D\_H}}
-\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <SFML/Graphics/Rect.hpp>}}
+\DoxyCodeLine{00005\ \textcolor{comment}{//}}
+\DoxyCodeLine{00006\ \textcolor{comment}{//\ Created\ by\ rune-\/suy\ on\ 12/29/25.}}
+\DoxyCodeLine{00007\ \textcolor{comment}{//}}
 \DoxyCodeLine{00008\ }
-\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{CollisionBody2D_8h}{2XD2/framework/collisions/CollisionBody2D.h}}"{}}}
-\DoxyCodeLine{00010\ }
-\DoxyCodeLine{00011\ }
-\DoxyCodeLine{00012\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespacee2XD_1_1std__addon}{e2XD::std\_addon}}}
-\DoxyCodeLine{00013\ \{}
-\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{classe2XD_1_1std__addon_1_1CollisionRect2D}{CollisionRect2D}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classe2XD_1_1framework_1_1CollisionBody2D}{framework::CollisionBody2D}}}
-\DoxyCodeLine{00018\ \ \ \ \ \{}
-\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ sf::Rect<float>\ rectangle;}
-\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keyword}{public}:}
-\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classe2XD_1_1std__addon_1_1CollisionRect2D_a4deb0c3c25a570e16b54aff495a1f451}{CollisionRect2D}}()\ =\ \textcolor{keywordflow}{default};}
-\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classe2XD_1_1std__addon_1_1CollisionRect2D_a12d0d98e9cd8de8ed63d4c31917558a4}{\string~CollisionRect2D}}()\ \textcolor{keyword}{override}\ =\ \textcolor{keywordflow}{default};}
-\DoxyCodeLine{00023\ }
-\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classe2XD_1_1std__addon_1_1CollisionRect2D_ab39d17d6f6b46e49ff8f725fe91e9b44}{setWidth}}(\textcolor{keywordtype}{float}\ width);}
-\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classe2XD_1_1std__addon_1_1CollisionRect2D_a788bd6d8c6250794aedc1a763e8f2a48}{setHeight}}(\textcolor{keywordtype}{float}\ height);}
-\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ [[nodiscard]]\ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{classe2XD_1_1std__addon_1_1CollisionRect2D_a2884c6092c83642a0f76b0bd08a43a3c}{getWidth}}()\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ [[nodiscard]]\ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{classe2XD_1_1std__addon_1_1CollisionRect2D_a866b776b5c723df76771461e432520eb}{getHeight}}()\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00028\ }
-\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classe2XD_1_1std__addon_1_1CollisionRect2D_a55865cd8cc2da552691daba3dab41549}{areColliding}}(ICollisionBody*\ other)\ \textcolor{keyword}{const\ override};}
-\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classe2XD_1_1std__addon_1_1CollisionRect2D_aa5c6051a512d966db76f38f411faa13d}{setGlobalPosition}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{structe2XD_1_1core_1_1Vec2}{core::Vec2f}}\&\ position)\ \textcolor{keyword}{override};}
-\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classe2XD_1_1std__addon_1_1CollisionRect2D_ae058d4873bca81c67c1fe54db407b4bf}{setLocalPosition}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{structe2XD_1_1core_1_1Vec2}{core::Vec2f}}\&\ position)\ \textcolor{keyword}{override};}
-\DoxyCodeLine{00032\ \ \ \ \ \};}
-\DoxyCodeLine{00033\ \}\ \textcolor{comment}{//\ std\_addon}}
-\DoxyCodeLine{00034\ \textcolor{comment}{//\ e2XD}}
-\DoxyCodeLine{00035\ }
-\DoxyCodeLine{00036\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//INC\_2XD2\_ENGINE\_COLLISIONRECT2D\_H}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#ifndef\ INC\_2XD2\_ENGINE\_COLLISIONRECT2D\_H}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#define\ INC\_2XD2\_ENGINE\_COLLISIONRECT2D\_H}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <SFML/Graphics/Rect.hpp>}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{CollisionBody2D_8h}{2XD2/framework/collisions/CollisionBody2D.h}}"{}}}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespacee2XD_1_1std__addon}{e2XD::std\_addon}}}
+\DoxyCodeLine{00017\ \{}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{classe2XD_1_1std__addon_1_1CollisionRect2D}{CollisionRect2D}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classe2XD_1_1framework_1_1CollisionBody2D}{framework::CollisionBody2D}}}
+\DoxyCodeLine{00022\ \ \ \ \ \{}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ sf::Rect<float>\ rectangle;}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classe2XD_1_1std__addon_1_1CollisionRect2D_a4deb0c3c25a570e16b54aff495a1f451}{CollisionRect2D}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classe2XD_1_1std__addon_1_1CollisionRect2D_a12d0d98e9cd8de8ed63d4c31917558a4}{\string~CollisionRect2D}}()\ \textcolor{keyword}{override}\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classe2XD_1_1std__addon_1_1CollisionRect2D_ab39d17d6f6b46e49ff8f725fe91e9b44}{setWidth}}(\textcolor{keywordtype}{float}\ width);}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classe2XD_1_1std__addon_1_1CollisionRect2D_a788bd6d8c6250794aedc1a763e8f2a48}{setHeight}}(\textcolor{keywordtype}{float}\ height);}
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ [[nodiscard]]\ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{classe2XD_1_1std__addon_1_1CollisionRect2D_a2884c6092c83642a0f76b0bd08a43a3c}{getWidth}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ [[nodiscard]]\ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{classe2XD_1_1std__addon_1_1CollisionRect2D_a866b776b5c723df76771461e432520eb}{getHeight}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classe2XD_1_1std__addon_1_1CollisionRect2D_a55865cd8cc2da552691daba3dab41549}{areColliding}}(ICollisionBody*\ other)\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classe2XD_1_1std__addon_1_1CollisionRect2D_aa5c6051a512d966db76f38f411faa13d}{setGlobalPosition}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{structe2XD_1_1core_1_1Vec2}{core::Vec2f}}\&\ position)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classe2XD_1_1std__addon_1_1CollisionRect2D_ae058d4873bca81c67c1fe54db407b4bf}{setLocalPosition}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{structe2XD_1_1core_1_1Vec2}{core::Vec2f}}\&\ position)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00036\ \ \ \ \ \};}
+\DoxyCodeLine{00037\ \}\ \textcolor{comment}{//\ std\_addon}}
+\DoxyCodeLine{00038\ \textcolor{comment}{//\ e2XD}}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00040\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//INC\_2XD2\_ENGINE\_COLLISIONRECT2D\_H}}
 
 \end{DoxyCode}

@@ -2,42 +2,46 @@
 \hypertarget{SFMLAnimationManager_8h_source}{}\label{SFMLAnimationManager_8h_source}\index{engine/framework/include/2XD2/framework/resource\_manager/SFMLAnimationManager.h@{engine/framework/include/2XD2/framework/resource\_manager/SFMLAnimationManager.h}}
 \mbox{\hyperlink{SFMLAnimationManager_8h}{Go to the documentation of this file.}}
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00001\ \textcolor{comment}{//}}
-\DoxyCodeLine{00002\ \textcolor{comment}{//\ Created\ by\ rune-\/suy\ on\ 12/18/25.}}
+\DoxyCodeLine{00001\ \textcolor{comment}{//\ Copyright\ (c)\ 2026\ Rune\ Suy\ and\ the\ 2XD2-\/Engine\ contributors.}}
+\DoxyCodeLine{00002\ \textcolor{comment}{//\ Licensed\ under\ the\ MIT\ License.}}
 \DoxyCodeLine{00003\ \textcolor{comment}{//}}
 \DoxyCodeLine{00004\ }
-\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#ifndef\ FLATLAND\_ANIMATIONMANAGER\_H}}
-\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#define\ FLATLAND\_ANIMATIONMANAGER\_H}}
-\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <set>}}
-\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <string>}}
-\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <unordered\_map>}}
-\DoxyCodeLine{00010\ }
-\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{IAnimationManager_8h}{IAnimationManager.h}}"{}}}
-\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{AnimationMap_8h}{AnimationMap.h}}"{}}}
-\DoxyCodeLine{00013\ }
-\DoxyCodeLine{00014\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespacee2XD_1_1framework}{e2XD::framework}}}
-\DoxyCodeLine{00015\ \{}
-\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{classe2XD_1_1framework_1_1SFMLAnimationManager}{SFMLAnimationManager}}\ final\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classe2XD_1_1framework_1_1IAnimationManager}{IAnimationManager}}}
-\DoxyCodeLine{00020\ \ \ \ \ \{}
-\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ std::unordered\_map<std::string,\ AnimationMap>\ loadedAnimationMaps;}
-\DoxyCodeLine{00022\ }
-\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ std::set<std::string>\ loadedFiles;}
-\DoxyCodeLine{00024\ }
-\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keyword}{public}:}
-\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classe2XD_1_1framework_1_1SFMLAnimationManager_a31358d48a03e64919318020148331c0f}{SFMLAnimationManager}}()\ =\ \textcolor{keywordflow}{default};}
-\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classe2XD_1_1framework_1_1SFMLAnimationManager_a980b8256d0064ad7686a69cd2f3a3833}{\string~SFMLAnimationManager}}()\ \textcolor{keyword}{override}\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00005\ \textcolor{comment}{//}}
+\DoxyCodeLine{00006\ \textcolor{comment}{//\ Created\ by\ rune-\/suy\ on\ 12/18/25.}}
+\DoxyCodeLine{00007\ \textcolor{comment}{//}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#ifndef\ FLATLAND\_ANIMATIONMANAGER\_H}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#define\ FLATLAND\_ANIMATIONMANAGER\_H}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <set>}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ <unordered\_map>}}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{IAnimationManager_8h}{IAnimationManager.h}}"{}}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{AnimationMap_8h}{AnimationMap.h}}"{}}}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespacee2XD_1_1framework}{e2XD::framework}}}
+\DoxyCodeLine{00019\ \{}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{classe2XD_1_1framework_1_1SFMLAnimationManager}{SFMLAnimationManager}}\ final\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classe2XD_1_1framework_1_1IAnimationManager}{IAnimationManager}}}
+\DoxyCodeLine{00024\ \ \ \ \ \{}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ std::unordered\_map<std::string,\ AnimationMap>\ loadedAnimationMaps;}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ std::set<std::string>\ loadedFiles;}
 \DoxyCodeLine{00028\ }
-\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ [[nodiscard]]\ \textcolor{keyword}{const}\ \mbox{\hyperlink{AnimationMap_8h_a2a59f1490d3e20cda1971a331ebcc0c9}{AnimationMap}}\&\ \mbox{\hyperlink{classe2XD_1_1framework_1_1SFMLAnimationManager_a064664a79c64ffc58756c178507c296a}{getAnimationMap}}(\textcolor{keyword}{const}\ std::string\&\ name)\ \textcolor{keyword}{const\ override};}
-\DoxyCodeLine{00030\ }
-\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classe2XD_1_1framework_1_1SFMLAnimationManager_a4a08ac6bd798217b5044083e9b283be0}{loadJsonAnimationConfig}}(\textcolor{keyword}{const}\ std::string\&\ jsonFilePath)\ \textcolor{keyword}{override};}
-\DoxyCodeLine{00058\ }
-\DoxyCodeLine{00059\ }
-\DoxyCodeLine{00060\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classe2XD_1_1framework_1_1SFMLAnimationManager_ad393b01f1c794107680efb19b91a07b9}{isJsonAnimationLoaded}}(\textcolor{keyword}{const}\ std::string\&\ jsonFilePath)\ \textcolor{keyword}{const\ override};}
-\DoxyCodeLine{00061\ }
-\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classe2XD_1_1framework_1_1SFMLAnimationManager_a09337030a5a54ecbc7440a73ad08f040}{loadJsonAnimationConfigIfNotLoaded}}(\textcolor{keyword}{const}\ std::string\&\ jsonFilePath)\ \textcolor{keyword}{override};}
-\DoxyCodeLine{00063\ \ \ \ \ \};}
-\DoxyCodeLine{00064\ \}}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classe2XD_1_1framework_1_1SFMLAnimationManager_a31358d48a03e64919318020148331c0f}{SFMLAnimationManager}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classe2XD_1_1framework_1_1SFMLAnimationManager_a980b8256d0064ad7686a69cd2f3a3833}{\string~SFMLAnimationManager}}()\ \textcolor{keyword}{override}\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ [[nodiscard]]\ \textcolor{keyword}{const}\ \mbox{\hyperlink{AnimationMap_8h_a2a59f1490d3e20cda1971a331ebcc0c9}{AnimationMap}}\&\ \mbox{\hyperlink{classe2XD_1_1framework_1_1SFMLAnimationManager_a064664a79c64ffc58756c178507c296a}{getAnimationMap}}(\textcolor{keyword}{const}\ std::string\&\ name)\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classe2XD_1_1framework_1_1SFMLAnimationManager_a4a08ac6bd798217b5044083e9b283be0}{loadJsonAnimationConfig}}(\textcolor{keyword}{const}\ std::string\&\ jsonFilePath)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00063\ }
+\DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classe2XD_1_1framework_1_1SFMLAnimationManager_ad393b01f1c794107680efb19b91a07b9}{isJsonAnimationLoaded}}(\textcolor{keyword}{const}\ std::string\&\ jsonFilePath)\ \textcolor{keyword}{const\ override};}
 \DoxyCodeLine{00065\ }
-\DoxyCodeLine{00066\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//FLATLAND\_ANIMATIONMANAGER\_H}}
+\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classe2XD_1_1framework_1_1SFMLAnimationManager_a09337030a5a54ecbc7440a73ad08f040}{loadJsonAnimationConfigIfNotLoaded}}(\textcolor{keyword}{const}\ std::string\&\ jsonFilePath)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00067\ \ \ \ \ \};}
+\DoxyCodeLine{00068\ \}}
+\DoxyCodeLine{00069\ }
+\DoxyCodeLine{00070\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//FLATLAND\_ANIMATIONMANAGER\_H}}
 
 \end{DoxyCode}

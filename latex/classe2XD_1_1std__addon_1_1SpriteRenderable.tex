@@ -1,0 +1,95 @@
+\doxysection{e2\+XD\+::std\+\_\+addon\+::Sprite\+Renderable Class Reference}
+\hypertarget{classe2XD_1_1std__addon_1_1SpriteRenderable}{}\label{classe2XD_1_1std__addon_1_1SpriteRenderable}\index{e2XD::std\_addon::SpriteRenderable@{e2XD::std\_addon::SpriteRenderable}}
+
+
+{\ttfamily \#include $<$Sprite\+Renderable.\+h$>$}
+
+
+
+Inheritance diagram for e2\+XD\+::std\+\_\+addon\+::Sprite\+Renderable\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=248pt]{classe2XD_1_1std__addon_1_1SpriteRenderable__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for e2\+XD\+::std\+\_\+addon\+::Sprite\+Renderable\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=248pt]{classe2XD_1_1std__addon_1_1SpriteRenderable__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classe2XD_1_1std__addon_1_1SpriteRenderable_af6075843cc56da532ea5db12a3626c27}{Sprite\+Renderable}} ()
+\item 
+void \mbox{\hyperlink{classe2XD_1_1std__addon_1_1SpriteRenderable_ad9acf175c5053d7bc76b09ca9285afad}{draw}} (\mbox{\hyperlink{classe2XD_1_1renderer_1_1IRenderTarget}{renderer\+::\+IRender\+Target}} \&render\+Target) const override
+\item 
+virtual void \mbox{\hyperlink{classe2XD_1_1std__addon_1_1SpriteRenderable_a8fc3ded3400cfb221964e71a86504094}{set\+Texture}} (const Texture\+Type \&texture)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classe2XD_1_1renderer_1_1IRenderable}{e2\+XD\+::renderer\+::\+IRenderable}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classe2XD_1_1renderer_1_1IRenderable_a5b63dc17657d7dce355756c213185e71}{\texorpdfstring{$\sim$}{\string~}\+IRenderable}} ()=default
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A renderable capable of displaying a 2D sprite. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classe2XD_1_1std__addon_1_1SpriteRenderable_af6075843cc56da532ea5db12a3626c27}\label{classe2XD_1_1std__addon_1_1SpriteRenderable_af6075843cc56da532ea5db12a3626c27} 
+\index{e2XD::std\_addon::SpriteRenderable@{e2XD::std\_addon::SpriteRenderable}!SpriteRenderable@{SpriteRenderable}}
+\index{SpriteRenderable@{SpriteRenderable}!e2XD::std\_addon::SpriteRenderable@{e2XD::std\_addon::SpriteRenderable}}
+\doxysubsubsection{\texorpdfstring{SpriteRenderable()}{SpriteRenderable()}}
+{\footnotesize\ttfamily e2\+XD\+::std\+\_\+addon\+::\+Sprite\+Renderable\+::\+Sprite\+Renderable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classe2XD_1_1std__addon_1_1SpriteRenderable_ad9acf175c5053d7bc76b09ca9285afad}\label{classe2XD_1_1std__addon_1_1SpriteRenderable_ad9acf175c5053d7bc76b09ca9285afad} 
+\index{e2XD::std\_addon::SpriteRenderable@{e2XD::std\_addon::SpriteRenderable}!draw@{draw}}
+\index{draw@{draw}!e2XD::std\_addon::SpriteRenderable@{e2XD::std\_addon::SpriteRenderable}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void e2\+XD\+::std\+\_\+addon\+::\+Sprite\+Renderable\+::draw (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classe2XD_1_1renderer_1_1IRenderTarget}{renderer\+::\+IRender\+Target}} \&}]{render\+Target }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Draw the object onto the given render target. Executed by the Renderer on the exact moment of rendering the object. 
+\begin{DoxyParams}{Parameters}
+{\em render\+Target} & Render target to draw onto. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classe2XD_1_1renderer_1_1IRenderable_a3e33b6b8b3bada5dade0a8905de1f537}{e2\+XD\+::renderer\+::\+IRenderable}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classe2XD_1_1std__addon_1_1SpriteRenderable_ad9acf175c5053d7bc76b09ca9285afad_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classe2XD_1_1std__addon_1_1SpriteRenderable_a8fc3ded3400cfb221964e71a86504094}\label{classe2XD_1_1std__addon_1_1SpriteRenderable_a8fc3ded3400cfb221964e71a86504094} 
+\index{e2XD::std\_addon::SpriteRenderable@{e2XD::std\_addon::SpriteRenderable}!setTexture@{setTexture}}
+\index{setTexture@{setTexture}!e2XD::std\_addon::SpriteRenderable@{e2XD::std\_addon::SpriteRenderable}}
+\doxysubsubsection{\texorpdfstring{setTexture()}{setTexture()}}
+{\footnotesize\ttfamily void e2\+XD\+::std\+\_\+addon\+::\+Sprite\+Renderable\+::set\+Texture (\begin{DoxyParamCaption}\item[{const Texture\+Type \&}]{texture }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Set the texture of the sprite directly. 
+\begin{DoxyParams}{Parameters}
+{\em texture} & sf\+::\+Texture that must exist as long as the sprite uses it. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+addons/std-\/addon/include/2\+XD2/std\+\_\+addon/renderables/\mbox{\hyperlink{SpriteRenderable_8h}{Sprite\+Renderable.\+h}}\item 
+addons/std-\/addon/src/renderables/\mbox{\hyperlink{SpriteRenderable_8cpp}{Sprite\+Renderable.\+cpp}}\end{DoxyCompactItemize}

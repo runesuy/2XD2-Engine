@@ -89,6 +89,8 @@ Inheritance diagram for e2XD::renderer::IRenderer:</div>
 <area shape="rect" title=" " alt="" coords="24,5,192,31"/>
 <area shape="rect" href="classe2XD_1_1renderer_1_1DefaultRenderer.html" title=" " alt="" coords="5,79,211,105"/>
 <area shape="poly" title=" " alt="" coords="111,46,111,79,105,79,105,46"/>
+<area shape="rect" href="classe2XD_1_1renderer_1_1DefaultDebugRenderer.html" title=" " alt="" coords="13,153,203,193"/>
+<area shape="poly" title=" " alt="" coords="111,120,111,152,105,152,105,120"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -102,12 +104,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:af8e84be1f3d73aaf0511ff458a91e659"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af32d8921a875a56ae0efabf19f3d14a0" id="r_af32d8921a875a56ae0efabf19f3d14a0"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classe2XD_1_1renderer_1_1IRenderer.html#af32d8921a875a56ae0efabf19f3d14a0">submit</a> (const <a class="el" href="structe2XD_1_1renderer_1_1RenderCommand.html">RenderCommand</a> &amp;renderCommand)=0</td></tr>
 <tr class="separator:af32d8921a875a56ae0efabf19f3d14a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9418ea8644de80fd30b887e87ddae15a" id="r_a9418ea8644de80fd30b887e87ddae15a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classe2XD_1_1renderer_1_1IRenderer.html#a9418ea8644de80fd30b887e87ddae15a">flush</a> (const <a class="el" href="namespacee2XD_1_1core.html#a64915d4955e6ed3347eb48450b60d026">core::Vec2f</a> &amp;cameraPosition, float cameraZoom)=0</td></tr>
-<tr class="separator:a9418ea8644de80fd30b887e87ddae15a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a731231c9334b938f7593a4221d5aef9e" id="r_a731231c9334b938f7593a4221d5aef9e"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="structe2XD_1_1core_1_1Vec2.html">core::Vec2</a>&lt; unsigned int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classe2XD_1_1renderer_1_1IRenderer.html#a731231c9334b938f7593a4221d5aef9e">getWindowSize</a> () const =0</td></tr>
-<tr class="separator:a731231c9334b938f7593a4221d5aef9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaf399b6866e2147fb85c7d11a0b33c96" id="r_aaf399b6866e2147fb85c7d11a0b33c96"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classe2XD_1_1renderer_1_1IRenderer.html#aaf399b6866e2147fb85c7d11a0b33c96">setWindowView</a> (<a class="el" href="RenderLayer_8h.html#ad16d91520dd8dbd7a2178564fce5a168">RenderLayer</a>, const <a class="el" href="namespacee2XD_1_1core.html#a64915d4955e6ed3347eb48450b60d026">core::Vec2f</a> &amp;)=0</td></tr>
-<tr class="separator:aaf399b6866e2147fb85c7d11a0b33c96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6aaf05070212d57dfd8457c7aaa6b85" id="r_af6aaf05070212d57dfd8457c7aaa6b85"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classe2XD_1_1renderer_1_1IRenderer.html#af6aaf05070212d57dfd8457c7aaa6b85">flush</a> (const <a class="el" href="namespacee2XD_1_1core.html#a64915d4955e6ed3347eb48450b60d026">core::Vec2f</a> &amp;cameraPosition, const <a class="el" href="namespacee2XD_1_1core.html#a64915d4955e6ed3347eb48450b60d026">core::Vec2f</a> &amp;cameraSize, float cameraZoom)=0</td></tr>
+<tr class="separator:af6aaf05070212d57dfd8457c7aaa6b85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b72d954b08f1c1e6607356a0c5163b4" id="r_a4b72d954b08f1c1e6607356a0c5163b4"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classe2XD_1_1renderer_1_1IRenderer.html#a4b72d954b08f1c1e6607356a0c5163b4">setViewMode</a> (<a class="el" href="RenderLayer_8h.html#ad16d91520dd8dbd7a2178564fce5a168">RenderLayer</a>, <a class="el" href="namespacee2XD_1_1renderer.html#a759edd8f84d4cd8d0ff76b633dbc4662">ViewMode</a> viewMode)=0</td></tr>
+<tr class="separator:a4b72d954b08f1c1e6607356a0c5163b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a9b0dbf7a660afd198571c9d630b2e1c5" name="a9b0dbf7a660afd198571c9d630b2e1c5"></a>
@@ -163,8 +163,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a9418ea8644de80fd30b887e87ddae15a" name="a9418ea8644de80fd30b887e87ddae15a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9418ea8644de80fd30b887e87ddae15a">&#9670;&#160;</a></span>flush()</h2>
+<a id="af6aaf05070212d57dfd8457c7aaa6b85" name="af6aaf05070212d57dfd8457c7aaa6b85"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af6aaf05070212d57dfd8457c7aaa6b85">&#9670;&#160;</a></span>flush()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -177,6 +177,12 @@ Public Member Functions</h2></td></tr>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="namespacee2XD_1_1core.html#a64915d4955e6ed3347eb48450b60d026">core::Vec2f</a> &amp;&#160;</td>
           <td class="paramname"><em>cameraPosition</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="namespacee2XD_1_1core.html#a64915d4955e6ed3347eb48450b60d026">core::Vec2f</a> &amp;&#160;</td>
+          <td class="paramname"><em>cameraSize</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -197,34 +203,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="classe2XD_1_1renderer_1_1DefaultRenderer.html#ae59e6af3ccf2918b408e56d73bf33a41">e2XD::renderer::DefaultRenderer</a>.</p>
-
-</div>
-</div>
-<a id="a731231c9334b938f7593a4221d5aef9e" name="a731231c9334b938f7593a4221d5aef9e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a731231c9334b938f7593a4221d5aef9e">&#9670;&#160;</a></span>getWindowSize()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual <a class="el" href="structe2XD_1_1core_1_1Vec2.html">core::Vec2</a>&lt; unsigned int &gt; e2XD::renderer::IRenderer::getWindowSize </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Implemented in <a class="el" href="classe2XD_1_1renderer_1_1DefaultRenderer.html#a539a3eaeb05250fda35e476fe3b82f99">e2XD::renderer::DefaultRenderer</a>.</p>
+<p>Implemented in <a class="el" href="classe2XD_1_1renderer_1_1DefaultRenderer.html#a5a9c8533ea0e57257c8608e4c902564c">e2XD::renderer::DefaultRenderer</a>.</p>
 
 </div>
 </div>
@@ -252,12 +231,12 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="classe2XD_1_1renderer_1_1DefaultRenderer.html#abc16c8aac9efa10a7b01ba78ab90a8d1">e2XD::renderer::DefaultRenderer</a>.</p>
+<p>Implemented in <a class="el" href="classe2XD_1_1renderer_1_1DefaultDebugRenderer.html#a584f86469e1e335f7e16a584177c7c0e">e2XD::renderer::DefaultDebugRenderer</a>, and <a class="el" href="classe2XD_1_1renderer_1_1DefaultRenderer.html#abc16c8aac9efa10a7b01ba78ab90a8d1">e2XD::renderer::DefaultRenderer</a>.</p>
 
 </div>
 </div>
-<a id="aaf399b6866e2147fb85c7d11a0b33c96" name="aaf399b6866e2147fb85c7d11a0b33c96"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaf399b6866e2147fb85c7d11a0b33c96">&#9670;&#160;</a></span>setWindowView()</h2>
+<a id="a4b72d954b08f1c1e6607356a0c5163b4" name="a4b72d954b08f1c1e6607356a0c5163b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b72d954b08f1c1e6607356a0c5163b4">&#9670;&#160;</a></span>setViewMode()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -266,7 +245,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void e2XD::renderer::IRenderer::setWindowView </td>
+          <td class="memname">virtual void e2XD::renderer::IRenderer::setViewMode </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="RenderLayer_8h.html#ad16d91520dd8dbd7a2178564fce5a168">RenderLayer</a>&#160;</td>
           <td class="paramname">, </td>
@@ -274,8 +253,8 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="namespacee2XD_1_1core.html#a64915d4955e6ed3347eb48450b60d026">core::Vec2f</a> &amp;&#160;</td>
-          <td class="paramname">&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacee2XD_1_1renderer.html#a759edd8f84d4cd8d0ff76b633dbc4662">ViewMode</a>&#160;</td>
+          <td class="paramname"><em>viewMode</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -290,7 +269,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="classe2XD_1_1renderer_1_1DefaultRenderer.html#aed74efbd313b96270a8c3130734d78ee">e2XD::renderer::DefaultRenderer</a>.</p>
+<p>Implemented in <a class="el" href="classe2XD_1_1renderer_1_1DefaultRenderer.html#a153c6d6ddb278e10a6b670514562c68e">e2XD::renderer::DefaultRenderer</a>.</p>
 
 </div>
 </div>

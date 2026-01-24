@@ -1,9 +1,7 @@
-<map id="addons/std&#45;addon/include/2XD2/std_addon/Sprite2D.h" name="addons/std&#45;addon/include/2XD2/std_addon/Sprite2D.h">
-<area shape="rect" id="Node000001" title=" " alt="" coords="141,5,326,46"/>
-<area shape="rect" id="Node000002" href="$AnimatedSprite2D_8h.html" title=" " alt="" coords="5,94,246,135"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="199,58,152,96,148,91,195,54"/>
-<area shape="rect" id="Node000004" href="$Sprite2D_8cpp.html" title=" " alt="" coords="270,94,416,135"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="272,54,320,91,316,96,269,58"/>
-<area shape="rect" id="Node000003" href="$AnimatedSprite2D_8cpp.html" title=" " alt="" coords="48,183,203,223"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="128,150,128,182,123,182,123,150"/>
+<map id="addons/std&#45;addon/include/2XD2/std_addon/nodes/Sprite2D.h" name="addons/std&#45;addon/include/2XD2/std_addon/nodes/Sprite2D.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="106,5,330,46"/>
+<area shape="rect" id="Node000002" href="$AnimatedSprite2D_8h.html" title=" " alt="" coords="5,94,225,150"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="187,59,147,95,143,91,183,55"/>
+<area shape="rect" id="Node000003" href="$TileMap_8cpp.html" title=" " alt="" coords="249,102,395,142"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="252,54,302,99,298,103,249,58"/>
 </map>

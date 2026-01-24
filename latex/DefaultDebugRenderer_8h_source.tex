@@ -1,0 +1,48 @@
+\doxysection{Default\+Debug\+Renderer.\+h}
+\hypertarget{DefaultDebugRenderer_8h_source}{}\label{DefaultDebugRenderer_8h_source}\index{engine/renderer/include/2XD2/renderer/DefaultDebugRenderer.h@{engine/renderer/include/2XD2/renderer/DefaultDebugRenderer.h}}
+\mbox{\hyperlink{DefaultDebugRenderer_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{//}}
+\DoxyCodeLine{00002\ \textcolor{comment}{//\ Created\ by\ rune-\/suy\ on\ 1/21/26.}}
+\DoxyCodeLine{00003\ \textcolor{comment}{//}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#ifndef\ FLATLAND\_DEFAULTDEBUGRENDERER\_H}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#define\ FLATLAND\_DEFAULTDEBUGRENDERER\_H}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{DefaultRenderer_8h}{DefaultRenderer.h}}"{}}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespacee2XD_1_1renderer}{e2XD::renderer}}}
+\DoxyCodeLine{00011\ \{}
+\DoxyCodeLine{00012\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{classe2XD_1_1renderer_1_1DebugRenderTarget}{DebugRenderTarget}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classe2XD_1_1renderer_1_1DefaultRenderer_1_1RenderTarget}{DefaultRenderer::RenderTarget}}}
+\DoxyCodeLine{00013\ \ \ \ \ \{}
+\DoxyCodeLine{00014\ \ \ \ \ \ \ \ \ \textcolor{keyword}{friend}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classe2XD_1_1renderer_1_1DefaultDebugRenderer}{DefaultDebugRenderer}};}
+\DoxyCodeLine{00015\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \_showOrigins\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{constexpr}\ \textcolor{keywordtype}{float}\ ORIGIN\_MARKER\_RADIUS\ =\ 1.0f;}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{classe2XD_1_1renderer_1_1DebugRenderTarget_af1faa1fff107de44287ee75a84882771}{DebugRenderTarget}}(sf::RenderWindow\&\ targetWindow)\ :\ \mbox{\hyperlink{classe2XD_1_1renderer_1_1DefaultRenderer_1_1RenderTarget_ab3fde9ebe863a6fa0f97f80d1be6aaf4}{RenderTarget}}(targetWindow)}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classe2XD_1_1renderer_1_1DebugRenderTarget_ad267d09d2d3a983c924991ccfa9149eb}{draw}}(\textcolor{keyword}{const}\ sf::Drawable\&\ drawable)\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00025\ \ \ \ \ \};}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{classe2XD_1_1renderer_1_1DefaultDebugRenderer}{DefaultDebugRenderer}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classe2XD_1_1renderer_1_1DefaultRenderer}{DefaultRenderer}}}
+\DoxyCodeLine{00028\ \ \ \ \ \{}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classe2XD_1_1renderer_1_1DebugRenderTarget}{DebugRenderTarget}}*\ target\ =\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classe2XD_1_1renderer_1_1DefaultDebugRenderer_a7b8130ba3d8b78c5152d118fff3ac963}{DefaultDebugRenderer}}();}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classe2XD_1_1renderer_1_1DefaultDebugRenderer_a584f86469e1e335f7e16a584177c7c0e}{initialize}}(sf::RenderWindow*\ window)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classe2XD_1_1renderer_1_1DefaultDebugRenderer_a2d20ed6f88c1f494cc3459665b1f4762}{setShowOrigins}}(\textcolor{keywordtype}{bool}\ show);}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classe2XD_1_1renderer_1_1DefaultDebugRenderer_a960e3e77c4f5a5021ef902c3a3b0d8a1}{isShowingOrigins}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00038\ \ \ \ \ \};}
+\DoxyCodeLine{00039\ \}\ \textcolor{comment}{//\ renderer}}
+\DoxyCodeLine{00040\ \textcolor{comment}{//\ e2XD}}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00042\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//FLATLAND\_DEFAULTDEBUGRENDERER\_H}}
+
+\end{DoxyCode}

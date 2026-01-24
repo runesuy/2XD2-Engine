@@ -1,22 +1,19 @@
 <map id="e2XD::std_addon::AnimatedSprite2D::_internal_onDraw" name="e2XD::std_addon::AnimatedSprite2D::_internal_onDraw">
 <area shape="rect" id="Node000001" title=" " alt="" coords="5,136,186,177"/>
-<area shape="rect" id="Node000002" href="$classe2XD_1_1std__addon_1_1Sprite2D.html#a865427d52ac04ea643ccde74c1dfa75c" title=" " alt="" coords="243,37,409,78"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="137,133,233,89,250,81,252,86,235,93,139,138"/>
-<area shape="rect" id="Node000007" href="$classe2XD_1_1framework_1_1Time.html#a3dd8376162456647546b0a8b993e03bc" title=" " alt="" coords="248,103,404,143"/>
-<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="186,141,232,134,233,139,187,146"/>
-<area shape="rect" id="Node000008" href="$classe2XD_1_1framework_1_1Animation.html#ad9b8f5e01b51190c54074b6dfa61ab41" title=" " alt="" coords="234,168,418,209"/>
-<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="187,166,219,171,218,176,186,172"/>
-<area shape="rect" id="Node000009" href="$classe2XD_1_1std__addon_1_1Sprite2D.html#a7eb95a4910a4ad4f82539a86b32df784" title=" " alt="" coords="243,257,409,298"/>
-<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="137,175,273,247,270,252,135,180"/>
-<area shape="rect" id="Node000003" href="$classe2XD_1_1framework_1_1Node2D.html#a7b63977014241fc1a59ffa539c0910ba" title=" " alt="" coords="474,5,647,46"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="409,44,458,37,458,42,410,49"/>
-<area shape="rect" id="Node000005" href="$classe2XD_1_1framework_1_1Renderer.html#af99d771f4163ee774e2c72aec437cb3e" title=" " alt="" coords="471,71,649,111"/>
-<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="410,67,456,74,455,79,409,72"/>
-<area shape="rect" id="Node000004" href="$classe2XD_1_1core_1_1Transform2D.html#a3887912f0b91e58c3967856d374869c9" title=" " alt="" coords="704,5,869,46"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="647,23,688,23,688,28,647,28"/>
-<area shape="rect" id="Node000006" href="$classe2XD_1_1renderer_1_1IRenderer.html#af32d8921a875a56ae0efabf19f3d14a0" title=" " alt="" coords="702,71,871,111"/>
-<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="650,88,687,88,687,94,650,94"/>
-<area shape="poly" id="edge10_Node000009_Node000009" title=" " alt="" coords="282,257,280,247,287,238,303,233,326,231,351,233,365,239,363,244,349,238,326,236,304,238,291,243,285,249,288,256"/>
-<area shape="rect" id="Node000010" href="$classe2XD_1_1framework_1_1Resources_1_1Textures.html#a4e660e57734ee116d83ae9b3e8295cb2" title=" " alt="" coords="466,257,654,298"/>
-<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="409,275,451,275,451,280,409,280"/>
+<area shape="rect" id="Node000002" href="$classe2XD_1_1std__addon_1_1Sprite2D.html#a865427d52ac04ea643ccde74c1dfa75c" title=" " alt="" coords="263,37,429,78"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="135,133,233,89,254,81,256,86,235,93,137,138"/>
+<area shape="rect" id="Node000007" href="$classe2XD_1_1framework_1_1Animation.html#ad9b8f5e01b51190c54074b6dfa61ab41" title=" " alt="" coords="254,103,438,143"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="186,142,238,135,238,140,187,147"/>
+<area shape="rect" id="Node000008" href="$classe2XD_1_1std__addon_1_1Sprite2D.html#ae37e7550161b4bcef403ccf7f49162a8" title=" " alt="" coords="263,168,429,209"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="187,165,247,173,247,178,186,171"/>
+<area shape="rect" id="Node000009" href="$classe2XD_1_1std__addon_1_1SpriteRenderable.html#a8fc3ded3400cfb221964e71a86504094" title=" " alt="" coords="234,233,458,274"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="139,175,235,218,256,226,254,231,233,223,136,180"/>
+<area shape="rect" id="Node000003" href="$classe2XD_1_1framework_1_1Node2D.html#a7b63977014241fc1a59ffa539c0910ba" title=" " alt="" coords="509,5,682,46"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="429,44,493,36,493,41,430,50"/>
+<area shape="rect" id="Node000005" href="$classe2XD_1_1framework_1_1Renderer.html#af99d771f4163ee774e2c72aec437cb3e" title=" " alt="" coords="506,71,684,111"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="430,66,491,74,490,80,429,71"/>
+<area shape="rect" id="Node000004" href="$classe2XD_1_1core_1_1Transform2D.html#a3887912f0b91e58c3967856d374869c9" title=" " alt="" coords="734,5,899,46"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="682,23,718,23,718,28,682,28"/>
+<area shape="rect" id="Node000006" href="$classe2XD_1_1renderer_1_1IRenderer.html#af32d8921a875a56ae0efabf19f3d14a0" title=" " alt="" coords="732,71,901,111"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="685,88,717,88,717,94,685,94"/>
 </map>

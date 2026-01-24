@@ -1,0 +1,38 @@
+\doxysection{Text\+Renderable.\+h}
+\hypertarget{TextRenderable_8h_source}{}\label{TextRenderable_8h_source}\index{addons/std-\/addon/include/2XD2/std\_addon/renderables/TextRenderable.h@{addons/std-\/addon/include/2XD2/std\_addon/renderables/TextRenderable.h}}
+\mbox{\hyperlink{TextRenderable_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{//}}
+\DoxyCodeLine{00002\ \textcolor{comment}{//\ Created\ by\ rune-\/suy\ on\ 1/20/26.}}
+\DoxyCodeLine{00003\ \textcolor{comment}{//}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#ifndef\ FLATLAND\_TEXTRENDERABLE\_H}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#define\ FLATLAND\_TEXTRENDERABLE\_H}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <SFML/Graphics/Text.hpp>}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{IRenderable_8h}{2XD2/renderer/IRenderable.h}}"{}}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespacee2XD_1_1std__addon}{e2XD::std\_addon}}}
+\DoxyCodeLine{00013\ \{}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{classe2XD_1_1std__addon_1_1TextRenderable}{TextRenderable}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classe2XD_1_1renderer_1_1IRenderable}{renderer::IRenderable}}}
+\DoxyCodeLine{00018\ \ \ \ \ \{}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ sf::Text\ \_text;}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ \textcolor{keyword}{using\ }FontType\ =\ sf::Font;}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classe2XD_1_1std__addon_1_1TextRenderable_acb2247908155b1d56f92b397d093c61f}{TextRenderable}}();}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classe2XD_1_1std__addon_1_1TextRenderable_a61d4c233ed5004fba1f8b6ca3db4140d}{draw}}(\mbox{\hyperlink{classe2XD_1_1renderer_1_1IRenderTarget}{renderer::IRenderTarget}}\&\ renderTarget)\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classe2XD_1_1std__addon_1_1TextRenderable_a0b6b3b1fc5857d16f9b914757a2c5da3}{setText}}(\textcolor{keyword}{const}\ std::string\ \&text);}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classe2XD_1_1std__addon_1_1TextRenderable_aeb83a3bcd3343f476b28d0bdc6781862}{setFontSize}}(\textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ size);}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classe2XD_1_1std__addon_1_1TextRenderable_aeca8b8e2856b8687ceae07699663cf39}{setFont}}(\textcolor{keyword}{const}\ FontType\&\ font);}
+\DoxyCodeLine{00044\ \ \ \ \ \};}
+\DoxyCodeLine{00045\ \}\ \textcolor{comment}{//\ std\_addon}}
+\DoxyCodeLine{00046\ \textcolor{comment}{//\ e2XD}}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00048\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//FLATLAND\_TEXTRENDERABLE\_H}}
+
+\end{DoxyCode}

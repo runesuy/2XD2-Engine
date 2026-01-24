@@ -1,9 +1,13 @@
 <map id="engine/renderer/include/2XD2/renderer/DefaultRenderer.h" name="engine/renderer/include/2XD2/renderer/DefaultRenderer.h">
-<area shape="rect" id="Node000001" title=" " alt="" coords="87,5,302,46"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="232,5,447,46"/>
 <area shape="rect" id="Node000002" href="$DefaultGameConfig_8h.html" title=" " alt="" coords="20,94,190,150"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="167,59,133,95,129,92,163,55"/>
-<area shape="rect" id="Node000004" href="$DefaultRenderer_8cpp.html" title=" " alt="" coords="214,102,356,142"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="226,55,268,99,264,103,222,59"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="277,55,174,96,172,91,275,50"/>
+<area shape="rect" id="Node000004" href="$DefaultDebugRenderer_8h.html" title=" " alt="" coords="214,102,466,142"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="342,62,342,101,337,101,337,62"/>
+<area shape="rect" id="Node000006" href="$DefaultRenderer_8cpp.html" title=" " alt="" coords="490,102,632,142"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="401,50,516,98,514,103,399,55"/>
 <area shape="rect" id="Node000003" href="$DefaultGameConfig_8cpp.html" title=" " alt="" coords="5,198,205,238"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="108,165,108,197,102,197,102,165"/>
+<area shape="rect" id="Node000005" href="$DefaultDebugRenderer_8cpp.html" title=" " alt="" coords="250,198,429,238"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="342,158,342,197,337,197,337,158"/>
 </map>

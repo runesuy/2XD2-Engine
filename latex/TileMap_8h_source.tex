@@ -1,0 +1,71 @@
+\doxysection{Tile\+Map.\+h}
+\hypertarget{TileMap_8h_source}{}\label{TileMap_8h_source}\index{addons/std-\/addon/include/2XD2/std\_addon/tiles/TileMap.h@{addons/std-\/addon/include/2XD2/std\_addon/tiles/TileMap.h}}
+\mbox{\hyperlink{TileMap_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ FLATLAND\_TILEMAP\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ FLATLAND\_TILEMAP\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <unordered\_map>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{Node2D_8h}{2XD2/framework/nodes/Node2D.h}}>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <SFML/Graphics/Sprite.hpp>}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{TileSet_8h}{TileSet.h}}"{}}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{TileChunk_8h}{internal/TileChunk.h}}"{}}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{TileMapRenderable_8h}{internal/TileMapRenderable.h}}"{}}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespacee2XD_1_1std__addon}{e2XD::std\_addon}}}
+\DoxyCodeLine{00013\ \{}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{classe2XD_1_1std__addon_1_1TileMap}{TileMap}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classe2XD_1_1framework_1_1Node2D}{framework::Node2D}}}
+\DoxyCodeLine{00018\ \ \ \ \ \{}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ \textcolor{keyword}{using\ }\mbox{\hyperlink{classe2XD_1_1std__addon_1_1TileMap_a66a55093eb29ad7b7280aceb8669525c}{TileMapSizeType}}\ =\ int;}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \textcolor{keyword}{friend}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classe2XD_1_1std__addon_1_1internal_1_1TileMapRenderable}{internal::TileMapRenderable}};}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \textcolor{keyword}{using\ }TileIdT\ =\ \mbox{\hyperlink{structe2XD_1_1std__addon_1_1internal_1_1Tile_ae23b73ddd7d565a8d905d3fe1cf22113}{internal::Tile::TileIdType}};}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \textcolor{keyword}{using\ }\mbox{\hyperlink{structe2XD_1_1core_1_1Vec2}{ChunkCoordT}}\ =\ \mbox{\hyperlink{structe2XD_1_1core_1_1Vec2}{core::Vec2<TileMapSizeType>}};}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \textcolor{keyword}{struct\ }Hash\_}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \ \ \ \ Hash\_()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{size\_t}\ operator()(\textcolor{keyword}{const}\ \mbox{\hyperlink{structe2XD_1_1core_1_1Vec2}{ChunkCoordT}}\&\ coords)\ \textcolor{keyword}{const}\ \textcolor{keyword}{noexcept};}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \};}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \textcolor{keyword}{using\ }ChunkMap\ =\ std::unordered\_map<ChunkCoordT,\ internal::TileChunk,\ Hash\_>;}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \textcolor{keyword}{using\ }TileSizeT\ =\ int;}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{classe2XD_1_1std__addon_1_1internal_1_1TileChunk_a8dda8e6c807037d5d0f653def5eaa4a7}{internal::TileChunk::ChunkSizeType}}\ \_chunkSize\ =\ 16;\ \textcolor{comment}{//\ in\ tiles}}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ TileSizeT\ \_tileSize\ =\ 32;\ \textcolor{comment}{//\ in\ pixels}}
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classe2XD_1_1std__addon_1_1internal_1_1TileMapRenderable}{internal::TileMapRenderable}}\ \_renderable;}
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ ChunkMap\ \_chunks;}
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classe2XD_1_1std__addon_1_1TileSet}{TileSet}}\ \_tileSet;}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/\ Methods\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ [[nodiscard]]\ std::pair<core::Vec2<int>,\ \mbox{\hyperlink{structe2XD_1_1core_1_1Vec2}{core::Vec2<int>}}>}
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ \_calculateChunkCoordinates(\textcolor{keywordtype}{int}\ tileX,\ \textcolor{keywordtype}{int}\ tileY)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00063\ }
+\DoxyCodeLine{00064\ \ \ \ \ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classe2XD_1_1std__addon_1_1TileMap_a096fac2cdd0b12dcec6ca1d88d148d9f}{onDraw}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00069\ }
+\DoxyCodeLine{00070\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00071\ \ \ \ \ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{classe2XD_1_1std__addon_1_1TileMap}{TileMap}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classe2XD_1_1std__addon_1_1TileSet}{TileSet}}\&\ tileSet);}
+\DoxyCodeLine{00072\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classe2XD_1_1std__addon_1_1TileMap_a58619168000d93b06406cffb1fe038c2}{\string~TileMap}}()\ \textcolor{keyword}{override}\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00073\ }
+\DoxyCodeLine{00078\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classe2XD_1_1std__addon_1_1TileMap_a31766b1488bdd556e93201cd9c2697ab}{setTileSize}}(TileSizeT\ size);}
+\DoxyCodeLine{00079\ }
+\DoxyCodeLine{00084\ \ \ \ \ \ \ \ \ [[nodiscard]]\ TileSizeT\ \mbox{\hyperlink{classe2XD_1_1std__addon_1_1TileMap_a0345809c34c798ae9aa09450edb91163}{getTileSize}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00085\ }
+\DoxyCodeLine{00093\ \ \ \ \ \ \ \ \ [[nodiscard]]\ \textcolor{keyword}{const}\ TileIdT\&\ \mbox{\hyperlink{classe2XD_1_1std__addon_1_1TileMap_ad4d461fb3cfc3c4f247e5853a16e4345}{getTile}}(\textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00094\ }
+\DoxyCodeLine{00102\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classe2XD_1_1std__addon_1_1TileMap_a2d4d48d59003d98164f957ceb9e491d8}{setTile}}(\textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y,\ TileIdT\ tileId);}
+\DoxyCodeLine{00103\ \ \ \ \ \};}
+\DoxyCodeLine{00104\ \}}
+\DoxyCodeLine{00105\ }
+\DoxyCodeLine{00106\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//FLATLAND\_TILEMAP\_H}}
+
+\end{DoxyCode}

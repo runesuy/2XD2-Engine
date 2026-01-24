@@ -2,44 +2,48 @@
 \hypertarget{Renderable_8h_source}{}\label{Renderable_8h_source}\index{engine/framework/include/2XD2/framework/drawing/Renderable.h@{engine/framework/include/2XD2/framework/drawing/Renderable.h}}
 \mbox{\hyperlink{Renderable_8h}{Go to the documentation of this file.}}
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00001\ \textcolor{comment}{//}}
-\DoxyCodeLine{00002\ \textcolor{comment}{//\ Created\ by\ rune-\/suy\ on\ 12/19/25.}}
+\DoxyCodeLine{00001\ \textcolor{comment}{//\ Copyright\ (c)\ 2026\ Rune\ Suy\ and\ the\ 2XD2-\/Engine\ contributors.}}
+\DoxyCodeLine{00002\ \textcolor{comment}{//\ Licensed\ under\ the\ MIT\ License.}}
 \DoxyCodeLine{00003\ \textcolor{comment}{//}}
 \DoxyCodeLine{00004\ }
-\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#ifndef\ FLATLAND\_RENDERABLE\_H}}
-\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#define\ FLATLAND\_RENDERABLE\_H}}
-\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{RenderLayer_8h}{2XD2/renderer/RenderLayer.h}}"{}}}
+\DoxyCodeLine{00005\ \textcolor{comment}{//}}
+\DoxyCodeLine{00006\ \textcolor{comment}{//\ Created\ by\ rune-\/suy\ on\ 12/19/25.}}
+\DoxyCodeLine{00007\ \textcolor{comment}{//}}
 \DoxyCodeLine{00008\ }
-\DoxyCodeLine{00009\ }
-\DoxyCodeLine{00010\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespacee2XD_1_1framework}{e2XD::framework}}}
-\DoxyCodeLine{00011\ \{}
-\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{classe2XD_1_1framework_1_1Renderable}{Renderable}}}
-\DoxyCodeLine{00016\ \ \ \ \ \{}
-\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keyword}{protected}:}
-\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classe2XD_1_1framework_1_1Renderable_ad4e09e08a878138093f4705c7747fc67}{zIndex}}\ =\ 0;}
-\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classe2XD_1_1framework_1_1Renderable_a5f075727608df3d602ea422e19c82648}{visible}}\ =\ \textcolor{keyword}{true};}
-\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{RenderLayer_8h_ad16d91520dd8dbd7a2178564fce5a168}{RenderLayer}}\ \mbox{\hyperlink{classe2XD_1_1framework_1_1Renderable_a73a98b5c0defcdfd7a1e2a6c528b0f91}{renderLayer}}\ =\ \mbox{\hyperlink{RenderLayer_8h_ad16d91520dd8dbd7a2178564fce5a168a5289492cf082446ca4a6eec9f72f1ec3}{RenderLayer::WORLD}};}
-\DoxyCodeLine{00021\ }
-\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classe2XD_1_1framework_1_1Renderable_a4816842499b76973a9428104f32e5ec5}{onDraw}}()}
-\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \{}
-\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \};}
-\DoxyCodeLine{00029\ }
-\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classe2XD_1_1framework_1_1Renderable_a349d240f57d236ee05d1a0a3c83495df}{\_internal\_onDraw}}()}
-\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \{}
-\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \};}
-\DoxyCodeLine{00037\ }
-\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keyword}{public}:}
-\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{classe2XD_1_1framework_1_1Renderable_ae1ecc921fd8112a12e82bc78282c42d9}{\string~Renderable}}()\ =\ \textcolor{keywordflow}{default};}
-\DoxyCodeLine{00040\ }
-\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classe2XD_1_1framework_1_1Renderable_a8e7d1036e4bc4d1f60a639fdd1cbaee1}{draw}}();}
-\DoxyCodeLine{00045\ }
-\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classe2XD_1_1framework_1_1Renderable_a084810e1e0d412501eb24f3c3067417b}{setVisible}}(\textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classe2XD_1_1framework_1_1Renderable_a5f075727608df3d602ea422e19c82648}{visible}});}
-\DoxyCodeLine{00052\ }
-\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classe2XD_1_1framework_1_1Renderable_a9fd26e67c1415ab39123607bc7d56dc6}{setRenderLayer}}(\mbox{\hyperlink{RenderLayer_8h_ad16d91520dd8dbd7a2178564fce5a168}{RenderLayer}}\ \mbox{\hyperlink{classe2XD_1_1framework_1_1Renderable_a73a98b5c0defcdfd7a1e2a6c528b0f91}{renderLayer}});}
-\DoxyCodeLine{00058\ \ \ \ \ \};}
-\DoxyCodeLine{00059\ \}\ \textcolor{comment}{//\ core}}
-\DoxyCodeLine{00060\ \textcolor{comment}{//\ e2XD}}
-\DoxyCodeLine{00061\ }
-\DoxyCodeLine{00062\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//FLATLAND\_RENDERABLE\_H}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#ifndef\ FLATLAND\_RENDERABLE\_H}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#define\ FLATLAND\_RENDERABLE\_H}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{RenderLayer_8h}{2XD2/renderer/RenderLayer.h}}"{}}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespacee2XD_1_1framework}{e2XD::framework}}}
+\DoxyCodeLine{00015\ \{}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{classe2XD_1_1framework_1_1Renderable}{Renderable}}}
+\DoxyCodeLine{00020\ \ \ \ \ \{}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classe2XD_1_1framework_1_1Renderable_ad4e09e08a878138093f4705c7747fc67}{zIndex}}\ =\ 0;}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classe2XD_1_1framework_1_1Renderable_a5f075727608df3d602ea422e19c82648}{visible}}\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{RenderLayer_8h_ad16d91520dd8dbd7a2178564fce5a168}{RenderLayer}}\ \mbox{\hyperlink{classe2XD_1_1framework_1_1Renderable_a73a98b5c0defcdfd7a1e2a6c528b0f91}{renderLayer}}\ =\ \mbox{\hyperlink{RenderLayer_8h_ad16d91520dd8dbd7a2178564fce5a168a5289492cf082446ca4a6eec9f72f1ec3}{RenderLayer::WORLD}};}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classe2XD_1_1framework_1_1Renderable_a4816842499b76973a9428104f32e5ec5}{onDraw}}()}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \};}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classe2XD_1_1framework_1_1Renderable_a349d240f57d236ee05d1a0a3c83495df}{\_internal\_onDraw}}()}
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \};}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{classe2XD_1_1framework_1_1Renderable_ae1ecc921fd8112a12e82bc78282c42d9}{\string~Renderable}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classe2XD_1_1framework_1_1Renderable_a8e7d1036e4bc4d1f60a639fdd1cbaee1}{draw}}();}
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classe2XD_1_1framework_1_1Renderable_a084810e1e0d412501eb24f3c3067417b}{setVisible}}(\textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classe2XD_1_1framework_1_1Renderable_a5f075727608df3d602ea422e19c82648}{visible}});}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classe2XD_1_1framework_1_1Renderable_a9fd26e67c1415ab39123607bc7d56dc6}{setRenderLayer}}(\mbox{\hyperlink{RenderLayer_8h_ad16d91520dd8dbd7a2178564fce5a168}{RenderLayer}}\ \mbox{\hyperlink{classe2XD_1_1framework_1_1Renderable_a73a98b5c0defcdfd7a1e2a6c528b0f91}{renderLayer}});}
+\DoxyCodeLine{00062\ \ \ \ \ \};}
+\DoxyCodeLine{00063\ \}\ \textcolor{comment}{//\ core}}
+\DoxyCodeLine{00064\ \textcolor{comment}{//\ e2XD}}
+\DoxyCodeLine{00065\ }
+\DoxyCodeLine{00066\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//FLATLAND\_RENDERABLE\_H}}
 
 \end{DoxyCode}

@@ -8,6 +8,8 @@ var searchData=
   ['igameconfig_5',['IGameConfig',['../classe2XD_1_1framework_1_1IGameConfig.html',1,'e2XD::framework']]],
   ['iinputhandler_6',['IInputHandler',['../classe2XD_1_1framework_1_1IInputHandler.html',1,'e2XD::framework']]],
   ['input_7',['Input',['../classe2XD_1_1framework_1_1Input.html',1,'e2XD::framework']]],
-  ['irenderer_8',['IRenderer',['../classe2XD_1_1renderer_1_1IRenderer.html',1,'e2XD::renderer']]],
-  ['itexturemanager_9',['ITextureManager',['../classe2XD_1_1framework_1_1ITextureManager.html',1,'e2XD::framework']]]
+  ['irenderable_8',['IRenderable',['../classe2XD_1_1renderer_1_1IRenderable.html',1,'e2XD::renderer']]],
+  ['irenderer_9',['IRenderer',['../classe2XD_1_1renderer_1_1IRenderer.html',1,'e2XD::renderer']]],
+  ['irendertarget_10',['IRenderTarget',['../classe2XD_1_1renderer_1_1IRenderTarget.html',1,'e2XD::renderer']]],
+  ['itexturemanager_11',['ITextureManager',['../classe2XD_1_1framework_1_1ITextureManager.html',1,'e2XD::framework']]]
 ];
