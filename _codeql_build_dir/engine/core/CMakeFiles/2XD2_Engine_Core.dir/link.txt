@@ -1,2 +1,0 @@
-/usr/bin/ar qc lib2XD2_Engine_Core.a CMakeFiles/2XD2_Engine_Core.dir/src/Transform2D.cpp.o
-/usr/bin/ranlib lib2XD2_Engine_Core.a

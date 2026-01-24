@@ -1,2 +1,0 @@
-/usr/bin/ar qc lib2XD2_Engine_Renderer.a CMakeFiles/2XD2_Engine_Renderer.dir/src/DefaultRenderer.cpp.o CMakeFiles/2XD2_Engine_Renderer.dir/src/RenderCommand.cpp.o CMakeFiles/2XD2_Engine_Renderer.dir/src/internal/SfmlConversions.cpp.o
-/usr/bin/ranlib lib2XD2_Engine_Renderer.a
