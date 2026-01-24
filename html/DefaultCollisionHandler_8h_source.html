@@ -81,50 +81,46 @@ $(document).ready(function() { init_codefold(0); });
   <div class="headertitle"><div class="title">DefaultCollisionHandler.h</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="DefaultCollisionHandler_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// Copyright (c) 2026 Rune Suy and the 2XD2-Engine contributors.</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// Licensed under the MIT License.</span></div>
+<a href="DefaultCollisionHandler_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">//</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// Created by rune-suy on 12/30/25.</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">//</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment">//</span></div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment">// Created by rune-suy on 12/30/25.</span></div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment">//</span></div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#ifndef INC_2XD2_ENGINE_DEFAULTCOLLISIONHANDLER_H</span></div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#define INC_2XD2_ENGINE_DEFAULTCOLLISIONHANDLER_H</span></div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &lt;list&gt;</span></div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &quot;<a class="code" href="ICollisionHandler_8h.html">ICollisionHandler.h</a>&quot;</span></div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacee2XD_1_1framework.html">e2XD::framework</a></div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>{</div>
-<div class="foldopen" id="foldopen00022" data-start="{" data-end="};">
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="classe2XD_1_1framework_1_1DefaultCollisionHandler.html">   22</a></span>    <span class="keyword">class </span><a class="code hl_class" href="classe2XD_1_1framework_1_1DefaultCollisionHandler.html">DefaultCollisionHandler</a> : <span class="keyword">public</span> <a class="code hl_class" href="classe2XD_1_1framework_1_1ICollisionHandler.html">ICollisionHandler</a></div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    {</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>        std::list&lt;ICollisionBody*&gt; _collision_bodies;</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>        std::vector&lt;std::pair&lt;ICollisionBody*, ICollisionBody*&gt;&gt; _collisions_this_frame;</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>        std::vector&lt;std::pair&lt;ICollisionBody*, ICollisionBody*&gt;&gt; _collisions_last_frame;</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classe2XD_1_1framework_1_1DefaultCollisionHandler.html#a35861731b934262ae7677b66cb5658a1">registerCollisionBody</a>(<a class="code hl_class" href="classe2XD_1_1framework_1_1ICollisionBody.html">ICollisionBody</a>* body) <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classe2XD_1_1framework_1_1DefaultCollisionHandler.html#a220360f14f54dc512ee040729ad7b6e1">removeCollisionBody</a>(<a class="code hl_class" href="classe2XD_1_1framework_1_1ICollisionBody.html">ICollisionBody</a>* body) <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classe2XD_1_1framework_1_1DefaultCollisionHandler.html#a0aa855da7f74ad30d9b88c75f46c208c">checkCollisions</a>() <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    };</div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#ifndef INC_2XD2_ENGINE_DEFAULTCOLLISIONHANDLER_H</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#define INC_2XD2_ENGINE_DEFAULTCOLLISIONHANDLER_H</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;list&gt;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &quot;<a class="code" href="ICollisionHandler_8h.html">ICollisionHandler.h</a>&quot;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacee2XD_1_1framework.html">e2XD::framework</a></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>{</div>
+<div class="foldopen" id="foldopen00018" data-start="{" data-end="};">
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="classe2XD_1_1framework_1_1DefaultCollisionHandler.html">   18</a></span>    <span class="keyword">class </span><a class="code hl_class" href="classe2XD_1_1framework_1_1DefaultCollisionHandler.html">DefaultCollisionHandler</a> : <span class="keyword">public</span> <a class="code hl_class" href="classe2XD_1_1framework_1_1ICollisionHandler.html">ICollisionHandler</a></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    {</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>        std::list&lt;ICollisionBody*&gt; _collision_bodies;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>        std::vector&lt;std::pair&lt;ICollisionBody*, ICollisionBody*&gt;&gt; _collisions_this_frame;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>        std::vector&lt;std::pair&lt;ICollisionBody*, ICollisionBody*&gt;&gt; _collisions_last_frame;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classe2XD_1_1framework_1_1DefaultCollisionHandler.html#a35861731b934262ae7677b66cb5658a1">registerCollisionBody</a>(<a class="code hl_class" href="classe2XD_1_1framework_1_1ICollisionBody.html">ICollisionBody</a>* body) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classe2XD_1_1framework_1_1DefaultCollisionHandler.html#a220360f14f54dc512ee040729ad7b6e1">removeCollisionBody</a>(<a class="code hl_class" href="classe2XD_1_1framework_1_1ICollisionBody.html">ICollisionBody</a>* body) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classe2XD_1_1framework_1_1DefaultCollisionHandler.html#a0aa855da7f74ad30d9b88c75f46c208c">checkCollisions</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    };</div>
 </div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>} <span class="comment">// framework</span></div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="comment">// e2XD</span></div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="preprocessor">#endif </span><span class="comment">//INC_2XD2_ENGINE_DEFAULTCOLLISIONHANDLER_H</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>} <span class="comment">// framework</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="comment">// e2XD</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="preprocessor">#endif </span><span class="comment">//INC_2XD2_ENGINE_DEFAULTCOLLISIONHANDLER_H</span></div>
 <div class="ttc" id="aICollisionHandler_8h_html"><div class="ttname"><a href="ICollisionHandler_8h.html">ICollisionHandler.h</a></div></div>
-<div class="ttc" id="aclasse2XD_1_1framework_1_1DefaultCollisionHandler_html"><div class="ttname"><a href="classe2XD_1_1framework_1_1DefaultCollisionHandler.html">e2XD::framework::DefaultCollisionHandler</a></div><div class="ttdef"><b>Definition</b> DefaultCollisionHandler.h:23</div></div>
-<div class="ttc" id="aclasse2XD_1_1framework_1_1DefaultCollisionHandler_html_a0aa855da7f74ad30d9b88c75f46c208c"><div class="ttname"><a href="classe2XD_1_1framework_1_1DefaultCollisionHandler.html#a0aa855da7f74ad30d9b88c75f46c208c">e2XD::framework::DefaultCollisionHandler::checkCollisions</a></div><div class="ttdeci">void checkCollisions() override</div><div class="ttdef"><b>Definition</b> DefaultCollisionHandler.cpp:25</div></div>
-<div class="ttc" id="aclasse2XD_1_1framework_1_1DefaultCollisionHandler_html_a220360f14f54dc512ee040729ad7b6e1"><div class="ttname"><a href="classe2XD_1_1framework_1_1DefaultCollisionHandler.html#a220360f14f54dc512ee040729ad7b6e1">e2XD::framework::DefaultCollisionHandler::removeCollisionBody</a></div><div class="ttdeci">void removeCollisionBody(ICollisionBody *body) override</div><div class="ttdef"><b>Definition</b> DefaultCollisionHandler.cpp:20</div></div>
-<div class="ttc" id="aclasse2XD_1_1framework_1_1DefaultCollisionHandler_html_a35861731b934262ae7677b66cb5658a1"><div class="ttname"><a href="classe2XD_1_1framework_1_1DefaultCollisionHandler.html#a35861731b934262ae7677b66cb5658a1">e2XD::framework::DefaultCollisionHandler::registerCollisionBody</a></div><div class="ttdeci">void registerCollisionBody(ICollisionBody *body) override</div><div class="ttdef"><b>Definition</b> DefaultCollisionHandler.cpp:15</div></div>
-<div class="ttc" id="aclasse2XD_1_1framework_1_1ICollisionBody_html"><div class="ttname"><a href="classe2XD_1_1framework_1_1ICollisionBody.html">e2XD::framework::ICollisionBody</a></div><div class="ttdef"><b>Definition</b> ICollisionBody.h:17</div></div>
-<div class="ttc" id="aclasse2XD_1_1framework_1_1ICollisionHandler_html"><div class="ttname"><a href="classe2XD_1_1framework_1_1ICollisionHandler.html">e2XD::framework::ICollisionHandler</a></div><div class="ttdef"><b>Definition</b> ICollisionHandler.h:24</div></div>
-<div class="ttc" id="anamespacee2XD_1_1framework_html"><div class="ttname"><a href="namespacee2XD_1_1framework.html">e2XD::framework</a></div><div class="ttdef"><b>Definition</b> CollisionBody2D.h:17</div></div>
+<div class="ttc" id="aclasse2XD_1_1framework_1_1DefaultCollisionHandler_html"><div class="ttname"><a href="classe2XD_1_1framework_1_1DefaultCollisionHandler.html">e2XD::framework::DefaultCollisionHandler</a></div><div class="ttdef"><b>Definition</b> DefaultCollisionHandler.h:19</div></div>
+<div class="ttc" id="aclasse2XD_1_1framework_1_1DefaultCollisionHandler_html_a0aa855da7f74ad30d9b88c75f46c208c"><div class="ttname"><a href="classe2XD_1_1framework_1_1DefaultCollisionHandler.html#a0aa855da7f74ad30d9b88c75f46c208c">e2XD::framework::DefaultCollisionHandler::checkCollisions</a></div><div class="ttdeci">void checkCollisions() override</div><div class="ttdef"><b>Definition</b> DefaultCollisionHandler.cpp:21</div></div>
+<div class="ttc" id="aclasse2XD_1_1framework_1_1DefaultCollisionHandler_html_a220360f14f54dc512ee040729ad7b6e1"><div class="ttname"><a href="classe2XD_1_1framework_1_1DefaultCollisionHandler.html#a220360f14f54dc512ee040729ad7b6e1">e2XD::framework::DefaultCollisionHandler::removeCollisionBody</a></div><div class="ttdeci">void removeCollisionBody(ICollisionBody *body) override</div><div class="ttdef"><b>Definition</b> DefaultCollisionHandler.cpp:16</div></div>
+<div class="ttc" id="aclasse2XD_1_1framework_1_1DefaultCollisionHandler_html_a35861731b934262ae7677b66cb5658a1"><div class="ttname"><a href="classe2XD_1_1framework_1_1DefaultCollisionHandler.html#a35861731b934262ae7677b66cb5658a1">e2XD::framework::DefaultCollisionHandler::registerCollisionBody</a></div><div class="ttdeci">void registerCollisionBody(ICollisionBody *body) override</div><div class="ttdef"><b>Definition</b> DefaultCollisionHandler.cpp:11</div></div>
+<div class="ttc" id="aclasse2XD_1_1framework_1_1ICollisionBody_html"><div class="ttname"><a href="classe2XD_1_1framework_1_1ICollisionBody.html">e2XD::framework::ICollisionBody</a></div><div class="ttdef"><b>Definition</b> ICollisionBody.h:13</div></div>
+<div class="ttc" id="aclasse2XD_1_1framework_1_1ICollisionHandler_html"><div class="ttname"><a href="classe2XD_1_1framework_1_1ICollisionHandler.html">e2XD::framework::ICollisionHandler</a></div><div class="ttdef"><b>Definition</b> ICollisionHandler.h:20</div></div>
+<div class="ttc" id="anamespacee2XD_1_1framework_html"><div class="ttname"><a href="namespacee2XD_1_1framework.html">e2XD::framework</a></div><div class="ttdef"><b>Definition</b> CollisionBody2D.h:13</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

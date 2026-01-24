@@ -2,43 +2,43 @@
 \hypertarget{Renderer_8h_source}{}\label{Renderer_8h_source}\index{engine/framework/include/2XD2/framework/drawing/Renderer.h@{engine/framework/include/2XD2/framework/drawing/Renderer.h}}
 \mbox{\hyperlink{Renderer_8h}{Go to the documentation of this file.}}
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00001\ \textcolor{comment}{//\ Copyright\ (c)\ 2026\ Rune\ Suy\ and\ the\ 2XD2-\/Engine\ contributors.}}
-\DoxyCodeLine{00002\ \textcolor{comment}{//\ Licensed\ under\ the\ MIT\ License.}}
+\DoxyCodeLine{00001\ \textcolor{comment}{//}}
+\DoxyCodeLine{00002\ \textcolor{comment}{//\ Created\ by\ runes\ on\ 14/12/2025.}}
 \DoxyCodeLine{00003\ \textcolor{comment}{//}}
 \DoxyCodeLine{00004\ }
-\DoxyCodeLine{00005\ \textcolor{comment}{//}}
-\DoxyCodeLine{00006\ \textcolor{comment}{//\ Created\ by\ runes\ on\ 14/12/2025.}}
-\DoxyCodeLine{00007\ \textcolor{comment}{//}}
-\DoxyCodeLine{00008\ }
-\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#ifndef\ INC\_2XD2\_ENGINE\_RENDERER\_H}}
-\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#define\ INC\_2XD2\_ENGINE\_RENDERER\_H}}
-\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <SFML/Graphics/RenderWindow.hpp>}}
-\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{RenderCommand_8h}{2XD2/renderer/RenderCommand.h}}"{}}}
-\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{Vec2f_8h}{2XD2/core/Vec2f.h}}"{}}}
-\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{IRenderer_8h}{2XD2/renderer/IRenderer.h}}"{}}}
-\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{RenderLayer_8h}{2XD2/renderer/RenderLayer.h}}"{}}}
-\DoxyCodeLine{00016\ }
-\DoxyCodeLine{00017\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespacee2XD_1_1framework}{e2XD::framework}}}
-\DoxyCodeLine{00018\ \{}
-\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{classe2XD_1_1framework_1_1Renderer}{Renderer}}}
-\DoxyCodeLine{00023\ \ \ \ \ \{}
-\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keyword}{static}\ \mbox{\hyperlink{classe2XD_1_1renderer_1_1IRenderer}{renderer::IRenderer}}*\ \_renderer\ =\ \textcolor{keyword}{nullptr};}
-\DoxyCodeLine{00025\ }
-\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \textcolor{keyword}{friend}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classe2XD_1_1framework_1_1Game}{Game}};}
-\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keyword}{public}:}
-\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classe2XD_1_1framework_1_1Renderer_ae0eeb514b0c48b288e1abf4d290583e5}{initialize}}(\mbox{\hyperlink{classe2XD_1_1renderer_1_1IRenderer}{renderer::IRenderer}}*\ renderer);}
-\DoxyCodeLine{00033\ }
-\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classe2XD_1_1framework_1_1Renderer_ae0eeb514b0c48b288e1abf4d290583e5}{initialize}}(sf::RenderWindow*\ window);}
-\DoxyCodeLine{00040\ }
-\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classe2XD_1_1framework_1_1Renderer_aebbb4b065f6ae0a93e02ae150436648e}{clearWindow}}();}
-\DoxyCodeLine{00045\ }
-\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classe2XD_1_1framework_1_1Renderer_af99d771f4163ee774e2c72aec437cb3e}{submit}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{structe2XD_1_1renderer_1_1RenderCommand}{renderer::RenderCommand}}\&\ renderCommand);}
-\DoxyCodeLine{00052\ }
-\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classe2XD_1_1framework_1_1Renderer_a357dabeb13ea60aa3f283721a4c43402}{flush}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{structe2XD_1_1core_1_1Vec2}{core::Vec2f}}\&\ cameraPosition,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{structe2XD_1_1core_1_1Vec2}{core::Vec2f}}\&\ cameraSize,\ \textcolor{keywordtype}{float}\ cameraZoom);}
-\DoxyCodeLine{00060\ \ \ \ \ \};}
-\DoxyCodeLine{00061\ \}}
-\DoxyCodeLine{00062\ }
-\DoxyCodeLine{00063\ }
-\DoxyCodeLine{00064\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//INC\_2XD2\_ENGINE\_RENDERER\_H}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#ifndef\ INC\_2XD2\_ENGINE\_RENDERER\_H}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#define\ INC\_2XD2\_ENGINE\_RENDERER\_H}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <SFML/Graphics/RenderWindow.hpp>}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{RenderCommand_8h}{2XD2/renderer/RenderCommand.h}}"{}}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{Vec2f_8h}{2XD2/core/Vec2f.h}}"{}}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{IRenderer_8h}{2XD2/renderer/IRenderer.h}}"{}}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{RenderLayer_8h}{2XD2/renderer/RenderLayer.h}}"{}}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespacee2XD_1_1framework}{e2XD::framework}}}
+\DoxyCodeLine{00014\ \{}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{classe2XD_1_1framework_1_1Renderer}{Renderer}}}
+\DoxyCodeLine{00019\ \ \ \ \ \{}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keyword}{static}\ \mbox{\hyperlink{classe2XD_1_1renderer_1_1IRenderer}{renderer::IRenderer}}*\ \_renderer\ =\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \textcolor{keyword}{friend}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classe2XD_1_1framework_1_1Game}{Game}};}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ setWindowView(\mbox{\hyperlink{RenderLayer_8h_ad16d91520dd8dbd7a2178564fce5a168}{RenderLayer}}\ renderLayer,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{structe2XD_1_1core_1_1Vec2}{core::Vec2f}}\&);}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classe2XD_1_1framework_1_1Renderer_ae0eeb514b0c48b288e1abf4d290583e5}{initialize}}(\mbox{\hyperlink{classe2XD_1_1renderer_1_1IRenderer}{renderer::IRenderer}}*\ renderer);}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classe2XD_1_1framework_1_1Renderer_ae0eeb514b0c48b288e1abf4d290583e5}{initialize}}(sf::RenderWindow*\ window);}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classe2XD_1_1framework_1_1Renderer_aebbb4b065f6ae0a93e02ae150436648e}{clearWindow}}();}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classe2XD_1_1framework_1_1Renderer_af99d771f4163ee774e2c72aec437cb3e}{submit}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{structe2XD_1_1renderer_1_1RenderCommand}{renderer::RenderCommand}}\&\ renderCommand);}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classe2XD_1_1framework_1_1Renderer_a51b45aadc810df3c0482c1958e00b03c}{flush}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{structe2XD_1_1core_1_1Vec2}{core::Vec2f}}\&\ cameraPosition,\ \textcolor{keywordtype}{float}\ cameraZoom);}
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{structe2XD_1_1core_1_1Vec2}{core::Vec2<unsigned\ int>}}\ \mbox{\hyperlink{classe2XD_1_1framework_1_1Renderer_a437cc54782bb68e19cb9ea4fd2aeeab2}{getWindowSize}}();}
+\DoxyCodeLine{00063\ \ \ \ \ \};}
+\DoxyCodeLine{00064\ \}}
+\DoxyCodeLine{00065\ }
+\DoxyCodeLine{00066\ }
+\DoxyCodeLine{00067\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//INC\_2XD2\_ENGINE\_RENDERER\_H}}
 
 \end{DoxyCode}

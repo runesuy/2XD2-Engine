@@ -2,39 +2,35 @@
 \hypertarget{ICollisionBody_8h_source}{}\label{ICollisionBody_8h_source}\index{engine/framework/include/2XD2/framework/collisions/ICollisionBody.h@{engine/framework/include/2XD2/framework/collisions/ICollisionBody.h}}
 \mbox{\hyperlink{ICollisionBody_8h}{Go to the documentation of this file.}}
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00001\ \textcolor{comment}{//\ Copyright\ (c)\ 2026\ Rune\ Suy\ and\ the\ 2XD2-\/Engine\ contributors.}}
-\DoxyCodeLine{00002\ \textcolor{comment}{//\ Licensed\ under\ the\ MIT\ License.}}
+\DoxyCodeLine{00001\ \textcolor{comment}{//}}
+\DoxyCodeLine{00002\ \textcolor{comment}{//\ Created\ by\ rune-\/suy\ on\ 12/22/25.}}
 \DoxyCodeLine{00003\ \textcolor{comment}{//}}
 \DoxyCodeLine{00004\ }
-\DoxyCodeLine{00005\ \textcolor{comment}{//}}
-\DoxyCodeLine{00006\ \textcolor{comment}{//\ Created\ by\ rune-\/suy\ on\ 12/22/25.}}
-\DoxyCodeLine{00007\ \textcolor{comment}{//}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#ifndef\ INC\_2XD2\_ENGINE\_ICOLLISIONBODY\_H}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#define\ INC\_2XD2\_ENGINE\_ICOLLISIONBODY\_H}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{Collisions_8h}{Collisions.h}}"{}}}
 \DoxyCodeLine{00008\ }
-\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#ifndef\ INC\_2XD2\_ENGINE\_ICOLLISIONBODY\_H}}
-\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#define\ INC\_2XD2\_ENGINE\_ICOLLISIONBODY\_H}}
-\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{Collisions_8h}{Collisions.h}}"{}}}
-\DoxyCodeLine{00012\ }
-\DoxyCodeLine{00013\ }
-\DoxyCodeLine{00014\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespacee2XD_1_1framework}{e2XD::framework}}}
-\DoxyCodeLine{00015\ \{}
-\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{classe2XD_1_1framework_1_1ICollisionBody}{ICollisionBody}}}
-\DoxyCodeLine{00017\ \ \ \ \ \{}
-\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keyword}{public}:}
-\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{classe2XD_1_1framework_1_1ICollisionBody_a3ff75d9d724d9250601bbec552041a26}{\string~ICollisionBody}}()\ =\ \textcolor{keywordflow}{default};}
-\DoxyCodeLine{00020\ }
-\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classe2XD_1_1framework_1_1ICollisionBody_a309114add04f737dde3dbe72f29f1e89}{areColliding}}(\mbox{\hyperlink{classe2XD_1_1framework_1_1ICollisionBody}{ICollisionBody}}*\ other)\ \textcolor{keyword}{const}\ =0;}
-\DoxyCodeLine{00027\ }
-\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ [[nodiscard]]\ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{classe2XD_1_1framework_1_1Collisions_a4c40efafd0f193182e6067660a620a99}{Collisions::CollisionType}}\ \mbox{\hyperlink{classe2XD_1_1framework_1_1ICollisionBody_aa9b188b0d6b1b8957e98fac3901318db}{getCollisionType}}()\ \textcolor{keyword}{const}\ =\ 0;}
-\DoxyCodeLine{00033\ }
-\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ [[nodiscard]]\ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classe2XD_1_1framework_1_1ICollisionBody_ade6b57c1e071b9b2b49203801d3e2bcd}{getCollisionLayer}}()\ \textcolor{keyword}{const}\ =\ 0;}
-\DoxyCodeLine{00039\ }
-\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classe2XD_1_1framework_1_1ICollisionBody_acad511aebc1dc8536f9281f1956b0ef0}{onCollisionEnter}}(\mbox{\hyperlink{classe2XD_1_1framework_1_1ICollisionBody}{ICollisionBody}}*\ other)\ \{\}}
-\DoxyCodeLine{00045\ }
-\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classe2XD_1_1framework_1_1ICollisionBody_a9a651f65ca62d1fe54e74e2e09d282bb}{onCollisionExit}}(\mbox{\hyperlink{classe2XD_1_1framework_1_1ICollisionBody}{ICollisionBody}}*\ other)\ \{\}}
-\DoxyCodeLine{00051\ \ \ \ \ \};}
-\DoxyCodeLine{00052\ \}}
-\DoxyCodeLine{00053\ \textcolor{comment}{//\ e2XD}}
-\DoxyCodeLine{00054\ }
-\DoxyCodeLine{00055\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//INC\_2XD2\_ENGINE\_ICOLLISIONBODY\_H}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespacee2XD_1_1framework}{e2XD::framework}}}
+\DoxyCodeLine{00011\ \{}
+\DoxyCodeLine{00012\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{classe2XD_1_1framework_1_1ICollisionBody}{ICollisionBody}}}
+\DoxyCodeLine{00013\ \ \ \ \ \{}
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00015\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{classe2XD_1_1framework_1_1ICollisionBody_a3ff75d9d724d9250601bbec552041a26}{\string~ICollisionBody}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classe2XD_1_1framework_1_1ICollisionBody_a309114add04f737dde3dbe72f29f1e89}{areColliding}}(\mbox{\hyperlink{classe2XD_1_1framework_1_1ICollisionBody}{ICollisionBody}}*\ other)\ \textcolor{keyword}{const}\ =0;}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ [[nodiscard]]\ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{classe2XD_1_1framework_1_1Collisions_a4c40efafd0f193182e6067660a620a99}{Collisions::CollisionType}}\ \mbox{\hyperlink{classe2XD_1_1framework_1_1ICollisionBody_aa9b188b0d6b1b8957e98fac3901318db}{getCollisionType}}()\ \textcolor{keyword}{const}\ =\ 0;}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ [[nodiscard]]\ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classe2XD_1_1framework_1_1ICollisionBody_ade6b57c1e071b9b2b49203801d3e2bcd}{getCollisionLayer}}()\ \textcolor{keyword}{const}\ =\ 0;}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classe2XD_1_1framework_1_1ICollisionBody_acad511aebc1dc8536f9281f1956b0ef0}{onCollisionEnter}}(\mbox{\hyperlink{classe2XD_1_1framework_1_1ICollisionBody}{ICollisionBody}}*\ other)\ \{\}}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classe2XD_1_1framework_1_1ICollisionBody_a9a651f65ca62d1fe54e74e2e09d282bb}{onCollisionExit}}(\mbox{\hyperlink{classe2XD_1_1framework_1_1ICollisionBody}{ICollisionBody}}*\ other)\ \{\}}
+\DoxyCodeLine{00047\ \ \ \ \ \};}
+\DoxyCodeLine{00048\ \}}
+\DoxyCodeLine{00049\ \textcolor{comment}{//\ e2XD}}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00051\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//INC\_2XD2\_ENGINE\_ICOLLISIONBODY\_H}}
 
 \end{DoxyCode}

@@ -9,8 +9,6 @@ var searchData=
   ['iinputhandler_2eh_6',['IInputHandler.h',['../IInputHandler_8h.html',1,'']]],
   ['input_2ecpp_7',['Input.cpp',['../Input_8cpp.html',1,'']]],
   ['input_2eh_8',['Input.h',['../Input_8h.html',1,'']]],
-  ['irenderable_2eh_9',['IRenderable.h',['../IRenderable_8h.html',1,'']]],
-  ['irenderer_2eh_10',['IRenderer.h',['../IRenderer_8h.html',1,'']]],
-  ['irendertarget_2eh_11',['IRenderTarget.h',['../IRenderTarget_8h.html',1,'']]],
-  ['itexturemanager_2eh_12',['ITextureManager.h',['../ITextureManager_8h.html',1,'']]]
+  ['irenderer_2eh_9',['IRenderer.h',['../IRenderer_8h.html',1,'']]],
+  ['itexturemanager_2eh_10',['ITextureManager.h',['../ITextureManager_8h.html',1,'']]]
 ];

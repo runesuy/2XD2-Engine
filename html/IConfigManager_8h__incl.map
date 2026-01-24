@@ -1,7 +1,7 @@
 <map id="engine/framework/include/2XD2/framework/resource_manager/IConfigManager.h" name="engine/framework/include/2XD2/framework/resource_manager/IConfigManager.h">
 <area shape="rect" id="Node000001" title=" " alt="" coords="5,5,188,61"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="13,109,66,135"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="81,63,58,97,53,94,76,60"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="91,109,220,135"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="117,60,141,94,136,97,113,63"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="27,109,81,135"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="86,62,69,96,64,94,81,60"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="105,109,174,135"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="112,60,129,94,124,96,107,62"/>
 </map>

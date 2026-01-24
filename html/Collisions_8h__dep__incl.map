@@ -1,36 +1,36 @@
 <map id="engine/framework/include/2XD2/framework/collisions/Collisions.h" name="engine/framework/include/2XD2/framework/collisions/Collisions.h">
-<area shape="rect" id="Node000001" title=" " alt="" coords="497,5,677,61"/>
-<area shape="rect" id="Node000002" href="$CollisionBody2D_8h.html" title=" " alt="" coords="325,213,505,268"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="530,72,486,111,451,163,427,213,422,211,446,160,482,107,527,68"/>
-<area shape="rect" id="Node000005" href="$ICollisionBody_8h.html" title=" " alt="" coords="497,109,677,165"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="589,77,589,108,584,108,584,77"/>
-<area shape="rect" id="Node000016" href="$Collisions_8cpp.html" title=" " alt="" coords="866,324,1030,365"/>
-<area shape="poly" id="edge18_Node000001_Node000016" title=" " alt="" coords="640,68,691,107,829,227,930,321,926,325,826,231,688,111,637,72"/>
-<area shape="rect" id="Node000003" href="$CollisionRect2D_8h.html" title=" " alt="" coords="5,316,219,372"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="320,276,194,318,192,313,319,271"/>
-<area shape="rect" id="Node000004" href="$CollisionBody2D_8cpp.html" title=" " alt="" coords="243,324,445,365"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="389,283,360,325,355,322,385,280"/>
-<area shape="poly" id="edge5_Node000005_Node000002" title=" " alt="" coords="529,175,462,214,460,210,526,171"/>
-<area shape="rect" id="Node000006" href="$ICollisionHandler_8h.html" title=" " alt="" coords="534,213,714,268"/>
-<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="604,179,616,211,611,213,599,181"/>
-<area shape="rect" id="Node000007" href="$DefaultCollisionHandler_8h.html" title=" " alt="" coords="469,316,649,372"/>
-<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="600,283,578,317,574,314,596,280"/>
-<area shape="rect" id="Node000011" href="$IGameConfig_8h.html" title=" " alt="" coords="673,316,842,372"/>
-<area shape="poly" id="edge11_Node000006_Node000011" title=" " alt="" coords="673,276,723,314,720,318,670,280"/>
-<area shape="poly" id="edge17_Node000006_Node000016" title=" " alt="" coords="726,271,886,321,884,326,724,276"/>
-<area shape="rect" id="Node000008" href="$DefaultGameConfig_8h.html" title=" " alt="" coords="475,420,645,476"/>
-<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="562,388,562,419,557,419,557,388"/>
-<area shape="rect" id="Node000010" href="$DefaultCollisionHandler_8cpp.html" title=" " alt="" coords="277,420,451,476"/>
-<area shape="poly" id="edge10_Node000007_Node000010" title=" " alt="" coords="494,382,418,422,415,417,492,377"/>
-<area shape="rect" id="Node000009" href="$DefaultGameConfig_8cpp.html" title=" " alt="" coords="410,524,609,564"/>
-<area shape="poly" id="edge9_Node000008_Node000009" title=" " alt="" coords="540,491,522,525,517,522,536,488"/>
-<area shape="poly" id="edge16_Node000011_Node000008" title=" " alt="" coords="692,382,614,422,612,417,690,377"/>
-<area shape="rect" id="Node000012" href="$Game_8h.html" title=" " alt="" coords="773,428,944,468"/>
-<area shape="poly" id="edge12_Node000011_Node000012" title=" " alt="" coords="797,381,841,425,838,429,793,385"/>
-<area shape="rect" id="Node000013" href="$Label_8cpp.html" title=" " alt="" coords="634,524,780,564"/>
-<area shape="poly" id="edge13_Node000012_Node000013" title=" " alt="" coords="815,479,740,525,737,521,813,474"/>
-<area shape="rect" id="Node000014" href="$TextRenderable_8cpp.html" title=" " alt="" coords="804,524,1015,564"/>
-<area shape="poly" id="edge14_Node000012_Node000014" title=" " alt="" coords="879,480,901,522,897,525,874,483"/>
-<area shape="rect" id="Node000015" href="$Game_8cpp.html" title=" " alt="" coords="1039,524,1185,564"/>
-<area shape="poly" id="edge15_Node000012_Node000015" title=" " alt="" coords="927,472,1060,521,1058,526,925,477"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="510,5,691,61"/>
+<area shape="rect" id="Node000002" href="$CollisionBody2D_8h.html" title=" " alt="" coords="338,213,519,268"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="544,72,500,111,464,163,441,213,436,211,460,160,496,107,540,68"/>
+<area shape="rect" id="Node000006" href="$ICollisionBody_8h.html" title=" " alt="" coords="510,109,691,165"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="603,77,603,108,598,108,598,77"/>
+<area shape="rect" id="Node000016" href="$Collisions_8cpp.html" title=" " alt="" coords="880,324,1043,365"/>
+<area shape="poly" id="edge18_Node000001_Node000016" title=" " alt="" coords="653,68,705,107,843,227,943,321,940,325,839,231,701,111,650,72"/>
+<area shape="rect" id="Node000003" href="$CollisionRect2D_8h.html" title=" " alt="" coords="5,324,233,365"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="332,276,180,326,178,321,330,271"/>
+<area shape="rect" id="Node000005" href="$CollisionBody2D_8cpp.html" title=" " alt="" coords="257,324,458,365"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="403,283,373,325,369,322,399,280"/>
+<area shape="rect" id="Node000004" href="$CollisionRect2D_8cpp.html" title=" " alt="" coords="46,428,192,468"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="122,380,122,427,116,427,116,380"/>
+<area shape="poly" id="edge6_Node000006_Node000002" title=" " alt="" coords="542,175,476,214,473,210,540,171"/>
+<area shape="rect" id="Node000007" href="$ICollisionHandler_8h.html" title=" " alt="" coords="548,213,728,268"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="618,179,630,211,625,213,613,181"/>
+<area shape="rect" id="Node000008" href="$DefaultCollisionHandler_8h.html" title=" " alt="" coords="482,316,663,372"/>
+<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="614,283,592,317,588,314,610,280"/>
+<area shape="rect" id="Node000012" href="$IGameConfig_8h.html" title=" " alt="" coords="686,316,856,372"/>
+<area shape="poly" id="edge12_Node000007_Node000012" title=" " alt="" coords="687,276,737,314,734,318,684,280"/>
+<area shape="poly" id="edge17_Node000007_Node000016" title=" " alt="" coords="740,271,900,321,898,326,738,276"/>
+<area shape="rect" id="Node000009" href="$DefaultGameConfig_8h.html" title=" " alt="" coords="586,420,756,476"/>
+<area shape="poly" id="edge9_Node000008_Node000009" title=" " alt="" coords="611,381,646,417,643,421,607,385"/>
+<area shape="rect" id="Node000011" href="$DefaultCollisionHandler_8cpp.html" title=" " alt="" coords="388,420,562,476"/>
+<area shape="poly" id="edge11_Node000008_Node000011" title=" " alt="" coords="538,385,503,421,499,418,534,382"/>
+<area shape="rect" id="Node000010" href="$DefaultGameConfig_8cpp.html" title=" " alt="" coords="570,524,769,564"/>
+<area shape="poly" id="edge10_Node000009_Node000010" title=" " alt="" coords="673,492,673,523,667,523,668,491"/>
+<area shape="poly" id="edge16_Node000012_Node000009" title=" " alt="" coords="736,385,700,421,696,417,732,381"/>
+<area shape="rect" id="Node000013" href="$Game_8h.html" title=" " alt="" coords="781,428,953,468"/>
+<area shape="poly" id="edge13_Node000012_Node000013" title=" " alt="" coords="809,382,851,426,847,429,805,385"/>
+<area shape="rect" id="Node000014" href="$Label_8cpp.html" title=" " alt="" coords="794,524,940,564"/>
+<area shape="poly" id="edge14_Node000013_Node000014" title=" " alt="" coords="870,484,870,523,864,523,864,484"/>
+<area shape="rect" id="Node000015" href="$Game_8cpp.html" title=" " alt="" coords="965,524,1111,564"/>
+<area shape="poly" id="edge15_Node000013_Node000015" title=" " alt="" coords="917,474,1003,521,1001,525,915,478"/>
 </map>

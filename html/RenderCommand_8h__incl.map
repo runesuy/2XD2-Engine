@@ -1,19 +1,11 @@
 <map id="engine/renderer/include/2XD2/renderer/RenderCommand.h" name="engine/renderer/include/2XD2/renderer/RenderCommand.h">
-<area shape="rect" id="Node000001" title=" " alt="" coords="88,5,310,46"/>
-<area shape="rect" id="Node000002" href="$RenderLayer_8h.html" title=" " alt="" coords="5,94,110,120"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="165,49,94,88,91,84,162,44"/>
-<area shape="rect" id="Node000004" href="$Vec2f_8h.html" title=" " alt="" coords="134,94,264,120"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="202,46,202,78,196,78,196,46"/>
-<area shape="rect" id="Node000007" href="$IRenderable_8h.html" title=" " alt="" coords="288,94,475,120"/>
-<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="246,44,341,85,338,90,243,49"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="29,168,86,193"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="60,120,60,152,55,152,55,120"/>
-<area shape="rect" id="Node000005" href="$Vec2_8hpp.html" title=" " alt="" coords="161,168,237,193"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="202,120,202,152,196,152,196,120"/>
-<area shape="rect" id="Node000006" title=" " alt="" coords="170,241,228,267"/>
-<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="202,194,202,226,196,226,196,194"/>
-<area shape="rect" id="Node000008" href="$IRenderTarget_8h.html" title=" " alt="" coords="325,168,438,193"/>
-<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="384,120,384,152,379,152,379,120"/>
-<area shape="rect" id="Node000009" title=" " alt="" coords="284,241,479,267"/>
-<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="384,194,384,226,379,226,379,194"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="203,5,425,46"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,94,201,120"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="262,49,151,91,149,86,260,44"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="225,94,403,120"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="316,46,316,78,311,78,311,46"/>
+<area shape="rect" id="Node000004" href="$RenderLayer_8h.html" title=" " alt="" coords="427,94,531,120"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="356,44,441,85,439,89,354,49"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="450,168,508,193"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="482,120,482,152,476,152,476,120"/>
 </map>

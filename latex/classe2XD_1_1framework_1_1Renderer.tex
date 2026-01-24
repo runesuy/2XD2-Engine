@@ -15,7 +15,9 @@ static void \mbox{\hyperlink{classe2XD_1_1framework_1_1Renderer_aebbb4b065f6ae0a
 \item 
 static void \mbox{\hyperlink{classe2XD_1_1framework_1_1Renderer_af99d771f4163ee774e2c72aec437cb3e}{submit}} (const \mbox{\hyperlink{structe2XD_1_1renderer_1_1RenderCommand}{renderer\+::\+Render\+Command}} \&render\+Command)
 \item 
-static void \mbox{\hyperlink{classe2XD_1_1framework_1_1Renderer_a357dabeb13ea60aa3f283721a4c43402}{flush}} (const \mbox{\hyperlink{namespacee2XD_1_1core_a64915d4955e6ed3347eb48450b60d026}{core\+::\+Vec2f}} \&camera\+Position, const \mbox{\hyperlink{namespacee2XD_1_1core_a64915d4955e6ed3347eb48450b60d026}{core\+::\+Vec2f}} \&camera\+Size, float camera\+Zoom)
+static void \mbox{\hyperlink{classe2XD_1_1framework_1_1Renderer_a51b45aadc810df3c0482c1958e00b03c}{flush}} (const \mbox{\hyperlink{namespacee2XD_1_1core_a64915d4955e6ed3347eb48450b60d026}{core\+::\+Vec2f}} \&camera\+Position, float camera\+Zoom)
+\item 
+static \mbox{\hyperlink{structe2XD_1_1core_1_1Vec2}{core\+::\+Vec2}}$<$ unsigned int $>$ \mbox{\hyperlink{classe2XD_1_1framework_1_1Renderer_a437cc54782bb68e19cb9ea4fd2aeeab2}{get\+Window\+Size}} ()
 \end{DoxyCompactItemize}
 \doxysubsubsection*{Friends}
 \begin{DoxyCompactItemize}
@@ -42,17 +44,15 @@ Clear the window before rendering a new frame. Here is the call graph for this f
 \includegraphics[width=350pt]{classe2XD_1_1framework_1_1Renderer_aebbb4b065f6ae0a93e02ae150436648e_cgraph}
 \end{center}
 \end{figure}
-\Hypertarget{classe2XD_1_1framework_1_1Renderer_a357dabeb13ea60aa3f283721a4c43402}\label{classe2XD_1_1framework_1_1Renderer_a357dabeb13ea60aa3f283721a4c43402} 
+\Hypertarget{classe2XD_1_1framework_1_1Renderer_a51b45aadc810df3c0482c1958e00b03c}\label{classe2XD_1_1framework_1_1Renderer_a51b45aadc810df3c0482c1958e00b03c} 
 \index{e2XD::framework::Renderer@{e2XD::framework::Renderer}!flush@{flush}}
 \index{flush@{flush}!e2XD::framework::Renderer@{e2XD::framework::Renderer}}
 \doxysubsubsection{\texorpdfstring{flush()}{flush()}}
-{\footnotesize\ttfamily void e2\+XD\+::framework\+::\+Renderer\+::flush (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespacee2XD_1_1core_a64915d4955e6ed3347eb48450b60d026}{core\+::\+Vec2f}} \&}]{camera\+Position,  }\item[{const \mbox{\hyperlink{namespacee2XD_1_1core_a64915d4955e6ed3347eb48450b60d026}{core\+::\+Vec2f}} \&}]{camera\+Size,  }\item[{float}]{camera\+Zoom }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily void e2\+XD\+::framework\+::\+Renderer\+::flush (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespacee2XD_1_1core_a64915d4955e6ed3347eb48450b60d026}{core\+::\+Vec2f}} \&}]{camera\+Position,  }\item[{float}]{camera\+Zoom }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
 Flush all submitted render commands to the window. 
 \begin{DoxyParams}{Parameters}
 {\em camera\+Position} & \\
-\hline
-{\em camera\+Size} & \\
 \hline
 {\em camera\+Zoom} & \\
 \hline
@@ -62,7 +62,24 @@ Here is the call graph for this function\+:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{classe2XD_1_1framework_1_1Renderer_a357dabeb13ea60aa3f283721a4c43402_cgraph}
+\includegraphics[width=350pt]{classe2XD_1_1framework_1_1Renderer_a51b45aadc810df3c0482c1958e00b03c_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classe2XD_1_1framework_1_1Renderer_a437cc54782bb68e19cb9ea4fd2aeeab2}\label{classe2XD_1_1framework_1_1Renderer_a437cc54782bb68e19cb9ea4fd2aeeab2} 
+\index{e2XD::framework::Renderer@{e2XD::framework::Renderer}!getWindowSize@{getWindowSize}}
+\index{getWindowSize@{getWindowSize}!e2XD::framework::Renderer@{e2XD::framework::Renderer}}
+\doxysubsubsection{\texorpdfstring{getWindowSize()}{getWindowSize()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structe2XD_1_1core_1_1Vec2}{core\+::\+Vec2}}$<$ unsigned int $>$ e2\+XD\+::framework\+::\+Renderer\+::get\+Window\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Get the current window size. \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classe2XD_1_1framework_1_1Renderer_a437cc54782bb68e19cb9ea4fd2aeeab2_cgraph}
 \end{center}
 \end{figure}
 \Hypertarget{classe2XD_1_1framework_1_1Renderer_ae0eeb514b0c48b288e1abf4d290583e5}\label{classe2XD_1_1framework_1_1Renderer_ae0eeb514b0c48b288e1abf4d290583e5} 

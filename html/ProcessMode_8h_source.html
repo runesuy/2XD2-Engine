@@ -81,39 +81,35 @@ $(document).ready(function() { init_codefold(0); });
   <div class="headertitle"><div class="title">ProcessMode.h</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="ProcessMode_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// Copyright (c) 2026 Rune Suy and the 2XD2-Engine contributors.</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// Licensed under the MIT License.</span></div>
+<a href="ProcessMode_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">//</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// Created by rune-suy on 1/11/26.</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">//</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment">//</span></div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment">// Created by rune-suy on 1/11/26.</span></div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment">//</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#ifndef INC_2XD2_ENGINE_PROCESSMODE_H</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#define INC_2XD2_ENGINE_PROCESSMODE_H</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#ifndef INC_2XD2_ENGINE_PROCESSMODE_H</span></div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#define INC_2XD2_ENGINE_PROCESSMODE_H</span></div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacee2XD_1_1framework.html">e2XD::framework</a></div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>{</div>
-<div class="foldopen" id="foldopen00015" data-start="{" data-end="};">
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="namespacee2XD_1_1framework.html#a6c4f6e2bcbc3eed7f9560cb99f987005">   15</a></span>    <span class="keyword">enum class</span> <a class="code hl_enumeration" href="namespacee2XD_1_1framework.html#a6c4f6e2bcbc3eed7f9560cb99f987005">ProcessMode</a></div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    {</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>        <a class="code hl_enumvalue" href="namespacee2XD_1_1framework.html#a6c4f6e2bcbc3eed7f9560cb99f987005a5b39c8b553c821e7cddc6da64b5bd2ee">DEFAULT</a>,</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        <a class="code hl_enumvalue" href="namespacee2XD_1_1framework.html#a6c4f6e2bcbc3eed7f9560cb99f987005a8c3083d56249b7c8b0041d9d759a5f48">ALWAYS_INHERIT</a>,</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>        <a class="code hl_enumvalue" href="namespacee2XD_1_1framework.html#a6c4f6e2bcbc3eed7f9560cb99f987005a5cbc0df2342cfe3326936d077581ffa5">STUBBORN</a>,</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        <a class="code hl_enumvalue" href="namespacee2XD_1_1framework.html#a6c4f6e2bcbc3eed7f9560cb99f987005a547f26431590d77b9681317c4042357b">ALWAYS_RUNNING</a></div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    };</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacee2XD_1_1framework.html">e2XD::framework</a></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>{</div>
+<div class="foldopen" id="foldopen00011" data-start="{" data-end="};">
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="namespacee2XD_1_1framework.html#a6c4f6e2bcbc3eed7f9560cb99f987005">   11</a></span>    <span class="keyword">enum class</span> <a class="code hl_enumeration" href="namespacee2XD_1_1framework.html#a6c4f6e2bcbc3eed7f9560cb99f987005">ProcessMode</a></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    {</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>        <a class="code hl_enumvalue" href="namespacee2XD_1_1framework.html#a6c4f6e2bcbc3eed7f9560cb99f987005a5b39c8b553c821e7cddc6da64b5bd2ee">DEFAULT</a>,</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>        <a class="code hl_enumvalue" href="namespacee2XD_1_1framework.html#a6c4f6e2bcbc3eed7f9560cb99f987005a8c3083d56249b7c8b0041d9d759a5f48">ALWAYS_INHERIT</a>,</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>        <a class="code hl_enumvalue" href="namespacee2XD_1_1framework.html#a6c4f6e2bcbc3eed7f9560cb99f987005a5cbc0df2342cfe3326936d077581ffa5">STUBBORN</a>,</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        <a class="code hl_enumvalue" href="namespacee2XD_1_1framework.html#a6c4f6e2bcbc3eed7f9560cb99f987005a547f26431590d77b9681317c4042357b">ALWAYS_RUNNING</a></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    };</div>
 </div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>} <span class="comment">// framework</span></div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="comment">// e2XD</span></div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="preprocessor">#endif </span><span class="comment">//INC_2XD2_ENGINE_PROCESSMODE_H</span></div>
-<div class="ttc" id="anamespacee2XD_1_1framework_html"><div class="ttname"><a href="namespacee2XD_1_1framework.html">e2XD::framework</a></div><div class="ttdef"><b>Definition</b> CollisionBody2D.h:17</div></div>
-<div class="ttc" id="anamespacee2XD_1_1framework_html_a6c4f6e2bcbc3eed7f9560cb99f987005"><div class="ttname"><a href="namespacee2XD_1_1framework.html#a6c4f6e2bcbc3eed7f9560cb99f987005">e2XD::framework::ProcessMode</a></div><div class="ttdeci">ProcessMode</div><div class="ttdef"><b>Definition</b> ProcessMode.h:16</div></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>} <span class="comment">// framework</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="comment">// e2XD</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="preprocessor">#endif </span><span class="comment">//INC_2XD2_ENGINE_PROCESSMODE_H</span></div>
+<div class="ttc" id="anamespacee2XD_1_1framework_html"><div class="ttname"><a href="namespacee2XD_1_1framework.html">e2XD::framework</a></div><div class="ttdef"><b>Definition</b> CollisionBody2D.h:13</div></div>
+<div class="ttc" id="anamespacee2XD_1_1framework_html_a6c4f6e2bcbc3eed7f9560cb99f987005"><div class="ttname"><a href="namespacee2XD_1_1framework.html#a6c4f6e2bcbc3eed7f9560cb99f987005">e2XD::framework::ProcessMode</a></div><div class="ttdeci">ProcessMode</div><div class="ttdef"><b>Definition</b> ProcessMode.h:12</div></div>
 <div class="ttc" id="anamespacee2XD_1_1framework_html_a6c4f6e2bcbc3eed7f9560cb99f987005a547f26431590d77b9681317c4042357b"><div class="ttname"><a href="namespacee2XD_1_1framework.html#a6c4f6e2bcbc3eed7f9560cb99f987005a547f26431590d77b9681317c4042357b">e2XD::framework::ProcessMode::ALWAYS_RUNNING</a></div><div class="ttdeci">@ ALWAYS_RUNNING</div></div>
 <div class="ttc" id="anamespacee2XD_1_1framework_html_a6c4f6e2bcbc3eed7f9560cb99f987005a5b39c8b553c821e7cddc6da64b5bd2ee"><div class="ttname"><a href="namespacee2XD_1_1framework.html#a6c4f6e2bcbc3eed7f9560cb99f987005a5b39c8b553c821e7cddc6da64b5bd2ee">e2XD::framework::ProcessMode::DEFAULT</a></div><div class="ttdeci">@ DEFAULT</div></div>
 <div class="ttc" id="anamespacee2XD_1_1framework_html_a6c4f6e2bcbc3eed7f9560cb99f987005a5cbc0df2342cfe3326936d077581ffa5"><div class="ttname"><a href="namespacee2XD_1_1framework.html#a6c4f6e2bcbc3eed7f9560cb99f987005a5cbc0df2342cfe3326936d077581ffa5">e2XD::framework::ProcessMode::STUBBORN</a></div><div class="ttdeci">@ STUBBORN</div></div>

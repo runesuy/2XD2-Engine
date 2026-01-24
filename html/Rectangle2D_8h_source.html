@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Doxygen: addons/std-addon/include/2XD2/std_addon/nodes/Rectangle2D.h Source File</title>
+<title>Doxygen: addons/std-addon/include/2XD2/std_addon/Rectangle2D.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -74,57 +74,57 @@ $(document).ready(function() { init_codefold(0); });
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_1233bc0a3e869c10318208e4553a4fcb.html">addons</a></li><li class="navelem"><a class="el" href="dir_7279799d42720613c3c3b320957c0f0c.html">std-addon</a></li><li class="navelem"><a class="el" href="dir_dde8c3615929560912ad12b4dc27cf5e.html">include</a></li><li class="navelem"><a class="el" href="dir_b320502b24d5a1c4fc4de191f4ee4cc8.html">2XD2</a></li><li class="navelem"><a class="el" href="dir_af37d048b804d4070eab3445f8ce9422.html">std_addon</a></li><li class="navelem"><a class="el" href="dir_5fc0163ddce590d9e7922d13383b391c.html">nodes</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_1233bc0a3e869c10318208e4553a4fcb.html">addons</a></li><li class="navelem"><a class="el" href="dir_7279799d42720613c3c3b320957c0f0c.html">std-addon</a></li><li class="navelem"><a class="el" href="dir_dde8c3615929560912ad12b4dc27cf5e.html">include</a></li><li class="navelem"><a class="el" href="dir_b320502b24d5a1c4fc4de191f4ee4cc8.html">2XD2</a></li><li class="navelem"><a class="el" href="dir_af37d048b804d4070eab3445f8ce9422.html">std_addon</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="headertitle"><div class="title">Rectangle2D.h</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="Rectangle2D_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// Copyright (c) 2026 Rune Suy and the 2XD2-Engine contributors.</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// Licensed under the MIT License.</span></div>
+<a href="Rectangle2D_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">//</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// Created by rune-suy on 12/20/25.</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">//</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment">//</span></div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment">// Created by rune-suy on 12/20/25.</span></div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment">//</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#ifndef INC_2XD2_ENGINE_RECTANGLE2D_H</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#define INC_2XD2_ENGINE_RECTANGLE2D_H</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;SFML/Graphics/RectangleShape.hpp&gt;</span></div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#ifndef INC_2XD2_ENGINE_RECTANGLE2D_H</span></div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#define INC_2XD2_ENGINE_RECTANGLE2D_H</span></div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &quot;<a class="code" href="Node2D_8h.html">2XD2/framework/nodes/Node2D.h</a>&quot;</span></div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &quot;<a class="code" href="RectangleRenderable_8h.html">2XD2/std_addon/renderables/RectangleRenderable.h</a>&quot;</span></div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacee2XD_1_1std__addon.html">e2XD::std_addon</a></div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>{</div>
-<div class="foldopen" id="foldopen00020" data-start="{" data-end="};">
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="classe2XD_1_1std__addon_1_1Rectangle2D.html">   20</a></span>    <span class="keyword">class </span><a class="code hl_class" href="classe2XD_1_1std__addon_1_1Rectangle2D.html">Rectangle2D</a> : <span class="keyword">public</span> <a class="code hl_class" href="classe2XD_1_1framework_1_1Node2D.html">framework::Node2D</a></div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    {</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>        <a class="code hl_class" href="classe2XD_1_1std__addon_1_1RectangleRenderable.html">RectangleRenderable</a> _renderable;</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <span class="keyword">protected</span>:</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classe2XD_1_1std__addon_1_1Rectangle2D.html#afcc2f753be2ee94e7460c74fcfb962c4">_internal_onDraw</a>() <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="classe2XD_1_1std__addon_1_1Rectangle2D.html#a35bec7d2fa68f968e73001d7386889c0">   31</a></span>        <a class="code hl_class" href="classe2XD_1_1std__addon_1_1RectangleRenderable.html">RectangleRenderable</a>&amp; <a class="code hl_function" href="classe2XD_1_1std__addon_1_1Rectangle2D.html#a35bec7d2fa68f968e73001d7386889c0">getRenderable</a>() { <span class="keywordflow">return</span> _renderable; }</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="classe2XD_1_1std__addon_1_1Rectangle2D.html#a2c835e4133892a6e9da6159553e4d637">   38</a></span>        <span class="keyword">const</span> <a class="code hl_class" href="classe2XD_1_1std__addon_1_1RectangleRenderable.html">RectangleRenderable</a>&amp; <a class="code hl_function" href="classe2XD_1_1std__addon_1_1Rectangle2D.html#a2c835e4133892a6e9da6159553e4d637">getRenderable</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> _renderable; }</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    };</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &quot;<a class="code" href="Node2D_8h.html">2XD2/framework/nodes/Node2D.h</a>&quot;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacee2XD_1_1std__addon.html">e2XD::std_addon</a></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>{</div>
+<div class="foldopen" id="foldopen00016" data-start="{" data-end="};">
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="classe2XD_1_1std__addon_1_1Rectangle2D.html">   16</a></span>    <span class="keyword">class </span><a class="code hl_class" href="classe2XD_1_1std__addon_1_1Rectangle2D.html">Rectangle2D</a> : <span class="keyword">public</span> <a class="code hl_class" href="classe2XD_1_1framework_1_1Node2D.html">framework::Node2D</a></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    {</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>        sf::RectangleShape rectangleShape;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <span class="keyword">protected</span>:</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classe2XD_1_1std__addon_1_1Rectangle2D.html#afcc2f753be2ee94e7460c74fcfb962c4">_internal_onDraw</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classe2XD_1_1std__addon_1_1Rectangle2D.html#a93f245825db0b35de151a13699afd0de">setFillColor</a>(<span class="keyword">const</span> sf::Color&amp; color);</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classe2XD_1_1std__addon_1_1Rectangle2D.html#a4c87cfa290b444971f3c64b6ae7626ac">setSize</a>(<span class="keyword">const</span> <a class="code hl_class" href="structe2XD_1_1core_1_1Vec2.html">core::Vec2f</a>&amp; size);</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        <span class="keywordtype">float</span> <a class="code hl_function" href="classe2XD_1_1std__addon_1_1Rectangle2D.html#a3c962e3189ca5ac8761fbd72f1932fd8">getHeight</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        <span class="keywordtype">float</span> <a class="code hl_function" href="classe2XD_1_1std__addon_1_1Rectangle2D.html#a97473570d3f3c21074c779a8d9dd7921">getWidth</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    };</div>
 </div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>} <span class="comment">// framework</span></div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="comment">// e2XD</span></div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="preprocessor">#endif </span><span class="comment">//INC_2XD2_ENGINE_RECTANGLE2D_H</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>} <span class="comment">// framework</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="comment">// e2XD</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="preprocessor">#endif </span><span class="comment">//INC_2XD2_ENGINE_RECTANGLE2D_H</span></div>
 <div class="ttc" id="aNode2D_8h_html"><div class="ttname"><a href="Node2D_8h.html">Node2D.h</a></div></div>
-<div class="ttc" id="aRectangleRenderable_8h_html"><div class="ttname"><a href="RectangleRenderable_8h.html">RectangleRenderable.h</a></div></div>
-<div class="ttc" id="aclasse2XD_1_1framework_1_1Node2D_html"><div class="ttname"><a href="classe2XD_1_1framework_1_1Node2D.html">e2XD::framework::Node2D</a></div><div class="ttdef"><b>Definition</b> Node2D.h:22</div></div>
-<div class="ttc" id="aclasse2XD_1_1std__addon_1_1Rectangle2D_html"><div class="ttname"><a href="classe2XD_1_1std__addon_1_1Rectangle2D.html">e2XD::std_addon::Rectangle2D</a></div><div class="ttdef"><b>Definition</b> Rectangle2D.h:21</div></div>
-<div class="ttc" id="aclasse2XD_1_1std__addon_1_1Rectangle2D_html_a2c835e4133892a6e9da6159553e4d637"><div class="ttname"><a href="classe2XD_1_1std__addon_1_1Rectangle2D.html#a2c835e4133892a6e9da6159553e4d637">e2XD::std_addon::Rectangle2D::getRenderable</a></div><div class="ttdeci">const RectangleRenderable &amp; getRenderable() const</div><div class="ttdef"><b>Definition</b> Rectangle2D.h:38</div></div>
-<div class="ttc" id="aclasse2XD_1_1std__addon_1_1Rectangle2D_html_a35bec7d2fa68f968e73001d7386889c0"><div class="ttname"><a href="classe2XD_1_1std__addon_1_1Rectangle2D.html#a35bec7d2fa68f968e73001d7386889c0">e2XD::std_addon::Rectangle2D::getRenderable</a></div><div class="ttdeci">RectangleRenderable &amp; getRenderable()</div><div class="ttdef"><b>Definition</b> Rectangle2D.h:31</div></div>
-<div class="ttc" id="aclasse2XD_1_1std__addon_1_1Rectangle2D_html_afcc2f753be2ee94e7460c74fcfb962c4"><div class="ttname"><a href="classe2XD_1_1std__addon_1_1Rectangle2D.html#afcc2f753be2ee94e7460c74fcfb962c4">e2XD::std_addon::Rectangle2D::_internal_onDraw</a></div><div class="ttdeci">void _internal_onDraw() override</div><div class="ttdef"><b>Definition</b> Rectangle2D.cpp:16</div></div>
-<div class="ttc" id="aclasse2XD_1_1std__addon_1_1RectangleRenderable_html"><div class="ttname"><a href="classe2XD_1_1std__addon_1_1RectangleRenderable.html">e2XD::std_addon::RectangleRenderable</a></div><div class="ttdef"><b>Definition</b> RectangleRenderable.h:20</div></div>
-<div class="ttc" id="anamespacee2XD_1_1std__addon_html"><div class="ttname"><a href="namespacee2XD_1_1std__addon.html">e2XD::std_addon</a></div><div class="ttdef"><b>Definition</b> AnimatedSprite2D.h:19</div></div>
+<div class="ttc" id="aclasse2XD_1_1framework_1_1Node2D_html"><div class="ttname"><a href="classe2XD_1_1framework_1_1Node2D.html">e2XD::framework::Node2D</a></div><div class="ttdef"><b>Definition</b> Node2D.h:18</div></div>
+<div class="ttc" id="aclasse2XD_1_1std__addon_1_1Rectangle2D_html"><div class="ttname"><a href="classe2XD_1_1std__addon_1_1Rectangle2D.html">e2XD::std_addon::Rectangle2D</a></div><div class="ttdef"><b>Definition</b> Rectangle2D.h:17</div></div>
+<div class="ttc" id="aclasse2XD_1_1std__addon_1_1Rectangle2D_html_a3c962e3189ca5ac8761fbd72f1932fd8"><div class="ttname"><a href="classe2XD_1_1std__addon_1_1Rectangle2D.html#a3c962e3189ca5ac8761fbd72f1932fd8">e2XD::std_addon::Rectangle2D::getHeight</a></div><div class="ttdeci">float getHeight() const</div><div class="ttdef"><b>Definition</b> Rectangle2D.cpp:35</div></div>
+<div class="ttc" id="aclasse2XD_1_1std__addon_1_1Rectangle2D_html_a4c87cfa290b444971f3c64b6ae7626ac"><div class="ttname"><a href="classe2XD_1_1std__addon_1_1Rectangle2D.html#a4c87cfa290b444971f3c64b6ae7626ac">e2XD::std_addon::Rectangle2D::setSize</a></div><div class="ttdeci">void setSize(const core::Vec2f &amp;size)</div><div class="ttdef"><b>Definition</b> Rectangle2D.cpp:30</div></div>
+<div class="ttc" id="aclasse2XD_1_1std__addon_1_1Rectangle2D_html_a93f245825db0b35de151a13699afd0de"><div class="ttname"><a href="classe2XD_1_1std__addon_1_1Rectangle2D.html#a93f245825db0b35de151a13699afd0de">e2XD::std_addon::Rectangle2D::setFillColor</a></div><div class="ttdeci">void setFillColor(const sf::Color &amp;color)</div><div class="ttdef"><b>Definition</b> Rectangle2D.cpp:25</div></div>
+<div class="ttc" id="aclasse2XD_1_1std__addon_1_1Rectangle2D_html_a97473570d3f3c21074c779a8d9dd7921"><div class="ttname"><a href="classe2XD_1_1std__addon_1_1Rectangle2D.html#a97473570d3f3c21074c779a8d9dd7921">e2XD::std_addon::Rectangle2D::getWidth</a></div><div class="ttdeci">float getWidth() const</div><div class="ttdef"><b>Definition</b> Rectangle2D.cpp:40</div></div>
+<div class="ttc" id="aclasse2XD_1_1std__addon_1_1Rectangle2D_html_afcc2f753be2ee94e7460c74fcfb962c4"><div class="ttname"><a href="classe2XD_1_1std__addon_1_1Rectangle2D.html#afcc2f753be2ee94e7460c74fcfb962c4">e2XD::std_addon::Rectangle2D::_internal_onDraw</a></div><div class="ttdeci">void _internal_onDraw() override</div><div class="ttdef"><b>Definition</b> Rectangle2D.cpp:12</div></div>
+<div class="ttc" id="anamespacee2XD_1_1std__addon_html"><div class="ttname"><a href="namespacee2XD_1_1std__addon.html">e2XD::std_addon</a></div><div class="ttdef"><b>Definition</b> AnimatedSprite2D.h:15</div></div>
+<div class="ttc" id="astructe2XD_1_1core_1_1Vec2_html"><div class="ttname"><a href="structe2XD_1_1core_1_1Vec2.html">e2XD::core::Vec2&lt; float &gt;</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

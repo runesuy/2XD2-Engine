@@ -1,21 +1,15 @@
 <map id="engine/framework/include/2XD2/framework/scene/Camera.h" name="engine/framework/include/2XD2/framework/scene/Camera.h">
-<area shape="rect" id="Node000001" title=" " alt="" coords="398,5,618,46"/>
-<area shape="rect" id="Node000002" href="$Scene_8h.html" title=" " alt="" coords="300,94,513,135"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="475,58,431,96,428,92,472,54"/>
-<area shape="rect" id="Node000010" href="$Camera_8cpp.html" title=" " alt="" coords="537,94,684,135"/>
-<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="545,54,589,92,586,96,541,58"/>
-<area shape="rect" id="Node000003" href="$TileMap_8cpp.html" title=" " alt="" coords="5,183,152,223"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="318,142,153,185,151,180,317,136"/>
-<area shape="rect" id="Node000004" href="$TileMapRenderable_8cpp.html" title=" " alt="" coords="176,183,410,223"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="370,146,320,184,317,180,367,142"/>
-<area shape="rect" id="Node000005" href="$Game_8h.html" title=" " alt="" coords="434,183,606,223"/>
-<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="446,142,496,180,493,184,443,146"/>
-<area shape="rect" id="Node000009" href="$Scene_8cpp.html" title=" " alt="" coords="629,183,776,223"/>
-<area shape="poly" id="edge8_Node000002_Node000009" title=" " alt="" coords="489,137,636,180,635,185,488,142"/>
-<area shape="rect" id="Node000006" href="$Label_8cpp.html" title=" " alt="" coords="244,271,390,312"/>
-<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="461,232,364,273,362,268,459,227"/>
-<area shape="rect" id="Node000007" href="$TextRenderable_8cpp.html" title=" " alt="" coords="415,271,625,312"/>
-<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="523,239,523,271,517,271,517,239"/>
-<area shape="rect" id="Node000008" href="$Game_8cpp.html" title=" " alt="" coords="649,271,796,312"/>
-<area shape="poly" id="edge7_Node000005_Node000008" title=" " alt="" coords="581,227,677,268,675,273,578,232"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="246,5,466,46"/>
+<area shape="rect" id="Node000002" href="$Scene_8h.html" title=" " alt="" coords="148,94,361,135"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="323,58,279,96,276,92,320,54"/>
+<area shape="rect" id="Node000007" href="$Camera_8cpp.html" title=" " alt="" coords="385,94,532,135"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="393,54,437,92,434,96,389,58"/>
+<area shape="rect" id="Node000003" href="$Game_8h.html" title=" " alt="" coords="78,183,250,223"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="225,147,186,184,182,180,221,143"/>
+<area shape="rect" id="Node000006" href="$Scene_8cpp.html" title=" " alt="" coords="273,183,420,223"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="288,143,328,180,324,184,284,147"/>
+<area shape="rect" id="Node000004" href="$Label_8cpp.html" title=" " alt="" coords="5,271,152,312"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="136,236,100,273,96,269,132,233"/>
+<area shape="rect" id="Node000005" href="$Game_8cpp.html" title=" " alt="" coords="176,271,322,312"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="196,233,232,269,228,273,192,236"/>
 </map>

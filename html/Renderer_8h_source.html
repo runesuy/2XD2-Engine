@@ -81,60 +81,62 @@ $(document).ready(function() { init_codefold(0); });
   <div class="headertitle"><div class="title">Renderer.h</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="Renderer_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// Copyright (c) 2026 Rune Suy and the 2XD2-Engine contributors.</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// Licensed under the MIT License.</span></div>
+<a href="Renderer_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">//</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// Created by runes on 14/12/2025.</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">//</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment">//</span></div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment">// Created by runes on 14/12/2025.</span></div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment">//</span></div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#ifndef INC_2XD2_ENGINE_RENDERER_H</span></div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#define INC_2XD2_ENGINE_RENDERER_H</span></div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &lt;SFML/Graphics/RenderWindow.hpp&gt;</span></div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &quot;<a class="code" href="RenderCommand_8h.html">2XD2/renderer/RenderCommand.h</a>&quot;</span></div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &quot;<a class="code" href="Vec2f_8h.html">2XD2/core/Vec2f.h</a>&quot;</span></div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &quot;<a class="code" href="IRenderer_8h.html">2XD2/renderer/IRenderer.h</a>&quot;</span></div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &quot;<a class="code" href="RenderLayer_8h.html">2XD2/renderer/RenderLayer.h</a>&quot;</span></div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacee2XD_1_1framework.html">e2XD::framework</a></div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>{</div>
-<div class="foldopen" id="foldopen00022" data-start="{" data-end="};">
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="classe2XD_1_1framework_1_1Renderer.html">   22</a></span>    <span class="keyword">class </span><a class="code hl_class" href="classe2XD_1_1framework_1_1Renderer.html">Renderer</a></div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    {</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>        <span class="keyword">inline</span> <span class="keyword">static</span> <a class="code hl_class" href="classe2XD_1_1renderer_1_1IRenderer.html">renderer::IRenderer</a>* _renderer = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="classe2XD_1_1framework_1_1Renderer.html#aa2fab026580d6f14280c2ffb8063a314">   26</a></span>        <span class="keyword">friend</span> <span class="keyword">class </span><a class="code hl_class" href="classe2XD_1_1framework_1_1Game.html">Game</a>;</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>        <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classe2XD_1_1framework_1_1Renderer.html#ae0eeb514b0c48b288e1abf4d290583e5">initialize</a>(<a class="code hl_class" href="classe2XD_1_1renderer_1_1IRenderer.html">renderer::IRenderer</a>* renderer);</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classe2XD_1_1framework_1_1Renderer.html#ae0eeb514b0c48b288e1abf4d290583e5">initialize</a>(sf::RenderWindow* window);</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classe2XD_1_1framework_1_1Renderer.html#aebbb4b065f6ae0a93e02ae150436648e">clearWindow</a>();</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classe2XD_1_1framework_1_1Renderer.html#af99d771f4163ee774e2c72aec437cb3e">submit</a>(<span class="keyword">const</span> <a class="code hl_struct" href="structe2XD_1_1renderer_1_1RenderCommand.html">renderer::RenderCommand</a>&amp; renderCommand);</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classe2XD_1_1framework_1_1Renderer.html#a357dabeb13ea60aa3f283721a4c43402">flush</a>(<span class="keyword">const</span> <a class="code hl_class" href="structe2XD_1_1core_1_1Vec2.html">core::Vec2f</a>&amp; cameraPosition, <span class="keyword">const</span> <a class="code hl_class" href="structe2XD_1_1core_1_1Vec2.html">core::Vec2f</a>&amp; cameraSize, <span class="keywordtype">float</span> cameraZoom);</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    };</div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#ifndef INC_2XD2_ENGINE_RENDERER_H</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#define INC_2XD2_ENGINE_RENDERER_H</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;SFML/Graphics/RenderWindow.hpp&gt;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &quot;<a class="code" href="RenderCommand_8h.html">2XD2/renderer/RenderCommand.h</a>&quot;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &quot;<a class="code" href="Vec2f_8h.html">2XD2/core/Vec2f.h</a>&quot;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &quot;<a class="code" href="IRenderer_8h.html">2XD2/renderer/IRenderer.h</a>&quot;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &quot;<a class="code" href="RenderLayer_8h.html">2XD2/renderer/RenderLayer.h</a>&quot;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacee2XD_1_1framework.html">e2XD::framework</a></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>{</div>
+<div class="foldopen" id="foldopen00018" data-start="{" data-end="};">
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="classe2XD_1_1framework_1_1Renderer.html">   18</a></span>    <span class="keyword">class </span><a class="code hl_class" href="classe2XD_1_1framework_1_1Renderer.html">Renderer</a></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    {</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>        <span class="keyword">inline</span> <span class="keyword">static</span> <a class="code hl_class" href="classe2XD_1_1renderer_1_1IRenderer.html">renderer::IRenderer</a>* _renderer = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="classe2XD_1_1framework_1_1Renderer.html#aa2fab026580d6f14280c2ffb8063a314">   22</a></span>        <span class="keyword">friend</span> <span class="keyword">class </span><a class="code hl_class" href="classe2XD_1_1framework_1_1Game.html">Game</a>;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>        <span class="keyword">static</span> <span class="keywordtype">void</span> setWindowView(<a class="code hl_enumeration" href="RenderLayer_8h.html#ad16d91520dd8dbd7a2178564fce5a168">RenderLayer</a> renderLayer, <span class="keyword">const</span> <a class="code hl_class" href="structe2XD_1_1core_1_1Vec2.html">core::Vec2f</a>&amp;);</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>        <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classe2XD_1_1framework_1_1Renderer.html#ae0eeb514b0c48b288e1abf4d290583e5">initialize</a>(<a class="code hl_class" href="classe2XD_1_1renderer_1_1IRenderer.html">renderer::IRenderer</a>* renderer);</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classe2XD_1_1framework_1_1Renderer.html#ae0eeb514b0c48b288e1abf4d290583e5">initialize</a>(sf::RenderWindow* window);</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classe2XD_1_1framework_1_1Renderer.html#aebbb4b065f6ae0a93e02ae150436648e">clearWindow</a>();</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classe2XD_1_1framework_1_1Renderer.html#af99d771f4163ee774e2c72aec437cb3e">submit</a>(<span class="keyword">const</span> <a class="code hl_struct" href="structe2XD_1_1renderer_1_1RenderCommand.html">renderer::RenderCommand</a>&amp; renderCommand);</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classe2XD_1_1framework_1_1Renderer.html#a51b45aadc810df3c0482c1958e00b03c">flush</a>(<span class="keyword">const</span> <a class="code hl_class" href="structe2XD_1_1core_1_1Vec2.html">core::Vec2f</a>&amp; cameraPosition, <span class="keywordtype">float</span> cameraZoom);</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        <span class="keyword">static</span> <a class="code hl_struct" href="structe2XD_1_1core_1_1Vec2.html">core::Vec2&lt;unsigned int&gt;</a> <a class="code hl_function" href="classe2XD_1_1framework_1_1Renderer.html#a437cc54782bb68e19cb9ea4fd2aeeab2">getWindowSize</a>();</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    };</div>
 </div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>}</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="preprocessor">#endif </span><span class="comment">//INC_2XD2_ENGINE_RENDERER_H</span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>}</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="preprocessor">#endif </span><span class="comment">//INC_2XD2_ENGINE_RENDERER_H</span></div>
 <div class="ttc" id="aIRenderer_8h_html"><div class="ttname"><a href="IRenderer_8h.html">IRenderer.h</a></div></div>
 <div class="ttc" id="aRenderCommand_8h_html"><div class="ttname"><a href="RenderCommand_8h.html">RenderCommand.h</a></div></div>
 <div class="ttc" id="aRenderLayer_8h_html"><div class="ttname"><a href="RenderLayer_8h.html">RenderLayer.h</a></div></div>
+<div class="ttc" id="aRenderLayer_8h_html_ad16d91520dd8dbd7a2178564fce5a168"><div class="ttname"><a href="RenderLayer_8h.html#ad16d91520dd8dbd7a2178564fce5a168">RenderLayer</a></div><div class="ttdeci">RenderLayer</div><div class="ttdef"><b>Definition</b> RenderLayer.h:13</div></div>
 <div class="ttc" id="aVec2f_8h_html"><div class="ttname"><a href="Vec2f_8h.html">Vec2f.h</a></div></div>
-<div class="ttc" id="aclasse2XD_1_1framework_1_1Game_html"><div class="ttname"><a href="classe2XD_1_1framework_1_1Game.html">e2XD::framework::Game</a></div><div class="ttdef"><b>Definition</b> Game.h:19</div></div>
-<div class="ttc" id="aclasse2XD_1_1framework_1_1Renderer_html"><div class="ttname"><a href="classe2XD_1_1framework_1_1Renderer.html">e2XD::framework::Renderer</a></div><div class="ttdef"><b>Definition</b> Renderer.h:23</div></div>
-<div class="ttc" id="aclasse2XD_1_1framework_1_1Renderer_html_a357dabeb13ea60aa3f283721a4c43402"><div class="ttname"><a href="classe2XD_1_1framework_1_1Renderer.html#a357dabeb13ea60aa3f283721a4c43402">e2XD::framework::Renderer::flush</a></div><div class="ttdeci">static void flush(const core::Vec2f &amp;cameraPosition, const core::Vec2f &amp;cameraSize, float cameraZoom)</div><div class="ttdef"><b>Definition</b> Renderer.cpp:36</div></div>
-<div class="ttc" id="aclasse2XD_1_1framework_1_1Renderer_html_ae0eeb514b0c48b288e1abf4d290583e5"><div class="ttname"><a href="classe2XD_1_1framework_1_1Renderer.html#ae0eeb514b0c48b288e1abf4d290583e5">e2XD::framework::Renderer::initialize</a></div><div class="ttdeci">static void initialize(renderer::IRenderer *renderer)</div><div class="ttdef"><b>Definition</b> Renderer.cpp:14</div></div>
-<div class="ttc" id="aclasse2XD_1_1framework_1_1Renderer_html_aebbb4b065f6ae0a93e02ae150436648e"><div class="ttname"><a href="classe2XD_1_1framework_1_1Renderer.html#aebbb4b065f6ae0a93e02ae150436648e">e2XD::framework::Renderer::clearWindow</a></div><div class="ttdeci">static void clearWindow()</div><div class="ttdef"><b>Definition</b> Renderer.cpp:20</div></div>
-<div class="ttc" id="aclasse2XD_1_1framework_1_1Renderer_html_af99d771f4163ee774e2c72aec437cb3e"><div class="ttname"><a href="classe2XD_1_1framework_1_1Renderer.html#af99d771f4163ee774e2c72aec437cb3e">e2XD::framework::Renderer::submit</a></div><div class="ttdeci">static void submit(const renderer::RenderCommand &amp;renderCommand)</div><div class="ttdef"><b>Definition</b> Renderer.cpp:31</div></div>
-<div class="ttc" id="aclasse2XD_1_1renderer_1_1IRenderer_html"><div class="ttname"><a href="classe2XD_1_1renderer_1_1IRenderer.html">e2XD::renderer::IRenderer</a></div><div class="ttdef"><b>Definition</b> IRenderer.h:21</div></div>
-<div class="ttc" id="anamespacee2XD_1_1framework_html"><div class="ttname"><a href="namespacee2XD_1_1framework.html">e2XD::framework</a></div><div class="ttdef"><b>Definition</b> CollisionBody2D.h:17</div></div>
+<div class="ttc" id="aclasse2XD_1_1framework_1_1Game_html"><div class="ttname"><a href="classe2XD_1_1framework_1_1Game.html">e2XD::framework::Game</a></div><div class="ttdef"><b>Definition</b> Game.h:16</div></div>
+<div class="ttc" id="aclasse2XD_1_1framework_1_1Renderer_html"><div class="ttname"><a href="classe2XD_1_1framework_1_1Renderer.html">e2XD::framework::Renderer</a></div><div class="ttdef"><b>Definition</b> Renderer.h:19</div></div>
+<div class="ttc" id="aclasse2XD_1_1framework_1_1Renderer_html_a437cc54782bb68e19cb9ea4fd2aeeab2"><div class="ttname"><a href="classe2XD_1_1framework_1_1Renderer.html#a437cc54782bb68e19cb9ea4fd2aeeab2">e2XD::framework::Renderer::getWindowSize</a></div><div class="ttdeci">static core::Vec2&lt; unsigned int &gt; getWindowSize()</div><div class="ttdef"><b>Definition</b> Renderer.cpp:38</div></div>
+<div class="ttc" id="aclasse2XD_1_1framework_1_1Renderer_html_a51b45aadc810df3c0482c1958e00b03c"><div class="ttname"><a href="classe2XD_1_1framework_1_1Renderer.html#a51b45aadc810df3c0482c1958e00b03c">e2XD::framework::Renderer::flush</a></div><div class="ttdeci">static void flush(const core::Vec2f &amp;cameraPosition, float cameraZoom)</div><div class="ttdef"><b>Definition</b> Renderer.cpp:33</div></div>
+<div class="ttc" id="aclasse2XD_1_1framework_1_1Renderer_html_ae0eeb514b0c48b288e1abf4d290583e5"><div class="ttname"><a href="classe2XD_1_1framework_1_1Renderer.html#ae0eeb514b0c48b288e1abf4d290583e5">e2XD::framework::Renderer::initialize</a></div><div class="ttdeci">static void initialize(renderer::IRenderer *renderer)</div><div class="ttdef"><b>Definition</b> Renderer.cpp:11</div></div>
+<div class="ttc" id="aclasse2XD_1_1framework_1_1Renderer_html_aebbb4b065f6ae0a93e02ae150436648e"><div class="ttname"><a href="classe2XD_1_1framework_1_1Renderer.html#aebbb4b065f6ae0a93e02ae150436648e">e2XD::framework::Renderer::clearWindow</a></div><div class="ttdeci">static void clearWindow()</div><div class="ttdef"><b>Definition</b> Renderer.cpp:17</div></div>
+<div class="ttc" id="aclasse2XD_1_1framework_1_1Renderer_html_af99d771f4163ee774e2c72aec437cb3e"><div class="ttname"><a href="classe2XD_1_1framework_1_1Renderer.html#af99d771f4163ee774e2c72aec437cb3e">e2XD::framework::Renderer::submit</a></div><div class="ttdeci">static void submit(const renderer::RenderCommand &amp;renderCommand)</div><div class="ttdef"><b>Definition</b> Renderer.cpp:28</div></div>
+<div class="ttc" id="aclasse2XD_1_1renderer_1_1IRenderer_html"><div class="ttname"><a href="classe2XD_1_1renderer_1_1IRenderer.html">e2XD::renderer::IRenderer</a></div><div class="ttdef"><b>Definition</b> IRenderer.h:16</div></div>
+<div class="ttc" id="anamespacee2XD_1_1framework_html"><div class="ttname"><a href="namespacee2XD_1_1framework.html">e2XD::framework</a></div><div class="ttdef"><b>Definition</b> CollisionBody2D.h:13</div></div>
 <div class="ttc" id="astructe2XD_1_1core_1_1Vec2_html"><div class="ttname"><a href="structe2XD_1_1core_1_1Vec2.html">e2XD::core::Vec2&lt; float &gt;</a></div></div>
-<div class="ttc" id="astructe2XD_1_1renderer_1_1RenderCommand_html"><div class="ttname"><a href="structe2XD_1_1renderer_1_1RenderCommand.html">e2XD::renderer::RenderCommand</a></div><div class="ttdef"><b>Definition</b> RenderCommand.h:22</div></div>
+<div class="ttc" id="astructe2XD_1_1renderer_1_1RenderCommand_html"><div class="ttname"><a href="structe2XD_1_1renderer_1_1RenderCommand.html">e2XD::renderer::RenderCommand</a></div><div class="ttdef"><b>Definition</b> RenderCommand.h:19</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

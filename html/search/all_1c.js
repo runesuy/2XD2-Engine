@@ -6,7 +6,5 @@ var searchData=
   ['vec2_3c_20float_20_3e_3',['Vec2&lt; float &gt;',['../structe2XD_1_1core_1_1Vec2.html',1,'e2XD::core']]],
   ['vec2f_4',['Vec2f',['../namespacee2XD_1_1core.html#a64915d4955e6ed3347eb48450b60d026',1,'e2XD::core']]],
   ['vec2f_2eh_5',['Vec2f.h',['../Vec2f_8h.html',1,'']]],
-  ['viewmode_6',['ViewMode',['../namespacee2XD_1_1renderer.html#a759edd8f84d4cd8d0ff76b633dbc4662',1,'e2XD::renderer']]],
-  ['viewmode_2eh_7',['ViewMode.h',['../ViewMode_8h.html',1,'']]],
-  ['visible_8',['visible',['../classe2XD_1_1framework_1_1Renderable.html#a5f075727608df3d602ea422e19c82648',1,'e2XD::framework::Renderable']]]
+  ['visible_6',['visible',['../classe2XD_1_1framework_1_1Renderable.html#a5f075727608df3d602ea422e19c82648',1,'e2XD::framework::Renderable']]]
 ];

@@ -80,44 +80,41 @@ $(function() {
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="Renderer_8h_source.html">2XD2/framework/drawing/Renderer.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="RenderCommand_8h_source.html">2XD2/renderer/RenderCommand.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="RenderLayer_8h_source.html">2XD2/renderer/RenderLayer.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for Renderer.cpp:</div>
 <div class="dyncontent">
 <div class="center"><img src="Renderer_8cpp__incl.png" border="0" usemap="#aengine_2framework_2src_2drawing_2Renderer_8cpp" alt=""/></div>
 <map name="aengine_2framework_2src_2drawing_2Renderer_8cpp" id="aengine_2framework_2src_2drawing_2Renderer_8cpp">
-<area shape="rect" title=" " alt="" coords="30,5,181,46"/>
-<area shape="rect" href="Renderer_8h.html" title=" " alt="" coords="238,94,405,135"/>
-<area shape="poly" title=" " alt="" coords="156,44,259,85,257,90,154,49"/>
-<area shape="rect" href="RenderCommand_8h.html" title=" " alt="" coords="95,256,313,282"/>
-<area shape="poly" title=" " alt="" coords="116,45,196,241,191,243,111,47"/>
-<area shape="rect" title=" " alt="" coords="506,256,734,282"/>
-<area shape="poly" title=" " alt="" coords="376,133,484,180,542,213,592,245,589,250,539,218,482,185,374,138"/>
-<area shape="poly" title=" " alt="" coords="309,137,225,246,221,242,305,133"/>
-<area shape="rect" href="RenderLayer_8h.html" title=" " alt="" coords="5,330,110,356"/>
-<area shape="poly" title=" " alt="" coords="266,138,221,157,172,184,125,217,85,258,70,286,63,316,58,314,65,284,81,255,122,213,169,179,219,152,263,133"/>
-<area shape="rect" href="Vec2f_8h.html" title=" " alt="" coords="403,330,533,356"/>
-<area shape="poly" title=" " alt="" coords="406,114,491,123,538,132,585,146,632,164,676,188,716,218,749,255,755,269,749,284,736,295,717,305,667,320,608,331,549,338,549,333,607,325,665,315,715,300,733,290,745,280,749,269,745,258,712,222,673,192,630,169,584,151,537,137,490,128,405,119"/>
-<area shape="rect" href="IRenderer_8h.html" title=" " alt="" coords="297,183,471,208"/>
-<area shape="poly" title=" " alt="" coords="339,133,367,169,363,172,335,137"/>
-<area shape="poly" title=" " alt="" coords="180,285,97,325,95,320,178,280"/>
-<area shape="poly" title=" " alt="" coords="250,280,409,323,408,328,248,285"/>
-<area shape="rect" href="IRenderable_8h.html" title=" " alt="" coords="133,330,321,356"/>
-<area shape="poly" title=" " alt="" coords="210,281,221,314,216,316,205,283"/>
-<area shape="rect" title=" " alt="" coords="29,404,86,429"/>
-<area shape="poly" title=" " alt="" coords="60,356,60,388,55,388,55,356"/>
-<area shape="rect" href="Vec2_8hpp.html" title=" " alt="" coords="431,404,506,429"/>
-<area shape="poly" title=" " alt="" coords="471,356,471,388,466,388,466,356"/>
-<area shape="rect" title=" " alt="" coords="440,477,497,503"/>
-<area shape="poly" title=" " alt="" coords="471,430,471,462,466,462,466,430"/>
-<area shape="rect" href="IRenderTarget_8h.html" title=" " alt="" coords="170,404,284,429"/>
-<area shape="poly" title=" " alt="" coords="230,356,230,388,224,388,224,356"/>
-<area shape="rect" title=" " alt="" coords="129,477,325,503"/>
-<area shape="poly" title=" " alt="" coords="230,430,230,462,224,462,224,430"/>
-<area shape="poly" title=" " alt="" coords="425,206,566,249,565,254,423,211"/>
-<area shape="poly" title=" " alt="" coords="355,211,250,253,248,248,353,206"/>
-<area shape="poly" title=" " alt="" coords="402,207,424,228,445,255,458,285,466,314,461,316,453,287,441,258,420,231,398,211"/>
-<area shape="rect" href="ViewMode_8h.html" title=" " alt="" coords="338,256,430,282"/>
-<area shape="poly" title=" " alt="" coords="387,209,387,241,382,241,382,209"/>
+<area shape="rect" title=" " alt="" coords="619,5,770,46"/>
+<area shape="rect" href="Renderer_8h.html" title=" " alt="" coords="368,94,536,135"/>
+<area shape="poly" title=" " alt="" coords="640,49,522,91,521,86,639,44"/>
+<area shape="rect" href="RenderCommand_8h.html" title=" " alt="" coords="413,256,632,282"/>
+<area shape="poly" title=" " alt="" coords="683,48,542,245,538,242,679,45"/>
+<area shape="rect" href="RenderLayer_8h.html" title=" " alt="" coords="636,330,740,356"/>
+<area shape="poly" title=" " alt="" coords="697,46,691,314,686,314,691,46"/>
+<area shape="rect" title=" " alt="" coords="160,256,389,282"/>
+<area shape="poly" title=" " alt="" coords="443,137,418,173,384,210,352,233,319,252,317,247,349,229,381,206,414,170,438,134"/>
+<area shape="poly" title=" " alt="" coords="463,134,513,241,508,243,458,136"/>
+<area shape="poly" title=" " alt="" coords="489,133,566,183,608,216,646,255,666,284,681,314,676,317,661,287,642,258,604,220,563,187,486,137"/>
+<area shape="rect" href="Vec2f_8h.html" title=" " alt="" coords="5,256,136,282"/>
+<area shape="poly" title=" " alt="" coords="368,131,279,151,232,166,186,185,136,215,96,248,92,244,133,211,184,180,230,161,277,146,367,125"/>
+<area shape="rect" href="IRenderer_8h.html" title=" " alt="" coords="197,183,371,208"/>
+<area shape="poly" title=" " alt="" coords="411,138,325,178,322,173,409,133"/>
+<area shape="rect" title=" " alt="" coords="214,330,410,356"/>
+<area shape="poly" title=" " alt="" coords="488,285,363,327,361,322,486,280"/>
+<area shape="rect" title=" " alt="" coords="433,330,612,356"/>
+<area shape="poly" title=" " alt="" coords="525,282,525,314,520,314,520,282"/>
+<area shape="poly" title=" " alt="" coords="552,280,647,321,645,326,549,285"/>
+<area shape="rect" title=" " alt="" coords="659,404,717,429"/>
+<area shape="poly" title=" " alt="" coords="691,356,691,388,685,388,685,356"/>
+<area shape="rect" href="Vec2_8hpp.html" title=" " alt="" coords="33,330,108,356"/>
+<area shape="poly" title=" " alt="" coords="73,282,73,314,68,314,68,282"/>
+<area shape="rect" title=" " alt="" coords="42,404,99,429"/>
+<area shape="poly" title=" " alt="" coords="73,356,73,388,68,388,68,356"/>
+<area shape="poly" title=" " alt="" coords="285,209,281,241,275,241,280,208"/>
+<area shape="poly" title=" " alt="" coords="325,206,468,249,466,254,324,211"/>
+<area shape="poly" title=" " alt="" coords="248,211,122,254,120,248,247,206"/>
 </map>
 </div>
 </div><table class="memberdecls">

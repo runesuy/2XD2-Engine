@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['label_0',['Label',['../classe2XD_1_1std__addon_1_1Label.html#a2b83c800c4cc52dc26aeb59c34b2237c',1,'e2XD::std_addon::Label']]],
+  ['label_0',['Label',['../classe2XD_1_1std__addon_1_1Label.html#ae92d31c516fd940044034c88cead05cd',1,'e2XD::std_addon::Label']]],
   ['length_1',['length',['../structe2XD_1_1core_1_1Vec2.html#a616e0b4758c7e3d47d4ba40ff6455494',1,'e2XD::core::Vec2']]],
   ['loadconfig_2',['loadconfig',['../classe2XD_1_1framework_1_1Resources_1_1Config.html#a032908eef7a4b06fdb8886af8ea2a5bd',1,'e2XD::framework::Resources::Config::loadConfig()'],['../classe2XD_1_1framework_1_1DefaultConfigManager.html#a961a340175018822ecc1c9856d5df535',1,'e2XD::framework::DefaultConfigManager::loadConfig()'],['../classe2XD_1_1framework_1_1IConfigManager.html#ab9383d84f954d360eeac3be921a3adeb',1,'e2XD::framework::IConfigManager::loadConfig()']]],
   ['loadfont_3',['loadfont',['../classe2XD_1_1framework_1_1DefaultFontManager.html#a813a61c6239a5367e96109f48f13f7e9',1,'e2XD::framework::DefaultFontManager::loadFont()'],['../classe2XD_1_1framework_1_1Resources_1_1Fonts.html#a74e99a1a1a234454542c4b7326172934',1,'e2XD::framework::Resources::Fonts::loadFont()'],['../classe2XD_1_1framework_1_1IFontManager.html#a691ef2b34a8c5503f0f09c66a9164f0a',1,'e2XD::framework::IFontManager::loadFont()']]],

@@ -13,13 +13,7 @@ void \mbox{\hyperlink{classe2XD_1_1framework_1_1Game_a3b33447365a8d953488d5b2c90
 \item 
 void \mbox{\hyperlink{classe2XD_1_1framework_1_1Game_a64dc1af70c840c70af950fcd0d5384af}{set\+Window\+Title}} (const std\+::string \&title)
 \item 
-void \mbox{\hyperlink{classe2XD_1_1framework_1_1Game_ac862615eb6d6a15d9384fc1dec438bec}{set\+Physics\+Ticks\+Per\+Second}} (int ticks\+Per\+Second)
-\item 
-void \mbox{\hyperlink{classe2XD_1_1framework_1_1Game_a9d7fa311b41227cfab9267c71fdea508}{enable\+VSync}} ()
-\item 
-void \mbox{\hyperlink{classe2XD_1_1framework_1_1Game_aa69efc79266b88d0544d21c4010cabbb}{disable\+VSync}} ()
-\item 
-void \mbox{\hyperlink{classe2XD_1_1framework_1_1Game_aacc92870156854e1fb1ed3796eb9f737}{set\+Active\+Scene}} (std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classe2XD_1_1framework_1_1Scene}{Scene}} $>$ \&\&scene)
+void \mbox{\hyperlink{classe2XD_1_1framework_1_1Game_aebb3593a47ff5ae2b709232848a8fa1c}{set\+Active\+Scene}} (std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classe2XD_1_1framework_1_1Scene}{framework\+::\+Scene}} $>$ \&\&scene)
 \item 
 {\footnotesize template$<$Is\+Scene T$>$ }\\\mbox{\hyperlink{Key_8h_ab3c7af4820830f9166ede9e5623c4e73ab9ece18c950afbfa6b0fdbfa4ff731d3}{T}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classe2XD_1_1framework_1_1Game_adea469631c18e6757a791641d54c393d}{create\+Active\+Scene}} ()
 \end{DoxyCompactItemize}
@@ -63,19 +57,7 @@ Here is the call graph for this function\+:
 \includegraphics[width=350pt]{classe2XD_1_1framework_1_1Game_adea469631c18e6757a791641d54c393d_cgraph}
 \end{center}
 \end{figure}
-\Hypertarget{classe2XD_1_1framework_1_1Game_aa69efc79266b88d0544d21c4010cabbb}\label{classe2XD_1_1framework_1_1Game_aa69efc79266b88d0544d21c4010cabbb} 
-\index{e2XD::framework::Game@{e2XD::framework::Game}!disableVSync@{disableVSync}}
-\index{disableVSync@{disableVSync}!e2XD::framework::Game@{e2XD::framework::Game}}
-\doxysubsubsection{\texorpdfstring{disableVSync()}{disableVSync()}}
-{\footnotesize\ttfamily void e2\+XD\+::framework\+::\+Game\+::disable\+VSync (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
-
-Disable vertical synchronization (VSync) for the game window. This allows the game to run at an uncapped frame rate, which may lead to screen tearing but can improve performance on some systems. Does not influence the physics update rate. \Hypertarget{classe2XD_1_1framework_1_1Game_a9d7fa311b41227cfab9267c71fdea508}\label{classe2XD_1_1framework_1_1Game_a9d7fa311b41227cfab9267c71fdea508} 
-\index{e2XD::framework::Game@{e2XD::framework::Game}!enableVSync@{enableVSync}}
-\index{enableVSync@{enableVSync}!e2XD::framework::Game@{e2XD::framework::Game}}
-\doxysubsubsection{\texorpdfstring{enableVSync()}{enableVSync()}}
-{\footnotesize\ttfamily void e2\+XD\+::framework\+::\+Game\+::enable\+VSync (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
-
-Enable vertical synchronization (VSync) for the game window. This synchronizes the frame rate of the game with the refresh rate of the monitor, reducing screen tearing and providing a smoother visual experience. This also includes the drawing and update. Does not influence the physics update rate. \Hypertarget{classe2XD_1_1framework_1_1Game_a3b33447365a8d953488d5b2c90b4d4ee}\label{classe2XD_1_1framework_1_1Game_a3b33447365a8d953488d5b2c90b4d4ee} 
+\Hypertarget{classe2XD_1_1framework_1_1Game_a3b33447365a8d953488d5b2c90b4d4ee}\label{classe2XD_1_1framework_1_1Game_a3b33447365a8d953488d5b2c90b4d4ee} 
 \index{e2XD::framework::Game@{e2XD::framework::Game}!run@{run}}
 \index{run@{run}!e2XD::framework::Game@{e2XD::framework::Game}}
 \doxysubsubsection{\texorpdfstring{run()}{run()}}
@@ -89,28 +71,12 @@ Here is the call graph for this function\+:
 \includegraphics[width=350pt]{classe2XD_1_1framework_1_1Game_a3b33447365a8d953488d5b2c90b4d4ee_cgraph}
 \end{center}
 \end{figure}
-\Hypertarget{classe2XD_1_1framework_1_1Game_aacc92870156854e1fb1ed3796eb9f737}\label{classe2XD_1_1framework_1_1Game_aacc92870156854e1fb1ed3796eb9f737} 
+\Hypertarget{classe2XD_1_1framework_1_1Game_aebb3593a47ff5ae2b709232848a8fa1c}\label{classe2XD_1_1framework_1_1Game_aebb3593a47ff5ae2b709232848a8fa1c} 
 \index{e2XD::framework::Game@{e2XD::framework::Game}!setActiveScene@{setActiveScene}}
 \index{setActiveScene@{setActiveScene}!e2XD::framework::Game@{e2XD::framework::Game}}
 \doxysubsubsection{\texorpdfstring{setActiveScene()}{setActiveScene()}}
-{\footnotesize\ttfamily void e2\+XD\+::framework\+::\+Game\+::set\+Active\+Scene (\begin{DoxyParamCaption}\item[{std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classe2XD_1_1framework_1_1Scene}{Scene}} $>$ \&\&}]{scene }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void e2\+XD\+::framework\+::\+Game\+::set\+Active\+Scene (\begin{DoxyParamCaption}\item[{std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classe2XD_1_1framework_1_1Scene}{framework\+::\+Scene}} $>$ \&\&}]{scene }\end{DoxyParamCaption})}
 
-Set the active scene for the game. If the game is currently running, the new scene will be activated at the start of the next frame to avoid destroying the current scene while it\textquotesingle{}s still in use. 
-\begin{DoxyParams}{Parameters}
-{\em scene} & \\
-\hline
-\end{DoxyParams}
-\Hypertarget{classe2XD_1_1framework_1_1Game_ac862615eb6d6a15d9384fc1dec438bec}\label{classe2XD_1_1framework_1_1Game_ac862615eb6d6a15d9384fc1dec438bec} 
-\index{e2XD::framework::Game@{e2XD::framework::Game}!setPhysicsTicksPerSecond@{setPhysicsTicksPerSecond}}
-\index{setPhysicsTicksPerSecond@{setPhysicsTicksPerSecond}!e2XD::framework::Game@{e2XD::framework::Game}}
-\doxysubsubsection{\texorpdfstring{setPhysicsTicksPerSecond()}{setPhysicsTicksPerSecond()}}
-{\footnotesize\ttfamily void e2\+XD\+::framework\+::\+Game\+::set\+Physics\+Ticks\+Per\+Second (\begin{DoxyParamCaption}\item[{int}]{ticks\+Per\+Second }\end{DoxyParamCaption})}
-
-Set the number of physics ticks (updates) per second. A higher number results in more frequent physics updates, leading to smoother and more accurate physics simulations, but may increase CPU usage. A lower number reduces CPU load but may result in less accurate physics behavior. The default value is 120 ticks per second. 
-\begin{DoxyParams}{Parameters}
-{\em ticks\+Per\+Second} & The desired number of physics ticks per second. \\
-\hline
-\end{DoxyParams}
 \Hypertarget{classe2XD_1_1framework_1_1Game_a64dc1af70c840c70af950fcd0d5384af}\label{classe2XD_1_1framework_1_1Game_a64dc1af70c840c70af950fcd0d5384af} 
 \index{e2XD::framework::Game@{e2XD::framework::Game}!setWindowTitle@{setWindowTitle}}
 \index{setWindowTitle@{setWindowTitle}!e2XD::framework::Game@{e2XD::framework::Game}}

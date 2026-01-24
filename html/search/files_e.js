@@ -1,20 +1,9 @@
 var searchData=
 [
-  ['textrenderable_2ecpp_0',['TextRenderable.cpp',['../TextRenderable_8cpp.html',1,'']]],
-  ['textrenderable_2eh_1',['TextRenderable.h',['../TextRenderable_8h.html',1,'']]],
-  ['textures_2ecpp_2',['Textures.cpp',['../Textures_8cpp.html',1,'']]],
-  ['textures_2eh_3',['Textures.h',['../Textures_8h.html',1,'']]],
-  ['tile_2eh_4',['Tile.h',['../Tile_8h.html',1,'']]],
-  ['tilechunk_2ecpp_5',['TileChunk.cpp',['../TileChunk_8cpp.html',1,'']]],
-  ['tilechunk_2eh_6',['TileChunk.h',['../TileChunk_8h.html',1,'']]],
-  ['tilemap_2ecpp_7',['TileMap.cpp',['../TileMap_8cpp.html',1,'']]],
-  ['tilemap_2eh_8',['TileMap.h',['../TileMap_8h.html',1,'']]],
-  ['tilemaprenderable_2ecpp_9',['TileMapRenderable.cpp',['../TileMapRenderable_8cpp.html',1,'']]],
-  ['tilemaprenderable_2eh_10',['TileMapRenderable.h',['../TileMapRenderable_8h.html',1,'']]],
-  ['tileset_2ecpp_11',['TileSet.cpp',['../TileSet_8cpp.html',1,'']]],
-  ['tileset_2eh_12',['TileSet.h',['../TileSet_8h.html',1,'']]],
-  ['time_2ecpp_13',['Time.cpp',['../Time_8cpp.html',1,'']]],
-  ['time_2eh_14',['Time.h',['../Time_8h.html',1,'']]],
-  ['transform2d_2ecpp_15',['Transform2D.cpp',['../Transform2D_8cpp.html',1,'']]],
-  ['transform2d_2eh_16',['Transform2D.h',['../Transform2D_8h.html',1,'']]]
+  ['textures_2ecpp_0',['Textures.cpp',['../Textures_8cpp.html',1,'']]],
+  ['textures_2eh_1',['Textures.h',['../Textures_8h.html',1,'']]],
+  ['time_2ecpp_2',['Time.cpp',['../Time_8cpp.html',1,'']]],
+  ['time_2eh_3',['Time.h',['../Time_8h.html',1,'']]],
+  ['transform2d_2ecpp_4',['Transform2D.cpp',['../Transform2D_8cpp.html',1,'']]],
+  ['transform2d_2eh_5',['Transform2D.h',['../Transform2D_8h.html',1,'']]]
 ];

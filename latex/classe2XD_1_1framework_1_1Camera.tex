@@ -34,10 +34,6 @@ Collaboration diagram for e2\+XD\+::framework\+::Camera\+:
 float \mbox{\hyperlink{classe2XD_1_1framework_1_1Camera_a28eb41d51187fc3600d3b1179a3a7489}{get\+Zoom}} () const
 \item 
 void \mbox{\hyperlink{classe2XD_1_1framework_1_1Camera_aaf89736477fcce6626dcbf9b308b6884}{set\+Zoom}} (float new\+Zoom)
-\item 
-void \mbox{\hyperlink{classe2XD_1_1framework_1_1Camera_a5dcd530d13003595f070fbab4a2d9c81}{set\+Size}} (const \mbox{\hyperlink{namespacee2XD_1_1core_a64915d4955e6ed3347eb48450b60d026}{core\+::\+Vec2f}} \&new\+Size)
-\item 
-const \mbox{\hyperlink{namespacee2XD_1_1core_a64915d4955e6ed3347eb48450b60d026}{core\+::\+Vec2f}} \& \mbox{\hyperlink{classe2XD_1_1framework_1_1Camera_aacd7ffe44c21a5009b36f5bc62b3fd75}{get\+Size}} () const
 \end{DoxyCompactItemize}
 \doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classe2XD_1_1framework_1_1Node2D}{e2\+XD\+::framework\+::\+Node2D}}}
 \begin{DoxyCompactItemize}
@@ -73,17 +69,15 @@ virtual void \mbox{\hyperlink{classe2XD_1_1framework_1_1Node2D_afdc293c49a18222e
 \item 
 \mbox{\hyperlink{classe2XD_1_1framework_1_1Node_a131881db1f212ce2d5ea8db9dddc0475}{Node}} ()=default
 \item 
-\mbox{\hyperlink{classe2XD_1_1framework_1_1Node_acbbfae8af7d895de77f0fb150df3fbdb}{\texorpdfstring{$\sim$}{\string~}\+Node}} () override
+\mbox{\hyperlink{classe2XD_1_1framework_1_1Node_a613541edc80979c11b37c646a4afdbb8}{\texorpdfstring{$\sim$}{\string~}\+Node}} () override=default
 \item 
-void \mbox{\hyperlink{classe2XD_1_1framework_1_1Node_a0957c712c6511db3eb7c7d1b7f6a2ade}{update}} (double delta\+Time)
-\item 
-void \mbox{\hyperlink{classe2XD_1_1framework_1_1Node_aa0455bfb83dcbef3b833e8d82e347516}{physics\+Update}} (double delta\+Time)
+void \mbox{\hyperlink{classe2XD_1_1framework_1_1Node_a5ef907ce5d1cef1dd7238a88cbdaff61}{update}} ()
 \item 
 void \mbox{\hyperlink{classe2XD_1_1framework_1_1Node_a9aaf0d4a9499a43153bba28c0e482201}{create}} ()
 \item 
 void \mbox{\hyperlink{classe2XD_1_1framework_1_1Node_a7831b27923edd33f0545eb56208d4631}{destroy}} ()
 \item 
-{\footnotesize template$<$Is\+Node Entity\+Type, typename... Args$>$ }\\Entity\+Type \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classe2XD_1_1framework_1_1Node_a672e1b21a8ca8cc34d3735cea5196f0a}{create\+Sub\+Node}} (Args \&\&...args)
+{\footnotesize template$<$Is\+Node Entity\+Type$>$ }\\Entity\+Type \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classe2XD_1_1framework_1_1Node_af964fd54baaa40992497d852be754086}{create\+Sub\+Node}} ()
 \item 
 virtual void \mbox{\hyperlink{classe2XD_1_1framework_1_1Node_abc834854340010c6750a1463e3254e28}{add\+Sub\+Node}} (std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classe2XD_1_1framework_1_1Node}{Node}} $>$ node)
 \item 
@@ -105,10 +99,6 @@ const \mbox{\hyperlink{classe2XD_1_1framework_1_1Node}{Node}} \texorpdfstring{$\
 \item 
 \mbox{\hyperlink{classe2XD_1_1framework_1_1Node}{Node}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classe2XD_1_1framework_1_1Node_a40286968151235c93254f56f9b0b993a}{get\+Parent}} ()
 \item 
-const \mbox{\hyperlink{classe2XD_1_1framework_1_1Scene}{Scene}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classe2XD_1_1framework_1_1Node_a32ec3dffba82641afe50244b0ff4f6c2}{get\+Scene}} () const
-\item 
-\mbox{\hyperlink{classe2XD_1_1framework_1_1Scene}{Scene}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classe2XD_1_1framework_1_1Node_aff928ab6f2b8d4f3c44e7731ba8117c6}{get\+Scene}} ()
-\item 
 void \mbox{\hyperlink{classe2XD_1_1framework_1_1Node_aa0cdcbad57add9ecddb4d2df12c44e33}{set\+Paused}} (bool paused)
 \end{DoxyCompactItemize}
 \doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classe2XD_1_1framework_1_1Renderable}{e2\+XD\+::framework\+::\+Renderable}}}
@@ -124,13 +114,9 @@ virtual void \mbox{\hyperlink{classe2XD_1_1framework_1_1Renderable_a084810e1e0d4
 \doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{classe2XD_1_1framework_1_1Node}{e2\+XD\+::framework\+::\+Node}}}
 \begin{DoxyCompactItemize}
 \item 
-virtual void \mbox{\hyperlink{classe2XD_1_1framework_1_1Node_af89d371346d6d288569ec326ee776b65}{on\+Update}} (double delta\+Time)
+virtual void \mbox{\hyperlink{classe2XD_1_1framework_1_1Node_a6aad0a85b3abdfb1b34e193a4171ce66}{on\+Update}} ()
 \item 
-virtual void \mbox{\hyperlink{classe2XD_1_1framework_1_1Node_ac3d8e9b06bd7e94459d71e05aacf8185}{\+\_\+internal\+\_\+on\+Update}} (double delta\+Time)
-\item 
-virtual void \mbox{\hyperlink{classe2XD_1_1framework_1_1Node_ac49b7a8b26c55897c78f68b599390316}{on\+Physics\+Update}} (double delta\+Time)
-\item 
-virtual void \mbox{\hyperlink{classe2XD_1_1framework_1_1Node_af7d4ffe839e9fa07342f6c32c9c91f49}{\+\_\+internal\+\_\+on\+Physics\+Update}} (double delta\+Time)
+virtual void \mbox{\hyperlink{classe2XD_1_1framework_1_1Node_a7d7c39c57b0ea8d05c1c771bb14edeb3}{\+\_\+internal\+\_\+on\+Update}} ()
 \item 
 virtual void \mbox{\hyperlink{classe2XD_1_1framework_1_1Node_adff5310c5d37fd27541b8d7fd4d6916c}{on\+Create}} ()
 \item 
@@ -182,15 +168,6 @@ bool \mbox{\hyperlink{classe2XD_1_1framework_1_1Renderable_a5f075727608df3d602ea
 
 
 \doxysubsection{Member Function Documentation}
-\Hypertarget{classe2XD_1_1framework_1_1Camera_aacd7ffe44c21a5009b36f5bc62b3fd75}\label{classe2XD_1_1framework_1_1Camera_aacd7ffe44c21a5009b36f5bc62b3fd75} 
-\index{e2XD::framework::Camera@{e2XD::framework::Camera}!getSize@{getSize}}
-\index{getSize@{getSize}!e2XD::framework::Camera@{e2XD::framework::Camera}}
-\doxysubsubsection{\texorpdfstring{getSize()}{getSize()}}
-{\footnotesize\ttfamily const \mbox{\hyperlink{namespacee2XD_1_1core_a64915d4955e6ed3347eb48450b60d026}{core\+::\+Vec2f}} \& e2\+XD\+::framework\+::\+Camera\+::get\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
-
-\begin{DoxyReturn}{Returns}
-the size of the camera view in world units. 
-\end{DoxyReturn}
 \Hypertarget{classe2XD_1_1framework_1_1Camera_a28eb41d51187fc3600d3b1179a3a7489}\label{classe2XD_1_1framework_1_1Camera_a28eb41d51187fc3600d3b1179a3a7489} 
 \index{e2XD::framework::Camera@{e2XD::framework::Camera}!getZoom@{getZoom}}
 \index{getZoom@{getZoom}!e2XD::framework::Camera@{e2XD::framework::Camera}}
@@ -200,17 +177,6 @@ the size of the camera view in world units.
 \begin{DoxyReturn}{Returns}
 the zoom level of the camera. 1.\+0f is default, less than 1.\+0f is zoomed in, greater than 1.\+0f is zoomed out. 
 \end{DoxyReturn}
-\Hypertarget{classe2XD_1_1framework_1_1Camera_a5dcd530d13003595f070fbab4a2d9c81}\label{classe2XD_1_1framework_1_1Camera_a5dcd530d13003595f070fbab4a2d9c81} 
-\index{e2XD::framework::Camera@{e2XD::framework::Camera}!setSize@{setSize}}
-\index{setSize@{setSize}!e2XD::framework::Camera@{e2XD::framework::Camera}}
-\doxysubsubsection{\texorpdfstring{setSize()}{setSize()}}
-{\footnotesize\ttfamily void e2\+XD\+::framework\+::\+Camera\+::set\+Size (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespacee2XD_1_1core_a64915d4955e6ed3347eb48450b60d026}{core\+::\+Vec2f}} \&}]{new\+Size }\end{DoxyParamCaption})}
-
-Set the size of the camera view in world units. 
-\begin{DoxyParams}{Parameters}
-{\em new\+Size} & \\
-\hline
-\end{DoxyParams}
 \Hypertarget{classe2XD_1_1framework_1_1Camera_aaf89736477fcce6626dcbf9b308b6884}\label{classe2XD_1_1framework_1_1Camera_aaf89736477fcce6626dcbf9b308b6884} 
 \index{e2XD::framework::Camera@{e2XD::framework::Camera}!setZoom@{setZoom}}
 \index{setZoom@{setZoom}!e2XD::framework::Camera@{e2XD::framework::Camera}}
