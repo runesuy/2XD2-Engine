@@ -45,5 +45,12 @@ namespace e2XD::framework
     {
         return configManager.get();
     }
+
+#ifndef e2XD_REMOVE_DEBUG
+    const IDebugConfig* DefaultGameConfig::getDebugConfig() const
+    {
+        return debugConfig.get();
+    }
+#endif
 } // framework
 // e2XD

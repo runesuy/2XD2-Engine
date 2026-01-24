@@ -18,12 +18,11 @@ namespace e2XD::std_addon
     {
     public:
         using TileMapSizeType = int;
+        using TileIdT = internal::Tile::TileIdType;
+        using ChunkCoordT = core::Vec2<TileMapSizeType>;
 
     private:
         friend class internal::TileMapRenderable;
-
-        using TileIdT = internal::Tile::TileIdType;
-        using ChunkCoordT = core::Vec2<TileMapSizeType>;
 
         /**
          * Struct used for hashing chunk coordinates.

@@ -19,6 +19,9 @@
 #include "2XD2/framework/resource_manager/DefaultFontManager.h"
 #include "2XD2/renderer/DefaultRenderer.h"
 
+#ifndef e2XD_REMOVE_DEBUG
+#include "2XD2/framework/debug/DefaultDebugConfig.h"
+#endif
 
 namespace e2XD::framework
 {
@@ -35,6 +38,10 @@ namespace e2XD::framework
         std::unique_ptr<IFontManager> fontManager = std::make_unique<DefaultFontManager>();
         std::unique_ptr<IConfigManager> configManager = std::make_unique<DefaultConfigManager>();
 
+#ifndef e2XD_REMOVE_DEBUG
+        std::unique_ptr<IDebugConfig> debugConfig = std::make_unique<DefaultDebugConfig>();
+#endif
+
     public:
         [[nodiscard]] IInputHandler* getInputHandler() const override;
 
@@ -49,6 +56,10 @@ namespace e2XD::framework
         [[nodiscard]] IFontManager* getFontManager() const override;
 
         [[nodiscard]] IConfigManager* getConfigManager() const override;
+
+#ifndef e2XD_REMOVE_DEBUG
+        [[nodiscard]] const IDebugConfig* getDebugConfig() const override;
+#endif
     };
 } // framework
 // e2XD

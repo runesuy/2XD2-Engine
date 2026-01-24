@@ -103,6 +103,9 @@ namespace e2XD::framework
          * @param rotation
          */
         virtual void setLocalRotation(double rotation);
+
+    protected:
+        void _internal_onDraw() override; // To be able to draw Node2D-specific debug info in the future
     };
 } // e2XD
 

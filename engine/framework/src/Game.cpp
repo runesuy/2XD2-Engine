@@ -11,6 +11,7 @@
 #include "2XD2/framework/Time.h"
 #include "2XD2/framework/input/SFMLInputHandler.h"
 #include "2XD2/core/exceptions/NotInitializedException.h"
+#include "2XD2/framework/debug/DebugSettings.h"
 #include "2XD2/framework/input/Input.h"
 #include "2XD2/framework/resource_manager/Animations.h"
 #include "2XD2/framework/resource_manager/Resources.h"
@@ -50,6 +51,11 @@ namespace e2XD::framework
         }
         else Resources::Fonts::loadFont(DEFAULT_FONT_NAME, RESOURCES_PATH + DEFAULT_FONT_DEFAULT_PATH);
         Resources::Config::closeConfig(CONFIG_FILE_PATH);
+
+
+#ifndef e2XD_REMOVE_DEBUG
+        DebugSettings::initialize(config.getDebugConfig());
+#endif
     }
 
 

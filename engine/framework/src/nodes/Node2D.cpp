@@ -141,4 +141,12 @@ namespace e2XD::framework
             }
         }
     }
+
+    void Node2D::_internal_onDraw()
+    {
+#ifndef e2XD_REMOVE_DEBUG
+
+
+#endif
+    }
 }
