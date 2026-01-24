@@ -8,6 +8,11 @@
 
 #include "2XD2/framework/nodes/Node2D.h"
 
+#ifndef e2XD_REMOVE_DEBUG
+#include "2XD2/framework/debug/DebugSettings.h"
+#include "2XD2/framework/drawing/Renderer.h"
+#endif
+
 namespace e2XD::framework
 {
     const core::Vec2f& Node2D::getGlobalPosition() const
@@ -146,6 +151,21 @@ namespace e2XD::framework
     {
 #ifndef e2XD_REMOVE_DEBUG
 
+        if (DebugSettings::showNodeOrigin)
+        {
+            if (const auto* originMarker = DebugSettings::getOriginMarker())
+            {
+                const auto& position = getGlobalPosition();
+
+                Renderer::submit({
+                    renderLayer,
+                    originMarker,
+                    {position.x, position.y},
+                    zIndex
+                });
+            }
+        }
+        Node::_internal_onDraw();
 
 #endif
     }

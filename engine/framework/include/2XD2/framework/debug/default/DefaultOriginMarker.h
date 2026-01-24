@@ -18,7 +18,7 @@ namespace e2XD::framework
 {
     class DefaultOriginMarker : public renderer::IRenderable
     {
-        static constexpr float RADIUS = 1.0f;
+        static constexpr float RADIUS = 3.0f;
         sf::CircleShape _shape;
 
     public:

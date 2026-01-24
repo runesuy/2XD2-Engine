@@ -14,7 +14,6 @@ namespace e2XD::framework
 {
     const IDebugConfig* DebugSettings::_debugConfig = nullptr;
     bool DebugSettings::showNodeOrigin = false;
-    bool DebugSettings::showCollisionBoxes = false;
 
     void DebugSettings::initialize(const IDebugConfig* debugConfig)
     {
