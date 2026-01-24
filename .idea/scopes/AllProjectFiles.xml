@@ -1,0 +1,3 @@
+<component name="DependencyValidationManager">
+  <scope name="AllProjectFiles" pattern="file[2XD2 Engine]:*&amp;&amp;!ext:*" />
+</component>

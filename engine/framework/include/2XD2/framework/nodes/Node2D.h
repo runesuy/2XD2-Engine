@@ -1,3 +1,7 @@
+// Copyright (c) 2026 Rune Suy and the 2XD2-Engine contributors.
+// Licensed under the MIT License.
+//
+
 //
 // Created by runes on 14/12/2025.
 //
@@ -99,6 +103,9 @@ namespace e2XD::framework
          * @param rotation
          */
         virtual void setLocalRotation(double rotation);
+
+    protected:
+        void _internal_onDraw() override; // To be able to draw Node2D-specific debug info in the future
     };
 } // e2XD
 

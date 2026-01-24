@@ -1,3 +1,7 @@
+// Copyright (c) 2026 Rune Suy and the 2XD2-Engine contributors.
+// Licensed under the MIT License.
+//
+
 //
 // Created by rune-suy on 1/12/26.
 //
@@ -5,7 +9,7 @@
 #ifndef INC_2XD2_ENGINE_ICONFIGMANAGER_H
 #define INC_2XD2_ENGINE_ICONFIGMANAGER_H
 #include <string>
-#include "json.hpp"
+#include <nlohmann/json.hpp>
 
 
 namespace e2XD::framework

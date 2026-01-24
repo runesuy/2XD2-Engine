@@ -1,3 +1,7 @@
+// Copyright (c) 2026 Rune Suy and the 2XD2-Engine contributors.
+// Licensed under the MIT License.
+//
+
 //
 // Created by rune-suy on 1/10/26.
 //
@@ -7,7 +11,7 @@
 #include <string>
 
 #include "IConfigManager.h"
-#include "json.hpp"
+#include <nlohmann/json.hpp>
 #include "Resources.h"
 
 namespace e2XD::framework

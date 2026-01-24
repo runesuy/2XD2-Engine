@@ -1,3 +1,7 @@
+// Copyright (c) 2026 Rune Suy and the 2XD2-Engine contributors.
+// Licensed under the MIT License.
+//
+
 //
 // Created by runes on 14/12/2025.
 //
@@ -20,8 +24,6 @@ namespace e2XD::framework
         inline static renderer::IRenderer* _renderer = nullptr;
 
         friend class Game;
-        static void setWindowView(RenderLayer renderLayer, const core::Vec2f&);
-
     public:
         /**
          * Initialize the renderer system with the provided renderer.
@@ -51,15 +53,10 @@ namespace e2XD::framework
         /**
          * Flush all submitted render commands to the window.
          * @param cameraPosition
+         * @param cameraSize
          * @param cameraZoom
          */
-        static void flush(const core::Vec2f& cameraPosition, float cameraZoom);
-
-        /**
-         * Get the current window size.
-         * @return
-         */
-        static core::Vec2<unsigned int> getWindowSize();
+        static void flush(const core::Vec2f& cameraPosition, const core::Vec2f& cameraSize, float cameraZoom);
     };
 }
 

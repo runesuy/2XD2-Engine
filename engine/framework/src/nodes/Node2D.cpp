@@ -1,8 +1,17 @@
+// Copyright (c) 2026 Rune Suy and the 2XD2-Engine contributors.
+// Licensed under the MIT License.
+//
+
 //
 // Created by runes on 14/12/2025.
 //
 
 #include "2XD2/framework/nodes/Node2D.h"
+
+#ifndef e2XD_REMOVE_DEBUG
+#include "2XD2/framework/debug/DebugSettings.h"
+#include "2XD2/framework/drawing/Renderer.h"
+#endif
 
 namespace e2XD::framework
 {
@@ -136,5 +145,28 @@ namespace e2XD::framework
                 childNode2D->setLocalRotation(childLocalRot + rotationDiff);
             }
         }
+    }
+
+    void Node2D::_internal_onDraw()
+    {
+#ifndef e2XD_REMOVE_DEBUG
+
+        if (DebugSettings::showNodeOrigin)
+        {
+            if (const auto* originMarker = DebugSettings::getOriginMarker())
+            {
+                const auto& position = getGlobalPosition();
+
+                Renderer::submit({
+                    renderLayer,
+                    originMarker,
+                    {position.x, position.y},
+                    zIndex
+                });
+            }
+        }
+        Node::_internal_onDraw();
+
+#endif
     }
 }

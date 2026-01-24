@@ -1,8 +1,12 @@
+// Copyright (c) 2026 Rune Suy and the 2XD2-Engine contributors.
+// Licensed under the MIT License.
+//
+
 //
 // Created by rune-suy on 12/29/25.
 //
 
-#include "2XD2/std_addon/CollisionRect2D.h"
+#include "../include/2XD2/std_addon/nodes/CollisionRect2D.h"
 
 
 namespace e2XD::std_addon

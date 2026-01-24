@@ -1,13 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="Black">
+    <option name="sdkName" value="Python 3.12" />
+  </component>
   <component name="CMakePythonSetting">
     <option name="pythonIntegrationState" value="YES" />
   </component>
   <component name="CMakeWorkspace" PROJECT_DIR="$PROJECT_DIR$" />
   <component name="CidrRootsConfiguration">
+    <sourceRoots>
+      <file path="$PROJECT_DIR$/addons/std-addon/include" />
+      <file path="$PROJECT_DIR$/addons/std-addon/src" />
+      <file path="$PROJECT_DIR$/engine/core/include" />
+      <file path="$PROJECT_DIR$/engine/core/src" />
+      <file path="$PROJECT_DIR$/engine/framework/include" />
+      <file path="$PROJECT_DIR$/engine/framework/src" />
+      <file path="$PROJECT_DIR$/engine/renderer/include" />
+      <file path="$PROJECT_DIR$/engine/renderer/src" />
+    </sourceRoots>
+    <libraryRoots>
+      <file path="$PROJECT_DIR$/engine/framework/lib" />
+    </libraryRoots>
     <excludeRoots>
       <file path="$PROJECT_DIR$/Testing" />
       <file path="$PROJECT_DIR$/doxygen" />
     </excludeRoots>
   </component>
+  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.12" project-jdk-type="Python SDK" />
 </project>

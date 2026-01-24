@@ -1,3 +1,7 @@
+// Copyright (c) 2026 Rune Suy and the 2XD2-Engine contributors.
+// Licensed under the MIT License.
+//
+
 //
 // Created by rune-suy on 12/18/25.
 //
@@ -7,7 +11,7 @@
 #include <fstream>
 #include <stdexcept>
 
-#include "json.hpp"
+#include <nlohmann/json.hpp>
 #include "2XD2/framework/exceptions/FileLoadingFailedException.h"
 #include "2XD2/framework/resource_manager/Resources.h"
 #include "2XD2/framework/resource_manager/SFMLTextureManager.h"

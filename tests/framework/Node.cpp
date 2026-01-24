@@ -1,3 +1,7 @@
+// Copyright (c) 2026 Rune Suy and the 2XD2-Engine contributors.
+// Licensed under the MIT License.
+//
+
 //
 // Created by runes on 14/12/2025.
 //
@@ -10,7 +14,7 @@ namespace e2XD::framework {
     public:
         MOCK_METHOD(void, onCreate, (), (override));
         MOCK_METHOD(void, onDestroy, (), (override));
-        MOCK_METHOD(void, onUpdate, (), (override));
+        MOCK_METHOD(void, onUpdate, (double), (override));
         MOCK_METHOD(void, onDraw, (), (override));
     };
 
@@ -77,8 +81,8 @@ namespace e2XD::framework {
         auto mockNode = std::make_unique<testing::NiceMock<MockNode>>();
         auto* rawPtr = mockNode.get();
         node.addSubNode(std::move(mockNode));
-        EXPECT_CALL(*rawPtr, onUpdate()).Times(1);
-        node.update();
+        EXPECT_CALL(*rawPtr, onUpdate).Times(1);
+        node.update(1);
     }
 
     TEST_F(CORE_Node, drawCallsOnDraw) {
