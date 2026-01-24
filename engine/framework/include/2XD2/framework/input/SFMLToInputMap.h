@@ -1,3 +1,7 @@
+// Copyright (c) 2026 Rune Suy and the 2XD2-Engine contributors.
+// Licensed under the MIT License.
+//
+
 //
 // Created by rune-suy on 12/15/25.
 //
@@ -41,6 +45,8 @@ namespace e2XD::framework::internal::input
         {sf::Keyboard::X, Key::X},
         {sf::Keyboard::Y, Key::Y},
         {sf::Keyboard::Z, Key::Z},
+        {sf::Keyboard::LShift, Key::L_SHIFT},
+        {sf::Keyboard::RShift, Key::R_SHIFT},
     };
 
     inline std::unordered_map<sf::Mouse::Button, MouseButton> mouseButtonMap{

@@ -1,3 +1,7 @@
+// Copyright (c) 2026 Rune Suy and the 2XD2-Engine contributors.
+// Licensed under the MIT License.
+//
+
 //
 // Created by runes on 14/12/2025.
 //
@@ -18,6 +22,8 @@
 
 namespace e2XD::framework
 {
+    using internal::Time;
+
     Game::Game(const IGameConfig& config, std::string configFilePath)
         : CONFIG_FILE_PATH(std::move(configFilePath))
     {
@@ -51,13 +57,22 @@ namespace e2XD::framework
     {
         running = true;
         window.setKeyRepeatEnabled(false);
+        window.setVerticalSyncEnabled(_useVSync);
+
+        double accumulator = 0.0; // For fixed timestep logic
 
         while (running && window.isOpen())
         {
+            // If there's a new active scene, switch to it
+            if (newActiveScene)
+            {
+                activeScene = std::move(newActiveScene);
+                activeScene->create();
+                newActiveScene = nullptr;
+            }
+
             Time::tick();
-            // Poll events
-            Input::pollEvents();
-            Collisions::checkCollisions();
+            accumulator += Time::getDeltaTime();
             if (const auto& resized = Input::isWindowResized(); std::get<0>(resized))
             {
                 sf::FloatRect visibleArea(0, 0, std::get<1>(resized), std::get<2>(resized));
@@ -65,27 +80,37 @@ namespace e2XD::framework
             }
 
             if (Input::isWindowClosed()) window.close();
-            const auto& windowResized = Input::isWindowResized();
-            if (std::get<0>(windowResized))
-            {
-                Renderer::setWindowView(RenderLayer::UI, {std::get<1>(windowResized), std::get<2>(windowResized)});
-                Renderer::setWindowView(RenderLayer::BACKGROUND, {
-                                            std::get<1>(windowResized), std::get<2>(windowResized)
-                                        });
-                Renderer::setWindowView(RenderLayer::OVERLAY, {std::get<1>(windowResized), std::get<2>(windowResized)});
-            }
 
+            // Poll events
+            Input::pollEvents();
+
+            // Physics update with fixed timestep
             if (activeScene)
             {
-                activeScene->update();
+                // Fixed timestep physics update
+                const double physicsDeltaTime = 1.0 / _physicsTicksPerSecond;
+                while (accumulator >= physicsDeltaTime)
+                {
+                    activeScene->physicsUpdate(physicsDeltaTime);
+                    accumulator -= physicsDeltaTime;
+                }
+            }
+            // Check collisions after physics update
+            Collisions::checkCollisions();
+
+            // Update and draw
+            if (activeScene)
+            {
+                // Variable timestep update
+                activeScene->update(Time::getDeltaTime());
+                // Variable timestep drawing (maybe vSynced)
                 Renderer::clearWindow();
                 activeScene->draw();
-            }
-            if (activeScene)
-            {
+
                 if (const Camera* activeCamera = activeScene->getActiveCamera())
                 {
-                    Renderer::flush(activeCamera->getGlobalPosition(), activeCamera->getZoom());
+                    Renderer::flush(activeCamera->getGlobalPosition(), activeCamera->getSize(),
+                                    activeCamera->getZoom());
                 }
             }
             window.display();
@@ -98,9 +123,35 @@ namespace e2XD::framework
         window.setTitle(title);
     }
 
-    void Game::setActiveScene(std::unique_ptr<framework::Scene>&& scene)
+    void Game::setActiveScene(std::unique_ptr<Scene>&& scene)
     {
-        activeScene = std::move(scene);
-        activeScene->create();
+        // If the game is running, set the new scene to be activated at the start of the next frame
+        // This is to avoid the destruction of the current scene while it's still being used
+        if (!running)
+        {
+            activeScene = std::move(scene);
+            activeScene->create();
+        }
+        else
+        {
+            newActiveScene = std::move(scene);
+        }
+    }
+
+    void Game::enableVSync()
+    {
+        _useVSync = true;
+        window.setVerticalSyncEnabled(true);
+    }
+
+    void Game::disableVSync()
+    {
+        _useVSync = false;
+        window.setVerticalSyncEnabled(false);
+    }
+
+    void Game::setPhysicsTicksPerSecond(int ticksPerSecond)
+    {
+        _physicsTicksPerSecond = ticksPerSecond;
     }
 }

@@ -1,3 +1,7 @@
+// Copyright (c) 2026 Rune Suy and the 2XD2-Engine contributors.
+// Licensed under the MIT License.
+//
+
 //
 // Created by rune-suy on 12/17/25.
 //
@@ -12,7 +16,7 @@ namespace e2XD::framework
         frames.push_back(texture);
     }
 
-    void Animation::setFrameDuration(float duration)
+    void Animation::setFrameDuration(double duration)
     {
         _frameDuration = duration;
     }
@@ -22,13 +26,13 @@ namespace e2XD::framework
         _isLooping = looping;
     }
 
-    Animation::Animation(const std::initializer_list<const sf::Texture*>& frameList, float frameDuration,
+    Animation::Animation(const std::initializer_list<const sf::Texture*>& frameList, double frameDuration,
                          bool isLooping) :
         frames(frameList), _frameDuration(frameDuration), _isLooping(isLooping)
     {
     }
 
-    Animation::Animation(const std::vector<const sf::Texture*>& frameList, float frameDuration, bool isLooping) :
+    Animation::Animation(const std::vector<const sf::Texture*>& frameList, double frameDuration, bool isLooping) :
         frames(frameList), _frameDuration(frameDuration), _isLooping(isLooping)
     {
     }
@@ -38,7 +42,7 @@ namespace e2XD::framework
         return frames;
     }
 
-    float Animation::getFrameDuration() const
+    double Animation::getFrameDuration() const
     {
         return _frameDuration;
     }
