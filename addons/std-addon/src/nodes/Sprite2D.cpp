@@ -21,6 +21,8 @@ namespace e2XD::std_addon
             {position.x, position.y},
             zIndex
         });
+
+        Node2D::_internal_onDraw();
     }
 } // framework
 // e2XD

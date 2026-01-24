@@ -19,6 +19,7 @@ namespace e2XD::std_addon
     void SpriteRenderable::setTexture(const sf::Texture& texture)
     {
         _sprite.setTexture(texture);
+        _sprite.setOrigin(_sprite.getGlobalBounds().width / 2, _sprite.getGlobalBounds().height / 2);
     }
 } // std_addon
 // e2XD
