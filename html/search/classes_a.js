@@ -6,5 +6,6 @@ var searchData=
   ['sfmltexturemanager_3',['SFMLTextureManager',['../classe2XD_1_1framework_1_1SFMLTextureManager.html',1,'e2XD::framework']]],
   ['signal_4',['Signal',['../classe2XD_1_1framework_1_1Signal.html',1,'e2XD::framework']]],
   ['signalreceiver_5',['SignalReceiver',['../classe2XD_1_1framework_1_1SignalReceiver.html',1,'e2XD::framework']]],
-  ['sprite2d_6',['Sprite2D',['../classe2XD_1_1std__addon_1_1Sprite2D.html',1,'e2XD::std_addon']]]
+  ['sprite2d_6',['Sprite2D',['../classe2XD_1_1std__addon_1_1Sprite2D.html',1,'e2XD::std_addon']]],
+  ['spriterenderable_7',['SpriteRenderable',['../classe2XD_1_1std__addon_1_1SpriteRenderable.html',1,'e2XD::std_addon']]]
 ];

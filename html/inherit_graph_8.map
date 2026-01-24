@@ -1,5 +1,29 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="Node000000" href="$classe2XD_1_1framework_1_1ICollisionHandler.html" title=" " alt="" coords="5,5,185,46"/>
-<area shape="rect" id="Node000001" href="$classe2XD_1_1framework_1_1DefaultCollisionHandler.html" title=" " alt="" coords="233,5,400,46"/>
-<area shape="poly" id="edge14_Node000000_Node000001" title=" " alt="" coords="200,23,232,23,232,28,200,28"/>
+<area shape="rect" id="Node000000" href="$classe2XD_1_1framework_1_1ICollisionBody.html" title=" " alt="" coords="450,13,658,39"/>
+<area shape="rect" id="Node000001" href="$classe2XD_1_1framework_1_1CollisionBody2D.html" title=" " alt="" coords="718,5,894,46"/>
+<area shape="poly" id="edge2_Node000000_Node000001" title=" " alt="" coords="674,23,718,23,718,28,674,28"/>
+<area shape="rect" id="Node000002" href="$classe2XD_1_1std__addon_1_1CollisionRect2D.html" title=" " alt="" coords="957,5,1131,46"/>
+<area shape="poly" id="edge3_Node000001_Node000002" title=" " alt="" coords="909,23,956,23,956,28,909,28"/>
+<area shape="rect" id="Node000013" href="$classe2XD_1_1framework_1_1Renderable.html" title=" " alt="" coords="5,194,197,220"/>
+<area shape="rect" id="Node000011" href="$classe2XD_1_1framework_1_1Node.html" title=" " alt="" coords="245,194,402,220"/>
+<area shape="poly" id="edge4_Node000013_Node000011" title=" " alt="" coords="212,204,244,204,244,210,212,210"/>
+<area shape="rect" id="Node000003" href="$classe2XD_1_1framework_1_1Node2D.html" title=" " alt="" coords="468,169,641,195"/>
+<area shape="poly" id="edge5_Node000011_Node000003" title=" " alt="" coords="417,194,467,189,467,194,418,199"/>
+<area shape="rect" id="Node000012" href="$classe2XD_1_1framework_1_1Scene.html" title=" " alt="" coords="473,218,636,244"/>
+<area shape="poly" id="edge14_Node000011_Node000012" title=" " alt="" coords="418,214,472,220,472,225,417,219"/>
+<area shape="poly" id="edge7_Node000003_Node000001" title=" " alt="" coords="577,156,632,106,668,79,705,55,729,44,731,49,708,60,671,83,636,110,580,160"/>
+<area shape="rect" id="Node000004" href="$classe2XD_1_1framework_1_1Camera.html" title=" " alt="" coords="720,70,892,96"/>
+<area shape="poly" id="edge6_Node000003_Node000004" title=" " alt="" coords="590,159,644,131,705,104,740,94,741,99,707,110,646,136,593,163"/>
+<area shape="rect" id="Node000005" href="$classe2XD_1_1std__addon_1_1Circle2D.html" title=" " alt="" coords="719,120,893,145"/>
+<area shape="poly" id="edge8_Node000003_Node000005" title=" " alt="" coords="638,163,736,143,737,148,639,168"/>
+<area shape="rect" id="Node000006" href="$classe2XD_1_1std__addon_1_1Label.html" title=" " alt="" coords="727,169,885,195"/>
+<area shape="poly" id="edge9_Node000003_Node000006" title=" " alt="" coords="656,179,727,179,727,184,656,184"/>
+<area shape="rect" id="Node000007" href="$classe2XD_1_1std__addon_1_1Rectangle2D.html" title=" " alt="" coords="706,218,906,244"/>
+<area shape="poly" id="edge10_Node000003_Node000007" title=" " alt="" coords="639,195,737,215,736,220,638,201"/>
+<area shape="rect" id="Node000008" href="$classe2XD_1_1std__addon_1_1Sprite2D.html" title=" " alt="" coords="718,268,894,293"/>
+<area shape="poly" id="edge11_Node000003_Node000008" title=" " alt="" coords="650,198,660,203,675,216,685,229,693,242,708,254,731,265,729,269,705,259,689,246,680,232,671,220,657,208,648,203"/>
+<area shape="rect" id="Node000010" href="$classe2XD_1_1std__addon_1_1TileMap.html" title=" " alt="" coords="720,317,892,343"/>
+<area shape="poly" id="edge13_Node000003_Node000010" title=" " alt="" coords="655,200,660,204,672,216,679,229,685,255,691,280,697,292,708,304,725,314,722,319,705,308,693,295,686,282,680,256,674,231,668,219,657,208,652,204"/>
+<area shape="rect" id="Node000009" href="$classe2XD_1_1std__addon_1_1AnimatedSprite2D.html" title=" " alt="" coords="954,260,1134,301"/>
+<area shape="poly" id="edge12_Node000008_Node000009" title=" " alt="" coords="909,278,953,278,953,283,909,283"/>
 </map>

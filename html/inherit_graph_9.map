@@ -1,5 +1,5 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="Node000000" href="$classe2XD_1_1framework_1_1IConfigManager.html" title=" " alt="" coords="5,5,172,46"/>
-<area shape="rect" id="Node000001" href="$classe2XD_1_1framework_1_1DefaultConfigManager.html" title=" " alt="" coords="220,5,387,46"/>
-<area shape="poly" id="edge15_Node000000_Node000001" title=" " alt="" coords="187,23,219,23,219,28,187,28"/>
+<area shape="rect" id="Node000000" href="$classe2XD_1_1framework_1_1ICollisionHandler.html" title=" " alt="" coords="5,5,185,46"/>
+<area shape="rect" id="Node000001" href="$classe2XD_1_1framework_1_1DefaultCollisionHandler.html" title=" " alt="" coords="233,5,400,46"/>
+<area shape="poly" id="edge15_Node000000_Node000001" title=" " alt="" coords="200,23,232,23,232,28,200,28"/>
 </map>

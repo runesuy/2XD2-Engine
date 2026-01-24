@@ -1,0 +1,11 @@
+<map id="e2XD::std_addon::TileMap::onDraw" name="e2XD::std_addon::TileMap::onDraw">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,39,177,79"/>
+<area shape="rect" id="Node000002" href="$classe2XD_1_1framework_1_1Node2D.html#a7b63977014241fc1a59ffa539c0910ba" title=" " alt="" coords="227,5,401,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="176,44,211,38,212,44,177,49"/>
+<area shape="rect" id="Node000004" href="$classe2XD_1_1framework_1_1Renderer.html#af99d771f4163ee774e2c72aec437cb3e" title=" " alt="" coords="225,71,403,111"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="177,69,209,73,209,79,176,74"/>
+<area shape="rect" id="Node000003" href="$classe2XD_1_1core_1_1Transform2D.html#a3887912f0b91e58c3967856d374869c9" title=" " alt="" coords="453,5,618,46"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="401,23,437,23,437,28,401,28"/>
+<area shape="rect" id="Node000005" href="$classe2XD_1_1renderer_1_1IRenderer.html#af32d8921a875a56ae0efabf19f3d14a0" title=" " alt="" coords="451,71,619,111"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="403,88,435,88,435,94,403,94"/>
+</map>

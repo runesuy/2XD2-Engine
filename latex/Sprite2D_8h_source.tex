@@ -1,37 +1,41 @@
 \doxysection{Sprite2\+D.\+h}
-\hypertarget{Sprite2D_8h_source}{}\label{Sprite2D_8h_source}\index{addons/std-\/addon/include/2XD2/std\_addon/Sprite2D.h@{addons/std-\/addon/include/2XD2/std\_addon/Sprite2D.h}}
+\hypertarget{Sprite2D_8h_source}{}\label{Sprite2D_8h_source}\index{addons/std-\/addon/include/2XD2/std\_addon/nodes/Sprite2D.h@{addons/std-\/addon/include/2XD2/std\_addon/nodes/Sprite2D.h}}
 \mbox{\hyperlink{Sprite2D_8h}{Go to the documentation of this file.}}
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00001\ \textcolor{comment}{//}}
-\DoxyCodeLine{00002\ \textcolor{comment}{//\ Created\ by\ rune-\/suy\ on\ 12/17/25.}}
+\DoxyCodeLine{00001\ \textcolor{comment}{//\ Copyright\ (c)\ 2026\ Rune\ Suy\ and\ the\ 2XD2-\/Engine\ contributors.}}
+\DoxyCodeLine{00002\ \textcolor{comment}{//\ Licensed\ under\ the\ MIT\ License.}}
 \DoxyCodeLine{00003\ \textcolor{comment}{//}}
 \DoxyCodeLine{00004\ }
-\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#ifndef\ FLATLAND\_SPRITE2D\_H}}
-\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#define\ FLATLAND\_SPRITE2D\_H}}
-\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <SFML/Graphics/Sprite.hpp>}}
-\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{Node2D_8h}{2XD2/framework/nodes/Node2D.h}}"{}}}
-\DoxyCodeLine{00009\ }
-\DoxyCodeLine{00010\ }
-\DoxyCodeLine{00011\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespacee2XD_1_1std__addon}{e2XD::std\_addon}}}
-\DoxyCodeLine{00012\ \{}
-\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{classe2XD_1_1std__addon_1_1Sprite2D}{Sprite2D}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classe2XD_1_1framework_1_1Node2D}{framework::Node2D}}}
-\DoxyCodeLine{00017\ \ \ \ \ \{}
-\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ sf::Sprite\ \_sprite;}
-\DoxyCodeLine{00019\ }
-\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keyword}{public}:}
-\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classe2XD_1_1std__addon_1_1Sprite2D_ac9cbe2d129af9beb7b1cc084b81453f7}{Sprite2D}}()\ =\ \textcolor{keywordflow}{default};}
-\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classe2XD_1_1std__addon_1_1Sprite2D_a78340c7d96f65cc9f05d9d790d7d06e5}{\string~Sprite2D}}()\ \textcolor{keyword}{override}\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00005\ \textcolor{comment}{//}}
+\DoxyCodeLine{00006\ \textcolor{comment}{//\ Created\ by\ rune-\/suy\ on\ 12/17/25.}}
+\DoxyCodeLine{00007\ \textcolor{comment}{//}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#ifndef\ FLATLAND\_SPRITE2D\_H}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#define\ FLATLAND\_SPRITE2D\_H}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{Node2D_8h}{2XD2/framework/nodes/Node2D.h}}"{}}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{SpriteRenderable_8h}{2XD2/std\_addon/renderables/SpriteRenderable.h}}"{}}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespacee2XD_1_1std__addon}{e2XD::std\_addon}}}
+\DoxyCodeLine{00016\ \{}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{classe2XD_1_1std__addon_1_1Sprite2D}{Sprite2D}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classe2XD_1_1framework_1_1Node2D}{framework::Node2D}}}
+\DoxyCodeLine{00021\ \ \ \ \ \{}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classe2XD_1_1std__addon_1_1SpriteRenderable}{SpriteRenderable}}\ \_renderable;}
 \DoxyCodeLine{00023\ }
-\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classe2XD_1_1std__addon_1_1Sprite2D_a7eb95a4910a4ad4f82539a86b32df784}{setTexture}}(\textcolor{keyword}{const}\ std::string\&\ textureName);}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classe2XD_1_1std__addon_1_1Sprite2D_ac9cbe2d129af9beb7b1cc084b81453f7}{Sprite2D}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classe2XD_1_1std__addon_1_1Sprite2D_a78340c7d96f65cc9f05d9d790d7d06e5}{\string~Sprite2D}}()\ \textcolor{keyword}{override}\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classe2XD_1_1std__addon_1_1SpriteRenderable}{SpriteRenderable}}\&\ \mbox{\hyperlink{classe2XD_1_1std__addon_1_1Sprite2D_ae37e7550161b4bcef403ccf7f49162a8}{getRenderable}}()\ \{\ \textcolor{keywordflow}{return}\ \_renderable;\ \}}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{classe2XD_1_1std__addon_1_1SpriteRenderable}{SpriteRenderable}}\&\ \mbox{\hyperlink{classe2XD_1_1std__addon_1_1Sprite2D_a3d7333d07b4ef57f7c89765ce20ce882}{getRenderable}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ \_renderable;\ \}}
 \DoxyCodeLine{00031\ }
-\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classe2XD_1_1std__addon_1_1Sprite2D_a7eb95a4910a4ad4f82539a86b32df784}{setTexture}}(\textcolor{keyword}{const}\ sf::Texture\&\ texture);}
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classe2XD_1_1std__addon_1_1Sprite2D_a865427d52ac04ea643ccde74c1dfa75c}{\_internal\_onDraw}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00034\ \ \ \ \ \};}
+\DoxyCodeLine{00035\ \}\ \textcolor{comment}{//\ framework}}
+\DoxyCodeLine{00036\ \textcolor{comment}{//\ e2XD}}
 \DoxyCodeLine{00037\ }
-\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keyword}{protected}:}
-\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classe2XD_1_1std__addon_1_1Sprite2D_a865427d52ac04ea643ccde74c1dfa75c}{\_internal\_onDraw}}()\ \textcolor{keyword}{override};}
-\DoxyCodeLine{00040\ \ \ \ \ \};}
-\DoxyCodeLine{00041\ \}\ \textcolor{comment}{//\ framework}}
-\DoxyCodeLine{00042\ \textcolor{comment}{//\ e2XD}}
-\DoxyCodeLine{00043\ }
-\DoxyCodeLine{00044\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//FLATLAND\_SPRITE2D\_H}}
+\DoxyCodeLine{00038\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//FLATLAND\_SPRITE2D\_H}}
 
 \end{DoxyCode}

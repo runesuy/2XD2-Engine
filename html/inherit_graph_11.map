@@ -1,5 +1,5 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="Node000000" href="$classe2XD_1_1framework_1_1IGameConfig.html" title=" " alt="" coords="5,13,207,39"/>
-<area shape="rect" id="Node000001" href="$classe2XD_1_1framework_1_1DefaultGameConfig.html" title=" " alt="" coords="255,5,422,46"/>
-<area shape="poly" id="edge17_Node000000_Node000001" title=" " alt="" coords="222,23,254,23,254,28,222,28"/>
+<area shape="rect" id="Node000000" href="$classe2XD_1_1framework_1_1IDebugConfig.html" title=" " alt="" coords="5,13,209,39"/>
+<area shape="rect" id="Node000001" href="$classe2XD_1_1framework_1_1DefaultDebugConfig.html" title=" " alt="" coords="257,5,424,46"/>
+<area shape="poly" id="edge17_Node000000_Node000001" title=" " alt="" coords="224,23,256,23,256,28,224,28"/>
 </map>

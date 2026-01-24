@@ -27,11 +27,11 @@ Collaboration diagram for e2\+XD\+::std\+\_\+addon\+::Label\+:
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{classe2XD_1_1std__addon_1_1Label_ae92d31c516fd940044034c88cead05cd}{Label}} ()
+\mbox{\hyperlink{classe2XD_1_1std__addon_1_1Label_a2b83c800c4cc52dc26aeb59c34b2237c}{Label}} ()=default
 \item 
-void \mbox{\hyperlink{classe2XD_1_1std__addon_1_1Label_abd3f6caa89ef02764015dd09214c84ea}{set\+Text}} (const std\+::string \&text)
+\mbox{\hyperlink{classe2XD_1_1std__addon_1_1TextRenderable}{Text\+Renderable}} \& \mbox{\hyperlink{classe2XD_1_1std__addon_1_1Label_ab693404ef84757ec364d6ffec491319f}{get\+Renderable}} ()
 \item 
-void \mbox{\hyperlink{classe2XD_1_1std__addon_1_1Label_acf5ddf2a5c476f66fb89d71f2e9a5333}{set\+Font\+Size}} (unsigned int size)
+const \mbox{\hyperlink{classe2XD_1_1std__addon_1_1TextRenderable}{Text\+Renderable}} \& \mbox{\hyperlink{classe2XD_1_1std__addon_1_1Label_aef7604fac467cbbeab6104babcae8ac3}{get\+Renderable}} () const
 \end{DoxyCompactItemize}
 \doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classe2XD_1_1framework_1_1Node2D}{e2\+XD\+::framework\+::\+Node2D}}}
 \begin{DoxyCompactItemize}
@@ -67,15 +67,17 @@ virtual void \mbox{\hyperlink{classe2XD_1_1framework_1_1Node2D_afdc293c49a18222e
 \item 
 \mbox{\hyperlink{classe2XD_1_1framework_1_1Node_a131881db1f212ce2d5ea8db9dddc0475}{Node}} ()=default
 \item 
-\mbox{\hyperlink{classe2XD_1_1framework_1_1Node_a613541edc80979c11b37c646a4afdbb8}{\texorpdfstring{$\sim$}{\string~}\+Node}} () override=default
+\mbox{\hyperlink{classe2XD_1_1framework_1_1Node_acbbfae8af7d895de77f0fb150df3fbdb}{\texorpdfstring{$\sim$}{\string~}\+Node}} () override
 \item 
-void \mbox{\hyperlink{classe2XD_1_1framework_1_1Node_a5ef907ce5d1cef1dd7238a88cbdaff61}{update}} ()
+void \mbox{\hyperlink{classe2XD_1_1framework_1_1Node_a0957c712c6511db3eb7c7d1b7f6a2ade}{update}} (double delta\+Time)
+\item 
+void \mbox{\hyperlink{classe2XD_1_1framework_1_1Node_aa0455bfb83dcbef3b833e8d82e347516}{physics\+Update}} (double delta\+Time)
 \item 
 void \mbox{\hyperlink{classe2XD_1_1framework_1_1Node_a9aaf0d4a9499a43153bba28c0e482201}{create}} ()
 \item 
 void \mbox{\hyperlink{classe2XD_1_1framework_1_1Node_a7831b27923edd33f0545eb56208d4631}{destroy}} ()
 \item 
-{\footnotesize template$<$Is\+Node Entity\+Type$>$ }\\Entity\+Type \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classe2XD_1_1framework_1_1Node_af964fd54baaa40992497d852be754086}{create\+Sub\+Node}} ()
+{\footnotesize template$<$Is\+Node Entity\+Type, typename... Args$>$ }\\Entity\+Type \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classe2XD_1_1framework_1_1Node_a672e1b21a8ca8cc34d3735cea5196f0a}{create\+Sub\+Node}} (Args \&\&...args)
 \item 
 virtual void \mbox{\hyperlink{classe2XD_1_1framework_1_1Node_abc834854340010c6750a1463e3254e28}{add\+Sub\+Node}} (std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classe2XD_1_1framework_1_1Node}{Node}} $>$ node)
 \item 
@@ -97,6 +99,10 @@ const \mbox{\hyperlink{classe2XD_1_1framework_1_1Node}{Node}} \texorpdfstring{$\
 \item 
 \mbox{\hyperlink{classe2XD_1_1framework_1_1Node}{Node}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classe2XD_1_1framework_1_1Node_a40286968151235c93254f56f9b0b993a}{get\+Parent}} ()
 \item 
+const \mbox{\hyperlink{classe2XD_1_1framework_1_1Scene}{Scene}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classe2XD_1_1framework_1_1Node_a32ec3dffba82641afe50244b0ff4f6c2}{get\+Scene}} () const
+\item 
+\mbox{\hyperlink{classe2XD_1_1framework_1_1Scene}{Scene}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classe2XD_1_1framework_1_1Node_aff928ab6f2b8d4f3c44e7731ba8117c6}{get\+Scene}} ()
+\item 
 void \mbox{\hyperlink{classe2XD_1_1framework_1_1Node_aa0cdcbad57add9ecddb4d2df12c44e33}{set\+Paused}} (bool paused)
 \end{DoxyCompactItemize}
 \doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classe2XD_1_1framework_1_1Renderable}{e2\+XD\+::framework\+::\+Renderable}}}
@@ -113,12 +119,21 @@ virtual void \mbox{\hyperlink{classe2XD_1_1framework_1_1Renderable_a084810e1e0d4
 \item 
 void \mbox{\hyperlink{classe2XD_1_1std__addon_1_1Label_ab509aeee075b54008a2e5306a00bad6a}{\+\_\+internal\+\_\+on\+Draw}} () override
 \end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{classe2XD_1_1framework_1_1Node2D}{e2\+XD\+::framework\+::\+Node2D}}}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classe2XD_1_1framework_1_1Node2D_ac66f0614d0ed6b43a69f385b02e9d600}{\+\_\+internal\+\_\+on\+Draw}} () override
+\end{DoxyCompactItemize}
 \doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{classe2XD_1_1framework_1_1Node}{e2\+XD\+::framework\+::\+Node}}}
 \begin{DoxyCompactItemize}
 \item 
-virtual void \mbox{\hyperlink{classe2XD_1_1framework_1_1Node_a6aad0a85b3abdfb1b34e193a4171ce66}{on\+Update}} ()
+virtual void \mbox{\hyperlink{classe2XD_1_1framework_1_1Node_af89d371346d6d288569ec326ee776b65}{on\+Update}} (double delta\+Time)
 \item 
-virtual void \mbox{\hyperlink{classe2XD_1_1framework_1_1Node_a7d7c39c57b0ea8d05c1c771bb14edeb3}{\+\_\+internal\+\_\+on\+Update}} ()
+virtual void \mbox{\hyperlink{classe2XD_1_1framework_1_1Node_ac3d8e9b06bd7e94459d71e05aacf8185}{\+\_\+internal\+\_\+on\+Update}} (double delta\+Time)
+\item 
+virtual void \mbox{\hyperlink{classe2XD_1_1framework_1_1Node_ac49b7a8b26c55897c78f68b599390316}{on\+Physics\+Update}} (double delta\+Time)
+\item 
+virtual void \mbox{\hyperlink{classe2XD_1_1framework_1_1Node_af7d4ffe839e9fa07342f6c32c9c91f49}{\+\_\+internal\+\_\+on\+Physics\+Update}} (double delta\+Time)
 \item 
 virtual void \mbox{\hyperlink{classe2XD_1_1framework_1_1Node_adff5310c5d37fd27541b8d7fd4d6916c}{on\+Create}} ()
 \item 
@@ -127,8 +142,6 @@ virtual void \mbox{\hyperlink{classe2XD_1_1framework_1_1Node_a4fdd6de7936646da82
 virtual void \mbox{\hyperlink{classe2XD_1_1framework_1_1Node_a37ef50b0e9003613fab64d595304e5ba}{on\+Destroy}} ()
 \item 
 virtual void \mbox{\hyperlink{classe2XD_1_1framework_1_1Node_ae5de5aa456c080e89812370611ac38fb}{\+\_\+internal\+\_\+on\+Destroy}} ()
-\item 
-void \mbox{\hyperlink{classe2XD_1_1framework_1_1Node_af891d43c352e1420c1d2c27ce9ae88fb}{\+\_\+internal\+\_\+on\+Draw}} () override
 \end{DoxyCompactItemize}
 \doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{classe2XD_1_1framework_1_1Renderable}{e2\+XD\+::framework\+::\+Renderable}}}
 \begin{DoxyCompactItemize}
@@ -156,20 +169,12 @@ bool \mbox{\hyperlink{classe2XD_1_1framework_1_1Renderable_a5f075727608df3d602ea
 A text label node. 
 
 \doxysubsection{Constructor \& Destructor Documentation}
-\Hypertarget{classe2XD_1_1std__addon_1_1Label_ae92d31c516fd940044034c88cead05cd}\label{classe2XD_1_1std__addon_1_1Label_ae92d31c516fd940044034c88cead05cd} 
+\Hypertarget{classe2XD_1_1std__addon_1_1Label_a2b83c800c4cc52dc26aeb59c34b2237c}\label{classe2XD_1_1std__addon_1_1Label_a2b83c800c4cc52dc26aeb59c34b2237c} 
 \index{e2XD::std\_addon::Label@{e2XD::std\_addon::Label}!Label@{Label}}
 \index{Label@{Label}!e2XD::std\_addon::Label@{e2XD::std\_addon::Label}}
 \doxysubsubsection{\texorpdfstring{Label()}{Label()}}
-{\footnotesize\ttfamily e2\+XD\+::std\+\_\+addon\+::\+Label\+::\+Label (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily e2\+XD\+::std\+\_\+addon\+::\+Label\+::\+Label (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
 
-Here is the call graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{classe2XD_1_1std__addon_1_1Label_ae92d31c516fd940044034c88cead05cd_cgraph}
-\end{center}
-\end{figure}
 
 
 \doxysubsection{Member Function Documentation}
@@ -191,21 +196,27 @@ Here is the call graph for this function\+:
 \includegraphics[width=350pt]{classe2XD_1_1std__addon_1_1Label_ab509aeee075b54008a2e5306a00bad6a_cgraph}
 \end{center}
 \end{figure}
-\Hypertarget{classe2XD_1_1std__addon_1_1Label_acf5ddf2a5c476f66fb89d71f2e9a5333}\label{classe2XD_1_1std__addon_1_1Label_acf5ddf2a5c476f66fb89d71f2e9a5333} 
-\index{e2XD::std\_addon::Label@{e2XD::std\_addon::Label}!setFontSize@{setFontSize}}
-\index{setFontSize@{setFontSize}!e2XD::std\_addon::Label@{e2XD::std\_addon::Label}}
-\doxysubsubsection{\texorpdfstring{setFontSize()}{setFontSize()}}
-{\footnotesize\ttfamily void e2\+XD\+::std\+\_\+addon\+::\+Label\+::set\+Font\+Size (\begin{DoxyParamCaption}\item[{unsigned int}]{size }\end{DoxyParamCaption})}
+\Hypertarget{classe2XD_1_1std__addon_1_1Label_ab693404ef84757ec364d6ffec491319f}\label{classe2XD_1_1std__addon_1_1Label_ab693404ef84757ec364d6ffec491319f} 
+\index{e2XD::std\_addon::Label@{e2XD::std\_addon::Label}!getRenderable@{getRenderable}}
+\index{getRenderable@{getRenderable}!e2XD::std\_addon::Label@{e2XD::std\_addon::Label}}
+\doxysubsubsection{\texorpdfstring{getRenderable()}{getRenderable()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classe2XD_1_1std__addon_1_1TextRenderable}{Text\+Renderable}} \& e2\+XD\+::std\+\_\+addon\+::\+Label\+::get\+Renderable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
-\Hypertarget{classe2XD_1_1std__addon_1_1Label_abd3f6caa89ef02764015dd09214c84ea}\label{classe2XD_1_1std__addon_1_1Label_abd3f6caa89ef02764015dd09214c84ea} 
-\index{e2XD::std\_addon::Label@{e2XD::std\_addon::Label}!setText@{setText}}
-\index{setText@{setText}!e2XD::std\_addon::Label@{e2XD::std\_addon::Label}}
-\doxysubsubsection{\texorpdfstring{setText()}{setText()}}
-{\footnotesize\ttfamily void e2\+XD\+::std\+\_\+addon\+::\+Label\+::set\+Text (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{text }\end{DoxyParamCaption})}
+Get the text renderable of the label. This is the renderable that handles the text display. Can be used to change text properties. \begin{DoxyReturn}{Returns}
+The text renderable of the label. 
+\end{DoxyReturn}
+\Hypertarget{classe2XD_1_1std__addon_1_1Label_aef7604fac467cbbeab6104babcae8ac3}\label{classe2XD_1_1std__addon_1_1Label_aef7604fac467cbbeab6104babcae8ac3} 
+\index{e2XD::std\_addon::Label@{e2XD::std\_addon::Label}!getRenderable@{getRenderable}}
+\index{getRenderable@{getRenderable}!e2XD::std\_addon::Label@{e2XD::std\_addon::Label}}
+\doxysubsubsection{\texorpdfstring{getRenderable()}{getRenderable()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classe2XD_1_1std__addon_1_1TextRenderable}{Text\+Renderable}} \& e2\+XD\+::std\+\_\+addon\+::\+Label\+::get\+Renderable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
+\begin{DoxyReturn}{Returns}
+The text renderable of the label. 
+\end{DoxyReturn}
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-addons/std-\/addon/include/2\+XD2/std\+\_\+addon/\mbox{\hyperlink{Label_8h}{Label.\+h}}\item 
-addons/std-\/addon/src/\mbox{\hyperlink{Label_8cpp}{Label.\+cpp}}\end{DoxyCompactItemize}
+addons/std-\/addon/include/2\+XD2/std\+\_\+addon/nodes/\mbox{\hyperlink{Label_8h}{Label.\+h}}\item 
+addons/std-\/addon/src/nodes/\mbox{\hyperlink{Label_8cpp}{Label.\+cpp}}\end{DoxyCompactItemize}

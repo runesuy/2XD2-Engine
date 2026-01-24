@@ -1,0 +1,58 @@
+\doxysection{e2\+XD\+::renderer\+::IRenderable Class Reference}
+\hypertarget{classe2XD_1_1renderer_1_1IRenderable}{}\label{classe2XD_1_1renderer_1_1IRenderable}\index{e2XD::renderer::IRenderable@{e2XD::renderer::IRenderable}}
+
+
+{\ttfamily \#include $<$IRenderable.\+h$>$}
+
+
+
+Inheritance diagram for e2\+XD\+::renderer\+::IRenderable\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classe2XD_1_1renderer_1_1IRenderable__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classe2XD_1_1renderer_1_1IRenderable_a5b63dc17657d7dce355756c213185e71}{\texorpdfstring{$\sim$}{\string~}\+IRenderable}} ()=default
+\item 
+virtual void \mbox{\hyperlink{classe2XD_1_1renderer_1_1IRenderable_a3e33b6b8b3bada5dade0a8905de1f537}{draw}} (\mbox{\hyperlink{classe2XD_1_1renderer_1_1IRenderTarget}{IRender\+Target}} \&render\+Target) const =0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Interface for renderable objects. Objects implementing this interface can be rendered by the Renderer. Implement the on\+Render method to define custom rendering behavior. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classe2XD_1_1renderer_1_1IRenderable_a5b63dc17657d7dce355756c213185e71}\label{classe2XD_1_1renderer_1_1IRenderable_a5b63dc17657d7dce355756c213185e71} 
+\index{e2XD::renderer::IRenderable@{e2XD::renderer::IRenderable}!````~IRenderable@{\texorpdfstring{$\sim$}{\string~}IRenderable}}
+\index{````~IRenderable@{\texorpdfstring{$\sim$}{\string~}IRenderable}!e2XD::renderer::IRenderable@{e2XD::renderer::IRenderable}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}IRenderable()}{\string~IRenderable()}}
+{\footnotesize\ttfamily virtual e2\+XD\+::renderer\+::\+IRenderable\+::\texorpdfstring{$\sim$}{\string~}\+IRenderable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classe2XD_1_1renderer_1_1IRenderable_a3e33b6b8b3bada5dade0a8905de1f537}\label{classe2XD_1_1renderer_1_1IRenderable_a3e33b6b8b3bada5dade0a8905de1f537} 
+\index{e2XD::renderer::IRenderable@{e2XD::renderer::IRenderable}!draw@{draw}}
+\index{draw@{draw}!e2XD::renderer::IRenderable@{e2XD::renderer::IRenderable}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily virtual void e2\+XD\+::renderer\+::\+IRenderable\+::draw (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classe2XD_1_1renderer_1_1IRenderTarget}{IRender\+Target}} \&}]{render\+Target }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Draw the object onto the given render target. Executed by the Renderer on the exact moment of rendering the object. 
+\begin{DoxyParams}{Parameters}
+{\em render\+Target} & Render target to draw onto. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classe2XD_1_1std__addon_1_1CircleRenderable_a5dad60f21ad3cf82654d640454d5addd}{e2\+XD\+::std\+\_\+addon\+::\+Circle\+Renderable}}, \mbox{\hyperlink{classe2XD_1_1std__addon_1_1RectangleRenderable_a89bbe2a78770ccfaea4d88e9fddffeca}{e2\+XD\+::std\+\_\+addon\+::\+Rectangle\+Renderable}}, \mbox{\hyperlink{classe2XD_1_1std__addon_1_1SpriteRenderable_ad9acf175c5053d7bc76b09ca9285afad}{e2\+XD\+::std\+\_\+addon\+::\+Sprite\+Renderable}}, \mbox{\hyperlink{classe2XD_1_1std__addon_1_1TextRenderable_a61d4c233ed5004fba1f8b6ca3db4140d}{e2\+XD\+::std\+\_\+addon\+::\+Text\+Renderable}}, \mbox{\hyperlink{classe2XD_1_1std__addon_1_1internal_1_1TileMapRenderable_ab2729d7642282541a63cba25efc999e5}{e2\+XD\+::std\+\_\+addon\+::internal\+::\+Tile\+Map\+Renderable}}, and \mbox{\hyperlink{classe2XD_1_1framework_1_1DefaultOriginMarker_a8e8805e890c7f214abfd77a245f7c2da}{e2\+XD\+::framework\+::\+Default\+Origin\+Marker}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+engine/renderer/include/2\+XD2/renderer/\mbox{\hyperlink{IRenderable_8h}{IRenderable.\+h}}\end{DoxyCompactItemize}

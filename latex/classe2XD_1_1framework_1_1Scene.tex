@@ -34,23 +34,25 @@ Collaboration diagram for e2\+XD\+::framework\+::Scene\+:
 void \mbox{\hyperlink{classe2XD_1_1framework_1_1Scene_ad3dca786e9160de5ae1602fac2e3d1bb}{set\+Active\+Camera}} (const \mbox{\hyperlink{classe2XD_1_1framework_1_1Camera}{Camera}} \texorpdfstring{$\ast$}{*}camera)
 \item 
 const \mbox{\hyperlink{classe2XD_1_1framework_1_1Camera}{Camera}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classe2XD_1_1framework_1_1Scene_af91d4ad7c210d5bb531abc09a059ec29}{get\+Active\+Camera}} () const
+\item 
+void \mbox{\hyperlink{classe2XD_1_1framework_1_1Scene_a336b2ff0e11eaafe64e51cef91f90340}{add\+Sub\+Node}} (std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classe2XD_1_1framework_1_1Node}{Node}} $>$ node) override
 \end{DoxyCompactItemize}
 \doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classe2XD_1_1framework_1_1Node}{e2\+XD\+::framework\+::\+Node}}}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{classe2XD_1_1framework_1_1Node_a131881db1f212ce2d5ea8db9dddc0475}{Node}} ()=default
 \item 
-\mbox{\hyperlink{classe2XD_1_1framework_1_1Node_a613541edc80979c11b37c646a4afdbb8}{\texorpdfstring{$\sim$}{\string~}\+Node}} () override=default
+\mbox{\hyperlink{classe2XD_1_1framework_1_1Node_acbbfae8af7d895de77f0fb150df3fbdb}{\texorpdfstring{$\sim$}{\string~}\+Node}} () override
 \item 
-void \mbox{\hyperlink{classe2XD_1_1framework_1_1Node_a5ef907ce5d1cef1dd7238a88cbdaff61}{update}} ()
+void \mbox{\hyperlink{classe2XD_1_1framework_1_1Node_a0957c712c6511db3eb7c7d1b7f6a2ade}{update}} (double delta\+Time)
+\item 
+void \mbox{\hyperlink{classe2XD_1_1framework_1_1Node_aa0455bfb83dcbef3b833e8d82e347516}{physics\+Update}} (double delta\+Time)
 \item 
 void \mbox{\hyperlink{classe2XD_1_1framework_1_1Node_a9aaf0d4a9499a43153bba28c0e482201}{create}} ()
 \item 
 void \mbox{\hyperlink{classe2XD_1_1framework_1_1Node_a7831b27923edd33f0545eb56208d4631}{destroy}} ()
 \item 
-{\footnotesize template$<$Is\+Node Entity\+Type$>$ }\\Entity\+Type \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classe2XD_1_1framework_1_1Node_af964fd54baaa40992497d852be754086}{create\+Sub\+Node}} ()
-\item 
-virtual void \mbox{\hyperlink{classe2XD_1_1framework_1_1Node_abc834854340010c6750a1463e3254e28}{add\+Sub\+Node}} (std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classe2XD_1_1framework_1_1Node}{Node}} $>$ node)
+{\footnotesize template$<$Is\+Node Entity\+Type, typename... Args$>$ }\\Entity\+Type \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classe2XD_1_1framework_1_1Node_a672e1b21a8ca8cc34d3735cea5196f0a}{create\+Sub\+Node}} (Args \&\&...args)
 \item 
 {\footnotesize template$<$Is\+Node Entity\+Type$>$ }\\const Entity\+Type \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classe2XD_1_1framework_1_1Node_a7a214d4356a49c08bd4ca1b94ee4b5bd}{get\+Sub\+Node}} () const
 \item 
@@ -70,6 +72,10 @@ const \mbox{\hyperlink{classe2XD_1_1framework_1_1Node}{Node}} \texorpdfstring{$\
 \item 
 \mbox{\hyperlink{classe2XD_1_1framework_1_1Node}{Node}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classe2XD_1_1framework_1_1Node_a40286968151235c93254f56f9b0b993a}{get\+Parent}} ()
 \item 
+const \mbox{\hyperlink{classe2XD_1_1framework_1_1Scene}{Scene}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classe2XD_1_1framework_1_1Node_a32ec3dffba82641afe50244b0ff4f6c2}{get\+Scene}} () const
+\item 
+\mbox{\hyperlink{classe2XD_1_1framework_1_1Scene}{Scene}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classe2XD_1_1framework_1_1Node_aff928ab6f2b8d4f3c44e7731ba8117c6}{get\+Scene}} ()
+\item 
 void \mbox{\hyperlink{classe2XD_1_1framework_1_1Node_aa0cdcbad57add9ecddb4d2df12c44e33}{set\+Paused}} (bool paused)
 \end{DoxyCompactItemize}
 \doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classe2XD_1_1framework_1_1Renderable}{e2\+XD\+::framework\+::\+Renderable}}}
@@ -85,9 +91,13 @@ virtual void \mbox{\hyperlink{classe2XD_1_1framework_1_1Renderable_a084810e1e0d4
 \doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{classe2XD_1_1framework_1_1Node}{e2\+XD\+::framework\+::\+Node}}}
 \begin{DoxyCompactItemize}
 \item 
-virtual void \mbox{\hyperlink{classe2XD_1_1framework_1_1Node_a6aad0a85b3abdfb1b34e193a4171ce66}{on\+Update}} ()
+virtual void \mbox{\hyperlink{classe2XD_1_1framework_1_1Node_af89d371346d6d288569ec326ee776b65}{on\+Update}} (double delta\+Time)
 \item 
-virtual void \mbox{\hyperlink{classe2XD_1_1framework_1_1Node_a7d7c39c57b0ea8d05c1c771bb14edeb3}{\+\_\+internal\+\_\+on\+Update}} ()
+virtual void \mbox{\hyperlink{classe2XD_1_1framework_1_1Node_ac3d8e9b06bd7e94459d71e05aacf8185}{\+\_\+internal\+\_\+on\+Update}} (double delta\+Time)
+\item 
+virtual void \mbox{\hyperlink{classe2XD_1_1framework_1_1Node_ac49b7a8b26c55897c78f68b599390316}{on\+Physics\+Update}} (double delta\+Time)
+\item 
+virtual void \mbox{\hyperlink{classe2XD_1_1framework_1_1Node_af7d4ffe839e9fa07342f6c32c9c91f49}{\+\_\+internal\+\_\+on\+Physics\+Update}} (double delta\+Time)
 \item 
 virtual void \mbox{\hyperlink{classe2XD_1_1framework_1_1Node_adff5310c5d37fd27541b8d7fd4d6916c}{on\+Create}} ()
 \item 
@@ -139,6 +149,29 @@ bool \mbox{\hyperlink{classe2XD_1_1framework_1_1Renderable_a5f075727608df3d602ea
 
 
 \doxysubsection{Member Function Documentation}
+\Hypertarget{classe2XD_1_1framework_1_1Scene_a336b2ff0e11eaafe64e51cef91f90340}\label{classe2XD_1_1framework_1_1Scene_a336b2ff0e11eaafe64e51cef91f90340} 
+\index{e2XD::framework::Scene@{e2XD::framework::Scene}!addSubNode@{addSubNode}}
+\index{addSubNode@{addSubNode}!e2XD::framework::Scene@{e2XD::framework::Scene}}
+\doxysubsubsection{\texorpdfstring{addSubNode()}{addSubNode()}}
+{\footnotesize\ttfamily void e2\+XD\+::framework\+::\+Scene\+::add\+Sub\+Node (\begin{DoxyParamCaption}\item[{std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classe2XD_1_1framework_1_1Node}{Node}} $>$}]{node }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Add a sub-\/node to this node. 
+\begin{DoxyParams}{Parameters}
+{\em node} & \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classe2XD_1_1framework_1_1Node_abc834854340010c6750a1463e3254e28}{e2\+XD\+::framework\+::\+Node}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classe2XD_1_1framework_1_1Scene_a336b2ff0e11eaafe64e51cef91f90340_cgraph}
+\end{center}
+\end{figure}
 \Hypertarget{classe2XD_1_1framework_1_1Scene_af91d4ad7c210d5bb531abc09a059ec29}\label{classe2XD_1_1framework_1_1Scene_af91d4ad7c210d5bb531abc09a059ec29} 
 \index{e2XD::framework::Scene@{e2XD::framework::Scene}!getActiveCamera@{getActiveCamera}}
 \index{getActiveCamera@{getActiveCamera}!e2XD::framework::Scene@{e2XD::framework::Scene}}

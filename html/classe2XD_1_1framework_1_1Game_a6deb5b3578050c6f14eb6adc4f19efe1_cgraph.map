@@ -1,39 +1,43 @@
 <map id="e2XD::framework::Game::Game" name="e2XD::framework::Game::Game">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,561,167,602"/>
-<area shape="rect" id="Node000002" href="$classe2XD_1_1framework_1_1Resources_1_1Config.html#ac5f22251bf218fb1b7eb50e3331a6b7a" title=" " alt="" coords="223,5,411,46"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="87,561,101,456,127,305,144,228,164,157,187,98,213,57,216,54,220,57,217,61,192,100,169,158,149,229,132,306,106,457,92,561"/>
-<area shape="rect" id="Node000003" href="$classe2XD_1_1framework_1_1IGameConfig.html#a06f790486a38d1fb48893ff6440d7dc4" title=" " alt="" coords="216,71,418,111"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="84,561,86,481,92,425,102,364,117,300,140,236,172,176,213,123,216,119,220,123,217,126,176,179,145,238,122,301,107,365,97,426,92,481,89,561"/>
-<area shape="rect" id="Node000004" href="$classe2XD_1_1framework_1_1IGameConfig.html#a4273d9c9eca2049e0633a6e5e3eaa79e" title=" " alt="" coords="216,136,418,177"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="85,561,91,490,109,391,126,337,148,283,176,232,213,188,217,184,221,188,217,191,181,235,152,285,131,338,115,392,96,491,90,561"/>
-<area shape="rect" id="Node000005" href="$classe2XD_1_1framework_1_1IGameConfig.html#a6da8d2298d864b283fa283e60098358d" title=" " alt="" coords="216,201,418,242"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="87,560,96,500,118,418,134,374,155,330,181,289,213,253,217,249,221,253,217,257,185,292,160,333,139,376,123,420,102,502,92,561"/>
-<area shape="rect" id="Node000006" href="$classe2XD_1_1framework_1_1IGameConfig.html#a08e09d0c397bb5b66af09eb8d9842908" title=" " alt="" coords="216,267,418,307"/>
-<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="89,560,102,511,126,446,162,378,186,346,213,318,219,313,222,318,216,322,190,350,167,381,131,449,107,513,94,562"/>
-<area shape="rect" id="Node000007" href="$classe2XD_1_1framework_1_1IGameConfig.html#a00520f027ddf8038427b1dbaf6bcefb3" title=" " alt="" coords="216,332,418,373"/>
-<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="93,560,110,523,135,475,170,426,213,384,220,378,224,383,216,388,174,430,140,478,114,525,98,562"/>
-<area shape="rect" id="Node000008" href="$classe2XD_1_1framework_1_1IGameConfig.html#a6453ba4d9bc77af81889927717087c2f" title=" " alt="" coords="216,397,418,438"/>
-<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="100,559,147,505,178,475,213,449,224,443,227,447,216,453,182,479,151,508,104,563"/>
-<area shape="rect" id="Node000009" href="$classe2XD_1_1framework_1_1IGameConfig.html#a943fd4933e4a21c24b2f11e51e91b8fb" title=" " alt="" coords="216,463,418,503"/>
-<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="123,559,214,514,232,507,234,512,216,519,125,563"/>
-<area shape="rect" id="Node000010" href="$classe2XD_1_1framework_1_1Resources_1_1Animations.html#a90905c9cb12de6dda53368721bfab700" title=" " alt="" coords="223,528,411,569"/>
-<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="167,567,207,562,207,567,168,573"/>
-<area shape="rect" id="Node000011" href="$classe2XD_1_1framework_1_1Collisions.html#ad653fac991d02e07c523ed16acde4e6a" title=" " alt="" coords="226,593,408,634"/>
-<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="168,590,211,596,210,602,167,595"/>
-<area shape="rect" id="Node000012" href="$classe2XD_1_1framework_1_1Resources_1_1Config.html#abbd250d2be7de7c08ca6206f58bdf93b" title=" " alt="" coords="223,659,411,699"/>
-<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="126,600,216,643,235,651,233,656,214,648,124,605"/>
-<area shape="rect" id="Node000013" href="$classe2XD_1_1framework_1_1Resources_1_1Fonts.html#a35de8061a05c0af313adb6bdbb7fbff6" title=" " alt="" coords="223,724,411,765"/>
-<area shape="poly" id="edge12_Node000001_Node000013" title=" " alt="" coords="105,601,151,655,182,684,216,709,227,715,224,719,213,713,179,688,147,658,101,604"/>
-<area shape="rect" id="Node000014" href="$classe2XD_1_1framework_1_1Input.html#ab1082f78a642b71373b5286a85d9714f" title=" " alt="" coords="239,789,395,830"/>
-<area shape="poly" id="edge13_Node000001_Node000014" title=" " alt="" coords="98,602,115,639,140,685,174,733,216,774,227,781,224,786,213,778,170,736,136,688,110,641,93,604"/>
-<area shape="rect" id="Node000015" href="$classe2XD_1_1framework_1_1Resources_1_1Textures.html#a274c572009f2e7ce9de3fc902fb44612" title=" " alt="" coords="223,855,411,895"/>
-<area shape="poly" id="edge14_Node000001_Node000015" title=" " alt="" coords="94,602,108,650,131,714,167,782,190,813,216,840,222,844,219,849,213,844,186,816,163,784,126,717,102,652,89,603"/>
-<area shape="rect" id="Node000016" href="$classe2XD_1_1framework_1_1Renderer.html#ae0eeb514b0c48b288e1abf4d290583e5" title=" " alt="" coords="228,920,406,961"/>
-<area shape="poly" id="edge15_Node000001_Node000016" title=" " alt="" coords="92,602,102,661,123,743,139,787,160,830,185,870,217,905,221,909,217,913,213,909,181,873,155,832,134,789,118,744,96,663,87,603"/>
-<area shape="rect" id="Node000017" href="$classe2XD_1_1framework_1_1IInputHandler.html#a87a96dbb0300813929461ac176a3eb23" title=" " alt="" coords="215,985,419,1026"/>
-<area shape="poly" id="edge16_Node000001_Node000017" title=" " alt="" coords="91,602,96,672,115,771,131,824,153,877,181,927,217,971,221,974,217,978,213,974,176,930,148,879,126,826,110,772,91,673,85,603"/>
-<area shape="rect" id="Node000018" href="$classe2XD_1_1framework_1_1Resources_1_1Config.html#a032908eef7a4b06fdb8886af8ea2a5bd" title=" " alt="" coords="223,1051,411,1091"/>
-<area shape="poly" id="edge17_Node000001_Node000018" title=" " alt="" coords="89,602,92,682,97,737,107,798,123,861,145,924,176,984,217,1036,220,1039,216,1043,213,1039,172,986,140,926,118,863,102,799,92,738,86,682,84,602"/>
-<area shape="rect" id="Node000019" href="$classe2XD_1_1framework_1_1Resources_1_1Fonts.html#a74e99a1a1a234454542c4b7326172934" title=" " alt="" coords="223,1116,411,1157"/>
-<area shape="poly" id="edge18_Node000001_Node000019" title=" " alt="" coords="92,602,106,706,132,856,150,933,169,1004,192,1062,217,1101,220,1105,216,1108,213,1105,187,1064,164,1006,144,935,127,857,101,707,87,603"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,627,167,667"/>
+<area shape="rect" id="Node000002" href="$classe2XD_1_1framework_1_1Resources_1_1Config.html#ac5f22251bf218fb1b7eb50e3331a6b7a" title=" " alt="" coords="226,5,415,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="86,626,98,510,123,340,140,251,160,170,185,103,198,77,213,57,216,54,220,58,217,61,203,80,189,106,165,172,145,253,128,340,104,511,92,627"/>
+<area shape="rect" id="Node000003" href="$classe2XD_1_1framework_1_1IGameConfig.html#a06f790486a38d1fb48893ff6440d7dc4" title=" " alt="" coords="220,71,421,111"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="87,626,101,521,127,371,144,293,164,222,187,163,213,123,216,119,220,123,217,126,192,165,169,223,149,294,132,372,106,522,92,627"/>
+<area shape="rect" id="Node000004" href="$classe2XD_1_1framework_1_1IGameConfig.html#a4273d9c9eca2049e0633a6e5e3eaa79e" title=" " alt="" coords="220,136,421,177"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="84,626,86,546,91,490,101,429,117,365,140,301,171,241,213,188,216,184,220,188,217,191,176,244,145,303,122,366,107,430,97,491,91,546,89,626"/>
+<area shape="rect" id="Node000005" href="$classe2XD_1_1framework_1_1IGameConfig.html#a6da8d2298d864b283fa283e60098358d" title=" " alt="" coords="220,201,421,242"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="85,626,91,556,109,456,125,402,147,348,176,298,213,253,217,249,221,253,217,257,181,301,152,350,130,403,114,457,96,556,90,626"/>
+<area shape="rect" id="Node000006" href="$classe2XD_1_1framework_1_1IGameConfig.html#a77bc0c710ccef91e367fa244b83d34fb" title=" " alt="" coords="220,267,421,307"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="87,626,96,566,117,484,134,439,155,395,181,354,213,318,217,314,221,318,217,322,185,358,159,398,139,441,122,485,101,567,92,627"/>
+<area shape="rect" id="Node000007" href="$classe2XD_1_1framework_1_1IGameConfig.html#a08e09d0c397bb5b66af09eb8d9842908" title=" " alt="" coords="220,332,421,373"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="89,626,102,577,126,512,162,443,186,411,213,384,219,379,222,383,216,388,190,415,167,446,131,514,107,578,94,627"/>
+<area shape="rect" id="Node000008" href="$classe2XD_1_1framework_1_1IGameConfig.html#a00520f027ddf8038427b1dbaf6bcefb3" title=" " alt="" coords="220,397,421,438"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="93,625,109,588,135,540,170,491,213,449,221,444,224,448,216,453,174,495,140,543,114,590,98,628"/>
+<area shape="rect" id="Node000009" href="$classe2XD_1_1framework_1_1IGameConfig.html#a6453ba4d9bc77af81889927717087c2f" title=" " alt="" coords="220,463,421,503"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="100,625,147,570,178,540,213,514,224,508,227,513,216,519,182,544,151,573,104,628"/>
+<area shape="rect" id="Node000010" href="$classe2XD_1_1framework_1_1IGameConfig.html#a943fd4933e4a21c24b2f11e51e91b8fb" title=" " alt="" coords="220,528,421,569"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="123,624,214,579,233,572,235,577,216,584,125,629"/>
+<area shape="rect" id="Node000011" href="$classe2XD_1_1framework_1_1DebugSettings.html#a674e2f400e98c92dc5fc6a9b5cd6f6d2" title=" " alt="" coords="215,593,426,634"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="167,633,199,628,200,634,167,638"/>
+<area shape="rect" id="Node000012" href="$classe2XD_1_1framework_1_1Resources_1_1Animations.html#a90905c9cb12de6dda53368721bfab700" title=" " alt="" coords="226,659,415,699"/>
+<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="167,655,211,661,210,667,167,661"/>
+<area shape="rect" id="Node000013" href="$classe2XD_1_1framework_1_1Collisions.html#ad653fac991d02e07c523ed16acde4e6a" title=" " alt="" coords="229,724,412,765"/>
+<area shape="poly" id="edge12_Node000001_Node000013" title=" " alt="" coords="126,666,216,709,235,716,233,721,214,713,124,670"/>
+<area shape="rect" id="Node000014" href="$classe2XD_1_1framework_1_1Resources_1_1Config.html#abbd250d2be7de7c08ca6206f58bdf93b" title=" " alt="" coords="226,789,415,830"/>
+<area shape="poly" id="edge13_Node000001_Node000014" title=" " alt="" coords="104,666,151,720,182,749,216,774,227,780,225,785,213,779,178,753,147,723,100,669"/>
+<area shape="rect" id="Node000015" href="$classe2XD_1_1framework_1_1Resources_1_1Fonts.html#a35de8061a05c0af313adb6bdbb7fbff6" title=" " alt="" coords="226,855,415,895"/>
+<area shape="poly" id="edge14_Node000001_Node000015" title=" " alt="" coords="98,667,115,704,140,751,174,798,216,840,224,845,221,849,213,844,170,802,136,753,110,706,93,669"/>
+<area shape="rect" id="Node000016" href="$classe2XD_1_1framework_1_1Input.html#ab1082f78a642b71373b5286a85d9714f" title=" " alt="" coords="243,920,398,961"/>
+<area shape="poly" id="edge15_Node000001_Node000016" title=" " alt="" coords="94,667,107,716,131,780,167,847,190,878,216,905,230,915,227,919,213,909,186,881,162,850,126,782,102,718,89,669"/>
+<area shape="rect" id="Node000017" href="$classe2XD_1_1framework_1_1Resources_1_1Textures.html#a274c572009f2e7ce9de3fc902fb44612" title=" " alt="" coords="226,985,415,1026"/>
+<area shape="poly" id="edge16_Node000001_Node000017" title=" " alt="" coords="92,668,101,727,123,808,139,852,160,895,185,935,217,970,221,974,217,978,213,974,181,938,155,898,134,854,117,810,96,728,87,668"/>
+<area shape="rect" id="Node000018" href="$classe2XD_1_1framework_1_1Renderer.html#ae0eeb514b0c48b288e1abf4d290583e5" title=" " alt="" coords="231,1051,410,1091"/>
+<area shape="poly" id="edge17_Node000001_Node000018" title=" " alt="" coords="90,668,96,737,114,836,130,890,152,943,181,992,217,1036,221,1040,217,1044,213,1040,176,995,147,945,125,892,109,837,91,738,85,668"/>
+<area shape="rect" id="Node000019" href="$classe2XD_1_1framework_1_1IInputHandler.html#a87a96dbb0300813929461ac176a3eb23" title=" " alt="" coords="218,1116,423,1157"/>
+<area shape="poly" id="edge18_Node000001_Node000019" title=" " alt="" coords="89,667,92,747,97,802,107,863,122,927,145,990,176,1049,217,1101,220,1105,216,1108,213,1105,172,1052,140,992,117,928,101,864,92,803,86,748,84,668"/>
+<area shape="rect" id="Node000020" href="$classe2XD_1_1framework_1_1Resources_1_1Config.html#a032908eef7a4b06fdb8886af8ea2a5bd" title=" " alt="" coords="226,1181,415,1222"/>
+<area shape="poly" id="edge19_Node000001_Node000020" title=" " alt="" coords="92,667,106,771,132,922,149,999,169,1070,192,1127,217,1167,220,1170,216,1174,213,1170,187,1130,164,1071,144,1000,127,923,101,772,87,668"/>
+<area shape="rect" id="Node000021" href="$classe2XD_1_1framework_1_1Resources_1_1Fonts.html#a74e99a1a1a234454542c4b7326172934" title=" " alt="" coords="226,1247,415,1287"/>
+<area shape="poly" id="edge20_Node000001_Node000021" title=" " alt="" coords="92,667,104,783,128,953,145,1041,166,1121,189,1187,203,1213,217,1232,220,1235,216,1239,213,1235,198,1215,185,1189,160,1123,140,1042,123,954,98,784,86,668"/>
 </map>

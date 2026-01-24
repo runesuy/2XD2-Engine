@@ -2,60 +2,73 @@
 \hypertarget{Game_8h_source}{}\label{Game_8h_source}\index{engine/framework/include/2XD2/framework/Game.h@{engine/framework/include/2XD2/framework/Game.h}}
 \mbox{\hyperlink{Game_8h}{Go to the documentation of this file.}}
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00001\ \textcolor{comment}{//}}
-\DoxyCodeLine{00002\ \textcolor{comment}{//\ Created\ by\ runes\ on\ 14/12/2025.}}
+\DoxyCodeLine{00001\ \textcolor{comment}{//\ Copyright\ (c)\ 2026\ Rune\ Suy\ and\ the\ 2XD2-\/Engine\ contributors.}}
+\DoxyCodeLine{00002\ \textcolor{comment}{//\ Licensed\ under\ the\ MIT\ License.}}
 \DoxyCodeLine{00003\ \textcolor{comment}{//}}
 \DoxyCodeLine{00004\ }
-\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#ifndef\ INC\_2XD2\_ENGINE\_GAME\_H}}
-\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#define\ INC\_2XD2\_ENGINE\_GAME\_H}}
-\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <memory>}}
+\DoxyCodeLine{00005\ \textcolor{comment}{//}}
+\DoxyCodeLine{00006\ \textcolor{comment}{//\ Created\ by\ runes\ on\ 14/12/2025.}}
+\DoxyCodeLine{00007\ \textcolor{comment}{//}}
 \DoxyCodeLine{00008\ }
-\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{Scene_8h}{scene/Scene.h}}"{}}}
-\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <SFML/Graphics.hpp>}}
-\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{IGameConfig_8h}{config/IGameConfig.h}}"{}}}
-\DoxyCodeLine{00012\ }
-\DoxyCodeLine{00013\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespacee2XD_1_1framework}{e2XD::framework}}}
-\DoxyCodeLine{00014\ \{}
-\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{classe2XD_1_1framework_1_1Game}{Game}}}
-\DoxyCodeLine{00016\ \ \ \ \ \{}
-\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ std::unique\_ptr<Scene>\ activeScene;}
-\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ sf::RenderWindow\ window\ =\ \{sf::VideoMode(800,\ 600),\ \textcolor{stringliteral}{"{}2XD2\ Game"{}}\};}
-\DoxyCodeLine{00019\ }
-\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ std::string\ CONFIG\_FILE\_PATH;}
-\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ std::string\ RESOURCES\_PATH;}
-\DoxyCodeLine{00022\ }
-\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keyword}{public}:}
-\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ std::string\ \mbox{\hyperlink{classe2XD_1_1framework_1_1Game_a0192822150d7fa2a3a7f22a4c1c1a39b}{DEFAULT\_FONT\_NAME}}\ =\ \textcolor{stringliteral}{"{}\_\_e2XD\_default\_\_"{}};}
-\DoxyCodeLine{00025\ }
-\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keyword}{private}:}
-\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Relative\ from\ engine\ resource\ folder}}
-\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ std::string\ DEFAULT\_FONT\_DEFAULT\_PATH\ =\ \textcolor{stringliteral}{"{}Roboto-\/VariableFont.ttf"{}};}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#ifndef\ INC\_2XD2\_ENGINE\_GAME\_H}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#define\ INC\_2XD2\_ENGINE\_GAME\_H}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <memory>}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{Scene_8h}{scene/Scene.h}}"{}}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ <SFML/Graphics.hpp>}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{IGameConfig_8h}{config/IGameConfig.h}}"{}}}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespacee2XD_1_1framework}{e2XD::framework}}}
+\DoxyCodeLine{00017\ \{}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{classe2XD_1_1framework_1_1Game}{Game}}}
+\DoxyCodeLine{00019\ \ \ \ \ \{}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ std::unique\_ptr<Scene>\ activeScene;}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ std::unique\_ptr<Scene>\ newActiveScene\ =\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ sf::RenderWindow\ window\ =\ \{sf::VideoMode(800,\ 600),\ \textcolor{stringliteral}{"{}2XD2\ Game"{}}\};}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ std::string\ CONFIG\_FILE\_PATH;}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ std::string\ RESOURCES\_PATH;}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \_physicsTicksPerSecond\ =\ 120;}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \_useVSync\ =\ \textcolor{keyword}{true};}
 \DoxyCodeLine{00029\ }
-\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keyword}{static}\ \textcolor{keywordtype}{bool}\ running\ =\ \textcolor{keyword}{false};}
-\DoxyCodeLine{00031\ }
-\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keyword}{public}:}
-\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{classe2XD_1_1framework_1_1Game}{Game}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classe2XD_1_1framework_1_1IGameConfig}{IGameConfig}}\&\ config,\ std::string\ configFilePath\ =\ \textcolor{stringliteral}{"{}2xd\_config.json"{}});}
-\DoxyCodeLine{00034\ }
-\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classe2XD_1_1framework_1_1Game_a3b33447365a8d953488d5b2c90b4d4ee}{run}}();}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ std::string\ \mbox{\hyperlink{classe2XD_1_1framework_1_1Game_a0192822150d7fa2a3a7f22a4c1c1a39b}{DEFAULT\_FONT\_NAME}}\ =\ \textcolor{stringliteral}{"{}\_\_e2XD\_default\_\_"{}};}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Relative\ from\ engine\ resource\ folder}}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ std::string\ DEFAULT\_FONT\_DEFAULT\_PATH\ =\ \textcolor{stringliteral}{"{}Roboto-\/VariableFont.ttf"{}};}
 \DoxyCodeLine{00036\ }
-\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classe2XD_1_1framework_1_1Game_a64dc1af70c840c70af950fcd0d5384af}{setWindowTitle}}(\textcolor{keyword}{const}\ std::string\&\ title);}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keyword}{static}\ \textcolor{keywordtype}{bool}\ running\ =\ \textcolor{keyword}{false};}
 \DoxyCodeLine{00038\ }
-\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classe2XD_1_1framework_1_1Game_aebb3593a47ff5ae2b709232848a8fa1c}{setActiveScene}}(std::unique\_ptr<framework::Scene>\&\&\ scene);}
-\DoxyCodeLine{00040\ }
-\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \textcolor{keyword}{template}\ <IsScene\ T>}
-\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{Key_8h_ab3c7af4820830f9166ede9e5623c4e73ab9ece18c950afbfa6b0fdbfa4ff731d3}{T}}*\ \mbox{\hyperlink{classe2XD_1_1framework_1_1Game_adea469631c18e6757a791641d54c393d}{createActiveScene}}();}
-\DoxyCodeLine{00043\ \ \ \ \ \};}
-\DoxyCodeLine{00044\ }
-\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keyword}{template}\ <IsScene\ T>}
-\DoxyCodeLine{00046\ \ \ \ \ \mbox{\hyperlink{Key_8h_ab3c7af4820830f9166ede9e5623c4e73ab9ece18c950afbfa6b0fdbfa4ff731d3}{T}}*\ \mbox{\hyperlink{classe2XD_1_1framework_1_1Game_adea469631c18e6757a791641d54c393d}{Game::createActiveScene}}()}
-\DoxyCodeLine{00047\ \ \ \ \ \{}
-\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \textcolor{keyword}{auto}\ scene\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{Key_8h_ab3c7af4820830f9166ede9e5623c4e73ab9ece18c950afbfa6b0fdbfa4ff731d3}{T}}();}
-\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \textcolor{keyword}{auto}\ uniqueScene\ =\ std::unique\_ptr<T>(scene);}
-\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classe2XD_1_1framework_1_1Game_aebb3593a47ff5ae2b709232848a8fa1c}{setActiveScene}}(std::move(uniqueScene));}
-\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ scene;}
-\DoxyCodeLine{00052\ \ \ \ \ \}}
-\DoxyCodeLine{00053\ \}}
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{classe2XD_1_1framework_1_1Game}{Game}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classe2XD_1_1framework_1_1IGameConfig}{IGameConfig}}\&\ config,\ std::string\ configFilePath\ =\ \textcolor{stringliteral}{"{}2xd\_config.json"{}});}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classe2XD_1_1framework_1_1Game_a3b33447365a8d953488d5b2c90b4d4ee}{run}}();}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classe2XD_1_1framework_1_1Game_a64dc1af70c840c70af950fcd0d5384af}{setWindowTitle}}(\textcolor{keyword}{const}\ std::string\&\ title);}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classe2XD_1_1framework_1_1Game_ac862615eb6d6a15d9384fc1dec438bec}{setPhysicsTicksPerSecond}}(\textcolor{keywordtype}{int}\ ticksPerSecond);}
 \DoxyCodeLine{00054\ }
-\DoxyCodeLine{00055\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//INC\_2XD2\_ENGINE\_GAME\_H}}
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classe2XD_1_1framework_1_1Game_a9d7fa311b41227cfab9267c71fdea508}{enableVSync}}();}
+\DoxyCodeLine{00063\ }
+\DoxyCodeLine{00070\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classe2XD_1_1framework_1_1Game_aa69efc79266b88d0544d21c4010cabbb}{disableVSync}}();}
+\DoxyCodeLine{00071\ }
+\DoxyCodeLine{00078\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classe2XD_1_1framework_1_1Game_aacc92870156854e1fb1ed3796eb9f737}{setActiveScene}}(std::unique\_ptr<Scene>\&\&\ scene);}
+\DoxyCodeLine{00079\ }
+\DoxyCodeLine{00080\ \ \ \ \ \ \ \ \ \textcolor{keyword}{template}\ <IsScene\ T>}
+\DoxyCodeLine{00081\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{Key_8h_ab3c7af4820830f9166ede9e5623c4e73ab9ece18c950afbfa6b0fdbfa4ff731d3}{T}}*\ \mbox{\hyperlink{classe2XD_1_1framework_1_1Game_adea469631c18e6757a791641d54c393d}{createActiveScene}}();}
+\DoxyCodeLine{00082\ \ \ \ \ \};}
+\DoxyCodeLine{00083\ }
+\DoxyCodeLine{00084\ \ \ \ \ \textcolor{keyword}{template}\ <IsScene\ T>}
+\DoxyCodeLine{00085\ \ \ \ \ \mbox{\hyperlink{Key_8h_ab3c7af4820830f9166ede9e5623c4e73ab9ece18c950afbfa6b0fdbfa4ff731d3}{T}}*\ \mbox{\hyperlink{classe2XD_1_1framework_1_1Game_adea469631c18e6757a791641d54c393d}{Game::createActiveScene}}()}
+\DoxyCodeLine{00086\ \ \ \ \ \{}
+\DoxyCodeLine{00087\ \ \ \ \ \ \ \ \ \textcolor{keyword}{auto}\ scene\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{Key_8h_ab3c7af4820830f9166ede9e5623c4e73ab9ece18c950afbfa6b0fdbfa4ff731d3}{T}}();}
+\DoxyCodeLine{00088\ \ \ \ \ \ \ \ \ \textcolor{keyword}{auto}\ uniqueScene\ =\ std::unique\_ptr<T>(scene);}
+\DoxyCodeLine{00089\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classe2XD_1_1framework_1_1Game_aacc92870156854e1fb1ed3796eb9f737}{setActiveScene}}(std::move(uniqueScene));}
+\DoxyCodeLine{00090\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ scene;}
+\DoxyCodeLine{00091\ \ \ \ \ \}}
+\DoxyCodeLine{00092\ \}}
+\DoxyCodeLine{00093\ }
+\DoxyCodeLine{00094\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//INC\_2XD2\_ENGINE\_GAME\_H}}
 
 \end{DoxyCode}

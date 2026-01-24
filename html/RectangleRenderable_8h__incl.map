@@ -1,0 +1,19 @@
+<map id="addons/std&#45;addon/include/2XD2/std_addon/renderables/RectangleRenderable.h" name="addons/std&#45;addon/include/2XD2/std_addon/renderables/RectangleRenderable.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="327,5,519,61"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,109,177,135"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="327,62,153,107,152,102,326,57"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="201,109,437,135"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="392,63,347,101,344,97,389,59"/>
+<area shape="rect" id="Node000004" href="$Vec2f_8h.html" title=" " alt="" coords="462,109,592,135"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="457,59,502,97,499,101,454,63"/>
+<area shape="rect" id="Node000007" href="$IRenderable_8h.html" title=" " alt="" coords="616,109,803,135"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="514,59,656,101,654,107,513,64"/>
+<area shape="rect" id="Node000005" href="$Vec2_8hpp.html" title=" " alt="" coords="489,183,565,208"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="530,135,530,167,524,167,524,135"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="498,256,556,282"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="530,209,530,241,524,241,524,209"/>
+<area shape="rect" id="Node000008" href="$IRenderTarget_8h.html" title=" " alt="" coords="653,183,766,208"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="712,135,712,167,707,167,707,135"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="612,256,807,282"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="712,209,712,241,707,241,707,209"/>
+</map>

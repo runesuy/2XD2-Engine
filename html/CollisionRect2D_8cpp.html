@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Doxygen: addons/std-addon/src/CollisionRect2D.cpp File Reference</title>
+<title>Doxygen: addons/std-addon/src/nodes/CollisionRect2D.cpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -69,7 +69,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_1233bc0a3e869c10318208e4553a4fcb.html">addons</a></li><li class="navelem"><a class="el" href="dir_7279799d42720613c3c3b320957c0f0c.html">std-addon</a></li><li class="navelem"><a class="el" href="dir_016732294ff2c27f14677898d99fe25c.html">src</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_1233bc0a3e869c10318208e4553a4fcb.html">addons</a></li><li class="navelem"><a class="el" href="dir_7279799d42720613c3c3b320957c0f0c.html">std-addon</a></li><li class="navelem"><a class="el" href="dir_016732294ff2c27f14677898d99fe25c.html">src</a></li><li class="navelem"><a class="el" href="dir_945a02badb7d8017251b90ef88e75ca9.html">nodes</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -78,54 +78,15 @@ $(function() {
   <div class="headertitle"><div class="title">CollisionRect2D.cpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="CollisionRect2D_8h_source.html">2XD2/std_addon/CollisionRect2D.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;../include/2XD2/std_addon/nodes/CollisionRect2D.h&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for CollisionRect2D.cpp:</div>
 <div class="dyncontent">
-<div class="center"><img src="CollisionRect2D_8cpp__incl.png" border="0" usemap="#aaddons_2std-addon_2src_2CollisionRect2D_8cpp" alt=""/></div>
-<map name="aaddons_2std-addon_2src_2CollisionRect2D_8cpp" id="aaddons_2std-addon_2src_2CollisionRect2D_8cpp">
-<area shape="rect" title=" " alt="" coords="114,5,260,46"/>
-<area shape="rect" href="CollisionRect2D_8h.html" title=" " alt="" coords="102,94,272,135"/>
-<area shape="poly" title=" " alt="" coords="190,47,190,78,184,78,184,47"/>
-<area shape="rect" title=" " alt="" coords="5,190,174,216"/>
-<area shape="poly" title=" " alt="" coords="167,137,116,182,112,178,163,133"/>
-<area shape="rect" href="CollisionBody2D_8h.html" title=" " alt="" coords="197,183,374,223"/>
-<area shape="poly" title=" " alt="" coords="211,133,254,170,250,174,207,137"/>
-<area shape="rect" href="Collisions_8h.html" title=" " alt="" coords="147,353,235,378"/>
-<area shape="poly" title=" " alt="" coords="261,226,238,247,218,273,204,306,197,338,192,337,199,304,214,270,234,243,258,222"/>
-<area shape="rect" href="ICollisionBody_8h.html" title=" " alt="" coords="229,271,342,297"/>
-<area shape="poly" title=" " alt="" coords="288,224,288,256,283,256,283,224"/>
-<area shape="rect" href="Node2D_8h.html" title=" " alt="" coords="426,271,553,297"/>
-<area shape="poly" title=" " alt="" coords="337,221,445,263,443,268,335,226"/>
-<area shape="rect" title=" " alt="" coords="104,441,158,467"/>
-<area shape="poly" title=" " alt="" coords="185,380,150,430,146,427,180,377"/>
-<area shape="poly" title=" " alt="" coords="273,299,219,344,215,340,269,295"/>
-<area shape="rect" href="Node_8h.html" title=" " alt="" coords="308,345,466,386"/>
-<area shape="poly" title=" " alt="" coords="476,300,426,338,423,333,472,295"/>
-<area shape="rect" href="Transform2D_8h.html" title=" " alt="" coords="557,353,729,378"/>
-<area shape="poly" title=" " alt="" coords="514,295,607,343,605,348,512,300"/>
-<area shape="rect" href="Vec2f_8h.html" title=" " alt="" coords="768,441,833,467"/>
-<area shape="poly" title=" " alt="" coords="554,284,599,289,648,299,697,317,742,343,761,361,775,383,795,425,790,428,771,385,756,365,739,347,695,322,646,305,598,294,553,289"/>
-<area shape="poly" title=" " alt="" coords="467,349,485,354,492,365,489,373,482,378,479,374,485,370,487,366,481,358,465,354"/>
-<area shape="rect" title=" " alt="" coords="181,441,219,467"/>
-<area shape="poly" title=" " alt="" coords="338,389,234,436,232,431,336,384"/>
-<area shape="rect" title=" " alt="" coords="244,441,311,467"/>
-<area shape="poly" title=" " alt="" coords="364,388,306,434,303,430,360,384"/>
-<area shape="rect" title=" " alt="" coords="336,441,417,467"/>
-<area shape="poly" title=" " alt="" coords="387,387,382,426,377,425,382,386"/>
-<area shape="rect" href="ProcessMode_8h.html" title=" " alt="" coords="441,441,552,467"/>
-<area shape="poly" title=" " alt="" coords="413,384,471,430,468,434,410,388"/>
-<area shape="rect" href="Renderable_8h.html" title=" " alt="" coords="577,434,744,474"/>
-<area shape="poly" title=" " alt="" coords="450,384,584,426,583,431,448,389"/>
-<area shape="rect" href="RenderLayer_8h.html" title=" " alt="" coords="557,522,748,548"/>
-<area shape="poly" title=" " alt="" coords="661,475,658,507,652,506,656,474"/>
-<area shape="rect" title=" " alt="" coords="624,596,681,622"/>
-<area shape="poly" title=" " alt="" coords="655,548,655,580,650,580,650,548"/>
-<area shape="poly" title=" " alt="" coords="666,376,766,431,763,436,664,381"/>
-<area shape="rect" href="Vec2_8hpp.html" title=" " alt="" coords="772,522,847,548"/>
-<area shape="poly" title=" " alt="" coords="804,467,809,507,804,507,799,468"/>
-<area shape="rect" title=" " alt="" coords="781,596,838,622"/>
-<area shape="poly" title=" " alt="" coords="812,548,812,580,807,580,807,548"/>
+<div class="center"><img src="CollisionRect2D_8cpp__incl.png" border="0" usemap="#aaddons_2std-addon_2src_2nodes_2CollisionRect2D_8cpp" alt=""/></div>
+<map name="aaddons_2std-addon_2src_2nodes_2CollisionRect2D_8cpp" id="aaddons_2std-addon_2src_2nodes_2CollisionRect2D_8cpp">
+<area shape="rect" title=" " alt="" coords="19,5,200,46"/>
+<area shape="rect" title=" " alt="" coords="5,94,214,135"/>
+<area shape="poly" title=" " alt="" coords="112,47,112,78,107,78,107,47"/>
 </map>
 </div>
 </div><table class="memberdecls">

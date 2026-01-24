@@ -1,0 +1,29 @@
+<map id="engine/framework/include/2XD2/framework/debug/IDebugConfig.h" name="engine/framework/include/2XD2/framework/debug/IDebugConfig.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="421,5,673,46"/>
+<area shape="rect" id="Node000002" href="$IGameConfig_8h.html" title=" " alt="" coords="462,94,631,150"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="549,61,549,93,544,93,544,61"/>
+<area shape="rect" id="Node000009" href="$DebugSettings_8h.html" title=" " alt="" coords="167,102,428,142"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="481,54,350,103,349,98,479,49"/>
+<area shape="rect" id="Node000012" href="$DefaultDebugConfig_8h.html" title=" " alt="" coords="656,94,899,150"/>
+<area shape="poly" id="edge12_Node000001_Node000012" title=" " alt="" coords="610,50,712,91,710,96,608,55"/>
+<area shape="rect" id="Node000003" href="$Game_8h.html" title=" " alt="" coords="461,205,632,246"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="549,165,549,205,544,205,544,165"/>
+<area shape="rect" id="Node000007" href="$DefaultGameConfig_8h.html" title=" " alt="" coords="675,198,845,253"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="619,154,704,195,702,199,616,159"/>
+<area shape="rect" id="Node000004" href="$Label_8cpp.html" title=" " alt="" coords="474,301,620,342"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="549,261,549,301,544,301,544,261"/>
+<area shape="rect" id="Node000005" href="$TextRenderable_8cpp.html" title=" " alt="" coords="644,301,855,342"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="604,250,708,298,706,303,602,255"/>
+<area shape="rect" id="Node000006" href="$Game_8cpp.html" title=" " alt="" coords="303,301,449,342"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="499,256,413,303,410,298,496,251"/>
+<area shape="rect" id="Node000008" href="$DefaultGameConfig_8cpp.html" title=" " alt="" coords="879,301,1078,342"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="838,257,934,298,932,303,836,262"/>
+<area shape="poly" id="edge9_Node000009_Node000006" title=" " alt="" coords="332,151,350,172,364,197,373,224,378,252,380,301,374,301,372,253,368,225,359,199,345,175,328,155"/>
+<area shape="rect" id="Node000010" href="$DebugSettings_8cpp.html" title=" " alt="" coords="5,205,179,246"/>
+<area shape="poly" id="edge10_Node000009_Node000010" title=" " alt="" coords="246,152,133,207,131,202,243,147"/>
+<area shape="rect" id="Node000011" href="$Node2D_8cpp.html" title=" " alt="" coords="203,205,349,246"/>
+<area shape="poly" id="edge11_Node000009_Node000011" title=" " alt="" coords="293,158,283,205,277,204,287,157"/>
+<area shape="poly" id="edge13_Node000012_Node000007" title=" " alt="" coords="773,166,767,197,762,197,767,165"/>
+<area shape="rect" id="Node000013" href="$DefaultDebugConfig_8cpp.html" title=" " alt="" coords="868,205,1071,246"/>
+<area shape="poly" id="edge14_Node000012_Node000013" title=" " alt="" coords="843,155,934,202,931,207,841,160"/>
+</map>

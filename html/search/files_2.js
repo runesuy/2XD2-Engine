@@ -1,13 +1,19 @@
 var searchData=
 [
-  ['defaultcollisionhandler_2ecpp_0',['DefaultCollisionHandler.cpp',['../DefaultCollisionHandler_8cpp.html',1,'']]],
-  ['defaultcollisionhandler_2eh_1',['DefaultCollisionHandler.h',['../DefaultCollisionHandler_8h.html',1,'']]],
-  ['defaultconfigmanager_2ecpp_2',['DefaultConfigManager.cpp',['../DefaultConfigManager_8cpp.html',1,'']]],
-  ['defaultconfigmanager_2eh_3',['DefaultConfigManager.h',['../DefaultConfigManager_8h.html',1,'']]],
-  ['defaultfontmanager_2ecpp_4',['DefaultFontManager.cpp',['../DefaultFontManager_8cpp.html',1,'']]],
-  ['defaultfontmanager_2eh_5',['DefaultFontManager.h',['../DefaultFontManager_8h.html',1,'']]],
-  ['defaultgameconfig_2ecpp_6',['DefaultGameConfig.cpp',['../DefaultGameConfig_8cpp.html',1,'']]],
-  ['defaultgameconfig_2eh_7',['DefaultGameConfig.h',['../DefaultGameConfig_8h.html',1,'']]],
-  ['defaultrenderer_2ecpp_8',['DefaultRenderer.cpp',['../DefaultRenderer_8cpp.html',1,'']]],
-  ['defaultrenderer_2eh_9',['DefaultRenderer.h',['../DefaultRenderer_8h.html',1,'']]]
+  ['debugsettings_2ecpp_0',['DebugSettings.cpp',['../DebugSettings_8cpp.html',1,'']]],
+  ['debugsettings_2eh_1',['DebugSettings.h',['../DebugSettings_8h.html',1,'']]],
+  ['defaultcollisionhandler_2ecpp_2',['DefaultCollisionHandler.cpp',['../DefaultCollisionHandler_8cpp.html',1,'']]],
+  ['defaultcollisionhandler_2eh_3',['DefaultCollisionHandler.h',['../DefaultCollisionHandler_8h.html',1,'']]],
+  ['defaultconfigmanager_2ecpp_4',['DefaultConfigManager.cpp',['../DefaultConfigManager_8cpp.html',1,'']]],
+  ['defaultconfigmanager_2eh_5',['DefaultConfigManager.h',['../DefaultConfigManager_8h.html',1,'']]],
+  ['defaultdebugconfig_2ecpp_6',['DefaultDebugConfig.cpp',['../DefaultDebugConfig_8cpp.html',1,'']]],
+  ['defaultdebugconfig_2eh_7',['DefaultDebugConfig.h',['../DefaultDebugConfig_8h.html',1,'']]],
+  ['defaultfontmanager_2ecpp_8',['DefaultFontManager.cpp',['../DefaultFontManager_8cpp.html',1,'']]],
+  ['defaultfontmanager_2eh_9',['DefaultFontManager.h',['../DefaultFontManager_8h.html',1,'']]],
+  ['defaultgameconfig_2ecpp_10',['DefaultGameConfig.cpp',['../DefaultGameConfig_8cpp.html',1,'']]],
+  ['defaultgameconfig_2eh_11',['DefaultGameConfig.h',['../DefaultGameConfig_8h.html',1,'']]],
+  ['defaultoriginmarker_2ecpp_12',['DefaultOriginMarker.cpp',['../DefaultOriginMarker_8cpp.html',1,'']]],
+  ['defaultoriginmarker_2eh_13',['DefaultOriginMarker.h',['../DefaultOriginMarker_8h.html',1,'']]],
+  ['defaultrenderer_2ecpp_14',['DefaultRenderer.cpp',['../DefaultRenderer_8cpp.html',1,'']]],
+  ['defaultrenderer_2eh_15',['DefaultRenderer.h',['../DefaultRenderer_8h.html',1,'']]]
 ];

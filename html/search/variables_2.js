@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['keyboardmap_0',['keyboardMap',['../namespacee2XD_1_1framework_1_1internal_1_1input.html#a065377f561eade19bdfcb21b33c48270',1,'e2XD::framework::internal::input']]]
+  ['default_5ffont_5fname_0',['DEFAULT_FONT_NAME',['../classe2XD_1_1framework_1_1Game.html#a0192822150d7fa2a3a7f22a4c1c1a39b',1,'e2XD::framework::Game']]]
 ];
