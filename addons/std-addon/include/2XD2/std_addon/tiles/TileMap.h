@@ -7,6 +7,7 @@
 
 #include "TileSet.h"
 #include "2XD2/framework/drawing/Drawable.h"
+#include "2XD2/framework/nodes/Drawable2D.h"
 #include "internal/TileChunk.h"
 #include "internal/TileMapRenderable.h"
 
@@ -15,7 +16,7 @@ namespace e2XD::std_addon
     /**
      * A 2D tile map node.
      */
-    class TileMap : public framework::Node2D, public framework::Drawable
+    class TileMap : public framework::Drawable2D
     {
     public:
         using TileMapSizeType = int;
