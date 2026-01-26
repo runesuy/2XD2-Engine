@@ -24,7 +24,7 @@ namespace e2XD::std_addon
     public:
         RectangleRenderable();
 
-        void draw(renderer::IRenderTarget& renderTarget) const override;
+        void draw(const renderer::IRenderTarget& renderTarget) const override;
 
         /**
          * Set the fill color of the rectangle.

@@ -15,6 +15,7 @@
 namespace e2XD::framework
 {
     class Scene;
+    class DrawTarget;
     template <typename T>
     concept IsScene = std::is_base_of_v<Scene, T>;
 
@@ -24,9 +25,10 @@ namespace e2XD::framework
     class Scene : public Node
     {
         const Camera* activeCamera = nullptr;
+        DrawTarget* drawTarget = nullptr;
 
     public:
-        Scene() = default;
+        Scene();
         ~Scene() override = default;
 
         void setActiveCamera(const Camera* camera);

@@ -8,7 +8,7 @@
 
 #ifndef FLATLAND_SPRITE2D_H
 #define FLATLAND_SPRITE2D_H
-#include "2XD2/framework/nodes/Node2D.h"
+#include "2XD2/framework/nodes/Drawable2D.h"
 #include "2XD2/std_addon/renderables/SpriteRenderable.h"
 
 
@@ -17,7 +17,7 @@ namespace e2XD::std_addon
     /**
      * A 2D sprite node.
      */
-    class Sprite2D : public framework::Node2D
+    class Sprite2D : public framework::Drawable2D
     {
         SpriteRenderable _renderable;
 
@@ -30,7 +30,7 @@ namespace e2XD::std_addon
         const SpriteRenderable& getRenderable() const { return _renderable; }
 
     protected:
-        void _internal_onDraw() override;
+        void _internal_onDraw(const framework::DrawTarget& target) override;
     };
 } // framework
 // e2XD

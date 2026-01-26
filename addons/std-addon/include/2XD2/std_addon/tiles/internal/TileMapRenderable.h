@@ -19,7 +19,7 @@ namespace e2XD::std_addon::internal
         TileMap& _tileMap;
     public:
         explicit TileMapRenderable(TileMap& tileMap);
-        void draw(renderer::IRenderTarget& renderTarget) const override;
+        void draw(const renderer::IRenderTarget& renderTarget) const override;
     };
 } // internal
 // std_addon

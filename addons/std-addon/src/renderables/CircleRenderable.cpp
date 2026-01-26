@@ -12,7 +12,7 @@ namespace e2XD::std_addon
         _shape.setOrigin(_shape.getRadius(), _shape.getRadius());
     }
 
-    void CircleRenderable::draw(renderer::IRenderTarget& renderTarget) const
+    void CircleRenderable::draw(const renderer::IRenderTarget& renderTarget) const
     {
         renderTarget.draw(_shape);
     }

@@ -12,7 +12,7 @@ namespace e2XD::std_addon
         rectangleShape.setOrigin(rectangleShape.getSize()/2.0f);
     }
 
-    void RectangleRenderable::draw(renderer::IRenderTarget& renderTarget) const
+    void RectangleRenderable::draw(const renderer::IRenderTarget& renderTarget) const
     {
         renderTarget.draw(rectangleShape);
     }

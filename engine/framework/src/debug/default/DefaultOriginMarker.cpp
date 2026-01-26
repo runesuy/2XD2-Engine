@@ -19,7 +19,7 @@ namespace e2XD::framework
         _shape.setFillColor(sf::Color::Red);
     }
 
-    void DefaultOriginMarker::draw(renderer::IRenderTarget& renderTarget) const
+    void DefaultOriginMarker::draw(const renderer::IRenderTarget& renderTarget) const
     {
         renderTarget.draw(_shape);
     }

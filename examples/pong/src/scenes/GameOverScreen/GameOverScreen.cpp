@@ -13,7 +13,7 @@
 
 GameOverScreen::GameOverScreen()
 {
-    visible = false;
+    Drawable2D::setVisible(false);
     renderLayer = RenderLayer::UI;
 
     label = createSubNode<Label>();
@@ -30,7 +30,7 @@ GameOverScreen::GameOverScreen()
 
 void GameOverScreen::onUpdate(double deltaTime)
 {
-    if (!visible) return;
+    if (!isVisible()) return;
 
     if (Input::isKeyJustPressed(Key::R))
     {

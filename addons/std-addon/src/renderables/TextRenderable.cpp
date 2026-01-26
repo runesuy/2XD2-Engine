@@ -17,7 +17,7 @@ namespace e2XD::std_addon
         _text.setOrigin(_text.getLocalBounds().width / 2, _text.getLocalBounds().height / 2);
     }
 
-    void TextRenderable::draw(renderer::IRenderTarget& renderTarget) const
+    void TextRenderable::draw(const renderer::IRenderTarget& renderTarget) const
     {
         renderTarget.draw(_text);
     }

@@ -19,7 +19,7 @@ namespace e2XD::std_addon
     public:
         CircleRenderable();
 
-        void draw(renderer::IRenderTarget& renderTarget) const override;
+        void draw(const renderer::IRenderTarget& renderTarget) const override;
 
         /**
          * Set the radius of the circle.

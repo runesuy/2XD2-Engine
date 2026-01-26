@@ -9,19 +9,25 @@
 #ifndef INC_2XD2_ENGINE_RECTANGLE2D_H
 #define INC_2XD2_ENGINE_RECTANGLE2D_H
 
-#include "2XD2/framework/nodes/Node2D.h"
+#include "2XD2/framework/nodes/Drawable2D.h"
 #include "2XD2/std_addon/renderables/RectangleRenderable.h"
+
+namespace e2XD::framework
+{
+    class DrawTarget;
+}
 
 namespace e2XD::std_addon
 {
     /**
      * A 2D rectangle shape node.
      */
-    class Rectangle2D : public framework::Node2D
+    class Rectangle2D : public framework::Drawable2D
     {
         RectangleRenderable _renderable;
     protected:
-        void _internal_onDraw() override;
+
+        void _internal_onDraw(const framework::DrawTarget& target) override;
     public:
         /**
          * Get the rectangle renderable.

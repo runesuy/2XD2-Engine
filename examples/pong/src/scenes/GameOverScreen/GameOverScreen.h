@@ -15,7 +15,7 @@
 using namespace e2XD::framework;
 using namespace e2XD::std_addon;
 
-class GameOverScreen : public Node2D
+class GameOverScreen : public Drawable2D
 {
     Label* label;
     Label* restartLabel;

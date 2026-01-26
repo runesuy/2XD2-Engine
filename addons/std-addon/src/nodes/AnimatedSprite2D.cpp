@@ -58,10 +58,10 @@ namespace e2XD::std_addon
     {
     }
 
-    void AnimatedSprite2D::_internal_onDraw()
+    void AnimatedSprite2D::_internal_onDraw(const framework::DrawTarget& target)
     {
         getRenderable().setTexture(*_currentAnimation.getFrames().at(_currentFrameIndex));
-        Sprite2D::_internal_onDraw();
+        Sprite2D::_internal_onDraw(target);
     }
 
     void AnimatedSprite2D::_internal_onUpdate(const double deltaTime)

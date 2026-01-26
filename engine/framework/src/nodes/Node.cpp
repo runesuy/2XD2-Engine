@@ -37,13 +37,11 @@ namespace e2XD::framework
         }
     }
 
-    // --------------- Protected Members ---------------
-
-    void Node::_internal_onDraw()
+    void Node::_sendNotification(const int what)
     {
         for (const auto& node : nodes)
         {
-            node->draw();
+            node->_notification(what);
         }
     }
 
@@ -143,15 +141,6 @@ namespace e2XD::framework
             nodesL.push_back(node.get());
         }
         return nodesL;
-    }
-
-    void Node::setRenderLayer(const RenderLayer renderLayer)
-    {
-        Renderable::setRenderLayer(renderLayer);
-        for (const auto& node : nodes)
-        {
-            node->setRenderLayer(renderLayer);
-        }
     }
 
     const Node* Node::getParent() const

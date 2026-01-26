@@ -11,7 +11,7 @@ namespace e2XD::std_addon
         _sprite.setOrigin(_sprite.getGlobalBounds().width / 2, _sprite.getGlobalBounds().height / 2);
     }
 
-    void SpriteRenderable::draw(renderer::IRenderTarget& renderTarget) const
+    void SpriteRenderable::draw(const renderer::IRenderTarget& renderTarget) const
     {
         renderTarget.draw(_sprite);
     }

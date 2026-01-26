@@ -90,7 +90,7 @@ namespace e2XD::framework {
         auto* rawPtr = mockNode.get();
         node.addSubNode(std::move(mockNode));
         EXPECT_CALL(*rawPtr, onDraw()).Times(1);
-        node.draw();
+        node.draw(TODO);
     }
 
 }

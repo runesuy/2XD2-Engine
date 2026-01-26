@@ -26,7 +26,7 @@ namespace e2XD::framework
 
     public:
         DefaultOriginMarker();
-        void draw(renderer::IRenderTarget& renderTarget) const override;
+        void draw(const renderer::IRenderTarget& renderTarget) const override;
     };
 } // framework
 // e2XD

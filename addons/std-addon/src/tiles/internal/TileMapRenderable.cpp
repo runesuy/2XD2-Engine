@@ -15,7 +15,7 @@ namespace e2XD::std_addon::internal
     {
     }
 
-    void TileMapRenderable::draw(renderer::IRenderTarget& renderTarget) const
+    void TileMapRenderable::draw(const renderer::IRenderTarget& renderTarget) const
     {
         static sf::Sprite sprite;
         const auto* scene = _tileMap.getScene();

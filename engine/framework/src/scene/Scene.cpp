@@ -7,9 +7,15 @@
 //
 
 #include "2XD2/framework/scene/Scene.h"
+#include "2XD2/framework/drawing/DrawTarget.h"
 
 namespace e2XD::framework
 {
+    Scene::Scene()
+    {
+        drawTarget = createSubNode<DrawTarget>();
+    }
+
     const Camera* Scene::getActiveCamera() const
     {
         return activeCamera;
@@ -18,6 +24,7 @@ namespace e2XD::framework
     void Scene::setActiveCamera(const Camera* camera)
     {
         activeCamera = camera;
+        if (drawTarget) drawTarget->setActiveCamera(camera);
     }
 
     void Scene::addSubNode(std::unique_ptr<Node> node)

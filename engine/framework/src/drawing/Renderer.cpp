@@ -37,4 +37,35 @@ namespace e2XD::framework
     {
         _renderer->flush(cameraPosition, cameraSize, cameraZoom);
     }
+
+    void Renderer::registerDrawTarget(const DrawTarget* drawTarget)
+    {
+        _drawTargets.emplace_back(drawTarget);
+    }
+
+    void Renderer::registerDrawable(Drawable* drawable)
+    {
+        _drawables.emplace_back(drawable);
+    }
+
+    void Renderer::callDrawables()
+    {
+        for (const auto& drawTarget : _drawTargets)
+        {
+            for (const auto& drawable : _drawables)
+            {
+                drawable->draw(*drawTarget);
+            }
+        }
+    }
+
+    void Renderer::clearDrawables()
+    {
+        _drawables.clear();
+    }
+
+    void Renderer::clearDrawTargets()
+    {
+        _drawTargets.clear();
+    }
 } // e2XD

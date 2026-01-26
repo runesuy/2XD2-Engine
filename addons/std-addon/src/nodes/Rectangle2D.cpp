@@ -13,7 +13,7 @@
 
 namespace e2XD::std_addon
 {
-    void Rectangle2D::_internal_onDraw()
+    void Rectangle2D::_internal_onDraw(const framework::DrawTarget& target)
     {
         const auto& position = getGlobalPosition();
         framework::Renderer::submit({
@@ -22,7 +22,7 @@ namespace e2XD::std_addon
             {position.x, position.y},
             zIndex
         });
-        Node2D::_internal_onDraw();
+        Drawable2D::_internal_onDraw(target);
     }
 
 

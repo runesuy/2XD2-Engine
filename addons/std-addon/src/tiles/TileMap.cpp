@@ -31,7 +31,7 @@ namespace e2XD::std_addon
     }
 
     // PROTECTED MEMBERS
-    void TileMap::onDraw()
+    void TileMap::onDraw(const DrawTarget& target)
     {
         const auto& position = getGlobalPosition();
         Renderer::submit({

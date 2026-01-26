@@ -12,7 +12,7 @@
 
 namespace e2XD::std_addon
 {
-    void Sprite2D::_internal_onDraw()
+    void Sprite2D::_internal_onDraw(const framework::DrawTarget& target)
     {
         const auto& position = getGlobalPosition();
         framework::Renderer::submit({
@@ -21,8 +21,6 @@ namespace e2XD::std_addon
             {position.x, position.y},
             zIndex
         });
-
-        Node2D::_internal_onDraw();
     }
 } // framework
 // e2XD

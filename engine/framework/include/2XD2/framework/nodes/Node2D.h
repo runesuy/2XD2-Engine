@@ -8,7 +8,7 @@
 
 #ifndef INC_2XD2_ENGINE_NODE2D_H
 #define INC_2XD2_ENGINE_NODE2D_H
-#include "2XD2/framework/nodes/Node.h"
+#include "Node.h"
 #include "2XD2/core/Transform2D.h"
 #include "2XD2/core/Vec2f.h"
 
@@ -24,6 +24,7 @@ namespace e2XD::framework
         core::Transform2D localTransform;
 
     public:
+        ~Node2D() override = default;
         Node2D() = default;
 
         /**
@@ -104,8 +105,6 @@ namespace e2XD::framework
          */
         virtual void setLocalRotation(double rotation);
 
-    protected:
-        void _internal_onDraw() override; // To be able to draw Node2D-specific debug info in the future
     };
 } // e2XD
 

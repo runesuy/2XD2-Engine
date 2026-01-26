@@ -60,7 +60,7 @@ namespace e2XD::std_addon
         void setAnimations(const AnimationMap& newAnimations);
 
     protected:
-        void _internal_onDraw() override;
+        void _internal_onDraw(const framework::DrawTarget& target) override;
 
         void _internal_onUpdate(double deltaTime) override;
     };

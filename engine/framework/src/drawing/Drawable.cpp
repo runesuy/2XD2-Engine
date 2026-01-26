@@ -6,26 +6,32 @@
 // Created by rune-suy on 12/19/25.
 //
 
-#include "2XD2/framework/drawing/Renderable.h"
+#include "2XD2/framework/drawing/Drawable.h"
 
 
 namespace e2XD::framework
 {
-    void Renderable::draw()
+    void Drawable::draw(const DrawTarget& target)
     {
         if (!visible) return;
-        _internal_onDraw();
-        onDraw();
+        _internal_onDraw(target);
+        onDraw(target);
     }
 
-    void Renderable::setRenderLayer(RenderLayer renderLayer)
+    void Drawable::setRenderLayer(RenderLayer renderLayer)
     {
         this->renderLayer = renderLayer;
     }
 
-    void Renderable::setVisible(bool visible)
+    void Drawable::setVisible(bool visible)
     {
         this->visible = visible;
+
+    }
+
+    bool Drawable::isVisible() const
+    {
+        return visible;
     }
 } // core
 // e2XD

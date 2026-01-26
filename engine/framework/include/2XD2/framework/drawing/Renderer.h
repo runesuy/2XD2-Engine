@@ -9,6 +9,8 @@
 #ifndef INC_2XD2_ENGINE_RENDERER_H
 #define INC_2XD2_ENGINE_RENDERER_H
 #include <SFML/Graphics/RenderWindow.hpp>
+
+#include "Drawable.h"
 #include "2XD2/renderer/RenderCommand.h"
 #include "2XD2/core/Vec2f.h"
 #include "2XD2/renderer/IRenderer.h"
@@ -24,6 +26,10 @@ namespace e2XD::framework
         inline static renderer::IRenderer* _renderer = nullptr;
 
         friend class Game;
+
+        inline static std::list<const DrawTarget*> _drawTargets;
+        inline static std::list<Drawable*> _drawables;
+
     public:
         /**
          * Initialize the renderer system with the provided renderer.
@@ -57,6 +63,16 @@ namespace e2XD::framework
          * @param cameraZoom
          */
         static void flush(const core::Vec2f& cameraPosition, const core::Vec2f& cameraSize, float cameraZoom);
+
+        static void registerDrawable(Drawable* drawable);
+
+        static void registerDrawTarget(const DrawTarget* drawTarget);
+
+        static void callDrawables();
+
+        static void clearDrawables();
+
+        static void clearDrawTargets();
     };
 }
 

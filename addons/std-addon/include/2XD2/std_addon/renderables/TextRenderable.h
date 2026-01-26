@@ -21,7 +21,7 @@ namespace e2XD::std_addon
     public:
         TextRenderable();
 
-        void draw(renderer::IRenderTarget& renderTarget) const override;
+        void draw(const renderer::IRenderTarget& renderTarget) const override;
 
         /**
          * Set the text string to display.

@@ -10,12 +10,9 @@
 #define INC_2XD2_ENGINE_ENTITY_H
 #include <list>
 #include <memory>
-
 #include "Node.h"
-#include<type_traits>
-
+#include "NodeIdManager.h"
 #include "ProcessMode.h"
-#include "2XD2/framework/drawing/Renderable.h"
 
 
 namespace e2XD::framework
@@ -29,7 +26,7 @@ namespace e2XD::framework
      * A node in the scene graph.
      * Is renderable by the Renderer.
      */
-    class Node : public Renderable
+    class Node
     {
         bool markedForDeletion = false;
         bool _isCreated = false;
@@ -117,17 +114,32 @@ namespace e2XD::framework
         {
         };
 
-        void _internal_onDraw() override;
+    public:
+        /**
+         * Handle a notification sent to this node.
+         * @param what
+         */
+        virtual void _notification(int what){};
+
+        /**
+         * Send a notification to this node and its sub-nodes.
+         * @param what
+         */
+        void _sendNotification(int what);
 
     public:
         friend class CORE_Node;
         friend class Node2D;
 
+        using IdT = NodeIdManager::IdT;
+
+        const IdT id = NodeIdManager::getNextId();
+
         /**
          * Creat a new empty node.
          */
         Node() = default;
-        ~Node() override;
+        virtual ~Node();
 
         /**
          * Update the node and its sub-nodes.
@@ -207,8 +219,6 @@ namespace e2XD::framework
          * @return A list of pointers to all sub-nodes.
          */
         [[nodiscard]] std::list<const Node*> getSubNodes() const;
-
-        void setRenderLayer(RenderLayer renderLayer) override;
 
         /**
          *

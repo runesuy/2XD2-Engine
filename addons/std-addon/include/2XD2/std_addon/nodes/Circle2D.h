@@ -8,13 +8,13 @@
 
 #ifndef INC_2XD2_ENGINE_CIRCLE2D_H
 #define INC_2XD2_ENGINE_CIRCLE2D_H
-#include "2XD2/framework/nodes/Node2D.h"
+#include "2XD2/framework/nodes/Drawable2D.h"
 #include "2XD2/std_addon/renderables/CircleRenderable.h"
 
 
 namespace e2XD::std_addon
 {
-    class Circle2D : public framework::Node2D
+    class Circle2D : public framework::Drawable2D
     {
     public:
         Circle2D() = default;
@@ -23,7 +23,7 @@ namespace e2XD::std_addon
         CircleRenderable _renderable;
 
     protected:
-        void _internal_onDraw() override;
+        void _internal_onDraw(const framework::DrawTarget& target) override;
     public:
         /**
          * Get the circle renderable.

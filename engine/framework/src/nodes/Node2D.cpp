@@ -132,41 +132,18 @@ namespace e2XD::framework
 
     void Node2D::setLocalRotation(double rotation)
     {
-        double rotationDiff = rotation - localTransform.getRotation();
+        const double rotationDiff = rotation - localTransform.getRotation();
         this->localTransform.setRotation(rotation);
         this->globalTransform.setRotation(globalTransform.getRotation() + rotationDiff);
 
         // Update children's local rotations
         for (auto& childNode : nodes)
         {
-            if (auto childNode2D = dynamic_cast<Node2D*>(childNode.get()))
+            if (const auto childNode2D = dynamic_cast<Node2D*>(childNode.get()))
             {
-                double childLocalRot = childNode2D->getLocalRotation();
+                const double childLocalRot = childNode2D->getLocalRotation();
                 childNode2D->setLocalRotation(childLocalRot + rotationDiff);
             }
         }
-    }
-
-    void Node2D::_internal_onDraw()
-    {
-#ifndef e2XD_REMOVE_DEBUG
-
-        if (DebugSettings::showNodeOrigin)
-        {
-            if (const auto* originMarker = DebugSettings::getOriginMarker())
-            {
-                const auto& position = getGlobalPosition();
-
-                Renderer::submit({
-                    renderLayer,
-                    originMarker,
-                    {position.x, position.y},
-                    zIndex
-                });
-            }
-        }
-        Node::_internal_onDraw();
-
-#endif
     }
 }

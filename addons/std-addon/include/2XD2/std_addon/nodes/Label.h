@@ -9,24 +9,28 @@
 #ifndef INC_2XD2_ENGINE_LABEL_H
 #define INC_2XD2_ENGINE_LABEL_H
 
-
-#include "2XD2/framework/nodes/Node2D.h"
+#include "2XD2/framework/nodes/Drawable2D.h"
 #include "2XD2/std_addon/renderables/TextRenderable.h"
 
+
+namespace e2XD::framework
+{
+    class DrawTarget;
+}
 
 namespace e2XD::std_addon
 {
     /**
      * A text label node.
      */
-    class Label : public framework::Node2D
+    class Label : public framework::Drawable2D
     {
         TextRenderable _renderable;
     public:
         Label()=default;
 
     protected:
-        void _internal_onDraw() override;
+        void _internal_onDraw(const framework::DrawTarget& target) override;
     public:
         /**
          * Get the text renderable of the label.

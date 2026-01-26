@@ -72,6 +72,9 @@ namespace e2XD::framework
             // If there's a new active scene, switch to it
             if (newActiveScene)
             {
+                Renderer::clearDrawables();
+                Renderer::clearDrawTargets();
+                Renderer::clearWindow();
                 activeScene = std::move(newActiveScene);
                 activeScene->create();
                 newActiveScene = nullptr;
@@ -111,7 +114,7 @@ namespace e2XD::framework
                 activeScene->update(Time::getDeltaTime());
                 // Variable timestep drawing (maybe vSynced)
                 Renderer::clearWindow();
-                activeScene->draw();
+                Renderer::callDrawables();
 
                 if (const Camera* activeCamera = activeScene->getActiveCamera())
                 {
@@ -135,6 +138,9 @@ namespace e2XD::framework
         // This is to avoid the destruction of the current scene while it's still being used
         if (!running)
         {
+            Renderer::clearDrawables();
+            Renderer::clearDrawTargets();
+            Renderer::clearWindow();
             activeScene = std::move(scene);
             activeScene->create();
         }

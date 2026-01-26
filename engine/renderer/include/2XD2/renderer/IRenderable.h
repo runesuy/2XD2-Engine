@@ -27,7 +27,7 @@ namespace e2XD::renderer
          * Executed by the Renderer on the exact moment of rendering the object.
          * @param renderTarget Render target to draw onto.
          */
-        virtual void draw(IRenderTarget& renderTarget) const=0;
+        virtual void draw(const IRenderTarget& renderTarget) const=0;
     };
 } // renderer
 // e2XD

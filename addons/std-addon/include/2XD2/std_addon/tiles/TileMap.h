@@ -6,6 +6,7 @@
 #include <SFML/Graphics/Sprite.hpp>
 
 #include "TileSet.h"
+#include "2XD2/framework/drawing/Drawable.h"
 #include "internal/TileChunk.h"
 #include "internal/TileMapRenderable.h"
 
@@ -14,7 +15,7 @@ namespace e2XD::std_addon
     /**
      * A 2D tile map node.
      */
-    class TileMap : public framework::Node2D
+    class TileMap : public framework::Node2D, public framework::Drawable
     {
     public:
         using TileMapSizeType = int;
@@ -64,7 +65,7 @@ namespace e2XD::std_addon
         /**
          * Draws the visible chunks of the tile map.
          */
-        void onDraw() override;
+        void onDraw(const framework::DrawTarget& target) override;
 
     public:
         explicit TileMap(const TileSet& tileSet);

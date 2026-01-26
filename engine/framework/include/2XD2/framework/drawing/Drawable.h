@@ -8,6 +8,7 @@
 
 #ifndef FLATLAND_RENDERABLE_H
 #define FLATLAND_RENDERABLE_H
+#include "DrawTarget.h"
 #include "2XD2/renderer/RenderLayer.h"
 
 
@@ -15,19 +16,25 @@ namespace e2XD::framework
 {
     /**
      * An object renderable by the Renderer.
+     * @warning For most use-cases consider using Drawable2D instead.
+     *
+     * Does not inherit from Node to allow non-node renderables.
+     *
+     * Does not manage its own registration with the Renderer.
+     * It is the responsibility of the user to register the renderable with the Renderer.
      */
-    class Renderable
+    class Drawable
     {
+        bool visible = true;
     protected:
         int zIndex = 0;
-        bool visible = true;
         RenderLayer renderLayer = RenderLayer::WORLD;
 
         /**
          * onDraw is a placeholder for user-defined draw logic.
          * This method is called during the draw phase of the renderable.
          */
-        virtual void onDraw()
+        virtual void onDraw(const DrawTarget& target)
         {
         };
 
@@ -35,17 +42,17 @@ namespace e2XD::framework
          * onDraw is a placeholder for internal draw logic.
          * This method is called during the draw phase of the renderable.
          */
-        virtual void _internal_onDraw()
+        virtual void _internal_onDraw(const DrawTarget& target)
         {
         };
 
     public:
-        virtual ~Renderable() = default;
+        virtual ~Drawable() = default;
 
         /**
          * Draw the renderable by calling internal and user-defined draw methods.
          */
-        void draw();
+        virtual void draw(const DrawTarget& target);
 
         /**
          * Sets the visibility of the renderable.
@@ -53,6 +60,12 @@ namespace e2XD::framework
          * @param visible
          */
         virtual void setVisible(bool visible);
+
+        /**
+         * Get the visibility of the renderable.
+         * @return true if the renderable is visible, false otherwise.
+         */
+        [[nodiscard]] bool isVisible() const;
 
         /**
          * Set the render layer of the renderable.
