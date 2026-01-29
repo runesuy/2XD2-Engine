@@ -191,7 +191,34 @@ namespace e2XD::renderer
         if (viewMode == ViewMode::StretchToFill)
         {
             window->setView(window->getDefaultView());
+            return;
         }
+        if (viewMode == ViewMode::Expand)
+        {
+            const float windowAspectRatio = static_cast<float>(window->getSize().x) / static_cast<float>(window->
+                getSize().y);
+            const auto temp = window->getDefaultView().getSize();
+            const float cameraAspectRatio = temp.x / temp.y;
+
+            sf::View view;
+            if (windowAspectRatio < cameraAspectRatio)
+            {
+                // Window is narrower than camera view
+                const float newHeight = temp.x / windowAspectRatio;
+                view = sf::View{sf::FloatRect{0,0, temp.x, newHeight}};
+            }
+            else
+            {
+                // Window is shorter than camera view
+                const float newWidth = temp.y * windowAspectRatio;
+                view = sf::View{
+                    sf::Vector2f{0, 0}, sf::Vector2f{newWidth, temp.y}
+                };
+            }
+            window->setView(view);
+            return;
+        }
+        window->setView(window->getDefaultView());
     }
 
     void DefaultRenderer::setViewMode(const RenderLayer layer, const ViewMode viewMode)

@@ -13,12 +13,19 @@ namespace e2XD::std_addon
         {
             core::Vec2f _size{100.0f, 100.0f};
         public:
-            UiNode() = default;
+            UiNode();
             ~UiNode() override = default;
 
             void setSize(const core::Vec2f& size);
 
             [[nodiscard]] const core::Vec2f& getSize() const;
+
+        protected:
+            virtual void _onLayoutChanged(){};
+
+            virtual void _internal_onLayoutChange(){};
+
+            void _notification(int what) override;
         };
     } // std_addon
 // e2XD
