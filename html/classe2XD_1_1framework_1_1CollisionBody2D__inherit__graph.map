@@ -1,13 +1,15 @@
 <map id="e2XD::framework::CollisionBody2D" name="e2XD::framework::CollisionBody2D">
 <area shape="rect" id="Node000001" title=" " alt="" coords="129,226,304,267"/>
-<area shape="rect" id="Node000006" href="$classe2XD_1_1std__addon_1_1CollisionRect2D.html" title=" " alt="" coords="129,315,303,356"/>
-<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="219,283,219,315,214,315,214,283"/>
+<area shape="rect" id="Node000007" href="$classe2XD_1_1std__addon_1_1CollisionRect2D.html" title=" " alt="" coords="129,315,303,356"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="219,283,219,315,214,315,214,283"/>
 <area shape="rect" id="Node000002" href="$classe2XD_1_1framework_1_1ICollisionBody.html" title=" " alt="" coords="5,153,214,178"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="139,185,191,224,188,228,136,190"/>
 <area shape="rect" id="Node000003" href="$classe2XD_1_1framework_1_1Node2D.html" title=" " alt="" coords="238,153,411,178"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="297,190,244,228,241,224,294,185"/>
 <area shape="rect" id="Node000004" href="$classe2XD_1_1framework_1_1Node.html" title=" " alt="" coords="246,79,403,105"/>
 <area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="327,120,327,152,322,152,322,120"/>
-<area shape="rect" id="Node000005" href="$classe2XD_1_1framework_1_1Renderable.html" title=" " alt="" coords="229,5,420,31"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="327,46,327,79,322,79,322,46"/>
+<area shape="rect" id="Node000005" href="$classe2XD_1_1framework_1_1Renderable.html" title=" " alt="" coords="115,5,307,31"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="244,37,306,76,303,81,241,42"/>
+<area shape="rect" id="Node000006" href="$classe2XD_1_1framework_1_1SignalReceiver.html" title=" " alt="" coords="331,5,544,31"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="407,42,345,81,342,76,404,37"/>
 </map>

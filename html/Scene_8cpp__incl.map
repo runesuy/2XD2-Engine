@@ -1,36 +1,39 @@
 <map id="engine/framework/src/scene/Scene.cpp" name="engine/framework/src/scene/Scene.cpp">
-<area shape="rect" id="Node000001" title=" " alt="" coords="306,5,452,46"/>
-<area shape="rect" id="Node000002" href="$Scene_8h.html" title=" " alt="" coords="301,94,458,135"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="382,47,382,78,377,78,377,47"/>
-<area shape="rect" id="Node000003" href="$Camera_8h.html" title=" " alt="" coords="407,183,565,223"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="405,133,452,171,448,175,402,137"/>
-<area shape="rect" id="Node000005" href="$Node_8h.html" title=" " alt="" coords="219,345,377,386"/>
-<area shape="poly" id="edge18_Node000002_Node000005" title=" " alt="" coords="375,136,311,331,306,329,370,134"/>
-<area shape="rect" id="Node000004" href="$Node2D_8h.html" title=" " alt="" coords="434,271,562,297"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="491,223,496,255,491,256,486,224"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="468,300,363,341,361,336,466,295"/>
-<area shape="rect" id="Node000013" href="$Transform2D_8h.html" title=" " alt="" coords="424,353,596,378"/>
-<area shape="poly" id="edge13_Node000004_Node000013" title=" " alt="" coords="502,297,508,337,503,337,497,298"/>
-<area shape="rect" id="Node000014" href="$Vec2f_8h.html" title=" " alt="" coords="600,441,665,467"/>
-<area shape="poly" id="edge17_Node000004_Node000014" title=" " alt="" coords="538,295,576,314,594,327,609,343,621,363,628,384,635,425,630,426,623,386,616,365,605,347,590,331,573,318,536,300"/>
-<area shape="poly" id="edge7_Node000005_Node000005" title=" " alt="" coords="378,349,396,354,403,365,400,373,393,378,390,374,396,370,398,366,392,358,376,354"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="365,5,511,46"/>
+<area shape="rect" id="Node000002" href="$Scene_8h.html" title=" " alt="" coords="359,94,517,135"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="441,47,441,78,435,78,435,47"/>
+<area shape="rect" id="Node000003" href="$Camera_8h.html" title=" " alt="" coords="466,183,623,223"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="464,133,510,171,507,175,460,137"/>
+<area shape="rect" id="Node000005" href="$Node_8h.html" title=" " alt="" coords="278,345,435,386"/>
+<area shape="poly" id="edge20_Node000002_Node000005" title=" " alt="" coords="434,136,370,331,365,329,429,134"/>
+<area shape="rect" id="Node000004" href="$Node2D_8h.html" title=" " alt="" coords="512,271,639,297"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="555,223,567,256,562,257,550,225"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="542,300,426,342,425,337,541,295"/>
+<area shape="rect" id="Node000014" href="$Transform2D_8h.html" title=" " alt="" coords="522,353,693,378"/>
+<area shape="poly" id="edge15_Node000004_Node000014" title=" " alt="" coords="583,296,599,337,594,339,578,298"/>
+<area shape="rect" id="Node000015" href="$Vec2f_8h.html" title=" " alt="" coords="737,441,803,467"/>
+<area shape="poly" id="edge19_Node000004_Node000015" title=" " alt="" coords="618,295,663,314,706,343,724,362,740,384,762,426,757,428,735,387,720,366,703,347,660,319,616,300"/>
+<area shape="poly" id="edge7_Node000005_Node000005" title=" " alt="" coords="436,349,454,354,462,365,459,373,452,378,449,374,455,370,457,366,451,358,435,354"/>
 <area shape="rect" id="Node000006" title=" " alt="" coords="5,441,44,467"/>
-<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="220,386,145,406,58,437,56,432,143,401,218,380"/>
-<area shape="rect" id="Node000007" title=" " alt="" coords="68,441,136,467"/>
-<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="254,389,144,437,142,432,252,384"/>
-<area shape="rect" id="Node000008" title=" " alt="" coords="160,441,241,467"/>
-<area shape="poly" id="edge8_Node000005_Node000008" title=" " alt="" coords="278,388,227,433,223,429,274,384"/>
-<area shape="rect" id="Node000009" href="$ProcessMode_8h.html" title=" " alt="" coords="265,441,376,467"/>
-<area shape="poly" id="edge9_Node000005_Node000009" title=" " alt="" coords="306,386,316,426,311,427,300,387"/>
-<area shape="rect" id="Node000010" href="$Renderable_8h.html" title=" " alt="" coords="401,434,568,474"/>
-<area shape="poly" id="edge10_Node000005_Node000010" title=" " alt="" coords="341,384,430,424,427,429,339,389"/>
-<area shape="rect" id="Node000011" href="$RenderLayer_8h.html" title=" " alt="" coords="384,522,575,548"/>
-<area shape="poly" id="edge11_Node000010_Node000011" title=" " alt="" coords="486,475,484,507,478,507,481,475"/>
-<area shape="rect" id="Node000012" title=" " alt="" coords="451,596,508,622"/>
-<area shape="poly" id="edge12_Node000011_Node000012" title=" " alt="" coords="482,548,482,580,477,580,477,548"/>
-<area shape="poly" id="edge14_Node000013_Node000014" title=" " alt="" coords="528,376,604,430,601,434,525,381"/>
-<area shape="rect" id="Node000015" href="$Vec2_8hpp.html" title=" " alt="" coords="599,522,674,548"/>
-<area shape="poly" id="edge15_Node000014_Node000015" title=" " alt="" coords="636,467,638,507,632,507,630,467"/>
-<area shape="rect" id="Node000016" title=" " alt="" coords="608,596,665,622"/>
-<area shape="poly" id="edge16_Node000015_Node000016" title=" " alt="" coords="639,548,639,580,634,580,634,548"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="278,382,174,403,63,436,59,438,57,433,61,431,173,398,277,377"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="227,522,294,548"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="278,380,176,402,134,417,108,435,101,454,108,473,129,494,155,510,184,520,212,527,211,532,182,526,153,515,126,499,104,476,95,454,104,432,131,412,174,397,277,375"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="119,441,200,467"/>
+<area shape="poly" id="edge8_Node000005_Node000008" title=" " alt="" coords="313,389,202,437,200,432,311,384"/>
+<area shape="rect" id="Node000009" href="$ProcessMode_8h.html" title=" " alt="" coords="224,441,335,467"/>
+<area shape="poly" id="edge9_Node000005_Node000009" title=" " alt="" coords="341,388,302,431,298,428,337,384"/>
+<area shape="rect" id="Node000010" href="$Renderable_8h.html" title=" " alt="" coords="546,434,714,474"/>
+<area shape="poly" id="edge10_Node000005_Node000010" title=" " alt="" coords="420,384,554,426,552,431,418,389"/>
+<area shape="rect" id="Node000013" href="$SignalReceiver_8h.html" title=" " alt="" coords="359,434,522,474"/>
+<area shape="poly" id="edge13_Node000005_Node000013" title=" " alt="" coords="378,384,413,420,409,424,374,388"/>
+<area shape="rect" id="Node000011" href="$RenderLayer_8h.html" title=" " alt="" coords="525,522,716,548"/>
+<area shape="poly" id="edge11_Node000010_Node000011" title=" " alt="" coords="630,475,626,507,621,506,625,474"/>
+<area shape="rect" id="Node000012" title=" " alt="" coords="592,596,649,622"/>
+<area shape="poly" id="edge12_Node000011_Node000012" title=" " alt="" coords="623,548,623,580,618,580,618,548"/>
+<area shape="poly" id="edge14_Node000013_Node000007" title=" " alt="" coords="397,477,303,518,301,513,395,472"/>
+<area shape="poly" id="edge16_Node000014_Node000015" title=" " alt="" coords="631,376,735,431,732,436,629,381"/>
+<area shape="rect" id="Node000016" href="$Vec2_8hpp.html" title=" " alt="" coords="740,522,816,548"/>
+<area shape="poly" id="edge17_Node000015_Node000016" title=" " alt="" coords="774,467,778,507,772,507,768,468"/>
+<area shape="rect" id="Node000017" title=" " alt="" coords="749,596,807,622"/>
+<area shape="poly" id="edge18_Node000016_Node000017" title=" " alt="" coords="781,548,781,580,775,580,775,548"/>
 </map>

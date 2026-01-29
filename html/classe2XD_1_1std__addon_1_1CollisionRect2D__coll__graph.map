@@ -8,6 +8,8 @@
 <area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="297,190,244,228,241,224,294,185"/>
 <area shape="rect" id="Node000005" href="$classe2XD_1_1framework_1_1Node.html" title=" " alt="" coords="246,79,403,105"/>
 <area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="327,120,327,152,322,152,322,120"/>
-<area shape="rect" id="Node000006" href="$classe2XD_1_1framework_1_1Renderable.html" title=" " alt="" coords="229,5,420,31"/>
-<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="327,46,327,79,322,79,322,46"/>
+<area shape="rect" id="Node000006" href="$classe2XD_1_1framework_1_1Renderable.html" title=" " alt="" coords="115,5,307,31"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="244,37,306,76,303,81,241,42"/>
+<area shape="rect" id="Node000007" href="$classe2XD_1_1framework_1_1SignalReceiver.html" title=" " alt="" coords="331,5,544,31"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="407,42,345,81,342,76,404,37"/>
 </map>

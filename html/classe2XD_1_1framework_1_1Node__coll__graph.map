@@ -1,5 +1,7 @@
 <map id="e2XD::framework::Node" name="e2XD::framework::Node">
-<area shape="rect" id="Node000001" title=" " alt="" coords="22,79,180,105"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="136,79,293,105"/>
 <area shape="rect" id="Node000002" href="$classe2XD_1_1framework_1_1Renderable.html" title=" " alt="" coords="5,5,197,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="104,46,104,79,98,79,98,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="134,37,196,76,194,81,132,42"/>
+<area shape="rect" id="Node000003" href="$classe2XD_1_1framework_1_1SignalReceiver.html" title=" " alt="" coords="221,5,434,31"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="297,42,235,81,232,76,294,37"/>
 </map>

@@ -1,15 +1,5 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="Node000000" href="$classe2XD_1_1renderer_1_1IRenderable.html" title=" " alt="" coords="5,157,187,183"/>
-<area shape="rect" id="Node000001" href="$classe2XD_1_1framework_1_1DefaultOriginMarker.html" title=" " alt="" coords="263,5,431,46"/>
-<area shape="poly" id="edge22_Node000000_Node000001" title=" " alt="" coords="119,143,169,99,200,75,233,55,262,43,264,48,236,60,203,80,172,103,123,147"/>
-<area shape="rect" id="Node000002" href="$classe2XD_1_1std__addon_1_1CircleRenderable.html" title=" " alt="" coords="235,70,459,96"/>
-<area shape="poly" id="edge23_Node000000_Node000002" title=" " alt="" coords="135,147,182,126,234,106,276,94,278,99,236,111,184,131,138,152"/>
-<area shape="rect" id="Node000003" href="$classe2XD_1_1std__addon_1_1RectangleRenderable.html" title=" " alt="" coords="255,120,439,161"/>
-<area shape="poly" id="edge24_Node000000_Node000003" title=" " alt="" coords="202,155,254,148,255,154,203,160"/>
-<area shape="rect" id="Node000004" href="$classe2XD_1_1std__addon_1_1SpriteRenderable.html" title=" " alt="" coords="235,185,459,211"/>
-<area shape="poly" id="edge25_Node000000_Node000004" title=" " alt="" coords="203,179,235,182,234,188,202,184"/>
-<area shape="rect" id="Node000005" href="$classe2XD_1_1std__addon_1_1TextRenderable.html" title=" " alt="" coords="239,234,455,260"/>
-<area shape="poly" id="edge26_Node000000_Node000005" title=" " alt="" coords="143,186,235,220,276,231,275,236,234,226,141,191"/>
-<area shape="rect" id="Node000006" href="$classe2XD_1_1std__addon_1_1internal_1_1TileMapRenderable.html" title=" " alt="" coords="263,284,431,325"/>
-<area shape="poly" id="edge27_Node000000_Node000006" title=" " alt="" coords="124,191,174,231,236,270,264,282,262,286,233,275,171,236,121,195"/>
+<area shape="rect" id="Node000000" href="$classe2XD_1_1renderer_1_1IRenderer.html" title=" " alt="" coords="5,5,174,31"/>
+<area shape="rect" id="Node000001" href="$classe2XD_1_1renderer_1_1DefaultRenderer.html" title=" " alt="" coords="222,5,427,31"/>
+<area shape="poly" id="edge29_Node000000_Node000001" title=" " alt="" coords="189,16,221,16,221,21,189,21"/>
 </map>

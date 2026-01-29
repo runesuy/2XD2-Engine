@@ -1,7 +1,9 @@
 <map id="e2XD::framework::Scene" name="e2XD::framework::Scene">
-<area shape="rect" id="Node000001" title=" " alt="" coords="19,153,183,178"/>
-<area shape="rect" id="Node000002" href="$classe2XD_1_1framework_1_1Node.html" title=" " alt="" coords="22,79,180,105"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="104,120,104,152,98,152,98,120"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="133,153,296,178"/>
+<area shape="rect" id="Node000002" href="$classe2XD_1_1framework_1_1Node.html" title=" " alt="" coords="136,79,293,105"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="217,120,217,152,212,152,212,120"/>
 <area shape="rect" id="Node000003" href="$classe2XD_1_1framework_1_1Renderable.html" title=" " alt="" coords="5,5,197,31"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="104,46,104,79,98,79,98,46"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="134,37,196,76,194,81,132,42"/>
+<area shape="rect" id="Node000004" href="$classe2XD_1_1framework_1_1SignalReceiver.html" title=" " alt="" coords="221,5,434,31"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="297,42,235,81,232,76,294,37"/>
 </map>
