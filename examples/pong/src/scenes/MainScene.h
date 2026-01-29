@@ -13,7 +13,7 @@
 #include "2XD2/framework/signals/SignalReceiver.h"
 #include "GameOverScreen/GameOverScreen.h"
 
-class MainScene : public Scene, public SignalReceiver
+class MainScene : public Scene
 {
     public:
     Camera camera;

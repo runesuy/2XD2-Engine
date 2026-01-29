@@ -16,6 +16,7 @@
 
 #include "ProcessMode.h"
 #include "2XD2/framework/drawing/Renderable.h"
+#include "2XD2/framework/signals/SignalReceiver.h"
 
 
 namespace e2XD::framework
@@ -29,7 +30,7 @@ namespace e2XD::framework
      * A node in the scene graph.
      * Is renderable by the Renderer.
      */
-    class Node : public Renderable
+    class Node : public Renderable, public SignalReceiver
     {
         bool markedForDeletion = false;
         bool _isCreated = false;
