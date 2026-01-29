@@ -24,7 +24,7 @@ Player::Player()
     hitbox->setWidth(10);
 }
 
-void Player::onUpdate(double deltaTime)
+void Player::_onUpdate(double deltaTime)
 {
     e2XD::core::Vec2f velocity{0,0};
     if (Input::isKeyPressed(Key::W))

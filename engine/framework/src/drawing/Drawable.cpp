@@ -11,11 +11,11 @@
 
 namespace e2XD::framework
 {
-    void Drawable::draw(const DrawTarget& target)
+    void Drawable::draw()
     {
         if (!visible) return;
-        _internal_onDraw(target);
-        onDraw(target);
+        _internal_onDraw();
+        _onDraw();
     }
 
     void Drawable::setRenderLayer(RenderLayer renderLayer)

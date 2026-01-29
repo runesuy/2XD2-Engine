@@ -34,7 +34,7 @@ namespace e2XD::framework
          * onDraw is a placeholder for user-defined draw logic.
          * This method is called during the draw phase of the renderable.
          */
-        virtual void onDraw(const DrawTarget& target)
+        virtual void _onDraw()
         {
         };
 
@@ -42,7 +42,7 @@ namespace e2XD::framework
          * onDraw is a placeholder for internal draw logic.
          * This method is called during the draw phase of the renderable.
          */
-        virtual void _internal_onDraw(const DrawTarget& target)
+        virtual void _internal_onDraw()
         {
         };
 
@@ -52,7 +52,7 @@ namespace e2XD::framework
         /**
          * Draw the renderable by calling internal and user-defined draw methods.
          */
-        virtual void draw(const DrawTarget& target);
+        virtual void draw();
 
         /**
          * Sets the visibility of the renderable.

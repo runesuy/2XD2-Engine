@@ -24,7 +24,7 @@ public:
     void linkBall(Ball* ball);
 
 protected:
-    void onUpdate(double deltaTime) override;
+    void _onUpdate(double deltaTime) override;
 };
 
 

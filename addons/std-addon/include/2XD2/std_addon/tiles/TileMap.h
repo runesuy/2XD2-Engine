@@ -66,7 +66,7 @@ namespace e2XD::std_addon
         /**
          * Draws the visible chunks of the tile map.
          */
-        void onDraw(const framework::DrawTarget& target) override;
+        void _onDraw() override;
 
     public:
         explicit TileMap(const TileSet& tileSet);

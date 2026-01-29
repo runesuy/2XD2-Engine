@@ -70,6 +70,8 @@ namespace e2XD::framework
 
         static void callDrawables();
 
+        static void reloadDrawableLayouts();
+
         static void clearDrawables();
 
         static void clearDrawTargets();

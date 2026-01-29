@@ -45,5 +45,6 @@ namespace e2XD::framework
     void DrawTarget::_internal_onCreate()
     {
         Renderer::registerDrawTarget(this);
+        Node::_internal_onCreate();
     }
 }

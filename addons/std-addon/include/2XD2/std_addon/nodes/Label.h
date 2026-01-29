@@ -30,7 +30,7 @@ namespace e2XD::std_addon
         Label()=default;
 
     protected:
-        void _internal_onDraw(const framework::DrawTarget& target) override;
+        void _internal_onDraw() override;
     public:
         /**
          * Get the text renderable of the label.

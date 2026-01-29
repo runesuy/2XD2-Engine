@@ -17,7 +17,7 @@
 namespace e2XD::std_addon
 {
 
-    void Label::_internal_onDraw(const framework::DrawTarget &target)
+    void Label::_internal_onDraw()
     {
 
         const auto& position = getGlobalPosition();
@@ -27,7 +27,7 @@ namespace e2XD::std_addon
             {position.x, position.y},
             zIndex
         });
-        Drawable2D::_internal_onDraw(target);
+        Drawable2D::_internal_onDraw();
     }
 } // std_addon
 // e2XD

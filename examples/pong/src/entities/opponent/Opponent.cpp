@@ -28,7 +28,7 @@ void Opponent::linkBall(Ball* ball)
     this->ball = ball;
 }
 
-void Opponent::onUpdate(double deltaTime)
+void Opponent::_onUpdate(double deltaTime)
 {
     if (!ball) return;
 

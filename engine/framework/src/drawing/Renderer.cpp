@@ -40,12 +40,12 @@ namespace e2XD::framework
 
     void Renderer::registerDrawTarget(const DrawTarget* drawTarget)
     {
-        _drawTargets.emplace_back(drawTarget);
+        _drawTargets.push_back(drawTarget);
     }
 
     void Renderer::registerDrawable(Drawable* drawable)
     {
-        _drawables.emplace_back(drawable);
+        _drawables.push_back(drawable);
     }
 
     void Renderer::callDrawables()
@@ -54,9 +54,14 @@ namespace e2XD::framework
         {
             for (const auto& drawable : _drawables)
             {
-                drawable->draw(*drawTarget);
+                drawable->draw();
             }
         }
+    }
+
+    void Renderer::reloadDrawableLayouts()
+    {
+
     }
 
     void Renderer::clearDrawables()

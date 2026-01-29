@@ -52,7 +52,7 @@ namespace e2XD::framework
          * Placeholder for user-defined update logic.
          * This method is called during the update phase of the node.
          */
-        virtual void onUpdate(double deltaTime)
+        virtual void _onUpdate(double deltaTime)
         {
         };
 
@@ -69,7 +69,7 @@ namespace e2XD::framework
          * This method is called during the physics update phase of the node.
          * Called a fixed number of times per second.
          */
-        virtual void onPhysicsUpdate(double deltaTime)
+        virtual void _onPhysicsUpdate(double deltaTime)
         {
         };
 
@@ -86,7 +86,7 @@ namespace e2XD::framework
          * Placeholder for user-defined creation logic.
          * This method is called when the node is added to the scene.
          */
-        virtual void onCreate()
+        virtual void _onCreate()
         {
         };
 
@@ -102,7 +102,7 @@ namespace e2XD::framework
          * Placeholder for user-defined destruction logic.
          * This method is called when the node is destroyed.
          */
-        virtual void onDestroy()
+        virtual void _onDestroy()
         {
         };
 
@@ -126,6 +126,8 @@ namespace e2XD::framework
          * @param what
          */
         void _sendNotification(int what);
+
+        void _sendNotificationCascade(int what);
 
     public:
         friend class CORE_Node;

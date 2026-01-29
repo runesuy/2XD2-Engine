@@ -21,7 +21,7 @@ public:
     Player();
 
 protected:
-    void onUpdate(double deltaTime) override;
+    void _onUpdate(double deltaTime) override;
 };
 
 

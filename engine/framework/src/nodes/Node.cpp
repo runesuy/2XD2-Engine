@@ -8,6 +8,8 @@
 
 #include "2XD2/framework/nodes/Node.h"
 
+#include "2XD2/framework/nodes/Notifications.hpp"
+
 namespace e2XD::framework
 {
     // --------------- Construction/Destruction ---------------
@@ -37,11 +39,22 @@ namespace e2XD::framework
         }
     }
 
+    // --------------- Protected Members ---------------
+
     void Node::_sendNotification(const int what)
     {
         for (const auto& node : nodes)
         {
             node->_notification(what);
+        }
+    }
+
+    void Node::_sendNotificationCascade(int what)
+    {
+        for (const auto& node : nodes)
+        {
+            node->_notification(what);
+            node->_sendNotificationCascade(what);
         }
     }
 
@@ -55,7 +68,7 @@ namespace e2XD::framework
             node->destroy();
         }
         _internal_onDestroy();
-        onDestroy();
+        _onDestroy();
         _isDestroyed = true;
     }
 
@@ -63,10 +76,12 @@ namespace e2XD::framework
     {
         _internal_onCreate();
         _isCreated = true;
-        onCreate();
+        _onCreate();
+
         for (const auto& node : nodes)
         {
             node->create();
+            _notification(NOTIFICATION_CREATE);
         }
     }
 
@@ -93,7 +108,7 @@ namespace e2XD::framework
             }
         }
         _internal_onUpdate(deltaTime);
-        onUpdate(deltaTime);
+        _onUpdate(deltaTime);
     }
 
     void Node::physicsUpdate(const double deltaTime)
@@ -119,7 +134,7 @@ namespace e2XD::framework
             }
         }
         _internal_onPhysicsUpdate(deltaTime);
-        onPhysicsUpdate(deltaTime);
+        _onPhysicsUpdate(deltaTime);
     }
 
 

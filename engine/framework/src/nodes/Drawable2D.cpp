@@ -8,6 +8,8 @@
 
 #include "2XD2/framework/nodes/Drawable2D.h"
 
+#include <iostream>
+
 #include "2XD2/framework/drawing/Renderer.h"
 #include "2XD2/framework/nodes/Notifications.hpp"
 
@@ -17,6 +19,7 @@ namespace e2XD::framework
     void Drawable2D::_internal_onCreate()
     {
         Renderer::registerDrawable(this);
+        std::cout << "Drawable2D created and registered to Renderer." << std::endl;
         Node2D::_internal_onCreate();
     }
 

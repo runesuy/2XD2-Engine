@@ -21,7 +21,7 @@ Ball::Ball()
     Node::addSubNode(std::move(hitbox));
 }
 
-void Ball::onUpdate(double deltaTime)
+void Ball::_onUpdate(double deltaTime)
 {
     setGlobalPosition(getGlobalPosition() + velocity * deltaTime);
 

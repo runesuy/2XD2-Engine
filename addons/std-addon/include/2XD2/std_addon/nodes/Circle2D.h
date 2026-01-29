@@ -23,7 +23,7 @@ namespace e2XD::std_addon
         CircleRenderable _renderable;
 
     protected:
-        void _internal_onDraw(const framework::DrawTarget& target) override;
+        void _internal_onDraw() override;
     public:
         /**
          * Get the circle renderable.

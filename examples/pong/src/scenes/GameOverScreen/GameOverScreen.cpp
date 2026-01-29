@@ -28,7 +28,7 @@ GameOverScreen::GameOverScreen()
     processMode = ProcessMode::ALWAYS_RUNNING;
 }
 
-void GameOverScreen::onUpdate(double deltaTime)
+void GameOverScreen::_onUpdate(double deltaTime)
 {
     if (!isVisible()) return;
 

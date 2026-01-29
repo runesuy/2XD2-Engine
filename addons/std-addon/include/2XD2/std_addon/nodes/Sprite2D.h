@@ -30,7 +30,7 @@ namespace e2XD::std_addon
         const SpriteRenderable& getRenderable() const { return _renderable; }
 
     protected:
-        void _internal_onDraw(const framework::DrawTarget& target) override;
+        void _internal_onDraw() override;
     };
 } // framework
 // e2XD
