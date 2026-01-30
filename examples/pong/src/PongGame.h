@@ -12,10 +12,10 @@
 #include "2XD2/framework/signals/SignalReceiver.h"
 
 
-class MyGame : public e2XD::framework::Game, public e2XD::framework::SignalReceiver
+class PongGame : public e2XD::framework::Game, public e2XD::framework::SignalReceiver
 {
 public:
-    explicit MyGame(const e2XD::framework::IGameConfig& config);
+    explicit PongGame(const e2XD::framework::IGameConfig& config);
 
     void restartGame();
 };

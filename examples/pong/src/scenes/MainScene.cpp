@@ -16,17 +16,29 @@
 
 MainScene::MainScene()
 {
+    // create and position entities
+    // PLAYER
     auto* player = createSubNode<Player>();
-    float temp = player->getRenderable().getWidth();
     player->setGlobalPosition({leftBound+player->getRenderable().getWidth()/2, 0});
+
+    // OPPONENT
     auto* opponent = createSubNode<Opponent>();
     opponent->setGlobalPosition({rightBound - opponent->getRenderable().getWidth()/2, 0});
+
+    // BALL
     auto* ball = createSubNode<Ball>();
     ball->setGlobalPosition({0,0});
+
+    // CAMERA
     camera.setGlobalPosition({0,0});
     setActiveCamera(&camera);
-    opponent->linkBall(ball);
-    gameOverScreen = createSubNode<GameOverScreen>();
+
+
+    opponent->linkBall(ball); // let opponent track the ball
+
+    gameOverScreen = createSubNode<GameOverScreen>(); // create game over screen
+
+    // Connect the ball out of bounds signal to the game over function
     ball->outOfBounds.connect(*this, [this]()
     {
         GameOver();

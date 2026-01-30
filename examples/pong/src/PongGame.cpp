@@ -6,22 +6,27 @@
 // Created by rune-suy on 1/13/26.
 //
 
-#include "MyGame.h"
+#include "PongGame.h"
 #include "scenes/MainScene.h"
 #include "scenes/GameOverScreen/GameOverScreen.h"
 
 
-MyGame::MyGame(const IGameConfig& config) : Game(config)
+PongGame::PongGame(const IGameConfig& config) : Game(config)
 {
     setWindowTitle("pong example");
+
+    // In order fot the game to draw or simulate,
+    // we first need to create and assign a scene
     createActiveScene<MainScene>();
+
+    // Bind restart signal
     GameOverScreen::restartPressed.connect(*this, [this]()
     {
         restartGame();
     });
 }
 
-void MyGame::restartGame()
+void PongGame::restartGame()
 {
     createActiveScene<MainScene>();
 }
