@@ -19,6 +19,7 @@ target_link_libraries(2XD2_Engine_Tests PUBLIC
         2XD2_Engine_Renderer  # The library we are testing
         2XD2_Engine_Core      # Core library if needed
         2XD2_Engine_Framework # Framework library if needed
+        2XD2_Std_Addon        # Standard addon library
         gtest_main # GTest's main executable runner
         gmock       # GMock for mocking functionalities
 )
