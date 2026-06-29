@@ -28,6 +28,8 @@ namespace e2XD::framework
         void _internal_onCreate() override;
 
         void _notification(int what) override;
+
+        void _internal_onDraw() override;
     };
 } // framework
 // e2XD

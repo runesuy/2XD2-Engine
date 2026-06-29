@@ -7,11 +7,14 @@
 //
 
 #include "2XD2/framework/nodes/Drawable2D.h"
-
 #include <iostream>
-
 #include "2XD2/framework/drawing/Renderer.h"
 #include "2XD2/framework/nodes/Notifications.hpp"
+
+
+#ifndef e2XD_REMOVE_DEBUG
+#include "2XD2/framework/debug/DebugSettings.h"
+#endif
 
 
 namespace e2XD::framework
@@ -55,6 +58,22 @@ namespace e2XD::framework
     {
         node->_notification(this->isVisible() ? NOTIFICATION_VISIBILITY_TRUE : NOTIFICATION_VISIBILITY_FALSE);
         Node2D::addSubNode(std::move(node));
+    }
+
+    void Drawable2D::_internal_onDraw()
+    {
+#ifndef e2XD_REMOVE_DEBUG
+        if (DebugSettings::showNodeOrigin)
+        {
+            renderer::RenderCommand command = {
+                renderLayer,
+                DebugSettings::getOriginMarker(),
+                getGlobalPosition(),
+                zIndex + 1
+            };
+            Renderer::submit(command);
+        }
+#endif
     }
 } // framework
 // e2XD
