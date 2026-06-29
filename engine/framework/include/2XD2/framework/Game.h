@@ -17,9 +17,10 @@ namespace e2XD::framework
 {
     class Game
     {
+        using Window = sf::RenderWindow;
         std::unique_ptr<Scene> activeScene;
         std::unique_ptr<Scene> newActiveScene = nullptr;
-        sf::RenderWindow window = {sf::VideoMode(800, 600), "2XD2 Game"};
+        Window window = {sf::VideoMode(800, 600), "2XD2 Game"};
 
         const std::string CONFIG_FILE_PATH;
         std::string RESOURCES_PATH;
@@ -42,6 +43,11 @@ namespace e2XD::framework
         void run();
 
         void setWindowTitle(const std::string& title);
+
+        /**
+         * @return The the SFML main game window.
+         */
+        Window& getWindow();
 
         /**
          * Set the number of physics ticks (updates) per second.

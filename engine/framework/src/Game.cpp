@@ -166,4 +166,9 @@ namespace e2XD::framework
     {
         _physicsTicksPerSecond = ticksPerSecond;
     }
+
+    Game::Window& Game::getWindow()
+    {
+        return window;
+    }
 }
