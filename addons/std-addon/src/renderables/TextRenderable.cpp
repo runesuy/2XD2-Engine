@@ -14,7 +14,6 @@ namespace e2XD::std_addon
     TextRenderable::TextRenderable()
     {
         _text.setFont(framework::Resources::Fonts::getFont(framework::Game::DEFAULT_FONT_NAME));
-        _text.setOrigin(_text.getLocalBounds().width / 2, _text.getLocalBounds().height / 2);
     }
 
     void TextRenderable::draw(const renderer::IRenderTarget& renderTarget) const
@@ -25,19 +24,41 @@ namespace e2XD::std_addon
     void TextRenderable::setText(const std::string &text)
     {
         _text.setString(text);
-        _text.setOrigin(_text.getLocalBounds().width / 2, _text.getLocalBounds().height / 2);
     }
 
     void TextRenderable::setFontSize(const unsigned int size)
     {
         _text.setCharacterSize(size);
-        _text.setOrigin(_text.getLocalBounds().width / 2, _text.getLocalBounds().height / 2);
     }
 
     void TextRenderable::setFont(const FontType& font)
     {
         _text.setFont(font);
-        _text.setOrigin(_text.getLocalBounds().width / 2, _text.getLocalBounds().height / 2);
+    }
+
+    float TextRenderable::getWidth() const
+    {
+        return _text.getLocalBounds().width;
+    }
+
+    float TextRenderable::getHeight() const
+    {
+        return _text.getLocalBounds().height;
+    }
+
+    core::Vec2f TextRenderable::getSize() const
+    {
+        return {getWidth(), getHeight()};
+    }
+
+    core::Vec2f TextRenderable::getOrigin() const
+    {
+        return { _text.getOrigin().x, _text.getOrigin().y };
+    }
+
+    void TextRenderable::setOrigin(const core::Vec2f& origin)
+    {
+        _text.setOrigin(origin.x, origin.y);
     }
 } // std_addon
 // e2XD

@@ -6,6 +6,7 @@
 #define FLATLAND_TEXTRENDERABLE_H
 #include <SFML/Graphics/Text.hpp>
 
+#include "2XD2/core/Vec2f.h"
 #include "2XD2/renderer/IRenderable.h"
 
 
@@ -17,8 +18,8 @@ namespace e2XD::std_addon
     class TextRenderable : public renderer::IRenderable
     {
         sf::Text _text;
-        using FontType = sf::Font;
     public:
+        using FontType = sf::Font;
         TextRenderable();
 
         void draw(const renderer::IRenderTarget& renderTarget) const override;
@@ -41,6 +42,32 @@ namespace e2XD::std_addon
          * @param font
          */
         void setFont(const FontType& font);
+
+        /**
+         * @return The width of the text renderable ignoring any transformations in coordinates
+         */
+        float getWidth() const;
+
+        /**
+         * @return The height of the text renderable ignoring any transformations in coordinates
+         */
+        float getHeight() const;
+
+        /**
+         * @return The size of the text renderable ignoring any transformations in coordinates
+         */
+        core::Vec2f getSize() const;
+
+        /**
+         * @return The origin of the text renderable ignoring any transformations in coordinates
+         */
+        core::Vec2f getOrigin() const;
+
+        /**
+         * Sets the origin of the text renderable ignoring any transformations in coordinates
+         * @param origin
+         */
+        void setOrigin(const core::Vec2f& origin);
     };
 } // std_addon
 // e2XD
