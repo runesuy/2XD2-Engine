@@ -8,6 +8,8 @@
 
 #ifndef INC_2XD2_ENGINE_VEC2_H
 #define INC_2XD2_ENGINE_VEC2_H
+#include <string>
+
 #include "cmath"
 
 namespace e2XD::core
@@ -77,6 +79,8 @@ namespace e2XD::core
         // TEST: Core_Vec2.Length
 
         void normalize();
+
+        explicit operator std::string() const;
     };
 
     template <typename T>
@@ -170,6 +174,12 @@ namespace e2XD::core
         T l = length();
         if (l == 0) return;
         *this /= l;
+    }
+
+    template <typename T>
+    Vec2<T>::operator std::string() const
+    {
+        return "(" + std::to_string(x) + ", " + std::to_string(y) + ")";
     }
 }
 
