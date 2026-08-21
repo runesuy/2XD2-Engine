@@ -212,7 +212,7 @@ namespace e2XD::renderer
                 // Window is shorter than camera view
                 const float newWidth = temp.y * windowAspectRatio;
                 view = sf::View{
-                    sf::Vector2f{0, 0}, sf::Vector2f{newWidth, temp.y}
+                    sf::FloatRect{0,0, newWidth, temp.y}
                 };
             }
             window->setView(view);
