@@ -11,7 +11,15 @@ namespace e2XD::std_addon
 {
     UiNode::UiNode()
     {
-        renderLayer = RenderLayer::UI;
+        // inherit renderLayer by default
+        if (const auto drawableParent = dynamic_cast<Drawable2D*>(getParent()))
+        {
+            Drawable2D::setRenderLayer(drawableParent->getRenderLayer());
+        }
+        else
+        {
+            renderLayer = RenderLayer::UI;
+        }
     }
 
     void UiNode::setSize(const core::Vec2f& size)

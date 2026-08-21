@@ -6,13 +6,9 @@
 // Created by rune-suy on 1/10/26.
 //
 
-#include "../include/2XD2/std_addon/nodes/Label.h"
-
+#include "2XD2/std_addon/nodes/ui/Label.h"
 #include "2XD2/framework/drawing/Renderer.h"
 #include "2XD2/framework/Game.h"
-#include "2XD2/framework/resource_manager/Fonts.h"
-#include "2XD2/framework/resource_manager/Resources.h"
-
 
 namespace e2XD::std_addon
 {

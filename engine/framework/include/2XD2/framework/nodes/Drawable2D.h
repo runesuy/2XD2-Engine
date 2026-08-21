@@ -17,7 +17,7 @@ namespace e2XD::framework
     class Drawable2D : public Node2D, public Drawable
     {
     public:
-        Drawable2D() = default;
+        Drawable2D();
         ~Drawable2D() override = default;
 
         void setVisible(bool visible) override;

@@ -19,6 +19,15 @@
 
 namespace e2XD::framework
 {
+    Drawable2D::Drawable2D()
+    {
+        // inherit renderLayer by default
+        if (const auto drawableParent = dynamic_cast<Drawable2D*>(getParent()))
+        {
+            Drawable2D::setRenderLayer(drawableParent->renderLayer);
+        }
+    }
+
     void Drawable2D::_internal_onCreate()
     {
         Renderer::registerDrawable(this);

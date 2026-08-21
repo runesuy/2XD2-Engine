@@ -23,6 +23,11 @@ namespace e2XD::framework
         this->renderLayer = renderLayer;
     }
 
+    RenderLayer Drawable::getRenderLayer() const
+    {
+        return renderLayer;
+    }
+
     void Drawable::setVisible(bool visible)
     {
         this->visible = visible;

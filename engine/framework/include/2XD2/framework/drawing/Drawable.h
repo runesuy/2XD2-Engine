@@ -72,6 +72,11 @@ namespace e2XD::framework
          * @param renderLayer
          */
         virtual void setRenderLayer(RenderLayer renderLayer);
+
+        /**
+         * Get the render layer of the renderable
+         */
+        RenderLayer getRenderLayer() const;
     };
 } // core
 // e2XD

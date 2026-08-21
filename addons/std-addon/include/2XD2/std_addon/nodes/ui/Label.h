@@ -11,6 +11,7 @@
 
 #include "2XD2/framework/nodes/Drawable2D.h"
 #include "2XD2/std_addon/renderables/TextRenderable.h"
+#include "UiNode.h"
 
 
 namespace e2XD::framework
@@ -23,7 +24,7 @@ namespace e2XD::std_addon
     /**
      * A text label node.
      */
-    class Label : public framework::Drawable2D
+    class Label : public UiNode
     {
         TextRenderable _renderable;
     public:
