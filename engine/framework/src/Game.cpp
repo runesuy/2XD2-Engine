@@ -25,8 +25,8 @@ namespace e2XD::framework
 {
     using internal::Time;
 
-    Game::Game(const IGameConfig& config, std::string configFilePath)
-        : CONFIG_FILE_PATH(std::move(configFilePath))
+    Game::Game(const IGameConfig& config, const VideoMode& videoMode, std::string configFilePath)
+        : CONFIG_FILE_PATH(std::move(configFilePath)), window(videoMode, "2XD2 Game Window")
     {
         if (const auto inputHandler = config.getInputHandler(); !inputHandler)
             throw core::NotInitializedException("GameConfig.getInputHandler()",
