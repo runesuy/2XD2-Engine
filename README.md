@@ -6,7 +6,7 @@
 
 ## Overview 
 2XD2-Engine is a 2D game engine built with C++ and SFML.
-The main objectsives of this project are to provide an easy-to-use framework for developing 2D games and to offer a modular architecture that allows developers to extend and customize the engine according to their needs.
+The main objectives of this project are to provide an easy-to-use framework for developing 2D games and to offer a modular architecture that allows developers to extend and customize the engine according to their needs.
 
 **This project is still in its early stages of development, all contributions are welcome!**
 
